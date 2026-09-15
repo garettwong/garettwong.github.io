@@ -1,0 +1,14 @@
+{
+  "packs": [
+    {
+      "manifest": "/packs/dbz2.json",
+      "romSha256": [
+        "152193bb9e325a11e314b0fc3159c1a4d5e0d6c4f26a604de3f0e5c2dd004af3",
+        "a1ec905f389fe30badb816887541b74fdd7337077900433b26e91bdc919f96c9",
+        "b083228e12d4d387bda80d89a2970d9de3905cb7f845ffc15167ef50475d5844",
+        "b7b22347cefb701a448f81cc8123e1181663d2280f0b487e13afe79ac953d3a9",
+        "3731b445e3aa3d7f70a2c0c5c94e30192beec0b3b08ffafdc0e50d8af2f1feaf"
+      ]
+    }
+  ]
+}

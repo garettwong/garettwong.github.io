@@ -1,0 +1,927 @@
+{
+  "version": 1,
+  "tileSize": 16,
+  "tiles": [
+    {
+      "id": 0,
+      "hash": 1926403264,
+      "anchors": [
+        3704576,
+        8968192,
+        3704576,
+        3704576
+      ],
+      "pivot": [
+        1,
+        0,
+        8968192
+      ],
+      "image": "/packs/map/tile-00.webp"
+    },
+    {
+      "id": 1,
+      "hash": 866732736,
+      "anchors": [
+        3704576,
+        8968192,
+        0,
+        3704576
+      ],
+      "pivot": [
+        1,
+        0,
+        8968192
+      ],
+      "image": "/packs/map/tile-01.webp"
+    },
+    {
+      "id": 2,
+      "hash": 523160771,
+      "anchors": [
+        15375906,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "pivot": [
+        0,
+        1,
+        10046976
+      ],
+      "image": "/packs/map/tile-02.webp"
+    },
+    {
+      "id": 3,
+      "hash": 1674314693,
+      "anchors": [
+        0,
+        8968192,
+        3704576,
+        0
+      ],
+      "pivot": [
+        2,
+        0,
+        8968192
+      ],
+      "image": "/packs/map/tile-03.webp"
+    },
+    {
+      "id": 4,
+      "hash": 3917254828,
+      "anchors": [
+        15375906,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "pivot": [
+        0,
+        1,
+        10046976
+      ],
+      "image": "/packs/map/tile-04.webp"
+    },
+    {
+      "id": 5,
+      "hash": 532223161,
+      "anchors": [
+        4771294,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "pivot": [
+        4,
+        2,
+        10046976
+      ],
+      "image": "/packs/map/tile-05.webp"
+    },
+    {
+      "id": 6,
+      "hash": 4030963412,
+      "anchors": [
+        4771294,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "pivot": [
+        9,
+        1,
+        8968192
+      ],
+      "image": "/packs/map/tile-06.webp"
+    },
+    {
+      "id": 7,
+      "hash": 493161709,
+      "anchors": [
+        15375906,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "pivot": [
+        15,
+        3,
+        10046976
+      ],
+      "image": "/packs/map/tile-07.webp"
+    },
+    {
+      "id": 8,
+      "hash": 3611818501,
+      "anchors": [
+        15375906,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "pivot": [
+        0,
+        2,
+        10046976
+      ],
+      "image": "/packs/map/tile-08.webp"
+    },
+    {
+      "id": 9,
+      "hash": 1274953015,
+      "anchors": [
+        15375906,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "pivot": [
+        10,
+        8,
+        10046976
+      ],
+      "image": "/packs/map/tile-09.webp"
+    },
+    {
+      "id": 10,
+      "hash": 3352137613,
+      "anchors": [
+        4771294,
+        15375906,
+        4771294,
+        15375906
+      ],
+      "pivot": [
+        8,
+        4,
+        10046976
+      ],
+      "image": "/packs/map/tile-10.webp"
+    },
+    {
+      "id": 11,
+      "hash": 1180425465,
+      "anchors": [
+        4771294,
+        10046976,
+        4771294,
+        15375906
+      ],
+      "pivot": [
+        3,
+        4,
+        10046976
+      ],
+      "image": "/packs/map/tile-11.webp"
+    },
+    {
+      "id": 12,
+      "hash": 3752938013,
+      "anchors": [
+        4771294,
+        4771294,
+        4771294,
+        3704576
+      ],
+      "pivot": [
+        1,
+        0,
+        8968192
+      ],
+      "image": "/packs/map/tile-12.webp"
+    },
+    {
+      "id": 14,
+      "hash": 3405443241,
+      "anchors": [
+        4771294,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "pivot": [
+        4,
+        2,
+        10046976
+      ],
+      "image": "/packs/map/tile-14.webp"
+    },
+    {
+      "id": 15,
+      "hash": 2838121366,
+      "anchors": [
+        4771294,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "pivot": [
+        4,
+        2,
+        10046976
+      ],
+      "image": "/packs/map/tile-15.webp"
+    },
+    {
+      "id": 16,
+      "hash": 989704888,
+      "anchors": [
+        0,
+        15375906,
+        15375906,
+        0
+      ],
+      "pivot": [
+        1,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/tile-16.webp"
+    },
+    {
+      "id": 17,
+      "hash": 4098490121,
+      "anchors": [
+        10046976,
+        15375906,
+        15375906,
+        15375906
+      ],
+      "pivot": [
+        0,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/tile-17.webp"
+    },
+    {
+      "id": 18,
+      "hash": 4108449637,
+      "anchors": [
+        0,
+        8968192,
+        3704576,
+        0
+      ],
+      "pivot": [
+        7,
+        2,
+        8968192
+      ],
+      "image": "/packs/map/tile-18.webp"
+    },
+    {
+      "id": 19,
+      "hash": 2854912741,
+      "anchors": [
+        0,
+        8968192,
+        0,
+        3704576
+      ],
+      "pivot": [
+        1,
+        3,
+        3704576
+      ],
+      "image": "/packs/map/tile-19.webp"
+    },
+    {
+      "id": 20,
+      "hash": 1921779441,
+      "anchors": [
+        4771294,
+        10046976,
+        4771294,
+        15375906
+      ],
+      "pivot": [
+        8,
+        7,
+        10046976
+      ],
+      "image": "/packs/map/tile-20.webp"
+    },
+    {
+      "id": 21,
+      "hash": 3810989902,
+      "anchors": [
+        15375906,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "pivot": [
+        0,
+        1,
+        10046976
+      ],
+      "image": "/packs/map/tile-21.webp"
+    },
+    {
+      "id": 22,
+      "hash": 718968145,
+      "anchors": [
+        31885,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "pivot": [
+        0,
+        0,
+        31885
+      ],
+      "image": "/packs/map/tile-22.webp"
+    },
+    {
+      "id": 23,
+      "hash": 1144740117,
+      "anchors": [
+        0,
+        8968192,
+        3704576,
+        3704576
+      ],
+      "pivot": [
+        0,
+        2,
+        8968192
+      ],
+      "image": "/packs/map/tile-23.webp"
+    },
+    {
+      "id": 24,
+      "hash": 711582517,
+      "anchors": [
+        3704576,
+        8968192,
+        3704576,
+        3704576
+      ],
+      "pivot": [
+        1,
+        0,
+        8968192
+      ],
+      "image": "/packs/map/tile-24.webp"
+    },
+    {
+      "id": 25,
+      "hash": 1840832256,
+      "anchors": [
+        0,
+        8968192,
+        3704576,
+        3704576
+      ],
+      "pivot": [
+        3,
+        0,
+        8968192
+      ],
+      "image": "/packs/map/tile-00.webp"
+    },
+    {
+      "id": 26,
+      "hash": 3791931072,
+      "anchors": [
+        4771294,
+        15375906,
+        0,
+        15375906
+      ],
+      "pivot": [
+        8,
+        4,
+        10046976
+      ],
+      "image": "/packs/map/tile-10.webp"
+    },
+    {
+      "id": 27,
+      "hash": 1612883800,
+      "anchors": [
+        4771294,
+        10046976,
+        4771294,
+        15375906
+      ],
+      "pivot": [
+        3,
+        4,
+        10046976
+      ],
+      "image": "/packs/map/tile-11.webp"
+    },
+    {
+      "id": 100,
+      "hash": 246824629,
+      "anchors": [
+        0,
+        10046976,
+        0,
+        0
+      ],
+      "pivot": [
+        8,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/space-00.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 101,
+      "hash": 2314279799,
+      "anchors": [
+        0,
+        10046976,
+        0,
+        0
+      ],
+      "pivot": [
+        5,
+        0,
+        6598911
+      ],
+      "image": "/packs/map/space-01.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 102,
+      "hash": 3528874432,
+      "anchors": [
+        0,
+        10046976,
+        0,
+        0
+      ],
+      "pivot": [
+        9,
+        1,
+        10046976
+      ],
+      "image": "/packs/map/space-02.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 103,
+      "hash": 3791052466,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        4,
+        1400793
+      ],
+      "image": "/packs/map/space-03.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 104,
+      "hash": 162456338,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        2,
+        1400793
+      ],
+      "image": "/packs/map/space-04.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 105,
+      "hash": 1630800240,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        7,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/space-05.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 106,
+      "hash": 2380625032,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        7,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/space-06.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 107,
+      "hash": 3049898698,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        2,
+        1400793
+      ],
+      "image": "/packs/map/space-07.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 108,
+      "hash": 1234731949,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "pivot": [
+        5,
+        0,
+        6598911
+      ],
+      "image": "/packs/map/space-08.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 109,
+      "hash": 2301574704,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        7,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/space-09.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 110,
+      "hash": 2035547472,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        7,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/space-10.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 111,
+      "hash": 523838245,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        2,
+        1400793
+      ],
+      "image": "/packs/map/space-11.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 114,
+      "hash": 2982016306,
+      "anchors": [
+        0,
+        15375906,
+        0,
+        10046976
+      ],
+      "pivot": [
+        5,
+        0,
+        6598911
+      ],
+      "image": "/packs/map/space-14.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 115,
+      "hash": 4187145365,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        4,
+        1400793
+      ],
+      "image": "/packs/map/space-15.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 116,
+      "hash": 923529805,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        13,
+        1,
+        6598911
+      ],
+      "image": "/packs/map/space-16.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 120,
+      "hash": 3188481237,
+      "anchors": [
+        16777215,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        4,
+        1400793
+      ],
+      "image": "/packs/map/space-20.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": true
+    },
+    {
+      "id": 121,
+      "hash": 3483431013,
+      "anchors": [
+        16777215,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        2,
+        1400793
+      ],
+      "image": "/packs/map/space-21.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": true
+    },
+    {
+      "id": 122,
+      "hash": 3634500493,
+      "anchors": [
+        16777215,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        13,
+        1,
+        6598911
+      ],
+      "image": "/packs/map/space-22.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": true
+    },
+    {
+      "id": 124,
+      "hash": 254500096,
+      "anchors": [
+        16777215,
+        10046976,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        16777215
+      ],
+      "image": "/packs/map/space-24.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": true
+    },
+    {
+      "id": 125,
+      "hash": 922532972,
+      "anchors": [
+        0,
+        10046976,
+        0,
+        16777215
+      ],
+      "pivot": [
+        5,
+        0,
+        6598911
+      ],
+      "image": "/packs/map/space-25.webp",
+      "spaceTile": true,
+      "preserveBlack": false,
+      "preserveWhite": false
+    },
+    {
+      "id": 204,
+      "hash": 41798967,
+      "anchors": [
+        15375906,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "pivot": [
+        9,
+        9,
+        10046976
+      ],
+      "image": "/packs/map/extra-04.webp",
+      "mapExtra": true
+    },
+    {
+      "id": 205,
+      "hash": 4041475465,
+      "anchors": [
+        4771294,
+        4771294,
+        4771294,
+        31885
+      ],
+      "pivot": [
+        4,
+        2,
+        31885
+      ],
+      "image": "/packs/map/extra-05.webp",
+      "mapExtra": true
+    },
+    {
+      "id": 206,
+      "hash": 1624235119,
+      "anchors": [
+        15375906,
+        4771294,
+        10046976,
+        4771294
+      ],
+      "pivot": [
+        15,
+        3,
+        10046976
+      ],
+      "image": "/packs/map/extra-06.webp",
+      "mapExtra": true
+    },
+    {
+      "id": 207,
+      "hash": 191950797,
+      "anchors": [
+        4771294,
+        4771294,
+        10046976,
+        4771294
+      ],
+      "pivot": [
+        4,
+        2,
+        10046976
+      ],
+      "image": "/packs/map/extra-07.webp",
+      "mapExtra": true
+    },
+    {
+      "id": 208,
+      "hash": 3144024484,
+      "anchors": [
+        31885,
+        4771294,
+        4771294,
+        31885
+      ],
+      "pivot": [
+        8,
+        0,
+        4771294
+      ],
+      "image": "/packs/map/extra-08.webp",
+      "mapExtra": true
+    },
+    {
+      "id": 209,
+      "hash": 3805096460,
+      "anchors": [
+        31885,
+        4771294,
+        4771294,
+        31885
+      ],
+      "pivot": [
+        0,
+        0,
+        31885
+      ],
+      "image": "/packs/map/extra-09.webp",
+      "mapExtra": true
+    }
+  ],
+  "gateColors": [
+    4771294,
+    6598911,
+    1400793,
+    15375906,
+    10046976
+  ]
+}
