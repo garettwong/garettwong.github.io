@@ -1,4 +1,4 @@
-import {createSupplies,rCount} from './power-core/r-supplies.js';
+import {createSupplies,rCount} from './power-core/native-supplies.js?v=46';
 import {drawProjectiles} from './power-core/bullets.js';
 import {attachBombCollisions} from './power-core/bombs.js';
 import {NES,Controller} from './power-core/src/index.js';
