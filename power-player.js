@@ -1,4 +1,5 @@
 import {drawProjectiles} from './power-core/bullets.js';
+import {attachBombCollisions} from './power-core/bombs.js';
 import {NES,Controller} from './power-core/src/index.js';
 import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom} from './power-core/contra.js';
 export async function startPowerPlayer(game,send){
@@ -9,7 +10,7 @@ export async function startPowerPlayer(game,send){
  const ctx=canvas.getContext('2d',{alpha:false}),image=ctx.createImageData(256,240);
  let audio=null,node=null,left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,frameCount=0;
  const nes=new NES({sampleRate:48000,onFrame(pixels){for(let i=0;i<pixels.length;i++){const c=pixels[i],j=i*4;image.data[j]=c&255;image.data[j+1]=(c>>8)&255;image.data[j+2]=(c>>16)&255;image.data[j+3]=255;}},onAudioSample(l,r){left.push(l);right.push(r);}});
- let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);
+ let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);attachBombCollisions(nes);
  function draw(){ctx.putImageData(image,0,0);drawProjectiles(ctx,nes,game.id!==POWER_ROM);const m=nes.cpu.mem;if(m[0x18]===5){ctx.fillStyle='#000b';ctx.fillRect(4,226,130,12);ctx.fillStyle='#fff';ctx.font='8px monospace';ctx.fillText('R '+(m[0x7e6]+256*m[0x7e8]+65536*m[0x7ea]),7,235);}}
  function flushAudio(){if(node&&left.length&&speed===1){const l=Float32Array.from(left),r=Float32Array.from(right);node.port.postMessage({left:l,right:r},[l.buffer,r.buffer]);}left=[];right=[];}
  function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){nes.frame();frameCount++;}acc-=1000/60;steps++;}if(steps){draw();flushAudio();}raf=requestAnimationFrame(tick);}

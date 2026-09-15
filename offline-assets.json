@@ -1,9 +1,9 @@
 {
-  "version": "5b09e1dd9ab8e4e5",
+  "version": "b3c2d708f1d28653",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-BvXhYFla.css",
-    "/assets/index-d1Hk-iGd.js",
+    "/assets/index-CzUeT0uf.js",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
     "/emulator/data/compression/extractzip.js",
@@ -545,6 +545,7 @@
     "/player.html",
     "/power-core/LICENSE",
     "/power-core/audio.js",
+    "/power-core/bombs.js",
     "/power-core/bullets.js",
     "/power-core/contra.js",
     "/power-core/src/browser.d.ts",
