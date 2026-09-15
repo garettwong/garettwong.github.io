@@ -54,7 +54,7 @@ export function createSupplies(nes,density='more',seed=Date.now()){
   if(state.pending.length&&free.length>2){const r=state.pending.shift(),slot=free.shift();spawnNative(m,0,r.x,r.y,slot);state.tracked.push({slot,type:0});}
   const cfg=DENSITIES[state.density];if(state.frame++%cfg.interval||state.tracked.length>=cfg.cap||free.length<=4)return;
   const pos=wallPosition(m),useWall=pos&&random()<.7;let type,x,y;
-  if(useWall){({x,y}=pos);type=[0,2].includes(m[0x30])&&random()<.4?7:2;state.used.push(pos.key);state.used=state.used.slice(-160);}
+  if(useWall){({x,y}=pos);type=2;state.used.push(pos.key);state.used=state.used.slice(-160);}
   else{type=3;x=48+Math.floor(random()*160);y=40+Math.floor(random()*100);}
   const slot=free[0];if(spawnNative(m,type,x,y,slot))state.tracked.push({slot,type});
  }

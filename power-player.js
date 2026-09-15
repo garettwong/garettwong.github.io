@@ -1,4 +1,5 @@
-import {createSupplies,rCount} from './power-core/native-supplies.js?v=46';
+import {attachRProgress,drawRIndicator} from './power-core/r-progress.js?v=47';
+import {createSupplies,rCount} from './power-core/native-supplies.js?v=47';
 import {drawProjectiles} from './power-core/bullets.js';
 import {attachBombCollisions} from './power-core/bombs.js';
 import {NES,Controller} from './power-core/src/index.js';
@@ -11,9 +12,9 @@ export async function startPowerPlayer(game,send){
  const ctx=canvas.getContext('2d',{alpha:false}),image=ctx.createImageData(256,240);
  let audio=null,node=null,left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,frameCount=0;
  const nes=new NES({sampleRate:48000,onFrame(pixels){for(let i=0;i<pixels.length;i++){const c=pixels[i],j=i*4;image.data[j]=c&255;image.data[j+1]=(c>>8)&255;image.data[j+2]=(c>>16)&255;image.data[j+3]=255;}},onAudioSample(l,r){left.push(l);right.push(r);}});
- let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);attachBombCollisions(nes);
+ let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);attachBombCollisions(nes);const progression=attachRProgress(nes);
  const supplies=Object.hasOwn(RUSH_PROFILES,game.id)?createSupplies(nes,game.rDensity):null;
- function draw(){ctx.putImageData(image,0,0);drawProjectiles(ctx,nes,game.id!==POWER_ROM);supplies?.draw(ctx);}
+ function draw(){ctx.putImageData(image,0,0);drawProjectiles(ctx,nes,game.id!==POWER_ROM);supplies?.draw(ctx);drawRIndicator(ctx,nes.cpu.mem);}
  function flushAudio(){if(node&&left.length&&speed===1){const l=Float32Array.from(left),r=Float32Array.from(right);node.port.postMessage({left:l,right:r},[l.buffer,r.buffer]);}left=[];right=[];}
  const inputFrames=new Map(),releaseFrames=new Map();
  function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){nes.frame();supplies?.update();frameCount++;for(const [key,at] of releaseFrames){if(frameCount>=at){const [p,c]=key.split(":").map(Number);nes.buttonUp(p,c);releaseFrames.delete(key);}}}acc-=1000/60;steps++;}if(steps){draw();flushAudio();}raf=requestAnimationFrame(tick);}
@@ -35,7 +36,7 @@ export async function startPowerPlayer(game,send){
   getPowerInfo:()=>({r:nes.cpu.mem[0x18]===5&&!nes.cpu.mem[0x1c]?rCount(nes.cpu.mem):0,density:supplies?.density}),simulateInput:input,getVideoDimensions:kind=>kind==='width'?256:kind==='aspect'?256/240:240,getFrameNum:()=>frameCount,
   screenshot:async()=>{const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));return new Uint8Array(await blob.arrayBuffer());},
   getState:()=>new TextEncoder().encode(JSON.stringify({format:'contra-power-1',rom:game.id,state:nes.toJSON(),supplies:supplies?.save()})),
-  loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);node?.port.postMessage({clear:true});left=[];right=[];},
+  loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);progression.reset();supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);node?.port.postMessage({clear:true});left=[];right=[];},
   toggleSlowMotion(){},setFastForwardRatio(){},toggleFastForward:value=>{speed=value?2:1;node?.port.postMessage({clear:true});}
  }};
  play.addEventListener('click',()=>resume().catch(()=>send('operation-error',{text:'Could not start audio. Tap Play again.'})));

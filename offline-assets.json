@@ -1,8 +1,8 @@
 {
-  "version": "b422f574f9c2f399",
+  "version": "0bdf03be2b118a27",
   "assets": [
     "/apple-touch-icon.png",
-    "/assets/index-BlvUonhG.js",
+    "/assets/index-CC2OmZW1.js",
     "/assets/index-CeNMtMAA.css",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
@@ -553,6 +553,7 @@
     "/power-core/bullets.js",
     "/power-core/contra.js",
     "/power-core/native-supplies.js",
+    "/power-core/r-progress.js",
     "/power-core/r-supplies.js",
     "/power-core/src/browser.d.ts",
     "/power-core/src/browser/frame-timer.js",
