@@ -14,4 +14,5 @@ export function projectiles(nes){
 }
 
 export const POWER_PROFILES={"cef266590489ed7364851da22da3db20b14ffd72d610f1815da271a9ae8b0533": "S64", "8f43fe2960615a0aaf8af307acbb9773767e90edb7fc58d2e604d4455327a59a": "F64", "c83cc1874bbc4b0ceb333d9fafbdc49f9e45a0b5fa60f9289d22ef998408eef6": "L64", "ff8bd1e19d95494edaa7973fc5a2060b70a32d171be3bfa3d37b034d51175f12": "SFL64"};
-export const isPowerRom=id=>id===POWER_ROM||Object.hasOwn(POWER_PROFILES,id);
+export const RUSH_PROFILES={"40585e61078c87bc0050e15637e7366e36a97654c0267c8c5e925d7f44e23bf7":"S64","a3b7a62c1efd380731ce3a88a44cf409c69972ac800caadf53917cdd617cd470":"F64","e49d8167d759023e72c91a399d7d8f1732436bfa76d19f8d9f99e70d71644146":"L64","831ba05a05318fc92d1569a18afae40eb061e0fd1597594638c357f1b410a41d":"SFL64"};
+export const isPowerRom=id=>id===POWER_ROM||Object.hasOwn(POWER_PROFILES,id)||Object.hasOwn(RUSH_PROFILES,id);
