@@ -19,11 +19,13 @@ export function hitBombs(nes){
    const dx=(ex-(x-vx))/16,dy=(ey-(y-vy))/9,ax=vx/16,ay=vy/9,l=ax*ax+ay*ay;
    const t=l?Math.max(0,Math.min(1,(dx*ax+dy*ay)/l)):1;
    if((dx-ax*t)**2+(dy-ay*t)**2>1)continue;
-   m[0x578+e]=0;m[0x4b8+e]=death;
+   // A shot-down bomb uses the harmless destroyed-enemy explosion, not
+   // the grenade ground-impact routine, which deliberately keeps blast damage.
+   m[0x578+e]=0;m[0x598+e]|=0x81;m[0x528+e]=0x0b;m[0x4b8+e]=4;
    if(m[0x7500+b]!==2){m[0x6d00+b]=2;m[0x6b00+b]=6;}
    hits++;break;
   }
  }
  return hits;
 }
-export function attachBombCollisions(nes){const frame=nes.frame.bind(nes);nes.frame=()=>{const result=frame();hitBombs(nes);return result;};}
+export function attachBombCollisions(nes){const frame=nes.frame.bind(nes);nes.frame=()=>{hitBombs(nes);const result=frame();hitBombs(nes);return result;};}

@@ -1,11 +1,11 @@
-import {createChaos} from './power-core/chaos.js?v=55';
-import {createHazards} from './power-core/hazards.js?v=55';
+import {createChaos} from './power-core/chaos.js?v=56';
+import {createHazards} from './power-core/hazards.js?v=56';
 import {attachRProgress,drawRIndicator} from './power-core/r-progress.js?v=47';
-import {createSupplies,rCount} from './power-core/native-supplies.js?v=55';
+import {createSupplies,rCount} from './power-core/native-supplies.js?v=56';
 import {drawProjectiles} from './power-core/bullets.js';
-import {attachBombCollisions} from './power-core/bombs.js?v=55';
+import {attachBombCollisions} from './power-core/bombs.js?v=56';
 import {NES,Controller} from './power-core/src/index.js';
-import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom,RUSH_PROFILES,CHAOS_PROFILES} from './power-core/contra.js?v=55';
+import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom,RUSH_PROFILES,CHAOS_PROFILES} from './power-core/contra.js?v=56';
 export async function startPowerPlayer(game,send){
  if(!isPowerRom(game.id))throw new Error('This Power profile does not match the ROM.');
  const host=document.getElementById('game');host.replaceChildren();
