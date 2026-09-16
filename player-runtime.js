@@ -39,6 +39,7 @@
   const d=event.data;
 
   if(d.type==="power-info"){send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
+  if(d.type==="power-options"){window.EJS_emulator?.gameManager?.setPowerOptions?.(d.options||{});send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
   if(d.type==="resume-play"){window.EJS_emulator?.play?.();engine?.resume();return;}
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
@@ -61,8 +62,8 @@
 
    const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");romUrl=URL.createObjectURL(new Blob([game.bytes]));
 
-   if((await import("/power-core/contra.js?v=51")).isPowerRom(game.id)){
-    const {startPowerPlayer}=await import("/power-player.js?v=51");
+   if((await import("/power-core/contra.js?v=52")).isPowerRom(game.id)){
+    const {startPowerPlayer}=await import("/power-player.js?v=52");
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});return;
    }
 

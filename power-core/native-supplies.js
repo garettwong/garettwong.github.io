@@ -21,23 +21,6 @@ export function createSupplies(nes,density='more',seed=Date.now()){
  let state={version:2,density:Object.hasOwn(DENSITIES,density)?density:'more',seed:seed>>>0,frame:0,stage:-1,tracked:[],used:[],pending:[]};
  const random=()=>{state.seed=(Math.imul(state.seed,1664525)+1013904223)>>>0;return state.seed/4294967296;};
  const freeSlots=m=>Array.from({length:16},(_,i)=>15-i).filter(i=>!m[0x4b8+i]);
- function wallPosition(m){
-  const candidates=[];
-  // Do not replace base/boss walls. Flying capsules work in those stages.
-  if(![0,2,4,5,6].includes(m[0x30])||m[0x64]>=m[0x58])return null;
-  for(let y=44-(m[0xfc]%32);y<204;y+=32)for(let x=108-(m[0xfd]%32);x<236;x+=32){
-   if(y<44||Math.hypot(x-m[0x334],y-m[0x31a])<44)continue;
-   const solid=[-8,8].every(dx=>[-8,8].every(dy=>bgCollision(m,x+dx,y+dy)===128));
-   // Contra's cliff faces are visually rock but pass-through, under a one-way
-   // ledge. Mount below the ledge, never across the walking surface or water.
-   const belowLedge=[-8,8].every(dx=>bgCollision(m,x+dx,y-28)===1&&[-8,8].every(dy=>bgCollision(m,x+dx,y+dy)===0));
-   if(!solid&&!belowLedge)continue;
-   if(Array.from({length:16},(_,e)=>e).some(e=>m[0x4b8+e]&&Math.abs(m[0x33e+e]-x)<36&&Math.abs(m[0x324+e]-y)<36))continue;
-   const key=`${m[0x64]}:${((x+m[0xfd])>>>5)}:${((y+m[0xfc])%240)>>>5}`;
-   if(!state.used.includes(key))candidates.push({x,y,key});
-  }
-  return candidates.length?candidates[Math.floor(random()*candidates.length)]:null;
- }
  function update(){
   const m=nes.cpu.mem;if(m[0x18]!==5||m[0x1c]||m[0x90]!==1)return;
   if(state.stage!==m[0x30]){state.stage=m[0x30];state.tracked=[];state.pending=[];state.used=[];state.frame=0;}
@@ -53,12 +36,10 @@ export function createSupplies(nes,density='more',seed=Date.now()){
   let free=freeSlots(m);
   if(state.pending.length&&free.length>2){const r=state.pending.shift(),slot=free.shift();spawnNative(m,0,r.x,r.y,slot);state.tracked.push({slot,type:0});}
   const cfg=DENSITIES[state.density];if(state.frame++%cfg.interval||state.tracked.length>=cfg.cap||free.length<=4)return;
-  const pos=wallPosition(m),useWall=pos&&random()<.7;let type,x,y;
-  if(useWall){({x,y}=pos);type=2;state.used.push(pos.key);state.used=state.used.slice(-160);}
-  else{type=3;x=48+Math.floor(random()*160);y=40+Math.floor(random()*100);}
+  const type=3,x=48+Math.floor(random()*160),y=40+Math.floor(random()*100);
   const slot=free[0];if(spawnNative(m,type,x,y,slot))state.tracked.push({slot,type});
  }
- return {update,draw(){},save:()=>JSON.parse(JSON.stringify(state)),load(value){
+ return {setDensity(value){if(Object.hasOwn(DENSITIES,value))state.density=value;},update,draw(){},save:()=>JSON.parse(JSON.stringify(state)),load(value){
   // Discard old overlay items when resuming a v1 save; keep native game state.
   if(value?.version===2&&Object.hasOwn(DENSITIES,value.density)&&Array.isArray(value.tracked))state={...value,tracked:value.tracked.filter(t=>Number.isInteger(t.slot)&&t.slot>=0&&t.slot<16&&properties[t.type]).slice(0,12),pending:(value.pending||[]).slice(0,6),used:(value.used||[]).slice(-160)};
   else state={...state,density:Object.hasOwn(DENSITIES,value?.density)?value.density:state.density,frame:0,stage:-1,tracked:[],pending:[],used:[]};

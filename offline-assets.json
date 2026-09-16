@@ -1,9 +1,9 @@
 {
-  "version": "942c2bc0f787b95f",
+  "version": "9eef44711db55ed6",
   "assets": [
     "/apple-touch-icon.png",
-    "/assets/index-Cdixww4I.js",
-    "/assets/index-i3f5uYhp.css",
+    "/assets/index-BySBNqI4.css",
+    "/assets/index-CGgvRO7f.js",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
     "/emulator/data/compression/extractzip.js",
@@ -31,6 +31,7 @@
     "/game-thumbnails/contra.png",
     "/game-thumbnails/ct2.png",
     "/game-thumbnails/dbz2.png",
+    "/game-thumbnails/super-final.png",
     "/games/CT2_SS_NORMAL_v2.nes",
     "/games/Contra_Chaos_49.zip",
     "/games/Contra_Chaos_F64.nes",
@@ -50,6 +51,7 @@
     "/games/Contra_Rush_L64.nes",
     "/games/Contra_Rush_S64.nes",
     "/games/Contra_Rush_SFL64.nes",
+    "/games/Contra_Super_Final.nes",
     "/games/DBZ2Super_Travel_v6.nes",
     "/graphics-preview/index.html",
     "/index.html",
