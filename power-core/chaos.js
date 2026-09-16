@@ -35,7 +35,7 @@ export function createChaos(nes,profile,density='more',directions=64){
   for(let e=0;e<16;e++){
    const routine=m[0x4b8+e],type=m[0x528+e];
    const flame=level===5&&[16,17,18].includes(type)&&routine>=2&&routine<=4,claw=level===6&&type===16&&routine>=2&&routine<=4;
-   const bomb=type===11&&routine>=2&&routine<=3||[1,3].includes(level)&&type===18&&routine===2||level===4&&(type===17&&routine===2||type===22&&routine===1);
+   const bomb=type===11&&routine>=2&&routine<=3||[1,3].includes(level)&&[17,18].includes(type)&&routine===2||level===4&&(type===17&&routine===2||type===22&&routine===1);
    if(!routine||!type||!(m[0x578+e]>0||flame||claw||bomb))continue;
    let tx=m[0x33e+e],ty=m[0x324+e];if(flame&&routine>=3){tx+=(m[0x5d8+e]<<24>>24)/2;ty+=Math.max(0,m[0x5e8+e]<<24>>24)/2;}if(claw)ty-=Math.min(8,m[0x5d8+e])*4;
    targetX[targets]=tx;targetY[targets++]=ty;

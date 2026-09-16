@@ -6,7 +6,7 @@ export function hitBombs(nes){
   const type=m[0x528+e],routine=m[0x4b8+e],level=m[0x30];
   // Stage-specific type numbers must not affect unrelated enemies in other stages.
   const death=type===0x0b&&routine>=2&&routine<=3?4:
-   (level===1||level===3)&&type===0x12&&routine===2?4:
+   (level===1||level===3)&&(type===0x12||type===0x11)&&routine===2?4:
    level===4&&type===0x11&&routine===2?3:
    level===4&&type===0x16&&routine===1?2:0;
   if(!death||!m[0x30a+e])continue;

@@ -1,9 +1,9 @@
 {
-  "version": "83cc0e7349ea49ab",
+  "version": "f972fc864e115c61",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-BySBNqI4.css",
-    "/assets/index-MyTCJncB.js",
+    "/assets/index-DyEwPbI9.js",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
     "/emulator/data/compression/extractzip.js",
@@ -572,6 +572,7 @@
     "/power-core/native-supplies.js",
     "/power-core/r-progress.js",
     "/power-core/r-supplies.js",
+    "/power-core/rounds.js",
     "/power-core/src/browser.d.ts",
     "/power-core/src/browser/frame-timer.js",
     "/power-core/src/browser/gamepad.js",
