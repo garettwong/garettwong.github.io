@@ -1,18 +1,18 @@
-import {createChaos} from './power-core/chaos.js?v=53';
+import {createChaos} from './power-core/chaos.js?v=54';
 import {createHazards} from './power-core/hazards.js?v=48';
 import {attachRProgress,drawRIndicator} from './power-core/r-progress.js?v=47';
-import {createSupplies,rCount} from './power-core/native-supplies.js?v=53';
+import {createSupplies,rCount} from './power-core/native-supplies.js?v=54';
 import {drawProjectiles} from './power-core/bullets.js';
 import {attachBombCollisions} from './power-core/bombs.js';
 import {NES,Controller} from './power-core/src/index.js';
-import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom,RUSH_PROFILES,CHAOS_PROFILES} from './power-core/contra.js?v=53';
+import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom,RUSH_PROFILES,CHAOS_PROFILES} from './power-core/contra.js?v=54';
 export async function startPowerPlayer(game,send){
  if(!isPowerRom(game.id))throw new Error('This Power profile does not match the ROM.');
  const host=document.getElementById('game');host.replaceChildren();
  const canvas=document.createElement('canvas');canvas.width=256;canvas.height=240;canvas.style.cssText='width:100%;height:100%;object-fit:contain;image-rendering:pixelated';host.append(canvas);
  const play=document.createElement('button');play.textContent='Play Contra Power';play.style.cssText='position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);padding:16px 24px;background:#ff684f;color:#fff;border:0;border-radius:12px;font:bold 18px sans-serif;z-index:8';host.append(play);
  const ctx=canvas.getContext('2d',{alpha:false}),image=ctx.createImageData(256,240);
- let audio=null,node=null,left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,frameCount=0;
+ let audio=null,node=null,left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,fastRatio=2,frameCount=0;
  const nes=new NES({sampleRate:48000,onFrame(pixels){for(let i=0;i<pixels.length;i++){const c=pixels[i],j=i*4;image.data[j]=c&255;image.data[j+1]=(c>>8)&255;image.data[j+2]=(c>>16)&255;image.data[j+3]=255;}},onAudioSample(l,r){left.push(l);right.push(r);}});
  let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);attachBombCollisions(nes);const progression=attachRProgress(nes);const hazards=createHazards(nes);
  const chaos=Object.hasOwn(CHAOS_PROFILES,game.id)?createChaos(nes,game.bulletStyle||CHAOS_PROFILES[game.id],'more',game.bulletAngles||32):null;
@@ -41,7 +41,7 @@ export async function startPowerPlayer(game,send){
   setPowerOptions:options=>{chaos?.configure(options);supplies?.setDensity(options.density);},
   getState:()=>new TextEncoder().encode(JSON.stringify({format:'contra-power-1',rom:game.id,state:nes.toJSON(),supplies:supplies?.save(),hazards:hazards.save(),chaos:chaos?.save()})),
   loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);progression.reset();hazards.load(saved.hazards);chaos?.load(saved.chaos);chaos?.configure({density:'more'});supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);node?.port.postMessage({clear:true});left=[];right=[];},
-  toggleSlowMotion(){},setFastForwardRatio(){},toggleFastForward:value=>{speed=value?2:1;node?.port.postMessage({clear:true});}
+  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;node?.port.postMessage({clear:true});}
  }};
  play.addEventListener('click',()=>resume().catch(()=>send('operation-error',{text:'Could not start audio. Tap Play again.'})));
  send('art-state',{active:false,reason:'off'});send('status',{text:'Starting Contra…'});

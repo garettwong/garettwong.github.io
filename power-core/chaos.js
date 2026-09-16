@@ -4,7 +4,8 @@ const CAPACITY=16384,TAU=Math.PI*2;
 // Own the full field in typed arrays. The native engine receives nearby shots
 // for its real enemy damage routines; unselected shots continue to fly normally.
 export function createChaos(nes,profile,density='more',directions=64){
- directions=[16,32,64].includes(directions)?directions:64;
+ if(profile==='WAVE')profile='S';
+ directions=[16,32,64,128].includes(directions)?directions:64;
  density=Object.hasOwn(CHAOS_DENSITIES,density)?density:'more';
  const on=new Uint8Array(CAPACITY),kind=new Uint8Array(CAPACITY),owner=new Uint8Array(CAPACITY),age=new Uint16Array(CAPACITY);
  const ox=new Float32Array(CAPACITY),oy=new Float32Array(CAPACITY),angle=new Float32Array(CAPACITY),x=new Float32Array(CAPACITY),y=new Float32Array(CAPACITY),px=new Float32Array(CAPACITY),py=new Float32Array(CAPACITY);
@@ -59,7 +60,7 @@ export function createChaos(nes,profile,density='more',directions=64){
   let b=0;
   function map(i){if(b>=255||marked[i]===frame||!on[i]||x[i]<0||x[i]>=252||y[i]<0||y[i]>=233)return false;marked[i]=frame;bridge[b]=i;
    for(let a=0x6000;a<=0x7900;a+=256)m[a+b]=0;
-   m[0x6200+b]=4;m[0x6000+b]=0x1f;m[0x6d00+b]=1;m[0x6500+b]=Math.round(y[i]+7);m[0x6600+b]=Math.round(x[i]+4);m[0x6e00+b]=owner[i];m[0x7500+b]=kind[i]>2?0:kind[i];
+   m[0x6200+b]=4;m[0x6000+b]=0;m[0x6d00+b]=1;m[0x6500+b]=Math.round(y[i]+7);m[0x6600+b]=Math.round(x[i]+4);m[0x6e00+b]=owner[i];m[0x7500+b]=kind[i]>2?0:kind[i];
    const vx=x[i]-px[i],vy=y[i]-py[i];m[0x6a00+b]=Math.floor(vx)&255;m[0x6800+b]=Math.round((vx-Math.floor(vx))*256)&255;m[0x6900+b]=Math.floor(vy)&255;m[0x6700+b]=Math.round((vy-Math.floor(vy))*256)&255;b++;return true;}
   // Prioritize bullets near every enemy, including long flame/claw hit areas.
   for(let e=0;e<16&&b<255;e++)if(m[0x4b8+e]&&m[0x528+e]!==0){
@@ -75,12 +76,12 @@ export function createChaos(nes,profile,density='more',directions=64){
  // thousands of pellets. No thousands of drawImage calls on the phone.
  function render(image){const pixels=new Uint32Array(image.data.buffer,image.data.byteOffset,256*240);const dot=(xx,yy,c)=>{if(xx>=0&&xx<256&&yy>=0&&yy<240)pixels[yy*256+xx]=c;};
   for(let i=0;i<CAPACITY;i++)if(on[i]){const xx=Math.round(x[i]),yy=Math.round(y[i]);if(kind[i]===2){const ca=Math.cos(angle[i]),sa=Math.sin(angle[i]);for(let j=0;j<7;j++){const lx=Math.round(xx-ca*j),ly=Math.round(yy-sa*j);const c=(frame%8<4)?0xffffffff:0xffffd9ab;dot(lx,ly,c);dot(lx+1,ly,c);}}
-   else if(kind[i]===3){const ca=Math.cos(angle[i]),sa=Math.sin(angle[i]);for(let j=0;j<8;j++){dot(Math.round(xx-ca*j),Math.round(yy-sa*j),j<5?0xffffffff:0xff268aff);dot(Math.round(xx-ca*j)+1,Math.round(yy-sa*j),j<5?0xffffdcc0:0xff268aff);}}
+   else if(kind[i]===3){const ca=Math.cos(angle[i]),sa=Math.sin(angle[i]);for(let j=0;j<5;j++)dot(Math.round(xx-ca*j),Math.round(yy-sa*j),j<3?0xffffffff:0xff268aff);}
    else if(kind[i]===4||kind[i]===6){const r=kind[i]===4?3:2;for(let dy=-r;dy<=r;dy++)for(let dx=-r;dx<=r;dx++)if(dx*dx+dy*dy<=r*r)dot(xx+dx,yy+dy,(Math.abs(dx)+Math.abs(dy)<2)?0xffbaffff:(frame%4<2?0xff126aff:0xff24bfff));if(kind[i]===4){dot(xx,yy-4,0xffeeeeee);dot(xx+1,yy-5,0xff24bfff);}}
-   else if(kind[i]===5||kind[i]===7){const c=kind[i]===5?0xfff5b5ff:0xffffed99;for(let j=-2;j<=2;j++){dot(xx+j,yy,c);dot(xx,yy+j,c);}dot(xx,yy,0xffffffff);}
+   else if(kind[i]===5||kind[i]===7){const c=kind[i]===5?0xfff5b5ff:0xffffed99;for(let j=0;j<5;j++)dot(Math.round(xx-Math.cos(angle[i])*j),Math.round(yy-Math.sin(angle[i])*j),j===0?0xffffffff:c);}
    else{const c=kind[i]===1?0xffffffff:0xff3030ff;for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)if(Math.abs(dx)+Math.abs(dy)<=3)dot(xx+dx,yy+dy,c);dot(xx,yy,kind[i]===1?0xffffffff:0xffadf4ff);dot(xx,yy-1,kind[i]===1?0xffffeeee:0xff38cfff);}}
  }
  function save(){const items=[];for(let i=0;i<CAPACITY;i++)if(on[i])items.push([kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]);return {version:1,profile,directions,density,frame,volley,stage,items};}
- function load(v){clear();if(v?.version!==1)return;if(['S','F','L','SFL','COMET','WAVE','STAR'].includes(v.profile))profile=v.profile;directions=[16,32,64].includes(v.directions)?v.directions:64;density=Object.hasOwn(CHAOS_DENSITIES,v.density)?v.density:density;frame=Number.isInteger(v.frame)?v.frame:0;volley=v.volley||0;stage=v.stage;marked.fill(0);for(const row of (v.items||[]).slice(0,CAPACITY)){if(row.length!==10||!row.every(Number.isFinite)||row[0]<0||row[0]>7||row[1]<0||row[1]>1)continue;const i=free.pop();[kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]=row;on[i]=1;active++;}}
- return {configure(v){if(Object.hasOwn(CHAOS_DENSITIES,v.density))density=v.density;if(['S','F','L','SFL','COMET','WAVE','STAR'].includes(v.style))profile=v.style;if([16,32,64].includes(v.angles))directions=v.angles;},get options(){return {style:profile,angles:directions};},before,after,render,save,load,get stats(){return {active,emitted,blocked,capacity:CAPACITY,density};},get bullets(){const r=[];for(let i=0;i<CAPACITY;i++)if(on[i])r.push({x:x[i],y:y[i],kind:kind[i],age:age[i],angle:angle[i]});return r;}};
+ function load(v){clear();if(v?.version!==1)return;if(v.profile==='WAVE')profile='S';if(['S','F','L','SFL','COMET','STAR'].includes(v.profile))profile=v.profile;directions=[16,32,64,128].includes(v.directions)?v.directions:64;density=Object.hasOwn(CHAOS_DENSITIES,v.density)?v.density:density;frame=Number.isInteger(v.frame)?v.frame:0;volley=v.volley||0;stage=v.stage;marked.fill(0);for(const row of (v.items||[]).slice(0,CAPACITY)){if(row.length!==10||!row.every(Number.isFinite)||row[0]<0||row[0]>7||row[1]<0||row[1]>1||row[0]===4||row[0]===6)continue;const i=free.pop();[kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]=row;on[i]=1;active++;}}
+ return {configure(v){if(Object.hasOwn(CHAOS_DENSITIES,v.density))density=v.density;if(['S','F','L','SFL','COMET','STAR'].includes(v.style))profile=v.style;if([16,32,64,128].includes(v.angles))directions=v.angles;},get options(){return {style:profile,angles:directions};},before,after,render,save,load,get stats(){return {active,emitted,blocked,capacity:CAPACITY,density};},get bullets(){const r=[];for(let i=0;i<CAPACITY;i++)if(on[i])r.push({x:x[i],y:y[i],kind:kind[i],age:age[i],angle:angle[i]});return r;}};
 }

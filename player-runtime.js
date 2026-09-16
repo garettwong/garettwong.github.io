@@ -28,7 +28,7 @@
  for(const button of document.querySelectorAll?.('[data-action]')||[])button.addEventListener('click',()=>{if(button.dataset.action==='screenshot')screenShot();else if(started)send('save-menu');});
  const stopAutosave=()=>{if(autosaveTimer){clearInterval(autosaveTimer);autosaveTimer=0;}};
 
- const applySpeed=value=>{const gm=window.EJS_emulator?.gameManager;if(!gm)throw new Error("The game is not ready yet.");gm.toggleSlowMotion(0);window.EJS_emulator.isSlowMotion=false;gm.setFastForwardRatio(2);gm.toggleFastForward(value===2?1:0);send("speed",{value});};
+ const applySpeed=value=>{const gm=window.EJS_emulator?.gameManager;if(!gm)throw new Error("The game is not ready yet.");gm.toggleSlowMotion(0);window.EJS_emulator.isSlowMotion=false;gm.setFastForwardRatio(value);gm.toggleFastForward(value>1?1:0);send("speed",{value});};
 
  addEventListener("error",event=>{if(!loaded)return;console.error("Player error",event.message);send("error",{text:"The player encountered an error. Return to your library and reopen the game."});});
 
@@ -46,7 +46,7 @@
 
   if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
-  if(d.type==="speed"){try{applySpeed(d.value===2?2:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
+  if(d.type==="speed"){try{applySpeed([1,2,3].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
   if(d.type==="retry-art"){if(engine){engine.metrics.recoveries=0;await engine.retry();}return;}
 
@@ -62,8 +62,8 @@
 
    const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");romUrl=URL.createObjectURL(new Blob([game.bytes]));
 
-   if((await import("/power-core/contra.js?v=53")).isPowerRom(game.id)){
-    const {startPowerPlayer}=await import("/power-player.js?v=53");
+   if((await import("/power-core/contra.js?v=54")).isPowerRom(game.id)){
+    const {startPowerPlayer}=await import("/power-player.js?v=54");
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});return;
    }
 
