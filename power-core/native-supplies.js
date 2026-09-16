@@ -1,6 +1,6 @@
 // Native enemy slots, graphics, damage, explosions and winged R collection.
 // Keep four free slots for the stage's own enemies and bullets.
-export const DENSITIES={more:{interval:360,cap:2},much:{interval:180,cap:4},lots:{interval:75,cap:6}};
+export const DENSITIES={more:{interval:360,cap:2},much:{interval:180,cap:4},lots:{interval:75,cap:6},crazy:{interval:40,cap:8}};
 const properties={0:[0x82,0x22,1],2:[0x0f,0x32,0xf0],3:[0x0b,0x32,1],7:[0x8f,0x30,8]};
 export const rCount=m=>m[0x7e6]+256*m[0x7e8]+65536*m[0x7ea];
 export function spawnNative(m,type,x,y,slot){
