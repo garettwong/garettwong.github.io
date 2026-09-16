@@ -1,5 +1,5 @@
 import {countR} from './r-progress.js';
-export const CHAOS_DENSITIES={more:24,much:36,lots:48,crazy:60};
+export const CHAOS_DENSITIES={more:4,much:6,lots:8,crazy:10};
 const CAPACITY=16384,TAU=Math.PI*2;
 // Own the full field in typed arrays. The native engine receives nearby shots
 // for its real enemy damage routines; unselected shots continue to fly normally.
