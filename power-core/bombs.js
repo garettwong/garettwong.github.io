@@ -12,7 +12,7 @@ export function hitBombs(nes){
   if(!death||!m[0x30a+e])continue;
   const ex=m[0x33e+e],ey=m[0x324+e];
   for(let b=0;b<255;b++){
-   if(!m[0x6200+b]||!m[0x6000+b]||m[0x6d00+b]!==1)continue;
+   if(!m[0x6200+b]||(!m[0x6000+b]&&!m[0x7df0])||m[0x6d00+b]!==1)continue;
    const x=m[0x6600+b]-4,y=m[0x6500+b]-7;
    const vx=(m[0x6a00+b]<<24>>24)+m[0x6800+b]/256,vy=(m[0x6900+b]<<24>>24)+m[0x6700+b]/256;
    // Bomb-sized ellipse, swept over the pellet's last movement to avoid tunnelling.

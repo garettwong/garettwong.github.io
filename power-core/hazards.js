@@ -18,7 +18,7 @@ export function createHazards(nes){
    if(m[0x30]===5&&routine>=3){const dx=m[0x5d8+e]<<24>>24,dy=m[0x5e8+e]<<24>>24;left+=Math.min(0,dx);right+=Math.max(0,dx);bottom+=Math.max(0,dy);}
    if(m[0x30]===6)top-=Math.min(8,m[0x5d8+e])*8;
    for(let b=0;b<255;b++){
-    if(!m[0x6200+b]||!m[0x6000+b]||m[0x6d00+b]!==1)continue;
+    if(!m[0x6200+b]||(!m[0x6000+b]&&!m[0x7df0])||m[0x6d00+b]!==1)continue;
     const bx=m[0x6600+b]-4,by=m[0x6500+b]-7,vx=(m[0x6a00+b]<<24>>24)+m[0x6800+b]/256,vy=(m[0x6900+b]<<24>>24)+m[0x6700+b]/256;
     // Swept segment versus the visible hazard rectangle; fast lasers cannot tunnel.
     let lo=0,hi=1;for(const [a,v,min,max] of [[bx-vx,vx,left,right],[by-vy,vy,top,bottom]]){if(!v){if(a<min||a>max)hi=-1;}else{const p=(min-a)/v,q=(max-a)/v;lo=Math.max(lo,Math.min(p,q));hi=Math.min(hi,Math.max(p,q));}}
