@@ -18,7 +18,7 @@ export function createChaos(nes,profile,density='more',directions=64){
  function addShot(k,p,cx,cy,a){if(!free.length){blocked++;return false;}const i=free.pop();on[i]=1;kind[i]=k;owner[i]=p;age[i]=0;angle[i]=a;ox[i]=x[i]=px[i]=cx;oy[i]=y[i]=py[i]=cy;active++;emitted++;return true;}
  function branch(i,k,count,spread){if(free.length<count-1)return;const cx=x[i],cy=y[i],a=angle[i],p=owner[i];release(i);for(let j=0;j<count;j++)addShot(k,p,cx,cy,k===6?j*TAU/count:a+(j-(count-1)/2)*spread);}
  function emit(p,m){
-  const kinds=profile==='SFL'?[0,1,2]:[{S:0,F:1,L:2,COMET:3,WAVE:4,STAR:5}[profile]??0],needed=directions*kinds.length;
+  const kinds=profile==='SFL'?[0,1,2]:[{S:0,F:1,L:2,COMET:3,WAVE:4,STAR:5,SWARM:8,SKYFALL:9,PACK:10,LANCE:11,HELIX:12}[profile]??0],needed=directions*kinds.length;
   if(free.length<needed){blocked++;return false;} // Never erase a live ring to admit another.
   const turn=volley++*.018;
   for(let d=0;d<directions;d++)for(const k of kinds){const i=free.pop();on[i]=1;kind[i]=k;owner[i]=p;age[i]=0;angle[i]=d*TAU/directions+turn;ox[i]=x[i]=px[i]=m[0x334+p];oy[i]=y[i]=py[i]=m[0x31a+p]-8;active++;emitted++;}
@@ -46,11 +46,18 @@ export function createChaos(nes,profile,density='more',directions=64){
   for(let i=0;i<CAPACITY;i++)if(on[i]){
    px[i]=x[i];py[i]=y[i];if(m[0x41])oy[i]+=m[0x68];else ox[i]-=m[0x68];
    const t=++age[i],speed=speeds[owner[i]];
-   if(kind[i]===3){
+   if(kind[i]===3||kind[i]>=8){
     // Missiles turn gradually toward a live enemy; no lock-on to loose R pickups.
-    const cell=Math.max(0,Math.min(7,y[i]>>5))*8+Math.max(0,Math.min(7,x[i]>>5)),target=targetGrid[cell];
-    if(target>=0){const desired=Math.atan2(targetY[target]-y[i],targetX[target]-x[i]);let delta=(desired-angle[i])%TAU;if(delta>Math.PI)delta-=TAU;else if(delta< -Math.PI)delta+=TAU;angle[i]+=Math.max(-.12,Math.min(.12,delta));}
-    x[i]+=Math.cos(angle[i])*speed-(m[0x41]?0:m[0x68]);y[i]+=Math.sin(angle[i])*speed+(m[0x41]?m[0x68]:0);
+    const cell=Math.max(0,Math.min(7,y[i]>>5))*8+Math.max(0,Math.min(7,x[i]>>5));
+    const target=kind[i]===8&&targets?i%targets:targetGrid[cell];
+    const k=kind[i],rising=k===9&&t<13;let desired=angle[i];
+    if(rising)desired=-Math.PI/2;
+    else if(target>=0){desired=Math.atan2(targetY[target]-y[i],targetX[target]-x[i]);if(k===12)desired+=Math.sin(t*.4+(i%2)*Math.PI)*.65;}
+    if(rising||target>=0){let delta=(desired-angle[i])%TAU;if(delta>Math.PI)delta-=TAU;else if(delta< -Math.PI)delta+=TAU;const turn=k===9?.28:k===11?.075:k===12?.22:k===13?.20:.12;angle[i]+=Math.max(-turn,Math.min(turn,delta));}
+    const velocity=speed*(k===10?.72:k===11?1.55:k===13?1.25:1);
+    x[i]+=Math.cos(angle[i])*velocity-(m[0x41]?0:m[0x68]);y[i]+=Math.sin(angle[i])*velocity+(m[0x41]?m[0x68]:0);
+    if(k===9&&y[i]<8)y[i]=8;
+    if(k===10&&(t>=24||t>=6&&target>=0&&Math.hypot(targetX[target]-x[i],targetY[target]-y[i])<28)){branch(i,13,3,.5);continue;}
    }else{
     const a=angle[i],ca=Math.cos(a),sa=Math.sin(a),radius=kind[i]===1?Math.min(12,t*.9):kind[i]===2?Math.min(4,t*.4):0,spin=t*.52;
     const along=(kind[i]===4?3:kind[i]===6?2:speed)*t+radius*Math.cos(spin),side=radius*Math.sin(spin);
@@ -73,7 +80,7 @@ export function createChaos(nes,profile,density='more',directions=64){
   let b=0;
   function map(i){if(b>=255||marked[i]===frame||!on[i]||x[i]<0||x[i]>=252||y[i]<0||y[i]>=233)return false;marked[i]=frame;bridge[b]=i;
    for(let a=0x6000;a<=0x7900;a+=256)m[a+b]=0;
-   m[0x6200+b]=4;m[0x6000+b]=0;m[0x6d00+b]=1;m[0x6500+b]=Math.round(y[i]+7);m[0x6600+b]=Math.round(x[i]+4);m[0x6e00+b]=owner[i];m[0x7500+b]=kind[i]>2?0:kind[i];
+   m[0x6200+b]=4;m[0x6000+b]=0;m[0x6d00+b]=1;m[0x6500+b]=Math.round(y[i]+7);m[0x6600+b]=Math.round(x[i]+4);m[0x6e00+b]=owner[i];m[0x7500+b]=kind[i]===11?2:kind[i]>2?0:kind[i];
    const vx=x[i]-px[i],vy=y[i]-py[i];m[0x6a00+b]=Math.floor(vx)&255;m[0x6800+b]=Math.round((vx-Math.floor(vx))*256)&255;m[0x6900+b]=Math.floor(vy)&255;m[0x6700+b]=Math.round((vy-Math.floor(vy))*256)&255;b++;return true;}
   // Prioritize bullets near every enemy, including long flame/claw hit areas.
   for(let e=0;e<16&&b<255;e++)if(m[0x4b8+e]&&m[0x528+e]!==0){
@@ -84,17 +91,17 @@ export function createChaos(nes,profile,density='more',directions=64){
   }
   for(let scanned=0;scanned<CAPACITY&&b<255;scanned++){cursor=(cursor+1)%CAPACITY;map(cursor);}
  }
- function after(){const m=nes.cpu.mem;for(let b=0;b<255;b++){const i=bridge[b];if(i>=0&&on[i]&&kind[i]!==2&&(m[0x6d00+b]!==1||!m[0x6200+b])){if(kind[i]===4)branch(i,6,12,0);else release(i);}}}
+ function after(){const m=nes.cpu.mem;for(let b=0;b<255;b++){const i=bridge[b];if(i>=0&&on[i]&&kind[i]!==2&&kind[i]!==11&&(m[0x6d00+b]!==1||!m[0x6200+b])){if(kind[i]===10)branch(i,13,3,.5);else if(kind[i]===4)branch(i,6,12,0);else release(i);}}}
  // Rasterize into the native 256x240 frame: one canvas upload, even with
  // thousands of pellets. No thousands of drawImage calls on the phone.
  function render(image){const pixels=new Uint32Array(image.data.buffer,image.data.byteOffset,256*240);const dot=(xx,yy,c)=>{if(xx>=0&&xx<256&&yy>=0&&yy<240)pixels[yy*256+xx]=c;};
   for(let i=0;i<CAPACITY;i++)if(on[i]){const xx=Math.round(x[i]),yy=Math.round(y[i]);if(kind[i]===2){const ca=Math.cos(angle[i]),sa=Math.sin(angle[i]);for(let j=0;j<7;j++){const lx=Math.round(xx-ca*j),ly=Math.round(yy-sa*j);const c=(frame%8<4)?0xffffffff:0xffffd9ab;dot(lx,ly,c);dot(lx+1,ly,c);}}
-   else if(kind[i]===3){const ca=Math.cos(angle[i]),sa=Math.sin(angle[i]);for(let j=0;j<5;j++)dot(Math.round(xx-ca*j),Math.round(yy-sa*j),j<3?0xffffffff:0xff268aff);}
+   else if(kind[i]===3||kind[i]>=8){const ca=Math.cos(angle[i]),sa=Math.sin(angle[i]);const color=({3:0xff268aff,8:0xffb3ff86,9:0xffffd780,10:0xff80cfff,11:0xfffff0b0,12:0xffffa8ed,13:0xff80cfff})[kind[i]],length=kind[i]===11?7:5;for(let j=0;j<length;j++)dot(Math.round(xx-ca*j),Math.round(yy-sa*j),j<2?0xffffffff:color);}
    else if(kind[i]===4||kind[i]===6){const r=kind[i]===4?3:2;for(let dy=-r;dy<=r;dy++)for(let dx=-r;dx<=r;dx++)if(dx*dx+dy*dy<=r*r)dot(xx+dx,yy+dy,(Math.abs(dx)+Math.abs(dy)<2)?0xffbaffff:(frame%4<2?0xff126aff:0xff24bfff));if(kind[i]===4){dot(xx,yy-4,0xffeeeeee);dot(xx+1,yy-5,0xff24bfff);}}
    else if(kind[i]===5||kind[i]===7){const c=kind[i]===5?0xfff5b5ff:0xffffed99;for(let j=0;j<5;j++)dot(Math.round(xx-Math.cos(angle[i])*j),Math.round(yy-Math.sin(angle[i])*j),j===0?0xffffffff:c);}
    else{const c=kind[i]===1?0xffffffff:0xff3030ff;for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)if(Math.abs(dx)+Math.abs(dy)<=3)dot(xx+dx,yy+dy,c);dot(xx,yy,kind[i]===1?0xffffffff:0xffadf4ff);dot(xx,yy-1,kind[i]===1?0xffffeeee:0xff38cfff);}}
  }
  function save(){const items=[];for(let i=0;i<CAPACITY;i++)if(on[i])items.push([kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]);return {version:1,profile,directions,density,frame,volley,stage,items};}
- function load(v){clear();if(v?.version!==1)return;if(v.profile==='WAVE')profile='S';if(['S','F','L','SFL','COMET','STAR'].includes(v.profile))profile=v.profile;directions=[16,32,64,128,256].includes(v.directions)?v.directions:64;density=Object.hasOwn(CHAOS_DENSITIES,v.density)?v.density:density;frame=Number.isInteger(v.frame)?v.frame:0;volley=v.volley||0;stage=v.stage;marked.fill(0);for(const row of (v.items||[]).slice(0,CAPACITY)){if(row.length!==10||!row.every(Number.isFinite)||row[0]<0||row[0]>7||row[1]<0||row[1]>1||row[0]===4||row[0]===6)continue;const i=free.pop();[kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]=row;on[i]=1;active++;}}
- return {configure(v){if(Object.hasOwn(CHAOS_DENSITIES,v.density))density=v.density;if(['S','F','L','SFL','COMET','STAR'].includes(v.style))profile=v.style;if([16,32,64,128,256].includes(v.angles))directions=v.angles;},get options(){return {style:profile,angles:directions};},before,after,render,save,load,get stats(){return {active,emitted,blocked,capacity:CAPACITY,density};},get bullets(){const r=[];for(let i=0;i<CAPACITY;i++)if(on[i])r.push({x:x[i],y:y[i],kind:kind[i],age:age[i],angle:angle[i]});return r;}};
+ function load(v){clear();if(v?.version!==1)return;if(v.profile==='WAVE')profile='S';if(['S','F','L','SFL','COMET','STAR','SWARM','SKYFALL','PACK','LANCE','HELIX'].includes(v.profile))profile=v.profile;directions=[16,32,64,128,256].includes(v.directions)?v.directions:64;density=Object.hasOwn(CHAOS_DENSITIES,v.density)?v.density:density;frame=Number.isInteger(v.frame)?v.frame:0;volley=v.volley||0;stage=v.stage;marked.fill(0);for(const row of (v.items||[]).slice(0,CAPACITY)){if(row.length!==10||!row.every(Number.isFinite)||row[0]<0||row[0]>13||row[1]<0||row[1]>1||row[0]===4||row[0]===6)continue;const i=free.pop();[kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]=row;on[i]=1;active++;}}
+ return {configure(v){if(Object.hasOwn(CHAOS_DENSITIES,v.density))density=v.density;if(['S','F','L','SFL','COMET','STAR','SWARM','SKYFALL','PACK','LANCE','HELIX'].includes(v.style))profile=v.style;if([16,32,64,128,256].includes(v.angles))directions=v.angles;},get options(){return {style:profile,angles:directions};},before,after,render,save,load,get stats(){return {active,emitted,blocked,capacity:CAPACITY,density};},get bullets(){const r=[];for(let i=0;i<CAPACITY;i++)if(on[i])r.push({x:x[i],y:y[i],kind:kind[i],age:age[i],angle:angle[i]});return r;}};
 }

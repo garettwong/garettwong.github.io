@@ -62,8 +62,8 @@
 
    const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");romUrl=URL.createObjectURL(new Blob([game.bytes]));
 
-   if((await import("/power-core/contra.js?v=56")).isPowerRom(game.id)){
-    const {startPowerPlayer}=await import("/power-player.js?v=56");
+   if((await import("/power-core/contra.js?v=57")).isPowerRom(game.id)){
+    const {startPowerPlayer}=await import("/power-player.js?v=57");
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});return;
    }
 
