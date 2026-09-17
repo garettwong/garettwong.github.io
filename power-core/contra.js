@@ -1,11 +1,11 @@
 // Enhanced timing is deliberately restricted to the matching Power ROM.
 export const POWER_ROM='c1e9b8c73218d9fd9c79b0f04f9d6bc947473f377dc44e7b09e2bda189d42c2a';
 export function attachPowerTiming(nes,factor=8){
- const advance=nes.ppu.advanceDots.bind(nes.ppu),clock=nes.papu.clockFrameCounter.bind(nes.papu);
+ const ppu=nes.ppu,papu=nes.papu,mem=nes.cpu.mem,advance=ppu.advanceDots.bind(ppu),clock=papu.clockFrameCounter.bind(papu);
  let dotsCredit=0,audioCredit=0;
- const busy=()=>nes.cpu.mem[0x18]===5&&nes.cpu.mem[0x1b]!==0;
- nes.ppu.advanceDots=dots=>{const scaled=busy()?dots:dots*factor;dotsCredit+=scaled;const actual=Math.floor(dotsCredit/factor);dotsCredit%=factor;if(actual)advance(actual);};
- nes.papu.clockFrameCounter=(cycles,catchup=0)=>{audioCredit+=busy()?cycles:cycles*factor;const actual=Math.floor(audioCredit/factor);audioCredit%=factor;if(actual)clock(actual,Math.min(catchup,actual));};
+ ppu.advanceDots=dots=>{dotsCredit+=mem[0x18]===5&&mem[0x1b]!==0?dots:dots*factor;if(dotsCredit>=factor){const actual=(dotsCredit/factor)|0;dotsCredit-=actual*factor;advance(actual);}};
+ papu.clockFrameCounter=(cycles,catchup=0)=>{audioCredit+=mem[0x18]===5&&mem[0x1b]!==0?cycles:cycles*factor;if(audioCredit>=factor){const actual=(audioCredit/factor)|0;audioCredit-=actual*factor;clock(actual,catchup<actual?catchup:actual);}};
+
 }
 export function projectiles(nes){
  const mem=nes.cpu.mem,result=[];if(mem[0x18]!==5)return result;
