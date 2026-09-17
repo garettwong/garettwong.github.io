@@ -1,13 +1,13 @@
 import {countR} from './r-progress.js';
 export const CHAOS_DENSITIES={more:4,much:6,lots:8,crazy:10};
 const CAPACITY=65536,TAU=Math.PI*2;
-const MISSILE_COLORS={3:0xff268aff,8:0xffb3ff86,9:0xffffd780,10:0xff80cfff,11:0xfffff0b0,12:0xffffa8ed,13:0xff80cfff,14:0xffffffff};
+const MISSILE_COLORS={3:0xff268aff,8:0xffb3ff86,9:0xffffd780,10:0xff80cfff,11:0xfffff0b0,12:0xffffa8ed,13:0xff80cfff,14:0xff66ff33};
 const spinCos=Float32Array.from({length:152},(_,i)=>Math.cos(i*.52)),spinSin=Float32Array.from({length:152},(_,i)=>Math.sin(i*.52));
 // Own the full field in typed arrays. The native engine receives nearby shots
 // for its real enemy damage routines; unselected shots continue to fly normally.
 export function createChaos(nes,profile,density='more',directions=64){
  if(profile==='WAVE')profile='S';
- directions=[16,32,64,128,256,512,1024].includes(directions)?directions:64;
+ directions=[16,32,64,128,256,512,1024,2048].includes(directions)?directions:64;
  density=Object.hasOwn(CHAOS_DENSITIES,density)?density:'more';
  const on=new Uint8Array(CAPACITY),kind=new Uint8Array(CAPACITY),owner=new Uint8Array(CAPACITY),age=new Uint16Array(CAPACITY);
  const dirCos=new Float32Array(CAPACITY),dirSin=new Float32Array(CAPACITY);
@@ -19,11 +19,11 @@ export function createChaos(nes,profile,density='more',directions=64){
  function clear(){on.fill(0);free.length=0;for(let i=CAPACITY-1;i>=0;i--)free.push(i);active=0;phase.fill(1);pending.fill(0);held.fill(false);bridge.fill(-1);}
  clear();
  function release(i){if(on[i]){on[i]=0;free.push(i);active--;}}
- function addShot(k,p,cx,cy,a){if(free.length<=(k===14?0:32)){blocked++;return false;}const i=free.pop();on[i]=1;kind[i]=k;owner[i]=p;age[i]=0;angle[i]=a;dirCos[i]=Math.cos(a);dirSin[i]=Math.sin(a);ox[i]=x[i]=px[i]=cx;oy[i]=y[i]=py[i]=cy;active++;emitted++;return true;}
+ function addShot(k,p,cx,cy,a){if(free.length<=(k===14?0:256)){blocked++;return false;}const i=free.pop();on[i]=1;kind[i]=k;owner[i]=p;age[i]=0;angle[i]=a;dirCos[i]=Math.cos(a);dirSin[i]=Math.sin(a);ox[i]=x[i]=px[i]=cx;oy[i]=y[i]=py[i]=cy;active++;emitted++;return true;}
  function branch(i,k,count,spread){if(free.length<count-1)return;const cx=x[i],cy=y[i],a=angle[i],p=owner[i];release(i);for(let j=0;j<count;j++)addShot(k,p,cx,cy,k===6?j*TAU/count:a+(j-(count-1)/2)*spread);}
  function emit(p,m){
   const kinds=profile==='SFL'?[0,1,2]:[{S:0,F:1,L:2,COMET:3,WAVE:4,STAR:5,SWARM:8,SKYFALL:9,PACK:10,LANCE:11,HELIX:12,FRONT:8}[profile]??0],needed=directions*kinds.length;
-  if(free.length<needed+32){blocked++;return false;} // Never erase a live ring to admit another.
+  if(free.length<needed+256){blocked++;return false;} // Never erase a live ring to admit another.
   const turn=volley++*.018;
   for(let d=0;d<directions;d++)for(const k of kinds){const i=free.pop();on[i]=1;kind[i]=k;owner[i]=p;age[i]=0;angle[i]=d*TAU/directions+turn;dirCos[i]=Math.cos(angle[i]);dirSin[i]=Math.sin(angle[i]);ox[i]=x[i]=px[i]=m[0x334+p];oy[i]=y[i]=py[i]=m[0x31a+p]-8;active++;emitted++;}
   return true;
@@ -54,12 +54,14 @@ export function createChaos(nes,profile,density='more',directions=64){
     // Missiles turn gradually toward a live enemy; no lock-on to loose R pickups.
     const cell=Math.max(0,Math.min(7,y[i]>>5))*8+Math.max(0,Math.min(7,x[i]>>5));
     const target=kind[i]===8&&targets?i%targets:targetGrid[cell];
-    const k=kind[i],rising=k===9&&t<13;let desired=angle[i];
+    const k=kind[i],rising=k===9&&t<13,guidanceStep=directions>=2048?2:1;
+    if(t===1||t%guidanceStep===0){let desired=angle[i];
     if(rising)desired=-Math.PI/2;
     else if(target>=0){desired=Math.atan2(targetY[target]-y[i],targetX[target]-x[i]);if(k===12)desired+=Math.sin(t*.4+(i%2)*Math.PI)*.65;}
-    if(rising||target>=0){let delta=(desired-angle[i])%TAU;if(delta>Math.PI)delta-=TAU;else if(delta< -Math.PI)delta+=TAU;const turn=k===9?.28:k===11?.075:k===12?.22:k===13?.20:.12;angle[i]+=Math.max(-turn,Math.min(turn,delta));}
+    if(rising||target>=0){let delta=(desired-angle[i])%TAU;if(delta>Math.PI)delta-=TAU;else if(delta< -Math.PI)delta+=TAU;const turn=k===9?.28:k===11?.075:k===12?.22:k===13?.20:.12;angle[i]+=Math.max(-turn*guidanceStep,Math.min(turn*guidanceStep,delta));}
+    dirCos[i]=Math.cos(angle[i]);dirSin[i]=Math.sin(angle[i]);}
     const velocity=speed*(k===10?.72:k===11?1.55:k===13?1.25:1);
-    x[i]+=Math.cos(angle[i])*velocity-(m[0x41]?0:m[0x68]);y[i]+=Math.sin(angle[i])*velocity+(m[0x41]?m[0x68]:0);
+    x[i]+=dirCos[i]*velocity-(m[0x41]?0:m[0x68]);y[i]+=dirSin[i]*velocity+(m[0x41]?m[0x68]:0);
     if(k===9&&y[i]<8)y[i]=8;
     if(k===10&&(t>=24||t>=6&&target>=0&&Math.hypot(targetX[target]-x[i],targetY[target]-y[i])<28)){branch(i,13,3,.5);continue;}
    }else{
@@ -78,7 +80,7 @@ export function createChaos(nes,profile,density='more',directions=64){
    if(down&&!held[p])pending[p]=Math.max(pending[p],2);held[p]=down;
    if(m[0x90+p]!==1){pending[p]=0;continue;}
    if(!down&&!pending[p]){phase[p]=1;continue;}
-   if(profile==='FRONT'&&down&&frame%3===0){const aim=m[0x40]?-Math.PI/2:([-Math.PI/2,-Math.PI/4,0,Math.PI/4,0,Math.PI,Math.PI*.75,Math.PI,-Math.PI*.75,-Math.PI/2,Math.PI/2][m[0xc2+p]]??(m[0xd8+p]&64?Math.PI:0));addShot(14,p,m[0x334+p],m[0x31a+p]-8,aim);}
+   if(profile==='FRONT'&&down&&frame%3===0){const aim=m[0x40]?-Math.PI/2:([-Math.PI/2,-Math.PI/4,0,Math.PI/4,0,Math.PI,Math.PI*.75,Math.PI,-Math.PI*.75,-Math.PI/2,Math.PI/2][m[0xc2+p]]??(m[0xd8+p]&64?Math.PI:0));for(let lane=-2;lane<=2;lane++)addShot(14,p,m[0x334+p]-Math.sin(aim)*lane*2,m[0x31a+p]-8+Math.cos(aim)*lane*2,aim);}
    const base=CHAOS_DENSITIES[density],r=rates[p],rate=base*(1+.8*r/(r+4));
    let bursts=0;while(phase[p]>=1&&bursts++<2&&(down||pending[p])){phase[p]--;if(emit(p,m)&&pending[p])pending[p]--;}phase[p]=Math.min(3,phase[p]+rate/60);
   }
@@ -108,6 +110,6 @@ export function createChaos(nes,profile,density='more',directions=64){
    else{const c=kind[i]===1?0xffffffff:0xff3030ff;for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)if(Math.abs(dx)+Math.abs(dy)<=3)dot(xx+dx,yy+dy,c);dot(xx,yy,kind[i]===1?0xffffffff:0xffadf4ff);dot(xx,yy-1,kind[i]===1?0xffffeeee:0xff38cfff);}}
  }
  function save(){const items=[];for(let i=0;i<CAPACITY;i++)if(on[i])items.push([kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]);return {version:1,profile,directions,density,frame,volley,stage,items};}
- function load(v){clear();if(v?.version!==1)return;if(v.profile==='WAVE')profile='S';if(['S','F','L','SFL','COMET','STAR','SWARM','SKYFALL','PACK','LANCE','HELIX','FRONT'].includes(v.profile))profile=v.profile;directions=[16,32,64,128,256,512,1024].includes(v.directions)?v.directions:64;density=Object.hasOwn(CHAOS_DENSITIES,v.density)?v.density:density;frame=Number.isInteger(v.frame)?v.frame:0;volley=v.volley||0;stage=v.stage;marked.fill(0);for(const row of (v.items||[]).slice(0,CAPACITY)){if(row.length!==10||!row.every(Number.isFinite)||row[0]<0||row[0]>14||row[1]<0||row[1]>1||row[0]===4||row[0]===6)continue;const i=free.pop();[kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]=row;dirCos[i]=Math.cos(angle[i]);dirSin[i]=Math.sin(angle[i]);on[i]=1;active++;}}
- return {configure(v){if(Object.hasOwn(CHAOS_DENSITIES,v.density))density=v.density;if(['S','F','L','SFL','COMET','STAR','SWARM','SKYFALL','PACK','LANCE','HELIX','FRONT'].includes(v.style))profile=v.style;if([16,32,64,128,256,512,1024].includes(v.angles))directions=v.angles;},get options(){return {style:profile,angles:directions};},before,after,render,save,load,get stats(){return {active,emitted,blocked,capacity:CAPACITY,density};},get bullets(){const r=[];for(let i=0;i<CAPACITY;i++)if(on[i])r.push({x:x[i],y:y[i],kind:kind[i],age:age[i],angle:angle[i]});return r;}};
+ function load(v){clear();if(v?.version!==1)return;if(v.profile==='WAVE')profile='S';if(['S','F','L','SFL','COMET','STAR','SWARM','SKYFALL','PACK','LANCE','HELIX','FRONT'].includes(v.profile))profile=v.profile;directions=[16,32,64,128,256,512,1024,2048].includes(v.directions)?v.directions:64;density=Object.hasOwn(CHAOS_DENSITIES,v.density)?v.density:density;frame=Number.isInteger(v.frame)?v.frame:0;volley=v.volley||0;stage=v.stage;marked.fill(0);for(const row of (v.items||[]).slice(0,CAPACITY)){if(row.length!==10||!row.every(Number.isFinite)||row[0]<0||row[0]>14||row[1]<0||row[1]>1||row[0]===4||row[0]===6)continue;const i=free.pop();[kind[i],owner[i],age[i],ox[i],oy[i],angle[i],x[i],y[i],px[i],py[i]]=row;dirCos[i]=Math.cos(angle[i]);dirSin[i]=Math.sin(angle[i]);on[i]=1;active++;}}
+ return {configure(v){if(Object.hasOwn(CHAOS_DENSITIES,v.density))density=v.density;if(['S','F','L','SFL','COMET','STAR','SWARM','SKYFALL','PACK','LANCE','HELIX','FRONT'].includes(v.style))profile=v.style;if([16,32,64,128,256,512,1024,2048].includes(v.angles))directions=v.angles;},get options(){return {style:profile,angles:directions};},before,after,render,save,load,get stats(){return {active,emitted,blocked,capacity:CAPACITY,density};},get bullets(){const r=[];for(let i=0;i<CAPACITY;i++)if(on[i])r.push({x:x[i],y:y[i],kind:kind[i],age:age[i],angle:angle[i]});return r;}};
 }
