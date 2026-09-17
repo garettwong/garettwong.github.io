@@ -1,6 +1,6 @@
 // Native enemy slots, graphics, damage, explosions and winged R collection.
 // Keep four free slots for the stage's own enemies and bullets.
-export const DENSITIES={more:{interval:360,cap:2},much:{interval:180,cap:4},lots:{interval:75,cap:6},crazy:{interval:40,cap:8}};
+export const DENSITIES={zero:{interval:1,cap:0},more:{interval:360,cap:2},much:{interval:180,cap:4},lots:{interval:75,cap:6},crazy:{interval:40,cap:8}};
 const properties={0:[0x82,0x22,1],2:[0x0f,0x32,0xf0],3:[0x0b,0x32,1],7:[0x8f,0x30,8]};
 export const rCount=m=>m[0x7e6]+256*m[0x7e8]+65536*m[0x7ea];
 export function spawnNative(m,type,x,y,slot){
@@ -24,6 +24,7 @@ export function createSupplies(nes,density='more',seed=Date.now()){
  function update(){
   const m=nes.cpu.mem;if(m[0x18]!==5||m[0x1c]||m[0x90]!==1)return;
   if(state.stage!==m[0x30]){state.stage=m[0x30];state.tracked=[];state.pending=[];state.used=[];state.frame=0;}
+  if(state.density==='zero'){state.pending=[];return;}
   // Boxes and capsules convert their own slot to an R item. Turrets retain
   // their normal explosion; only confirmed destruction earns a reward.
   state.tracked=state.tracked.filter(t=>{
