@@ -9,6 +9,7 @@ export function createRounds(nes){
  if(damagePC<0)throw new Error('Unsupported Contra damage routine');
  function install(){cpu=nes.cpu;const write=cpu.write.bind(cpu);cpu.write=function(addr,val){
   if(addr>=0x578&&addr<0x588){const e=addr-0x578,m=this.mem;
+   if(this.REG_PC===damagePC)nes.onPowerHit?.(m[0x17]);
    if(this.REG_PC===damagePC&&completed>0){
     const damage=scaledR?m[0]:Math.max(0,m[addr]-val),factor=1+2*completed;
     credit[e]+=damage;const whole=Math.floor(credit[e]/factor);credit[e]-=whole*factor;

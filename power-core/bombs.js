@@ -23,6 +23,7 @@ export function hitBombs(nes){
    // the grenade ground-impact routine, which deliberately keeps blast damage.
    m[0x578+e]=0;m[0x598+e]|=0x81;m[0x528+e]=0x0b;m[0x4b8+e]=4;
    if(m[0x7500+b]!==2){m[0x6d00+b]=2;m[0x6b00+b]=6;}
+   nes.onPowerHit?.(m[0x6e00+b]);
    hits++;break;
   }
  }

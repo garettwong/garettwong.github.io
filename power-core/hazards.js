@@ -23,6 +23,7 @@ export function createHazards(nes){
     // Swept segment versus the visible hazard rectangle; fast lasers cannot tunnel.
     let lo=0,hi=1;for(const [a,v,min,max] of [[bx-vx,vx,left,right],[by-vy,vy,top,bottom]]){if(!v){if(a<min||a>max)hi=-1;}else{const p=(min-a)/v,q=(max-a)/v;lo=Math.max(lo,Math.min(p,q));hi=Math.min(hi,Math.max(p,q));}}
     if(lo>hi)continue;
+   nes.onPowerHit?.(m[0x6e00+b]);
     m[0x578+e]=0;m[0x598+e]|=0x81;
     if(routine===2){const c=explode(m,e);if(c)dying.push(c);}
     else{if(m[0x30]===6)m[0x5e8+e]|=1;m[0x4b8+e]=4;m[0x538+e]=0;dying.push({slot:e,type,level:m[0x30]});}
