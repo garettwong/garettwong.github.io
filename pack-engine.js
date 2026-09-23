@@ -1,4 +1,4 @@
-/* Scene-art replacement is separate from game logic. Unmatched scenes are untouched. */
+/* SYNC66 *//* Scene-art replacement is separate from game logic. Unmatched scenes are untouched. */
 
 (function(global){
 
@@ -16,7 +16,7 @@
 
    this.scratch=document.createElement("canvas");this.scratch.width=256;this.scratch.height=240;this.ctx=this.scratch.getContext("2d",{willReadFrequently:true});this.out=overlay.getContext("2d",{alpha:false});
 
-   this.debug=new URLSearchParams(location.search).has('debug');this.metrics={frames:0,workerMs:0,drawMs:0};
+   this.debug=new URLSearchParams(location.search).has('debug');this.sync=!new URLSearchParams(location.search).has('artworker');this.metrics={frames:0,workerMs:0,drawMs:0};
 
   }
 
@@ -32,21 +32,21 @@
 
    if(this.prepared)return;
 
-   const index=await fetch('/packs/index.json').then(r=>r.json()),entry=index.packs.find(p=>p.romSha256.includes(this.gameId));
+   const index=await fetch('/packs/index.json?v=66').then(r=>r.json()),entry=index.packs.find(p=>p.romSha256.includes(this.gameId));
 
    if(!entry){this.prepared=true;return;}
 
-   const pack=global.DreamPatternTools.validateSearch(validatePack(await fetch(entry.manifest).then(r=>r.json())));
+   const pack=global.DreamPatternTools.validateSearch(validatePack(await fetch(entry.manifest+'?v=66').then(r=>r.json())));
 
    if(!pack.romSha256.includes(this.gameId))throw new Error('Artwork pack does not match this ROM');
 
    this.rules=pack.rules;this.effects=pack.effects===true;
 
-   for(const [key,validator] of [['scenery',global.DreamSceneryTools],['map',global.DreamMapTools],['ui',global.DreamHudTools]])if(pack[key]){if(typeof pack[key]!=='string'||!pack[key].startsWith('/packs/')||pack[key].includes('..'))throw new Error('Invalid artwork path');this[key]=validator.validate(await fetch(pack[key]).then(r=>r.json()));}
+   for(const [key,validator] of [['scenery',global.DreamSceneryTools],['map',global.DreamMapTools],['ui',global.DreamHudTools]])if(pack[key]){if(typeof pack[key]!=='string'||!pack[key].startsWith('/packs/')||pack[key].includes('..'))throw new Error('Invalid artwork path');this[key]=validator.validate(await fetch(pack[key]+'?v=66').then(r=>r.json()));}
 
    if(this.ui)await global.DreamHudTools.loadFont();
 
-   const catalogue=await fetch('/packs/playback-assets.json').then(r=>{if(!r.ok)throw new Error('Artwork download failed');return r.json();});
+   const catalogue=await fetch('/packs/playback-assets.json?v=66').then(r=>{if(!r.ok)throw new Error('Artwork download failed');return r.json();});
 
    const names=new Set(this.rules.map(r=>r.image));for(const t of this.map?.tiles||[])names.add(t.image);if(this.scenery)for(const scene of [this.scenery,...this.scenery.alternates||[]])names.add(scene.image);
 
@@ -74,7 +74,7 @@
 
    this.setEnabled(this.enabled);
 
-   try{this.workerReady=false;this.workerStartedAt=performance.now();this.lastTickAt=this.workerStartedAt;this.worker=new Worker('/pack-worker.js?v=5');this.worker.onmessage=event=>{const d=event.data;if(d.type==='ready'){this.workerReady=true;this.notifyDisplay(false,'ready');if(global.DreamFrameSource)global.DreamFrameSource.requested=true;return;}this.busy=false;if(d.error){this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}if(this.enabled&&!this.stopped&&d.generation===this.generation){try{this.frameInterval=Math.max(1000/60,(d.workerMs||0));this.nextFrameAt=0;this.present(d);if(global.DreamFrameSource)global.DreamFrameSource.requested=true;}catch(error){console.warn(error);this.stop('Artwork display failed');this.status('Artwork display failed');}}};this.worker.onerror=()=>{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');};this.worker.postMessage({type:'init',rules:this.rules,scenery:this.scenery,map:this.map,ui:this.ui,effects:this.effects});}catch{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}
+   if(this.sync){this.workerReady=true;this.nativeListener=()=>this.syncFrame();if(global.DreamFrameSource){global.DreamFrameSource.onFrame=this.nativeListener;global.DreamFrameSource.requested=true;}this.notifyDisplay(false,'preparing');this.status('Artwork on');this.tick();return;}try{this.workerReady=false;this.workerStartedAt=performance.now();this.lastTickAt=this.workerStartedAt;this.worker=new Worker('/pack-worker.js?v=5');this.worker.onmessage=event=>{const d=event.data;if(d.type==='ready'){this.workerReady=true;this.notifyDisplay(false,'ready');if(global.DreamFrameSource)global.DreamFrameSource.requested=true;return;}this.busy=false;if(d.error){this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}if(this.enabled&&!this.stopped&&d.generation===this.generation){try{this.frameInterval=Math.max(1000/60,(d.workerMs||0));this.nextFrameAt=0;this.present(d);if(global.DreamFrameSource)global.DreamFrameSource.requested=true;}catch(error){console.warn(error);this.stop('Artwork display failed');this.status('Artwork display failed');}}};this.worker.onerror=()=>{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');};this.worker.postMessage({type:'init',rules:this.rules,scenery:this.scenery,map:this.map,ui:this.ui,effects:this.effects});}catch{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}
 
    this.nativeListener=()=>this.dispatchFrame();if(global.DreamFrameSource)global.DreamFrameSource.onFrame=this.nativeListener;this.notifyDisplay(false,'preparing');this.status('Starting artwork');this.tick();
 
@@ -104,7 +104,7 @@
 
    // Keep the last complete composite while its successor's images decode.
 
-   this.waitingFrame=d;const needed=[...this.requiredImages(d)].filter(p=>!this.assets.has(p)&&!this.failedAssets.has(p));for(const p of needed)this.loadAsset(p);if(needed.length){this.metrics.waitingImages=needed.length;return;}this.waitingFrame=null;this.metrics.waitingImages=0;
+   this.waitingFrame=d;const needed=[...this.requiredImages(d)].filter(p=>!this.assets.has(p)&&!this.failedAssets.has(p));for(const p of needed)this.loadAsset(p);this.waitingFrame=null;this.metrics.waitingImages=needed.length;
 
    const start=performance.now(),pixels=d.pixels,matches=d.matches.map(r=>r.index===undefined?r:{...this.rules[r.index],region:r.region}),{scenery,ui,effects,mapTiles}=d;if(ui)ui.pixels=pixels;
 
@@ -146,6 +146,16 @@
 
   }
 
+  syncFrame(){
+   const native=global.DreamFrameSource;if(!native)return;native.requested=true;
+   if(this.stopped||!this.enabled||this.suspended||document.hidden||native.canvas!==this.canvas||!native.pixels)return;
+   const pixels=native.pixels,t0=performance.now();native.pixels=null;let d,same=false;const prev=this.prevPixels;
+   if(prev&&this.prevResult){same=true;const a=new Uint32Array(pixels.buffer,pixels.byteOffset,61440),b=new Uint32Array(prev.buffer,prev.byteOffset,61440);for(let i=0;i<61440;i++)if(a[i]!==b[i]){same=false;break;}}
+   if(same)d={...this.prevResult,pixels};else{d=this.analyse(pixels);if(!prev)this.prevPixels=new Uint8ClampedArray(pixels.length);this.prevPixels.set(pixels);this.prevResult={...d,pixels:null};}
+   d.capturedAt=native.capturedAt;d.workerMs=performance.now()-t0;this.metrics.analyseMs=d.workerMs;this.metrics.maxAnalyseMs=Math.max(this.metrics.maxAnalyseMs||0,d.workerMs);
+   try{this.present(d);}catch(error){console.warn(error);this.stop('Artwork display failed');this.status('Artwork display failed');}
+   native.reuse=pixels;
+  }
   dispatchFrame(){
    if(this.stopped||!this.enabled||this.busy||this.waitingFrame||document.hidden||this.suspended||this.workerReady===false||!this.worker)return;
    try{const native=global.DreamFrameSource;if(native?.canvas!==this.canvas||!native.pixels?.byteLength){if(native)native.requested=true;return;}

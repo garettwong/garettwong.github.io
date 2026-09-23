@@ -1,4 +1,4 @@
-/* Observe native framebuffer uploads without altering the emulator or its pixels. */
+/* SYNC66 *//* Observe native framebuffer uploads without altering the emulator or its pixels. */
 
 (()=>{
 
@@ -18,7 +18,7 @@
 
     const key=[method,w,h,format,type,data.BYTES_PER_ELEMENT].join(':');if(!seen.has(key)&&state.uploads.length<12){seen.add(key);state.uploads.push(key);}
 
-    if(w===256&&h===240&&format===6408&&type===5121&&data.byteLength>=(args[9]||0)+256*240*4){state.canvas=this.canvas;state.totalFrames++;if(state.enabled&&state.requested){state.requested=false;state.capturedAt=globalThis.performance?.now?.()??0;const offset=args[9]||0,bytes=new Uint8ClampedArray(data.buffer,data.byteOffset+offset,256*240*4);state.pixels=new Uint8ClampedArray(bytes);for(let i=3;i<state.pixels.length;i+=4)state.pixels[i]=255;state.seq++;state.format='rgba8';try{state.onFrame?.();}catch(error){console.warn('Artwork frame listener failed',error);}}}
+    if(w===256&&h===240&&format===6408&&type===5121&&data.byteLength>=(args[9]||0)+256*240*4){state.canvas=this.canvas;state.totalFrames++;if(state.enabled&&state.requested){state.requested=false;state.capturedAt=globalThis.performance?.now?.()??0;const offset=args[9]||0,bytes=new Uint8ClampedArray(data.buffer,data.byteOffset+offset,256*240*4);state.pixels=(state.reuse&&state.reuse.length===bytes.length)?(state.reuse.set(bytes),state.reuse):new Uint8ClampedArray(bytes);state.reuse=null;for(let i=3;i<state.pixels.length;i+=4)state.pixels[i]=255;state.seq++;state.format='rgba8';try{state.onFrame?.();}catch(error){console.warn('Artwork frame listener failed',error);}}}
 
    }
 
