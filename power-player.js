@@ -1,13 +1,13 @@
-import {createShield} from './power-core/shield.js?v=63';
-import {createRounds} from './power-core/rounds.js?v=63';
-import {createChaos} from './power-core/chaos.js?v=63';
-import {createHazards} from './power-core/hazards.js?v=63';
+import {createShield} from './power-core/shield.js?v=64';
+import {createRounds} from './power-core/rounds.js?v=64';
+import {createChaos} from './power-core/chaos.js?v=64';
+import {createHazards} from './power-core/hazards.js?v=64';
 import {attachRProgress,drawRIndicator} from './power-core/r-progress.js?v=47';
-import {createSupplies,rCount} from './power-core/native-supplies.js?v=63';
+import {createSupplies,rCount} from './power-core/native-supplies.js?v=64';
 import {drawProjectiles} from './power-core/bullets.js';
-import {attachBombCollisions} from './power-core/bombs.js?v=63';
+import {attachBombCollisions} from './power-core/bombs.js?v=64';
 import {NES,Controller} from './power-core/src/index.js';
-import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom,RUSH_PROFILES,CHAOS_PROFILES} from './power-core/contra.js?v=63';
+import {attachPowerTiming,projectiles,POWER_ROM,isPowerRom,RUSH_PROFILES,CHAOS_PROFILES} from './power-core/contra.js?v=64';
 export async function startPowerPlayer(game,send){
  if(!isPowerRom(game.id))throw new Error('This Power profile does not match the ROM.');
  const host=document.getElementById('game');host.replaceChildren();
@@ -17,7 +17,7 @@ export async function startPowerPlayer(game,send){
  let audio=null,node=null,left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,fastRatio=2,frameCount=0,renderFrame=true;
  const nes=new NES({sampleRate:48000,onFrame(pixels){if(!renderFrame)return;for(let i=0;i<pixels.length;i++){framePixels[i]=pixels[i]|0xff000000;}},onAudioSample(l,r){if(speed===1){left.push(l);right.push(r);}}});
  let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);attachBombCollisions(nes);const progression=attachRProgress(nes);const hazards=createHazards(nes);const rounds=createRounds(nes);const shield=createShield(nes,game.hitShield,game.shieldSeconds);
- const chaos=Object.hasOwn(CHAOS_PROFILES,game.id)?createChaos(nes,game.bulletStyle||CHAOS_PROFILES[game.id],'more',game.bulletAngles||32):null;
+ const chaos=Object.hasOwn(CHAOS_PROFILES,game.id)?createChaos(nes,game.bulletStyle||CHAOS_PROFILES[game.id],'more',game.bulletAngles||32):null;chaos?.configure({look:game.bulletLook||'pro'});
  const supplies=(chaos||Object.hasOwn(RUSH_PROFILES,game.id))?createSupplies(nes,game.rDensity):null;
  function draw(){chaos?.render(image);ctx.putImageData(image,0,0);if(!chaos)drawProjectiles(ctx,nes,game.id!==POWER_ROM);supplies?.draw(ctx);drawRIndicator(ctx,nes.cpu.mem);rounds.draw(ctx);shield.draw(ctx);}
  function flushAudio(){if(node&&left.length&&speed===1){const l=Float32Array.from(left),r=Float32Array.from(right);node.port.postMessage({left:l,right:r},[l.buffer,r.buffer]);}left=[];right=[];}
