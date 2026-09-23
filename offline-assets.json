@@ -1,8 +1,8 @@
 {
-  "version": "cf3be68161013e5d",
+  "version": "770f6b737f297718",
   "assets": [
     "/apple-touch-icon.png",
-    "/assets/index-BvmV_uoj.js",
+    "/assets/index-BfULGx1-.js",
     "/assets/index-BySBNqI4.css",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
@@ -24,6 +24,7 @@
     "/game-thumbnails/L64.png",
     "/game-thumbnails/S64.png",
     "/game-thumbnails/SFL64.png",
+    "/game-thumbnails/arsenal-pro.png",
     "/game-thumbnails/chaos-F.png",
     "/game-thumbnails/chaos-L.png",
     "/game-thumbnails/chaos-S.png",
@@ -33,6 +34,7 @@
     "/game-thumbnails/dbz2.png",
     "/game-thumbnails/super-final.png",
     "/games/CT2_SS_NORMAL_v2.nes",
+    "/games/Contra_Arsenal_Pro.nes",
     "/games/Contra_Chaos_49.zip",
     "/games/Contra_Chaos_F64.nes",
     "/games/Contra_Chaos_F64_v51.nes",
