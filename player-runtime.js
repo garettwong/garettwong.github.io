@@ -6,7 +6,7 @@
 
  const send=(type,extra={},transfer)=>parent.postMessage({channel:"nes-dream",type,...extra},origin,transfer||[]);
 
- let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal";
+ let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal",specialPending=null;
  const specialGames={
   "3a865832c3438d2a1ab3c981f8873897c1ef2c1d4101fa510f345c0fed8a520c":{name:"Captain Tsubasa II LIVE Power Stable",trick:"skill-direct"},
   "adc2d3e1327c8419f13228740e290e88c8557b0f8b4f134d8cd337f41ce3053e":{name:"Captain Tsubasa II LIVE Power Previous",trick:"skill-upgrade"},
@@ -20,32 +20,38 @@
  };
  let specialGame=null;
  const specialButton=document.getElementById("special-button");
- const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Power edition":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
- // Nestopia's uncompressed NST save has NES RAM at offset 65. Check the header
- // before touching it, then verify the game's actual SUPER flag after loading.
- const validSuperState=state=>state?.length>2109&&state[0]===78&&state[1]===83&&state[2]===84&&state[3]===26&&state[56]===82&&state[57]===65&&state[58]===77;
- const readSuperMode=gm=>{try{const state=gm.getState();return validSuperState(state)?state[2109]===165?"high":"normal":null;}catch{return null;}};
+ const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Power edition":specialPending?"SUPER · WAIT":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
+ // The browser core wraps its Nestopia state, unlike standalone Nestopia.
+ // Find the NES RAM chunk instead of relying on a fixed save-state offset.
+ const superRamStart=state=>{if(!state||state.length<2200)return -1;let nestopia=-1;for(let i=0;i<Math.min(64,state.length-4);i++)if(state[i]===78&&state[i+1]===83&&state[i+2]===84&&state[i+3]===26){nestopia=i;break;}if(nestopia<0)return -1;for(let i=nestopia+8;i<Math.min(nestopia+512,state.length-2057);i++)if(state[i]===82&&state[i+1]===65&&state[i+2]===77&&state[i+3]===0&&state[i+4]===1&&state[i+5]===8&&state[i+6]===0&&state[i+7]===0)return i+9;return -1;};
+ const readSuperMode=gm=>{try{const state=gm.getState(),start=superRamStart(state);return start<0?null:state[start+0x7fc]===165?"high":"normal";}catch{return null;}};
+ const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const runSpecial=async()=>{
-  if(!started||!specialGame||specialBusy)return;
+  if(!started||!specialGame||specialBusy||specialPending)return;
   if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
   if(specialGame.trick==="skill-upgrade"){document.getElementById("special-help-upgrade").hidden=false;return;}
   const gm=window.EJS_emulator?.gameManager;
-  if(!gm?.getState||!gm?.loadState){send("operation-error",{text:"The game is not ready yet."});return;}
+  if(!gm?.getState||!gm?.setCheat||!gm?.resetCheat){send("operation-error",{text:"The game is not ready yet."});return;}
   specialBusy=true;specialButton?.classList.add("busy");
   try{
-   window.DreamTouch?.releaseAll();
-   const state=gm.getState();
-   if(!validSuperState(state))throw new Error("This NES core could not safely switch SUPER.");
-   const target=state[2109]===165?0:165;
-   state[2109]=target;
-   state[2107]=1;
-   state[2108]=0;
-   await Promise.resolve(gm.loadState(state));
-   engine?.resetFrame();
-   const after=readSuperMode(gm);
-   if(after===null||(after==="high")!==(target===165))throw new Error("SUPER did not change in the game. Please try again.");
-   specialMode=after;
-   send("status",{text:`Team super ability ${after==="high"?"ON":"OFF"}.`});
+    window.DreamTouch?.releaseAll();
+    const before=readSuperMode(gm);
+    if(before===null)throw new Error("Cannot read SUPER state from this NES core.");
+   const target=before==="high"?"normal":"high",code=target==="high"?"07FC:A5":"07FC:00";
+   // Nestopia's raw RAM cheats apply on every emulated frame, including
+   // cutscenes. Briefly mark the open stat panel dirty, then keep only mode.
+   gm.resetCheat();
+   gm.setCheat(0,true,code);
+   gm.setCheat(1,true,"07FA:01");
+   const frame=gm.getFrameNum?.();
+   for(let i=0;i<20;i++){await delay(25);if(Number.isFinite(frame)&&gm.getFrameNum?.()-frame>=2)break;}
+   gm.resetCheat();
+   gm.setCheat(0,true,code);
+   let after=readSuperMode(gm);
+   for(let i=0;i<20&&after!==target;i++){await delay(25);after=readSuperMode(gm);}
+   specialMode=after??"unknown";
+   if(after!==target){specialPending=target;send("status",{text:"SUPER is ready and will apply when play resumes."});const watch=()=>{if(!specialPending)return;const current=readSuperMode(gm);if(current===target){specialMode=target;specialPending=null;showSpecialMode();send("status",{text:`Team super ability ${target==="high"?"ON":"OFF"}.`});}else setTimeout(watch,500);};setTimeout(watch,500);}
+   else send("status",{text:`Team super ability ${target==="high"?"ON":"OFF"}.`});
   }catch(error){send("operation-error",{text:error.message||"Could not switch team ability."});}
   finally{specialBusy=false;specialButton?.classList.remove("busy");showSpecialMode();}
  };
@@ -89,7 +95,7 @@
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
-  if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
+  if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
   if(d.type==="speed"){try{applySpeed([1,2,3,4,6,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
@@ -136,6 +142,3 @@
  addEventListener("visibilitychange",()=>{if(document.hidden){snapshot("auto");engine?.suspend();window.EJS_emulator?.pause?.();}else{engine?.resume();}});send("ready");
 
 })();
-
-
-
