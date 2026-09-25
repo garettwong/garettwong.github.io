@@ -1,9 +1,9 @@
 {
-  "version": "def6e234a34b2c67",
+  "version": "9d5289f18eff75e6",
   "assets": [
     "/apple-touch-icon.png",
+    "/assets/index-Bh63fRmY.js",
     "/assets/index-BySBNqI4.css",
-    "/assets/index-CLgD-MAp.js",
     "/classic63.html",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
@@ -35,6 +35,7 @@
     "/game-thumbnails/dbz2-hd.png",
     "/game-thumbnails/dbz2.png",
     "/game-thumbnails/super-final.png",
+    "/games/CT2_SS_DIRECT.nes",
     "/games/CT2_SS_DYNAMIC.nes",
     "/games/CT2_SS_NORMAL_v2.nes",
     "/games/CT2_SS_SPECIAL.nes",
