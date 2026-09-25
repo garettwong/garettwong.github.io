@@ -8,7 +8,8 @@
 
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal";
  const specialGames={
-  "adc2d3e1327c8419f13228740e290e88c8557b0f8b4f134d8cd337f41ce3053e":{name:"Captain Tsubasa II LIVE Power",trick:"skill-direct"},
+  "3a865832c3438d2a1ab3c981f8873897c1ef2c1d4101fa510f345c0fed8a520c":{name:"Captain Tsubasa II LIVE Power Stable",trick:"skill-direct"},
+  "adc2d3e1327c8419f13228740e290e88c8557b0f8b4f134d8cd337f41ce3053e":{name:"Captain Tsubasa II LIVE Power Previous",trick:"skill-upgrade"},
   "a22e58d15433bac26d07078fec1a22c188fa99c2e24d5a94a81e4d92fb756d86":{name:"Captain Tsubasa II LIVE Stats Previous",trick:"skill-upgrade"},
   "85f070c32efb46295a23ab182bd51c670a9b0defbf2e817025817a697ad028e2":{name:"Captain Tsubasa II Direct Previous",trick:"skill-upgrade"},
   "274d07edf49ab8064ddf2de5c16c6f2c71aa13614b561ee473079ab97f5dcf17":{name:"Captain Tsubasa II Live Skills",trick:"skill-upgrade"},
@@ -19,23 +20,34 @@
  };
  let specialGame=null;
  const specialButton=document.getElementById("special-button");
- const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Stats edition":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
+ const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Power edition":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
+ // Nestopia's uncompressed NST save has NES RAM at offset 65. Check the header
+ // before touching it, then verify the game's actual SUPER flag after loading.
+ const validSuperState=state=>state?.length>2109&&state[0]===78&&state[1]===83&&state[2]===84&&state[3]===26&&state[56]===82&&state[57]===65&&state[58]===77;
+ const readSuperMode=gm=>{try{const state=gm.getState();return validSuperState(state)?state[2109]===165?"high":"normal":null;}catch{return null;}};
  const runSpecial=async()=>{
   if(!started||!specialGame||specialBusy)return;
   if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
   if(specialGame.trick==="skill-upgrade"){document.getElementById("special-help-upgrade").hidden=false;return;}
   const gm=window.EJS_emulator?.gameManager;
-  if(!gm?.simulateInput){send("operation-error",{text:"The game is not ready yet."});return;}
+  if(!gm?.getState||!gm?.loadState){send("operation-error",{text:"The game is not ready yet."});return;}
   specialBusy=true;specialButton?.classList.add("busy");
-  const chord=[0,8,2,3];
   try{
    window.DreamTouch?.releaseAll();
-   for(const code of chord)gm.simulateInput(0,code,1);
-   await new Promise(resolve=>setTimeout(resolve,180));
-   specialMode=specialMode==="unknown"?"unknown":specialMode==="high"?"normal":"high";
-   send("status",{text:specialMode==="unknown"?"Super ability toggled. Each press switches it on or off.":`Team super ability ${specialMode==="high"?"ON":"OFF"}.`});
+   const state=gm.getState();
+   if(!validSuperState(state))throw new Error("This NES core could not safely switch SUPER.");
+   const target=state[2109]===165?0:165;
+   state[2109]=target;
+   state[2107]=1;
+   state[2108]=0;
+   await Promise.resolve(gm.loadState(state));
+   engine?.resetFrame();
+   const after=readSuperMode(gm);
+   if(after===null||(after==="high")!==(target===165))throw new Error("SUPER did not change in the game. Please try again.");
+   specialMode=after;
+   send("status",{text:`Team super ability ${after==="high"?"ON":"OFF"}.`});
   }catch(error){send("operation-error",{text:error.message||"Could not switch team ability."});}
-  finally{for(const code of chord)gm.simulateInput(0,code,0);specialBusy=false;specialButton?.classList.remove("busy");showSpecialMode();}
+  finally{specialBusy=false;specialButton?.classList.remove("busy");showSpecialMode();}
  };
  specialButton?.addEventListener("click",runSpecial);
  document.getElementById("special-help-upgrade-close")?.addEventListener("click",()=>{document.getElementById("special-help-upgrade").hidden=true;});
@@ -77,7 +89,7 @@
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
-  if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode="unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
+  if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
   if(d.type==="speed"){try{applySpeed([1,2,3,4,6,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
@@ -109,7 +121,7 @@
 
    window.EJS_ready=()=>send("status",{text:"Tap Play game to start"});
 
-   window.EJS_onGameStart=async()=>{started=true;setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("started");};
+   window.EJS_onGameStart=async()=>{started=true;specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("started");};
 
    const script=document.createElement("script");script.src="/emulator/data/loader.js";script.onerror=()=>fail("Could not load the emulator. Check your connection and reopen the game.");document.body.appendChild(script);
 
@@ -124,4 +136,6 @@
  addEventListener("visibilitychange",()=>{if(document.hidden){snapshot("auto");engine?.suspend();window.EJS_emulator?.pause?.();}else{engine?.resume();}});send("ready");
 
 })();
+
+
 
