@@ -8,14 +8,16 @@
 
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal";
  const specialGames={
+  "274d07edf49ab8064ddf2de5c16c6f2c71aa13614b561ee473079ab97f5dcf17":{name:"Captain Tsubasa II Live Skills",trick:"skill-select"},
   "696c3cba4590cd3470148f1c1f8c16e2bb9f8079316a6c9f1a05f1459250d508":{name:"Captain Tsubasa II",trick:"skill-toggle"},
+  "e2591b9ea48d7f65e4e64779b5c23a0da6bc4126d7c80dd149c6b21849dfa10c":{name:"Captain Tsubasa II Classic",trick:"skill-upgrade"},
   "dbc70fade29e34e3ce0e8e2c62a21aca3892aff4f588821de74c332e1153447a":{name:"Contra Super Final",trick:"bullet-settings"},
   "1da4a85d61803e64df61c743a6253e02c0639ee7b68a72a4dfe815779622ca7f":{name:"Contra Arsenal Pro",trick:"bullet-settings"}
  };
  let specialGame=null;
  const specialButton=document.getElementById("special-button");
  const specialManual=document.getElementById("special-manual");
- const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialMode==="unknown"?"SPECIAL · ?":`SPECIAL · ${specialMode==="high"?"HIGH":"NORMAL"}`;};
+ const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"SPECIAL edition":specialMode==="unknown"?"SPECIAL · ?":`SPECIAL · ${specialMode==="high"?"HIGH":"NORMAL"}`;};
  const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const specialInput=async code=>{const gm=window.EJS_emulator?.gameManager;if(!gm?.simulateInput)throw new Error("The game is not ready.");gm.simulateInput(0,code,1);try{await wait(140);}finally{gm.simulateInput(0,code,0);}await wait(340);};
  const specialMenuType=async()=>{
@@ -35,10 +37,11 @@
    return left>=7&&narrow>=4&&wide<=1?"ground":left>=7&&wide>=4&&narrow<=1?"skill":"other";
   }finally{image.close();}
  };
- const showSpecialManual=()=>{const panel=document.getElementById(specialGame?.trick==="bullet-settings"?"special-help-contra":"special-help");if(panel)panel.hidden=false;};
+ const showSpecialManual=()=>{const panel=document.getElementById(specialGame?.trick==="bullet-settings"?"special-help-contra":specialGame?.trick==="skill-upgrade"?"special-help-upgrade":"special-help");if(panel)panel.hidden=false;};
  const runSpecial=async()=>{
   if(!started||!specialGame||specialBusy)return;
   if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
+  if(specialGame.trick==="skill-upgrade"||specialMode==="unknown"){showSpecialManual();return;}
   specialBusy=true;specialButton?.classList.add("busy");if(specialButton)specialButton.textContent="Switching…";
   const priorSpeed=selectedSpeed;
   let rejected=false;
@@ -51,11 +54,12 @@
    }
    window.DreamTouch?.releaseAll();
    if(priorSpeed!==1)applySpeed(1);
-   // The special action is on the Dribble menu's fourth page, third row.
+   // The skill actions are on the Dribble menu's fourth page.
    // Run only after the ordinary ground action selector is open.
    for(const code of [4,8,2,2,2])await specialInput(code);
    if(await specialMenuType()!=="skill")throw new Error("The skill menu did not open. Try again from the ground action menu.");
-   for(const code of [5,5,8])await specialInput(code);
+   const choice=specialGame.trick==="skill-toggle"?[5,5,8]:specialMode==="high"?[5,8]:[8];
+   for(const code of choice)await specialInput(code);
    specialMode=specialMode==="normal"?"high":specialMode==="high"?"normal":"unknown";
    send("status",{text:specialMode==="unknown"?"Skill switch sent. Check HIGH / OFF in the action menu.":`Team skill: ${specialMode.toUpperCase()}`});
   }catch(error){if(!rejected)send("operation-error",{text:error.message||"Could not use this trick. Open the ground action menu and try again."});}
@@ -65,7 +69,8 @@
  specialManual?.addEventListener("click",showSpecialManual);
  document.querySelector('#touch-controls [data-code="3"]')?.addEventListener("pointerdown",()=>document.body.classList.remove("intro-pending"));
  document.querySelector('#touch-controls [data-code="3"]')?.addEventListener("click",()=>document.body.classList.remove("intro-pending"));
- for(const id of ["special-help","special-help-contra"])document.getElementById(id+"-close")?.addEventListener("click",()=>{document.getElementById(id).hidden=true;});
+ for(const id of ["special-help","special-help-contra","special-help-upgrade"])document.getElementById(id+"-close")?.addEventListener("click",()=>{document.getElementById(id).hidden=true;});
+ document.getElementById("special-upgrade-open")?.addEventListener("click",()=>send("special-upgrade"));
 
  // Native uploads supply artwork pixels; do not force costly GPU buffer preservation.
 
@@ -135,7 +140,7 @@
 
    window.EJS_ready=()=>send("status",{text:"Tap Play game to start"});
 
-   window.EJS_onGameStart=async()=>{started=true;if(specialGame?.trick==="skill-toggle"){document.body.classList.add("intro-pending");setTimeout(()=>document.body.classList.remove("intro-pending"),18000);}setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("started");};
+   window.EJS_onGameStart=async()=>{started=true;if(specialGame?.trick==="skill-toggle"||specialGame?.trick==="skill-select"){document.body.classList.add("intro-pending");setTimeout(()=>document.body.classList.remove("intro-pending"),18000);}setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("started");};
 
    const script=document.createElement("script");script.src="/emulator/data/loader.js";script.onerror=()=>fail("Could not load the emulator. Check your connection and reopen the game.");document.body.appendChild(script);
 
