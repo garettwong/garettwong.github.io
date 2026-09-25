@@ -18,25 +18,53 @@
  const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialMode==="unknown"?"SPECIAL · ?":`SPECIAL · ${specialMode==="high"?"HIGH":"NORMAL"}`;};
  const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const specialInput=async code=>{const gm=window.EJS_emulator?.gameManager;if(!gm?.simulateInput)throw new Error("The game is not ready.");gm.simulateInput(0,code,1);try{await wait(140);}finally{gm.simulateInput(0,code,0);}await wait(340);};
+ const specialMenuType=async()=>{
+  const gm=window.EJS_emulator?.gameManager;
+  if(!gm?.screenshot)return "unknown";
+  const raw=await gm.screenshot();
+  const image=await createImageBitmap(new Blob([raw],{type:"image/png"}));
+  try{
+   const canvas=document.createElement("canvas");canvas.width=256;canvas.height=240;
+   const ctx=canvas.getContext("2d",{willReadFrequently:true});ctx.drawImage(image,0,0,256,240);
+   const pixels=ctx.getImageData(0,0,256,240).data;
+   const white=(x,y)=>{const i=(y*256+x)*4;return pixels[i]>190&&pixels[i+1]>190&&pixels[i+2]>190;};
+   const ys=[150,160,175,190,200];
+   const left=[148,152,156,180,184,188,192,196,200].filter(y=>white(9,y)).length;
+   const narrow=ys.filter(y=>white(145,y)).length;
+   const wide=ys.filter(y=>white(182,y)).length;
+   return left>=7&&narrow>=4&&wide<=1?"ground":left>=7&&wide>=4&&narrow<=1?"skill":"other";
+  }finally{image.close();}
+ };
  const showSpecialManual=()=>{const panel=document.getElementById(specialGame?.trick==="bullet-settings"?"special-help-contra":"special-help");if(panel)panel.hidden=false;};
  const runSpecial=async()=>{
   if(!started||!specialGame||specialBusy)return;
   if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
   specialBusy=true;specialButton?.classList.add("busy");if(specialButton)specialButton.textContent="Switching…";
   const priorSpeed=selectedSpeed;
+  let rejected=false;
   try{
+   if(await specialMenuType()!=="ground"){
+    rejected=true;
+    showSpecialManual();
+    send("status",{text:"Start a match and open the ground action menu before using SPECIAL."});
+    return;
+   }
    window.DreamTouch?.releaseAll();
    if(priorSpeed!==1)applySpeed(1);
    // The special action is on the Dribble menu's fourth page, third row.
    // Run only after the ordinary ground action selector is open.
-   for(const code of [4,8,2,2,2,5,5,8])await specialInput(code);
+   for(const code of [4,8,2,2,2])await specialInput(code);
+   if(await specialMenuType()!=="skill")throw new Error("The skill menu did not open. Try again from the ground action menu.");
+   for(const code of [5,5,8])await specialInput(code);
    specialMode=specialMode==="normal"?"high":specialMode==="high"?"normal":"unknown";
    send("status",{text:specialMode==="unknown"?"Skill switch sent. Check HIGH / OFF in the action menu.":`Team skill: ${specialMode.toUpperCase()}`});
-  }catch(error){send("operation-error",{text:error.message||"Could not use this trick. Open the ground action menu and try again."});}
+  }catch(error){if(!rejected)send("operation-error",{text:error.message||"Could not use this trick. Open the ground action menu and try again."});}
   finally{if(priorSpeed!==1)try{applySpeed(priorSpeed);}catch{}specialBusy=false;specialButton?.classList.remove("busy");showSpecialMode();}
  };
  specialButton?.addEventListener("click",runSpecial);
  specialManual?.addEventListener("click",showSpecialManual);
+ document.querySelector('#touch-controls [data-code="3"]')?.addEventListener("pointerdown",()=>document.body.classList.remove("intro-pending"));
+ document.querySelector('#touch-controls [data-code="3"]')?.addEventListener("click",()=>document.body.classList.remove("intro-pending"));
  for(const id of ["special-help","special-help-contra"])document.getElementById(id+"-close")?.addEventListener("click",()=>{document.getElementById(id).hidden=true;});
 
  // Native uploads supply artwork pixels; do not force costly GPU buffer preservation.
@@ -107,7 +135,7 @@
 
    window.EJS_ready=()=>send("status",{text:"Tap Play game to start"});
 
-   window.EJS_onGameStart=async()=>{started=true;setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("started");};
+   window.EJS_onGameStart=async()=>{started=true;if(specialGame?.trick==="skill-toggle"){document.body.classList.add("intro-pending");setTimeout(()=>document.body.classList.remove("intro-pending"),18000);}setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("started");};
 
    const script=document.createElement("script");script.src="/emulator/data/loader.js";script.onerror=()=>fail("Could not load the emulator. Check your connection and reopen the game.");document.body.appendChild(script);
 
