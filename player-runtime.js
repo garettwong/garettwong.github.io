@@ -6,7 +6,38 @@
 
  const send=(type,extra={},transfer)=>parent.postMessage({channel:"nes-dream",type,...extra},origin,transfer||[]);
 
- let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false;
+ let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal";
+ const specialGames={
+  "696c3cba4590cd3470148f1c1f8c16e2bb9f8079316a6c9f1a05f1459250d508":{name:"Captain Tsubasa II",trick:"skill-toggle"},
+  "dbc70fade29e34e3ce0e8e2c62a21aca3892aff4f588821de74c332e1153447a":{name:"Contra Super Final",trick:"bullet-settings"},
+  "1da4a85d61803e64df61c743a6253e02c0639ee7b68a72a4dfe815779622ca7f":{name:"Contra Arsenal Pro",trick:"bullet-settings"}
+ };
+ let specialGame=null;
+ const specialButton=document.getElementById("special-button");
+ const specialManual=document.getElementById("special-manual");
+ const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialMode==="unknown"?"SPECIAL · ?":`SPECIAL · ${specialMode==="high"?"HIGH":"NORMAL"}`;};
+ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+ const specialInput=async code=>{const gm=window.EJS_emulator?.gameManager;if(!gm?.simulateInput)throw new Error("The game is not ready.");gm.simulateInput(0,code,1);try{await wait(140);}finally{gm.simulateInput(0,code,0);}await wait(340);};
+ const showSpecialManual=()=>{const panel=document.getElementById(specialGame?.trick==="bullet-settings"?"special-help-contra":"special-help");if(panel)panel.hidden=false;};
+ const runSpecial=async()=>{
+  if(!started||!specialGame||specialBusy)return;
+  if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
+  specialBusy=true;specialButton?.classList.add("busy");if(specialButton)specialButton.textContent="Switching…";
+  const priorSpeed=selectedSpeed;
+  try{
+   window.DreamTouch?.releaseAll();
+   if(priorSpeed!==1)applySpeed(1);
+   // The special action is on the Dribble menu's fourth page, third row.
+   // Run only after the ordinary ground action selector is open.
+   for(const code of [4,8,2,2,2,5,5,8])await specialInput(code);
+   specialMode=specialMode==="normal"?"high":specialMode==="high"?"normal":"unknown";
+   send("status",{text:specialMode==="unknown"?"Skill switch sent. Check HIGH / OFF in the action menu.":`Team skill: ${specialMode.toUpperCase()}`});
+  }catch(error){send("operation-error",{text:error.message||"Could not use this trick. Open the ground action menu and try again."});}
+  finally{if(priorSpeed!==1)try{applySpeed(priorSpeed);}catch{}specialBusy=false;specialButton?.classList.remove("busy");showSpecialMode();}
+ };
+ specialButton?.addEventListener("click",runSpecial);
+ specialManual?.addEventListener("click",showSpecialManual);
+ for(const id of ["special-help","special-help-contra"])document.getElementById(id+"-close")?.addEventListener("click",()=>{document.getElementById(id).hidden=true;});
 
  // Native uploads supply artwork pixels; do not force costly GPU buffer preservation.
 
@@ -28,7 +59,7 @@
  for(const button of document.querySelectorAll?.('[data-action]')||[])button.addEventListener('click',()=>{if(button.dataset.action==='screenshot')screenShot();else if(started)send('save-menu');});
  const stopAutosave=()=>{if(autosaveTimer){clearInterval(autosaveTimer);autosaveTimer=0;}};
 
- const applySpeed=value=>{const gm=window.EJS_emulator?.gameManager;if(!gm)throw new Error("The game is not ready yet.");gm.toggleSlowMotion(0);window.EJS_emulator.isSlowMotion=false;gm.setFastForwardRatio(value);gm.toggleFastForward(value>1?1:0);send("speed",{value});};
+ const applySpeed=value=>{const gm=window.EJS_emulator?.gameManager;if(!gm)throw new Error("The game is not ready yet.");gm.toggleSlowMotion(0);window.EJS_emulator.isSlowMotion=false;gm.setFastForwardRatio(value);gm.toggleFastForward(value>1?1:0);selectedSpeed=value;send("speed",{value});};
 
  addEventListener("error",event=>{if(!loaded)return;console.error("Player error",event.message);send("error",{text:"The player encountered an error. Return to your library and reopen the game."});});
 
@@ -44,7 +75,7 @@
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
-  if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
+  if(d.type==="load-state"){window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode="unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
   if(d.type==="speed"){try{applySpeed([1,2,3,4,6,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
@@ -61,6 +92,7 @@
   try{
 
    const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");romUrl=URL.createObjectURL(new Blob([game.bytes]));
+   specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
    if((await import("/power-core/contra.js?v=67")).isPowerRom(game.id)){
     const {startPowerPlayer}=await import("/power-player.js?v=67");
