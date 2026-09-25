@@ -1,9 +1,10 @@
 {
-  "version": "d438321c74ebae8f",
+  "version": "c30143475774a15f",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-BySBNqI4.css",
-    "/assets/index-Ch2O1HY1.js",
+    "/assets/index-DkK1Pr85.js",
+    "/classic63.html",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
     "/emulator/data/compression/extractzip.js",
@@ -59,6 +60,7 @@
     "/games/DBZ2_HD.nes",
     "/graphics-preview/index.html",
     "/index.html",
+    "/legacy/player63.js",
     "/manifest.webmanifest",
     "/pack-draw.js",
     "/pack-effects.js",
