@@ -8,7 +8,8 @@
 
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal";
  const specialGames={
-  "85f070c32efb46295a23ab182bd51c670a9b0defbf2e817025817a697ad028e2":{name:"Captain Tsubasa II Direct",trick:"skill-direct"},
+  "a22e58d15433bac26d07078fec1a22c188fa99c2e24d5a94a81e4d92fb756d86":{name:"Captain Tsubasa II LIVE Stats",trick:"skill-direct"},
+  "85f070c32efb46295a23ab182bd51c670a9b0defbf2e817025817a697ad028e2":{name:"Captain Tsubasa II Direct Previous",trick:"skill-upgrade"},
   "274d07edf49ab8064ddf2de5c16c6f2c71aa13614b561ee473079ab97f5dcf17":{name:"Captain Tsubasa II Live Skills",trick:"skill-upgrade"},
   "696c3cba4590cd3470148f1c1f8c16e2bb9f8079316a6c9f1a05f1459250d508":{name:"Captain Tsubasa II SPECIAL Legacy",trick:"skill-upgrade"},
   "e2591b9ea48d7f65e4e64779b5c23a0da6bc4126d7c80dd149c6b21849dfa10c":{name:"Captain Tsubasa II Classic",trick:"skill-upgrade"},
@@ -17,7 +18,7 @@
  };
  let specialGame=null;
  const specialButton=document.getElementById("special-button");
- const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open DIRECT edition":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
+ const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Stats edition":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
  const runSpecial=async()=>{
   if(!started||!specialGame||specialBusy)return;
   if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
