@@ -1,9 +1,9 @@
 {
-  "version": "c30143475774a15f",
+  "version": "8dff7b32f8f5ea3c",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-BySBNqI4.css",
-    "/assets/index-DkK1Pr85.js",
+    "/assets/index-CF-AeI6g.js",
     "/classic63.html",
     "/credits.html",
     "/emulator/data/compression/extract7z.js",
@@ -35,6 +35,7 @@
     "/game-thumbnails/dbz2-hd.png",
     "/game-thumbnails/dbz2.png",
     "/game-thumbnails/super-final.png",
+    "/games/CT2_SS_DYNAMIC.nes",
     "/games/CT2_SS_NORMAL_v2.nes",
     "/games/Contra_Arsenal_Pro.nes",
     "/games/Contra_Chaos_49.zip",
