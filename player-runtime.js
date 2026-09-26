@@ -8,7 +8,7 @@
 
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal",specialPending=null;
  const specialGames={
-  "2a8272eeb472e1cfa8f5d75296e6ca908c27f61a55bc88c56674f9ccf5bd93bd":{name:"Captain Tsubasa II",trick:"skill-direct"},
+  "874d7f2dfbc06c3d67d87fdeb5523772b9e00dc1e7af065a7583f351c25355c7":{name:"Captain Tsubasa II",trick:"skill-direct"},
   "adc2d3e1327c8419f13228740e290e88c8557b0f8b4f134d8cd337f41ce3053e":{name:"Captain Tsubasa II LIVE Power Previous",trick:"skill-upgrade"},
   "a22e58d15433bac26d07078fec1a22c188fa99c2e24d5a94a81e4d92fb756d86":{name:"Captain Tsubasa II LIVE Stats Previous",trick:"skill-upgrade"},
   "85f070c32efb46295a23ab182bd51c670a9b0defbf2e817025817a697ad028e2":{name:"Captain Tsubasa II Direct Previous",trick:"skill-upgrade"},
