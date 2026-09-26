@@ -13,7 +13,7 @@
  for(const b of buttons()){
  let lastPointer=-Infinity;
  b.addEventListener("click",()=>{if(performance.now()-lastPointer<500||!window.EJS_emulator?.started)return;const id="click-"+codes(b).join("-");release(id);active.set(id,b);sync();timers.set(id,setTimeout(()=>release(id),120));});
- b.addEventListener('pointerdown',event=>{lastPointer=performance.now();event.preventDefault();if(!window.EJS_emulator?.started)return;release(event.pointerId);b.setPointerCapture(event.pointerId);active.set(event.pointerId,b);pressedAt.set(event.pointerId,performance.now());sync();
+ b.addEventListener('pointerdown',event=>{lastPointer=performance.now();event.preventDefault();if(!window.EJS_emulator?.started)return;release(event.pointerId);try{b.setPointerCapture(event.pointerId);}catch{}active.set(event.pointerId,b);pressedAt.set(event.pointerId,performance.now());sync();
  if(tapActions&&codes(b).length===1&&[0,8,2,3].includes(codes(b)[0]))timers.set(event.pointerId,setTimeout(()=>release(event.pointerId),90));});
  b.addEventListener('pointerup',event=>{lastPointer=performance.now();event.preventDefault();const remaining=codes(b).some(code=>[4,5,6,7].includes(code))?0:70-(performance.now()-(pressedAt.get(event.pointerId)||0));if(remaining>0){clearTimeout(timers.get(event.pointerId));timers.set(event.pointerId,setTimeout(()=>release(event.pointerId),remaining));}else release(event.pointerId);});
  for(const name of ['pointercancel'])b.addEventListener(name,event=>{event.preventDefault();release(event.pointerId);});
@@ -28,10 +28,12 @@
  if(pad){
   blockNativeHold(pad);
   const update=event=>{const box=pad.getBoundingClientRect(),x=event.clientX-box.left-box.width/2,y=event.clientY-box.top-box.height/2;let values=[];if(Math.hypot(x,y)>box.width*.065){const sector=(Math.round(Math.atan2(y,x)/(Math.PI/4))+8)%8;values=[[7],[5,7],[5],[5,6],[6],[4,6],[4],[4,7]][sector];}padPointers.set(event.pointerId,values);sync();};
-  pad.addEventListener('pointerdown',event=>{event.preventDefault();if(!window.EJS_emulator?.started)return;release(event.pointerId);pad.setPointerCapture(event.pointerId);update(event);});
-  pad.addEventListener('pointermove',event=>{if(!padPointers.has(event.pointerId))return;event.preventDefault();update(event);});
+  pad.addEventListener('pointerdown',event=>{event.preventDefault();if(!window.EJS_emulator?.started)return;release(event.pointerId);try{pad.setPointerCapture(event.pointerId);}catch{}update(event);});
+  pad.addEventListener('pointermove',event=>{if(!padPointers.has(event.pointerId))return;if(event.pointerType==='mouse'&&event.buttons===0){release(event.pointerId);return;}event.preventDefault();update(event);});
   for(const type of ['pointerup','pointercancel','lostpointercapture'])pad.addEventListener(type,event=>{event.preventDefault();release(event.pointerId);});
   pad.addEventListener('contextmenu',event=>event.preventDefault());
  }
+ // Capture-phase fallback also releases pointers when browser capture is interrupted.
+ for(const type of ['pointerup','pointercancel'])addEventListener(type,event=>{if(padPointers.has(event.pointerId)||type==='pointercancel')release(event.pointerId);},true);
  addEventListener('blur',releaseAll);addEventListener('pagehide',releaseAll);document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseAll();});
 })();

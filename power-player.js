@@ -1,3 +1,4 @@
+import {waterInput} from './power-core/water-input.js?v=83';
 import {createAudioOutput} from './power-core/audio-output.js?v=82';
 import {createShield} from './power-core/shield.js?v=66';
 import {createRounds} from './power-core/rounds.js?v=66';
@@ -24,7 +25,7 @@ export async function startPowerPlayer(game,send){
  function draw(){chaos?.render(image);ctx.putImageData(image,0,0);if(!chaos)drawProjectiles(ctx,nes,game.id!==POWER_ROM);supplies?.draw(ctx);drawRIndicator(ctx,nes.cpu.mem);rounds.draw(ctx);shield.draw(ctx);if(chaos){ctx.fillStyle='#101827';ctx.fillRect(211,4,43,12);ctx.font='8px monospace';ctx.fillStyle='#a8ffbe';ctx.fillText('FPS '+(displayFps||'--'),214,13);}}
  function flushAudio(){output.push(left,right);left=[];right=[];}
  const inputFrames=new Map(),releaseFrames=new Map();
- function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){renderFrame=i===speed-1;rounds.before();shield.before(speed);hazards.before();chaos?.before();nes.frame();hazards.update();chaos?.after();supplies?.update();frameCount++;for(const [key,at] of releaseFrames){if(frameCount>=at){const [p,c]=key.split(":").map(Number);nes.buttonUp(p,c);releaseFrames.delete(key);}}}acc-=1000/60;steps++;}if(steps){fpsFrames++;if(!fpsWindow)fpsWindow=time;if(time-fpsWindow>=1000){displayFps=Math.round(fpsFrames*1000/(time-fpsWindow));fpsWindow=time;fpsFrames=0;}draw();flushAudio();}raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));}
+ function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){renderFrame=i===speed-1;rounds.before();shield.before(speed);hazards.before();chaos?.before();const restoreWaterInput=waterInput(nes);try{nes.frame();}finally{restoreWaterInput();}hazards.update();chaos?.after();supplies?.update();frameCount++;for(const [key,at] of releaseFrames){if(frameCount>=at){const [p,c]=key.split(":").map(Number);nes.buttonUp(p,c);releaseFrames.delete(key);}}}acc-=1000/60;steps++;}if(steps){fpsFrames++;if(!fpsWindow)fpsWindow=time;if(time-fpsWindow>=1000){displayFps=Math.round(fpsFrames*1000/(time-fpsWindow));fpsWindow=time;fpsFrames=0;}draw();flushAudio();}raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));}
  function clearInput(){inputFrames.clear();releaseFrames.clear();for(let p=1;p<=2;p++)for(let c=0;c<8;c++)nes.buttonUp(p,c);}
  function pause(){running=false;clearTimeout(raf);window.DreamTouch?.releaseAll();clearInput();output.pause();play.textContent='Resume game';play.hidden=false;}
  async function resume(){

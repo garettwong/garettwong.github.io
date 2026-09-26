@@ -1,9 +1,9 @@
 {
-  "version": "20853a99346533e8",
+  "version": "75a41503b0defbd9",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8YKo4z02.css",
-    "/assets/index-BUtde0xb.js",
+    "/assets/index-DJE9kveR.js",
     "/classic63.html",
     "/controller-classic.css",
     "/credits.html",
@@ -639,6 +639,7 @@
     "/power-core/src/rom.js",
     "/power-core/src/tile.js",
     "/power-core/src/utils.js",
+    "/power-core/water-input.js",
     "/power-player.js",
     "/preview/battle-original.mp4",
     "/preview/battle-upgraded.mp4",

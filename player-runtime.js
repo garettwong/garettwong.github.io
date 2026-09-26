@@ -118,7 +118,7 @@
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
    if((await import("/power-core/contra.js?v=67")).isPowerRom(game.id)){
-    const {startPowerPlayer}=await import("/power-player.js?v=82");
+    const {startPowerPlayer}=await import("/power-player.js?v=83");
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator.gameManager.getFrameNum(),audio:window.EJS_emulator.gameManager.getAudioInfo()}}),1000);return;
    }
 
