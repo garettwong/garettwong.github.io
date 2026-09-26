@@ -8,7 +8,7 @@
 
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal",specialPending=null;
  const specialGames={
-  "3a865832c3438d2a1ab3c981f8873897c1ef2c1d4101fa510f345c0fed8a520c":{name:"Captain Tsubasa II LIVE Power Stable",trick:"skill-direct"},
+  "2a8272eeb472e1cfa8f5d75296e6ca908c27f61a55bc88c56674f9ccf5bd93bd":{name:"Captain Tsubasa II",trick:"skill-direct"},
   "adc2d3e1327c8419f13228740e290e88c8557b0f8b4f134d8cd337f41ce3053e":{name:"Captain Tsubasa II LIVE Power Previous",trick:"skill-upgrade"},
   "a22e58d15433bac26d07078fec1a22c188fa99c2e24d5a94a81e4d92fb756d86":{name:"Captain Tsubasa II LIVE Stats Previous",trick:"skill-upgrade"},
   "85f070c32efb46295a23ab182bd51c670a9b0defbf2e817025817a697ad028e2":{name:"Captain Tsubasa II Direct Previous",trick:"skill-upgrade"},
@@ -23,8 +23,9 @@
  const showSpecialMode=()=>{if(specialButton)specialButton.textContent=specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Power edition":specialPending?"SUPER · WAIT":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;};
  // The browser core wraps its Nestopia state, unlike standalone Nestopia.
  // Find the NES RAM chunk instead of relying on a fixed save-state offset.
+ // The final three internal RAM bytes are reserved for SUPER. Music owns $07FC.
  const superRamStart=state=>{if(!state||state.length<2200)return -1;let nestopia=-1;for(let i=0;i<Math.min(64,state.length-4);i++)if(state[i]===78&&state[i+1]===83&&state[i+2]===84&&state[i+3]===26){nestopia=i;break;}if(nestopia<0)return -1;for(let i=nestopia+8;i<Math.min(nestopia+512,state.length-2057);i++)if(state[i]===82&&state[i+1]===65&&state[i+2]===77&&state[i+3]===0&&state[i+4]===1&&state[i+5]===8&&state[i+6]===0&&state[i+7]===0)return i+9;return -1;};
- const readSuperMode=gm=>{try{const state=gm.getState(),start=superRamStart(state);return start<0?null:state[start+0x7fc]===165?"high":"normal";}catch{return null;}};
+ const readSuperMode=gm=>{try{const state=gm.getState(),start=superRamStart(state);return start<0?null:state[start+0x7fd]===165?"high":"normal";}catch{return null;}};
  const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const runSpecial=async()=>{
   if(!started||!specialGame||specialBusy||specialPending)return;
@@ -37,12 +38,12 @@
     window.DreamTouch?.releaseAll();
     const before=readSuperMode(gm);
     if(before===null)throw new Error("Cannot read SUPER state from this NES core.");
-   const target=before==="high"?"normal":"high",code=target==="high"?"07FC:A5":"07FC:00";
+   const target=before==="high"?"normal":"high",code=target==="high"?"07FD:A5":"07FD:00";
    // Nestopia's raw RAM cheats apply on every emulated frame, including
    // cutscenes. Briefly mark the open stat panel dirty, then keep only mode.
    gm.resetCheat();
    gm.setCheat(0,true,code);
-   gm.setCheat(1,true,"07FA:01");
+   gm.setCheat(1,true,"07FE:01");
    const frame=gm.getFrameNum?.();
    for(let i=0;i<20;i++){await delay(25);if(Number.isFinite(frame)&&gm.getFrameNum?.()-frame>=2)break;}
    gm.resetCheat();
