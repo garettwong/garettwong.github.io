@@ -6,6 +6,7 @@
 
  const send=(type,extra={},transfer)=>parent.postMessage({channel:"nes-dream",type,...extra},origin,transfer||[]);
 
+ let menuPaused=false,backgroundPaused=false;
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal",specialPending=null;
  const specialGames={
   "874d7f2dfbc06c3d67d87fdeb5523772b9e00dc1e7af065a7583f351c25355c7":{name:"Captain Tsubasa II",trick:"skill-direct"},
@@ -92,7 +93,7 @@
 
   if(d.type==="power-info"){send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
   if(d.type==="power-options"){window.EJS_emulator?.gameManager?.setPowerOptions?.(d.options||{});send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
-  if(d.type==="resume-play"){window.EJS_emulator?.play?.();engine?.resume();return;}
+  if(d.type==="resume-play"){menuPaused=false;backgroundPaused=false;window.EJS_emulator?.play?.();engine?.resume();return;}
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
@@ -104,7 +105,7 @@
 
   if(d.type==="art"){engine?.setEnabled(d.value===true);return;}
 
-  if(d.type==="pause"){window.DreamTouch?.releaseAll();snapshot("auto",undefined,typeof d.requestId==="string"?d.requestId:undefined);window.EJS_emulator?.pause?.();return;}
+  if(d.type==="pause"){menuPaused=true;window.DreamTouch?.releaseAll();snapshot("auto",undefined,typeof d.requestId==="string"?d.requestId:undefined);window.EJS_emulator?.pause?.();return;}
 
   if(d.type!=="load"||loaded)return;
 
@@ -136,10 +137,12 @@
 
  });
 
- addEventListener("pagehide",event=>{snapshot("auto");if(event.persisted){engine?.suspend();return;}stopAutosave();engine?.stop();if(romUrl)URL.revokeObjectURL(romUrl);});
+ addEventListener("pagehide",event=>{snapshot("auto");if(event.persisted){backgroundPaused=!menuPaused;engine?.suspend();return;}stopAutosave();engine?.stop();if(romUrl)URL.revokeObjectURL(romUrl);});
 
- addEventListener("pageshow",event=>{if(event.persisted)engine?.resume();});
+ function resumeInterrupted(){if(!started||document.hidden||menuPaused)return;if(backgroundPaused||window.EJS_emulator?.paused){backgroundPaused=false;window.EJS_emulator?.play?.();engine?.resume();}}
+ addEventListener("pageshow",event=>{if(event.persisted){backgroundPaused=true;resumeInterrupted();}});
+ for(const event of ["pointerdown","click"])document.getElementById("touch-controls")?.addEventListener(event,resumeInterrupted,true);
 
- addEventListener("visibilitychange",()=>{if(document.hidden){snapshot("auto");engine?.suspend();window.EJS_emulator?.pause?.();}else{engine?.resume();}});send("ready");
+ addEventListener("visibilitychange",()=>{if(document.hidden){backgroundPaused=started&&!menuPaused;snapshot("auto");engine?.suspend();window.EJS_emulator?.pause?.();}else{resumeInterrupted();}});send("ready");
 
 })();
