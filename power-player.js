@@ -1,3 +1,4 @@
+import {createAudioOutput} from './power-core/audio-output.js?v=82';
 import {createShield} from './power-core/shield.js?v=66';
 import {createRounds} from './power-core/rounds.js?v=66';
 import {createChaos} from './power-core/chaos.js?v=67';
@@ -14,22 +15,22 @@ export async function startPowerPlayer(game,send){
  const canvas=document.createElement('canvas');canvas.width=256;canvas.height=240;canvas.style.cssText='width:100%;height:100%;object-fit:contain;image-rendering:pixelated';host.append(canvas);
  const play=document.createElement('button');play.textContent='Play Contra Power';play.style.cssText='position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);padding:16px 24px;background:#ff684f;color:#fff;border:0;border-radius:12px;font:bold 18px sans-serif;z-index:8';host.append(play);
  const ctx=canvas.getContext('2d',{alpha:false}),image=ctx.createImageData(256,240),framePixels=new Uint32Array(image.data.buffer,image.data.byteOffset,256*240);
- let audio=null,node=null,left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,fastRatio=2,frameCount=0,renderFrame=true,fpsWindow=0,fpsFrames=0,displayFps=0;
- const nes=new NES({sampleRate:48000,onFrame(pixels){if(!renderFrame)return;for(let i=0;i<pixels.length;i++){framePixels[i]=pixels[i]|0xff000000;}},onAudioSample(l,r){if(speed===1){left.push(l);right.push(r);}}});
+ let left=[],right=[],running=false,started=false,raf=0,last=0,acc=0,speed=1,fastRatio=2,frameCount=0,renderFrame=true,fpsWindow=0,fpsFrames=0,displayFps=0;
+ const nes=new NES({sampleRate:48000,onFrame(pixels){if(!renderFrame)return;for(let i=0;i<pixels.length;i++){framePixels[i]=pixels[i]|0xff000000;}},onAudioSample(l,r){left.push(l);right.push(r);}});
+ const output=createAudioOutput(rate=>{nes.opts.sampleRate=rate;nes.papu.sampleRate=rate;nes.papu.setFrameRate(60*speed);});
  let binary='';const bytes=new Uint8Array(game.bytes);for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));nes.loadROM(binary);attachPowerTiming(nes,game.id===POWER_ROM?8:12);attachBombCollisions(nes);const progression=attachRProgress(nes);const hazards=createHazards(nes);const rounds=createRounds(nes);const shield=createShield(nes,game.hitShield,game.shieldSeconds);
  const chaos=Object.hasOwn(CHAOS_PROFILES,game.id)?createChaos(nes,game.bulletStyle||CHAOS_PROFILES[game.id],'more',game.bulletAngles||32):null;chaos?.configure({look:game.bulletLook||'pro'});
  const supplies=(chaos||Object.hasOwn(RUSH_PROFILES,game.id))?createSupplies(nes,game.rDensity):null;
  function draw(){chaos?.render(image);ctx.putImageData(image,0,0);if(!chaos)drawProjectiles(ctx,nes,game.id!==POWER_ROM);supplies?.draw(ctx);drawRIndicator(ctx,nes.cpu.mem);rounds.draw(ctx);shield.draw(ctx);if(chaos){ctx.fillStyle='#101827';ctx.fillRect(211,4,43,12);ctx.font='8px monospace';ctx.fillStyle='#a8ffbe';ctx.fillText('FPS '+(displayFps||'--'),214,13);}}
- function flushAudio(){if(node&&left.length&&speed===1){const l=Float32Array.from(left),r=Float32Array.from(right);node.port.postMessage({left:l,right:r},[l.buffer,r.buffer]);}left=[];right=[];}
+ function flushAudio(){output.push(left,right);left=[];right=[];}
  const inputFrames=new Map(),releaseFrames=new Map();
- function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){renderFrame=i===speed-1;rounds.before();shield.before(speed);hazards.before();chaos?.before();nes.frame();hazards.update();chaos?.after();supplies?.update();frameCount++;for(const [key,at] of releaseFrames){if(frameCount>=at){const [p,c]=key.split(":").map(Number);nes.buttonUp(p,c);releaseFrames.delete(key);}}}acc-=1000/60;steps++;}if(steps){fpsFrames++;if(!fpsWindow)fpsWindow=time;if(time-fpsWindow>=1000){displayFps=Math.round(fpsFrames*1000/(time-fpsWindow));fpsWindow=time;fpsFrames=0;}draw();flushAudio();}raf=requestAnimationFrame(tick);}
+ function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){renderFrame=i===speed-1;rounds.before();shield.before(speed);hazards.before();chaos?.before();nes.frame();hazards.update();chaos?.after();supplies?.update();frameCount++;for(const [key,at] of releaseFrames){if(frameCount>=at){const [p,c]=key.split(":").map(Number);nes.buttonUp(p,c);releaseFrames.delete(key);}}}acc-=1000/60;steps++;}if(steps){fpsFrames++;if(!fpsWindow)fpsWindow=time;if(time-fpsWindow>=1000){displayFps=Math.round(fpsFrames*1000/(time-fpsWindow));fpsWindow=time;fpsFrames=0;}draw();flushAudio();}raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));}
  function clearInput(){inputFrames.clear();releaseFrames.clear();for(let p=1;p<=2;p++)for(let c=0;c<8;c++)nes.buttonUp(p,c);}
- function pause(){running=false;cancelAnimationFrame(raf);window.DreamTouch?.releaseAll();clearInput();audio?.suspend();node?.port.postMessage({clear:true});play.textContent='Resume game';play.hidden=false;}
+ function pause(){running=false;clearTimeout(raf);window.DreamTouch?.releaseAll();clearInput();output.pause();play.textContent='Resume game';play.hidden=false;}
  async function resume(){
   // Video and controls must never wait for Safari's audio permission or worklet download.
-  if(!running){running=true;play.hidden=true;last=performance.now();acc=0;fpsWindow=0;fpsFrames=0;raf=requestAnimationFrame(tick);if(!started){started=true;window.EJS_emulator.started=true;window.DreamTouch?.start();send('started');send('status',{text:'Contra Power · hold B to fire'});}}
-  if(!audio){try{audio=new AudioContext({sampleRate:48000,latencyHint:'interactive'});await audio.audioWorklet.addModule('/power-core/audio.js');node=new AudioWorkletNode(audio,'power-audio',{outputChannelCount:[2]});node.connect(audio.destination);}catch{send('status',{text:'Playing · audio unavailable'});}}
-  void audio?.resume().catch(()=>{});
+  if(!running){running=true;play.hidden=true;last=performance.now();acc=0;fpsWindow=0;fpsFrames=0;raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));if(!started){started=true;window.EJS_emulator.started=true;window.DreamTouch?.start();send('started');send('status',{text:'Contra Power · hold B to fire'});}}
+  output.unlock();
  }
 
  const codes={0:Controller.BUTTON_B,8:Controller.BUTTON_A,2:Controller.BUTTON_SELECT,3:Controller.BUTTON_START,4:Controller.BUTTON_UP,5:Controller.BUTTON_DOWN,6:Controller.BUTTON_LEFT,7:Controller.BUTTON_RIGHT};
@@ -38,16 +39,16 @@ export async function startPowerPlayer(game,send){
  for(const type of ['keydown','keyup'])addEventListener(type,event=>{if(keyboard[event.code]===undefined)return;event.preventDefault();input(0,keyboard[event.code],type==='keydown'?1:0);});
  addEventListener('blur',clearInput);
  window.EJS_emulator={canvas,started:false,pause,play:resume,isSlowMotion:false,gameManager:{
-  getPowerInfo:()=>({...rounds.info(),shield:shield.enabled,shieldSeconds:shield.seconds,r:nes.cpu.mem[0x18]===5&&!nes.cpu.mem[0x1c]?rCount(nes.cpu.mem):0,density:supplies?.density,...chaos?.options}),simulateInput:input,getVideoDimensions:kind=>kind==='width'?256:kind==='aspect'?256/240:240,getFrameNum:()=>frameCount,
+  getAudioInfo:()=>output.info(),getPowerInfo:()=>({...rounds.info(),shield:shield.enabled,shieldSeconds:shield.seconds,r:nes.cpu.mem[0x18]===5&&!nes.cpu.mem[0x1c]?rCount(nes.cpu.mem):0,density:supplies?.density,...chaos?.options}),simulateInput:input,getVideoDimensions:kind=>kind==='width'?256:kind==='aspect'?256/240:240,getFrameNum:()=>frameCount,
   screenshot:async()=>{const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));return new Uint8Array(await blob.arrayBuffer());},
   setPowerOptions:options=>{chaos?.configure(options);if(typeof options.shield==='boolean'||options.shieldSeconds!==undefined)shield.configure(options.shield??shield.enabled,options.shieldSeconds);supplies?.setDensity(options.density);},
   getState:()=>new TextEncoder().encode(JSON.stringify({format:'contra-power-1',rom:game.id,rounds:rounds.save(),shield:shield.save(),state:nes.toJSON(),supplies:supplies?.save(),hazards:hazards.save(),chaos:chaos?.save()})),
-  loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);progression.reset();rounds.load(saved.rounds);shield.load(saved.shield);hazards.load(saved.hazards);chaos?.load(saved.chaos);chaos?.configure({density:'more'});supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);node?.port.postMessage({clear:true});left=[];right=[];},
-  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,6,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;node?.port.postMessage({clear:true});}
+  loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);nes.papu.sampleRate=nes.opts.sampleRate;nes.papu.setFrameRate(60*speed);progression.reset();rounds.load(saved.rounds);shield.load(saved.shield);hazards.load(saved.hazards);chaos?.load(saved.chaos);chaos?.configure({density:'more'});supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);output.clear();left=[];right=[];},
+  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,6,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;nes.papu.setFrameRate(60*speed);left=[];right=[];output.clear();}
  }};
  play.addEventListener('click',()=>resume().catch(()=>send('operation-error',{text:'Could not start audio. Tap Play again.'})));
  send('art-state',{active:false,reason:'off'});send('status',{text:'Starting Contra…'});
- addEventListener('pointerdown',()=>{void audio?.resume().catch(()=>{});});
+ for(const type of ['pointerdown','touchend','keydown','click'])addEventListener(type,()=>{if(running)output.unlock();},{passive:true});
  void resume();
  return {nes,pause};
 }

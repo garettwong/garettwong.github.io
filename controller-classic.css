@@ -7,7 +7,7 @@ body.touch-ready #touch-controls{
 }
 /* Reserve the controller's full border-box height, including button shadows. */
 @media(orientation:portrait),(min-height:521px){
- body.touch-ready #touch-controls{box-sizing:border-box;min-height:254px;grid-template-rows:minmax(162px,1fr) 48px;gap:8px 12px;padding:12px 12px 16px;border-width:3px;border-top-width:5px;border-radius:14px 14px 24px 24px;background:linear-gradient(90deg,#191919 0 28%,#222 28% 72%,#191919 72%)}
+ body.touch-ready #touch-controls{box-sizing:border-box;min-height:254px;grid-template-rows:minmax(162px,1fr) 48px;gap:8px 12px;padding:12px 12px 16px;border-width:3px;border-top-width:5px;border-radius:14px 14px 24px 24px;background:linear-gradient(90deg,#191919 0 27%,transparent 27% 73%,#191919 73%),repeating-linear-gradient(0deg,#282828 0 24px,#191919 24px 40px)}
  body.special-enabled.touch-ready #touch-controls{min-height:314px;grid-template-rows:minmax(162px,1fr) 44px 48px}
  body.touch-ready #game{width:min(100%,calc((100dvh - 270px)*var(--game-aspect,1.333333)));max-height:calc(100dvh - 270px)}
  body.special-enabled.touch-ready #game{width:min(100%,calc((100dvh - 330px)*var(--game-aspect,1.333333)));max-height:calc(100dvh - 330px)}
