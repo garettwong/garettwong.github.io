@@ -10,6 +10,7 @@
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal",specialPending=null;
  const specialGames={
   "2b3f6cf28fa31251918388443b578e691194b3295cac6f2de8120670d6dd6315":{name:"Dragon Ball Z II Original Graphics Infinite BE All Skills",trick:"dbz-skills"},
+  "720aff085bcb14e6c9793e5530084906860e2611aba6f965ab798df130bba996":{name:"Dragon Ball Z II Original Graphics Infinite BE All Skills",trick:"dbz-skills"},
   "6d21afe26889c64374f3e0d20cb77954fa20a2566cf4ece5ab49564baac862d0":{name:"Dragon Ball Z II Original Roster + All Skills",trick:"dbz-skills"},
   "7ffb9bf357b18437de6af0eb43b564b463686c47ed21da6922a40976fb838a16":{name:"Dragon Ball Z II All Skills",trick:"dbz-skills"},
   "38b841176061481cfe0c1c0eebac46d9381036efec59106eab9cc872249fff13":{name:"Captain Tsubasa II Previous",trick:"skill-upgrade"},
