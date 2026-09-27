@@ -1,5 +1,5 @@
-import {loadVectorScene,popCollect} from './vector-engine.js?v=91';
-import {SCENES as WORLDS,findHit} from './world-data.js?v=91';
+import {loadVectorScene,popCollect} from './vector-engine.js?v=91.1';
+import {SCENES as WORLDS,findHit} from './world-data.js?v=91.1';
 const SCENES=WORLDS;
 const $=id=>document.getElementById(id),canvas=$('scene'),ctx=canvas.getContext('2d'),KEY='little-finds-panorama-v3';
 let vector,image;
