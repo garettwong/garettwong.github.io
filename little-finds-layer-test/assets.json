@@ -1,0 +1,70 @@
+{
+  "teapot": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      93,
+      38,
+      1472,
+      972
+    ],
+    "transparentPixels": 807449,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  "cup": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      167,
+      67,
+      1399,
+      936
+    ],
+    "transparentPixels": 689517,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  "bun": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      249,
+      113,
+      1290,
+      900
+    ],
+    "transparentPixels": 916552,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  "cat": {
+    "size": [
+      1374,
+      1145
+    ],
+    "bounds": [
+      74,
+      181,
+      1327,
+      975
+    ],
+    "transparentPixels": 800823,
+    "alphaRange": [
+      0,
+      255
+    ]
+  }
+}
