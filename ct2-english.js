@@ -30,7 +30,7 @@
     ctx.fillStyle='#000';ctx.fillRect(r.x,r.y,r.width,8);
     let text=r.text.replace(/(\d{2})w(\d{2})/g,'$1:$2').replace(/F0CUS/g,'FOCUS').replace(/TaBaSa/g,'Tsubasa').replace(/([a-z])(\d)/g,'$1 $2');
     if(r.cells.some(c=>c.text.length>1)&&/^[A-Za-z]+$/.test(text))text=text[0]+text.slice(1).toLowerCase();
-    text=text.replace(/^(FW|MF|DF|GK) ([A-Za-z]+)$/,(_,role,name)=>role+' '+name[0]+name.slice(1).toLowerCase());
+    text=text.replace(/\/(?=$|\s)/g,'!').replace(/^(FW|MF|DF|GK) ([A-Za-z]+)$/,(_,role,name)=>role+' '+name[0]+name.slice(1).toLowerCase());
     const names={RollSave:'Rolling Save',OceanSave:'Spin Save',Jump:'Triangle Jump','Image C':'Clone Save','Ps.Wd':'Password'};text=names[text]||text;
     let x=r.x,w=r.width;if(text==='Triangle Jump'&&r.x===88){x=80;w+=8;ctx.fillRect(x,r.y,w,8);}
     ctx.fillStyle=`rgb(${r.cells[0].color.join(',')})`;ctx.font='600 7.5px Arial, sans-serif';const measured=ctx.measureText(text).width;ctx.save();ctx.translate(x,r.y);ctx.scale(Math.min(1,w/measured),1);ctx.fillText(text,.1,7);ctx.restore();
