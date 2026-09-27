@@ -1,9 +1,9 @@
 {
-  "version": "1792571bc8687347",
+  "version": "bb4b75227bc2a3d2",
   "assets": [
     "/apple-touch-icon.png",
+    "/assets/index-BvQyTth7.js",
     "/assets/index-CNCzBQw8.css",
-    "/assets/index-CoH5BJf6.js",
     "/classic63.html",
     "/controller-classic.css",
     "/credits.html",
@@ -45,6 +45,7 @@
     "/games/CT2_SS_LIVE5.nes",
     "/games/CT2_SS_LIVE6.nes",
     "/games/CT2_SS_LIVE7.nes",
+    "/games/CT2_SS_LIVE8.nes",
     "/games/CT2_SS_NORMAL_v2.nes",
     "/games/CT2_SS_SPECIAL.nes",
     "/games/Contra_Arsenal_Pro.nes",

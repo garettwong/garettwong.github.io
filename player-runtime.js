@@ -9,9 +9,10 @@
  let menuPaused=false,backgroundPaused=false;
  let loaded=false,engine=null,romUrl=null,autosaveTimer=0,started=false,selectedSpeed=1,specialBusy=false,specialMode="normal",specialPending=null;
  const specialGames={
+  "38b841176061481cfe0c1c0eebac46d9381036efec59106eab9cc872249fff13":{name:"Captain Tsubasa II Previous",trick:"skill-upgrade"},
   "8d27bdf580b90c5eb0e6348fd4e509125786bda053f110715c79d7519fc5b8a2":{name:"Captain Tsubasa II Previous",trick:"skill-upgrade"},
   "874d7f2dfbc06c3d67d87fdeb5523772b9e00dc1e7af065a7583f351c25355c7":{name:"Captain Tsubasa II Previous",trick:"skill-upgrade"},
-  "38b841176061481cfe0c1c0eebac46d9381036efec59106eab9cc872249fff13":{name:"Captain Tsubasa II",trick:"skill-direct"},
+  "d188a0c11aebffc34457864020abfcc3a0e3ede96385e705b853093abe1177ab":{name:"Captain Tsubasa II",trick:"skill-direct"},
   "adc2d3e1327c8419f13228740e290e88c8557b0f8b4f134d8cd337f41ce3053e":{name:"Captain Tsubasa II LIVE Power Previous",trick:"skill-upgrade"},
   "a22e58d15433bac26d07078fec1a22c188fa99c2e24d5a94a81e4d92fb756d86":{name:"Captain Tsubasa II LIVE Stats Previous",trick:"skill-upgrade"},
   "85f070c32efb46295a23ab182bd51c670a9b0defbf2e817025817a697ad028e2":{name:"Captain Tsubasa II Direct Previous",trick:"skill-upgrade"},
