@@ -11,6 +11,7 @@
  const specialGames={
  "9be53d68a9614554670cd84ee42dd8c10b3893ded6b3255db05a9d706f3b741d":{name:"Captain Tsubasa II English HD",trick:"skill-direct"},
   "2b3f6cf28fa31251918388443b578e691194b3295cac6f2de8120670d6dd6315":{name:"Dragon Ball Z II Original Graphics Infinite BE All Skills",trick:"dbz-skills"},
+  "2760ce996957b27a16b4023ac2571afa477437307c1876029baf179ba93c206c":{name:"Dragon Ball Z II English Original Graphics Infinite BE All Skills",trick:"dbz-skills"},
   "720aff085bcb14e6c9793e5530084906860e2611aba6f965ab798df130bba996":{name:"Dragon Ball Z II Original Graphics Infinite BE All Skills",trick:"dbz-skills"},
   "6d21afe26889c64374f3e0d20cb77954fa20a2566cf4ece5ab49564baac862d0":{name:"Dragon Ball Z II Original Roster + All Skills",trick:"dbz-skills"},
   "7ffb9bf357b18437de6af0eb43b564b463686c47ed21da6922a40976fb838a16":{name:"Dragon Ball Z II All Skills",trick:"dbz-skills"},
