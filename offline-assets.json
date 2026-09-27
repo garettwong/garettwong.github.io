@@ -1,9 +1,9 @@
 {
-  "version": "983262ef8f0cb5c6",
+  "version": "db04b6c31a9d8598",
   "assets": [
     "/apple-touch-icon.png",
-    "/assets/index-5jcdVeiP.js",
     "/assets/index-8YKo4z02.css",
+    "/assets/index-CfmXl4CB.js",
     "/classic63.html",
     "/controller-classic.css",
     "/credits.html",
@@ -76,6 +76,7 @@
     "/little-finds-worlds/game.js",
     "/little-finds-worlds/harbour-bakery-cutie-v86.png",
     "/little-finds-worlds/harbour-bakery-v86.png",
+    "/little-finds-worlds/harbour-cutie-v87.png",
     "/little-finds-worlds/index.html",
     "/little-finds-worlds/scenes.js",
     "/little-finds-worlds/world-data.js",
