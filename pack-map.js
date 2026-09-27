@@ -11,16 +11,16 @@
   return p;
  }
  function match(p,config){
-  let state=states.get(config);if(!state){state={phase:[0,0],index:new Map()};for(const t of config.tiles){const key=t.anchors.join(',');if(!state.index.has(key))state.index.set(key,[]);state.index.get(key).push(t);}states.set(config,state);}
-  // This palette gate avoids searching battle, title and dialogue frames.
-  let cyan=0;const gateColors=config.gateColors||[0x48cdde];for(let y=24;y<160;y+=24)for(let x=24;x<240;x+=24)if(gateColors.includes(rgb(p,x,y)))cyan++;
-  if(cyan<3)return [];
-  const tileAt=(x,y)=>{const candidates=state.index.get(points.map(([dx,dy])=>rgb(p,x+dx,y+dy)).join(','));if(!candidates)return null;const possible=candidates.filter(t=>!t.pivot||rgb(p,x+t.pivot[0],y+t.pivot[1])===t.pivot[2]);if(!possible.length)return null;const hash=global.DreamPatternTools.pixelHash(p,[x,y,16,16]);return possible.find(t=>t.hash===hash)||null;};
+  let state=states.get(config);if(!state){state={phase:[0,0],index:new Map(),shapes:new Map()};for(const t of config.tiles){const key=t.anchors.join(',');if(!state.index.has(key))state.index.set(key,[]);state.index.get(key).push(t);if(t.palettePattern)state.shapes.set(t.palettePattern.join(','),t);}states.set(config,state);}
+  // Three complete tile fingerprints identify terrain. Sparse palette samples
+  // miss starfields at some camera offsets and used to disable the whole map.
+  const tileAt=(x,y,palette=false)=>{const candidates=state.index.get(points.map(([dx,dy])=>rgb(p,x+dx,y+dy)).join(','))||[],possible=candidates.filter(t=>!t.pivot||rgb(p,x+t.pivot[0],y+t.pivot[1])===t.pivot[2]);if(possible.length){const hash=global.DreamPatternTools.pixelHash(p,[x,y,16,16]),exact=possible.find(t=>t.hash===hash);if(exact)return exact;}if(!palette||!state.shapes.size)return null;const colors=new Map([[0,0],[0xffffff,1]]),pattern=[];for(let yy=y;yy<y+16;yy++)for(let xx=x;xx<x+16;xx++){const color=rgb(p,xx,yy);if(!colors.has(color))colors.set(color,colors.size);pattern.push(colors.get(color));}return state.shapes.get(pattern.join(','))||null;};
   const validPhase=([dx,dy])=>{let count=0;for(const[x,y]of probes)if(tileAt(x+dx,y+dy)&&++count>=3)return true;return false;};
   let phase=validPhase(state.phase)?state.phase:null;
   if(!phase)for(let dy=0;dy<16&&!phase;dy++)for(let dx=0;dx<16;dx++)if(validPhase([dx,dy])){phase=[dx,dy];break;}
+  if(!phase)for(const candidate of [state.phase,[0,0]]){let count=0;for(const[x,y]of probes)if(tileAt(x+candidate[0],y+candidate[1],true)&&++count>=3){phase=candidate;break;}if(phase)break;}
   if(!phase)return [];state.phase=phase;const found=[];
-  for(let y=phase[1];y<=224;y+=16)for(let x=phase[0];x<=240;x+=16){const t=tileAt(x,y);if(t)found.push({...t,x,y});}
+  for(let y=phase[1];y<=224;y+=16)for(let x=phase[0];x<=240;x+=16){const t=tileAt(x,y,true);if(t)found.push({...t,x,y});}
   return found;
  }
  function draw(c,assets,tiles,p,width,height){

@@ -2,1197 +2,1217 @@
   "version": 1,
   "assets": {
     "/packs/story-landscape-left.webp": {
-      "url": "/packs/playback/d4553568cd9a49bfeb05.webp",
-      "width": 64,
-      "height": 128
+      "url": "/packs/playback/4dddad8d055caebe5ff5.webp",
+      "width": 128,
+      "height": 256
     },
     "/packs/story-landscape-right.webp": {
-      "url": "/packs/playback/27bfed5aba7cd7440e33.webp",
-      "width": 64,
-      "height": 128
+      "url": "/packs/playback/33163b451cd6fbe6f0ec.webp",
+      "width": 128,
+      "height": 256
     },
     "/packs/story-landscape-top.webp": {
-      "url": "/packs/playback/2834f301fa005d8121bc.webp",
-      "width": 64,
-      "height": 32
+      "url": "/packs/playback/27d00974e1b3f4a89377.webp",
+      "width": 128,
+      "height": 64
     },
     "/packs/story-landscape-bottom.webp": {
-      "url": "/packs/playback/fa1f12471593dc23c036.webp",
-      "width": 64,
-      "height": 32
+      "url": "/packs/playback/4af1f3e74178ce3b5993.webp",
+      "width": 128,
+      "height": 64
     },
     "/packs/opening-story.png": {
-      "url": "/packs/playback/bd8c66156f5023278d17.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/c89fc0533e1300992182.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/young-namekian.webp": {
-      "url": "/packs/playback/ae4a6d5e122e6a4f2349.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/1275db9a8ca27e200e19.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/korin-portrait.webp": {
-      "url": "/packs/playback/0cffdcd5a291251659ae.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/57362cab3805204fcb8d.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/senzu-bean.webp": {
-      "url": "/packs/playback/dcdc2b9f2f3b1459783e.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/623dcf3b234843adc0ae.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/puar-portrait.webp": {
-      "url": "/packs/playback/66575aac658e88db6c57.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/768175fe65c97028e348.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/bulma-portrait.webp": {
-      "url": "/packs/playback/c5857ff09e306c6ab323.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/3097aa6af2597b79217a.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/porunga-portrait.webp": {
-      "url": "/packs/playback/87d72c3eeaf038d392d8.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/a2d0dee4b26898bbf9b3.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/grandpa-gohan-portrait.webp": {
-      "url": "/packs/playback/d04ce8ba244688ac825d.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/1b359c11eabe83f1bd0e.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/yemma-portrait.webp": {
-      "url": "/packs/playback/b6eb3de0682c0362fe56.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/91d5c34cc6ee1f8251d7.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/baba-portrait.webp": {
-      "url": "/packs/playback/08b1e3ed1ba2052821b3.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/12f058ef241a60a4c89a.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/king-kai-portrait.webp": {
-      "url": "/packs/playback/0ac90c9d34a6cae0501f.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/a128311969c680b276de.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/chichi-portrait.webp": {
-      "url": "/packs/playback/9420177090c4d130fca2.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/d40c684e99933681bd81.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/oolong-portrait.webp": {
-      "url": "/packs/playback/28275fa3793b49d515f9.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/8bf11405723f2c3e91bf.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/scouter.webp": {
-      "url": "/packs/playback/529da98bf9f487bf62c5.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/eaa8de3cd4fdb8989a87.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/dragon-radar.webp": {
-      "url": "/packs/playback/861145b391eefbe409c1.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/3527b786cbaede5d3d3c.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/frog.webp": {
-      "url": "/packs/playback/deb6800e049d80f771b9.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/047a47951030546cef71.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/dende-portrait.webp": {
-      "url": "/packs/playback/9ecb7e8eb20659770013.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/5e5260e6a85fefdea91b.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/motion/chiaotzu-cast.webp": {
-      "url": "/packs/playback/792a9a8c8ce67fc2314d.webp",
-      "width": 40,
-      "height": 51
+      "url": "/packs/playback/9d044ab07a9858e92441.webp",
+      "width": 80,
+      "height": 101
     },
     "/packs/motion/chiaotzu-fire.webp": {
-      "url": "/packs/playback/1092836523914ec9497e.webp",
-      "width": 57,
-      "height": 48
+      "url": "/packs/playback/e13c9c405346ce25e7fb.webp",
+      "width": 113,
+      "height": 96
     },
     "/packs/motion/chiaotzu-ready.webp": {
-      "url": "/packs/playback/33aa19aa521703e7337b.webp",
-      "width": 40,
-      "height": 55
+      "url": "/packs/playback/f44b38f5c02044d220a5.webp",
+      "width": 80,
+      "height": 109
     },
     "/packs/motion/chiaotzu-strike.webp": {
-      "url": "/packs/playback/3893643afddfe8328d7c.webp",
-      "width": 54,
-      "height": 51
+      "url": "/packs/playback/b25944c51ec0a8c45bc3.webp",
+      "width": 108,
+      "height": 101
     },
     "/packs/motion/enemy-ready.webp": {
-      "url": "/packs/playback/a722f2d46a2e7a67f114.webp",
-      "width": 74,
-      "height": 79
+      "url": "/packs/playback/0e37b9afd81620b20551.webp",
+      "width": 148,
+      "height": 157
     },
     "/packs/motion/enemy-guard.webp": {
-      "url": "/packs/playback/6366e00fa9f90997db37.webp",
-      "width": 62,
-      "height": 79
+      "url": "/packs/playback/73c74209eb6499a0ea33.webp",
+      "width": 124,
+      "height": 157
     },
     "/packs/motion/enemy-recoil.webp": {
-      "url": "/packs/playback/935b1e691840b9b84954.webp",
-      "width": 60,
-      "height": 75
+      "url": "/packs/playback/115e146fd41cd07dfce3.webp",
+      "width": 120,
+      "height": 149
     },
     "/packs/motion/movement-afterimage.webp": {
-      "url": "/packs/playback/b92db2aa1af926538fe9.webp",
-      "width": 94,
-      "height": 96
-    },
-    "/packs/chiaotzu-hud.webp": {
-      "url": "/packs/playback/fc80b8ac897c2191da57.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/enemy-hud.webp": {
-      "url": "/packs/playback/2d991f009328840dcbb1.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/tien-ready.webp": {
-      "url": "/packs/playback/1067e01e2099b998566a.webp",
-      "width": 62,
-      "height": 77
-    },
-    "/packs/motion/tien-windup.webp": {
-      "url": "/packs/playback/de631efff156cad72255.webp",
-      "width": 81,
-      "height": 78
-    },
-    "/packs/motion/tien-fire.webp": {
-      "url": "/packs/playback/ebef1784881bd73a14ef.webp",
-      "width": 59,
-      "height": 74
-    },
-    "/packs/motion/tien-kick.webp": {
-      "url": "/packs/playback/c179813db1a65e2ce94e.webp",
-      "width": 96,
-      "height": 78
-    },
-    "/packs/motion/gohan-ready.webp": {
-      "url": "/packs/playback/52fb5fc932776d2eb42e.webp",
-      "width": 50,
-      "height": 60
-    },
-    "/packs/motion/gohan-raise.webp": {
-      "url": "/packs/playback/439c29bc51995ac4d137.webp",
-      "width": 30,
-      "height": 47
-    },
-    "/packs/motion/gohan-recoil.webp": {
-      "url": "/packs/playback/ae1ac8b9b25d4a6bb386.webp",
-      "width": 43,
-      "height": 38
-    },
-    "/packs/motion/gohan-fire.webp": {
-      "url": "/packs/playback/3e9a1189426561e8aead.webp",
-      "width": 58,
-      "height": 55
-    },
-    "/packs/motion/krillin-ready.webp": {
-      "url": "/packs/playback/907f95377924395e75c5.webp",
-      "width": 52,
-      "height": 63
-    },
-    "/packs/motion/krillin-raise.webp": {
-      "url": "/packs/playback/be11ef290cd7ab1edae8.webp",
-      "width": 43,
-      "height": 74
-    },
-    "/packs/motion/krillin-fire.webp": {
-      "url": "/packs/playback/eb1586b83fbbcbbc6b17.webp",
-      "width": 62,
-      "height": 62
-    },
-    "/packs/motion/yamcha-ready.webp": {
-      "url": "/packs/playback/4dbee5e8c6812aeb182d.webp",
-      "width": 64,
-      "height": 75
-    },
-    "/packs/motion/yamcha-raise.webp": {
-      "url": "/packs/playback/97e014a20bff8a674d87.webp",
-      "width": 58,
-      "height": 64
-    },
-    "/packs/motion/yamcha-fire.webp": {
-      "url": "/packs/playback/6487cf580b9eb75d5b4d.webp",
-      "width": 79,
-      "height": 74
-    },
-    "/packs/motion/blue-enemy-ready-corrected.webp": {
-      "url": "/packs/playback/efab824a458fc1341d7c.webp",
-      "width": 62,
-      "height": 64
-    },
-    "/packs/motion/blue-enemy-guard-corrected.webp": {
-      "url": "/packs/playback/1a5a970137215c0736d5.webp",
-      "width": 58,
-      "height": 71
-    },
-    "/packs/motion/blue-enemy-recoil-corrected.webp": {
-      "url": "/packs/playback/dc7da26380d27a73870b.webp",
-      "width": 81,
-      "height": 54
-    },
-    "/packs/tien-hud.webp": {
-      "url": "/packs/playback/d924f3e6526ebfa64c5a.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/gohan-story.webp": {
-      "url": "/packs/playback/fef7473832e0434f9413.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/krillin-hud.webp": {
-      "url": "/packs/playback/33bfa040bb1fef0eb503.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/yamcha-hud.webp": {
-      "url": "/packs/playback/792d318ac01bc957c1e1.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/blue-enemy-hud-corrected.webp": {
-      "url": "/packs/playback/907fa552a256433baf95.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/tien-recoil.webp": {
-      "url": "/packs/playback/7f97654190caf769d7da.webp",
-      "width": 81,
-      "height": 68
-    },
-    "/packs/motion/krillin-rising.webp": {
-      "url": "/packs/playback/15786bbcb88758496116.webp",
-      "width": 33,
-      "height": 54
-    },
-    "/packs/motion/gold-enemy-look-up.webp": {
-      "url": "/packs/playback/f2f5d8cb8fa44e9641a3.webp",
-      "width": 80,
-      "height": 91
-    },
-    "/packs/motion/gold-enemy-kick.webp": {
-      "url": "/packs/playback/7f7ffaf947760e7a242c.webp",
-      "width": 89,
-      "height": 78
-    },
-    "/packs/motion/blue-enemy-punch-corrected.webp": {
-      "url": "/packs/playback/c075ffd4fd9266ad66f2.webp",
-      "width": 72,
-      "height": 69
-    },
-    "/packs/motion/blue-enemy-look-up-corrected.webp": {
-      "url": "/packs/playback/c55bb36cf59aabc8c4e9.webp",
-      "width": 58,
-      "height": 93
-    },
-    "/packs/motion/blue-enemy-kick-corrected.webp": {
-      "url": "/packs/playback/b67e2a45c542dfa21ea2.webp",
-      "width": 81,
-      "height": 64
-    },
-    "/packs/title.webp": {
-      "url": "/packs/playback/4eff46d965053c495eec.webp",
-      "width": 513,
-      "height": 176
-    },
-    "/packs/motion/green-enemy-ready.webp": {
-      "url": "/packs/playback/2f2fbcdeb416a3102eed.webp",
-      "width": 43,
-      "height": 54
-    },
-    "/packs/motion/green-enemy-look-up.webp": {
-      "url": "/packs/playback/9f7bb18d08c19fcfb7ca.webp",
-      "width": 71,
-      "height": 76
-    },
-    "/packs/motion/green-enemy-diagonal.webp": {
-      "url": "/packs/playback/e07b74dac743a84572ce.webp",
-      "width": 75,
-      "height": 88
-    },
-    "/packs/motion/green-enemy-palm.webp": {
-      "url": "/packs/playback/530a128e20ea0d7f8cf8.webp",
-      "width": 83,
-      "height": 72
-    },
-    "/packs/motion/green-enemy-kick.webp": {
-      "url": "/packs/playback/3a3e37e0e44e39294e1e.webp",
-      "width": 81,
-      "height": 78
-    },
-    "/packs/green-enemy-hud.webp": {
-      "url": "/packs/playback/1e647ea94f0825dd4ae9.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/nail-ready.webp": {
-      "url": "/packs/playback/15f17b2af40791ddd908.webp",
-      "width": 64,
-      "height": 60
-    },
-    "/packs/motion/nail-guard.webp": {
-      "url": "/packs/playback/ebef1d4c5613e794d5f5.webp",
-      "width": 74,
-      "height": 73
-    },
-    "/packs/motion/nail-recoil.webp": {
-      "url": "/packs/playback/cd6eab811ce8b64c07f6.webp",
-      "width": 71,
-      "height": 54
-    },
-    "/packs/motion/nail-back.webp": {
-      "url": "/packs/playback/cc6588fcec228e4d0be3.webp",
-      "width": 72,
-      "height": 85
-    },
-    "/packs/motion/nail-strike.webp": {
-      "url": "/packs/playback/9352a29eadb6491c5f35.webp",
-      "width": 91,
-      "height": 72
-    },
-    "/packs/nail-hud.webp": {
-      "url": "/packs/playback/94de791490f94fba41b9.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/frieza-ready.webp": {
-      "url": "/packs/playback/8b679752f73c3a04d488.webp",
-      "width": 75,
-      "height": 70
-    },
-    "/packs/motion/frieza-guard.webp": {
-      "url": "/packs/playback/d7bb59a395aef6d45a55.webp",
-      "width": 72,
-      "height": 60
-    },
-    "/packs/motion/frieza-diagonal.webp": {
-      "url": "/packs/playback/5d867e621201de69c4aa.webp",
-      "width": 70,
-      "height": 73
-    },
-    "/packs/motion/frieza-strike.webp": {
-      "url": "/packs/playback/568b4ad436fdff5c0f6a.webp",
-      "width": 91,
-      "height": 64
-    },
-    "/packs/motion/frieza-recoil.webp": {
-      "url": "/packs/playback/5d3344041b6d3fab95f7.webp",
-      "width": 91,
-      "height": 76
-    },
-    "/packs/frieza-hud.webp": {
-      "url": "/packs/playback/a1be97644e8c237b6de2.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/kai-planet.webp": {
-      "url": "/packs/playback/0c5aa11be136ed8403f1.webp",
-      "width": 192,
+      "url": "/packs/playback/a4bdf4273dcca433d0c3.webp",
+      "width": 188,
       "height": 192
     },
-    "/packs/frieza-story.webp": {
-      "url": "/packs/playback/35a535f7a8ff47fa61de.webp",
-      "width": 192,
+    "/packs/chiaotzu-hud.webp": {
+      "url": "/packs/playback/05a0f6f145c309f5c06a.webp",
+      "width": 128,
       "height": 128
     },
-    "/packs/motion/nail-low-ready.webp": {
-      "url": "/packs/playback/6a78021efd4e431b9b5c.webp",
-      "width": 30,
-      "height": 32
+    "/packs/enemy-hud.webp": {
+      "url": "/packs/playback/abab2b005cc0a203db5f.webp",
+      "width": 384,
+      "height": 384
     },
-    "/packs/motion/nail-descend.webp": {
-      "url": "/packs/playback/535875b6af51061b5ce8.webp",
-      "width": 57,
-      "height": 76
+    "/packs/motion/tien-ready.webp": {
+      "url": "/packs/playback/9745c9dc471b2d6162ed.webp",
+      "width": 124,
+      "height": 153
     },
-    "/packs/motion/nail-rise.webp": {
-      "url": "/packs/playback/104ad31dc470597c8404.webp",
-      "width": 72,
-      "height": 54
+    "/packs/motion/tien-windup.webp": {
+      "url": "/packs/playback/e7950a914f4ec2fc6225.webp",
+      "width": 161,
+      "height": 156
     },
-    "/packs/motion/frieza-open-palm.webp": {
-      "url": "/packs/playback/c0e1def4def99a6878d0.webp",
-      "width": 89,
-      "height": 64
+    "/packs/motion/tien-fire.webp": {
+      "url": "/packs/playback/d65ba59278e3d32cc76c.webp",
+      "width": 117,
+      "height": 148
     },
-    "/packs/motion/frieza-turn.webp": {
-      "url": "/packs/playback/7ba0811030feb71a31bd.webp",
-      "width": 64,
-      "height": 60
+    "/packs/motion/tien-kick.webp": {
+      "url": "/packs/playback/f562b9fa73224e5d0985.webp",
+      "width": 192,
+      "height": 156
     },
-    "/packs/card-back.webp": {
-      "url": "/packs/playback/5a7697d3468b5311b322.webp",
-      "width": 64,
-      "height": 96
+    "/packs/motion/gohan-ready.webp": {
+      "url": "/packs/playback/8ad3fc45d17ef4e8e023.webp",
+      "width": 100,
+      "height": 120
     },
-    "/packs/motion/yamcha-back.webp": {
-      "url": "/packs/playback/e7782e82360f55779b1f.webp",
-      "width": 71,
-      "height": 90
-    },
-    "/packs/motion/yamcha-recoil.webp": {
-      "url": "/packs/playback/f88f6e0b08f531fddfed.webp",
-      "width": 73,
-      "height": 52
-    },
-    "/packs/motion/yamcha-knee.webp": {
-      "url": "/packs/playback/eba3c7aab6f522f43cb0.webp",
-      "width": 73,
-      "height": 74
-    },
-    "/packs/motion/krillin-recoil.webp": {
-      "url": "/packs/playback/f42af7eec6c08231103c.webp",
-      "width": 64,
-      "height": 56
-    },
-    "/packs/motion/tien-turn.webp": {
-      "url": "/packs/playback/80698ded5af270344ef7.webp",
+    "/packs/motion/gohan-raise.webp": {
+      "url": "/packs/playback/d0a1d09ffd1914612e3a.webp",
       "width": 60,
-      "height": 71
-    },
-    "/packs/motion/blue-enemy-step-corrected.webp": {
-      "url": "/packs/playback/0589a4cb01dcab4e6eb6.webp",
-      "width": 59,
-      "height": 74
-    },
-    "/packs/motion/blue-enemy-dive-corrected.webp": {
-      "url": "/packs/playback/fd24976e098b6d37c527.webp",
-      "width": 64,
-      "height": 73
-    },
-    "/packs/motion/blue-enemy-distant-corrected.webp": {
-      "url": "/packs/playback/0b3ab61897b35e92fe8c.webp",
-      "width": 47,
-      "height": 52
-    },
-    "/packs/goku-story.webp": {
-      "url": "/packs/playback/776b69e5fede5f9f472b.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/vegeta-story.webp": {
-      "url": "/packs/playback/9902335a2d71ebb29772.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/piccolo-story.webp": {
-      "url": "/packs/playback/b9ed1ea66168c45048af.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/bulma-story.webp": {
-      "url": "/packs/playback/d214bec664ff929ec375.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/krillin-story.webp": {
-      "url": "/packs/playback/f9c20a0527ab47e7e481.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/frieza-final-ready.webp": {
-      "url": "/packs/playback/d8c0bfbde0dc3b2af26c.webp",
-      "width": 83,
-      "height": 78
-    },
-    "/packs/motion/frieza-final-guard.webp": {
-      "url": "/packs/playback/8b5bc18e700c3d893c42.webp",
-      "width": 79,
-      "height": 64
-    },
-    "/packs/motion/frieza-final-strike.webp": {
-      "url": "/packs/playback/1091e53d17f484a46662.webp",
-      "width": 64,
-      "height": 77
-    },
-    "/packs/motion/frieza-final-advance.webp": {
-      "url": "/packs/playback/60197f29c125cf65c25d.webp",
-      "width": 62,
-      "height": 64
-    },
-    "/packs/motion/frieza-final-recoil.webp": {
-      "url": "/packs/playback/9c19bbac9ddff7decea6.webp",
-      "width": 88,
-      "height": 91
-    },
-    "/packs/frieza-final-hud.webp": {
-      "url": "/packs/playback/003969b2e3d850c1f5bd.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/goku-back.webp": {
-      "url": "/packs/playback/65aec70a94bea9c5fcee.webp",
-      "width": 81,
-      "height": 84
-    },
-    "/packs/motion/goku-guard.webp": {
-      "url": "/packs/playback/d16e1db3b0a72292394f.webp",
-      "width": 81,
-      "height": 78
-    },
-    "/packs/goku-hud.webp": {
-      "url": "/packs/playback/48dec567eda8800f1a66.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/cui-story.webp": {
-      "url": "/packs/playback/781826ce5d164d2fde25.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/dodoria-story.webp": {
-      "url": "/packs/playback/8101db48e42217f17f1a.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/ginyu-story.webp": {
-      "url": "/packs/playback/5a7f447fe8aebb9aebaf.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/zarbon-story.webp": {
-      "url": "/packs/playback/9189102d5134dd088416.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/namek-elder-story.webp": {
-      "url": "/packs/playback/6cbea327c230106b6669.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/nail-story.webp": {
-      "url": "/packs/playback/60ce4b00327e5251214c.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/frieza-second-ready.webp": {
-      "url": "/packs/playback/639b6ade6c9758ddb377.webp",
-      "width": 64,
-      "height": 58
-    },
-    "/packs/motion/frieza-second-guard.webp": {
-      "url": "/packs/playback/079cbe0e9d04838c1836.webp",
-      "width": 80,
-      "height": 80
-    },
-    "/packs/motion/frieza-second-strike.webp": {
-      "url": "/packs/playback/86af36e97027d04cbc0e.webp",
-      "width": 64,
-      "height": 81
-    },
-    "/packs/motion/frieza-second-back.webp": {
-      "url": "/packs/playback/bd38972d285d079f5eff.webp",
-      "width": 96,
-      "height": 92
-    },
-    "/packs/motion/frieza-second-kick.webp": {
-      "url": "/packs/playback/89f57aaf939882aeadf5.webp",
-      "width": 80,
-      "height": 87
-    },
-    "/packs/frieza-second-hud.webp": {
-      "url": "/packs/playback/d95712d4f49d6fcccb5d.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/frieza-third-ready.webp": {
-      "url": "/packs/playback/34d537a611a1fcf9d7a7.webp",
-      "width": 64,
-      "height": 62
-    },
-    "/packs/motion/frieza-third-guard.webp": {
-      "url": "/packs/playback/50001de20bb129471e81.webp",
-      "width": 80,
-      "height": 77
-    },
-    "/packs/motion/frieza-third-strike.webp": {
-      "url": "/packs/playback/029482fbf7e4eda2712a.webp",
-      "width": 63,
-      "height": 80
-    },
-    "/packs/motion/frieza-third-advance.webp": {
-      "url": "/packs/playback/232145116ec5263435e2.webp",
-      "width": 91,
-      "height": 76
-    },
-    "/packs/frieza-third-hud.webp": {
-      "url": "/packs/playback/3fb9c78ecf58055a953e.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/piccolo-ready.webp": {
-      "url": "/packs/playback/07d177f9a84552e92a59.webp",
-      "width": 77,
-      "height": 80
-    },
-    "/packs/motion/piccolo-back.webp": {
-      "url": "/packs/playback/4935b520b5b4ba5c4341.webp",
-      "width": 78,
-      "height": 87
-    },
-    "/packs/motion/piccolo-flight.webp": {
-      "url": "/packs/playback/245599a64279734d288d.webp",
-      "width": 75,
-      "height": 66
-    },
-    "/packs/motion/piccolo-kick.webp": {
-      "url": "/packs/playback/6b640b3ad121d134a6e5.webp",
-      "width": 96,
-      "height": 66
-    },
-    "/packs/motion/piccolo-recoil.webp": {
-      "url": "/packs/playback/843311774fec53bf8874.webp",
-      "width": 78,
-      "height": 81
-    },
-    "/packs/piccolo-hud.webp": {
-      "url": "/packs/playback/230ef024f63500d28e75.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/brown-soldier-ready.webp": {
-      "url": "/packs/playback/09955cd890a5205463e3.webp",
-      "width": 71,
-      "height": 76
-    },
-    "/packs/motion/brown-soldier-back.webp": {
-      "url": "/packs/playback/cc6677e952c7c3ed0465.webp",
-      "width": 75,
-      "height": 88
-    },
-    "/packs/brown-soldier-hud.webp": {
-      "url": "/packs/playback/5e44976fd5760691285c.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/purple-soldier-ready.webp": {
-      "url": "/packs/playback/a368883fe1ddeb5811c7.webp",
-      "width": 71,
-      "height": 76
-    },
-    "/packs/motion/purple-soldier-back.webp": {
-      "url": "/packs/playback/20c5db185a8ec2941af6.webp",
-      "width": 75,
-      "height": 88
-    },
-    "/packs/purple-soldier-hud.webp": {
-      "url": "/packs/playback/a0ac4937d0e7491778f3.webp",
-      "width": 64,
-      "height": 64
-    },
-    "/packs/motion/pink-soldier-ready.webp": {
-      "url": "/packs/playback/642243f5e7623e992419.webp",
-      "width": 59,
-      "height": 74
-    },
-    "/packs/motion/pink-soldier-recoil.webp": {
-      "url": "/packs/playback/a1ec1768f97bb91f6b57.webp",
-      "width": 58,
       "height": 93
     },
+    "/packs/motion/gohan-recoil.webp": {
+      "url": "/packs/playback/00c67ec07d4eff612edf.webp",
+      "width": 85,
+      "height": 76
+    },
+    "/packs/motion/gohan-fire.webp": {
+      "url": "/packs/playback/b28ab1b302e524eb5c20.webp",
+      "width": 116,
+      "height": 109
+    },
+    "/packs/motion/krillin-ready.webp": {
+      "url": "/packs/playback/bb5d8b6e0971cb6e931a.webp",
+      "width": 104,
+      "height": 125
+    },
+    "/packs/motion/krillin-raise.webp": {
+      "url": "/packs/playback/24a6054726cc2b936018.webp",
+      "width": 85,
+      "height": 148
+    },
+    "/packs/motion/krillin-fire.webp": {
+      "url": "/packs/playback/e3650637062b66de66e4.webp",
+      "width": 124,
+      "height": 124
+    },
+    "/packs/motion/yamcha-ready.webp": {
+      "url": "/packs/playback/efb0e574892b53ec6bf8.webp",
+      "width": 128,
+      "height": 149
+    },
+    "/packs/motion/yamcha-raise.webp": {
+      "url": "/packs/playback/f25d9d015e17d111d446.webp",
+      "width": 116,
+      "height": 128
+    },
+    "/packs/motion/yamcha-fire.webp": {
+      "url": "/packs/playback/b34812dfc07b90c16c48.webp",
+      "width": 157,
+      "height": 148
+    },
+    "/packs/motion/blue-enemy-ready-corrected.webp": {
+      "url": "/packs/playback/fe287eb059215cdb1786.webp",
+      "width": 124,
+      "height": 128
+    },
+    "/packs/motion/blue-enemy-guard-corrected.webp": {
+      "url": "/packs/playback/c51d6bcb12c58c5e6ac5.webp",
+      "width": 116,
+      "height": 141
+    },
+    "/packs/motion/blue-enemy-recoil-corrected.webp": {
+      "url": "/packs/playback/97cb71ce38a0e573ea03.webp",
+      "width": 161,
+      "height": 108
+    },
+    "/packs/tien-hud.webp": {
+      "url": "/packs/playback/60e55b716f2e36aafbc0.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/gohan-story.webp": {
+      "url": "/packs/playback/70187d082d9aeec94c96.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/krillin-hud.webp": {
+      "url": "/packs/playback/7ba246a9eb31fe0e49bb.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/yamcha-hud.webp": {
+      "url": "/packs/playback/bb7f348d800ddc1709a7.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/blue-enemy-hud-corrected.webp": {
+      "url": "/packs/playback/9f1053a956ef8391fa6c.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/tien-recoil.webp": {
+      "url": "/packs/playback/5b809d0fccd1834a3d1c.webp",
+      "width": 161,
+      "height": 136
+    },
+    "/packs/motion/krillin-rising.webp": {
+      "url": "/packs/playback/8c579b4957a1d178ba03.webp",
+      "width": 65,
+      "height": 108
+    },
+    "/packs/motion/gold-enemy-look-up.webp": {
+      "url": "/packs/playback/b6fb962dbb02c9657fe7.webp",
+      "width": 160,
+      "height": 181
+    },
+    "/packs/motion/gold-enemy-kick.webp": {
+      "url": "/packs/playback/9d3d2a2654045d5ff81c.webp",
+      "width": 177,
+      "height": 156
+    },
+    "/packs/motion/blue-enemy-punch-corrected.webp": {
+      "url": "/packs/playback/81e0660d06c01c99dd18.webp",
+      "width": 144,
+      "height": 137
+    },
+    "/packs/motion/blue-enemy-look-up-corrected.webp": {
+      "url": "/packs/playback/e7f02b7d1313cbabe93f.webp",
+      "width": 116,
+      "height": 185
+    },
+    "/packs/motion/blue-enemy-kick-corrected.webp": {
+      "url": "/packs/playback/df3870c2a3dc6c8b4b14.webp",
+      "width": 161,
+      "height": 128
+    },
+    "/packs/title.webp": {
+      "url": "/packs/playback/74b821c231d0962a27d8.webp",
+      "width": 1025,
+      "height": 352
+    },
+    "/packs/motion/green-enemy-ready.webp": {
+      "url": "/packs/playback/8e90435c32fb67200f84.webp",
+      "width": 85,
+      "height": 108
+    },
+    "/packs/motion/green-enemy-look-up.webp": {
+      "url": "/packs/playback/9b698d80c6468c6cc5b8.webp",
+      "width": 141,
+      "height": 152
+    },
+    "/packs/motion/green-enemy-diagonal.webp": {
+      "url": "/packs/playback/5ea21f3e75780b3fe1b3.webp",
+      "width": 149,
+      "height": 176
+    },
+    "/packs/motion/green-enemy-palm.webp": {
+      "url": "/packs/playback/407d6bbb1e9fc19b809c.webp",
+      "width": 165,
+      "height": 144
+    },
+    "/packs/motion/green-enemy-kick.webp": {
+      "url": "/packs/playback/cb07523a829d7fdd3870.webp",
+      "width": 161,
+      "height": 156
+    },
+    "/packs/green-enemy-hud.webp": {
+      "url": "/packs/playback/ecdd84c553185852e881.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/nail-ready.webp": {
+      "url": "/packs/playback/2e6a871ea5ab2e6cbe8b.webp",
+      "width": 128,
+      "height": 120
+    },
+    "/packs/motion/nail-guard.webp": {
+      "url": "/packs/playback/57be0f018704d57f1fab.webp",
+      "width": 148,
+      "height": 145
+    },
+    "/packs/motion/nail-recoil.webp": {
+      "url": "/packs/playback/56a17c14849f13920bf1.webp",
+      "width": 141,
+      "height": 108
+    },
+    "/packs/motion/nail-back.webp": {
+      "url": "/packs/playback/7fb6a8d57a522cc282f7.webp",
+      "width": 144,
+      "height": 169
+    },
+    "/packs/motion/nail-strike.webp": {
+      "url": "/packs/playback/6990bdeb6ca5a0c2c378.webp",
+      "width": 181,
+      "height": 144
+    },
+    "/packs/nail-hud.webp": {
+      "url": "/packs/playback/dd7664cd160b394ab679.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/frieza-ready.webp": {
+      "url": "/packs/playback/4d68385709be62c619ef.webp",
+      "width": 149,
+      "height": 140
+    },
+    "/packs/motion/frieza-guard.webp": {
+      "url": "/packs/playback/5ed8dba9771bd26d1d61.webp",
+      "width": 144,
+      "height": 120
+    },
+    "/packs/motion/frieza-diagonal.webp": {
+      "url": "/packs/playback/4888f2307ac49a214103.webp",
+      "width": 140,
+      "height": 145
+    },
+    "/packs/motion/frieza-strike.webp": {
+      "url": "/packs/playback/59029d8cd7bc69905745.webp",
+      "width": 181,
+      "height": 128
+    },
+    "/packs/motion/frieza-recoil.webp": {
+      "url": "/packs/playback/d6224db846f925692693.webp",
+      "width": 181,
+      "height": 152
+    },
+    "/packs/frieza-hud.webp": {
+      "url": "/packs/playback/156ae3d4c066b2d8a429.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/kai-planet.webp": {
+      "url": "/packs/playback/66b4baa974f3d9698c2e.webp",
+      "width": 384,
+      "height": 384
+    },
+    "/packs/frieza-story.webp": {
+      "url": "/packs/playback/3f1940dd0f9aaf58ebfd.webp",
+      "width": 384,
+      "height": 256
+    },
+    "/packs/motion/nail-low-ready.webp": {
+      "url": "/packs/playback/f087dbecc0ed3aa07358.webp",
+      "width": 60,
+      "height": 64
+    },
+    "/packs/motion/nail-descend.webp": {
+      "url": "/packs/playback/fd378c13ae5d2ed4b01d.webp",
+      "width": 113,
+      "height": 152
+    },
+    "/packs/motion/nail-rise.webp": {
+      "url": "/packs/playback/283a285b89157ca32817.webp",
+      "width": 144,
+      "height": 108
+    },
+    "/packs/motion/frieza-open-palm.webp": {
+      "url": "/packs/playback/347efa79004c1243bc45.webp",
+      "width": 177,
+      "height": 128
+    },
+    "/packs/motion/frieza-turn.webp": {
+      "url": "/packs/playback/7b6b310ab549a48274a5.webp",
+      "width": 128,
+      "height": 120
+    },
+    "/packs/card-back.webp": {
+      "url": "/packs/playback/398ee277642c0ef99dd1.webp",
+      "width": 128,
+      "height": 192
+    },
+    "/packs/motion/yamcha-back.webp": {
+      "url": "/packs/playback/de48ebde8656bca4cdc5.webp",
+      "width": 141,
+      "height": 180
+    },
+    "/packs/motion/yamcha-recoil.webp": {
+      "url": "/packs/playback/f11c57d966c40750389c.webp",
+      "width": 145,
+      "height": 104
+    },
+    "/packs/motion/yamcha-knee.webp": {
+      "url": "/packs/playback/69ff2c56e8db4d6d8698.webp",
+      "width": 145,
+      "height": 148
+    },
+    "/packs/motion/krillin-recoil.webp": {
+      "url": "/packs/playback/e9ad358dfb6878288d89.webp",
+      "width": 128,
+      "height": 112
+    },
+    "/packs/motion/tien-turn.webp": {
+      "url": "/packs/playback/4877ac27631f7a60f296.webp",
+      "width": 120,
+      "height": 141
+    },
+    "/packs/motion/blue-enemy-step-corrected.webp": {
+      "url": "/packs/playback/44a16f944e671398258e.webp",
+      "width": 117,
+      "height": 148
+    },
+    "/packs/motion/blue-enemy-dive-corrected.webp": {
+      "url": "/packs/playback/48b7b48ff03155d8f2ed.webp",
+      "width": 128,
+      "height": 145
+    },
+    "/packs/motion/blue-enemy-distant-corrected.webp": {
+      "url": "/packs/playback/bb6ddb683a0f46991de1.webp",
+      "width": 93,
+      "height": 104
+    },
+    "/packs/goku-story.webp": {
+      "url": "/packs/playback/76936d85d4ab4bcdde10.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/vegeta-story.webp": {
+      "url": "/packs/playback/e0765f5ace19ab8bcf99.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/piccolo-story.webp": {
+      "url": "/packs/playback/125327cb758815d01a02.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/bulma-story.webp": {
+      "url": "/packs/playback/855c84ee67cd109423a3.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/krillin-story.webp": {
+      "url": "/packs/playback/6a92955402e4d16e66d5.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/frieza-final-ready.webp": {
+      "url": "/packs/playback/49f56b49354bdf93267c.webp",
+      "width": 165,
+      "height": 156
+    },
+    "/packs/motion/frieza-final-guard.webp": {
+      "url": "/packs/playback/3f8f8bc52d392279ad52.webp",
+      "width": 157,
+      "height": 128
+    },
+    "/packs/motion/frieza-final-strike.webp": {
+      "url": "/packs/playback/80427f2c5161862d6270.webp",
+      "width": 128,
+      "height": 153
+    },
+    "/packs/motion/frieza-final-advance.webp": {
+      "url": "/packs/playback/42710f4d4cdc6b8ebdab.webp",
+      "width": 124,
+      "height": 128
+    },
+    "/packs/motion/frieza-final-recoil.webp": {
+      "url": "/packs/playback/4fdf5e42b8f3e18dac67.webp",
+      "width": 176,
+      "height": 181
+    },
+    "/packs/frieza-final-hud.webp": {
+      "url": "/packs/playback/1a36c2a45d12b7a29550.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/goku-back.webp": {
+      "url": "/packs/playback/824ca100a2ff25b29e27.webp",
+      "width": 161,
+      "height": 168
+    },
+    "/packs/motion/goku-guard.webp": {
+      "url": "/packs/playback/173679371a886d7c65f9.webp",
+      "width": 161,
+      "height": 156
+    },
+    "/packs/goku-hud.webp": {
+      "url": "/packs/playback/54a64bf5c1e162cf30e5.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/cui-story.webp": {
+      "url": "/packs/playback/7f28422239303e798b5c.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/dodoria-story.webp": {
+      "url": "/packs/playback/0db544b98aa8c95ae05a.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/ginyu-story.webp": {
+      "url": "/packs/playback/c99b6e8a6bbe1beeafe4.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/zarbon-story.webp": {
+      "url": "/packs/playback/d9b904a2612c44e2429c.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/namek-elder-story.webp": {
+      "url": "/packs/playback/d27cbc5723445e81bc6e.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/nail-story.webp": {
+      "url": "/packs/playback/650804768acc0cc607a7.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/frieza-second-ready.webp": {
+      "url": "/packs/playback/60ddd7100128a4f7978e.webp",
+      "width": 128,
+      "height": 116
+    },
+    "/packs/motion/frieza-second-guard.webp": {
+      "url": "/packs/playback/a3908b6a4cd665682194.webp",
+      "width": 160,
+      "height": 160
+    },
+    "/packs/motion/frieza-second-strike.webp": {
+      "url": "/packs/playback/0949c7b31f2e2658e07b.webp",
+      "width": 128,
+      "height": 161
+    },
+    "/packs/motion/frieza-second-back.webp": {
+      "url": "/packs/playback/6e9417156adf5592663f.webp",
+      "width": 192,
+      "height": 184
+    },
+    "/packs/motion/frieza-second-kick.webp": {
+      "url": "/packs/playback/4caecc85c0c8c6018425.webp",
+      "width": 160,
+      "height": 173
+    },
+    "/packs/frieza-second-hud.webp": {
+      "url": "/packs/playback/a0d32c219df4c7d497e7.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/frieza-third-ready.webp": {
+      "url": "/packs/playback/a30029595018797dbfb7.webp",
+      "width": 128,
+      "height": 124
+    },
+    "/packs/motion/frieza-third-guard.webp": {
+      "url": "/packs/playback/2634b2843e4fe4d4fe78.webp",
+      "width": 160,
+      "height": 153
+    },
+    "/packs/motion/frieza-third-strike.webp": {
+      "url": "/packs/playback/8186db447ab65b52589f.webp",
+      "width": 125,
+      "height": 160
+    },
+    "/packs/motion/frieza-third-advance.webp": {
+      "url": "/packs/playback/c494e582e749dc37f230.webp",
+      "width": 181,
+      "height": 152
+    },
+    "/packs/frieza-third-hud.webp": {
+      "url": "/packs/playback/b821f2589255285a46e2.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/piccolo-ready.webp": {
+      "url": "/packs/playback/c2e189b70b916963073e.webp",
+      "width": 153,
+      "height": 160
+    },
+    "/packs/motion/piccolo-back.webp": {
+      "url": "/packs/playback/32ac7d093e8e798593c4.webp",
+      "width": 156,
+      "height": 173
+    },
+    "/packs/motion/piccolo-flight.webp": {
+      "url": "/packs/playback/730d95d6ecfc77f646e0.webp",
+      "width": 149,
+      "height": 132
+    },
+    "/packs/motion/piccolo-kick.webp": {
+      "url": "/packs/playback/fb0402099707cebe3bc3.webp",
+      "width": 192,
+      "height": 132
+    },
+    "/packs/motion/piccolo-recoil.webp": {
+      "url": "/packs/playback/5b427ccda542f8e20d50.webp",
+      "width": 156,
+      "height": 161
+    },
+    "/packs/piccolo-hud.webp": {
+      "url": "/packs/playback/dd13a5d326eb0237ed20.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/brown-soldier-ready.webp": {
+      "url": "/packs/playback/ceef27fbbaa86ef1385b.webp",
+      "width": 141,
+      "height": 152
+    },
+    "/packs/motion/brown-soldier-back.webp": {
+      "url": "/packs/playback/92b2d6128831f857bd03.webp",
+      "width": 149,
+      "height": 176
+    },
+    "/packs/brown-soldier-hud.webp": {
+      "url": "/packs/playback/86c7e9de10b2bbfa9d32.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/purple-soldier-ready.webp": {
+      "url": "/packs/playback/c2543bc2790edef70ca0.webp",
+      "width": 141,
+      "height": 152
+    },
+    "/packs/motion/purple-soldier-back.webp": {
+      "url": "/packs/playback/c6cb7f166def123adb76.webp",
+      "width": 149,
+      "height": 176
+    },
+    "/packs/purple-soldier-hud.webp": {
+      "url": "/packs/playback/4fe1f3139ba5e2fb72e4.webp",
+      "width": 128,
+      "height": 128
+    },
+    "/packs/motion/pink-soldier-ready.webp": {
+      "url": "/packs/playback/24a7fc4c5408be177f43.webp",
+      "width": 117,
+      "height": 148
+    },
+    "/packs/motion/pink-soldier-recoil.webp": {
+      "url": "/packs/playback/d29ca9a31370193c7344.webp",
+      "width": 116,
+      "height": 185
+    },
     "/packs/motion/pink-soldier-kick.webp": {
-      "url": "/packs/playback/9f3228a3714eda27ab04.webp",
-      "width": 81,
-      "height": 54
+      "url": "/packs/playback/424b717565f8220bf90a.webp",
+      "width": 161,
+      "height": 108
     },
     "/packs/pink-soldier-hud.webp": {
-      "url": "/packs/playback/95e75b8ba156482ab1f8.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/76c08db9eaf4078f4f81.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/motion/goku-guard-small.webp": {
-      "url": "/packs/playback/e0fb9ce9d38f616ffcce.webp",
-      "width": 58,
-      "height": 64
+      "url": "/packs/playback/80dcd08509d92cb066f9.webp",
+      "width": 116,
+      "height": 128
     },
     "/packs/motion/tien-rear-ready.webp": {
-      "url": "/packs/playback/f8d5e5f87a1702d576d3.webp",
-      "width": 64,
-      "height": 62
+      "url": "/packs/playback/5ac75e99d787cc0e2a4a.webp",
+      "width": 128,
+      "height": 124
     },
     "/packs/motion/chiaotzu-rear-ready.webp": {
-      "url": "/packs/playback/059a8af1841ac27bd4e4.webp",
-      "width": 48,
-      "height": 53
+      "url": "/packs/playback/53f67843c729619cea24.webp",
+      "width": 96,
+      "height": 105
     },
     "/packs/motion/gohan-armored-back.webp": {
-      "url": "/packs/playback/9e14d4312f61c17329f9.webp",
-      "width": 54,
-      "height": 54
+      "url": "/packs/playback/8f7d9e29f39f331405c6.webp",
+      "width": 108,
+      "height": 108
     },
     "/packs/motion/krillin-back-kick.webp": {
-      "url": "/packs/playback/63a510d4cb6526e8a6c0.webp",
-      "width": 63,
-      "height": 72
+      "url": "/packs/playback/0a2d533385365a1b45b9.webp",
+      "width": 125,
+      "height": 144
     },
     "/packs/motion/gohan-armored-punch.webp": {
-      "url": "/packs/playback/7cf80af56a02815c1e19.webp",
-      "width": 64,
-      "height": 60
+      "url": "/packs/playback/8f647e0b43131b9747e4.webp",
+      "width": 128,
+      "height": 120
     },
     "/packs/motion/helmet-soldier-guard.webp": {
-      "url": "/packs/playback/005481962bd7c74e7038.webp",
-      "width": 74,
-      "height": 79
+      "url": "/packs/playback/94dfbd98eaa790b4f833.webp",
+      "width": 148,
+      "height": 157
     },
     "/packs/motion/helmet-soldier-back.webp": {
-      "url": "/packs/playback/e4ae89acd744ac514607.webp",
-      "width": 80,
-      "height": 91
+      "url": "/packs/playback/d03d2793cbcae863f8a6.webp",
+      "width": 160,
+      "height": 181
     },
     "/packs/helmet-soldier-hud.webp": {
-      "url": "/packs/playback/24f8a45f8346ca39232e.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/02c5bdc92c7e0d87002b.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/motion/frieza-third-reverse-guard.webp": {
-      "url": "/packs/playback/0507398e5a7d4d7b426d.webp",
-      "width": 96,
-      "height": 90
+      "url": "/packs/playback/c790672e3d17137ef162.webp",
+      "width": 192,
+      "height": 180
     },
     "/packs/piccolo-sacrifice.webp": {
-      "url": "/packs/playback/2fdcd5cfae9511a08279.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/97809811c595dc472669.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/blue-planet.webp": {
-      "url": "/packs/playback/95c33d231016ba77d022.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/cf19f3e83fc10ed40bb1.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/goku-exhausted.webp": {
-      "url": "/packs/playback/771597de7e1c883d1b80.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/3ed3ed600fc3b81dbdc9.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/vegeta-pod.webp": {
-      "url": "/packs/playback/62ecc475d6a57b69e5cd.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/13172582b6ba4188c43e.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/orange-planet.webp": {
-      "url": "/packs/playback/5309e56c9b67c9e2bf4f.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/0a2b6445a82110de5f27.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/bulma-cockpit.webp": {
-      "url": "/packs/playback/1c632ca7065771f98647.webp",
-      "width": 192,
-      "height": 128
+      "url": "/packs/playback/dc52f132aba55acd3c93.webp",
+      "width": 384,
+      "height": 256
     },
     "/packs/start-menu-dragon.webp": {
-      "url": "/packs/playback/8b1694d8d854196ac675.webp",
-      "width": 416,
-      "height": 320
+      "url": "/packs/playback/110a69f3530f0b0e0155.webp",
+      "width": 832,
+      "height": 640
     },
     "/packs/coverage-v28/krillin-exhausted.webp": {
-      "url": "/packs/playback/901e5362393199c10f22.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/cb1f6366da38f2585e08.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/tien-exhausted.webp": {
-      "url": "/packs/playback/b75e7d2cda737855a844.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/1663fb29741d586ba874.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/piccolo-exhausted.webp": {
-      "url": "/packs/playback/f5ddc54346990588b8ec.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/5f1f20e6981ab520a65f.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/blue-helmet.webp": {
-      "url": "/packs/playback/ed00da8f33c6d5507c7d.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/a2a270d3de457cccac01.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/golden-alien.webp": {
-      "url": "/packs/playback/5c4d4ca3a124b575c061.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/bf6b4f3c78279fbd8e20.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/yellow-spiked-alien.webp": {
-      "url": "/packs/playback/879ff4b4bd2950f5da9f.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/376ebdb3c724712b4e22.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/green-frog.webp": {
-      "url": "/packs/playback/03ba5a2559f8a734a439.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/ab95b5b5c673a47a7e92.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/mr-popo.webp": {
-      "url": "/packs/playback/8025dfa137361c966c1a.webp",
-      "width": 64,
-      "height": 64
+      "url": "/packs/playback/5e0ed73c6ed4d0fe85dd.webp",
+      "width": 128,
+      "height": 128
     },
     "/packs/coverage-v28/krillin-double-punch.webp": {
-      "url": "/packs/playback/298358e2e82db45eef24.webp",
-      "width": 75,
-      "height": 60
+      "url": "/packs/playback/3ea0203c364afdd33a89.webp",
+      "width": 149,
+      "height": 120
     },
     "/packs/coverage-v28/yamcha-double-punch.webp": {
-      "url": "/packs/playback/6b9c9f29e2d1edbeddc5.webp",
-      "width": 81,
-      "height": 74
+      "url": "/packs/playback/44aa8b51b22a54c33e23.webp",
+      "width": 161,
+      "height": 148
     },
     "/packs/coverage-v28/tien-double-punch.webp": {
-      "url": "/packs/playback/16c348c3d35000d91ba1.webp",
-      "width": 85,
-      "height": 74
+      "url": "/packs/playback/4ce89e03df78734dd588.webp",
+      "width": 169,
+      "height": 148
     },
     "/packs/coverage-v28/tien-high-kick.webp": {
-      "url": "/packs/playback/79ba9db1b8c7061bd6b8.webp",
-      "width": 81,
-      "height": 82
+      "url": "/packs/playback/6dbd0e6cd4c7a87613d6.webp",
+      "width": 161,
+      "height": 164
     },
     "/packs/coverage-v28/chiaotzu-lunge.webp": {
-      "url": "/packs/playback/7f8f684cc92c9fee2535.webp",
-      "width": 59,
-      "height": 44
+      "url": "/packs/playback/bcf827d0fa24008db70a.webp",
+      "width": 117,
+      "height": 88
     },
     "/packs/coverage-v28/piccolo-recoil-back.webp": {
-      "url": "/packs/playback/cc26c352a551bae85654.webp",
-      "width": 78,
-      "height": 67
+      "url": "/packs/playback/64ad381205eeb89a91a6.webp",
+      "width": 156,
+      "height": 133
     },
     "/packs/coverage-v28/goku-double-punch.webp": {
-      "url": "/packs/playback/21556dcaca8ee60e2064.webp",
-      "width": 96,
-      "height": 78
+      "url": "/packs/playback/eb2bdf7adfca726b3ad7.webp",
+      "width": 192,
+      "height": 156
     },
     "/packs/coverage-v28/krillin-hit-turn.webp": {
-      "url": "/packs/playback/67f014db6716338a225b.webp",
-      "width": 42,
-      "height": 71
+      "url": "/packs/playback/79a8dcd0d2627bf4a104.webp",
+      "width": 84,
+      "height": 141
     },
     "/packs/coverage-v28/pink-wide-ready.webp": {
-      "url": "/packs/playback/be6f0e4f7b7b3185b6a1.webp",
-      "width": 62,
-      "height": 64
+      "url": "/packs/playback/cd58d55d08e9b2d35411.webp",
+      "width": 124,
+      "height": 128
     },
     "/packs/coverage-v28/pink-wide-guard.webp": {
-      "url": "/packs/playback/f841dd7ac10c3b20bccc.webp",
-      "width": 58,
-      "height": 71
+      "url": "/packs/playback/b4160a23c397eefe448b.webp",
+      "width": 116,
+      "height": 141
     },
     "/packs/coverage-v28/pink-straight-punch.webp": {
-      "url": "/packs/playback/9c0ec3623d1a43e0ea56.webp",
-      "width": 72,
-      "height": 69
+      "url": "/packs/playback/6ddc4e29b744b3649510.webp",
+      "width": 144,
+      "height": 137
     },
     "/packs/coverage-v28/brown-palm.webp": {
-      "url": "/packs/playback/4067f85158e6074e7767.webp",
-      "width": 83,
-      "height": 72
+      "url": "/packs/playback/4c549ed75c7c76fbd222.webp",
+      "width": 165,
+      "height": 144
     },
     "/packs/coverage-v28/helmet-recoil.webp": {
-      "url": "/packs/playback/b6d391a92c126faaa209.webp",
-      "width": 60,
-      "height": 75
+      "url": "/packs/playback/3bff6931aa8fb6649724.webp",
+      "width": 120,
+      "height": 149
     },
     "/packs/coverage-v28/brown-kick.webp": {
-      "url": "/packs/playback/7b07f89819915cf62ffb.webp",
-      "width": 81,
-      "height": 78
+      "url": "/packs/playback/e67e4c568c981e4592e0.webp",
+      "width": 161,
+      "height": 156
     },
     "/packs/coverage-v28/helmet-side-guard.webp": {
-      "url": "/packs/playback/0a8289f782bd4837f206.webp",
-      "width": 62,
-      "height": 79
+      "url": "/packs/playback/06a9cf2f8bd7bfc140ee.webp",
+      "width": 124,
+      "height": 157
     },
     "/packs/coverage-v28/purple-kick.webp": {
-      "url": "/packs/playback/05eb71683a22c5cdce14.webp",
-      "width": 81,
-      "height": 78
+      "url": "/packs/playback/81cc9670e1c94b9c3095.webp",
+      "width": 161,
+      "height": 156
     },
     "/packs/coverage-v28/pink-dive.webp": {
-      "url": "/packs/playback/bb4fa3285600ea385ce9.webp",
-      "width": 64,
-      "height": 73
+      "url": "/packs/playback/c086b14a6d7f00e8122c.webp",
+      "width": 128,
+      "height": 145
     },
     "/packs/coverage-v28/pink-side-kick.webp": {
-      "url": "/packs/playback/e406e24dcda58688cc1e.webp",
-      "width": 81,
-      "height": 64
+      "url": "/packs/playback/54ba91f0174b03f6aa17.webp",
+      "width": 161,
+      "height": 128
+    },
+    "/packs/remaster-v93/planet.webp": {
+      "url": "/packs/playback/0df68ac0821b72bf8740.webp",
+      "width": 160,
+      "height": 160
+    },
+    "/packs/remaster-v93/goku-fire.webp": {
+      "url": "/packs/playback/2bc387339eb293be4629.webp",
+      "width": 163,
+      "height": 156
+    },
+    "/packs/remaster-v93/goku-recoil.webp": {
+      "url": "/packs/playback/3ff7dd2871c7592ef7c1.webp",
+      "width": 192,
+      "height": 176
+    },
+    "/packs/remaster-v93/chiaotzu-recoil.webp": {
+      "url": "/packs/playback/4c3a54a885cae3141e0a.webp",
+      "width": 98,
+      "height": 96
     },
     "/packs/motion/namek-terrain.webp": {
-      "url": "/packs/playback/c30addf04b58f428d311.webp",
-      "width": 512,
-      "height": 81
+      "url": "/packs/playback/9b442e9f61e82007ef95.webp",
+      "width": 793,
+      "height": 125
     },
     "/packs/motion/desert-terrain.webp": {
-      "url": "/packs/playback/e8ffc5cd94d91b71ba22.webp",
-      "width": 512,
-      "height": 67
+      "url": "/packs/playback/224f38092dd94b80b184.webp",
+      "width": 1024,
+      "height": 134
     },
     "/packs/motion/temple-terrain.webp": {
-      "url": "/packs/playback/fa301f1c392402eedde5.webp",
-      "width": 610,
-      "height": 64
+      "url": "/packs/playback/fecb42ef10d1f07f585b.webp",
+      "width": 1220,
+      "height": 128
     },
     "/packs/map/tile-00.webp": {
-      "url": "/packs/playback/6292400859051b7b48f5.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/71be72ec26b0d0406808.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-01.webp": {
-      "url": "/packs/playback/d4b4a9657fbb7d13dc20.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/997ffe447b37e354616f.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-02.webp": {
-      "url": "/packs/playback/1e9e6785a00a24fe827a.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/e2463ededc3d745dd84d.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/tile-03.webp": {
-      "url": "/packs/playback/6144758940cd5ffe658f.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/25de17f27ced8b326847.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-04.webp": {
-      "url": "/packs/playback/78f8a612f2f05c107fa9.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/bb9118a0793e4fcf82ba.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-05.webp": {
-      "url": "/packs/playback/17a3cf7d15bab2efa0e3.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/10c9503a5d2e9c2e9ddf.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-06.webp": {
-      "url": "/packs/playback/3006173aa930a0bad98d.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/1a5ab9198de0aa5d6b2a.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-07.webp": {
-      "url": "/packs/playback/cb442762057b8111064e.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/d707f98c9ada6b77ee2b.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/tile-08.webp": {
-      "url": "/packs/playback/5e9389c5e5a5490dd206.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/b89ce91311a18f99eb14.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-09.webp": {
-      "url": "/packs/playback/3e91bc190639e91e18ac.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/b30ea0738b9c61a9ee82.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-10.webp": {
-      "url": "/packs/playback/7ad720ddb666f4a944a7.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/ac61a056918324cbfb87.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/tile-11.webp": {
-      "url": "/packs/playback/a5fe70e579c84fecb1f2.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/2566e7539d8da3df13b6.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/tile-12.webp": {
-      "url": "/packs/playback/f95b1098257c0ce1f2eb.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/855a0aed5e2f0667fd3d.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-14.webp": {
-      "url": "/packs/playback/2ca1ca02bc45aad4faff.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/c9ef82f470173dfe9268.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/tile-15.webp": {
-      "url": "/packs/playback/4dcd8c271038ee014cc1.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/9f64315fa5ec0b6d1aaf.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-16.webp": {
-      "url": "/packs/playback/5873c8f0d17955b3295a.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/e2c91c35c929f6e80138.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-17.webp": {
-      "url": "/packs/playback/1f49b5a3a4f363a1d025.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/cf58742153fcb541e88f.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/tile-18.webp": {
-      "url": "/packs/playback/caeedc8c4c87d797e1b0.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/35d2b9333929b36df506.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-19.webp": {
-      "url": "/packs/playback/c733f171a9d5404e70c3.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/a2ba02eb8dc5985c8b64.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-20.webp": {
-      "url": "/packs/playback/a43c0cfa2e429487fc3d.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/7b6e0528bc3e931ff6d1.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-21.webp": {
-      "url": "/packs/playback/5d6c0501ac4e7fe15df8.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/e6cb44c54e18fd37e3cb.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-22.webp": {
-      "url": "/packs/playback/2f15ba3c076b08400436.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/96c93ac6ad14167cae42.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/tile-23.webp": {
-      "url": "/packs/playback/375ebf050954ac030f96.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/e5370694179ebc451a74.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/tile-24.webp": {
-      "url": "/packs/playback/6a2c541505f90c9c3373.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/298140d0565e04a900a5.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-00.webp": {
-      "url": "/packs/playback/41cfed5e145380e427e3.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/ba6989a27ac0d7368caf.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-01.webp": {
-      "url": "/packs/playback/06752c9b44839999fff6.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/a34067e689e5bbb040c0.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/space-02.webp": {
-      "url": "/packs/playback/8cd96b10039965b50a09.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/881e8ee9b82e1ad6a039.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-03.webp": {
-      "url": "/packs/playback/4ae522f703a58d33726a.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/b36b1cae1974f490d86d.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/space-04.webp": {
-      "url": "/packs/playback/3257389beeffcfe51976.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/7a4075249989cfbe5c52.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-05.webp": {
-      "url": "/packs/playback/d8d196b691e659e4498c.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/1db9661c079766a099ca.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/space-06.webp": {
-      "url": "/packs/playback/a3d677cc4f9ed1f2757c.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/8b3b6dc2d3e2cb34d9c8.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-07.webp": {
-      "url": "/packs/playback/6058a47f8397e92ed3b9.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/2e2bfd306cc185887adf.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/space-08.webp": {
-      "url": "/packs/playback/d8d188c36e45a65fa7e3.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/639c14e67e518502b2fd.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-09.webp": {
-      "url": "/packs/playback/2eb233559f4cde5d0ad8.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/8f81606574bc686f0bad.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/space-10.webp": {
-      "url": "/packs/playback/8df073b668482b2ed84f.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/e3b92689ab58aba1a114.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/space-11.webp": {
-      "url": "/packs/playback/6b3b85d36bb59aee88e2.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/0ad1b28b11ef7f577abe.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-14.webp": {
-      "url": "/packs/playback/e5af2d856eef5291718e.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/0a29fb0e40aa6bfd000e.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/space-15.webp": {
-      "url": "/packs/playback/e4c93f9d3a726a62cb32.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/cddee4bc40de92304538.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-16.webp": {
-      "url": "/packs/playback/c4fa02323d6596709381.webp",
-      "width": 32,
-      "height": 33
+      "url": "/packs/playback/24df5d3a9cd67e1693a3.webp",
+      "width": 64,
+      "height": 65
     },
     "/packs/map/space-20.webp": {
-      "url": "/packs/playback/be158ff487f66da2369c.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/9730a9775a56ac6ff0f9.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-21.webp": {
-      "url": "/packs/playback/fe3535f2dcf42f0e0fa1.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/a9e64c095e32475eddb2.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/space-22.webp": {
-      "url": "/packs/playback/031f7e5419edef2da7b9.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/cb708c4b76f53e223295.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/space-24.webp": {
-      "url": "/packs/playback/125bdf26bfa0f5082fd0.webp",
-      "width": 33,
-      "height": 32
+      "url": "/packs/playback/c08cef6e074cde36c47f.webp",
+      "width": 65,
+      "height": 64
     },
     "/packs/map/space-25.webp": {
-      "url": "/packs/playback/722a6b6158363fbba962.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/c4c542825998f72a7c70.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/extra-04.webp": {
-      "url": "/packs/playback/4f4abd25515291c32f49.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/5107a7ce384beb3e37ac.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/extra-05.webp": {
-      "url": "/packs/playback/3b622f9cda7297d5b041.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/6f9640053df81b728c06.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/extra-06.webp": {
-      "url": "/packs/playback/ae244d9b85442b37b1c1.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/ad7943e223ca23c58f7d.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/extra-07.webp": {
-      "url": "/packs/playback/617df8a4029550623e77.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/58bc24629e1d821c0101.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/extra-08.webp": {
-      "url": "/packs/playback/d57be26e29c17b2f49b6.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/7cedb4faa5f8e9fd9014.webp",
+      "width": 64,
+      "height": 64
     },
     "/packs/map/extra-09.webp": {
-      "url": "/packs/playback/131ab6090691f86c5735.webp",
-      "width": 32,
-      "height": 32
+      "url": "/packs/playback/1e6d799b175b0b12b184.webp",
+      "width": 64,
+      "height": 64
     }
   },
-  "sourceBytes": 16068842,
-  "bytes": 879128,
-  "decodedBytes": 5777352
+  "sourceBytes": 16289426,
+  "bytes": 2202754,
+  "decodedBytes": 23689140
 }
