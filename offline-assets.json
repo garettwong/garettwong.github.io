@@ -1,8 +1,9 @@
 {
-  "version": "6f07d5e80cdf1d33",
+  "version": "7595c81ad61e8754",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-BEVHXYkQ.js",
+    "/assets/index-BPiWvUsW.js",
     "/assets/index-BndH9S8-.js",
     "/assets/index-C5mtnEw6.css",
     "/classic63.html",
@@ -10,6 +11,8 @@
     "/credits.html",
     "/ct2-english-font.json",
     "/ct2-english.js",
+    "/dbz-english-font.json",
+    "/dbz-english.js",
     "/dbz-skills.css",
     "/dbz-skills.js",
     "/emulator/data/compression/extract7z.js",
