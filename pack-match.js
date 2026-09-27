@@ -13,6 +13,7 @@
    if(r.badge!==undefined&&(typeof r.badge!=='boolean'||r.motion||r.search||r.region[2]!==16||r.region[3]!==16))throw new Error('Invalid party badge');
    if(r.heroCutin&&(!Array.isArray(r.heroCutin)||r.heroCutin.length!==2||!r.heroCutin.every(Number.isInteger)||r.heroCutin[0]<-104||r.heroCutin[0]>256||r.heroCutin[1]!==104||r.search||r.motion||r.region.join(',')!=='0,160,256,48'))throw new Error('Invalid hero close-up');
    if(r.cutin&&(!Array.isArray(r.cutin)||r.cutin.length!==2||!r.cutin.every(Number.isInteger)||r.cutin[0]<0||r.cutin[0]>255||r.cutin[1]!==48||r.search||r.motion||r.region.join(',')!=='0,176,256,32'))throw new Error('Invalid battle close-up');
+   if(r.cardGrid&&(r.search||r.motion||r.region[2]!==32||r.region[3]!==48))throw new Error('Invalid card grid');
    if(r.palettePattern&&(!Array.isArray(r.palettePattern)||r.palettePattern.length!==r.region[2]*r.region[3]||r.palettePattern.some(n=>!Number.isInteger(n)||n<0||n>15)))throw new Error('Invalid palette pattern');
    if(r.context&&(!Array.isArray(r.context)||r.context.length>8||r.context.some(a=>!Array.isArray(a)||a.length!==3||!a.every(Number.isInteger)||a[0]<0||a[0]>255||a[1]<0||a[1]>239||a[2]<0||a[2]>0xffffff)))throw new Error('Invalid scene context');
    if(r.paintRegion){const [x,y,w,h]=r.paintRegion;if(r.motion||!Array.isArray(r.paintRegion)||r.paintRegion.length!==4||![x,y,w,h].every(Number.isInteger)||x<0||y<0||w<1||h<1||x+w>256||y+h>240||!r.context?.length)throw new Error('Invalid scene paint region');}
@@ -112,7 +113,8 @@
    prev.set(packed);plan.hasPrev=true;
   }
   for(const r of rules){
-   if(r.motion){for(const e of items.get(r).hits)found.push(e);}
+   if(r.cardGrid){for(const y of [40,104])for(const x of [48,96,144,192])if(matchesAt(pixels,r,x,y))found.push({...r,region:[x,y,32,48]});}
+   else if(r.motion){for(const e of items.get(r).hits)found.push(e);}
    else if(r.search){found.push(...(portraits.get(r)||[]));}
    else if(matchesAt(pixels,r,r.region[0],r.region[1]))found.push(r);
   }
@@ -120,6 +122,7 @@
  }
  function resolveOverlaps(found){
   const title=found.find(r=>r.titleScene);if(title)return [title];
+  const scanned=found.filter(r=>r.scouterV97);found=found.filter(r=>!r.cardBack||!scanned.some(s=>s.region[0]===r.region[0]&&s.region[1]===r.region[1]));
   const poses=new Map(),result=[];
   for(const r of found){
    if(!r.motion){result.push(r);continue;}
@@ -147,7 +150,8 @@
    packed[y*256+x]=c;const positions=colors.get(c);if(positions)positions.push(y*256+x);
   }
   for(const r of rules){
-   if(r.motion){
+   if(r.cardGrid){for(const y of [40,104])for(const x of [48,96,144,192])if(matchesAt(pixels,r,x,y))found.push({...r,region:[x,y,32,48]});}
+   else if(r.motion){
     let anchor=r.anchors[0];for(const a of r.anchors)if(colors.get(a[2]).length<colors.get(anchor[2]).length)anchor=a;
     const [ax,ay,color]=anchor,[,,w,h]=r.region;
     for(const position of colors.get(color)){

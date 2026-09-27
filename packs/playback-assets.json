@@ -976,6 +976,21 @@
       "width": 1024,
       "height": 222
     },
+    "/packs/remaster-v97/scouter-card.webp": {
+      "url": "/packs/playback/81242fcac71e38e81208.webp",
+      "width": 128,
+      "height": 192
+    },
+    "/packs/remaster-v97/map-token.webp": {
+      "url": "/packs/playback/f26aa9ba7a50a2edb9df.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/remaster-v97/chiaotzu-charge.webp": {
+      "url": "/packs/playback/6215b74308b7b0c9c3a6.webp",
+      "width": 76,
+      "height": 89
+    },
     "/packs/remaster-v96/blue-beam.webp": {
       "url": "/packs/playback/1c87845080b12b97924f.webp",
       "width": 440,
@@ -1046,6 +1061,21 @@
       "width": 1024,
       "height": 640
     },
+    "/packs/remaster-v97/namek-sky.webp": {
+      "url": "/packs/playback/b6ab09baaae73e2b35c8.webp",
+      "width": 679,
+      "height": 254
+    },
+    "/packs/remaster-v97/namek-far.webp": {
+      "url": "/packs/playback/d956c8a06761b380c014.webp",
+      "width": 679,
+      "height": 254
+    },
+    "/packs/remaster-v97/namek-near.webp": {
+      "url": "/packs/playback/4ede1dbc667ae5e4055a.webp",
+      "width": 679,
+      "height": 254
+    },
     "/packs/motion/desert-terrain.webp": {
       "url": "/packs/playback/224f38092dd94b80b184.webp",
       "width": 1024,
@@ -1056,6 +1086,21 @@
       "width": 1024,
       "height": 640
     },
+    "/packs/remaster-v97/desert-sky.webp": {
+      "url": "/packs/playback/c631f75ac73071035c94.webp",
+      "width": 678,
+      "height": 254
+    },
+    "/packs/remaster-v97/desert-far.webp": {
+      "url": "/packs/playback/5c33898d00ab056aff17.webp",
+      "width": 678,
+      "height": 254
+    },
+    "/packs/remaster-v97/desert-near.webp": {
+      "url": "/packs/playback/8fdd7005c439c1f0faab.webp",
+      "width": 678,
+      "height": 254
+    },
     "/packs/motion/temple-terrain.webp": {
       "url": "/packs/playback/fecb42ef10d1f07f585b.webp",
       "width": 1220,
@@ -1065,6 +1110,21 @@
       "url": "/packs/playback/d890a89c049fabcac223.webp",
       "width": 1024,
       "height": 640
+    },
+    "/packs/remaster-v97/temple-sky.webp": {
+      "url": "/packs/playback/d15767c64b63623aba77.webp",
+      "width": 679,
+      "height": 254
+    },
+    "/packs/remaster-v97/temple-far.webp": {
+      "url": "/packs/playback/ce0e1ecae5eecb93273d.webp",
+      "width": 679,
+      "height": 254
+    },
+    "/packs/remaster-v97/temple-near.webp": {
+      "url": "/packs/playback/b948ca57b3f4d507ca25.webp",
+      "width": 679,
+      "height": 254
     },
     "/packs/map/tile-00.webp": {
       "url": "/packs/playback/71be72ec26b0d0406808.webp",
@@ -1822,7 +1882,7 @@
       "height": 64
     }
   },
-  "sourceBytes": 18376032,
-  "bytes": 3770482,
-  "decodedBytes": 49081372
+  "sourceBytes": 19379750,
+  "bytes": 4185214,
+  "decodedBytes": 55428844
 }

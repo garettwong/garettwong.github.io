@@ -34,13 +34,23 @@
   ...matchFamily(p,new Set([0x155fd9,0x64b0ff,0xc0dfff,0xffffff]),'blue'),
   ...matchFamily(p,new Set([0x00404d,0x88d800,0xcfef96,0xffffff]),'green')
  ];}
+ // Preserve source proportions. A beam extends by repeating its shaft, never
+ // by flattening the head or stretching an explosion across a changing box.
+ function spriteRects(art,w,h,beam=false){
+  const sw=art.width,sh=art.height,scale=Math.min(h/sh,beam?Infinity:w/sw);
+  if(!beam||w<sw*scale){const k=Math.min(w/sw,h/sh),dw=sw*k,dh=sh*k;return [[0,0,sw,sh,(w-dw)/2,(h-dh)/2,dw,dh]];}
+  const left=Math.floor(sw*.25),right=Math.floor(sw*.3),mid=sw-left-right,lh=sh*scale,lw=left*scale,rw=right*scale,rects=[[0,0,left,sh,0,(h-lh)/2,lw,lh]];
+  for(let x=lw;x<w-rw-1e-6;){const dw=Math.min(mid*scale,w-rw-x);rects.push([left,0,dw/scale,sh,x,(h-lh)/2,dw,lh]);x+=dw;}
+  rects.push([sw-right,0,right,sh,w-rw,(h-lh)/2,rw,lh]);return rects;
+ }
+ function paintSprite(c,art,x,y,w,h,beam=false){for(const [sx,sy,sw,sh,dx,dy,dw,dh]of spriteRects(art,w,h,beam))c.drawImage(art,sx,sy,sw,sh,x+dx,y+dy,dw,dh);}
  function draw(c,effects,width,height,assets){
   c.save();c.scale(width/256,height/240);
   for(const e of effects){
-   if(e.aura){const art=assets?.get('/packs/remaster-v96/red-aura.webp');if(!art)continue;c.save();c.beginPath();c.rect(e.x-1,e.y-1,e.w+2,e.h+2);c.ellipse(e.x+e.w/2,e.y+e.h*.58,e.w*.25,e.h*.2,0,0,Math.PI*2);c.clip('evenodd');c.fillStyle='#000';c.fillRect(e.x-1,e.y-1,e.w+2,e.h+2);if(c.dreamBackdrop)c.drawImage(c.dreamBackdrop,0,0,256,160);c.drawImage(art,e.x,e.y,e.w,e.h);c.restore();continue;}
+   if(e.aura){const art=assets?.get('/packs/remaster-v96/red-aura.webp');if(!art)continue;c.save();c.beginPath();c.rect(e.x-1,e.y-1,e.w+2,e.h+2);c.ellipse(e.x+e.w/2,e.y+e.h*.58,e.w*.25,e.h*.2,0,0,Math.PI*2);c.clip('evenodd');c.fillStyle='#000';c.fillRect(e.x-1,e.y-1,e.w+2,e.h+2);if(c.dreamBackdrop)global.DreamSceneryTools.restore(c,256,240);paintSprite(c,art,e.x,e.y,e.w,e.h);c.restore();continue;}
 
    const beam=e.w>e.h*2.3,name=beam?e.tint+'-beam':e.tint+(e.w<36?'-impact':'-explosion'),art=assets?.get('/packs/remaster-v96/'+name+'.webp');
-   if(art){c.save();c.beginPath();c.rect(e.x-.2,e.y-.2,e.w+.4,e.h+.4);c.clip();c.beginPath();if(e.clipOnly){for(const[x,y,w]of e.runs)c.rect(x,y,w,1);}else{c.rect(e.x-.2,e.y-.2,e.w+.4,e.h+.4);}if(e.protectedBox)c.rect(...e.protectedBox);c.clip(e.protectedBox?'evenodd':'nonzero');c.fillStyle='#000';c.fillRect(e.x,e.y,e.w,e.h);if(c.dreamBackdrop)c.drawImage(c.dreamBackdrop,0,0,256,160);c.globalCompositeOperation='screen';const left=e.outline.filter(a=>a[0]<e.x+e.w/3).reduce((s,a)=>s+a[2]-a[1],0),right=e.outline.filter(a=>a[0]>e.x+e.w*2/3).reduce((s,a)=>s+a[2]-a[1],0);if(beam&&left>right*1.2){c.translate(e.x+e.w,e.y);c.scale(-1,1);c.drawImage(art,0,0,e.w,e.h);}else c.drawImage(art,e.x,e.y,e.w,e.h);c.restore();continue;}
+   if(art){c.save();c.beginPath();c.rect(e.x-.2,e.y-.2,e.w+.4,e.h+.4);c.clip();c.beginPath();if(e.clipOnly){for(const[x,y,w]of e.runs)c.rect(x,y,w,1);}else{c.rect(e.x-.2,e.y-.2,e.w+.4,e.h+.4);}if(e.protectedBox)c.rect(...e.protectedBox);c.clip(e.protectedBox?'evenodd':'nonzero');c.fillStyle='#000';c.fillRect(e.x,e.y,e.w,e.h);if(c.dreamBackdrop)global.DreamSceneryTools.restore(c,256,240);c.globalCompositeOperation='screen';const left=e.outline.filter(a=>a[0]<e.x+e.w/3).reduce((s,a)=>s+a[2]-a[1],0),right=e.outline.filter(a=>a[0]>e.x+e.w*2/3).reduce((s,a)=>s+a[2]-a[1],0);if(beam&&left>right*1.2){c.translate(e.x+e.w,e.y);c.scale(-1,1);paintSprite(c,art,0,0,e.w,e.h,true);}else paintSprite(c,art,e.x,e.y,e.w,e.h,beam);c.restore();continue;}
    c.save();if(e.clipOnly){c.beginPath();for(const[x,y,w]of e.runs)c.rect(x,y,w,1);c.clip();}else {c.fillStyle='#000';for(const[x,y,w]of e.runs)c.fillRect(x,y,w,1);}
    const cool=e.tint==='blue',green=e.tint==='green',edge=cool?'#164fce':green?'#39870b':'#b83b10',mid=cool?'#54baff':green?'#a1e94b':'#ff9b14',light=cool?'#c8f4ff':green?'#e7ffb3':'#ffe88b';
    const gradient=c.createLinearGradient(0,e.y,0,e.y+e.h);
@@ -52,6 +62,6 @@
   }
   c.restore();
  }
- global.DreamEffectTools={match,draw};
+ global.DreamEffectTools={match,draw,spriteRects};
 })(typeof window!=='undefined'?window:globalThis);
 

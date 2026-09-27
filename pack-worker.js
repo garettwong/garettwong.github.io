@@ -1,6 +1,6 @@
 /* SYNC66 *//* Match the captured frame off the emulation/input thread. Only one frame is in flight. */
 
-importScripts('/pack-engine.js?v=96','/pack-match.js?v=96','/pack-scenery.js?v=96','/pack-ui.js?v=96','/pack-effects.js?v=96','/pack-map.js?v=96');
+importScripts('/pack-engine.js?v=97','/pack-match.js?v=97','/pack-scenery.js?v=97','/pack-ui.js?v=97','/pack-effects.js?v=97','/pack-map.js?v=97');
 
 let config=null,indices,previousPixels=null,previousResult=null;
 
@@ -10,7 +10,7 @@ onmessage=event=>{
 
  try{const start=performance.now(),p=d.pixels;let same=!!previousPixels;if(same)for(let i=0;i<p.length;i++)if(p[i]!==previousPixels[i]){same=false;break;}if(same){postMessage({...previousResult,pixels:p,generation:d.generation,capturedAt:d.capturedAt,workerMs:performance.now()-start,reused:true},[p.buffer]);return;}
 
- const matches=DreamPatternTools.findMatches(p,config.rules).map(r=>({index:indices.get(r.id),region:r.region})),scene=config.scenery?DreamSceneryTools.match(p,config.scenery):null,scenery=scene?{image:scene.image,region:scene.region,period:scene.period,offset:scene.offset,reveal:scene.reveal,cells:scene.cells}:null,ui=config.ui?DreamHudTools.match(p,config.ui):null;
+ const matches=DreamPatternTools.findMatches(p,config.rules).map(r=>({index:indices.get(r.id),region:r.region})),scene=config.scenery?DreamSceneryTools.match(p,config.scenery):null,scenery=scene?{image:scene.image,arena:scene.arena,layers:scene.layers,region:scene.region,period:scene.period,offset:scene.offset,reveal:scene.reveal,cells:scene.cells}:null,ui=config.ui?DreamHudTools.match(p,config.ui):null;
 
  if(ui)delete ui.pixels;
 
