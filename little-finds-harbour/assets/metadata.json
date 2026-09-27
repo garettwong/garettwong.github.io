@@ -1,0 +1,171 @@
+{
+  "bun": {
+    "size": [
+      1374,
+      1145
+    ],
+    "bounds": [
+      163,
+      122,
+      1221,
+      1026
+    ],
+    "source": "exec-c3e74fcc-3207-4921-9715-fe7689b11fdf.png"
+  },
+  "cup": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      242,
+      155,
+      1313,
+      889
+    ],
+    "source": "exec-2ea11491-ee39-4bd4-9b2c-02422ecb6b33.png"
+  },
+  "jar": {
+    "size": [
+      1319,
+      1193
+    ],
+    "bounds": [
+      255,
+      205,
+      1057,
+      1022
+    ],
+    "source": "exec-83555cf1-4620-46a2-b5be-1b8e7cfd0dec.png"
+  },
+  "lemon": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      265,
+      215,
+      1330,
+      796
+    ],
+    "source": "exec-d62d578b-5ab6-4c4f-9d64-06bf96806f7b.png"
+  },
+  "carrot": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      313,
+      28,
+      1394,
+      989
+    ],
+    "source": "exec-8878ff72-7c1b-455d-8f0f-f6e9013e25c0.png"
+  },
+  "teapot": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      196,
+      149,
+      1339,
+      887
+    ],
+    "source": "exec-e9260763-b37f-4100-87d1-12018daaf33f.png"
+  },
+  "duck": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      424,
+      209,
+      1116,
+      836
+    ],
+    "source": "exec-a00ad820-e1e9-4303-b5a9-ee292e8d86d1.png"
+  },
+  "can": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      248,
+      116,
+      1269,
+      927
+    ],
+    "source": "exec-b8dc8759-3b49-4b44-901a-d7aba6dca135.png"
+  },
+  "gloves": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      215,
+      65,
+      1366,
+      946
+    ],
+    "source": "exec-7f66b4bc-769b-4568-b63c-9ecf1f075b09.png"
+  },
+  "cat": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      196,
+      161,
+      1390,
+      904
+    ],
+    "source": "exec-e8ec47fb-b1b0-401e-82c0-3bf678b0036e.png"
+  },
+  "boots": {
+    "size": [
+      1312,
+      1199
+    ],
+    "bounds": [
+      180,
+      146,
+      1137,
+      1101
+    ],
+    "source": "exec-9001e456-8c25-4587-b82b-e3e6e1964ecf.png"
+  },
+  "scissors": {
+    "size": [
+      1536,
+      1024
+    ],
+    "bounds": [
+      264,
+      144,
+      1306,
+      837
+    ],
+    "source": "exec-1ffcd192-7cd6-43da-b23b-a4e8bdd3b2cd.png"
+  },
+  "pin": {
+    "size": [
+      1774,
+      887
+    ],
+    "bounds": [
+      48,
+      291,
+      1735,
+      656
+    ],
+    "source": "exec-8a07a851-5282-4124-bfaf-ad63e41c5846.png"
+  }
+}
