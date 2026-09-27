@@ -1,9 +1,9 @@
 {
-  "version": "e058166bab8cf469",
+  "version": "e879ec9a190c7481",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8YKo4z02.css",
-    "/assets/index-CZbyrZY2.js",
+    "/assets/index-BkoqBiOt.js",
     "/classic63.html",
     "/controller-classic.css",
     "/credits.html",
@@ -71,6 +71,7 @@
     "/graphics-preview/index.html",
     "/index.html",
     "/legacy/player63.js",
+    "/little-finds/challenge.js",
     "/little-finds/game.css",
     "/little-finds/game.js",
     "/little-finds/index.html",
