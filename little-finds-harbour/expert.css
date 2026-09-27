@@ -1,0 +1,1 @@
+#tray{display:flex;justify-content:center}#tray .card{min-width:190px;flex-direction:row;padding:5px 15px;gap:10px}#tray .label{font-size:13px;max-width:120px}#tray .amount{font-size:17px}#accuracy{text-align:center;font-size:10px;color:#7d7160;margin-top:5px}.tray-head{justify-content:center;gap:14px}#collection .card{cursor:default}#collection .card:not(.done){opacity:.7}

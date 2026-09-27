@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8ed"><title>Harbour Hunt · Little Finds</title><link rel="stylesheet" href="game.css?v=2"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8ed"><title>Harbour Hunt · Little Finds</title><link rel="stylesheet" href="game.css?v=2"><link rel="stylesheet" href="expert.css?v=4"></head>
 <body><main id="app">
-<header><div><span class="eyebrow">LITTLE FINDS · MASTER SCENE</span><h1>Harbour Hunt <span>♥</span></h1></div><button id="sound" aria-pressed="true" aria-label="Sound on">♪ Sound on</button><button id="menu" aria-label="Open game options">☰</button></header>
+<header><div><span class="eyebrow">LITTLE FINDS · EXPERT HUNT</span><h1>Harbour Hunt <span>♥</span></h1></div><button id="sound" aria-pressed="true" aria-label="Sound on">♪ Sound on</button><button id="menu" aria-label="Open game options">☰</button></header>
 <div class="progress"><strong id="count">0 / 50</strong><div class="track"><i id="bar"></i></div><button id="hint">✦ Hint</button></div>
 <section id="viewport" aria-label="Hidden-object harbour scene"><canvas id="scene" tabindex="0" aria-label="Drag to explore. Pinch or use plus and minus to zoom. Tap objects to collect them."></canvas>
 <div id="loading"><div class="flower">✿</div><strong>Opening the little bakery…</strong><span id="loadcount">Preparing the artwork</span></div></section>
-<footer><div class="tray-head"><strong id="traytitle">Find these little treasures</strong><button id="all">All 32 groups</button></div><div id="tray"></div><p class="help" id="toast" role="status" aria-live="polite">Drag to explore · pinch to zoom · find every copy</p></footer>
+<footer><div class="tray-head"><strong id="traytitle">Find these little treasures</strong><button id="all">Round 1 / 6</button></div><div id="tray"></div><div id="accuracy"></div><p class="help" id="toast" role="status" aria-live="polite">Find the shown target only · drag to explore · pinch to zoom</p></footer>
 </main>
-<dialog id="options"><h2>A little pause</h2><p>Your finds are saved on this device.</p><div class="zoom"><button id="minus" aria-label="Zoom out">−</button><button id="fit">Overview</button><button id="plus" aria-label="Zoom in">+</button></div><button id="resume">Back to the harbour</button><button id="test-sound">Try the funny sounds</button><button id="restart">Start this level again</button><p class="small">50 finds · 32 groups · no timer<br>Arrow keys move · + / − zoom</p></dialog>
+<dialog id="options"><h2>A little pause</h2><p>Your finds are saved on this device.</p><div class="zoom"><button id="minus" aria-label="Zoom out">−</button><button id="fit">Overview</button><button id="plus" aria-label="Zoom in">+</button></div><button id="resume">Back to the harbour</button><button id="test-sound">Try the funny sounds</button><button id="restart">Start this level again</button><p class="small">50 finds · 6 target rounds · 3 hints<br>Arrow keys move · + / − zoom</p></dialog>
 <dialog id="groups"><h2>Your collection</h2><div id="collection"></div><button id="close-groups">Back to the hunt</button></dialog>
 <dialog id="win"><div class="flower">✿</div><h2>You found all 50!</h2><p>The harbour is ready for tea.</p><p id="win-stats"></p><button id="admire">Enjoy the empty scene</button><button id="again">Play again</button></dialog>
-<script type="module" src="game-v3.js?v=3"></script></body></html>
+<script type="module" src="game-v4.js?v=4"></script></body></html>
