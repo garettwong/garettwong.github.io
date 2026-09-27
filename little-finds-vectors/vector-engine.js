@@ -6,15 +6,21 @@ export async function loadVectorScene(progress = () => {}) {
   const layers = await response.json();
   const load = src => new Promise((resolve, reject) => {
     const im = new Image();
+    let attempt = 0;
     im.onload = () => resolve(im);
-    im.onerror = () => reject(new Error('Artwork could not load: ' + src));
+    im.onerror = () => {
+      if (attempt < 2) {
+        attempt++;
+        setTimeout(() => {im.src = src + '?retry=' + attempt;}, attempt * 400);
+      } else reject(new Error('Artwork could not load: ' + src));
+    };
     im.src = src;
   });
   let completed = 0;
   const artworkPromise = load('vector91/scene.svg');
   // Keep decoding/network concurrency bounded on phones.
   let next = 0;
-  const workers = Array.from({length: 4}, async () => {
+  const workers = Array.from({length: 3}, async () => {
     while (next < layers.length) {
       const layer = layers[next++];
       [layer.sprite, layer.reveal] = await Promise.all([load(layer.item), load(layer.patch)]);
