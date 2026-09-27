@@ -4,7 +4,7 @@
  function rgb(p,x,y){const i=(y*256+x)*4;return p[i]*65536+p[i+1]*256+p[i+2];}
  function validate(p){if(p?.version!==1||!p.glyphs||!Array.isArray(p.labels)||p.labels.length>32)throw new Error('Invalid UI pack');if(p.cardShells&&(!Array.isArray(p.cardShells)||p.cardShells.length>4||!p.cardShells.every(shell=>Array.isArray(shell)&&shell.length===768&&shell.every(a=>Array.isArray(a)&&a.length===3&&a.every(Number.isInteger)&&a[0]>=0&&a[0]<32&&a[1]>=0&&a[1]<48&&a[2]>=0&&a[2]<=0xffffff))))throw new Error('Invalid card shell');return p;}
  function match(p,config){
-  const found={labels:[],cards:[],strips:[],stats:null,text:[],background:[],pixels:p};
+  const found={labels:[],cards:[],warnings:[],strips:[],stats:null,text:[],background:[],pixels:p};
   // Only recolour the purple interface area connected to a screen corner;
   // purple costume pixels inside the battle remain untouched.
   const visited=new Uint8Array(256*240),queue=new Int32Array(256*240);let head=0,tail=0;
@@ -24,6 +24,9 @@
     found.text.push(...marks.filter(a=>found.text.some(b=>b.bg===bg&&b.x===a.x&&b.y===a.y+8)));
    }
    found.text.sort((a,b)=>a.y-b.y||a.x-b.x);
+  }
+  if(config.warningMask?.length===256){const mask=config.warningMask;
+   for(let y=0;y<=232;y++)for(let x=0;x<=224;x+=8){if(rgb(p,x+8,y)!==BEIGE||rgb(p,x+2,y+1)!==BEIGE||rgb(p,x+30,y+7)!==BLACK&&rgb(p,x+30,y+7)!==PURPLE)continue;const bg=rgb(p,x,y);if(bg!==BLACK&&bg!==PURPLE)continue;let ok=true;for(let i=0;i<256;i++)if(rgb(p,x+(i%32),y+(i>>5))!==(mask[i]?BEIGE:bg)){ok=false;break;}if(ok)found.warnings.push({x,y,bg,text:'ピンチ!'});}
   }
   for(const label of config.labels)if(global.DreamPatternTools.pixelHash(p,label.region)===label.pixelHash){
    if(label.id.endsWith('-card')){
@@ -45,7 +48,7 @@
   }
   if(config.handShell?.length===768)for(let x=8;x<=224;x+=8){if(found.cards.some(card=>card.x===x)||!config.handShell.every(([dx,dy,color])=>rgb(p,x+dx,176+dy)===color))continue;const hash=global.DreamPatternTools.pixelHash(p,[x+8,192,16,16]),known=(config.handIdentities||[]).find(v=>v.pixelHash===hash);found.cards.push({id:'map-hand-card',x,text:known?.text||null});}
   for(const y of [0,128])for(const [palette,tint]of [[BLUE,'blue'],[new Set([0,0xb53120,0xff8170,0xffccc5]),'red']]){let colored=0,ok=true;for(let yy=y;yy<y+32&&ok;yy++)for(let x=0;x<256;x++){const c=rgb(p,x,yy);if(!palette.has(c)){ok=false;break;}if(c)colored++;}if(ok&&colored>256*24)found.strips.push({y,tint});}
-  return found.labels.length||found.cards.length||found.stats||found.strips.length||found.text.length||found.background.length?found:null;
+  return found.warnings.length||found.labels.length||found.cards.length||found.stats||found.strips.length||found.text.length||found.background.length?found:null;
  }
  function rounded(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);c.lineTo(x+w,y+h-r);c.quadraticCurveTo(x+w,y+h,x+w-r,y+h);c.lineTo(x+r,y+h);c.quadraticCurveTo(x,y+h,x,y+h-r);c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath();}
  function panel(c,x,y,w,h){const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,'#fff0c7');g.addColorStop(.45,'#eaca8e');g.addColorStop(1,'#c69a54');rounded(c,x,y,w,h,1.3);c.fillStyle=g;c.fill();c.strokeStyle='#684a27';c.lineWidth=.4;c.stroke();}
@@ -81,13 +84,16 @@
    const g=c.createLinearGradient(0,y,0,y+32);g.addColorStop(0,red?'#7b251d':'#153c8f');g.addColorStop(.22,red?'#ff9787':'#8dcfff');g.addColorStop(.5,red?'#ffe2d5':'#d5edff');g.addColorStop(.8,red?'#e75b43':'#509be7');g.addColorStop(1,red?'#78201a':'#123c84');c.fillStyle=g;c.fillRect(0,y,256,32);
    for(let yy=y;yy<y+32;yy++){let x=0;while(x<256){const color=rgb(found.pixels,x,yy),start=x;while(x<256&&rgb(found.pixels,x,yy)===color)x++;if(color===(red?0xffccc5:0xc0dfff)||color===0){c.fillStyle=color?'rgba(231,248,255,.75)':'rgba(5,21,53,.8)';c.fillRect(start,yy+.25,x-start,.55);}}}
   }
-  const text=(found.text||[]).filter(a=>!(found.stats&&a.x>=48&&a.x<96&&a.y>=176&&a.y<224)),marks=new Map(text.filter(a=>a.char==='゛'||a.char==='゜').map(a=>[`${a.bg},${a.x},${a.y+8}`,a.char]));
+  const text=(found.text||[]).filter(a=>!(found.warnings||[]).some(w=>a.x<w.x+32&&a.x+8>w.x&&a.y<w.y+8&&a.y+8>w.y)).filter(a=>!(found.stats&&a.x>=48&&a.x<96&&a.y>=176&&a.y<224)),marks=new Map(text.filter(a=>a.char==='゛'||a.char==='゜').map(a=>[`${a.bg},${a.x},${a.y+8}`,a.char]));
   // Clear all native cells first, on physical-pixel boundaries. Drawing each
   // letter immediately after clearing its cell clipped neighbouring overhangs
   // and left antialiased fragments of the old pixels along cell edges.
   c.save();c.setTransform(1,0,0,1,0,0);
-  for(const a of text){c.fillStyle='#'+(a.bg??BEIGE).toString(16).padStart(6,'0');const l=Math.floor(a.x*width/256),t=Math.floor(a.y*height/240),r=Math.ceil((a.x+8)*width/256),b=Math.ceil((a.y+8)*height/240);c.fillRect(l,t,r-l,b-t);}
+  const erase=(bg,y)=>{if(bg!==PURPLE)return '#'+bg.toString(16).padStart(6,'0');const footer=y>=160&&(found.stats||found.cards.length||found.labels.length),g=c.createLinearGradient(0,(footer?160:0)*height/240,footer?0:width,height);g.addColorStop(0,footer?'#342050':'#26324f');g.addColorStop(footer?0.4:0.5,footer?'#21182f':'#171e35');g.addColorStop(1,footer?'#111323':'#0d1426');return g;};
+  for(const a of text){c.fillStyle=erase(a.bg??BEIGE,a.y);const l=Math.floor(a.x*width/256),t=Math.floor(a.y*height/240),r=Math.ceil((a.x+8)*width/256),b=Math.ceil((a.y+8)*height/240);c.fillRect(l,t,r-l,b-t);}
+  for(const w of found.warnings||[]){c.fillStyle=erase(w.bg,w.y);const l=Math.floor(w.x*width/256),t=Math.floor(w.y*height/240);c.fillRect(l,t,Math.ceil((w.x+32)*width/256)-l,Math.ceil((w.y+8)*height/240)-t);}
   c.restore();
+  for(const w of found.warnings||[]){c.fillStyle='#f7d8a5';c.font='700 8px DreamDialogue,sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(w.text,w.x+16,w.y+4.25,32);}
   for(const a of text){
    if((a.char==='゛'||a.char==='゜')&&text.some(b=>b.bg===a.bg&&b.x===a.x&&b.y===a.y+8))continue;
    const mark=marks.get(`${a.bg},${a.x},${a.y}`),char=mark?(a.char+(mark==='゛'?'\u3099':'\u309a')).normalize('NFC'):a.char;
