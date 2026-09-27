@@ -4,7 +4,9 @@
  function rgb(p,x,y){const i=(y*256+x)*4;return p[i]*65536+p[i+1]*256+p[i+2];}
  function validate(p){if(p?.version!==1||!p.glyphs||!Array.isArray(p.labels)||p.labels.length>32)throw new Error('Invalid UI pack');if(p.cardShells&&(!Array.isArray(p.cardShells)||p.cardShells.length>4||!p.cardShells.every(shell=>Array.isArray(shell)&&shell.length===768&&shell.every(a=>Array.isArray(a)&&a.length===3&&a.every(Number.isInteger)&&a[0]>=0&&a[0]<32&&a[1]>=0&&a[1]<48&&a[2]>=0&&a[2]<=0xffffff))))throw new Error('Invalid card shell');return p;}
  function match(p,config){
-  const found={labels:[],cards:[],warnings:[],strips:[],stats:null,text:[],background:[],pixels:p};
+  const found={labels:[],cards:[],warnings:[],strips:[],stats:null,text:[],background:[],title:[],pixels:p};
+  // The title cycles its ink colours. Its exact ink silhouette is unchanged.
+  for(const item of config.titleLettering||[]){const[x,y,w,h]=item.region;let hash=2166136261;for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)hash=Math.imul(hash^(rgb(p,xx,yy)!==BLACK?1:0),16777619);if((hash>>>0)===item.silhouetteHash)found.title.push(item);}
   // Only recolour the purple interface area connected to a screen corner;
   // purple costume pixels inside the battle remain untouched.
   const visited=new Uint8Array(256*240),queue=new Int32Array(256*240);let head=0,tail=0;
@@ -48,7 +50,7 @@
   }
   if(config.handShell?.length===768)for(let x=8;x<=224;x+=8){if(found.cards.some(card=>card.x===x)||!config.handShell.every(([dx,dy,color])=>rgb(p,x+dx,176+dy)===color))continue;const hash=global.DreamPatternTools.pixelHash(p,[x+8,192,16,16]),known=(config.handIdentities||[]).find(v=>v.pixelHash===hash);found.cards.push({id:'map-hand-card',x,text:known?.text||null});}
   for(const y of [0,128])for(const [palette,tint]of [[BLUE,'blue'],[new Set([0,0xb53120,0xff8170,0xffccc5]),'red']]){let colored=0,ok=true;for(let yy=y;yy<y+32&&ok;yy++)for(let x=0;x<256;x++){const c=rgb(p,x,yy);if(!palette.has(c)){ok=false;break;}if(c)colored++;}if(ok&&colored>256*24)found.strips.push({y,tint});}
-  return found.warnings.length||found.labels.length||found.cards.length||found.stats||found.strips.length||found.text.length||found.background.length?found:null;
+  return found.title.length||found.warnings.length||found.labels.length||found.cards.length||found.stats||found.strips.length||found.text.length||found.background.length?found:null;
  }
  function rounded(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);c.lineTo(x+w,y+h-r);c.quadraticCurveTo(x+w,y+h,x+w-r,y+h);c.lineTo(x+r,y+h);c.quadraticCurveTo(x,y+h,x,y+h-r);c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath();}
  function panel(c,x,y,w,h){const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,'#fff0c7');g.addColorStop(.45,'#eaca8e');g.addColorStop(1,'#c69a54');rounded(c,x,y,w,h,1.3);c.fillStyle=g;c.fill();c.strokeStyle='#684a27';c.lineWidth=.4;c.stroke();}
@@ -74,6 +76,17 @@
  function kanji(c,text,x,y,color='#f7d8a5'){c.textAlign='center';c.textBaseline='middle';c.fillStyle=color;c.font='600 14px DreamDialogue,serif';c.fillText(text,x+8,y+8.5,15);}
  function draw(c,found,width,height){
   c.save();c.scale(width/256,height/240);
+  for(const item of found.title||[]){
+   const[x,y,w,h]=item.region;c.fillStyle='#000';c.fillRect(x,y,w,h);c.textAlign='center';c.textBaseline='middle';
+   if(item.kind==='logo'){
+    c.save();c.translate(128,37);c.transform(1,0,-.12,1,0,0);
+    c.font='900 23px Arial,sans-serif';c.lineJoin='round';c.lineWidth=1.1;c.strokeStyle='#192c58';
+    const g=c.createLinearGradient(0,-13,0,12);g.addColorStop(0,'#fff4b6');g.addColorStop(.5,'#ffcf48');g.addColorStop(1,'#ee672b');c.fillStyle=g;
+    c.strokeText('DRAGON BALL Z II',0,0,224);c.fillText('DRAGON BALL Z II',0,0,224);c.restore();
+    c.fillStyle='#e6f3ff';c.font='600 12px DreamDialogue,serif';c.fillText('激神フリーザ!!',128,58,180);
+    c.fillStyle='#de783f';c.font='600 5px DreamDialogue,serif';c.fillText('ドラゴンボール',128,69,90);
+   }else{c.fillStyle='#d9eaff';c.font='600 8px Arial,sans-serif';c.fillText('© 1991',128,196.5,64);}
+  }
   if(found.background?.length){c.save();c.beginPath();for(const[x,y,w]of found.background)c.rect(x,y,w,1);c.clip();const bg=c.createLinearGradient(0,0,256,240);bg.addColorStop(0,'#26324f');bg.addColorStop(.5,'#171e35');bg.addColorStop(1,'#0d1426');c.fillStyle=bg;c.fillRect(0,0,256,240);c.restore();}
   if(found.stats||found.cards.length||found.labels.length){c.save();c.beginPath();for(let y=160;y<240;y++){let start=-1;for(let x=0;x<=256;x++){if(x<256&&rgb(found.pixels,x,y)===PURPLE){if(start<0)start=x;}else if(start>=0){c.rect(start,y,x-start,1);start=-1;}}}c.clip();const background=c.createLinearGradient(0,160,0,240);background.addColorStop(0,'#342050');background.addColorStop(.4,'#21182f');background.addColorStop(1,'#111323');c.fillStyle=background;c.fillRect(0,160,256,80);c.restore();}
 
@@ -101,7 +114,7 @@
   }
   c.restore();
  }
- async function loadFont(){if(global.FontFace&&global.document?.fonts)await Promise.all([['DreamLabels','noto-serif-jp-labels.ttf','700'],['DreamDialogue','dbz-dialogue.ttf','600']].map(async([name,file,weight])=>{const font=new FontFace(name,`url(/fonts/${file})`,{weight});await font.load();document.fonts.add(font);}));}
+ async function loadFont(){if(global.FontFace&&global.document?.fonts)await Promise.all([['DreamLabels','noto-serif-jp-labels.ttf','700'],['DreamDialogue','dbz-dialogue.ttf','600']].map(async([name,file,weight])=>{const font=new FontFace(name,`url(/fonts/${file}?v=95)`,{weight});await font.load();document.fonts.add(font);}));}
  global.DreamHudTools={validate,match,draw,loadFont};
 })(typeof window!=='undefined'?window:globalThis);
 

@@ -12393,5 +12393,29 @@
     0,
     0,
     0
+  ],
+  "titleLettering": [
+    {
+      "region": [
+        16,
+        16,
+        224,
+        56
+      ],
+      "pixelHash": 881611612,
+      "silhouetteHash": 895717844,
+      "kind": "logo"
+    },
+    {
+      "region": [
+        96,
+        184,
+        64,
+        24
+      ],
+      "pixelHash": 410938109,
+      "silhouetteHash": 4019047299,
+      "kind": "copyright"
+    }
   ]
 }
