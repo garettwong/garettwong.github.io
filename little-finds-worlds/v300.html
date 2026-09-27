@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#fff6e6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Little Finds · The Harbour Café</title>
+<link rel="icon" href="svg/lucky.svg?v=300">
+<link rel="stylesheet" href="game-v300.css?v=300">
+</head>
+<body>
+<section id="home">
+  <div class="hero">
+    <img id="hero-art" src="svg/scene-bg.svg?v=300" alt="">
+    <div class="hero-fade"></div>
+  </div>
+  <div class="intro">
+    <span class="eyebrow">A LITTLE HAPPINESS, JUST FOR YOU ♥</span>
+    <h1>The Harbour Café</h1>
+    <p id="intro-copy">Little things are hiding all over the café.<br>Find them at your own pace. No clock, no rush.</p>
+    <div class="stickers-row" id="teaser"></div>
+    <button id="start" class="primary">Start exploring</button>
+    <p id="progress-home" class="small"></p>
+    <button id="reset" class="link" hidden>Start over</button>
+  </div>
+</section>
+
+<section id="play" hidden>
+  <div class="topbar">
+    <button id="back" aria-label="Back to start">‹</button>
+    <div class="status">
+      <strong><span id="count">0</span> / <span id="total">0</span> found</strong>
+      <div class="track"><div id="fill"></div></div>
+    </div>
+    <button id="sound" aria-label="Sound" aria-pressed="true">♪</button>
+    <button id="hint" class="primary">✦ Hint</button>
+  </div>
+  <div id="board">
+    <div id="stage"><img id="bg" src="svg/scene-bg.svg?v=300" alt="" draggable="false"></div>
+    <div id="fx"></div>
+        <div class="zoom">
+      <button id="plus" aria-label="Zoom in">+</button>
+      <button id="minus" aria-label="Zoom out">−</button>
+    </div>
+    <div id="map" aria-label="Map: tap to jump"><img src="svg/scene-bg.svg?v=300" alt=""><div id="map-view"></div></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <div id="loading"><span class="spinner"></span>Painting the café…</div>
+    <div id="coach" hidden><div>Pinch or <b>+</b> to zoom · drag to look around<br>Tap a thing when you spot it</div><button id="coach-ok">OK!</button></div>
+  </div>
+  <div id="targets" aria-label="Things to find"></div>
+</section>
+
+<dialog id="item-dialog">
+  <button class="close" id="close-item" aria-label="Close">×</button>
+  <img id="item-picture" width="200" height="200" alt="">
+  <h2 id="item-name"></h2>
+  <p id="item-left" class="small"></p>
+  <button id="item-hint" class="primary">Show me where</button>
+</dialog>
+
+<dialog id="complete">
+  <div class="heart">♥</div>
+  <h2>You found everything!</h2>
+  <p>Every little thing in the Harbour Café.<br>Thank you for playing. ♥</p>
+  <button id="again" class="primary">Play again</button>
+  <button id="admire">Just look at the picture</button>
+</dialog>
+
+<div id="confetti" aria-hidden="true"></div>
+<script type="module" src="game-v300.js?v=300"></script>
+</body>
+</html>
