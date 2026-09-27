@@ -58,7 +58,9 @@
  function portraitCandidates(pixels,rules){
   let index=portraitIndexes.get(rules);if(!index){index=new Map();for(const r of rules)if(r.search&&!r.motion){const key=(r.signature[9]<<16)|(r.signature[27]<<8)|r.signature[54];if(!index.has(key))index.set(key,[]);index.get(key).push(r);}portraitIndexes.set(rules,index);}
   const hits=new Map();if(!index.size)return hits;
-  for(let y=0;y<=208;y+=8)for(let x=0;x<=224;x+=8){const key=(luminance(pixels,((y+6)*256+x+6)*4)<<16)|(luminance(pixels,((y+14)*256+x+14)*4)<<8)|luminance(pixels,((y+26)*256+x+26)*4),candidates=index.get(key);if(!candidates)continue;for(const r of candidates)if(matchesAt(pixels,r,x,y)){if(!hits.has(r))hits.set(r,[]);hits.get(r).push({...r,region:[x,y,32,32]});}}
+  // Portrait panels scroll vertically one pixel per frame. Keep exact hashes,
+  // but search every vertical offset so artwork does not blink between tile rows.
+  for(let y=0;y<=208;y++)for(let x=0;x<=224;x+=8){const key=(luminance(pixels,((y+6)*256+x+6)*4)<<16)|(luminance(pixels,((y+14)*256+x+14)*4)<<8)|luminance(pixels,((y+26)*256+x+26)*4),candidates=index.get(key);if(!candidates)continue;for(const r of candidates)if(matchesAt(pixels,r,x,y)){if(!hits.has(r))hits.set(r,[]);hits.get(r).push({...r,region:[x,y,32,32]});}}
   return hits;
  }
  // FASTMATCH66

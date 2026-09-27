@@ -13,15 +13,16 @@
   if(tail)for(let y=0;y<240;y++){let start=-1;for(let x=0;x<=256;x++){if(x<256&&visited[y*256+x]){if(start<0)start=x;}else if(start>=0){found.background.push([start,y,x-start]);start=-1;}}}
   // Exact glyph decoding on the game's text-panel palette. No OCR guesses.
   if(config.textGlyphs){
-   const lines=new Map(),marks=[];
-   for(let x=0;x<=248;x+=8){const rows=[];
-    for(let y=0;y<240;y++){let bits=0,valid=true;for(let dx=0;dx<8;dx++){const color=rgb(p,x+dx,y);if(color!==BLACK&&color!==BEIGE){valid=false;break;}bits=(bits<<1)|(color===BLACK?1:0);}rows.push(valid?bits.toString(16).padStart(2,'0'):null);}
-    for(let y=0;y<=232;y++){const slice=rows.slice(y,y+8);if(slice.includes(null))continue;const key=slice.join('');if(key==='0000000000000000'||key==='ffffffffffffffff')continue;const char=config.textGlyphs[key];if(!char)continue;const cell={x,y,char};if(char==='゛'||char==='゜'){marks.push(cell);continue;}if(!lines.has(y))lines.set(y,[]);lines.get(y).push(cell);}
+   // Decode both dark dialogue and light names; keep palette-separated lines.
+   for(const [ink,bg] of [[BLACK,BEIGE],[BEIGE,BLACK],[BEIGE,PURPLE]]){
+    const lines=new Map(),marks=[];
+    for(let x=0;x<=248;x+=8){const rows=[];
+     for(let y=0;y<240;y++){let bits=0,valid=true;for(let dx=0;dx<8;dx++){const color=rgb(p,x+dx,y);if(color!==ink&&color!==bg){valid=false;break;}bits=(bits<<1)|(color===ink?1:0);}rows.push(valid?bits.toString(16).padStart(2,'0'):null);}
+     for(let y=0;y<=232;y++){const slice=rows.slice(y,y+8);if(slice.includes(null))continue;const key=slice.join('');if(key==='0000000000000000'||key==='ffffffffffffffff')continue;const char=config.textGlyphs[key];if(!char||[rgb(p,x,y),rgb(p,x+7,y),rgb(p,x,y+7),rgb(p,x+7,y+7)].filter(v=>v===bg).length<3)continue;const cell={x,y,char,ink,bg};if(char==='゛'||char==='゜'){marks.push(cell);continue;}if(!lines.has(y))lines.set(y,[]);lines.get(y).push(cell);}
+    }
+    const accepted=[];for(const[y,cells]of [...lines].sort((a,b)=>b[1].length-a[1].length))if(cells.length>=2&&!accepted.some(v=>Math.abs(v-y)<8)){accepted.push(y);found.text.push(...cells);}
+    found.text.push(...marks.filter(a=>found.text.some(b=>b.bg===bg&&b.x===a.x&&b.y===a.y+8)));
    }
-   // The native battle panel scrolls by one pixel. Select a whole line's
-   // observed baseline instead of assuming every font starts on an 8px grid.
-   const accepted=[];for(const[y,cells]of [...lines].sort((a,b)=>b[1].length-a[1].length))if(cells.length>=2&&!accepted.some(v=>Math.abs(v-y)<8)){accepted.push(y);found.text.push(...cells);}
-   found.text.push(...marks.filter(a=>found.text.some(b=>b.x===a.x&&b.y===a.y+8)));
    found.text.sort((a,b)=>a.y-b.y||a.x-b.x);
   }
   for(const label of config.labels)if(global.DreamPatternTools.pixelHash(p,label.region)===label.pixelHash){
@@ -67,26 +68,30 @@
   }
   for(const{color,loops}of layers){c.fillStyle='#'+color.toString(16).padStart(6,'0');c.beginPath();for(const loop of loops){const last=loop[loop.length-1],first=loop[0];c.moveTo(x+(last[0]+first[0])/2,y+(last[1]+first[1])/2);for(let i=0;i<loop.length;i++){const a=loop[i],b=loop[(i+1)%loop.length];c.quadraticCurveTo(x+a[0],y+a[1],x+(a[0]+b[0])/2,y+(a[1]+b[1])/2);}c.closePath();}c.fill('evenodd');}
  }
- function kanji(c,text,x,y){panel(c,x,y,16,16);c.textAlign='center';c.textBaseline='middle';c.fillStyle='#241709';c.font='600 14px DreamDialogue,serif';c.fillText(text,x+8,y+8.5,15);}
+ function kanji(c,text,x,y,color='#f7d8a5'){c.textAlign='center';c.textBaseline='middle';c.fillStyle=color;c.font='600 14px DreamDialogue,serif';c.fillText(text,x+8,y+8.5,15);}
  function draw(c,found,width,height){
   c.save();c.scale(width/256,height/240);
   if(found.background?.length){c.save();c.beginPath();for(const[x,y,w]of found.background)c.rect(x,y,w,1);c.clip();const bg=c.createLinearGradient(0,0,256,240);bg.addColorStop(0,'#26324f');bg.addColorStop(.5,'#171e35');bg.addColorStop(1,'#0d1426');c.fillStyle=bg;c.fillRect(0,0,256,240);c.restore();}
   if(found.stats||found.cards.length||found.labels.length){c.save();c.beginPath();for(let y=160;y<240;y++){let start=-1;for(let x=0;x<=256;x++){if(x<256&&rgb(found.pixels,x,y)===PURPLE){if(start<0)start=x;}else if(start>=0){c.rect(start,y,x-start,1);start=-1;}}}c.clip();const background=c.createLinearGradient(0,160,0,240);background.addColorStop(0,'#342050');background.addColorStop(.4,'#21182f');background.addColorStop(1,'#111323');c.fillStyle=background;c.fillRect(0,160,256,80);c.restore();}
 
   if(found.stats){panel(c,48,176,48,48);c.fillStyle='#271c0f';c.font='700 8px Arial,sans-serif';c.textAlign='center';c.textBaseline='alphabetic';for(const a of found.stats){if(a.char&&a.char!==' ')c.fillText(a.char,a.x+4,a.y+7.3,7.7);else if(!a.char){for(let yy=0;yy<7;yy++)for(let xx=0;xx<8;xx++)if(rgb(found.pixels,a.x+xx,a.y+yy)===BLACK){rounded(c,a.x+xx-.08,a.y+yy-.08,1.16,1.16,.24);c.fill();}}}}
-  for(const label of found.labels){const[x,y]=label.region;rounded(c,x-6,y+2,28,12,2);c.fillStyle='#f08a6b';c.fill();c.strokeStyle='#663b30';c.lineWidth=.7;c.stroke();kanji(c,label.text,x,y);}
+  for(const label of found.labels){const[x,y]=label.region;c.fillStyle='#f08a6b';c.fillRect(x,y,16,16);rounded(c,x-6,y-1,28,18,2);c.fillStyle='#f08a6b';c.fill();c.strokeStyle='#663b30';c.lineWidth=.7;c.stroke();kanji(c,label.text,x,y,'#241709');}
   for(const card of found.cards){const x=card.x;panel(c,x,176,32,48);rounded(c,x+2,178,28,44,2);c.fillStyle='#18171b';c.fill();c.strokeStyle='#ef9879';c.lineWidth=.75;c.stroke();if(card.text)kanji(c,card.text,x+8,192);else icon(c,found.pixels,x+8,192,16,16);icon(c,found.pixels,x,176,16,16);icon(c,found.pixels,x+16,208,16,16);}
   for(const strip of found.strips){const {y,tint}=strip;const red=tint==='red';
    const g=c.createLinearGradient(0,y,0,y+32);g.addColorStop(0,red?'#7b251d':'#153c8f');g.addColorStop(.22,red?'#ff9787':'#8dcfff');g.addColorStop(.5,red?'#ffe2d5':'#d5edff');g.addColorStop(.8,red?'#e75b43':'#509be7');g.addColorStop(1,red?'#78201a':'#123c84');c.fillStyle=g;c.fillRect(0,y,256,32);
    for(let yy=y;yy<y+32;yy++){let x=0;while(x<256){const color=rgb(found.pixels,x,yy),start=x;while(x<256&&rgb(found.pixels,x,yy)===color)x++;if(color===(red?0xffccc5:0xc0dfff)||color===0){c.fillStyle=color?'rgba(231,248,255,.75)':'rgba(5,21,53,.8)';c.fillRect(start,yy+.25,x-start,.55);}}}
   }
-  const text=found.text||[],marks=new Map(text.filter(a=>a.char==='゛'||a.char==='゜').map(a=>[`${a.x},${a.y+8}`,a.char]));
+  const text=(found.text||[]).filter(a=>!(found.stats&&a.x>=48&&a.x<96&&a.y>=176&&a.y<224)),marks=new Map(text.filter(a=>a.char==='゛'||a.char==='゜').map(a=>[`${a.bg},${a.x},${a.y+8}`,a.char]));
+  // Clear all native cells first, on physical-pixel boundaries. Drawing each
+  // letter immediately after clearing its cell clipped neighbouring overhangs
+  // and left antialiased fragments of the old pixels along cell edges.
+  c.save();c.setTransform(1,0,0,1,0,0);
+  for(const a of text){c.fillStyle='#'+(a.bg??BEIGE).toString(16).padStart(6,'0');const l=Math.floor(a.x*width/256),t=Math.floor(a.y*height/240),r=Math.ceil((a.x+8)*width/256),b=Math.ceil((a.y+8)*height/240);c.fillRect(l,t,r-l,b-t);}
+  c.restore();
   for(const a of text){
-   if(found.stats&&a.x>=48&&a.x<96&&a.y>=176&&a.y<224)continue;
-   c.fillStyle='#f7d8a5';c.fillRect(a.x,a.y,8,8);c.fillStyle='#241709';
-   if((a.char==='゛'||a.char==='゜')&&text.some(b=>b.x===a.x&&b.y===a.y+8))continue;
-   const mark=marks.get(`${a.x},${a.y}`),char=mark?(a.char+(mark==='゛'?'\u3099':'\u309a')).normalize('NFC'):a.char;
-   c.font='600 8px DreamDialogue,"Yu Gothic",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(char,a.x+4,a.y+4.25,8);
+   if((a.char==='゛'||a.char==='゜')&&text.some(b=>b.bg===a.bg&&b.x===a.x&&b.y===a.y+8))continue;
+   const mark=marks.get(`${a.bg},${a.x},${a.y}`),char=mark?(a.char+(mark==='゛'?'\u3099':'\u309a')).normalize('NFC'):a.char;
+   c.fillStyle=a.ink===BEIGE?'#f7d8a5':'#241709';c.font='600 8px DreamDialogue,"Yu Gothic",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(char,a.x+4,a.y+4.25,8);
   }
   c.restore();
  }

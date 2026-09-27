@@ -1,6 +1,6 @@
 /* SYNC66 *//* Match the captured frame off the emulation/input thread. Only one frame is in flight. */
 
-importScripts('/pack-engine.js?v=93','/pack-match.js?v=93','/pack-scenery.js?v=93','/pack-ui.js?v=93','/pack-effects.js?v=93','/pack-map.js?v=93');
+importScripts('/pack-engine.js?v=94','/pack-match.js?v=94','/pack-scenery.js?v=94','/pack-ui.js?v=94','/pack-effects.js?v=94','/pack-map.js?v=94');
 
 let config=null,indices,previousPixels=null,previousResult=null;
 
