@@ -4,7 +4,7 @@
  function rgb(p,x,y){const i=(y*256+x)*4;return p[i]*65536+p[i+1]*256+p[i+2];}
  function validate(p){if(p?.version!==1||!p.glyphs||!Array.isArray(p.labels)||p.labels.length>32)throw new Error('Invalid UI pack');if(p.cardShells&&(!Array.isArray(p.cardShells)||p.cardShells.length>4||!p.cardShells.every(shell=>Array.isArray(shell)&&shell.length===768&&shell.every(a=>Array.isArray(a)&&a.length===3&&a.every(Number.isInteger)&&a[0]>=0&&a[0]<32&&a[1]>=0&&a[1]<48&&a[2]>=0&&a[2]<=0xffffff))))throw new Error('Invalid card shell');return p;}
  function match(p,config){
-  const found={labels:[],cards:[],warnings:[],strips:[],stats:null,text:[],background:[],title:[],pixels:p};
+  const found={labels:[],cards:[],warnings:[],strips:[],stats:null,text:[],background:[],title:[],pixels:p,cardValues:config.cardValues||[]};
   // The title cycles its ink colours. Its exact ink silhouette is unchanged.
   for(const item of config.titleLettering||[]){const[x,y,w,h]=item.region;let hash=2166136261;for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)hash=Math.imul(hash^(rgb(p,xx,yy)!==BLACK?1:0),16777619);if((hash>>>0)===item.silhouetteHash)found.title.push(item);}
   // Only recolour the purple interface area connected to a screen corner;
@@ -16,11 +16,11 @@
   // Exact glyph decoding on the game's text-panel palette. No OCR guesses.
   if(config.textGlyphs){
    // Decode both dark dialogue and light names; keep palette-separated lines.
-   for(const [ink,bg] of [[BLACK,BEIGE],[BEIGE,BLACK],[BEIGE,PURPLE]]){
+   for(const [ink,bg] of [[BLACK,BEIGE],[BEIGE,BLACK],[BEIGE,PURPLE],[BLACK,0x994e00]]){
     const lines=new Map(),marks=[];
     for(let x=0;x<=248;x+=8){const rows=[];
      for(let y=0;y<240;y++){let bits=0,valid=true;for(let dx=0;dx<8;dx++){const color=rgb(p,x+dx,y);if(color!==ink&&color!==bg){valid=false;break;}bits=(bits<<1)|(color===ink?1:0);}rows.push(valid?bits.toString(16).padStart(2,'0'):null);}
-     for(let y=0;y<=232;y++){const slice=rows.slice(y,y+8);if(slice.includes(null))continue;const key=slice.join('');if(key==='0000000000000000'||key==='ffffffffffffffff')continue;const char=config.textGlyphs[key];if(!char||[rgb(p,x,y),rgb(p,x+7,y),rgb(p,x,y+7),rgb(p,x+7,y+7)].filter(v=>v===bg).length<3)continue;const cell={x,y,char,ink,bg};if(char==='゛'||char==='゜'){marks.push(cell);continue;}if(!lines.has(y))lines.set(y,[]);lines.get(y).push(cell);}
+     for(let y=0;y<=232;y++){const slice=rows.slice(y,y+8);if(slice.includes(null))continue;const key=slice.join('');if(key==='0000000000000000'||key==='ffffffffffffffff')continue;const char=config.textGlyphs[key];if(!char)continue;let border=0,total=0;for(let n=0;n<8;n++)for(const[xx,yy]of [[x-1,y+n],[x+8,y+n],[x+n,y-1],[x+n,y+8]])if(xx>=0&&xx<256&&yy>=0&&yy<240){total++;if(rgb(p,xx,yy)===bg)border++;}if([rgb(p,x,y),rgb(p,x+7,y),rgb(p,x,y+7),rgb(p,x+7,y+7)].filter(v=>v===bg).length<3&&border<total*.7)continue;const cell={x,y,char,ink,bg};if(char==='゛'||char==='゜'){marks.push(cell);continue;}if(!lines.has(y))lines.set(y,[]);lines.get(y).push(cell);}
     }
     const accepted=[];for(const[y,cells]of [...lines].sort((a,b)=>b[1].length-a[1].length))if(cells.length>=2&&!accepted.some(v=>Math.abs(v-y)<8)){accepted.push(y);found.text.push(...cells);}
     found.text.push(...marks.filter(a=>found.text.some(b=>b.bg===bg&&b.x===a.x&&b.y===a.y+8)));
@@ -74,6 +74,14 @@
   for(const{color,loops}of layers){c.fillStyle='#'+color.toString(16).padStart(6,'0');c.beginPath();for(const loop of loops){const last=loop[loop.length-1],first=loop[0];c.moveTo(x+(last[0]+first[0])/2,y+(last[1]+first[1])/2);for(let i=0;i<loop.length;i++){const a=loop[i],b=loop[(i+1)%loop.length];c.quadraticCurveTo(x+a[0],y+a[1],x+(a[0]+b[0])/2,y+(a[1]+b[1])/2);}c.closePath();}c.fill('evenodd');}
  }
  function kanji(c,text,x,y,color='#f7d8a5'){c.textAlign='center';c.textBaseline='middle';c.fillStyle=color;c.font='600 14px DreamDialogue,serif';c.fillText(text,x+8,y+8.5,15);}
+ function cardValue(c,found,x,y,attack){
+  const p=found.pixels,known=found.cardValues.find(a=>a.hash===global.DreamPatternTools.pixelHash(p,[x,y,16,16]));let stars=0;
+  if(attack&&!known){const seen=new Set(),sizes=[];for(let yy=0;yy<16;yy++)for(let xx=0;xx<16;xx++){const n=yy*16+xx;if(seen.has(n)||rgb(p,x+xx,y+yy)!==BLACK)continue;const q=[n];seen.add(n);let enclosed=true,size=0;while(q.length){const v=q.pop(),a=v%16,b=v>>4;size++;if(a<=2||a>=13||b<=2||b>=13)enclosed=false;for(const next of [a?v-1:-1,a<15?v+1:-1,b?v-16:-1,b<15?v+16:-1])if(next>=0&&!seen.has(next)&&rgb(p,x+next%16,y+(next>>4))===BLACK){seen.add(next);q.push(next);}}if(enclosed)sizes.push(size);}if(sizes.every(n=>n===4||n===8))stars=sizes.filter(n=>n===4).length;if(stars>7)stars=0;}
+  if(!known&&!stars){icon(c,p,x,y,16,16);return;}
+  c.fillStyle='#18171b';c.fillRect(x,y,16,16);const cx=x+8,cy=y+8,g=c.createRadialGradient(cx-2,cy-3,1,cx,cy,7);g.addColorStop(0,'#ffd6b6');g.addColorStop(.55,'#ff9878');g.addColorStop(1,'#d94a41');c.fillStyle=g;c.beginPath();c.arc(cx,cy,6.8,0,Math.PI*2);c.fill();c.strokeStyle='#fff0ca';c.lineWidth=.45;c.stroke();
+  if(known){c.fillStyle='#481d20';c.font='600 10px DreamDialogue,serif';c.textAlign='center';c.textBaseline='middle';c.fillText(known.text,cx,cy+.2,11);}
+  else{const positions=stars===1?[[0,0]]:Array.from({length:stars},(_,i)=>[Math.cos(i*Math.PI*2/stars-Math.PI/2)*3.4,Math.sin(i*Math.PI*2/stars-Math.PI/2)*3.4]);c.fillStyle='#a83325';for(const[dx,dy]of positions){c.beginPath();for(let k=0;k<10;k++){const a=k*Math.PI/5-Math.PI/2,r=k%2?.5:1.2;const xx=cx+dx+Math.cos(a)*r,yy=cy+dy+Math.sin(a)*r;if(k)c.lineTo(xx,yy);else c.moveTo(xx,yy);}c.closePath();c.fill();}}
+ }
  function draw(c,found,width,height){
   c.save();c.scale(width/256,height/240);
   for(const item of found.title||[]){
@@ -92,7 +100,7 @@
 
   if(found.stats){panel(c,48,176,48,48);c.fillStyle='#271c0f';c.font='700 8px Arial,sans-serif';c.textAlign='center';c.textBaseline='alphabetic';for(const a of found.stats){if(a.char&&a.char!==' ')c.fillText(a.char,a.x+4,a.y+7.3,7.7);else if(!a.char){for(let yy=0;yy<7;yy++)for(let xx=0;xx<8;xx++)if(rgb(found.pixels,a.x+xx,a.y+yy)===BLACK){rounded(c,a.x+xx-.08,a.y+yy-.08,1.16,1.16,.24);c.fill();}}}}
   for(const label of found.labels){const[x,y]=label.region;c.fillStyle='#f08a6b';c.fillRect(x,y,16,16);rounded(c,x-6,y-1,28,18,2);c.fillStyle='#f08a6b';c.fill();c.strokeStyle='#663b30';c.lineWidth=.7;c.stroke();kanji(c,label.text,x,y,'#241709');}
-  for(const card of found.cards){const x=card.x;panel(c,x,176,32,48);rounded(c,x+2,178,28,44,2);c.fillStyle='#18171b';c.fill();c.strokeStyle='#ef9879';c.lineWidth=.75;c.stroke();if(card.text)kanji(c,card.text,x+8,192);else icon(c,found.pixels,x+8,192,16,16);icon(c,found.pixels,x,176,16,16);icon(c,found.pixels,x+16,208,16,16);}
+  for(const card of found.cards){const x=card.x;panel(c,x,176,32,48);rounded(c,x+2,178,28,44,2);c.fillStyle='#18171b';c.fill();c.strokeStyle='#ef9879';c.lineWidth=.75;c.stroke();if(card.text)kanji(c,card.text,x+8,192);else icon(c,found.pixels,x+8,192,16,16);cardValue(c,found,x,176,true);cardValue(c,found,x+16,208,false);}
   for(const strip of found.strips){const {y,tint}=strip;const red=tint==='red';
    const g=c.createLinearGradient(0,y,0,y+32);g.addColorStop(0,red?'#7b251d':'#153c8f');g.addColorStop(.22,red?'#ff9787':'#8dcfff');g.addColorStop(.5,red?'#ffe2d5':'#d5edff');g.addColorStop(.8,red?'#e75b43':'#509be7');g.addColorStop(1,red?'#78201a':'#123c84');c.fillStyle=g;c.fillRect(0,y,256,32);
    for(let yy=y;yy<y+32;yy++){let x=0;while(x<256){const color=rgb(found.pixels,x,yy),start=x;while(x<256&&rgb(found.pixels,x,yy)===color)x++;if(color===(red?0xffccc5:0xc0dfff)||color===0){c.fillStyle=color?'rgba(231,248,255,.75)':'rgba(5,21,53,.8)';c.fillRect(start,yy+.25,x-start,.55);}}}
@@ -114,7 +122,7 @@
   }
   c.restore();
  }
- async function loadFont(){if(global.FontFace&&global.document?.fonts)await Promise.all([['DreamLabels','noto-serif-jp-labels.ttf','700'],['DreamDialogue','dbz-dialogue.ttf','600']].map(async([name,file,weight])=>{const font=new FontFace(name,`url(/fonts/${file}?v=95)`,{weight});await font.load();document.fonts.add(font);}));}
+ async function loadFont(){if(global.FontFace&&global.document?.fonts)await Promise.all([['DreamLabels','noto-serif-jp-labels.ttf','700'],['DreamDialogue','dbz-dialogue.ttf','600']].map(async([name,file,weight])=>{const font=new FontFace(name,`url(/fonts/${file}?v=96)`,{weight});await font.load();document.fonts.add(font);}));}
  global.DreamHudTools={validate,match,draw,loadFont};
 })(typeof window!=='undefined'?window:globalThis);
 

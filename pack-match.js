@@ -11,11 +11,13 @@
    if(r.motion!==undefined&&typeof r.motion!=='boolean')throw new Error('Invalid motion rule');
    if(r.flipX!==undefined&&typeof r.flipX!=='boolean')throw new Error('Invalid sprite direction');
    if(r.badge!==undefined&&(typeof r.badge!=='boolean'||r.motion||r.search||r.region[2]!==16||r.region[3]!==16))throw new Error('Invalid party badge');
+   if(r.heroCutin&&(!Array.isArray(r.heroCutin)||r.heroCutin.length!==2||!r.heroCutin.every(Number.isInteger)||r.heroCutin[0]<-104||r.heroCutin[0]>256||r.heroCutin[1]!==104||r.search||r.motion||r.region.join(',')!=='0,160,256,48'))throw new Error('Invalid hero close-up');
    if(r.cutin&&(!Array.isArray(r.cutin)||r.cutin.length!==2||!r.cutin.every(Number.isInteger)||r.cutin[0]<0||r.cutin[0]>255||r.cutin[1]!==48||r.search||r.motion||r.region.join(',')!=='0,176,256,32'))throw new Error('Invalid battle close-up');
    if(r.palettePattern&&(!Array.isArray(r.palettePattern)||r.palettePattern.length!==r.region[2]*r.region[3]||r.palettePattern.some(n=>!Number.isInteger(n)||n<0||n>15)))throw new Error('Invalid palette pattern');
    if(r.context&&(!Array.isArray(r.context)||r.context.length>8||r.context.some(a=>!Array.isArray(a)||a.length!==3||!a.every(Number.isInteger)||a[0]<0||a[0]>255||a[1]<0||a[1]>239||a[2]<0||a[2]>0xffffff)))throw new Error('Invalid scene context');
    if(r.paintRegion){const [x,y,w,h]=r.paintRegion;if(r.motion||!Array.isArray(r.paintRegion)||r.paintRegion.length!==4||![x,y,w,h].every(Number.isInteger)||x<0||y<0||w<1||h<1||x+w>256||y+h>240||!r.context?.length)throw new Error('Invalid scene paint region');}
    if(r.holes&&(!r.paintRegion||!Array.isArray(r.holes)||r.holes.length>4||r.holes.some(a=>!Array.isArray(a)||a.length!==4||!a.every(Number.isInteger)||a[0]<r.paintRegion[0]||a[1]<r.paintRegion[1]||a[2]<1||a[3]<1||a[0]+a[2]>r.paintRegion[0]+r.paintRegion[2]||a[1]+a[3]>r.paintRegion[1]+r.paintRegion[3])))throw new Error('Invalid preserved menu region');
+   if(r.pixelMask&&(!r.motion||!Array.isArray(r.pixelMask)||r.pixelMask.length<70||r.pixelMask.length>4096||r.pixelMask.some(a=>!Array.isArray(a)||a.length!==3||!a.every(Number.isInteger)||a[0]<0||a[0]>=r.region[2]||a[1]<0||a[1]>=r.region[3]||a[2]<1||a[2]>0xffffff)))throw new Error('Invalid foreground mask');
    if(r.motion){
     if(!r.search||r.pixelHash===undefined||r.region[2]>64||r.region[3]>64||!Array.isArray(r.anchors)||r.anchors.length<3||r.anchors.length>8)throw new Error('Invalid sprite template');
     for(const a of r.anchors)if(!Array.isArray(a)||a.length!==3||!a.every(Number.isInteger)||a[0]<0||a[0]>=r.region[2]||a[1]<0||a[1]>=r.region[3]||a[2]<0||a[2]>0xffffff)throw new Error('Invalid sprite anchor');
@@ -35,6 +37,7 @@
  function matchesAt(pixels,r,x,y){
   for(const [xx,yy,c] of r.context||[]){const i=(yy*256+xx)*4;if(((pixels[i]<<16)|(pixels[i+1]<<8)|pixels[i+2])!==c)return false;}
   const w=r.region[2],h=r.region[3],region=[x,y,w,h];
+  if(r.pixelMask){for(const [xx,yy,col]of r.pixelMask){const i=((y+yy)*256+x+xx)*4;if(((pixels[i]<<16)|(pixels[i+1]<<8)|pixels[i+2])!==col)return false;}return true;}
   if(r.palettePattern){
    const colors=new Map(),reverse=new Map();let at=0;
    for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++){
@@ -100,7 +103,7 @@
       const s0=lowerBound(pos,start[id],start[id+1],(cy0+ay)*256),limit=(cy1+ay+1)*256;
       for(let j=s0,end=start[id+1];j<end;j++){const q=pos[j];if(q>=limit)break;const x=(q&255)-ax,y=(q>>>8)-ay;if(x<cx0||x>cx1||y<cy0||y>cy1)continue;
        const base=y*256+x;let ok=true;for(let k=0;k<n;k++)if(packed[base+off[k]]!==col[k]){ok=false;break;}if(!ok)continue;
-       for(let k=0;k<6;k++)if(lum[base+poff[k]]!==pval[k]){ok=false;break;}if(!ok)continue;
+       for(let k=0;!r.pixelMask&&k<6;k++)if(lum[base+poff[k]]!==pval[k]){ok=false;break;}if(!ok)continue;
        if(matchesAt(pixels,r,x,y))kept.push({...r,region:[x,y,w,h]});}
      }
      kept.sort((a,b)=>(a.region[1]*256+a.region[0])-(b.region[1]*256+b.region[0]));m.hits=kept;
@@ -116,6 +119,7 @@
   return resolveOverlaps(found);
  }
  function resolveOverlaps(found){
+  const title=found.find(r=>r.titleScene);if(title)return [title];
   const poses=new Map(),result=[];
   for(const r of found){
    if(!r.motion){result.push(r);continue;}
@@ -125,7 +129,7 @@
   // Cropped and padded templates may both recognize the same native fighter.
   // Their render bounds differ slightly, so exact-key deduplication alone can
   // draw two sets of limbs. Keep one reviewed, most complete match per body.
-  const priority=r=>r.bodyV93?3:r.battleV93?2:0;
+  const priority=r=>r.bodyV96?4:r.bodyV93?3:r.battleV93?2:0;
   const selected=[];
   for(const r of [...poses.values()].sort((a,b)=>priority(b)-priority(a)||b.region[2]*b.region[3]-a.region[2]*a.region[3])){
    const[x,y,w,h]=r.region;

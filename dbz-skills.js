@@ -8,7 +8,7 @@
  const folders=[['Goku',[0,8,13,14,15,16,17,18,19,22,23]],['Piccolo',[1,4,6,24,26]],['Gohan',[0,7]],['Krillin',[8,10,27,9]],['Yamcha',[8,11]],['Tien',[0,28,29,30,9]],['Chiaotzu',[2,31]],['Vegeta',[0,4,34,20]],['Frieza',[0,5,34]],['Captain Ginyu',[0,5,34,33]],['Jeice',[0,12]],['Burter',[0,21]],['Recoome',[0,4,25]],['Guldo',[0,32]],['Nail',[0]],['Frieza’s soldiers',[0,3]]];
  const actors={1:'Goku',2:'Piccolo',3:'Gohan',4:'Krillin',5:'Yamcha',6:'Tien',7:'Chiaotzu',8:'Nail',9:'Vegeta',36:'Frieza',42:'Vegeta'};
  let api=null,dialog=null,body=null,title=null,back=null,saved=null,slot=-1,suppressed=false,lastPhase=-1,busy=false,focusBefore=null;
- const inspect=()=>{const state=api.gm().getState(),offset=api.ramStart(state);if(offset<0)throw Error('Cannot read this game state.');return {state:new Uint8Array(state),offset,ram:state.subarray(offset,offset+2048)};};
+ const inspect=()=>{const state=new Uint8Array(api.gm().getState()),offset=api.ramStart(state);if(offset<0)throw Error('Cannot read this game state.');return {state,offset,ram:state.subarray(offset,offset+2048)};};
  const eligible=ram=>ram[0x2e]===1&&[6,7].includes(ram[0x30])&&ram[0x9a]<162&&ram[0x9a]%18===0&&ram[0x200+ram[0x9a]]<64;
  const button=(label,fn)=>{const el=document.createElement('button');el.type='button';el.textContent=label;el.onclick=fn;return el;};
  const close=(resume=true)=>{if(!dialog||dialog.hidden)return;dialog.hidden=true;saved=null;suppressed=true;if(resume)api.resume();focusBefore?.focus();};
@@ -19,14 +19,24 @@
   busy=true;
   try{
    const current=inspect();if(!eligible(current.ram)||current.ram[0x9a]!==slot)throw Error('The battle has moved on. Open All Skills again.');
-   const bytes=current.state,r=bytes.subarray(current.offset,current.offset+2048);
-   const target=Array.from({length:5},(_,j)=>j).find(j=>r[0x2a2+j*18]<64);
-   if(target===undefined)throw Error('There is no active enemy to target.');
-   // Mirror the original skill-confirm routine and enter native target selection.
-   r[0x210+slot]=0xc0+id;r[0x70]=target;r[0x6d]|=16;r[0x99]=2;r[0x30]=8;r[0x31]=128;r[0x13b]=2;r[0x144]=2;
-   await Promise.resolve(api.gm().loadState(bytes));api.resetFrame();
+   const gm=api.gm();if(typeof gm.simulateInput!=='function')throw Error('Native confirmation input is unavailable.');
+   // Run the native command first: it restores the portrait CHR banks and
+   // target UI. A RAM phase jump cannot perform that graphics setup.
+   api.release();api.resume();let phase=current.ram[0x30],pressed=true,pulses=1;
+   gm.simulateInput(0,8,1);
+   const deadline=performance.now()+2000;let pulseAt=performance.now(),releasedAt=0,confirmed=false;
+   while(performance.now()<deadline){
+    await new Promise(resolve=>setTimeout(resolve,8));const live=inspect(),next=live.ram[0x30];
+    if(live.ram[0x2e]!==1||live.ram[0x9a]!==slot)throw Error('The battle changed during confirmation.');
+    if(next===8){gm.simulateInput(0,8,0);api.pause();confirmed=true;break;}
+    if(pressed&&performance.now()-pulseAt>=30){gm.simulateInput(0,8,0);pressed=false;releasedAt=performance.now();}
+    if(!pressed&&phase===6&&next===7&&pulses===1&&performance.now()-releasedAt>=40){phase=7;pulses++;gm.simulateInput(0,8,1);pressed=true;pulseAt=performance.now();}
+   }
+   gm.simulateInput(0,8,0);if(!confirmed){api.pause();await Promise.resolve(gm.loadState(current.state));throw Error('The native command could not be confirmed. Please choose a battle card and try again.');}
+   const native=inspect();native.ram[0x210+slot]=0xc0+id;native.ram[0x6d]|=16;
+   await Promise.resolve(gm.loadState(native.state));api.resetFrame();
    close();api.status(`已選擇「${hkMoves[id]}」。請選擇目標，然後按 A。`);
-  }catch(error){api.status(error.message);close();}finally{busy=false;}
+  }catch(error){api.gm()?.simulateInput?.(0,8,0);api.status(error.message);close();}finally{busy=false;}
  };
  const open=()=>{
   if(!api||!dialog.hidden)return;
@@ -39,9 +49,9 @@
  const start=options=>{
   if(api)return;api=options;
   dialog=document.createElement('section');dialog.id='dbz-skills';dialog.hidden=true;dialog.setAttribute('role','dialog');dialog.setAttribute('aria-modal','true');dialog.setAttribute('aria-labelledby','dbz-skills-title');
-  const header=document.createElement('header');back=button('‹ 角色目錄',root);title=document.createElement('h2');title.id='dbz-skills-title';header.append(back,title,button('返回遊戲',()=>close()));
+  const header=document.createElement('header');back=button('‹ 角色目錄',root);title=document.createElement('h2');title.id='dbz-skills-title';header.append(back,title,button('返回遊戲',()=>{if(!busy)close();}));
   const hint=document.createElement('p');hint.textContent='先選擇角色目錄，再選擇必殺技；目前的戰士便會使用該招式。';body=document.createElement('div');body.className='dbz-skill-list';dialog.append(header,hint,body);document.body.append(dialog);
-  dialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();close();}if(event.key==='Tab'){const items=[...dialog.querySelectorAll('button')].filter(x=>!x.hidden),first=items[0],last=items.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+  dialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();if(!busy)close();}if(event.key==='Tab'){const items=[...dialog.querySelectorAll('button')].filter(x=>!x.hidden),first=items[0],last=items.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
   setInterval(()=>{if(!api.active()||!dialog.hidden)return;try{const {ram}=inspect(),phase=ram[0x2e]*256+ram[0x30];if(phase!==lastPhase){lastPhase=phase;suppressed=false;}if(eligible(ram)&&ram[0x30]===7&&!suppressed)open();}catch{/* Loading a state may briefly make snapshots unavailable. */}},250);
  };
  window.DreamSkills={start,open,reset:()=>{close(false);suppressed=false;lastPhase=-1;},catalog:folders.map(([name,moves])=>({name,label:characterLabel(name),moves:moves.map(id=>({id,name:names[id],label:moveLabel(id)}))}))};

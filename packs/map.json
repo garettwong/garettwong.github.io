@@ -16,7 +16,14 @@
         0,
         8968192
       ],
-      "image": "/packs/map/tile-00.webp"
+      "image": "/packs/map/tile-00.webp",
+      "preserveBlack": false,
+      "edges": [
+        1538388213,
+        3273285936,
+        2443410976,
+        2829419141
+      ]
     },
     {
       "id": 1,
@@ -32,7 +39,14 @@
         0,
         8968192
       ],
-      "image": "/packs/map/tile-01.webp"
+      "image": "/packs/map/tile-01.webp",
+      "preserveBlack": false,
+      "edges": [
+        1538388213,
+        2329784720,
+        1208281024,
+        3780781093
+      ]
     },
     {
       "id": 2,
@@ -48,7 +62,14 @@
         1,
         10046976
       ],
-      "image": "/packs/map/tile-02.webp"
+      "image": "/packs/map/tile-02.webp",
+      "preserveBlack": false,
+      "edges": [
+        2352284194,
+        3357218048,
+        580339965,
+        1647208411
+      ]
     },
     {
       "id": 3,
@@ -64,7 +85,14 @@
         0,
         8968192
       ],
-      "image": "/packs/map/tile-03.webp"
+      "image": "/packs/map/tile-03.webp",
+      "preserveBlack": false,
+      "edges": [
+        3427839680,
+        3273285936,
+        804192661,
+        1801122293
+      ]
     },
     {
       "id": 4,
@@ -80,7 +108,14 @@
         1,
         10046976
       ],
-      "image": "/packs/map/tile-04.webp"
+      "image": "/packs/map/tile-04.webp",
+      "preserveBlack": false,
+      "edges": [
+        2352284194,
+        3564198427,
+        542811377,
+        117619248
+      ]
     },
     {
       "id": 5,
@@ -96,7 +131,14 @@
         2,
         10046976
       ],
-      "image": "/packs/map/tile-05.webp"
+      "image": "/packs/map/tile-05.webp",
+      "preserveBlack": false,
+      "edges": [
+        2651330303,
+        3564198427,
+        2519793519,
+        2386373175
+      ]
     },
     {
       "id": 6,
@@ -112,7 +154,14 @@
         1,
         8968192
       ],
-      "image": "/packs/map/tile-06.webp"
+      "image": "/packs/map/tile-06.webp",
+      "preserveBlack": false,
+      "edges": [
+        1090137708,
+        2892973633,
+        963539513,
+        4004287400
+      ]
     },
     {
       "id": 7,
@@ -128,7 +177,14 @@
         3,
         10046976
       ],
-      "image": "/packs/map/tile-07.webp"
+      "image": "/packs/map/tile-07.webp",
+      "preserveBlack": false,
+      "edges": [
+        2419974011,
+        1765078811,
+        490472127,
+        776137971
+      ]
     },
     {
       "id": 8,
@@ -144,7 +200,14 @@
         2,
         10046976
       ],
-      "image": "/packs/map/tile-08.webp"
+      "image": "/packs/map/tile-08.webp",
+      "preserveBlack": false,
+      "edges": [
+        2068871740,
+        1274246332,
+        2708910228,
+        1854709972
+      ]
     },
     {
       "id": 9,
@@ -160,7 +223,14 @@
         8,
         10046976
       ],
-      "image": "/packs/map/tile-09.webp"
+      "image": "/packs/map/tile-09.webp",
+      "preserveBlack": false,
+      "edges": [
+        3954731025,
+        2375408323,
+        2223354053,
+        2386373175
+      ]
     },
     {
       "id": 10,
@@ -176,7 +246,14 @@
         4,
         10046976
       ],
-      "image": "/packs/map/tile-10.webp"
+      "image": "/packs/map/tile-10.webp",
+      "preserveBlack": false,
+      "edges": [
+        3798338873,
+        2798272993,
+        2883887244,
+        2861293660
+      ]
     },
     {
       "id": 11,
@@ -192,7 +269,14 @@
         4,
         10046976
       ],
-      "image": "/packs/map/tile-11.webp"
+      "image": "/packs/map/tile-11.webp",
+      "preserveBlack": false,
+      "edges": [
+        266943513,
+        705949885,
+        3093482049,
+        4212023757
+      ]
     },
     {
       "id": 12,
@@ -208,7 +292,14 @@
         0,
         8968192
       ],
-      "image": "/packs/map/tile-12.webp"
+      "image": "/packs/map/tile-12.webp",
+      "preserveBlack": false,
+      "edges": [
+        2004694600,
+        413129788,
+        3146074956,
+        3753935044
+      ]
     },
     {
       "id": 14,
@@ -224,7 +315,14 @@
         2,
         10046976
       ],
-      "image": "/packs/map/tile-14.webp"
+      "image": "/packs/map/tile-14.webp",
+      "preserveBlack": false,
+      "edges": [
+        3391173234,
+        3973250942,
+        2519793519,
+        1153219127
+      ]
     },
     {
       "id": 15,
@@ -240,7 +338,14 @@
         2,
         10046976
       ],
-      "image": "/packs/map/tile-15.webp"
+      "image": "/packs/map/tile-15.webp",
+      "preserveBlack": false,
+      "edges": [
+        2651330303,
+        3357218048,
+        1968121835,
+        4025302032
+      ]
     },
     {
       "id": 16,
@@ -256,7 +361,14 @@
         0,
         10046976
       ],
-      "image": "/packs/map/tile-16.webp"
+      "image": "/packs/map/tile-16.webp",
+      "preserveBlack": false,
+      "edges": [
+        71066304,
+        690784013,
+        3140221498,
+        3019469843
+      ]
     },
     {
       "id": 17,
@@ -272,7 +384,14 @@
         0,
         10046976
       ],
-      "image": "/packs/map/tile-17.webp"
+      "image": "/packs/map/tile-17.webp",
+      "preserveBlack": false,
+      "edges": [
+        820924341,
+        690784013,
+        1936456152,
+        51387380
+      ]
     },
     {
       "id": 18,
@@ -288,7 +407,14 @@
         2,
         8968192
       ],
-      "image": "/packs/map/tile-18.webp"
+      "image": "/packs/map/tile-18.webp",
+      "preserveBlack": false,
+      "edges": [
+        8689077,
+        3118345797,
+        4090971701,
+        1801122293
+      ]
     },
     {
       "id": 19,
@@ -304,7 +430,14 @@
         3,
         3704576
       ],
-      "image": "/packs/map/tile-19.webp"
+      "image": "/packs/map/tile-19.webp",
+      "preserveBlack": false,
+      "edges": [
+        3318535621,
+        2829300325,
+        1893216645,
+        3780781093
+      ]
     },
     {
       "id": 20,
@@ -320,7 +453,14 @@
         7,
         10046976
       ],
-      "image": "/packs/map/tile-20.webp"
+      "image": "/packs/map/tile-20.webp",
+      "preserveBlack": false,
+      "edges": [
+        3798338873,
+        705949885,
+        1950651113,
+        1137693773
+      ]
     },
     {
       "id": 21,
@@ -336,7 +476,14 @@
         1,
         10046976
       ],
-      "image": "/packs/map/tile-21.webp"
+      "image": "/packs/map/tile-21.webp",
+      "preserveBlack": false,
+      "edges": [
+        298599815,
+        839273344,
+        3692849235,
+        1872760272
+      ]
     },
     {
       "id": 22,
@@ -352,7 +499,14 @@
         0,
         31885
       ],
-      "image": "/packs/map/tile-22.webp"
+      "image": "/packs/map/tile-22.webp",
+      "preserveBlack": false,
+      "edges": [
+        825657485,
+        1221037029,
+        3727786489,
+        1685490669
+      ]
     },
     {
       "id": 23,
@@ -368,7 +522,14 @@
         2,
         8968192
       ],
-      "image": "/packs/map/tile-23.webp"
+      "image": "/packs/map/tile-23.webp",
+      "preserveBlack": false,
+      "edges": [
+        3318535621,
+        3118345797,
+        3424732565,
+        2829419141
+      ]
     },
     {
       "id": 24,
@@ -384,7 +545,14 @@
         0,
         8968192
       ],
-      "image": "/packs/map/tile-24.webp"
+      "image": "/packs/map/tile-24.webp",
+      "preserveBlack": false,
+      "edges": [
+        1538388213,
+        4029260517,
+        1241316917,
+        2829419141
+      ]
     },
     {
       "id": 25,
@@ -400,7 +568,14 @@
         0,
         8968192
       ],
-      "image": "/packs/map/tile-00.webp"
+      "image": "/packs/map/tile-00.webp",
+      "preserveBlack": false,
+      "edges": [
+        1157520437,
+        3273285936,
+        3613910880,
+        2829419141
+      ]
     },
     {
       "id": 26,
@@ -416,7 +591,8 @@
         4,
         10046976
       ],
-      "image": "/packs/map/tile-10.webp"
+      "image": "/packs/map/tile-10.webp",
+      "preserveBlack": false
     },
     {
       "id": 27,
@@ -432,7 +608,8 @@
         4,
         10046976
       ],
-      "image": "/packs/map/tile-11.webp"
+      "image": "/packs/map/tile-11.webp",
+      "preserveBlack": false
     },
     {
       "id": 100,
@@ -709,6 +886,12 @@
         2,
         0,
         0
+      ],
+      "edges": [
+        1855283390,
+        98224458,
+        2690695719,
+        4026729031
       ]
     },
     {
@@ -986,6 +1169,12 @@
         3,
         0,
         0
+      ],
+      "edges": [
+        1379848023,
+        574469129,
+        997664405,
+        4026729031
       ]
     },
     {
@@ -1263,6 +1452,12 @@
         2,
         0,
         0
+      ],
+      "edges": [
+        895973040,
+        574469129,
+        3072886526,
+        4026729031
       ]
     },
     {
@@ -1540,6 +1735,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        28146716,
+        2628007459,
+        3907635928,
+        704666943
       ]
     },
     {
@@ -1817,6 +2018,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        495886994,
+        4227080465,
+        1539982346,
+        1472236405
       ]
     },
     {
@@ -2094,6 +2301,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        460386301,
+        3457460260,
+        249448918,
+        704666943
       ]
     },
     {
@@ -2371,6 +2584,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        2521035877,
+        196417984,
+        968495326,
+        991627975
       ]
     },
     {
@@ -2648,6 +2867,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        4129349188,
+        1622943359,
+        3801038408,
+        991627975
       ]
     },
     {
@@ -2925,6 +3150,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        2495104639,
+        1842407355,
+        204014346,
+        793733034
       ]
     },
     {
@@ -3202,6 +3433,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        4161801747,
+        275062474,
+        3359860960,
+        1472236405
       ]
     },
     {
@@ -3479,6 +3716,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        1328149395,
+        1201604158,
+        2909145424,
+        3310997957
       ]
     },
     {
@@ -3756,6 +3999,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        807781181,
+        4227080465,
+        3078813365,
+        1472236405
       ]
     },
     {
@@ -4310,6 +4559,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        3032093623,
+        2628007459,
+        3742875899,
+        704666943
       ]
     },
     {
@@ -4587,6 +4842,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        2378795191,
+        1622943359,
+        4241294595,
+        991627975
       ]
     },
     {
@@ -4864,6 +5125,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        2828711191,
+        269117827,
+        4289167163,
+        704666943
       ]
     },
     {
@@ -5141,6 +5408,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        3812989533,
+        1182500273,
+        2727228405,
+        1472236405
       ]
     },
     {
@@ -5418,6 +5691,12 @@
         0,
         0,
         0
+      ],
+      "edges": [
+        274691863,
+        4187065183,
+        3077270851,
+        991627975
       ]
     },
     {
@@ -5695,6 +5974,12 @@
         2,
         0,
         0
+      ],
+      "edges": [
+        3628558800,
+        3014898729,
+        3704096446,
+        4026729031
       ]
     },
     {
@@ -5989,7 +6274,8 @@
         10046976
       ],
       "image": "/packs/map/extra-04.webp",
-      "mapExtra": true
+      "mapExtra": true,
+      "preserveBlack": false
     },
     {
       "id": 205,
@@ -6006,7 +6292,8 @@
         31885
       ],
       "image": "/packs/map/extra-05.webp",
-      "mapExtra": true
+      "mapExtra": true,
+      "preserveBlack": false
     },
     {
       "id": 206,
@@ -6023,7 +6310,8 @@
         10046976
       ],
       "image": "/packs/map/extra-06.webp",
-      "mapExtra": true
+      "mapExtra": true,
+      "preserveBlack": false
     },
     {
       "id": 207,
@@ -6040,7 +6328,8 @@
         10046976
       ],
       "image": "/packs/map/extra-07.webp",
-      "mapExtra": true
+      "mapExtra": true,
+      "preserveBlack": false
     },
     {
       "id": 208,
@@ -6057,7 +6346,8 @@
         4771294
       ],
       "image": "/packs/map/extra-08.webp",
-      "mapExtra": true
+      "mapExtra": true,
+      "preserveBlack": false
     },
     {
       "id": 209,
@@ -6074,7 +6364,1943 @@
         31885
       ],
       "image": "/packs/map/extra-09.webp",
-      "mapExtra": true
+      "mapExtra": true,
+      "preserveBlack": false
+    },
+    {
+      "id": 300,
+      "hash": 3698352434,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-0.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1744188010,
+        2046608185,
+        114468354,
+        1956397109
+      ]
+    },
+    {
+      "id": 302,
+      "hash": 4218246490,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-2.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2230937196,
+        1332494783,
+        940110352,
+        460991303
+      ]
+    },
+    {
+      "id": 303,
+      "hash": 2635115365,
+      "anchors": [
+        10046976,
+        15375906,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-3.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 304,
+      "hash": 3484356690,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-4.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2238651474,
+        3310997957,
+        2238651474,
+        3310997957
+      ]
+    },
+    {
+      "id": 305,
+      "hash": 2420980709,
+      "anchors": [
+        0,
+        15375906,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-5.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 306,
+      "hash": 2496200834,
+      "anchors": [
+        0,
+        0,
+        16777215,
+        0
+      ],
+      "image": "/packs/map/v96/tile-6.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1634492274,
+        2462711525,
+        3578262594,
+        4224942597
+      ]
+    },
+    {
+      "id": 307,
+      "hash": 818919653,
+      "anchors": [
+        10046976,
+        10046976,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-7.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        2756916549,
+        1908057893,
+        2676288373,
+        2676288373
+      ]
+    },
+    {
+      "id": 308,
+      "hash": 2787100213,
+      "anchors": [
+        16777215,
+        0,
+        16777215,
+        0
+      ],
+      "image": "/packs/map/v96/tile-8.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2180313093,
+        1499930117,
+        2816316917,
+        4224942597
+      ]
+    },
+    {
+      "id": 309,
+      "hash": 1921676069,
+      "anchors": [
+        10046976,
+        15375906,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-9.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        3169740373,
+        3169740373,
+        1953259269,
+        2577660645
+      ]
+    },
+    {
+      "id": 310,
+      "hash": 2487107621,
+      "anchors": [
+        10046976,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-10.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        3716168885,
+        3716168885,
+        770051109,
+        3310997957
+      ]
+    },
+    {
+      "id": 311,
+      "hash": 842104037,
+      "anchors": [
+        0,
+        15375906,
+        10046976,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-11.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        2312765349,
+        3428565829,
+        1390349109,
+        1390349109
+      ]
+    },
+    {
+      "id": 312,
+      "hash": 3930359181,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-12.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        669765263,
+        1332494783,
+        3243690459,
+        460991303
+      ]
+    },
+    {
+      "id": 313,
+      "hash": 299160094,
+      "anchors": [
+        4771294,
+        10046976,
+        4771294,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-13.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 314,
+      "hash": 1070522248,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-14.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1389547949,
+        2132858672,
+        1723803374,
+        460991303
+      ]
+    },
+    {
+      "id": 315,
+      "hash": 2466567589,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-15.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2200914589,
+        2046608185,
+        2440729461,
+        1956397109
+      ]
+    },
+    {
+      "id": 316,
+      "hash": 3109711378,
+      "anchors": [
+        0,
+        10046976,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-16.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        4245834066,
+        2523752933,
+        2233807538,
+        2308920229
+      ]
+    },
+    {
+      "id": 317,
+      "hash": 2899474021,
+      "anchors": [
+        0,
+        15375906,
+        10046976,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-17.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        74289637,
+        280236869,
+        3354045877,
+        3354045877
+      ]
+    },
+    {
+      "id": 318,
+      "hash": 442096613,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-18.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3060064255,
+        3717248363,
+        656542738,
+        1304986930
+      ]
+    },
+    {
+      "id": 319,
+      "hash": 57124816,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-19.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1426046859,
+        3428479418,
+        4114568000,
+        1956397109
+      ]
+    },
+    {
+      "id": 320,
+      "hash": 1294828634,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-20.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        230218548,
+        1842407355,
+        1602092981,
+        793733034
+      ]
+    },
+    {
+      "id": 321,
+      "hash": 2181603445,
+      "anchors": [
+        15375906,
+        10046976,
+        4771294,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-21.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 322,
+      "hash": 3054926821,
+      "anchors": [
+        16777215,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-22.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        297434685,
+        3223046617,
+        3523725237,
+        1956397109
+      ]
+    },
+    {
+      "id": 323,
+      "hash": 2427076915,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-23.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        451100093,
+        3900009691,
+        3310997957,
+        1238175027
+      ]
+    },
+    {
+      "id": 324,
+      "hash": 2017865222,
+      "anchors": [
+        4771294,
+        15375906,
+        4771294,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-24.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 325,
+      "hash": 2237656448,
+      "anchors": [
+        0,
+        0,
+        16777215,
+        0
+      ],
+      "image": "/packs/map/v96/tile-25.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3210991283,
+        3357773150,
+        1211478848,
+        4224942597
+      ]
+    },
+    {
+      "id": 326,
+      "hash": 3298409943,
+      "anchors": [
+        4771294,
+        15375906,
+        15375906,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-26.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 327,
+      "hash": 3316721560,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-27.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2851823571,
+        402202502,
+        3866051920,
+        579143397
+      ]
+    },
+    {
+      "id": 328,
+      "hash": 2254374778,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-28.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2121163991,
+        1667034276,
+        1282723726,
+        4001297537
+      ]
+    },
+    {
+      "id": 329,
+      "hash": 2253122482,
+      "anchors": [
+        4771294,
+        10046976,
+        4771294,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-29.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 330,
+      "hash": 2856728977,
+      "anchors": [
+        4771294,
+        0,
+        4771294,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-30.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 331,
+      "hash": 1371507399,
+      "anchors": [
+        0,
+        10046976,
+        4771294,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-31.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 332,
+      "hash": 2446793329,
+      "anchors": [
+        15375906,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-32.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 333,
+      "hash": 4013197005,
+      "anchors": [
+        16777215,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-33.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2110307375,
+        1691508319,
+        4012184987,
+        460991303
+      ]
+    },
+    {
+      "id": 334,
+      "hash": 1058007467,
+      "anchors": [
+        4771294,
+        15375906,
+        4771294,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-34.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 335,
+      "hash": 2458819856,
+      "anchors": [
+        0,
+        10046976,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-35.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        3101271315,
+        4180250942,
+        864837616,
+        2308920229
+      ]
+    },
+    {
+      "id": 336,
+      "hash": 3145298997,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-36.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2156536577,
+        531502093,
+        3310997957,
+        1956397109
+      ]
+    },
+    {
+      "id": 337,
+      "hash": 3851467844,
+      "anchors": [
+        4771294,
+        4771294,
+        4771294,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-37.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 338,
+      "hash": 3149603829,
+      "anchors": [
+        0,
+        0,
+        16777215,
+        0
+      ],
+      "image": "/packs/map/v96/tile-38.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2221162725,
+        2462711525,
+        482394037,
+        4224942597
+      ]
+    },
+    {
+      "id": 339,
+      "hash": 565983925,
+      "anchors": [
+        4771294,
+        15375906,
+        4771294,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-39.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 340,
+      "hash": 3127170962,
+      "anchors": [
+        15375906,
+        4771294,
+        15375906,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-40.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 341,
+      "hash": 2070571722,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-41.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2977454940,
+        3717248363,
+        1421794237,
+        1304986930
+      ]
+    },
+    {
+      "id": 342,
+      "hash": 2096429420,
+      "anchors": [
+        15375906,
+        4771294,
+        10046976,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-42.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 343,
+      "hash": 2049629625,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-43.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        4273140946,
+        1078621798,
+        1651434372,
+        898695072
+      ]
+    },
+    {
+      "id": 344,
+      "hash": 3807941078,
+      "anchors": [
+        0,
+        15375906,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-44.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3995972399,
+        191611404,
+        172297015,
+        4215063636
+      ]
+    },
+    {
+      "id": 345,
+      "hash": 1357341294,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-45.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1960489110,
+        3311826681,
+        1080722068,
+        704666943
+      ]
+    },
+    {
+      "id": 346,
+      "hash": 1893568831,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-46.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2156536577,
+        299972071,
+        3310997957,
+        704666943
+      ]
+    },
+    {
+      "id": 347,
+      "hash": 1649893191,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-47.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2156536577,
+        3325690075,
+        3310997957,
+        460991303
+      ]
+    },
+    {
+      "id": 349,
+      "hash": 989340197,
+      "anchors": [
+        0,
+        8968192,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-49.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 351,
+      "hash": 3339936183,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-51.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1999924190,
+        3000748540,
+        2582128784,
+        793733034
+      ]
+    },
+    {
+      "id": 352,
+      "hash": 2866161501,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-52.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3068010996,
+        1667034276,
+        113295809,
+        4001297537
+      ]
+    },
+    {
+      "id": 353,
+      "hash": 402820574,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-53.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3969094471,
+        3225641160,
+        1598953647,
+        984689172
+      ]
+    },
+    {
+      "id": 354,
+      "hash": 1434398766,
+      "anchors": [
+        4771294,
+        15375906,
+        4771294,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-54.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 355,
+      "hash": 3230522175,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-55.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3023616024,
+        2510559970,
+        541774963,
+        3847303569
+      ]
+    },
+    {
+      "id": 356,
+      "hash": 4051663684,
+      "anchors": [
+        4771294,
+        4771294,
+        0,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-56.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 357,
+      "hash": 1315108329,
+      "anchors": [
+        10046976,
+        10046976,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-57.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        176934585,
+        3479611009,
+        1801735493,
+        3273706089
+      ]
+    },
+    {
+      "id": 359,
+      "hash": 2690440116,
+      "anchors": [
+        0,
+        15375906,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-59.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1370408044,
+        1058838401,
+        877561212,
+        3378766077
+      ]
+    },
+    {
+      "id": 360,
+      "hash": 1781228103,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-60.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        444076766,
+        1395152820,
+        3086362464,
+        1304986930
+      ]
+    },
+    {
+      "id": 362,
+      "hash": 2121421329,
+      "anchors": [
+        0,
+        15375906,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-62.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3267459288,
+        191611404,
+        4031165360,
+        4215063636
+      ]
+    },
+    {
+      "id": 363,
+      "hash": 3522090813,
+      "anchors": [
+        10046976,
+        15375906,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-63.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        3362908356,
+        2968349976,
+        2254265364,
+        1972737148
+      ]
+    },
+    {
+      "id": 364,
+      "hash": 1542405509,
+      "anchors": [
+        0,
+        10046976,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-64.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        2523752933,
+        2523752933,
+        1379686693,
+        2308920229
+      ]
+    },
+    {
+      "id": 365,
+      "hash": 4282015581,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-65.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        3572621805,
+        3716168885,
+        1320102749,
+        3310997957
+      ]
+    },
+    {
+      "id": 366,
+      "hash": 1420451705,
+      "anchors": [
+        0,
+        0,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-66.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false,
+      "edges": [
+        2167234728,
+        3663320076,
+        3310997957,
+        231549817
+      ]
+    },
+    {
+      "id": 367,
+      "hash": 2062177035,
+      "anchors": [
+        15375906,
+        4771294,
+        0,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-67.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 368,
+      "hash": 888974839,
+      "anchors": [
+        0,
+        10046976,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-68.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 369,
+      "hash": 643254725,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-69.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true
+    },
+    {
+      "id": 370,
+      "hash": 1567662641,
+      "anchors": [
+        0,
+        3704576,
+        0,
+        16777215
+      ],
+      "image": "/packs/map/v96/tile-70.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1004435600,
+        1823315132,
+        798099089,
+        2405073861
+      ]
+    },
+    {
+      "id": 371,
+      "hash": 3218871561,
+      "anchors": [
+        0,
+        15375906,
+        0,
+        10046976
+      ],
+      "image": "/packs/map/v96/tile-71.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2378153582,
+        1462805782,
+        3043131793,
+        3378766077
+      ]
+    },
+    {
+      "id": 372,
+      "hash": 1062620314,
+      "anchors": [
+        16777215,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-72.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2018241492,
+        943673243,
+        1104303349,
+        793733034
+      ]
+    },
+    {
+      "id": 373,
+      "hash": 2088427872,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-73.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2636605418,
+        1343408971,
+        2487906562,
+        1238175027
+      ]
+    },
+    {
+      "id": 374,
+      "hash": 2075104599,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-74.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1838546609,
+        1343408971,
+        3550788673,
+        1238175027
+      ]
+    },
+    {
+      "id": 375,
+      "hash": 3009887775,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-75.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        870177481,
+        4079680907,
+        204014346,
+        1023896420
+      ]
+    },
+    {
+      "id": 376,
+      "hash": 1938485387,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-76.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        160820104,
+        1362547302,
+        2582128784,
+        917037838
+      ]
+    },
+    {
+      "id": 377,
+      "hash": 1069538886,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-77.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1682783566,
+        1628778849,
+        1602092981,
+        2299227734
+      ]
+    },
+    {
+      "id": 378,
+      "hash": 2167167412,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-78.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1682783566,
+        4079680907,
+        1602092981,
+        1023896420
+      ]
+    },
+    {
+      "id": 379,
+      "hash": 1722394065,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-79.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        870177481,
+        1628778849,
+        204014346,
+        2299227734
+      ]
+    },
+    {
+      "id": 380,
+      "hash": 1965154203,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-80.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        4287197235,
+        419315041,
+        3866051920,
+        1172922298
+      ]
+    },
+    {
+      "id": 381,
+      "hash": 4039240663,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-81.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3678628621,
+        272454627,
+        204014346,
+        3997676660
+      ]
+    },
+    {
+      "id": 382,
+      "hash": 3491321,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-82.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3023616024,
+        131369468,
+        541774963,
+        3442677387
+      ]
+    },
+    {
+      "id": 383,
+      "hash": 4233784888,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-83.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        4129349188,
+        4227080465,
+        3801038408,
+        1472236405
+      ]
+    },
+    {
+      "id": 384,
+      "hash": 557615241,
+      "anchors": [
+        4771294,
+        10046976,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-84.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 385,
+      "hash": 784161617,
+      "anchors": [
+        16777215,
+        15375906,
+        0,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-85.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1237766648,
+        1781406124,
+        3370879216,
+        4215063636
+      ]
+    },
+    {
+      "id": 386,
+      "hash": 3899713683,
+      "anchors": [
+        0,
+        10046976,
+        0,
+        16777215
+      ],
+      "image": "/packs/map/v96/tile-86.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1963258476,
+        2086024298,
+        2015287027,
+        147178981
+      ]
+    },
+    {
+      "id": 387,
+      "hash": 2803636937,
+      "anchors": [
+        0,
+        1400793,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-87.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3023616024,
+        4016111864,
+        541774963,
+        872059403
+      ]
+    },
+    {
+      "id": 388,
+      "hash": 3293109937,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-88.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        29248444,
+        3225641160,
+        3866051920,
+        984689172
+      ]
+    },
+    {
+      "id": 389,
+      "hash": 2513089387,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-89.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3032093623,
+        2046608185,
+        3742875899,
+        1956397109
+      ]
+    },
+    {
+      "id": 390,
+      "hash": 4175172687,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-90.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2200914589,
+        2628007459,
+        2440729461,
+        704666943
+      ]
+    },
+    {
+      "id": 391,
+      "hash": 382544903,
+      "anchors": [
+        0,
+        16777215,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-91.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        3244911857,
+        2231703883,
+        656542738,
+        1275090596
+      ]
+    },
+    {
+      "id": 392,
+      "hash": 3593362009,
+      "anchors": [
+        0,
+        10046976,
+        16777215,
+        0
+      ],
+      "image": "/packs/map/v96/tile-92.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2291411442,
+        1695322722,
+        997664405,
+        1790193801
+      ]
+    },
+    {
+      "id": 393,
+      "hash": 3900057876,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-93.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1744188010,
+        1332494783,
+        114468354,
+        460991303
+      ]
+    },
+    {
+      "id": 394,
+      "hash": 298162926,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-94.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        2793461825,
+        3227272034,
+        1723803374,
+        3310997957
+      ]
+    },
+    {
+      "id": 395,
+      "hash": 852049256,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-95.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        28146716,
+        2046608185,
+        3907635928,
+        1956397109
+      ]
+    },
+    {
+      "id": 396,
+      "hash": 4833994,
+      "anchors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "image": "/packs/map/v96/tile-96.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true,
+      "edges": [
+        1426046859,
+        3457460260,
+        4114568000,
+        704666943
+      ]
+    },
+    {
+      "id": 397,
+      "hash": 2424316213,
+      "anchors": [
+        0,
+        8968192,
+        0,
+        3704576
+      ],
+      "image": "/packs/map/v96/tile-97.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 399,
+      "hash": 2960555461,
+      "anchors": [
+        3704576,
+        8968192,
+        0,
+        3704576
+      ],
+      "image": "/packs/map/v96/tile-99.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 402,
+      "hash": 2568134320,
+      "anchors": [
+        0,
+        8968192,
+        0,
+        3704576
+      ],
+      "image": "/packs/map/v96/tile-102.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 403,
+      "hash": 2002892105,
+      "anchors": [
+        10046976,
+        10046976,
+        10046976,
+        15375906
+      ],
+      "image": "/packs/map/v96/tile-103.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 404,
+      "hash": 11052296,
+      "anchors": [
+        4771294,
+        4771294,
+        4771294,
+        4771294
+      ],
+      "image": "/packs/map/v96/tile-104.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 407,
+      "hash": 1928677229,
+      "anchors": [
+        4771294,
+        4771294,
+        0,
+        3704576
+      ],
+      "image": "/packs/map/v96/tile-107.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 409,
+      "hash": 4291514741,
+      "anchors": [
+        3704576,
+        8968192,
+        0,
+        3704576
+      ],
+      "image": "/packs/map/v96/tile-109.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 410,
+      "hash": 1261620598,
+      "anchors": [
+        3704576,
+        8968192,
+        3704576,
+        3704576
+      ],
+      "image": "/packs/map/v96/tile-110.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": false
+    },
+    {
+      "id": 411,
+      "hash": 2011796912,
+      "anchors": [
+        0,
+        0,
+        3704576,
+        0
+      ],
+      "image": "/packs/map/v96/tile-111.webp",
+      "mapV96": true,
+      "probe": false,
+      "preserveBlack": false,
+      "spaceTile": true
     }
   ],
   "gateColors": [

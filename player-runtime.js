@@ -119,7 +119,14 @@
 
   try{
 
-   const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");romUrl=URL.createObjectURL(new Blob([game.bytes]));
+   const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");const romBytes=new Uint8Array(game.bytes).slice();
+   // Restore enemy HP/BP/BE without changing library identity or existing saves.
+   if(game.id==='6d21afe26889c64374f3e0d20cb77954fa20a2566cf4ece5ab49564baac862d0'){
+    const offset=528+0x1f07e,old=[0x24,0x7b,0x70,0x05,0xad,0x40,0x03,0xf0,0xa9];
+    if(!old.every((v,i)=>romBytes[offset+i]===v))throw Error('DBZ2 enemy display patch does not match this game.');
+    romBytes.set([0x4c,0x87,0xb0,0xea,0xea,0xea,0xea,0xea,0xea],offset);
+   }
+   romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
    if((await import("/power-core/contra.js?v=67")).isPowerRom(game.id)){

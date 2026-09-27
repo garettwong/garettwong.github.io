@@ -32,23 +32,23 @@
 
    if(this.prepared)return;
 
-   const index=await fetch('/packs/index.json?v=95').then(r=>r.json()),entry=index.packs.find(p=>p.romSha256.includes(this.gameId));
+   const index=await fetch('/packs/index.json?v=96').then(r=>r.json()),entry=index.packs.find(p=>p.romSha256.includes(this.gameId));
 
    if(!entry){this.prepared=true;return;}
 
-   const pack=global.DreamPatternTools.validateSearch(validatePack(await fetch(entry.manifest+'?v=95').then(r=>r.json())));
+   const pack=global.DreamPatternTools.validateSearch(validatePack(await fetch(entry.manifest+'?v=96').then(r=>r.json())));
 
    if(!pack.romSha256.includes(this.gameId))throw new Error('Artwork pack does not match this ROM');
 
-   this.rules=pack.rules;this.effects=pack.effects===true;
+   this.rules=pack.rules;this.effects=pack.effects===true;this.effectSprites=pack.effectSprites||[];
 
-   for(const [key,validator] of [['scenery',global.DreamSceneryTools],['map',global.DreamMapTools],['ui',global.DreamHudTools]])if(pack[key]){if(typeof pack[key]!=='string'||!pack[key].startsWith('/packs/')||pack[key].includes('..'))throw new Error('Invalid artwork path');this[key]=validator.validate(await fetch(pack[key]+'?v=95').then(r=>r.json()));}
+   for(const [key,validator] of [['scenery',global.DreamSceneryTools],['map',global.DreamMapTools],['ui',global.DreamHudTools]])if(pack[key]){if(typeof pack[key]!=='string'||!pack[key].startsWith('/packs/')||pack[key].includes('..'))throw new Error('Invalid artwork path');this[key]=validator.validate(await fetch(pack[key]+'?v=96').then(r=>r.json()));}
 
    if(this.ui)await global.DreamHudTools.loadFont();
 
-   const catalogue=await fetch('/packs/playback-assets.json?v=95').then(r=>{if(!r.ok)throw new Error('Artwork download failed');return r.json();});
+   const catalogue=await fetch('/packs/playback-assets.json?v=96').then(r=>{if(!r.ok)throw new Error('Artwork download failed');return r.json();});
 
-   const names=new Set(this.rules.map(r=>r.image));for(const t of this.map?.tiles||[])names.add(t.image);if(this.scenery)for(const scene of [this.scenery,...this.scenery.alternates||[]])names.add(scene.image);
+   const names=new Set([...this.rules.map(r=>r.image),...this.effectSprites]);for(const t of this.map?.tiles||[])names.add(t.image);if(this.scenery)for(const scene of [this.scenery,...this.scenery.alternates||[]]){names.add(scene.image);if(scene.arena)names.add(scene.arena);}
 
    let loaded=0;const paths=[...names];let cursor=0;await Promise.all(Array.from({length:4},async()=>{while(cursor<paths.length){const path=paths[cursor++];
 
@@ -74,7 +74,7 @@
 
    this.setEnabled(this.enabled);
 
-   if(this.sync){this.workerReady=true;this.nativeListener=()=>this.syncFrame();if(global.DreamFrameSource){global.DreamFrameSource.onFrame=this.nativeListener;global.DreamFrameSource.requested=true;}this.notifyDisplay(false,'preparing');this.status('Artwork on');this.tick();return;}try{this.workerReady=false;this.workerStartedAt=performance.now();this.lastTickAt=this.workerStartedAt;this.worker=new Worker('/pack-worker.js?v=95');this.worker.onmessage=event=>{const d=event.data;if(d.type==='ready'){this.workerReady=true;this.notifyDisplay(false,'ready');if(global.DreamFrameSource)global.DreamFrameSource.requested=true;return;}this.busy=false;if(d.error){this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}if(this.enabled&&!this.stopped&&d.generation===this.generation){try{this.frameInterval=Math.max(1000/60,(d.workerMs||0));this.nextFrameAt=0;this.present(d);if(global.DreamFrameSource)global.DreamFrameSource.requested=true;}catch(error){console.warn(error);this.stop('Artwork display failed');this.status('Artwork display failed');}}};this.worker.onerror=()=>{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');};this.worker.postMessage({type:'init',rules:this.rules,scenery:this.scenery,map:this.map,ui:this.ui,effects:this.effects});}catch{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}
+   if(this.sync){this.workerReady=true;this.nativeListener=()=>this.syncFrame();if(global.DreamFrameSource){global.DreamFrameSource.onFrame=this.nativeListener;global.DreamFrameSource.requested=true;}this.notifyDisplay(false,'preparing');this.status('Artwork on');this.tick();return;}try{this.workerReady=false;this.workerStartedAt=performance.now();this.lastTickAt=this.workerStartedAt;this.worker=new Worker('/pack-worker.js?v=96');this.worker.onmessage=event=>{const d=event.data;if(d.type==='ready'){this.workerReady=true;this.notifyDisplay(false,'ready');if(global.DreamFrameSource)global.DreamFrameSource.requested=true;return;}this.busy=false;if(d.error){this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}if(this.enabled&&!this.stopped&&d.generation===this.generation){try{this.frameInterval=Math.max(1000/60,(d.workerMs||0));this.nextFrameAt=0;this.present(d);if(global.DreamFrameSource)global.DreamFrameSource.requested=true;}catch(error){console.warn(error);this.stop('Artwork display failed');this.status('Artwork display failed');}}};this.worker.onerror=()=>{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');};this.worker.postMessage({type:'init',rules:this.rules,scenery:this.scenery,map:this.map,ui:this.ui,effects:this.effects});}catch{this.stop('Artwork worker could not load');this.status('Artwork worker could not load');return;}
 
    this.nativeListener=()=>this.dispatchFrame();if(global.DreamFrameSource)global.DreamFrameSource.onFrame=this.nativeListener;this.notifyDisplay(false,'preparing');this.status('Starting artwork');this.tick();
 
@@ -98,7 +98,7 @@
 
   analyse(pixels){return {pixels,matches:global.DreamPatternTools.findMatches(pixels,this.rules),scenery:this.scenery?global.DreamSceneryTools.match(pixels,this.scenery):null,ui:this.ui?global.DreamHudTools.match(pixels,this.ui):null,effects:this.effects?global.DreamEffectTools.match(pixels):[],mapTiles:this.map?global.DreamMapTools.match(pixels,this.map):[]};}
 
-  requiredImages(d){const names=new Set();if(!d)return names;for(const r of d.matches||[])names.add(r.index===undefined?r.image:this.rules[r.index].image);for(const t of d.mapTiles||[])names.add(t.image);if(d.scenery)names.add(d.scenery.image);return names;}
+  requiredImages(d){const names=new Set();if(!d)return names;for(const r of d.matches||[])names.add(r.index===undefined?r.image:this.rules[r.index].image);for(const t of d.mapTiles||[])names.add(t.image);if(d.scenery){names.add(d.scenery.image);if(d.scenery.arena)names.add(d.scenery.arena);}return names;}
 
   present(d){
 
@@ -122,13 +122,17 @@
 
    if(mapTiles.length)global.DreamMapTools.draw(this.out,this.assets,mapTiles,pixels,width,height);
 
-   if(ui)global.DreamHudTools.draw(this.out,ui,width,height);
+   if(matches.some(r=>r.id==='kai-planet'))global.DreamMapTools.drawKai(this.out,pixels,width,height);
+   const titleScene=matches.some(r=>r.titleScene);
+   if(ui&&!titleScene)global.DreamHudTools.draw(this.out,ui,width,height);
 
+   this.out.dreamBackdrop=null;if(scenery?.arena)global.DreamSceneryTools.backdrop(this.out,this.assets.get(scenery.arena),scenery,pixels,width,height);
    if(scenery){const image=this.assets.get(scenery.image);if(image)global.DreamSceneryTools.draw(this.out,image,scenery,width,height);else this.loadAsset(scenery.image);}
 
+   if(effects.some(e=>e.aura)&&!titleScene)global.DreamEffectTools.draw(this.out,effects.filter(e=>e.aura),width,height,this.assets);
    for(const r of matches){const asset=this.assets.get(r.image);if(!asset){this.loadAsset(r.image);continue;}global.DreamDrawTools.sprite(this.out,asset,r,width,height);}
 
-   if(effects.length)global.DreamEffectTools.draw(this.out,effects,width,height);
+   if(effects.length&&!titleScene)global.DreamEffectTools.draw(this.out,effects.filter(e=>!e.aura),width,height,this.assets);
 
    this.notifyDisplay(true,'active');this.lastFrame=d;this.metrics.presentedFrameAgeMs=d.capturedAt===undefined?null:Math.round(performance.now()-d.capturedAt);this.metrics.maxPresentedFrameAgeMs=Math.max(this.metrics.maxPresentedFrameAgeMs||0,this.metrics.presentedFrameAgeMs||0);this.metrics.frames++;this.metrics.workerMs=d.workerMs||0;this.metrics.drawMs=performance.now()-start;
 

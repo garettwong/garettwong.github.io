@@ -111,15 +111,15 @@
       "width": 80,
       "height": 101
     },
-    "/packs/motion/chiaotzu-fire.webp": {
-      "url": "/packs/playback/e13c9c405346ce25e7fb.webp",
-      "width": 113,
+    "/packs/remaster-v96/chiaotzu-fire.webp": {
+      "url": "/packs/playback/188c5dc5675e85eb6c23.webp",
+      "width": 121,
       "height": 96
     },
-    "/packs/motion/chiaotzu-ready.webp": {
-      "url": "/packs/playback/f44b38f5c02044d220a5.webp",
-      "width": 80,
-      "height": 109
+    "/packs/remaster-v96/chiaotzu-ready.webp": {
+      "url": "/packs/playback/488df503c780555381d4.webp",
+      "width": 88,
+      "height": 159
     },
     "/packs/motion/chiaotzu-strike.webp": {
       "url": "/packs/playback/b25944c51ec0a8c45bc3.webp",
@@ -136,10 +136,10 @@
       "width": 124,
       "height": 157
     },
-    "/packs/motion/enemy-recoil.webp": {
-      "url": "/packs/playback/115e146fd41cd07dfce3.webp",
-      "width": 120,
-      "height": 149
+    "/packs/remaster-v96/enemy-recoil.webp": {
+      "url": "/packs/playback/a59902113d224b8e79c9.webp",
+      "width": 123,
+      "height": 148
     },
     "/packs/motion/movement-afterimage.webp": {
       "url": "/packs/playback/a4bdf4273dcca433d0c3.webp",
@@ -157,9 +157,9 @@
       "height": 384
     },
     "/packs/motion/tien-ready.webp": {
-      "url": "/packs/playback/9745c9dc471b2d6162ed.webp",
-      "width": 124,
-      "height": 153
+      "url": "/packs/playback/f0db3c70f0809c0c2ac5.webp",
+      "width": 134,
+      "height": 164
     },
     "/packs/motion/tien-windup.webp": {
       "url": "/packs/playback/e7950a914f4ec2fc6225.webp",
@@ -167,9 +167,9 @@
       "height": 156
     },
     "/packs/motion/tien-fire.webp": {
-      "url": "/packs/playback/d65ba59278e3d32cc76c.webp",
-      "width": 117,
-      "height": 148
+      "url": "/packs/playback/5e4b9f19bdb58f0630d8.webp",
+      "width": 129,
+      "height": 164
     },
     "/packs/motion/tien-kick.webp": {
       "url": "/packs/playback/f562b9fa73224e5d0985.webp",
@@ -177,9 +177,9 @@
       "height": 156
     },
     "/packs/motion/gohan-ready.webp": {
-      "url": "/packs/playback/8ad3fc45d17ef4e8e023.webp",
-      "width": 100,
-      "height": 120
+      "url": "/packs/playback/f8c81703c49493c56481.webp",
+      "width": 114,
+      "height": 136
     },
     "/packs/motion/gohan-raise.webp": {
       "url": "/packs/playback/d0a1d09ffd1914612e3a.webp",
@@ -192,14 +192,14 @@
       "height": 76
     },
     "/packs/motion/gohan-fire.webp": {
-      "url": "/packs/playback/b28ab1b302e524eb5c20.webp",
-      "width": 116,
-      "height": 109
+      "url": "/packs/playback/b787cf2c2df213f14042.webp",
+      "width": 134,
+      "height": 125
     },
     "/packs/motion/krillin-ready.webp": {
-      "url": "/packs/playback/bb5d8b6e0971cb6e931a.webp",
-      "width": 104,
-      "height": 125
+      "url": "/packs/playback/07cada00ae35844b068e.webp",
+      "width": 115,
+      "height": 136
     },
     "/packs/motion/krillin-raise.webp": {
       "url": "/packs/playback/24a6054726cc2b936018.webp",
@@ -207,14 +207,14 @@
       "height": 148
     },
     "/packs/motion/krillin-fire.webp": {
-      "url": "/packs/playback/e3650637062b66de66e4.webp",
-      "width": 124,
-      "height": 124
+      "url": "/packs/playback/6e3396bfcb4a8d8a5a14.webp",
+      "width": 132,
+      "height": 132
     },
     "/packs/motion/yamcha-ready.webp": {
-      "url": "/packs/playback/efb0e574892b53ec6bf8.webp",
-      "width": 128,
-      "height": 149
+      "url": "/packs/playback/08410808b333053bfe5a.webp",
+      "width": 139,
+      "height": 160
     },
     "/packs/motion/yamcha-raise.webp": {
       "url": "/packs/playback/f25d9d015e17d111d446.webp",
@@ -222,9 +222,9 @@
       "height": 128
     },
     "/packs/motion/yamcha-fire.webp": {
-      "url": "/packs/playback/b34812dfc07b90c16c48.webp",
-      "width": 157,
-      "height": 148
+      "url": "/packs/playback/d1b0e1c2f0b674adcb31.webp",
+      "width": 174,
+      "height": 164
     },
     "/packs/motion/blue-enemy-ready-corrected.webp": {
       "url": "/packs/playback/fe287eb059215cdb1786.webp",
@@ -267,9 +267,9 @@
       "height": 128
     },
     "/packs/motion/tien-recoil.webp": {
-      "url": "/packs/playback/5b809d0fccd1834a3d1c.webp",
-      "width": 161,
-      "height": 136
+      "url": "/packs/playback/5dc1720eff98570de5b9.webp",
+      "width": 175,
+      "height": 148
     },
     "/packs/motion/krillin-rising.webp": {
       "url": "/packs/playback/8c579b4957a1d178ba03.webp",
@@ -301,10 +301,10 @@
       "width": 161,
       "height": 128
     },
-    "/packs/title.webp": {
-      "url": "/packs/playback/74b821c231d0962a27d8.webp",
-      "width": 1025,
-      "height": 352
+    "/packs/remaster-v96/title-restored.webp": {
+      "url": "/packs/playback/7e1929aeb30f27ffa2bb.webp",
+      "width": 1280,
+      "height": 960
     },
     "/packs/motion/green-enemy-ready.webp": {
       "url": "/packs/playback/8e90435c32fb67200f84.webp",
@@ -396,8 +396,8 @@
       "width": 128,
       "height": 128
     },
-    "/packs/kai-planet.webp": {
-      "url": "/packs/playback/66b4baa974f3d9698c2e.webp",
+    "/packs/remaster-v96/kai-planet.webp": {
+      "url": "/packs/playback/92b9efcffd9021a255f5.webp",
       "width": 384,
       "height": 384
     },
@@ -442,9 +442,9 @@
       "height": 180
     },
     "/packs/motion/yamcha-recoil.webp": {
-      "url": "/packs/playback/f11c57d966c40750389c.webp",
-      "width": 145,
-      "height": 104
+      "url": "/packs/playback/fc3261255da3ef92b20d.webp",
+      "width": 161,
+      "height": 116
     },
     "/packs/motion/yamcha-knee.webp": {
       "url": "/packs/playback/69ff2c56e8db4d6d8698.webp",
@@ -452,9 +452,9 @@
       "height": 148
     },
     "/packs/motion/krillin-recoil.webp": {
-      "url": "/packs/playback/e9ad358dfb6878288d89.webp",
-      "width": 128,
-      "height": 112
+      "url": "/packs/playback/045f328e44eb60360422.webp",
+      "width": 142,
+      "height": 124
     },
     "/packs/motion/tien-turn.webp": {
       "url": "/packs/playback/4877ac27631f7a60f296.webp",
@@ -652,9 +652,9 @@
       "height": 132
     },
     "/packs/motion/piccolo-recoil.webp": {
-      "url": "/packs/playback/5b427ccda542f8e20d50.webp",
-      "width": 156,
-      "height": 161
+      "url": "/packs/playback/43cc99ee8eafa30f0b95.webp",
+      "width": 164,
+      "height": 169
     },
     "/packs/piccolo-hud.webp": {
       "url": "/packs/playback/dd13a5d326eb0237ed20.webp",
@@ -946,20 +946,125 @@
       "width": 98,
       "height": 96
     },
+    "/packs/remaster-v96/krillin-solar.webp": {
+      "url": "/packs/playback/1370c461e32bb6163191.webp",
+      "width": 122,
+      "height": 136
+    },
+    "/packs/remaster-v96/tien-solar.webp": {
+      "url": "/packs/playback/28d125199ef7dc255e2a.webp",
+      "width": 171,
+      "height": 172
+    },
+    "/packs/remaster-v96/chiaotzu-recoil.webp": {
+      "url": "/packs/playback/6bc028f3a93e2a75a32a.webp",
+      "width": 162,
+      "height": 188
+    },
+    "/packs/remaster-v96/gohan-cutin.webp": {
+      "url": "/packs/playback/d60829865b16c5f0cb40.webp",
+      "width": 1024,
+      "height": 222
+    },
+    "/packs/remaster-v96/yamcha-cutin.webp": {
+      "url": "/packs/playback/249a8546bd0ab2ff94ee.webp",
+      "width": 1024,
+      "height": 221
+    },
+    "/packs/remaster-v96/tien-cutin.webp": {
+      "url": "/packs/playback/2932c2fd1ebab894ece0.webp",
+      "width": 1024,
+      "height": 222
+    },
+    "/packs/remaster-v96/blue-beam.webp": {
+      "url": "/packs/playback/1c87845080b12b97924f.webp",
+      "width": 440,
+      "height": 238
+    },
+    "/packs/remaster-v96/orange-beam.webp": {
+      "url": "/packs/playback/702ad4f0366301ab94f3.webp",
+      "width": 434,
+      "height": 344
+    },
+    "/packs/remaster-v96/green-beam.webp": {
+      "url": "/packs/playback/fa96640566329ebf0f93.webp",
+      "width": 434,
+      "height": 345
+    },
+    "/packs/remaster-v96/purple-beam.webp": {
+      "url": "/packs/playback/ba5dbb145dacba92d0c6.webp",
+      "width": 439,
+      "height": 350
+    },
+    "/packs/remaster-v96/orange-impact.webp": {
+      "url": "/packs/playback/91c2aa4c23b5440d960e.webp",
+      "width": 295,
+      "height": 277
+    },
+    "/packs/remaster-v96/orange-explosion.webp": {
+      "url": "/packs/playback/992de29f7967e5cf57d9.webp",
+      "width": 438,
+      "height": 412
+    },
+    "/packs/remaster-v96/blue-explosion.webp": {
+      "url": "/packs/playback/cfc058eee5de63caa141.webp",
+      "width": 425,
+      "height": 409
+    },
+    "/packs/remaster-v96/blue-impact.webp": {
+      "url": "/packs/playback/196e03830d7f0964c3e6.webp",
+      "width": 444,
+      "height": 414
+    },
+    "/packs/remaster-v96/red-aura.webp": {
+      "url": "/packs/playback/74495c09c6fb75a1eba2.webp",
+      "width": 512,
+      "height": 545
+    },
+    "/packs/remaster-v96/green-impact.webp": {
+      "url": "/packs/playback/ff781d5f46f8059c55da.webp",
+      "width": 512,
+      "height": 542
+    },
+    "/packs/remaster-v96/green-explosion.webp": {
+      "url": "/packs/playback/fe38c308f0ee4c60ceba.webp",
+      "width": 560,
+      "height": 512
+    },
+    "/packs/remaster-v96/purple-explosion.webp": {
+      "url": "/packs/playback/699eded0163ab29476ce.webp",
+      "width": 537,
+      "height": 512
+    },
     "/packs/motion/namek-terrain.webp": {
       "url": "/packs/playback/9b442e9f61e82007ef95.webp",
       "width": 793,
       "height": 125
+    },
+    "/packs/remaster-v96/namek-arena.webp": {
+      "url": "/packs/playback/f51fca3cb53a6d61c9b9.webp",
+      "width": 1024,
+      "height": 640
     },
     "/packs/motion/desert-terrain.webp": {
       "url": "/packs/playback/224f38092dd94b80b184.webp",
       "width": 1024,
       "height": 134
     },
+    "/packs/remaster-v96/desert-arena.webp": {
+      "url": "/packs/playback/142ac8b850033fd31ce5.webp",
+      "width": 1024,
+      "height": 640
+    },
     "/packs/motion/temple-terrain.webp": {
       "url": "/packs/playback/fecb42ef10d1f07f585b.webp",
       "width": 1220,
       "height": 128
+    },
+    "/packs/remaster-v96/temple-arena.webp": {
+      "url": "/packs/playback/d890a89c049fabcac223.webp",
+      "width": 1024,
+      "height": 640
     },
     "/packs/map/tile-00.webp": {
       "url": "/packs/playback/71be72ec26b0d0406808.webp",
@@ -1210,9 +1315,514 @@
       "url": "/packs/playback/1e6d799b175b0b12b184.webp",
       "width": 64,
       "height": 64
+    },
+    "/packs/map/v96/tile-0.webp": {
+      "url": "/packs/playback/139183741ffc13fc6b67.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-2.webp": {
+      "url": "/packs/playback/7fe15cf8cfb678c3cb69.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-3.webp": {
+      "url": "/packs/playback/a38f207f672a9f9bd758.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-4.webp": {
+      "url": "/packs/playback/7936a122efe29c4393c8.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-5.webp": {
+      "url": "/packs/playback/f95dfe512e3b6e68567d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-6.webp": {
+      "url": "/packs/playback/8fdc46cf4e4df32d6bd0.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-7.webp": {
+      "url": "/packs/playback/73ca414ad2fd03be05b9.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-8.webp": {
+      "url": "/packs/playback/1797fce0621d7b9b31f9.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-9.webp": {
+      "url": "/packs/playback/820af5bcaa47b0b6a95a.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-10.webp": {
+      "url": "/packs/playback/de3c68bcc9e101295f8f.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-11.webp": {
+      "url": "/packs/playback/7789e27919ccb4695446.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-12.webp": {
+      "url": "/packs/playback/4f5e9cb01b7cd36b81db.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-13.webp": {
+      "url": "/packs/playback/90e5b74be7a3f3359ff6.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-14.webp": {
+      "url": "/packs/playback/8cea0a0105bed42adacf.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-15.webp": {
+      "url": "/packs/playback/2a894aaf5a88d3c3bf75.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-16.webp": {
+      "url": "/packs/playback/ba93d0d78e967b329f5b.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-17.webp": {
+      "url": "/packs/playback/c225e7b1f81bac73769c.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-18.webp": {
+      "url": "/packs/playback/2b31e1feb6c0fda91296.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-19.webp": {
+      "url": "/packs/playback/de5d82b2502e6b8a32df.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-20.webp": {
+      "url": "/packs/playback/9791835bb0ce22dae9ed.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-21.webp": {
+      "url": "/packs/playback/d5f3ccef782a90640a20.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-22.webp": {
+      "url": "/packs/playback/3ef832a719c451ec8bc7.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-23.webp": {
+      "url": "/packs/playback/e19d4915ec98d9f95f73.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-24.webp": {
+      "url": "/packs/playback/ad54287fb0a21a626464.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-25.webp": {
+      "url": "/packs/playback/faf4b8f08d4c8575c55e.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-26.webp": {
+      "url": "/packs/playback/31901d593b6d8a1ed5a7.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-27.webp": {
+      "url": "/packs/playback/325edd92d01b7a9da186.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-28.webp": {
+      "url": "/packs/playback/2090b5a7184c6fb8b2b1.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-29.webp": {
+      "url": "/packs/playback/282963020f287f12fc58.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-30.webp": {
+      "url": "/packs/playback/7e9ec7da2b923b382d7f.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-31.webp": {
+      "url": "/packs/playback/4de7526a4dd3df5705dc.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-32.webp": {
+      "url": "/packs/playback/440b079951668be59d0c.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-33.webp": {
+      "url": "/packs/playback/b4e63381b11d5b6ee1d5.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-34.webp": {
+      "url": "/packs/playback/cba8a45ec7c0c755eef0.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-35.webp": {
+      "url": "/packs/playback/8e82e39715609c953196.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-36.webp": {
+      "url": "/packs/playback/0087a1369a42dbb4eeaa.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-37.webp": {
+      "url": "/packs/playback/6d77353328e16aadf316.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-38.webp": {
+      "url": "/packs/playback/39212d2c1441eacd1db0.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-39.webp": {
+      "url": "/packs/playback/b7a478173b4a41fd9ddd.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-40.webp": {
+      "url": "/packs/playback/c939661b1077edf65269.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-41.webp": {
+      "url": "/packs/playback/887ef2079d99d5c64ceb.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-42.webp": {
+      "url": "/packs/playback/91f0f31fc68a02bd320d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-43.webp": {
+      "url": "/packs/playback/ec17c48a6ce9e7cd5945.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-44.webp": {
+      "url": "/packs/playback/2f4a05826cd80ee5cd1e.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-45.webp": {
+      "url": "/packs/playback/fc28a9c67820823de10e.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-46.webp": {
+      "url": "/packs/playback/17708691b8b3de6e76cf.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-47.webp": {
+      "url": "/packs/playback/dbd3adac869d0b53d5f0.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-49.webp": {
+      "url": "/packs/playback/9c8dd7a1677b125ffc12.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-51.webp": {
+      "url": "/packs/playback/3db0d86db8af75067331.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-52.webp": {
+      "url": "/packs/playback/03b51b8235379b12dd0d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-53.webp": {
+      "url": "/packs/playback/83c2edbb5799d083ef75.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-54.webp": {
+      "url": "/packs/playback/deebcf485730d868cf46.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-55.webp": {
+      "url": "/packs/playback/c7b86d265d4659cda8f3.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-56.webp": {
+      "url": "/packs/playback/e9ee0ee4ab0eb736f287.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-57.webp": {
+      "url": "/packs/playback/1d88b6c144db3b04a675.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-59.webp": {
+      "url": "/packs/playback/f035c1fadfbd5a5c0b32.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-60.webp": {
+      "url": "/packs/playback/abbdf7e1011ea3242af6.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-62.webp": {
+      "url": "/packs/playback/d0666da9cb09bed6a166.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-63.webp": {
+      "url": "/packs/playback/8e11a82ba298ab9b4718.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-64.webp": {
+      "url": "/packs/playback/5198e33b10847084f83f.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-65.webp": {
+      "url": "/packs/playback/edc4863f1427cd2ed8ba.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-66.webp": {
+      "url": "/packs/playback/a7372fecaa18ebac9270.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-67.webp": {
+      "url": "/packs/playback/1be31a5d25536321bb2d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-68.webp": {
+      "url": "/packs/playback/234cd1076cccd540f8d2.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-69.webp": {
+      "url": "/packs/playback/d926a1e5fb7c26fa8252.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-70.webp": {
+      "url": "/packs/playback/822c86570d3b9661034d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-71.webp": {
+      "url": "/packs/playback/000fd5df8353b925915d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-72.webp": {
+      "url": "/packs/playback/613151733c0db53bb436.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-73.webp": {
+      "url": "/packs/playback/bacf1a68ff8e9c8e7912.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-74.webp": {
+      "url": "/packs/playback/756e8bef939459c59965.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-75.webp": {
+      "url": "/packs/playback/11f8b9ac9d2cc57749fb.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-76.webp": {
+      "url": "/packs/playback/6a8b0027c0edad2e7192.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-77.webp": {
+      "url": "/packs/playback/608644ae0d7c2a6d7c9b.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-78.webp": {
+      "url": "/packs/playback/72997d78344d822e831c.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-79.webp": {
+      "url": "/packs/playback/bb33a34399e3593c1dcd.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-80.webp": {
+      "url": "/packs/playback/910e88e9087c9e26d72c.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-81.webp": {
+      "url": "/packs/playback/65613ae56ae53f45bbaf.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-82.webp": {
+      "url": "/packs/playback/db6b30ab907228feb311.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-83.webp": {
+      "url": "/packs/playback/034a7b5b68d05aa81d8d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-84.webp": {
+      "url": "/packs/playback/86e08ea5f6930c77dc59.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-85.webp": {
+      "url": "/packs/playback/b47fbd95b20c1d1cf6da.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-86.webp": {
+      "url": "/packs/playback/9758a952e70008b93a2d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-87.webp": {
+      "url": "/packs/playback/062e3580d3073e5b8abc.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-88.webp": {
+      "url": "/packs/playback/5665df644fa6442c6459.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-89.webp": {
+      "url": "/packs/playback/853c52c84702245e361b.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-90.webp": {
+      "url": "/packs/playback/0e2eaf504d7fd31fd4b3.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-91.webp": {
+      "url": "/packs/playback/fbecea029dd5d596245f.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-92.webp": {
+      "url": "/packs/playback/d59383f92eb280443706.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-93.webp": {
+      "url": "/packs/playback/7a2d4391f8aa1b5e4c5d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-94.webp": {
+      "url": "/packs/playback/bfb84385e7288284b80d.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-95.webp": {
+      "url": "/packs/playback/21c3b51ce94a951497d7.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-96.webp": {
+      "url": "/packs/playback/d156b5be8501f5e20d1f.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-97.webp": {
+      "url": "/packs/playback/a6d12dc0de337eff7282.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-99.webp": {
+      "url": "/packs/playback/367982264f5b0bf2518f.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-102.webp": {
+      "url": "/packs/playback/919de5f37edd38bdad75.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-103.webp": {
+      "url": "/packs/playback/8366ae5d2f2423a64195.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-104.webp": {
+      "url": "/packs/playback/1533299bec32306ab8cb.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-107.webp": {
+      "url": "/packs/playback/6515871dca8bdaa1ae23.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-109.webp": {
+      "url": "/packs/playback/8d136c3f95289560dde0.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-110.webp": {
+      "url": "/packs/playback/a8be62be657c59c6ee58.webp",
+      "width": 64,
+      "height": 64
+    },
+    "/packs/map/v96/tile-111.webp": {
+      "url": "/packs/playback/01ce0d43114d2245ecbe.webp",
+      "width": 64,
+      "height": 64
     }
   },
-  "sourceBytes": 16289426,
-  "bytes": 2202754,
-  "decodedBytes": 23689140
+  "sourceBytes": 18376032,
+  "bytes": 3770482,
+  "decodedBytes": 49081372
 }
