@@ -1,9 +1,10 @@
 {
-  "version": "c966b81a9c337ae0",
+  "version": "e6c81cd18d93ae9e",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-BIU1-npQ.js",
     "/assets/index-BgcRMGKv.js",
+    "/assets/index-ByYvxm89.js",
     "/assets/index-C5mtnEw6.css",
     "/assets/index-CEjZp8k9.js",
     "/assets/index-CH1LnQI1.js",
@@ -84,6 +85,7 @@
     "/games/DBZ2Super_AllSkills_v8.nes",
     "/games/DBZ2Super_Travel_v6.nes",
     "/games/DBZ2_HD.nes",
+    "/games/DBZ2_OriginalGraphics_InfiniteBE_AllSkills_v9.nes",
     "/graphics-preview/index.html",
     "/index.html",
     "/legacy/player63.js",
