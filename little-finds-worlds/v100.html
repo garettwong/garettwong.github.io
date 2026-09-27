@@ -6,13 +6,14 @@
 <meta name="theme-color" content="#fff6e6">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Little Finds · The Harbour Café</title>
-<link rel="icon" href="svg/lucky.svg?v=300">
-<link rel="stylesheet" href="game-v300.css?v=300">
+<link rel="icon" href="stickers/lucky.webp">
+<link rel="apple-touch-icon" href="stickers/lucky.webp">
+<link rel="stylesheet" href="game-v100.css?v=100">
 </head>
 <body>
 <section id="home">
   <div class="hero">
-    <img id="hero-art" src="svg/scene-bg.svg?v=300" alt="">
+    <canvas id="hero-art" width="900" height="600" aria-hidden="true"></canvas>
     <div class="hero-fade"></div>
   </div>
   <div class="intro">
@@ -37,15 +38,14 @@
     <button id="hint" class="primary">✦ Hint</button>
   </div>
   <div id="board">
-    <div id="stage"><img id="bg" src="svg/scene-bg.svg?v=300" alt="" draggable="false"></div>
-    <div id="fx"></div>
-        <div class="zoom">
+    <canvas id="scene" aria-label="Hidden-object picture. Tap the things shown below."></canvas>
+    <div class="zoom">
       <button id="plus" aria-label="Zoom in">+</button>
       <button id="minus" aria-label="Zoom out">−</button>
     </div>
-    <div id="map" aria-label="Map: tap to jump"><img src="svg/scene-bg.svg?v=300" alt=""><div id="map-view"></div></div>
+    <canvas id="map" width="180" height="120" aria-label="Map: tap to jump"></canvas>
     <div id="toast" role="status" aria-live="polite"></div>
-    <div id="loading"><span class="spinner"></span>Painting the café…</div>
+    <div id="loading"><span class="spinner"></span>Setting the tables…</div>
     <div id="coach" hidden><div>Pinch or <b>+</b> to zoom · drag to look around<br>Tap a thing when you spot it</div><button id="coach-ok">OK!</button></div>
   </div>
   <div id="targets" aria-label="Things to find"></div>
@@ -68,6 +68,6 @@
 </dialog>
 
 <div id="confetti" aria-hidden="true"></div>
-<script type="module" src="game-v300.js?v=300"></script>
+<script type="module" src="game-v100.js?v=100"></script>
 </body>
 </html>
