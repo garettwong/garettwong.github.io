@@ -139,6 +139,7 @@
     if(!old.every((v,i)=>romBytes[offset+i]===v))throw Error('DBZ2 enemy display patch does not match this game.');
     romBytes.set([0x4c,0x87,0xb0,0xea,0xea,0xea,0xea,0xea,0xea],offset);
    }
+   if(game.id===window.DreamCards?.ROM)window.DreamCards.prepareRom(romBytes);
    romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 

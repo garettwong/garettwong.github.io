@@ -102,5 +102,19 @@ function start(options){if(api)return;api=options;dialog=document.createElement(
  setInterval(async()=>{if(busy||!api.active()||api.isPaused?.()||!dialog.hidden||!values.some(v=>v.attack||v.defense||v.attribute))return;busy=true;try{await apply();lastError='';}catch(e){if(e.message!==lastError){lastError=e.message;api.status('Card points were not applied: '+e.message);}}finally{busy=false;}},250);
 }
 function draw(){} // Card graphics now come from the NES framebuffer.
-window.DreamCards={ROM,start,open,reset:()=>{if(api)clearCheats();lastSeen=empty();lastNative=empty();},draw,inspect:()=>({values:values.map(v=>({...v})),active:!!api,gameCheats:cheatKey.split(',').filter(Boolean)})};
+function prepareRom(bytes){
+ // The existing refill runs at new-game start and every item-menu opening.
+ // Replace its sequential IDs with the same complete deck, King Kai first.
+ const code=528+0x3ff4e,table=528+0x3ffdd;
+ if(![0x8a,0x09,0x80].every((v,i)=>bytes[code+i]===v)||!bytes.slice(table,table+17).every(v=>v===0xff))throw Error('King Kai card order does not match this ROM.');
+ bytes.set([0xbd,0xdd,0xff],code);
+ bytes.set([0x8a,...Array.from({length:17},(_,i)=>0x80+i).filter(v=>v!==0x8a)],table);
+ // Battle has a separate menu-opening path. Refresh before its first rows
+ // are drawn as well, so existing saved inventories receive the new order.
+ const hook=528+0x31340,stub=528+0x33fef;
+ if(![0x4c,0xa9,0x80].every((v,i)=>bytes[hook+i]===v)||!bytes.slice(stub,stub+6).every(v=>v===0xff))throw Error('King Kai battle menu does not match this ROM.');
+ bytes.set([0x4c,0xef,0xbf],hook);
+ bytes.set([0x20,0x39,0xff,0x4c,0xa9,0x80],stub);
+}
+window.DreamCards={ROM,start,open,prepareRom,reset:()=>{if(api)clearCheats();lastSeen=empty();lastNative=empty();},draw,inspect:()=>({values:values.map(v=>({...v})),active:!!api,gameCheats:cheatKey.split(',').filter(Boolean)})};
 })();
