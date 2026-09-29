@@ -47,3 +47,11 @@ body.touch-ready #touch-controls{
  #touch-controls .system-buttons{grid-column:1;grid-row:4;grid-template-columns:30px 1fr auto auto 1fr 30px;gap:4px!important}
  #touch-controls .system-buttons button{min-width:30px!important;min-height:30px!important;font-size:9px!important}
 }
+/* DBZ rapid locks are distinct from the red single-press buttons. */
+body.rapid-locks #touch-controls .ab{grid-template-rows:62px 56px;gap:16px 18px}
+body.rapid-locks #touch-controls .ab .lock-button{width:56px;height:56px;min-width:56px;min-height:56px;justify-self:center;border-radius:50%;border:3px solid #bdd5eb;color:#fff;font-size:11px!important;box-shadow:0 0 0 2px #71869a,0 4px 3px #000;background:radial-gradient(circle at 35% 30%,#579af1,#17498a);text-shadow:0 1px 2px #0008}
+body.rapid-locks #touch-controls .ab [data-lock-code="8"]{background:radial-gradient(circle at 35% 30%,#39d99b,#096247)}
+body.rapid-locks #touch-controls .ab .lock-button.locked{background:radial-gradient(circle at 35% 30%,#80b9ff,#1256a7)!important;border-color:#fff!important;box-shadow:0 0 0 3px #88c6ff,0 0 16px #479bff;color:#fff!important}
+body.rapid-locks #touch-controls .ab [data-lock-code="8"].locked{background:radial-gradient(circle at 35% 30%,#78ffba,#079f64)!important;box-shadow:0 0 0 3px #9affc6,0 0 16px #24ee9a}
+@media(max-width:360px){body.rapid-locks #touch-controls .ab{grid-template-rows:52px 50px;gap:16px 13px}body.rapid-locks #touch-controls .ab .lock-button{width:50px;height:50px;min-width:50px;min-height:50px}}
+@media(orientation:landscape) and (max-height:520px){body.rapid-locks #touch-controls .ab{grid-template-rows:50px 44px;gap:8px 24px}body.rapid-locks #touch-controls .ab .lock-button{width:44px;height:44px;min-width:44px;min-height:44px}body.rapid-locks #touch-controls{grid-template-rows:minmax(100px,1fr) 106px 38px 38px}}
