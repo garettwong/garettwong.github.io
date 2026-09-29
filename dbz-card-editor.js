@@ -8,31 +8,51 @@ let values=empty();try{const found=JSON.parse(localStorage.getItem(KEY)||'null')
 function valid(n,max){return Number.isInteger(n)&&n>=1&&n<=max?n:null;}
 function cardScene(r){return(r[0x2e]===1&&r[0x30]>=3&&r[0x30]<=7)||(r[0x2e]===8&&r[0x30]===14);}
 function record(r,i){const a=BASE+i*8,lo=(0xca+i*4)&255;return r[a]===lo&&r[a+1]===0x26&&[1,2].includes(r[a+2])?a:null;}
-let api=null,dialog=null,tabs=null,attack=null,defense=null,attribute=null,selected=0,draft=[],lastNative=empty(),lastSeen=empty(),focusBefore=null,busy=false;
+let api=null,dialog=null,tabs=null,attack=null,defense=null,attribute=null,selected=0,draft=[],lastNative=empty(),lastSeen=empty(),focusBefore=null,busy=false,cheatKey='',lastError='';
 function inspect(){const state=new Uint8Array(api.gm().getState()),at=api.ramStart(state);if(at<0)throw Error('Card data is not ready.');return{state,at,ram:state.subarray(at,at+2048)};}
 function persist(){localStorage.setItem(KEY,JSON.stringify(values));}
 function defaults(r,i){const a=r&&record(r,i);return{attack:values[i].attack??(a!==null?valid(r[a+3],8):null)??5,defense:values[i].defense??(a!==null?valid(r[a+4],8):null)??5,attribute:values[i].attribute??(a!==null?valid(r[a+5],6):null)??4};}
 function refresh(){for(const [i,button]of [...tabs.children].entries()){const v=draft[i];button.textContent=`${i+1}\n${v.attack}/${v.defense}`;button.setAttribute('aria-pressed',String(i===selected));}attack.textContent=String(draft[selected].attack);defense.textContent=String(draft[selected].defense);attribute.value=String(draft[selected].attribute);}
 function close(){if(!dialog||dialog.hidden)return;dialog.hidden=true;api.resume();api.resetFrame();focusBefore?.focus();}
-function apply(restore=false){const {state,ram}=inspect();if(!cardScene(ram))return false;let changed=false;
- for(let i=0;i<5;i++){const a=record(ram,i);if(a===null)continue;
-  const target=restore?lastNative[i]:values[i];if(!target)continue;
+function clearCheats(){if(cheatKey){api.gm().resetCheat();cheatKey='';}}
+function apply(restore=false){
+ const gm=api.gm(),{state,ram}=inspect();
+ if(restore)clearCheats();
+ if(!cardScene(ram)){clearCheats();return{ready:false,verified:false};}
+ const addresses=Array.from({length:5},(_,i)=>record(ram,i));
+ if(addresses.some(a=>a===null)){clearCheats();return{ready:false,verified:false};}
+ let changed=false;const codes=[],checks=[];
+ for(let i=0;i<5;i++){
+  const a=addresses[i],target=restore?lastNative[i]:values[i];
   for(const [field,offset,max]of [['attack',3,8],['defense',4,8],['attribute',5,6]]){
-   const n=valid(target[field],max);if(n===null||ram[a+offset]===n)continue;
+   const n=valid(target[field],max);if(n===null)continue;
+   if(!restore)codes.push(`${(a+offset).toString(16).toUpperCase().padStart(4,'0')}:${n.toString(16).toUpperCase().padStart(2,'0')}`);
+   checks.push([a+offset,n]);
+   if(ram[a+offset]===n)continue;
    if(!restore&&lastSeen[i][field]!==ram[a+offset])lastNative[i][field]=ram[a+offset];
    ram[a+offset]=n;changed=true;
   }
   lastSeen[i]={attack:ram[a+3],defense:ram[a+4],attribute:ram[a+5]};
  }
- if(changed){api.gm().loadState(state);api.resetFrame();}return changed;
+ if(changed){gm.loadState(state);api.resetFrame();}
+ const nextKey=codes.join(',');
+ if(nextKey!==cheatKey){
+  if(nextKey&&(!gm.setCheat||!gm.resetCheat))throw Error('This emulator cannot enforce card points.');
+  if(cheatKey||nextKey)gm.resetCheat();
+  try{codes.forEach((code,i)=>gm.setCheat(i,true,code));cheatKey=nextKey;}
+  catch(e){gm.resetCheat();cheatKey='';throw e;}
+ }
+ const live=inspect().ram,verified=checks.every(([at,n])=>live[at]===n);
+ if(!verified)throw Error('The game did not accept the card values.');
+ return{ready:true,verified};
 }
-function save(all=false){if(busy)return;busy=true;try{const v={...draft[selected]};if(all){for(let i=0;i<5;i++)values[i]={...v};}else values[selected]={...v};persist();apply();api.status((all?'All five cards':'Card '+(selected+1))+' saved. Z means 8 points; the game uses these values on active cards.');close();}catch(e){api.status(e.message);close();}finally{busy=false;}}
-function reset(){if(busy)return;busy=true;try{values=empty();persist();apply(true);api.status('Original card values restored for the current hand.');close();}catch(e){api.status(e.message);close();}finally{busy=false;}}
+function save(all=false){if(busy)return;busy=true;const previous=values.map(v=>({...v}));try{const v={...draft[selected]};if(all){for(let i=0;i<5;i++)values[i]={...v};}else values[selected]={...v};const result=apply();persist();lastError='';api.status(result.ready?'Applied to the game cards. Z = 8 points.':'Saved; waiting for the next playable card hand.');close();}catch(e){values=previous;api.status(e.message);close();}finally{busy=false;}}
+function reset(){if(busy)return;busy=true;const previous=values.map(v=>({...v}));try{values=empty();const result=apply(true);persist();api.status(result.ready?'Original card values restored in the game.':'Original settings restored; the next card hand will be normal.');close();}catch(e){values=previous;api.status(e.message);close();}finally{busy=false;}}
 function open(){if(!api||!dialog?.hidden)return;try{api.release();api.pause();const r=inspect().ram;draft=Array.from({length:5},(_,i)=>defaults(r,i));selected=0;focusBefore=document.activeElement;refresh();dialog.hidden=false;tabs.children[0].focus();}catch(e){api.status(e.message);api.resume();}}
 function btn(label,fn){const b=document.createElement('button');b.type='button';b.textContent=label;b.onclick=fn;return b;}
 function row(label,key){const line=document.createElement('div');line.className='dbz-card-row';const caption=document.createElement('label');caption.textContent=label;const out=document.createElement('output');const down=btn('−',()=>{draft[selected][key]=Math.max(1,draft[selected][key]-1);refresh();});const up=btn('+',()=>{draft[selected][key]=Math.min(8,draft[selected][key]+1);refresh();});line.append(caption,down,out,up);return[line,out];}
 function start(options){if(api)return;api=options;dialog=document.createElement('section');dialog.id='dbz-card-editor';dialog.hidden=true;dialog.setAttribute('role','dialog');dialog.setAttribute('aria-modal','true');dialog.setAttribute('aria-label','Edit card points');const title=document.createElement('h2');title.textContent='Edit card points';const intro=document.createElement('p');intro.textContent='Choose one of the five cards. Z means 8 points. Changes also affect the fight.';tabs=document.createElement('div');tabs.className='dbz-card-tabs';for(let i=0;i<5;i++)tabs.append(btn('Card '+(i+1),()=>{selected=i;refresh();}));const [attLine,attOut]=row('Attack','attack'),[defLine,defOut]=row('Defense','defense');attack=attOut;defense=defOut;const attrLine=document.createElement('div');attrLine.className='dbz-card-attribute';const attrLabel=document.createElement('label');attrLabel.textContent='Middle symbol';attribute=document.createElement('select');for(let n=1;n<=6;n++){const o=document.createElement('option');o.value=String(n);o.textContent=`${n} · ${attrs[n]}`;attribute.append(o);}attribute.onchange=()=>{draft[selected].attribute=Number(attribute.value);};attrLine.append(attrLabel,attribute);const actions=document.createElement('div');actions.className='dbz-card-actions';const hint=document.createElement('p');hint.className='dbz-card-hint';hint.textContent='Works while walking or fighting. Your choice also applies when the next cards appear.';actions.append(btn('Save this card',()=>save(false)),btn('Apply to all 5',()=>save(true)),btn('Original values',reset),btn('Back to game',close));dialog.append(title,intro,tabs,attLine,defLine,attrLine,actions,hint);document.body.append(dialog);dialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();close();}});
- setInterval(()=>{if(!api.active()||!dialog.hidden||!values.some(v=>v.attack||v.defense||v.attribute))return;try{apply();}catch{}},150);
+ setInterval(()=>{if(!api.active()||!dialog.hidden||!values.some(v=>v.attack||v.defense||v.attribute))return;try{apply();lastError='';}catch(e){if(e.message!==lastError){lastError=e.message;api.status('Card points were not applied: '+e.message);}}},250);
 }
 function draw(ctx,pixels,width,height){
  if(!values.some(v=>v.attack||v.defense||v.attribute))return;
@@ -57,5 +77,5 @@ function draw(ctx,pixels,width,height){
  }
  ctx.restore();
 }
-window.DreamCards={ROM,start,open,reset:()=>{lastSeen=empty();lastNative=empty();},draw,inspect:()=>({values:values.map(v=>({...v})),active:!!api})};
+window.DreamCards={ROM,start,open,reset:()=>{if(api)clearCheats();lastSeen=empty();lastNative=empty();},draw,inspect:()=>({values:values.map(v=>({...v})),active:!!api,gameCheats:cheatKey.split(',').filter(Boolean)})};
 })();
