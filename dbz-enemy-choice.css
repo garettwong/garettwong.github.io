@@ -1,0 +1,14 @@
+#dbz-enemy-choice[hidden]{display:none}
+#dbz-enemy-choice{position:fixed;z-index:2147483647;inset:12px;margin:auto;width:min(460px,calc(100% - 24px));height:fit-content;max-height:calc(100dvh - 24px);overflow:auto;box-sizing:border-box;padding:22px;background:#111a2b;color:#f2f6ff;border:2px solid #88a7ec;border-radius:20px;box-shadow:0 0 0 100vmax #000d;font:16px system-ui,sans-serif;touch-action:pan-y}
+#dbz-enemy-choice h2{font-size:24px;margin:0 0 8px}
+#dbz-enemy-choice p{font-size:15px;line-height:1.45;color:#c5d2ec;margin:0 0 18px}
+.enemy-count-options{display:grid;gap:12px}
+.enemy-count-options button{display:grid;gap:5px;min-height:84px;padding:14px 18px;text-align:left;border:1px solid #58739b;border-radius:13px;background:#223954;color:#fff;cursor:pointer;touch-action:manipulation}
+.enemy-count-options button strong{font:750 26px system-ui,sans-serif}
+.enemy-count-options button span{font:14px system-ui,sans-serif;color:#c8d7ed}
+.enemy-count-options button:focus-visible{outline:3px solid #ffcf78;outline-offset:3px}
+.enemy-count-options button:hover{background:#304d70}
+.enemy-count-options button:disabled{opacity:.6;cursor:wait}
+#dbz-enemy-choice .enemy-count-feedback{min-height:22px;margin:16px 0 10px;color:#ffe0a0}
+#dbz-enemy-choice .enemy-count-note{font-size:12px;color:#a7b8d2;margin:0}
+@media(max-height:520px){#dbz-enemy-choice{padding:14px}.enemy-count-options{grid-template-columns:repeat(3,1fr);gap:8px}.enemy-count-options button{padding:12px 8px}.enemy-count-options button strong{font-size:22px}.enemy-count-options button span{font-size:12px}}

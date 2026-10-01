@@ -1,4 +1,4 @@
-/* Read-only full-roster view for the separate 10–20-opponent ROM. */
+/* Read-only full-roster view for the selectable-size battle ROM. */
 (function(global){
 'use strict';
 const ROM='5300803a3f7481ccbe31e28959bfa1ae0831492581c4d79131d9b9d95d334414';
@@ -15,14 +15,14 @@ function chunk(bytes,tag,size){
 
 function decode(bytes){
  const ram=chunk(bytes,'RAM',2048),wram=chunk(bytes,'WRM',8192);
- if(!ram||!wram||ram[0x2e]!==1||(ram[0x7b]&0x40)||wram[0x1371]!==0xa5)return null;
+ if(!ram||!wram||ram[0x2e]!==1||wram[0x1371]!==0xa5)return null;
  const total=wram[0x1372],page=wram[0x1370];
- if(total<10||total>20||page>3)return null;
+ if(total<10||total>40||page>=Math.ceil(total/5)||(total>20&&wram[0x1394]!==0x81))return null;
  const enemies=[];
  for(let i=0;i<total;i++){
   // The current page can have newer combat results than its stored pool copy.
   const current=Math.floor(i/5)===page;
-  const data=current?ram:wram,at=current?0x2a2+(i%5)*18:0x1200+i*18;
+  const data=current?ram:wram,at=current?0x2a2+(i%5)*18:i<20?0x1200+i*18:0x1600+(i-20)*18;
   const id=data[at],hp=data[at+2]+256*data[at+3];
   enemies.push({index:i,id,type:data[at+12]&0x3f,hp,alive:id<0x40&&hp>0});
  }
@@ -70,16 +70,17 @@ function draw(ctx,pixels,width,height){
  for(const enemy of b.enemies){
   const row=Math.floor(enemy.index/10),column=enemy.index%10;
   const inRow=Math.min(10,b.total-row*10),left=(256-inRow*24)/2;
-  const x=left+column*24+3,y=rows===1?116:106+row*27,size=18;
+  const compact=rows>2,size=compact?10:18,step=compact?14:27;
+  const x=left+column*24+(24-size)/2,y=106+row*step;
   const selected=enemy.index===b.selected,portrait=portraits.get(enemy.type);
   ctx.globalAlpha=enemy.alive?1:.3;
   if(portrait){ctx.imageSmoothingEnabled=false;ctx.drawImage(portrait,x,y,size,size);}
-  else{ctx.fillStyle='#415272';ctx.fillRect(x,y,size,size);ctx.fillStyle='#fff';ctx.font='700 8px Arial';ctx.fillText(String(enemy.index+1),x+9,y+12);}
+  else{ctx.fillStyle='#415272';ctx.fillRect(x,y,size,size);ctx.fillStyle='#fff';ctx.font='700 8px Arial';ctx.fillText(String(enemy.index+1),x+size/2,y+size*.75);}
   ctx.globalAlpha=1;
   if(selected){ctx.strokeStyle='#ffd45e';ctx.lineWidth=1.5;ctx.strokeRect(x-1,y-1,size+2,size+2);}
-  if(!enemy.alive){ctx.strokeStyle='#f47272';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x+3,y+3);ctx.lineTo(x+15,y+15);ctx.moveTo(x+15,y+3);ctx.lineTo(x+3,y+15);ctx.stroke();}
+  if(!enemy.alive){ctx.strokeStyle='#f47272';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x+3,y+3);ctx.lineTo(x+size-2,y+size-2);ctx.moveTo(x+size-2,y+3);ctx.lineTo(x+3,y+size-2);ctx.stroke();}
   ctx.font='600 5.5px Arial,sans-serif';ctx.fillStyle=selected?'#ffd45e':enemy.alive?'#f0f3fa':'#8b91a0';
-  ctx.fillText(`${enemy.index+1}`,x+9,y+24);
+  ctx.fillText(`${enemy.index+1}`,compact?x+size+4:x+size/2,compact?y+8:y+24);
  }
  ctx.restore();
 }

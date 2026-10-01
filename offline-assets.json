@@ -1,5 +1,5 @@
 {
-  "version": "30636d4bebe036d4",
+  "version": "22314c899cc77055",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -26,6 +26,7 @@
     "/assets/index-COtRHDMl.js",
     "/assets/index-CQaCQKzD.js",
     "/assets/index-CY9Myi2v.css",
+    "/assets/index-ChITqbnp.js",
     "/assets/index-CuCVzx-M.js",
     "/assets/index-Cwk3ebdx.css",
     "/assets/index-DNB0yJCW.css",
@@ -36,6 +37,7 @@
     "/assets/index-DyB8kYj3.js",
     "/assets/index-UYDbJw4-.css",
     "/assets/index-Utb2fj0F.css",
+    "/assets/index-a1ghbA0g.css",
     "/assets/index-b1qJq8nI.js",
     "/assets/index-uDgLEyKR.js",
     "/assets/index-vIe000_U.js",
@@ -49,6 +51,8 @@
     "/dbz-boss-fix.js",
     "/dbz-card-editor.css",
     "/dbz-card-editor.js",
+    "/dbz-enemy-choice.css",
+    "/dbz-enemy-choice.js",
     "/dbz-english-font.json",
     "/dbz-english.js",
     "/dbz-large-battle.js",
