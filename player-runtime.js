@@ -86,11 +86,27 @@
 
  const fail=message=>{send("error",{text:message});const status=document.getElementById("status");if(status)status.textContent=message;};
 
- const snapshot=(reason,slot,requestId)=>{
+ const thumbnailCanvas=()=>{
+  if(engine&&window.DreamFrameSource?.pixels?.byteLength===256*240*4){const canvas=document.createElement("canvas"),frame=window.DreamFrameSource;canvas.width=256;canvas.height=240;canvas.getContext("2d")?.putImageData(new ImageData(new Uint8ClampedArray(frame.pixels),256,240),0,0);return canvas;}
+  if(!window.EJS_emulator?.Module)return window.EJS_emulator?.canvas||null;
+  return null;
+ };
+ const immediateThumbnail=()=>{
+  const canvas=thumbnailCanvas();if(!canvas)return null;const url=canvas.toDataURL("image/png");if(url.length>700*1024)return null;return Uint8Array.from(atob(url.slice(url.indexOf(',')+1)),c=>c.charCodeAt(0));
+ };
+ const nativeThumbnail=async()=>{
+  const gm=window.EJS_emulator?.gameManager;
+  const canvas=thumbnailCanvas();if(canvas){const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));if(!blob||blob.size>512*1024)return null;return new Uint8Array(await blob.arrayBuffer());}
+  // The bundled native helper polls forever if its paused core never writes a file.
+  // Bound that polling here so a missing preview cannot leave a timer running.
+  if(gm?.functions?.screenshot&&gm.FS){try{gm.FS.unlink('/screenshot.png');}catch{}gm.functions.screenshot();const end=performance.now()+650;do{try{return gm.FS.readFile('/screenshot.png');}catch{}await new Promise(resolve=>setTimeout(resolve,50));}while(performance.now()<end);return null;}
+  if(!gm?.screenshot)return null;const raw=await gm.screenshot(),bytes=raw instanceof Uint8Array?raw:new Uint8Array(raw);return bytes.byteLength&&bytes.byteLength<=512*1024?bytes:null;
+ };
+ const snapshot=async(reason,slot,requestId)=>{
 
   if(!started)return;
 
-  try{const state=window.EJS_emulator?.gameManager?.getState();if(!state?.byteLength)throw new Error("No save data available yet");const bytes=state.buffer.slice(state.byteOffset,state.byteOffset+state.byteLength);send("state",{reason,slot,requestId,bytes},[bytes]);}
+  try{const state=window.EJS_emulator?.gameManager?.getState();if(!state?.byteLength)throw new Error("No save data available yet");const bytes=state.buffer.slice(state.byteOffset,state.byteOffset+state.byteLength);let thumbnail=null;try{thumbnail=reason==="auto"?immediateThumbnail():await Promise.race([nativeThumbnail(),new Promise(resolve=>setTimeout(()=>resolve(null),750))]);}catch{}const payload={reason,slot,requestId,bytes};const transfers=[bytes];if(thumbnail&&thumbnail.byteLength<=512*1024){payload.thumbnail=thumbnail.buffer.slice(thumbnail.byteOffset,thumbnail.byteOffset+thumbnail.byteLength);transfers.push(payload.thumbnail);}send("state",payload,transfers);}
 
   catch{if(reason!=="auto")send("operation-error",{text:"Could not save this state. Start the game and try again."});}
 
@@ -123,7 +139,7 @@
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
-  if(d.type==="load-state"){window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
+  if(d.type==="load-state"){window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(specialGame?.name==="Dragon Ball Z II 10–20 Opponents"?window.DreamBossFix.upgradeState(d.bytes):new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
   if(d.type==="speed"){try{await applySpeed([1,2,3,4,5,6,7,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
@@ -147,6 +163,7 @@
     romBytes.set([0x4c,0x87,0xb0,0xea,0xea,0xea,0xea,0xea,0xea],offset);
    }
    if(game.id===window.DreamCards?.ROM)window.DreamCards.prepareRom(romBytes);
+   if(game.id===window.DreamBossFix?.ROM)window.DreamBossFix.prepareRom(romBytes);
    romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
