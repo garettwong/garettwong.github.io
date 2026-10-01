@@ -1,5 +1,4 @@
 import {SCENES as WORLDS,findHit} from './world-data.js?v=90';
-import {startController} from './controller.js?v=121';
 const SCENES=WORLDS;
 const $=id=>document.getElementById(id),image=new Image(),canvas=$('scene'),ctx=canvas.getContext('2d'),KEY='little-finds-panorama-v3';
 let saved={},index=0,found=new Set(),loaded=false,zoom=1,tx=0,ty=0,base=1,cw=1,ch=1,dpr=1,hintId=null,hintTimer,feedbackTimer,selected=null,sound=false,audio;
@@ -10,7 +9,6 @@ function savePreferences(){try{localStorage.setItem('little-finds-preferences',J
 function applyPreferences(){sound=Boolean(preferences.sound);$('sound').textContent=sound?'Sound on':'Sound off';$('sound').setAttribute('aria-pressed',String(sound));$('setting-sound').checked=sound;$('brightness').value=Math.max(70,Math.min(120,Number(preferences.brightness)||100));canvas.style.filter='brightness('+($('brightness').value/100)+')';}
 const views=new Map();let remainingOnly=true;
 const scene=()=>SCENES[index];
-startController({playing:()=>loaded&&!$('play').hidden,size:()=>({width:cw,height:ch}),tap,hint,back:home,zoom:(ratio,x,y)=>zoomAt(zoom*ratio,x,y),pan:(dx,dy)=>{tx+=dx;ty+=dy;clamp();draw();}});
 function known(i){const valid=new Set(SCENES[i].items.map(t=>t[0]));return new Set((Array.isArray(saved[SCENES[i].id])?saved[SCENES[i].id]:[]).filter(id=>valid.has(id)));}
 function persist(){saved[scene().id]=[...found];try{localStorage.setItem(KEY,JSON.stringify(saved));}catch{message('Progress cannot be saved in this browser.');}}
 function message(text){clearTimeout(feedbackTimer);$('feedback').textContent=text;feedbackTimer=setTimeout(()=>$('feedback').textContent='',2200);}

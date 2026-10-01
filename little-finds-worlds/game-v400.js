@@ -1,3 +1,4 @@
+import {startController} from './controller.js?v=121';
 // Little Finds v300 - the painting is fully vector (traced SVG); every findable thing is its own SVG layer.
 import {W,H,FINDS} from './finds4.js?v=400';
 
@@ -182,3 +183,5 @@ const bg=$('bg');
 const ready=()=>{$('loading').hidden=true;};
 if(bg.complete&&bg.naturalWidth)ready();else bg.addEventListener('load',ready);
 window.__lf={ITEMS,found,view:()=>({s,tx,ty,cw,ch}),tapScene:(x,y)=>tap(x*s+tx,y*s+ty)};
+
+startController({playing:()=>!$('play').hidden&&$('loading').hidden,size:()=>({width:cw,height:ch}),tap:(x,y)=>{if(!$('coach').hidden){hideCoach();return;}tap(x,y);},hint:()=>{hideCoach();showHint(null);},back:home,zoom:(ratio,x,y)=>{flight++;zoomAt(s*ratio,x,y);},pan:(dx,dy)=>{flight++;tx+=dx;ty+=dy;clampView();apply();}});

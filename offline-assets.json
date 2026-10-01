@@ -1,5 +1,5 @@
 {
-  "version": "cf0d1884faf1a572",
+  "version": "dff5ee9b51a28a59",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -126,6 +126,7 @@
     "/legacy/player63.js",
     "/little-finds-worlds/controller.css",
     "/little-finds-worlds/controller.js",
+    "/little-finds-worlds/game-v400.js",
     "/little-finds-worlds/game.css",
     "/little-finds-worlds/game.js",
     "/little-finds-worlds/harbour-bakery-cutie-v86.png",

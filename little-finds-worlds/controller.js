@@ -6,8 +6,8 @@ export function readPad(pad){
 }
 export function startController(game){
  const board=document.getElementById('board'),cursor=document.createElement('div');cursor.id='xbox-cursor';cursor.hidden=true;cursor.setAttribute('aria-hidden','true');board.append(cursor);
- const bar=document.createElement('button');bar.id='xbox-help-button';bar.textContent='Xbox controller';bar.type='button';document.querySelector('header').after(bar);
- const help=document.createElement('dialog');help.id='xbox-help';help.innerHTML='<h2>Xbox controller</h2><p id="xbox-state">Pair your controller in Bluetooth settings, then press a button.</p><p>In a scene:<br><b>Left stick / D-pad</b> — move the crosshair<br><b>A</b> — find the object under it<br><b>Right stick</b> — move the picture<br><b>LB / RB</b> — zoom out / in<br><b>X</b> — show a hint<br><b>B / View</b> — back to scenes</p><p>In menus: D-pad to choose, A to select, B to close.<br><b>Menu ☰</b> opens or closes this guide.</p><button type="button">Back to game</button>';document.body.append(help);
+ const bar=document.createElement('button');bar.id='xbox-help-button';bar.textContent='Xbox controller';bar.type='button';document.body.prepend(bar);
+ const help=document.createElement('dialog');help.id='xbox-help';help.innerHTML='<h2>Xbox controller</h2><p id="xbox-state">Pair your controller in Bluetooth settings, then press a button.</p><p>In a scene:<br><b>Left stick / D-pad</b> — move the crosshair<br><b>A</b> — find the object under it<br><b>Right stick</b> — move the picture<br><b>LB / RB</b> — zoom out / in<br><b>X</b> — show a hint<br><b>B / View</b> — back to start</p><p>In menus: D-pad to choose, A to select, B to close.<br><b>Menu ☰</b> opens or closes this guide.</p><button type="button">Back to game</button>';document.body.append(help);
  bar.onclick=()=>help.showModal();help.querySelector('button').onclick=()=>help.close();
  let x=0,y=0,initialized=false,last=0,previous=new Set(),ready=false,padId=null,repeatAt=0;
  const zero=()=>{previous.clear();ready=false;cursor.hidden=true;};
@@ -31,7 +31,7 @@ export function startController(game){
   let dialog=document.querySelector('dialog[open]');if(hit(9)){if(help.open)help.close();else if(!dialog)help.showModal();cursor.hidden=true;return;}
   if(dialog){cursor.hidden=true;if(hit(1)||hit(8)){dialog.close();return;}menu(dialog,state.x,state.y,hit(0),now);return;}
   if(!game.playing()){cursor.hidden=true;initialized=false;menu(null,state.x,state.y,hit(0),now);return;}
-  const size=game.size();if(!initialized){x=size.width/2;y=size.height/2;initialized=true;}
+  const size=game.size();if(size.width<=1||size.height<=1){cursor.hidden=true;return;}if(!initialized){x=size.width/2;y=size.height/2;initialized=true;}
   x=Math.max(0,Math.min(size.width,x+state.x*300*dt));y=Math.max(0,Math.min(size.height,y+state.y*300*dt));
   cursor.hidden=false;cursor.style.left=x+'px';cursor.style.top=y+'px';
   if(state.panX||state.panY)game.pan(-state.panX*400*dt,-state.panY*400*dt);
