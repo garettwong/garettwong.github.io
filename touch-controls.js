@@ -6,7 +6,7 @@
  const pulses=new Map(),rateKey='nes-dream:rapid-lock-rates';
  let rates={a:6,b:6};try{const saved=JSON.parse(localStorage.getItem(rateKey)||'null');for(const k of ['a','b'])if(Number.isInteger(saved?.[k])&&saved[k]>=1&&saved[k]<=120)rates[k]=saved[k];}catch{}
  function settings(next){releaseAll();for(const k of ['a','b'])if(Number.isInteger(next?.[k])&&next[k]>=1&&next[k]<=120)rates[k]=next[k];try{localStorage.setItem(rateKey,JSON.stringify(rates));}catch{}return{...rates};}
- const input=(code,value)=>window.EJS_emulator?.gameManager?.simulateInput(0,code,value);
+ const input=(code,value)=>window.DreamInput?window.DreamInput.input('touch',0,code,value):window.EJS_emulator?.gameManager?.simulateInput(0,code,value);
  const codes=b=>(b.dataset.codes||b.dataset.code).split(',').map(Number),held=new Set();
  function sync(){
   for(const [code,pulse]of pulses)if(!rapidLocks||!locked.has(code)){clearInterval(pulse.timer);pulses.delete(code);}

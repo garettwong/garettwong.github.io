@@ -36,20 +36,20 @@ export async function startPowerPlayer(game,send){
  function flushAudio(){output.push(left,right);left=[];right=[];}
  const inputFrames=new Map(),releaseFrames=new Map();
  function tick(time){if(!running)return;acc+=Math.min(50,time-last);last=time;let steps=0;while(acc>=1000/60&&steps<3){for(let i=0;i<speed;i++){renderFrame=i===speed-1;rounds.before();shield.before(speed);hazards.before();chaos?.before();const restoreWaterInput=waterInput(nes);try{nes.frame();}finally{restoreWaterInput();}hazards.update();chaos?.after();supplies?.update();frameCount++;for(const [key,at] of releaseFrames){if(frameCount>=at){const [p,c]=key.split(":").map(Number);nes.buttonUp(p,c);releaseFrames.delete(key);}}}acc-=1000/60;steps++;}if(steps){fpsFrames++;if(!fpsWindow)fpsWindow=time;if(time-fpsWindow>=1000){displayFps=Math.round(fpsFrames*1000/(time-fpsWindow));fpsWindow=time;fpsFrames=0;}draw();flushAudio();}raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));}
- function clearInput(){inputFrames.clear();releaseFrames.clear();for(let p=1;p<=2;p++)for(let c=0;c<8;c++)nes.buttonUp(p,c);}
- function pause(){running=false;clearTimeout(raf);window.DreamTouch?.releaseAll();clearInput();output.pause();play.textContent='Resume game';play.hidden=false;}
+ function clearInput(){window.DreamInput?.reset();inputFrames.clear();releaseFrames.clear();for(let p=1;p<=2;p++)for(let c=0;c<8;c++)nes.buttonUp(p,c);}
+ function pause(){running=false;window.EJS_emulator.paused=true;clearTimeout(raf);window.DreamTouch?.releaseAll();clearInput();output.pause();play.textContent='Resume game';play.hidden=false;}
  async function resume(){
   // Video and controls must never wait for Safari's audio permission or worklet download.
-  if(!running){running=true;play.hidden=true;last=performance.now();acc=0;fpsWindow=0;fpsFrames=0;raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));if(!started){started=true;window.EJS_emulator.started=true;window.DreamTouch?.start();send('started');send('status',{text:'Contra Power · hold B to fire'});}}
+  if(!running){running=true;window.EJS_emulator.paused=false;play.hidden=true;last=performance.now();acc=0;fpsWindow=0;fpsFrames=0;raf=setTimeout(()=>tick(performance.now()),Math.max(1,1000/60-acc));if(!started){started=true;window.EJS_emulator.started=true;window.DreamTouch?.start();send('started');send('status',{text:'Contra Power · hold B to fire'});}}
   output.unlock();
  }
 
  const codes={0:Controller.BUTTON_B,8:Controller.BUTTON_A,2:Controller.BUTTON_SELECT,3:Controller.BUTTON_START,4:Controller.BUTTON_UP,5:Controller.BUTTON_DOWN,6:Controller.BUTTON_LEFT,7:Controller.BUTTON_RIGHT};
  function input(player,code,value){const mapped=codes[code];if(mapped===undefined)return;const key=(player+1)+":"+mapped;if(value){releaseFrames.delete(key);inputFrames.set(key,frameCount);nes.buttonDown(player+1,mapped);}else if(frameCount-(inputFrames.get(key)??-99)<2){releaseFrames.set(key,(inputFrames.get(key)??frameCount)+2);}else{releaseFrames.delete(key);nes.buttonUp(player+1,mapped);}}
  const keyboard={ArrowUp:4,ArrowDown:5,ArrowLeft:6,ArrowRight:7,KeyZ:0,KeyX:8,Enter:3,ShiftRight:2};
- for(const type of ['keydown','keyup'])addEventListener(type,event=>{if(keyboard[event.code]===undefined)return;event.preventDefault();input(0,keyboard[event.code],type==='keydown'?1:0);});
+ for(const type of ['keydown','keyup'])addEventListener(type,event=>{if(event.target?.closest?.('#controller-help')||keyboard[event.code]===undefined)return;event.preventDefault();window.EJS_emulator.gameManager.simulateInput(0,keyboard[event.code],type==='keydown'?1:0);});
  addEventListener('blur',clearInput);
- window.EJS_emulator={canvas,started:false,pause,play:resume,isSlowMotion:false,gameManager:{
+ window.EJS_emulator={canvas,started:false,paused:true,pause,play:resume,isSlowMotion:false,gameManager:{
   getAudioInfo:()=>output.info(),getPowerInfo:()=>({...rounds.info(),shield:shield.enabled,shieldSeconds:shield.seconds,r:nes.cpu.mem[0x18]===5&&!nes.cpu.mem[0x1c]?rCount(nes.cpu.mem):0,density:supplies?.density,...chaos?.options}),simulateInput:input,getVideoDimensions:kind=>kind==='width'?256:kind==='aspect'?256/240:240,getFrameNum:()=>frameCount,
   screenshot:async()=>{const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));return new Uint8Array(await blob.arrayBuffer());},
   setPowerOptions:options=>{chaos?.configure(options);if(typeof options.shield==='boolean'||options.shieldSeconds!==undefined)shield.configure(options.shield??shield.enabled,options.shieldSeconds);supplies?.setDensity(options.density);},
@@ -57,6 +57,7 @@ export async function startPowerPlayer(game,send){
   loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);nes.papu.sampleRate=nes.opts.sampleRate;nes.papu.setFrameRate(60*speed);progression.reset();rounds.load(saved.rounds);shield.load(saved.shield);hazards.load(saved.hazards);chaos?.load(saved.chaos);chaos?.configure({density:'more'});supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);output.clear();left=[];right=[];},
   toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,5,6,7,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;nes.papu.setFrameRate(60*speed);left=[];right=[];output.clear();}
  }};
+ window.DreamInput?.attach(window.EJS_emulator.gameManager);
  play.addEventListener('click',()=>resume().catch(()=>send('operation-error',{text:'Could not start audio. Tap Play again.'})));
  send('art-state',{active:false,reason:'off'});send('status',{text:'Starting Contra…'});
  for(const type of ['pointerdown','touchend','keydown','click'])addEventListener(type,()=>{if(running)output.unlock();},{passive:true});

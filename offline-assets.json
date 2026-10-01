@@ -1,5 +1,5 @@
 {
-  "version": "13ff4c34d4719be4",
+  "version": "2b85bf9c0f9db706",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -28,6 +28,7 @@
     "/assets/index-Utb2fj0F.css",
     "/assets/index-b1qJq8nI.js",
     "/assets/index-uDgLEyKR.js",
+    "/assets/index-vIe000_U.js",
     "/classic63.html",
     "/controller-classic.css",
     "/credits.html",
@@ -73,6 +74,8 @@
     "/game-thumbnails/dbz2-hd.png",
     "/game-thumbnails/dbz2.png",
     "/game-thumbnails/super-final.png",
+    "/gamepad-controls.css",
+    "/gamepad-controls.js",
     "/games/CT2_LIVE8_ENGLISH.nes",
     "/games/CT2_SS_DIRECT.nes",
     "/games/CT2_SS_DYNAMIC.nes",
