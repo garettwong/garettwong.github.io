@@ -1,5 +1,5 @@
 {
-  "version": "afd3932e23647f0d",
+  "version": "76230047f4414d0d",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -35,6 +35,7 @@
     "/assets/index-DZ4xq53h.js",
     "/assets/index-DwP7I_0k.css",
     "/assets/index-DyB8kYj3.js",
+    "/assets/index-GFOFfG4W.js",
     "/assets/index-UYDbJw4-.css",
     "/assets/index-Utb2fj0F.css",
     "/assets/index-a1ghbA0g.css",
@@ -56,6 +57,7 @@
     "/dbz-english-font.json",
     "/dbz-english.js",
     "/dbz-large-battle.js",
+    "/dbz-nail-fix.js",
     "/dbz-skills.css",
     "/dbz-skills.js",
     "/dbz-source-english.js",

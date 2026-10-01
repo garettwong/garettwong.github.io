@@ -139,7 +139,7 @@
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
-  if(d.type==="load-state"){window.DreamEnemies?.reset();window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(specialGame?.name==="Dragon Ball Z II Choose Enemies"?window.DreamEnemies.upgradeState(d.bytes):new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
+  if(d.type==="load-state"){window.DreamEnemies?.reset();window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(specialGame?.name==="Dragon Ball Z II Choose Enemies"?window.DreamNailFix.upgradeState(window.DreamEnemies.upgradeState(d.bytes)):specialGame?.name==="Dragon Ball Z II English Card Editor"?window.DreamNailFix.upgradeState(d.bytes):new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
   if(d.type==="speed"){try{await applySpeed([1,2,3,4,5,6,7,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
@@ -164,6 +164,7 @@
    }
    if(game.id===window.DreamCards?.ROM)window.DreamCards.prepareRom(romBytes);
    if(game.id===window.DreamEnemies?.ROM)window.DreamEnemies.prepareRom(romBytes);
+   if(window.DreamNailFix?.ROMS.includes(game.id))window.DreamNailFix.prepareRom(romBytes);
    romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
