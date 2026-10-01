@@ -1,5 +1,5 @@
 {
-  "version": "89612b788067358d",
+  "version": "19e40b6046789222",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -16,9 +16,11 @@
     "/assets/index-C5mtnEw6.css",
     "/assets/index-CIK2gGEt.js",
     "/assets/index-CKaGYsmn.js",
+    "/assets/index-CMVxVKKf.js",
     "/assets/index-COtRHDMl.js",
     "/assets/index-CY9Myi2v.css",
     "/assets/index-CuCVzx-M.js",
+    "/assets/index-UYDbJw4-.css",
     "/assets/index-b1qJq8nI.js",
     "/assets/index-uDgLEyKR.js",
     "/classic63.html",
@@ -1389,6 +1391,7 @@
     "/preview/vegeta-story-upgraded.png",
     "/preview/zarbon-story-original.png",
     "/preview/zarbon-story-upgraded.png",
+    "/standard-player.js",
     "/touch-controls.js"
   ]
 }

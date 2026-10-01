@@ -153,6 +153,13 @@
    engine=new (game.id===window.DBZSourceEnglish?.ROM||game.id===window.DreamCards?.ROM||game.id===window.DreamLargeBattle?.ROM?window.DBZSourceEnglish.EnglishPlayer:game.id===window.DBZEnglish?.ROM?window.DBZEnglish.EnglishPlayer:game.id===window.CT2English?.ROM?window.CT2English.EnglishPlayer:window.DreamArtwork)({gameId:game.id,overlay:document.getElementById("art-layer"),canvas:null,onDisplay:state=>send("art-state",state),onStatus:text=>{send("status",{text});const el=document.getElementById("status");if(el)el.textContent=text;}});engine.enabled=d.art!==false;window.dreamArtwork=engine;
 
    await engine.prepare();
+   const ordinaryCore=await import('/standard-player.js?v=115');
+   const mapper=(romBytes[6]>>4)|(romBytes[7]&240);
+   if(!engine.rules.length&&!specialGame&&ordinaryCore.supportedSoftwareMapper(mapper)&&new URLSearchParams(location.search).get('video')!=='legacy'){
+    engine=null;window.dreamArtwork=null;const {startStandardPlayer}=ordinaryCore;
+    await startStandardPlayer(game,(type,extra)=>{if(type==='started'){started=true;autosaveTimer=setInterval(()=>snapshot('auto'),60000);}send(type,extra);});return;
+   }
+
 
    Object.assign(window,{EJS_player:"#game",EJS_core:"nestopia",EJS_pathtodata:"/emulator/data/",EJS_gameUrl:romUrl,EJS_gameName:game.name+"-"+game.id.slice(0,12),EJS_gameID:parseInt(game.id.slice(0,7),16),EJS_color:"#ff684f",EJS_backgroundColor:"#080a10",EJS_language:"en-US",EJS_disableAutoLang:false,EJS_startOnLoaded:false,EJS_startButtonName:"Play game",EJS_VirtualGamepadSettings:[{"type":"button","text":"B","id":"b","location":"right","right":75,"top":70,"bold":true,"input_value":0},{"type":"button","text":"A","id":"a","location":"right","right":5,"top":70,"bold":true,"input_value":8},{"type":"dpad","id":"dpad","location":"left","left":"50%","right":"50%","joystickInput":false,"inputValues":[4,5,6,7]},{"type":"button","text":"Start","id":"start","location":"center","left":60,"fontSize":15,"block":true,"input_value":3},{"type":"button","text":"Select","id":"select","location":"center","left":-5,"fontSize":15,"block":true,"input_value":2}],EJS_threads:false,EJS_volume:.6,EJS_defaultOptions:{"vsync":"disabled","virtual-gamepad":"disabled","ff-ratio":"2","fastForward":"disabled","slowMotion":"disabled","shader":"disabled","nestopia_overscan_v_top":"0","nestopia_overscan_v_bottom":"0","nestopia_palette":"canonical"},EJS_Buttons:{volume:false,saveState:false,loadState:false,saveSavFiles:false,loadSavFiles:false,gamepad:false,settings:false,fullscreen:false,exitEmulation:false,screenRecord:false,cheat:false,netplay:false}});
 
