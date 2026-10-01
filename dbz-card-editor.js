@@ -7,9 +7,8 @@ const empty=()=>Array.from({length:5},()=>({attack:null,defense:null,attribute:n
 let values=empty(),locked=Array(5).fill(false),pending=empty(),versions=Array(5).fill(0);
 try{const found=JSON.parse(localStorage.getItem(KEY)||'null'),cards=Array.isArray(found)?found:found?.cards;if(Array.isArray(cards)&&cards.length===5){values=cards.map(v=>({attack:valid(v.attack,8),defense:valid(v.defense,8),attribute:attrs[v.attribute]?v.attribute:null}));locked=cards.map((v,i)=>Array.isArray(found)?Object.values(values[i]).some(Boolean):v.locked===true);}}catch{}
 function valid(n,max){return Number.isInteger(n)&&n>=1&&n<=max?n:null;}
-// Mode 5 is gravity training (including the second-card instruction and hand).
-// It uses the same validated five native card records as battle and walking.
-function cardScene(r){return[1,5,6,8].includes(r[0x2e]);}
+// Gravity (5) and Piccolo duplicate training (12) share the native five-card hand.
+function cardScene(r){return[1,5,6,8,12].includes(r[0x2e]);}
 function record(r,i){const a=BASE+i*8;return r[a+1]>=0x20&&r[a+1]<=0x2b&&r[a+2]<=4&&valid(r[a+3],8)&&valid(r[a+4],8)&&valid(r[a+5],6)?a:null;}
 let api=null,dialog=null,tabs=null,attack=null,defense=null,attribute=null,lockButton=null,feedback=null,selected=0,draft=[],lastNative=empty(),lastSeen=empty(),focusBefore=null,busy=false,dirty=false,draining=null,cheatKey='',lastError='';
 function inspect(){const state=new Uint8Array(api.gm().getState()),at=api.ramStart(state);if(at<0)throw Error('Card data is not ready.');return{state,at,ram:state.subarray(at,at+2048)};}
@@ -64,7 +63,7 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  // Once a fighter chooses a card, the game copies it into two packed
  // bytes in that fighter's record. Update those copies too, including
  // cards already chosen earlier in the current battle turn.
- if(ram[0x2e]===1)for(let actor=0x200;actor<0x2a2;actor+=18){
+ if([1,12].includes(ram[0x2e]))for(let actor=0x200;actor<(ram[0x2e]===12?0x212:0x2a2);actor+=18){
   const packed=ram[actor+13],i=packed>>4;
   if((ram[actor]&0x80)||i>=5||!valid(packed&15,8))continue;
   const target=restore?lastNative[i]:targets[i];
