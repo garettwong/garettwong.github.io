@@ -1,7 +1,7 @@
 /* Read-only full-roster view for the separate 10–20-opponent ROM. */
 (function(global){
 'use strict';
-const ROM='c0f422017644ecb4cd3142bd50a253114ce1da52cb5d014936c9a93931f06826';
+const ROM='5300803a3f7481ccbe31e28959bfa1ae0831492581c4d79131d9b9d95d334414';
 let api=null,timer=null,battle=null,lastError='',portraits=new Map();
 
 function chunk(bytes,tag,size){

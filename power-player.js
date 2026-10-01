@@ -55,7 +55,7 @@ export async function startPowerPlayer(game,send){
   setPowerOptions:options=>{chaos?.configure(options);if(typeof options.shield==='boolean'||options.shieldSeconds!==undefined)shield.configure(options.shield??shield.enabled,options.shieldSeconds);supplies?.setDensity(options.density);},
   getState:()=>new TextEncoder().encode(JSON.stringify({format:'contra-power-1',rom:game.id,rounds:rounds.save(),shield:shield.save(),state:nes.toJSON(),supplies:supplies?.save(),hazards:hazards.save(),chaos:chaos?.save()})),
   loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='contra-power-1'||saved.rom!==game.id)throw new Error('Wrong save format');nes.fromJSON(saved.state);nes.papu.sampleRate=nes.opts.sampleRate;nes.papu.setFrameRate(60*speed);progression.reset();rounds.load(saved.rounds);shield.load(saved.shield);hazards.load(saved.hazards);chaos?.load(saved.chaos);chaos?.configure({density:'more'});supplies?.load(saved.supplies);clearInput();attachPowerTiming(nes,game.id===POWER_ROM?8:12);output.clear();left=[];right=[];},
-  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,6,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;nes.papu.setFrameRate(60*speed);left=[];right=[];output.clear();}
+  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,5,6,7,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;nes.papu.setFrameRate(60*speed);left=[];right=[];output.clear();}
  }};
  play.addEventListener('click',()=>resume().catch(()=>send('operation-error',{text:'Could not start audio. Tap Play again.'})));
  send('art-state',{active:false,reason:'off'});send('status',{text:'Starting Contra…'});

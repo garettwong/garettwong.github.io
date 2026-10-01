@@ -25,7 +25,7 @@ export async function startStandardPlayer(game,send){
   screenshot:async()=>new Uint8Array(await(await new Promise(resolve=>canvas.toBlob(resolve,'image/png'))).arrayBuffer()),
   getState:()=>new TextEncoder().encode(JSON.stringify({format:'nes-software-1',rom:game.id,state:nes.toJSON()})),
   loadState:data=>{const saved=JSON.parse(new TextDecoder().decode(data));if(saved.format!=='nes-software-1'||saved.rom!==game.id)throw Error('This save belongs to a different player core. Existing saves are preserved.');nes.fromJSON(saved.state);nes.papu.sampleRate=nes.opts.sampleRate;nes.papu.setFrameRate(60*speed);clearInput();audio.clear();left=[];right=[];},
-  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,6,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;nes.papu.setFrameRate(60*speed);left=[];right=[];audio.clear();}
+  toggleSlowMotion(){},setFastForwardRatio:value=>{fastRatio=[1,2,3,4,5,6,7,8].includes(value)?value:2;},toggleFastForward:value=>{speed=value?fastRatio:1;nes.papu.setFrameRate(60*speed);left=[];right=[];audio.clear();}
  }};
  const keyboard={ArrowUp:4,ArrowDown:5,ArrowLeft:6,ArrowRight:7,KeyZ:0,KeyX:8,Enter:3,ShiftRight:2};
  for(const type of ['keydown','keyup'])addEventListener(type,event=>{if(keyboard[event.code]===undefined)return;event.preventDefault();input(0,keyboard[event.code],type==='keydown'?1:0);});

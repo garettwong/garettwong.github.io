@@ -15,7 +15,7 @@
  document.addEventListener('touchstart',unlockMobileAudio,{capture:true,passive:true});
  document.addEventListener('click',unlockMobileAudio,true);
  const specialGames={
- "c0f422017644ecb4cd3142bd50a253114ce1da52cb5d014936c9a93931f06826":{name:"Dragon Ball Z II 10–20 Opponents",trick:"dbz-card-editor",english:true},
+ "5300803a3f7481ccbe31e28959bfa1ae0831492581c4d79131d9b9d95d334414":{name:"Dragon Ball Z II 10–20 Opponents",trick:"dbz-card-editor",english:true},
  "e16062d3cabe3c7c84be496c401ee4b5d0e333129be2fda3d70c9898dd2595b8":{name:"Dragon Ball Z II English Card Editor",trick:"dbz-card-editor",english:true},
  "9f451ef64526ba7919b1dbeccd2e5a460153a54d1b6b72b75876ec2210b5958b":{name:"Dragon Ball Z II Original-source English",trick:"dbz-skills",english:true},
  "9be53d68a9614554670cd84ee42dd8c10b3893ded6b3255db05a9d706f3b741d":{name:"Captain Tsubasa II English HD",trick:"skill-direct"},
@@ -101,7 +101,10 @@
  for(const button of document.querySelectorAll?.('[data-action]')||[])button.addEventListener('click',()=>{if(button.dataset.action==='screenshot')screenShot();else if(started)send('save-menu');});
  const stopAutosave=()=>{if(autosaveTimer){clearInterval(autosaveTimer);autosaveTimer=0;}};
 
- const applySpeed=value=>{const gm=window.EJS_emulator?.gameManager;if(!gm)throw new Error("The game is not ready yet.");gm.toggleSlowMotion(0);window.EJS_emulator.isSlowMotion=false;gm.setFastForwardRatio(value);gm.toggleFastForward(value>1?1:0);selectedSpeed=value;send("speed",{value});};
+ let speedRequest=0;
+ const applySpeed=async value=>{const request=++speedRequest,emulator=window.EJS_emulator,gm=emulator?.gameManager;if(!gm)throw new Error("The game is not ready yet.");selectedSpeed=value;gm.toggleSlowMotion(0);emulator.isSlowMotion=false;gm.toggleFastForward(0);emulator.isFastForward=false;gm.setFastForwardRatio(value);send("speed",{value});if(value>1){await new Promise(resolve=>setTimeout(resolve,34));if(request!==speedRequest||menuPaused||backgroundPaused||emulator.paused)return;emulator.isFastForward=true;gm.toggleFastForward(1);}};
+ // The core must process one normal frame before re-enabling a changed ratio.
+ const resumeGame=()=>{window.EJS_emulator?.play?.();void applySpeed(selectedSpeed).catch(()=>{});};
 
  addEventListener("error",event=>{if(!loaded)return;console.error("Player error",event.message);send("error",{text:"The player encountered an error. Return to your library and reopen the game."});});
 
@@ -114,13 +117,13 @@
   if(d.type==="touch-settings"){const rates=d.rates?window.DreamTouch?.settings(d.rates):window.DreamTouch?.getSettings();send("touch-settings",{rates});return;}
   if(d.type==="power-info"){send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
   if(d.type==="power-options"){window.EJS_emulator?.gameManager?.setPowerOptions?.(d.options||{});send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
-  if(d.type==="resume-play"){menuPaused=false;backgroundPaused=false;window.EJS_emulator?.play?.();engine?.resume();return;}
+  if(d.type==="resume-play"){menuPaused=false;backgroundPaused=false;resumeGame();engine?.resume();return;}
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){snapshot(d.reason==="manual"||d.reason==="export"?d.reason:"auto",Number.isInteger(d.slot)?d.slot:undefined);return;}
 
   if(d.type==="load-state"){window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
-  if(d.type==="speed"){try{applySpeed([1,2,3,4,6,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
+  if(d.type==="speed"){try{await applySpeed([1,2,3,4,5,6,7,8].includes(d.value)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
   if(d.type==="retry-art"){if(engine){engine.metrics.recoveries=0;await engine.retry();}return;}
 
@@ -146,14 +149,15 @@
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
    if((await import("/power-core/contra.js?v=67")).isPowerRom(game.id)){
-    const {startPowerPlayer}=await import("/power-player.js?v=83");
+    const {startPowerPlayer}=await import("/power-player.js?v=116");
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator.gameManager.getFrameNum(),audio:window.EJS_emulator.gameManager.getAudioInfo()}}),1000);return;
    }
 
    engine=new (game.id===window.DBZSourceEnglish?.ROM||game.id===window.DreamCards?.ROM||game.id===window.DreamLargeBattle?.ROM?window.DBZSourceEnglish.EnglishPlayer:game.id===window.DBZEnglish?.ROM?window.DBZEnglish.EnglishPlayer:game.id===window.CT2English?.ROM?window.CT2English.EnglishPlayer:window.DreamArtwork)({gameId:game.id,overlay:document.getElementById("art-layer"),canvas:null,onDisplay:state=>send("art-state",state),onStatus:text=>{send("status",{text});const el=document.getElementById("status");if(el)el.textContent=text;}});engine.enabled=d.art!==false;window.dreamArtwork=engine;
 
    await engine.prepare();
-   const ordinaryCore=await import('/standard-player.js?v=115');
+
+   const ordinaryCore=await import('/standard-player.js?v=116');
    const mapper=(romBytes[6]>>4)|(romBytes[7]&240);
    if(!engine.rules.length&&!specialGame&&ordinaryCore.supportedSoftwareMapper(mapper)&&new URLSearchParams(location.search).get('video')!=='legacy'){
     engine=null;window.dreamArtwork=null;const {startStandardPlayer}=ordinaryCore;
@@ -165,7 +169,7 @@
 
    window.EJS_ready=()=>{if(specialGame?.trick==='dbz-card-editor'&&window.EJS_emulator)window.EJS_emulator.checkStarted=()=>{};const launch=document.querySelector('.ejs_start_button');if(launch){launch.setAttribute('role','button');launch.tabIndex=0;launch.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();launch.click();}});}send("status",{text:"Tap Play game to start"});};
 
-   window.EJS_onGameStart=async()=>{started=true;if(game.id===window.DreamLargeBattle?.ROM)window.DreamLargeBattle.start({gm:()=>window.EJS_emulator.gameManager,active:()=>started&&!menuPaused&&!backgroundPaused});if(specialGame?.trick==="dbz-card-editor")window.DreamCards?.start({isPaused:()=>!!window.EJS_emulator?.paused,gm:()=>window.EJS_emulator.gameManager,ramStart:superRamStart,release:()=>window.DreamTouch?.releaseAll(),pause:()=>window.EJS_emulator.pause(),resume:()=>{if(!menuPaused&&!backgroundPaused)window.EJS_emulator.play();},active:()=>started&&!menuPaused&&!backgroundPaused,resetFrame:()=>engine?.resetFrame(),status:text=>send("status",{text})});if(specialGame?.trick==="dbz-skills"||specialGame?.trick==="dbz-card-editor")window.DreamSkills?.start({english:!!specialGame.english,gm:()=>window.EJS_emulator.gameManager,ramStart:superRamStart,release:()=>window.DreamTouch?.releaseAll(),pause:()=>window.EJS_emulator.pause(),resume:()=>{if(!menuPaused&&!backgroundPaused)window.EJS_emulator.play();},active:()=>started&&!menuPaused&&!backgroundPaused,resetFrame:()=>engine?.resetFrame(),status:text=>send("status",{text})});specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0,rapidLocks:true,singleA:specialGame?.trick==="dbz-card-editor"});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("touch-settings",{rates:window.DreamTouch?.getSettings()});send("started");};
+   window.EJS_onGameStart=async()=>{started=true;if(game.id===window.DreamLargeBattle?.ROM)window.DreamLargeBattle.start({gm:()=>window.EJS_emulator.gameManager,active:()=>started&&!menuPaused&&!backgroundPaused});if(specialGame?.trick==="dbz-card-editor")window.DreamCards?.start({isPaused:()=>!!window.EJS_emulator?.paused,gm:()=>window.EJS_emulator.gameManager,ramStart:superRamStart,release:()=>window.DreamTouch?.releaseAll(),pause:()=>window.EJS_emulator.pause(),resume:()=>{if(!menuPaused&&!backgroundPaused)resumeGame();},active:()=>started&&!menuPaused&&!backgroundPaused,resetFrame:()=>engine?.resetFrame(),status:text=>send("status",{text})});if(specialGame?.trick==="dbz-skills"||specialGame?.trick==="dbz-card-editor")window.DreamSkills?.start({english:!!specialGame.english,gm:()=>window.EJS_emulator.gameManager,ramStart:superRamStart,release:()=>window.DreamTouch?.releaseAll(),pause:()=>window.EJS_emulator.pause(),resume:()=>{if(!menuPaused&&!backgroundPaused)resumeGame();},active:()=>started&&!menuPaused&&!backgroundPaused,resetFrame:()=>engine?.resetFrame(),status:text=>send("status",{text})});specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();setTimeout(()=>{const gm=window.EJS_emulator?.gameManager;const width=gm?.getVideoDimensions("width");document.body.dataset.coreWidth=String(width);window.DreamTouch?.resize();if(Number(width)>0&&Number(width)!==256){window.EJS_emulator?.pause?.();engine?.stop();fail("This ROM could not run in the current NES core. Return to Library and try another .nes file.");}},1200);window.EJS_emulator?.toggleVirtualGamepad?.(false);applySpeed(1);window.DreamTouch?.start({tapActions:engine.rules.length>0,rapidLocks:true,singleA:specialGame?.trick==="dbz-card-editor"});autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);engine.canvas=window.EJS_emulator?.canvas||document.querySelector("#game canvas");engine.setEnabled(d.art!==false);await engine.start();if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator?.gameManager?.getFrameNum(),metrics:engine.metrics,uploads:window.DreamFrameSource?.uploads,colors:window.DreamFrameSource?.colors,seq:window.DreamFrameSource?.seq,firstPixel:window.DreamFrameSource?.pixels?Array.from(window.DreamFrameSource.pixels.slice(0,4)):null,canvas:{width:engine.canvas.width,height:engine.canvas.height,rect:engine.canvas.getBoundingClientRect().toJSON()},worker:!!engine.worker,overlay:engine.overlay.style.cssText}}),1000);send("touch-settings",{rates:window.DreamTouch?.getSettings()});send("started");};
 
    const script=document.createElement("script");script.src="/emulator/data/loader.js";script.onerror=()=>fail("Could not load the emulator. Check your connection and reopen the game.");document.body.appendChild(script);
 
@@ -175,7 +179,7 @@
 
  addEventListener("pagehide",event=>{snapshot("auto");if(event.persisted){backgroundPaused=!menuPaused;engine?.suspend();return;}stopAutosave();engine?.stop();if(romUrl)URL.revokeObjectURL(romUrl);});
 
- function resumeInterrupted(){if(!started||document.hidden||menuPaused)return;if(backgroundPaused||window.EJS_emulator?.paused){backgroundPaused=false;window.EJS_emulator?.play?.();engine?.resume();}}
+ function resumeInterrupted(){if(!started||document.hidden||menuPaused)return;if(backgroundPaused||window.EJS_emulator?.paused){backgroundPaused=false;resumeGame();engine?.resume();}}
  addEventListener("pageshow",event=>{if(event.persisted){backgroundPaused=true;resumeInterrupted();}});
  for(const event of ["pointerdown","click"])document.getElementById("touch-controls")?.addEventListener(event,resumeInterrupted,true);
 

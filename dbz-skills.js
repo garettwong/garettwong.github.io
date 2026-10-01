@@ -6,7 +6,7 @@
  let english=false;
  const characterLabel=name=>english?name:`${hkActors[name]||name} · ${name}`;
  const moveLabel=id=>english?names[id]:`${hkMoves[id]} · ${names[id]}`;
- const folders=[['Goku',[0,8,13,14,15,16,17,18,19,22,23]],['Piccolo',[1,4,6,24,26]],['Gohan',[0,7]],['Krillin',[8,10,27,9]],['Yamcha',[8,11]],['Tien',[0,28,29,30,9]],['Chiaotzu',[2,31]],['Vegeta',[0,4,34,20]],['Frieza',[0,5,34]],['Captain Ginyu',[0,5,34,33]],['Jeice',[0,12]],['Burter',[0,21]],['Recoome',[0,4,25]],['Guldo',[0,32]],['Nail',[0]],['Frieza’s soldiers',[0,3]]];
+ const folders=[['Frieza',[0,5,34]],['Vegeta',[0,4,34,20]],['Goku',[0,8,13,14,15,16,17,18,19,22,23]],['Piccolo',[1,4,6,24,26]],['Gohan',[0,7]],['Krillin',[8,10,27,9]],['Yamcha',[8,11]],['Tien',[0,28,29,30,9]],['Chiaotzu',[2,31]],['Captain Ginyu',[0,5,34,33]],['Jeice',[0,12]],['Burter',[0,21]],['Recoome',[0,4,25]],['Guldo',[0,32]],['Nail',[0]],['Frieza’s soldiers',[0,3]]];
  const actors={1:'Goku',2:'Piccolo',3:'Gohan',4:'Krillin',5:'Yamcha',6:'Tien',7:'Chiaotzu',8:'Nail',9:'Vegeta',36:'Frieza',42:'Vegeta'};
  let api=null,dialog=null,body=null,title=null,back=null,saved=null,slot=-1,suppressed=false,lastPhase=-1,busy=false,focusBefore=null;
  const inspect=()=>{const state=new Uint8Array(api.gm().getState()),offset=api.ramStart(state);if(offset<0)throw Error('Cannot read this game state.');return {state,offset,ram:state.subarray(offset,offset+2048)};};

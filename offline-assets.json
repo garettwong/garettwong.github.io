@@ -1,5 +1,5 @@
 {
-  "version": "19e40b6046789222",
+  "version": "16d3d79adb2bbe83",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -19,7 +19,9 @@
     "/assets/index-CMVxVKKf.js",
     "/assets/index-COtRHDMl.js",
     "/assets/index-CY9Myi2v.css",
+    "/assets/index-Chkr-IYf.js",
     "/assets/index-CuCVzx-M.js",
+    "/assets/index-Cwk3ebdx.css",
     "/assets/index-UYDbJw4-.css",
     "/assets/index-b1qJq8nI.js",
     "/assets/index-uDgLEyKR.js",
@@ -104,6 +106,7 @@
     "/games/DBZ2Super_AllSkills_v7.nes",
     "/games/DBZ2Super_AllSkills_v8.nes",
     "/games/DBZ2Super_Travel_v6.nes",
+    "/games/DBZ2_English_10-20_Enemies_No_Flee_v2.nes",
     "/games/DBZ2_English_10-20_Enemies_Same_Battle.nes",
     "/games/DBZ2_English_OriginalGraphics_InfiniteBE_AllCards_AllSkills_v11.nes",
     "/games/DBZ2_HD.nes",
