@@ -7,8 +7,11 @@ const empty=()=>Array.from({length:5},()=>({attack:null,defense:null,attribute:n
 let values=empty(),locked=Array(5).fill(false),pending=empty(),versions=Array(5).fill(0);
 try{const found=JSON.parse(localStorage.getItem(KEY)||'null'),cards=Array.isArray(found)?found:found?.cards;if(Array.isArray(cards)&&cards.length===5){values=cards.map(v=>({attack:valid(v.attack,8),defense:valid(v.defense,8),attribute:attrs[v.attribute]?v.attribute:null}));locked=cards.map((v,i)=>Array.isArray(found)?Object.values(values[i]).some(Boolean):v.locked===true);}}catch{}
 function valid(n,max){return Number.isInteger(n)&&n>=1&&n<=max?n:null;}
-// Gravity (5) and Piccolo duplicate training (12) share the native five-card hand.
-function cardScene(r){return[1,5,6,8,12].includes(r[0x2e]);}
+// Complete native hand contexts: combat, matching/comparison/gravity training,
+// walking, item cards, map card events and Piccolo duplicate training.
+// Story/title/status/ending screens retain preferences without touching game RAM.
+const HAND_MODES=new Set([1,3,4,5,6,8,9,12]);
+function cardScene(r){return HAND_MODES.has(r[0x2e]);}
 function record(r,i){const a=BASE+i*8;return r[a+1]>=0x20&&r[a+1]<=0x2b&&r[a+2]<=4&&valid(r[a+3],8)&&valid(r[a+4],8)&&valid(r[a+5],6)?a:null;}
 let api=null,dialog=null,tabs=null,attack=null,defense=null,attribute=null,lockButton=null,feedback=null,selected=0,draft=[],lastNative=empty(),lastSeen=empty(),focusBefore=null,busy=false,dirty=false,draining=null,cheatKey='',lastError='';
 function inspect(){const state=new Uint8Array(api.gm().getState()),at=api.ramStart(state);if(at<0)throw Error('Card data is not ready.');return{state,at,ram:state.subarray(at,at+2048)};}
@@ -46,10 +49,13 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  if(restore)clearCheats();
  if(!cardScene(ram)){clearCheats();return{ready:false,verified:false};}
  const addresses=Array.from({length:5},(_,i)=>record(ram,i));
- if(addresses.some(a=>a===null)){clearCheats();return{ready:false,verified:false};}
+ // Hands are rebuilt one record at a time during replacements and transitions.
+ // An unavailable slot must not disable the other four locks or lose its edit.
+ if(addresses.every(a=>a===null)){clearCheats();return{ready:false,verified:false};}
  let changed=false;const codes=[],checks=[];
  for(let i=0;i<5;i++){
   const a=addresses[i],target=restore?lastNative[i]:targets[i];
+  if(a===null)continue;
   for(const [field,offset,max]of [['attack',3,8],['defense',4,8],['attribute',5,6]]){
    const n=valid(target[field],max);if(n===null)continue;
    if(!restore&&locked[i])codes.push(`${(a+offset).toString(16).toUpperCase().padStart(4,'0')}:${n.toString(16).toUpperCase().padStart(2,'0')}`);
@@ -65,7 +71,7 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  // cards already chosen earlier in the current battle turn.
  if([1,12].includes(ram[0x2e]))for(let actor=0x200;actor<(ram[0x2e]===12?0x212:0x2a2);actor+=18){
   const packed=ram[actor+13],i=packed>>4;
-  if((ram[actor]&0x80)||i>=5||!valid(packed&15,8))continue;
+  if((ram[actor]&0x80)||i>=5||addresses[i]===null||!valid(packed&15,8))continue;
   const target=restore?lastNative[i]:targets[i];
   const a=valid(target.attack,8),d=valid(target.defense,8),m=valid(target.attribute,6);
   const first=a===null?packed:(packed&0xf0)|a;
@@ -92,7 +98,7 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
   if(verified)break;
  }while(Date.now()<deadline);
  if(!verified)throw Error('The game has not accepted this edit yet. Change the value again to retry.');
- return{ready:true,verified};
+ return{ready:true,verified,applied:addresses.map(a=>a!==null)};
 }
 const clean=v=>({attack:valid(v.attack,8),defense:valid(v.defense,8),attribute:attrs[v.attribute]?v.attribute:null});
 function queueApply(){
@@ -104,8 +110,8 @@ function queueApply(){
    dirty=false;const seenVersions=versions.slice(),targets=values.map((v,i)=>({... (locked[i]?v:pending[i])}));
    try{
     const result=await apply(false,targets);
-    if(result.ready)for(let i=0;i<5;i++)if(versions[i]===seenVersions[i])pending[i]={attack:null,defense:null,attribute:null};
-    persist();lastError='';if(feedback)feedback.textContent=result.ready?'Applied immediately.':'Waiting for the next playable card hand.';
+    if(result.ready)for(let i=0;i<5;i++)if(result.applied[i]&&versions[i]===seenVersions[i])pending[i]={attack:null,defense:null,attribute:null};
+    persist();lastError='';if(feedback)feedback.textContent=result.ready?(result.applied.every(Boolean)?'Applied immediately.':'Available cards updated. Remaining cards will update when ready.'):'Waiting for the next playable card hand.';
    }catch(e){lastError=e.message;if(feedback)feedback.textContent=lastError;api.status(lastError);}
    finally{if(dialog&&!dialog.hidden)api.pause();}
   }
