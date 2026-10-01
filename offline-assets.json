@@ -1,5 +1,5 @@
 {
-  "version": "74cca2e42ee8a1ad",
+  "version": "13ff4c34d4719be4",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -19,6 +19,7 @@
     "/assets/index-CKaGYsmn.js",
     "/assets/index-CMVxVKKf.js",
     "/assets/index-COtRHDMl.js",
+    "/assets/index-CQaCQKzD.js",
     "/assets/index-CY9Myi2v.css",
     "/assets/index-CuCVzx-M.js",
     "/assets/index-Cwk3ebdx.css",
@@ -1397,6 +1398,8 @@
     "/preview/zarbon-story-original.png",
     "/preview/zarbon-story-upgraded.png",
     "/standard-player.js",
-    "/touch-controls.js"
+    "/touch-controls.js",
+    "/zelda-tricks.css",
+    "/zelda-tricks.js"
   ]
 }

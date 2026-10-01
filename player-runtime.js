@@ -37,9 +37,9 @@
   "dbc70fade29e34e3ce0e8e2c62a21aca3892aff4f588821de74c332e1153447a":{name:"Contra Super Final",trick:"bullet-settings"},
   "1da4a85d61803e64df61c743a6253e02c0639ee7b68a72a4dfe815779622ca7f":{name:"Contra Arsenal Pro",trick:"bullet-settings"}
  };
- let specialGame=null;
+ let specialGame=null,zeldaEnabled=false;
  const specialButton=document.getElementById("special-button");
- const showSpecialMode=()=>{if(specialButton){specialButton.textContent=specialGame?.trick==="dbz-card-editor"?"EDIT CARDS":specialGame?.trick==="dbz-skills"?(specialGame.english?"ALL SKILLS":"全部招式"):specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Power edition":specialPending?"SUPER · WAIT":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;specialButton.setAttribute('aria-label',specialGame?.trick==='dbz-card-editor'?'Edit card attack, defense and middle symbol':'Use this game special trick');}};
+ const showSpecialMode=()=>{if(specialButton){specialButton.textContent=zeldaEnabled?"ZELDA TRICKS":specialGame?.trick==="dbz-card-editor"?"EDIT CARDS":specialGame?.trick==="dbz-skills"?(specialGame.english?"ALL SKILLS":"全部招式"):specialGame?.trick==="bullet-settings"?"SPECIAL · BULLETS":specialGame?.trick==="skill-upgrade"?"Open LIVE Power edition":specialPending?"SUPER · WAIT":specialMode==="unknown"?"SUPER · TOGGLE":`SUPER · ${specialMode==="high"?"ON":"OFF"}`;specialButton.setAttribute('aria-label',zeldaEnabled?'Zelda Tricks':specialGame?.trick==='dbz-card-editor'?'Edit card attack, defense and middle symbol':'Use this game special trick');}};
  // The browser core wraps its Nestopia state, unlike standalone Nestopia.
  // Find the NES RAM chunk instead of relying on a fixed save-state offset.
  // The final three internal RAM bytes are reserved for SUPER. Music owns $07FC.
@@ -47,7 +47,8 @@
  const readSuperMode=gm=>{try{const state=gm.getState(),start=superRamStart(state);return start<0?null:state[start+0x7fd]===165?"high":"normal";}catch{return null;}};
  const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const runSpecial=async()=>{
-  if(!started||!specialGame||specialBusy||specialPending)return;
+  if(!started||(!specialGame&&!zeldaEnabled)||specialBusy||specialPending)return;
+  if(zeldaEnabled){window.DreamZelda.open();return;}
   if(specialGame.trick==="dbz-card-editor"){window.DreamCards?.open();return;}
   if(specialGame.trick==="dbz-skills"){window.DreamSkills?.open();return;}
   if(specialGame.trick==="bullet-settings"){send("special-settings");return;}
@@ -115,6 +116,7 @@
   const d=event.data;
 
   if(d.type==="touch-settings"){const rates=d.rates?window.DreamTouch?.settings(d.rates):window.DreamTouch?.getSettings();send("touch-settings",{rates});return;}
+  if(d.type==="zelda-tricks"){if(started&&zeldaEnabled)window.DreamZelda.open();return;}
   if(d.type==="power-info"){send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
   if(d.type==="power-options"){window.EJS_emulator?.gameManager?.setPowerOptions?.(d.options||{});send("power-info",window.EJS_emulator?.gameManager?.getPowerInfo?.()||{});return;}
   if(d.type==="resume-play"){menuPaused=false;backgroundPaused=false;resumeGame();engine?.resume();return;}
@@ -157,10 +159,10 @@
 
    await engine.prepare();
 
-   const ordinaryCore=await import('/standard-player.js?v=118');
+   const ordinaryCore=await import('/standard-player.js?v=119');
    const mapper=(romBytes[6]>>4)|(romBytes[7]&240);
    if(!engine.rules.length&&!specialGame&&ordinaryCore.supportedSoftwareMapper(mapper)&&new URLSearchParams(location.search).get('video')!=='legacy'){
-    engine=null;window.dreamArtwork=null;const {startStandardPlayer}=ordinaryCore;
+    engine=null;window.dreamArtwork=null;zeldaEnabled=!!window.DreamZelda?.supports(game.id);if(zeldaEnabled){document.body.classList.add("special-enabled");showSpecialMode();}const {startStandardPlayer}=ordinaryCore;
     await startStandardPlayer(game,(type,extra)=>{if(type==='started'){started=true;autosaveTimer=setInterval(()=>snapshot('auto'),60000);}send(type,extra);});return;
    }
 
