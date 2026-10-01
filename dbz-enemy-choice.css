@@ -11,4 +11,4 @@
 .enemy-count-options button:disabled{opacity:.6;cursor:wait}
 #dbz-enemy-choice .enemy-count-feedback{min-height:22px;margin:16px 0 10px;color:#ffe0a0}
 #dbz-enemy-choice .enemy-count-note{font-size:12px;color:#a7b8d2;margin:0}
-@media(max-height:520px){#dbz-enemy-choice{padding:14px}.enemy-count-options{grid-template-columns:repeat(3,1fr);gap:8px}.enemy-count-options button{padding:12px 8px}.enemy-count-options button strong{font-size:22px}.enemy-count-options button span{font-size:12px}}
+@media(max-height:520px){#dbz-enemy-choice{padding:14px}.enemy-count-options{grid-template-columns:repeat(var(--enemy-option-count,3),1fr);gap:8px}.enemy-count-options button{padding:12px 8px}.enemy-count-options button strong{font-size:22px}.enemy-count-options button span{font-size:12px}}

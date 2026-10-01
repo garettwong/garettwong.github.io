@@ -1,5 +1,5 @@
 {
-  "version": "76230047f4414d0d",
+  "version": "d676734104001ca6",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -26,6 +26,7 @@
     "/assets/index-COtRHDMl.js",
     "/assets/index-CQaCQKzD.js",
     "/assets/index-CY9Myi2v.css",
+    "/assets/index-C_5ll7WT.js",
     "/assets/index-ChITqbnp.js",
     "/assets/index-CuCVzx-M.js",
     "/assets/index-Cwk3ebdx.css",
@@ -56,6 +57,7 @@
     "/dbz-enemy-choice.js",
     "/dbz-english-font.json",
     "/dbz-english.js",
+    "/dbz-hundred.js",
     "/dbz-large-battle.js",
     "/dbz-nail-fix.js",
     "/dbz-skills.css",
@@ -91,6 +93,7 @@
     "/game-thumbnails/ct2.png",
     "/game-thumbnails/dbz2-10-20.svg",
     "/game-thumbnails/dbz2-hd.png",
+    "/game-thumbnails/dbz2-hundred.svg",
     "/game-thumbnails/dbz2.png",
     "/game-thumbnails/super-final.png",
     "/gamepad-controls.css",
@@ -133,6 +136,7 @@
     "/games/DBZ2Super_Travel_v6.nes",
     "/games/DBZ2_English_10-20_Enemies_No_Flee_v2.nes",
     "/games/DBZ2_English_10-20_Enemies_Same_Battle.nes",
+    "/games/DBZ2_English_80-100_Enemies_16x_v1.nes",
     "/games/DBZ2_English_OriginalGraphics_InfiniteBE_AllCards_AllSkills_v11.nes",
     "/games/DBZ2_HD.nes",
     "/games/DBZ2_OriginalGraphics_InfiniteBE_AllSkills_v10.nes",

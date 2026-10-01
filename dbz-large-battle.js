@@ -17,7 +17,8 @@ function decode(bytes){
  const ram=chunk(bytes,'RAM',2048),wram=chunk(bytes,'WRM',8192);
  if(!ram||!wram||ram[0x2e]!==1||wram[0x1371]!==0xa5)return null;
  const total=wram[0x1372],page=wram[0x1370];
- if(total<10||total>40||page>=Math.ceil(total/5)||(total>20&&wram[0x1394]!==0x81))return null;
+ const revision=wram[0x1394],limit=revision===0x82?100:40;
+ if(total<10||total>limit||page>=Math.ceil(total/5)||(total>20&&revision!==0x81&&revision!==0x82))return null;
  const enemies=[];
  for(let i=0;i<total;i++){
   // The current page can have newer combat results than its stored pool copy.
@@ -66,12 +67,12 @@ function draw(ctx,pixels,width,height){
  ctx.fillStyle='#05070c';ctx.fillRect(0,94,256,68);
  ctx.textAlign='center';ctx.textBaseline='alphabetic';ctx.font='700 7px Arial,sans-serif';
  ctx.fillStyle='#ffe29a';ctx.fillText(`${b.total} OPPONENTS · ${b.remaining} REMAINING`,128,102);
- const rows=Math.ceil(b.total/10);
+ const hundred=b.total>40,columns=hundred?20:10,cell=hundred?12.4:24,rows=Math.ceil(b.total/columns);
  for(const enemy of b.enemies){
-  const row=Math.floor(enemy.index/10),column=enemy.index%10;
-  const inRow=Math.min(10,b.total-row*10),left=(256-inRow*24)/2;
-  const compact=rows>2,size=compact?10:18,step=compact?14:27;
-  const x=left+column*24+(24-size)/2,y=106+row*step;
+  const row=Math.floor(enemy.index/columns),column=enemy.index%columns;
+  const inRow=Math.min(columns,b.total-row*columns),left=(256-inRow*cell)/2;
+  const compact=rows>2,size=hundred?7:compact?10:18,step=hundred?10.5:compact?14:27;
+  const x=left+column*cell+(hundred?0:(cell-size)/2),y=106+row*step;
   const selected=enemy.index===b.selected,portrait=portraits.get(enemy.type);
   ctx.globalAlpha=enemy.alive?1:.3;
   if(portrait){ctx.imageSmoothingEnabled=false;ctx.drawImage(portrait,x,y,size,size);}
@@ -79,8 +80,8 @@ function draw(ctx,pixels,width,height){
   ctx.globalAlpha=1;
   if(selected){ctx.strokeStyle='#ffd45e';ctx.lineWidth=1.5;ctx.strokeRect(x-1,y-1,size+2,size+2);}
   if(!enemy.alive){ctx.strokeStyle='#f47272';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x+3,y+3);ctx.lineTo(x+size-2,y+size-2);ctx.moveTo(x+size-2,y+3);ctx.lineTo(x+3,y+size-2);ctx.stroke();}
-  ctx.font='600 5.5px Arial,sans-serif';ctx.fillStyle=selected?'#ffd45e':enemy.alive?'#f0f3fa':'#8b91a0';
-  ctx.fillText(`${enemy.index+1}`,compact?x+size+4:x+size/2,compact?y+8:y+24);
+  ctx.font=hundred?'600 3.5px Arial,sans-serif':'600 5.5px Arial,sans-serif';ctx.fillStyle=selected?'#ffd45e':enemy.alive?'#f0f3fa':'#8b91a0';
+  ctx.fillText(`${enemy.index+1}`,hundred?x+size+2.6:compact?x+size+4:x+size/2,hundred?y+5.5:compact?y+8:y+24);
  }
  ctx.restore();
 }
