@@ -73,7 +73,7 @@ class EnglishText {
 class EnglishPlayer extends global.CT2English.EnglishPlayer {
  constructor(options){super(options);this.rules=[{id:'original-source-english'}];}
  async prepare(){const response=await fetch('/dbz-source-font.json?v=104');if(!response.ok)throw Error('English font failed to load.');this.text=new EnglishText(await response.json());this.onStatus?.('Original-source English ready');}
- present(pixels){super.present(pixels);if(this.gameId===global.DreamCards?.ROM&&this.overlay.style.display!=='none')global.DreamCards.draw(this.out,pixels,this.overlay.width,this.overlay.height);}
+ present(pixels){super.present(pixels);if((this.gameId===global.DreamCards?.ROM||this.gameId===global.DreamLargeBattle?.ROM)&&this.overlay.style.display!=='none')global.DreamCards.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.gameId===global.DreamLargeBattle?.ROM&&this.overlay.style.display!=='none')global.DreamLargeBattle.draw(this.out,pixels,this.overlay.width,this.overlay.height);}
 }
 global.DBZSourceEnglish={ROM,EnglishText,EnglishPlayer};
 })(typeof window==='undefined'?globalThis:window);
