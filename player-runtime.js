@@ -149,7 +149,7 @@
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
    if((await import("/power-core/contra.js?v=67")).isPowerRom(game.id)){
-    const {startPowerPlayer}=await import("/power-player.js?v=116");
+    const {startPowerPlayer}=await import("/power-player.js?v=118");
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator.gameManager.getFrameNum(),audio:window.EJS_emulator.gameManager.getAudioInfo()}}),1000);return;
    }
 
@@ -157,7 +157,7 @@
 
    await engine.prepare();
 
-   const ordinaryCore=await import('/standard-player.js?v=116');
+   const ordinaryCore=await import('/standard-player.js?v=118');
    const mapper=(romBytes[6]>>4)|(romBytes[7]&240);
    if(!engine.rules.length&&!specialGame&&ordinaryCore.supportedSoftwareMapper(mapper)&&new URLSearchParams(location.search).get('video')!=='legacy'){
     engine=null;window.dreamArtwork=null;const {startStandardPlayer}=ordinaryCore;
