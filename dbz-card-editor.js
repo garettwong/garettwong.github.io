@@ -30,12 +30,26 @@ function redraw(state,ram,addresses){
  const at=nametable(state),checks=[];let changed=false;if(at<0)return{changed,checks};
  // Native 4x6 card borders, excluding its attack, defense and emblem tiles.
  const shell=[[2,190],[3,191],[34,0],[35,206],[64,207],[67,206],[96,207],[99,206],[128,207],[129,0],[160,208],[161,209]];
- for(const a of addresses){
+ // Gravity keeps stale drawing addresses after shifting its hand left.
+ // Match the complete visible five-card strip before redrawing this scene.
+ const gravityStarts=new Map();
+ if(ram[0x2e]===5&&addresses.every(a=>a!==null&&ram[a+2]===2)){
+  const row=((ram[addresses[0]]|ram[addresses[0]+1]<<8)&1023)>>5;
+  for(const plane of [0,1024]){
+   const starts=[];
+   for(let col=0;col<=12;col++){
+    const pos=row*32+col;
+    if(Array.from({length:5},(_,i)=>i).every(i=>shell.every(([off,tile])=>state[at+plane+pos+i*4+off]===tile)))starts.push(pos);
+   }
+   if(starts.length===1)gravityStarts.set(plane,starts[0]);
+  }
+ }
+ for(const [index,a] of addresses.entries()){
   if(a===null||ram[a+2]!==2)continue;
   const address=(ram[a]|ram[a+1]<<8)&1023;
   if((address&31)>28||(address>>5)>24)continue;
   for(const plane of [0,1024]){
-   const base=at+plane+address;
+   const base=at+plane+(gravityStarts.has(plane)?gravityStarts.get(plane)+index*4:address);
    if(!shell.every(([off,tile])=>state[base+off]===tile))continue;
    for(const [offsets,tiles]of [[[0,32,1,33],attackTiles[ram[a+3]]],[[130,162,131,163],defenseTiles[ram[a+4]]],[[65,66,97,98],symbolTiles[ram[a+5]]]]){
     offsets.forEach((off,i)=>{checks.push([base+off,tiles[i]]);if(state[base+off]!==tiles[i]){state[base+off]=tiles[i];changed=true;}});
