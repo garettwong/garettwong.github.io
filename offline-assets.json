@@ -1,5 +1,5 @@
 {
-  "version": "2c69148ffa76c0e9",
+  "version": "cb59cb3f858c3b85",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -26,6 +26,8 @@
     "/assets/index-Cwk3ebdx.css",
     "/assets/index-DPlt-47p.js",
     "/assets/index-DYkj7ZfO.js",
+    "/assets/index-DwP7I_0k.css",
+    "/assets/index-DyB8kYj3.js",
     "/assets/index-UYDbJw4-.css",
     "/assets/index-Utb2fj0F.css",
     "/assets/index-b1qJq8nI.js",
@@ -33,6 +35,7 @@
     "/assets/index-vIe000_U.js",
     "/classic63.html",
     "/controller-classic.css",
+    "/controller-hub.js",
     "/controller-test.html",
     "/credits.html",
     "/ct2-english-font.json",
