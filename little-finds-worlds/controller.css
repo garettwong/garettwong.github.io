@@ -1,0 +1,5 @@
+#xbox-help-button{display:block;margin:4px auto;font-size:12px;min-height:30px;padding:3px 12px;color:#355f42}
+#xbox-help{text-align:left;max-height:calc(100dvh - 40px);overflow:auto;font-size:14px;line-height:1.6}#xbox-help h2{font-size:22px}#xbox-state{font-size:12px;overflow-wrap:anywhere;color:#466b52}
+#xbox-cursor{position:absolute;width:26px;height:26px;transform:translate(-50%,-50%);border:2px solid white;border-radius:50%;box-shadow:0 0 0 2px #244e35,0 1px 8px #000a;z-index:7;pointer-events:none}
+#xbox-cursor:before,#xbox-cursor:after{content:"";position:absolute;background:#244e35;box-shadow:0 0 1px white}#xbox-cursor:before{width:2px;height:36px;top:-7px;left:10px}#xbox-cursor:after{height:2px;width:36px;left:-7px;top:10px}
+#play{height:calc(100dvh - 98px)}@media(max-height:500px) and (orientation:landscape){#play{height:calc(100dvh - 83px)}}
