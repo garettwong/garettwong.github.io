@@ -2,7 +2,7 @@
 (()=>{
  const active=new Map(),timers=new Map(),pressedAt=new Map(),buttons=()=>document.querySelectorAll('#touch-controls button[data-code],#touch-controls button[data-codes]');
  const padPointers=new Map(),locked=new Set(),lockButtons=()=>document.querySelectorAll('[data-lock-code]');
- let tapActions=false,rapidLocks=false,singleA=false;
+ let tapActions=false,rapidLocks=false,singleA=false,frameDriven=false;
  const pulses=new Map(),rateKey='nes-dream:rapid-lock-rates';
  let rates={a:6,b:6};try{const saved=JSON.parse(localStorage.getItem(rateKey)||'null');for(const k of ['a','b'])if(Number.isInteger(saved?.[k])&&saved[k]>=1&&saved[k]<=120)rates[k]=saved[k];}catch{}
  function settings(next){releaseAll();for(const k of ['a','b'])if(Number.isInteger(next?.[k])&&next[k]>=1&&next[k]<=120)rates[k]=next[k];try{localStorage.setItem(rateKey,JSON.stringify(rates));}catch{}return{...rates};}
@@ -10,7 +10,7 @@
  const codes=b=>(b.dataset.codes||b.dataset.code).split(',').map(Number),held=new Set();
  function sync(){
   for(const [code,pulse]of pulses)if(!rapidLocks||!locked.has(code)){clearInterval(pulse.timer);pulses.delete(code);}
-  if(rapidLocks)for(const code of locked)if(!pulses.has(code)){const pulse={down:true,timer:null};pulse.timer=setInterval(()=>{if(window.EJS_emulator?.paused){releaseAll();return;}pulse.down=!pulse.down;sync();},500/rates[code===8?'a':'b']);pulses.set(code,pulse);}
+  if(rapidLocks)for(const code of locked)if(!pulses.has(code)){const pulse={down:true,timer:null,elapsed:0};if(!frameDriven)pulse.timer=setInterval(()=>{if(window.EJS_emulator?.paused){releaseAll();return;}pulse.down=!pulse.down;sync();},500/rates[code===8?'a':'b']);pulses.set(code,pulse);}
   const next=new Set(locked),manual=new Set();for(const b of active.values())for(const code of codes(b)){next.add(code);manual.add(code);}for(const values of padPointers.values())for(const code of values){next.add(code);manual.add(code);}
   const output=new Set(next);for(const [code,pulse]of pulses)if(!pulse.down&&!manual.has(code))output.delete(code);
   for(const code of held)if(!output.has(code))input(code,0);for(const code of output)if(!held.has(code))input(code,1);held.clear();for(const code of output)held.add(code);
@@ -20,7 +20,10 @@
  function release(id){if(!active.has(id)&&!padPointers.has(id))return;padPointers.delete(id);clearTimeout(timers.get(id));timers.delete(id);active.delete(id);pressedAt.delete(id);sync();}
  function releaseAll(){locked.clear();for(const id of new Set([...active.keys(),...padPointers.keys()]))release(id);sync();}
  for(const b of lockButtons())b.addEventListener('click',()=>{if(!window.EJS_emulator?.started)return;const code=Number(b.dataset.lockCode);if(locked.has(code))locked.delete(code);else locked.add(code);sync();});
- window.DreamTouch={start(options={}){tapActions=options.tapActions===true;rapidLocks=options.rapidLocks!==false;singleA=options.singleA===true;document.body.classList.toggle('rapid-locks',rapidLocks);sync();if(!(navigator.maxTouchPoints>0||innerWidth<650))return;document.body.classList.add('touch-ready');document.body.style.setProperty('--game-aspect',String(window.EJS_emulator?.gameManager?.getVideoDimensions('aspect')||4/3));window.EJS_emulator?.handleResize?.();},resize(){document.body.style.setProperty('--game-aspect',String(window.EJS_emulator?.gameManager?.getVideoDimensions('aspect')||4/3));window.EJS_emulator?.handleResize?.();},releaseAll,settings,getSettings:()=>({...rates})};
+ // The software core clocks locks after each emulated frame. Every press and
+ // release is then sampled by the game, including when browser timers lag.
+ function clockFrame(duration=1000/60){if(!frameDriven||!rapidLocks)return;if(window.EJS_emulator?.paused){releaseAll();return;}let changed=false;for(const [code,pulse]of pulses){const half=Math.max(duration,500/rates[code===8?'a':'b']);pulse.elapsed+=duration;if(pulse.elapsed+1e-7>=half){pulse.elapsed=Math.max(0,pulse.elapsed-half);pulse.down=!pulse.down;changed=true;}}if(changed)sync();}
+ window.DreamTouch={start(options={}){tapActions=options.tapActions===true;rapidLocks=options.rapidLocks!==false;singleA=options.singleA===true;frameDriven=options.frameDriven===true;document.body.classList.toggle('rapid-locks',rapidLocks);sync();if(!(navigator.maxTouchPoints>0||innerWidth<650))return;document.body.classList.add('touch-ready');document.body.style.setProperty('--game-aspect',String(window.EJS_emulator?.gameManager?.getVideoDimensions('aspect')||4/3));window.EJS_emulator?.handleResize?.();},clockFrame,resize(){document.body.style.setProperty('--game-aspect',String(window.EJS_emulator?.gameManager?.getVideoDimensions('aspect')||4/3));window.EJS_emulator?.handleResize?.();},releaseAll,settings,getSettings:()=>({...rates})};
  for(const b of buttons()){
  let lastPointer=-Infinity;
  b.addEventListener("click",()=>{if(performance.now()-lastPointer<500||!window.EJS_emulator?.started)return;const id="click-"+codes(b).join("-");release(id);active.set(id,b);sync();timers.set(id,setTimeout(()=>release(id),120));});

@@ -153,7 +153,7 @@
    engine=new (game.id===window.DBZSourceEnglish?.ROM||game.id===window.DreamCards?.ROM||game.id===window.DreamLargeBattle?.ROM?window.DBZSourceEnglish.EnglishPlayer:game.id===window.DBZEnglish?.ROM?window.DBZEnglish.EnglishPlayer:game.id===window.CT2English?.ROM?window.CT2English.EnglishPlayer:window.DreamArtwork)({gameId:game.id,overlay:document.getElementById("art-layer"),canvas:null,onDisplay:state=>send("art-state",state),onStatus:text=>{send("status",{text});const el=document.getElementById("status");if(el)el.textContent=text;}});engine.enabled=d.art!==false;window.dreamArtwork=engine;
 
    await engine.prepare();
-   const ordinaryCore=await import('/standard-player.js?v=115');
+   const ordinaryCore=await import('/standard-player.js?v=117');
    const mapper=(romBytes[6]>>4)|(romBytes[7]&240);
    if(!engine.rules.length&&!specialGame&&ordinaryCore.supportedSoftwareMapper(mapper)&&new URLSearchParams(location.search).get('video')!=='legacy'){
     engine=null;window.dreamArtwork=null;const {startStandardPlayer}=ordinaryCore;
