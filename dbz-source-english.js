@@ -91,7 +91,7 @@ class EnglishPlayer extends global.CT2English.EnglishPlayer {
  present(pixels){
   const now=performance.now(),limited=this.battleThrottle?.()&&this.fightFps!==0&&pixels[0]===0&&pixels[1]===0&&pixels[2]===0;
   if(limited&&now<(this.nextFightPresentation||0))return;
-  this.nextFightPresentation=limited?Math.max(now,(this.nextFightPresentation||now)+1000/(this.fightFps||10)):now;super.present(pixels);if((this.gameId===global.DreamCards?.ROM||this.gameId===global.DreamLargeBattle?.ROM)&&this.overlay.style.display!=='none')global.DreamCards.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.gameId===global.DreamLargeBattle?.ROM&&this.overlay.style.display!=='none')global.DreamLargeBattle.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.overlay.style.display!=='none')global.DreamScouter?.draw(this.out,this.overlay.width,this.overlay.height);}
+  this.nextFightPresentation=limited?Math.max(now,(this.nextFightPresentation||now)+1000/(this.fightFps||60)):now;super.present(pixels);if((this.gameId===global.DreamCards?.ROM||this.gameId===global.DreamLargeBattle?.ROM)&&this.overlay.style.display!=='none')global.DreamCards.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.gameId===global.DreamLargeBattle?.ROM&&this.overlay.style.display!=='none')global.DreamLargeBattle.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.overlay.style.display!=='none')global.DreamScouter?.draw(this.out,this.overlay.width,this.overlay.height);}
 }
 global.DBZSourceEnglish={ROM,EnglishText,EnglishPlayer};
 })(typeof window==='undefined'?globalThis:window);
