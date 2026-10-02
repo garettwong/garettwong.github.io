@@ -181,7 +181,7 @@
     await startPowerPlayer(game,(type,extra)=>{if(type==="started"){started=true;autosaveTimer=window.setInterval(()=>snapshot("auto"),60000);}send(type,extra);});if(d.diagnostics)setInterval(()=>send('diagnostics',{value:{sampledAt:performance.now(),coreFrame:window.EJS_emulator.gameManager.getFrameNum(),audio:window.EJS_emulator.gameManager.getAudioInfo()}}),1000);return;
    }
 
-   engine=new (game.id===window.DBZSourceEnglish?.ROM||game.id===window.DreamCards?.ROM||game.id===window.DreamLargeBattle?.ROM?window.DBZSourceEnglish.EnglishPlayer:game.id===window.DBZEnglish?.ROM?window.DBZEnglish.EnglishPlayer:game.id===window.CT2English?.ROM?window.CT2English.EnglishPlayer:window.DreamArtwork)({gameId:game.id,overlay:document.getElementById("art-layer"),canvas:null,onDisplay:state=>send("art-state",state),onStatus:text=>{send("status",{text});const el=document.getElementById("status");if(el)el.textContent=text;}});engine.enabled=d.art!==false;window.dreamArtwork=engine;
+   engine=new (game.id===window.DBZSourceEnglish?.ROM||game.id===window.DreamCards?.ROM||game.id===window.DreamLargeBattle?.ROM?window.DBZSourceEnglish.EnglishPlayer:game.id===window.DBZEnglish?.ROM?window.DBZEnglish.EnglishPlayer:game.id===window.CT2English?.ROM?window.CT2English.EnglishPlayer:window.DreamArtwork)({gameId:game.id,turboPerformance:!!specialGame?.turbo,overlay:document.getElementById("art-layer"),canvas:null,onDisplay:state=>send("art-state",state),onStatus:text=>{send("status",{text});const el=document.getElementById("status");if(el)el.textContent=text;}});engine.enabled=d.art!==false;window.dreamArtwork=engine;
 
    await engine.prepare();
 
