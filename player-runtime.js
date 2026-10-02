@@ -174,6 +174,7 @@
    if(game.id===window.DreamEnemies?.ROM)window.DreamEnemies.prepareRom(romBytes);
    if(window.DreamNailFix?.ROMS.includes(game.id))window.DreamNailFix.prepareRom(romBytes);
    if(window.DreamTrainingFix?.ROMS.includes(game.id))window.DreamTrainingFix.prepareRom(romBytes);
+   if(game.id===window.DreamTrainingWin?.ROM)window.DreamTrainingWin.prepareRom(romBytes);
    romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 
