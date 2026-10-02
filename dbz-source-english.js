@@ -88,7 +88,10 @@ class EnglishText {
 class EnglishPlayer extends global.CT2English.EnglishPlayer {
  constructor(options){super(options);this.rules=[{id:'original-source-english'}];}
  async prepare(){const response=await fetch('/dbz-source-font.json?v=104');if(!response.ok)throw Error('English font failed to load.');this.text=new EnglishText(await response.json());this.text.cacheEnabled=!!this.turboPerformance;this.onStatus?.('Original-source English ready');}
- present(pixels){super.present(pixels);if((this.gameId===global.DreamCards?.ROM||this.gameId===global.DreamLargeBattle?.ROM)&&this.overlay.style.display!=='none')global.DreamCards.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.gameId===global.DreamLargeBattle?.ROM&&this.overlay.style.display!=='none')global.DreamLargeBattle.draw(this.out,pixels,this.overlay.width,this.overlay.height);}
+ present(pixels){
+  const now=performance.now(),limited=this.battleThrottle?.()&&this.fightFps!==0&&pixels[0]===0&&pixels[1]===0&&pixels[2]===0;
+  if(limited&&now<(this.nextFightPresentation||0))return;
+  this.nextFightPresentation=limited?Math.max(now,(this.nextFightPresentation||now)+1000/(this.fightFps||45)):now;super.present(pixels);if((this.gameId===global.DreamCards?.ROM||this.gameId===global.DreamLargeBattle?.ROM)&&this.overlay.style.display!=='none')global.DreamCards.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.gameId===global.DreamLargeBattle?.ROM&&this.overlay.style.display!=='none')global.DreamLargeBattle.draw(this.out,pixels,this.overlay.width,this.overlay.height);if(this.overlay.style.display!=='none')global.DreamScouter?.draw(this.out,this.overlay.width,this.overlay.height);}
 }
 global.DBZSourceEnglish={ROM,EnglishText,EnglishPlayer};
 })(typeof window==='undefined'?globalThis:window);

@@ -17,27 +17,39 @@
  const branch=(name,moves)=>{title.textContent=characterLabel(name)+(english?' · Super skills':' · 必殺技');back.hidden=false;body.replaceChildren();for(const id of moves){const el=button(moveLabel(id)+(id===33?(english?' (swap bodies)':'（交換雙方身體）'):''),()=>select(id));el.dataset.skill=String(id);body.append(el);}body.scrollTop=0;};
  const select=async id=>{
   if(busy||!saved||!Number.isInteger(id)||id<0||id>=names.length)return;
-  busy=true;
+  busy=true;let endConfirmation=null,rollback=null;
   try{
    const current=inspect();if(!eligible(current.ram)||current.ram[0x9a]!==slot)throw Error('The battle has moved on. Open All Skills again.');
-   const gm=api.gm();if(typeof gm.simulateInput!=='function')throw Error('Native confirmation input is unavailable.');
+   rollback=current.state;const gm=api.gm();if(typeof gm.simulateInput!=='function')throw Error('Native confirmation input is unavailable.');
    // Run the native command first: it restores the portrait CHR banks and
    // target UI. A RAM phase jump cannot perform that graphics setup.
-   api.release();api.resume();let phase=current.ram[0x30],pressed=true,pulses=1;
+   api.release();endConfirmation=api.beginConfirmation?.();api.resume();let pressed=true;
    gm.simulateInput(0,8,1);
    const deadline=performance.now()+2000;let pulseAt=performance.now(),releasedAt=0,confirmed=false;
    while(performance.now()<deadline){
     await new Promise(resolve=>setTimeout(resolve,8));const live=inspect(),next=live.ram[0x30];
     if(live.ram[0x2e]!==1||live.ram[0x9a]!==slot)throw Error('The battle changed during confirmation.');
-    if(next===8){gm.simulateInput(0,8,0);api.pause();confirmed=true;break;}
+    if(next===8){
+     gm.simulateInput(0,8,0);
+     // Clear the native input edge before saving the targeting screen. A held
+     // confirmation in the saved core can otherwise reopen/advance its menu.
+     const frame=gm.getFrameNum();const until=performance.now()+250;
+     while(gm.getFrameNum()-frame<2&&performance.now()<until)await new Promise(resolve=>setTimeout(resolve,8));
+     api.pause();if(inspect().ram[0x30]!==8)throw Error('Target selection moved on. Please try All Skills again.');
+     confirmed=true;break;
+    }
     if(pressed&&performance.now()-pulseAt>=30){gm.simulateInput(0,8,0);pressed=false;releasedAt=performance.now();}
-    if(!pressed&&phase===6&&next===7&&pulses===1&&performance.now()-releasedAt>=40){phase=7;pulses++;gm.simulateInput(0,8,1);pressed=true;pulseAt=performance.now();}
+    if(!pressed&&[6,7].includes(next)&&performance.now()-releasedAt>=75){gm.simulateInput(0,8,1);pressed=true;pulseAt=performance.now();}
    }
    gm.simulateInput(0,8,0);if(!confirmed){api.pause();await Promise.resolve(gm.loadState(current.state));throw Error('The native command could not be confirmed. Please choose a battle card and try again.');}
    const native=inspect();native.ram[0x210+slot]=0xc0+id;native.ram[0x6d]|=16;
-   await Promise.resolve(gm.loadState(native.state));api.resetFrame();
-   close();api.status(english?`${names[id]} selected. Choose a target, then press A.`:`已選擇「${hkMoves[id]}」。請選擇目標，然後按 A。`);
-  }catch(error){api.gm()?.simulateInput?.(0,8,0);api.status(error.message);close();}finally{busy=false;}
+   await Promise.resolve(gm.loadState(native.state));api.resume();
+   // EmulatorJS queues state loads; verify the native result before restoring turbo.
+   let applied=false;const loadedBy=performance.now()+500;
+   while(performance.now()<loadedBy){await new Promise(resolve=>setTimeout(resolve,16));const check=inspect().ram;if(check[0x30]===8&&check[0x210+slot]===0xc0+id){applied=true;break;}}
+   api.pause();if(!applied)throw Error('The chosen skill could not be applied. Please try again.');api.resetFrame();rollback=null;
+   endConfirmation?.();endConfirmation=null;close();api.status(english?`${names[id]} selected. Choose a target, then press A.`:`已選擇「${hkMoves[id]}」。請選擇目標，然後按 A。`);
+  }catch(error){api.pause();api.gm()?.simulateInput?.(0,8,0);if(rollback)await Promise.resolve(api.gm().loadState(rollback));endConfirmation?.();endConfirmation=null;api.gm()?.simulateInput?.(0,8,0);api.status(error.message);close();}finally{endConfirmation?.();busy=false;}
  };
  const open=()=>{
   if(!api||!dialog.hidden)return;
