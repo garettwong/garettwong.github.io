@@ -15,7 +15,7 @@
  document.addEventListener('touchstart',unlockMobileAudio,{capture:true,passive:true});
  document.addEventListener('click',unlockMobileAudio,true);
  const specialGames={
- [window.DreamTurbo?.ROM]:{name:"Dragon Ball Z II Turbo 64x / 128x",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true,turbo:true},
+ [window.DreamTurbo?.ROM]:{name:"Dragon Ball Z II Turbo up to 512x",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true,turbo:true},
  [window.DreamHundred?.ROM]:{name:"Dragon Ball Z II 80–100 Enemies",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true},
  "5300803a3f7481ccbe31e28959bfa1ae0831492581c4d79131d9b9d95d334414":{name:"Dragon Ball Z II Choose Enemies",trick:"dbz-card-editor",english:true,enemyChoice:true},
  "e16062d3cabe3c7c84be496c401ee4b5d0e333129be2fda3d70c9898dd2595b8":{name:"Dragon Ball Z II English Card Editor",trick:"dbz-card-editor",english:true},
@@ -146,7 +146,7 @@
 
   if(d.type==="load-state"){window.DreamEnemies?.reset();window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(specialGame?.enemyChoice?window.DreamTrainingFix.upgradeState(window.DreamNailFix.upgradeState(window.DreamEnemies.upgradeState(d.bytes))):specialGame?.name==="Dragon Ball Z II English Card Editor"?window.DreamTrainingFix.upgradeState(window.DreamNailFix.upgradeState(d.bytes)):new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
-  if(d.type==="speed"){try{await applySpeed([1,2,3,4,5,6,7,8].includes(d.value)||([16,32].includes(d.value)&&specialGame?.hundred)||([64,128].includes(d.value)&&specialGame?.turbo)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
+  if(d.type==="speed"){try{await applySpeed([1,2,3,4,5,6,7,8].includes(d.value)||([16,32].includes(d.value)&&specialGame?.hundred)||([64,128,256,512].includes(d.value)&&specialGame?.turbo)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
   if(d.type==="retry-art"){if(engine){engine.metrics.recoveries=0;await engine.retry();}return;}
 
