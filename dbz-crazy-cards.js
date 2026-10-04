@@ -1,6 +1,8 @@
 /* Separate Crazy Cards editor, derived from verified Player148. Native card records drive graphics and combat. */
-(()=>{'use strict';
-const ROM=window.DreamCrazy.ROM, MAX_ATTACK=window.DreamCrazy.MAX_ATTACK, MAX_DEFENSE=window.DreamCrazy.MAX_DEFENSE;
+(()=>{
+function factory(config,globalName){'use strict';
+const ROM=config.ROM, MAX_ATTACK=config.MAX_ATTACK, MAX_DEFENSE=config.MAX_DEFENSE;
+const expanded=MAX_ATTACK>15||MAX_DEFENSE>15;
 const KEY='nes-dream:dbz-crazy-cards:'+ROM, BASE=0x3f5;
 const attrs={1:'必',2:'界',3:'惑',4:'亀',6:'魔'};
 const empty=()=>Array.from({length:5},()=>({attack:null,defense:null,attribute:null}));
@@ -31,8 +33,11 @@ function queueState(gm,state){
  gm.FS.writeFile(path,state);try{gm.functions.loadState(name,0);}catch(e){gm.FS.unlink(path);throw e;}
  return()=>{try{gm.FS.unlink(path);}catch{}};
 }
-const attackTiles=window.DreamCrazy.TILES,defenseTiles=window.DreamCrazy.TILES;
+const attackTiles=config.TILES,defenseTiles=config.TILES;
 const symbolTiles=[[],[236,237,238,239],[240,241,242,243],[244,245,246,247],[248,249,250,251],[252,253,254,255],[232,233,234,235]];
+// EmulatorJS serialises 8 KiB battery RAM as a tagged chunk. This matches
+// DreamCrazyRoute so state edits stay valid across the same save format.
+function chunk(state,tag,size){for(let i=0;i+size+9<=state.length;i++)if(state[i]===tag.charCodeAt(0)&&state[i+1]===tag.charCodeAt(1)&&state[i+2]===tag.charCodeAt(2)&&state[i+3]===0&&state[i+4]===((size+1)&255)&&state[i+5]===((size+1)>>8)&&state[i+6]===0&&state[i+7]===0&&state[i+8]===0)return i+9;return-1;}
 function nametable(state){for(let i=0;i<state.length-2057;i++)if(state[i]===78&&state[i+1]===77&&state[i+2]===84&&state[i+3]===0&&state[i+4]===1&&state[i+5]===8&&state[i+6]===0&&state[i+7]===0&&state[i+8]===0)return i+9;return -1;}
 function redraw(state,ram,addresses){
  const at=nametable(state),checks=[];let changed=false;if(at<0)return{changed,checks};
@@ -68,18 +73,22 @@ function redraw(state,ram,addresses){
 }
 async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{...pending[i]})){
  const gm=api.gm(),{state,ram}=inspect();
+ const wrm=expanded?chunk(state,'WRM',8192):-1;
+ if(expanded&&wrm<0)throw Error('Expanded card storage is not ready.');
  if(restore)clearCheats();
  if(!cardScene(ram)){clearCheats();return{ready:false,verified:false};}
  const addresses=Array.from({length:5},(_,i)=>record(ram,i));
  // Hands are rebuilt one record at a time during replacements and transitions.
  // An unavailable slot must not disable the other four locks or lose its edit.
  if(addresses.every(a=>a===null)){clearCheats();return{ready:false,verified:false};}
- let changed=false;const codes=[],checks=[];
+ let changed=false;const codes=[],checks=[],stateChecks=[];
  for(let i=0;i<5;i++){
   const a=addresses[i],target=restore?lastNative[i]:targets[i];
   if(a===null)continue;
   for(const [field,offset,max]of [['attack',3,MAX_ATTACK],['defense',4,MAX_DEFENSE],['attribute',5,6]]){
    const n=valid(target[field],max);if(n===null)continue;
+   // Crazy64's hand records are full bytes. Only selected actor records are
+   // packed nibbles, and are clamped later in this function.
    if(!restore&&locked[i])codes.push(`${(a+offset).toString(16).toUpperCase().padStart(4,'0')}:${n.toString(16).toUpperCase().padStart(2,'0')}`);
    checks.push([a+offset,n]);
    if(ram[a+offset]===n)continue;
@@ -96,9 +105,27 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
   if((ram[actor]&0x80)||i>=5||addresses[i]===null||!valid(packed&15,MAX_ATTACK))continue;
   const target=restore?lastNative[i]:targets[i];
   const a=valid(target.attack,MAX_ATTACK),d=valid(target.defense,MAX_DEFENSE),m=valid(target.attribute,6);
-  const first=a===null?packed:(packed&0xf0)|a;
-  const second=((d??(ram[actor+14]>>4))<<4)|(m??(ram[actor+14]&15));
+  const nativeA=a===null?null:Math.min(a,15),nativeD=d===null?null:Math.min(d,15);
+  const first=nativeA===null?packed:(packed&0xf0)|nativeA;
+  const second=((nativeD??(ram[actor+14]>>4))<<4)|(m??(ram[actor+14]&15));
   for(const [at,n]of [[actor+13,first],[actor+14,second]]){checks.push([at,n]);if(ram[at]!==n){ram[at]=n;changed=true;}}
+  if(expanded&&(a!==null||d!==null||m!==null)){
+   // Party sidecar mirrors the native actor slot. The ROM's runtime moves
+   // this pair into its selected working record when battle state changes.
+   const party=wrm+0x1c80+(actor-0x200);
+   if(a!==null){stateChecks.push([party,a]);if(state[party]!==a){state[party]=a;changed=true;}}
+   if(d!==null){stateChecks.push([party+1,d]);if(state[party+1]!==d){state[party+1]=d;changed=true;}}
+   // There are two working records: $7e60/$7e80. Match a party-origin
+   // record by its native actor offset and keep both packed display bytes
+   // aligned with the clamped native rank and selected symbol.
+   const actorOffset=actor-0x200;
+   for(const [work,nativeBase,indexAt]of [[0x1e60,0x30e,0x32d],[0x1e80,0x32e,0x34d]]){
+    if(ram[indexAt]!==actorOffset||state[wrm+work+2]!==0)continue;
+    if(a!==null){stateChecks.push([wrm+work,a]);if(state[wrm+work]!==a){state[wrm+work]=a;changed=true;}}
+    if(d!==null){stateChecks.push([wrm+work+1,d]);if(state[wrm+work+1]!==d){state[wrm+work+1]=d;changed=true;}}
+    for(const [at,n]of [[nativeBase+13,first],[nativeBase+14,second]]){checks.push([at,n]);if(ram[at]!==n){ram[at]=n;changed=true;}}
+   }
+  }
  }
  // Update the NES nametable itself. No canvas labels stand in for game cards.
  const graphics=redraw(state,ram,addresses);changed=changed||graphics.changed;
@@ -118,10 +145,10 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  let verified=false;const deadline=Date.now()+1800;
  do{
   if(changed)await sleep(20);
-  const live=inspect();verified=checks.every(([at,n])=>live.ram[at]===n)&&graphics.checks.every(([at,n])=>live.state[at]===n);
+  const live=inspect();verified=checks.every(([at,n])=>live.ram[at]===n)&&stateChecks.every(([at,n])=>live.state[at]===n)&&graphics.checks.every(([at,n])=>live.state[at]===n);
   if(verified)break;
  }while(Date.now()<deadline);
- lastVerification={verified,ram:checks.filter(([at,n])=>inspect().ram[at]!==n).map(([at,n])=>({at,want:n,got:inspect().ram[at]})),graphics:graphics.checks.filter(([at,n])=>inspect().state[at]!==n).slice(0,12).map(([at,n])=>({at,want:n,got:inspect().state[at]}))};
+ const verifiedLive=inspect();lastVerification={verified,ram:checks.filter(([at,n])=>verifiedLive.ram[at]!==n).map(([at,n])=>({at,want:n,got:verifiedLive.ram[at]})),sidecar:stateChecks.filter(([at,n])=>verifiedLive.state[at]!==n).map(([at,n])=>({at,want:n,got:verifiedLive.state[at]})),graphics:graphics.checks.filter(([at,n])=>verifiedLive.state[at]!==n).slice(0,12).map(([at,n])=>({at,want:n,got:verifiedLive.state[at]}))};
  if(!verified)throw Error('The game has not accepted this edit yet. Change the value again to retry.');
  return{ready:true,verified,applied:addresses.map(a=>a!==null)};
  }finally{cleanup();}
@@ -198,5 +225,8 @@ function start(options){
  setInterval(()=>{if(busy||!api.active()||api.isPaused?.()||!dialog.hidden||!locked.some(Boolean)&&!pending.some(v=>Object.values(v).some(Boolean)))return;void queueApply();},250);
 }
 function draw(){} // Card graphics now come from the NES framebuffer.
-window.DreamCrazyCards={ROM,start,open,prepareRom:bytes=>window.DreamCrazy.prepareCards(bytes),reset:()=>{if(api)clearCheats();lastSeen=empty();lastNative=empty();},draw,whenSettled,inspect:()=>({values:values.map(v=>({...v})),locked:locked.slice(),pending:pending.map(v=>({...v})),busy,active:!!api,lastVerification,gameCheats:cheatKey.split(',').filter(Boolean)})};
+window[globalName]={ROM,start,open,prepareRom:bytes=>(config.prepareCards||config.prepareRom)(bytes),reset:()=>{if(api)clearCheats();lastSeen=empty();lastNative=empty();},draw,whenSettled,inspect:()=>({values:values.map(v=>({...v})),locked:locked.slice(),pending:pending.map(v=>({...v})),busy,active:!!api,lastVerification,gameCheats:cheatKey.split(',').filter(Boolean)})};
+}
+window.DreamCrazyCardsFactory=factory;
+factory(window.DreamCrazy,'DreamCrazyCards');
 })();

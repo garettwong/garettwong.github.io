@@ -15,6 +15,7 @@
  document.addEventListener('touchstart',unlockMobileAudio,{capture:true,passive:true});
  document.addEventListener('click',unlockMobileAudio,true);
  const specialGames={
+ [window.DreamCrazy64?.ROM]:{name:"Dragon Ball Z II Crazy64",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true,turbo:true,crazy:true,crazy64:true},
  [window.DreamCrazy?.ROM]:{name:"Dragon Ball Z II Crazy Cards 1–15",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true,turbo:true,crazy:true},
  [window.DreamTurbo?.ROM]:{name:"Dragon Ball Z II Turbo up to 1024x",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true,turbo:true},
  [window.DreamHundred?.ROM]:{name:"Dragon Ball Z II 80–100 Enemies",trick:"dbz-card-editor",english:true,enemyChoice:true,hundred:true},
@@ -163,6 +164,7 @@
   try{
 
    const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");const romBytes=new Uint8Array(game.bytes).slice();
+   if(game.id===window.DreamCrazy64?.ROM){window.DreamEnemies=window.DreamCrazy64;window.DreamCards=window.DreamCrazy64Cards;window.DreamLargeBattle.ROM=game.id;}
    if(game.id===window.DreamCrazy?.ROM){window.DreamEnemies=window.DreamCrazy;window.DreamCards=window.DreamCrazyCards;window.DreamLargeBattle.ROM=game.id;}
    if(game.id===window.DreamTurbo?.ROM){window.DreamEnemies=window.DreamTurbo;window.DreamLargeBattle.ROM=game.id;}
    if(game.id===window.DreamHundred?.ROM){window.DreamEnemies=window.DreamHundred;window.DreamLargeBattle.ROM=game.id;}
