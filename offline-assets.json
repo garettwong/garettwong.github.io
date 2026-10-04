@@ -1,5 +1,5 @@
 {
-  "version": "c514ae8157d56ab6",
+  "version": "327b93214bc58a5b",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
@@ -27,6 +27,7 @@
     "/assets/index-C7giNvwW.js",
     "/assets/index-CE2RJIs-.js",
     "/assets/index-CIK2gGEt.js",
+    "/assets/index-CJ2w8rbp.js",
     "/assets/index-CJ_cWSn2.js",
     "/assets/index-CKaGYsmn.js",
     "/assets/index-CMVxVKKf.js",
@@ -72,6 +73,7 @@
     "/dbz-english-font.json",
     "/dbz-english.js",
     "/dbz-explosive-wave.js",
+    "/dbz-fast-combat.js",
     "/dbz-hundred.js",
     "/dbz-large-battle.js",
     "/dbz-nail-fix.js",
@@ -215,6 +217,7 @@
     "/little-finds/scenes-v1.png",
     "/little-finds/scenes.js",
     "/manifest.webmanifest",
+    "/offline-worker.js",
     "/pack-draw.js",
     "/pack-effects.js",
     "/pack-engine.js",
