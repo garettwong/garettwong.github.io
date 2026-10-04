@@ -1,4 +1,4 @@
-/* DBZ2 All Skills v8: character folders, native targeting, guarded save-state writes. */
+/* DBZ2 All Skills v9: character folders, native targeting, guarded save-state writes. */
 (()=>{
  const names=['Energy Wave','Demon Flash','Dodon Ray','Mouth Energy Wave','Energy Barrage','Super Energy Wave','Explosive Demon Flash','Masenko','Kamehameha','Solar Flare','Destructo Disc','Spirit Ball','Crusher Ball','Kaio-ken','Kaio-ken Kamehameha','Kaio-ken ×3','Kaio-ken ×3 Kamehameha','Kaio-ken ×10','Kaio-ken ×10 Kamehameha','Kaio-ken ×20 Kamehameha','Galick Gun','Speed Attack','Spirit Bomb','Super Spirit Bomb','Mouth Beam','Eraser Gun','Special Beam Cannon','Scatter Energy Wave','Tri-Beam','Four-Body Technique','Four-Body Tri-Beam','Psychic Power','Time Stop','Body Change','Explosive Wave'];
  const hkMoves=['氣功波','魔光炮','洞洞波','口部氣功波','連續氣功波','超級氣功波','爆裂魔光炮','魔閃光','龜波氣功','太陽拳','氣元斬','操氣彈','殛光球','界王拳','界王拳龜波氣功','三倍界王拳','三倍界王拳龜波氣功','十倍界王拳','十倍界王拳龜波氣功','二十倍界王拳龜波氣功','沖天炮','高速攻擊','元氣彈','超級元氣彈','口部光線','力高破壞炮','魔貫光殺炮','擴散氣功波','氣功炮','四身之拳','四身氣功炮','超能力','時間停止','身體交換','爆發波'];
@@ -31,10 +31,21 @@
   setBusy(true);notice.textContent=english?'Confirming your skill…':'正在確認招式…';let endConfirmation=null,rollback=null;const cleanups=[];
   try{
    const current=inspect();if(!eligible(current.ram)||current.ram[0x9a]!==slot)throw Error('The battle has moved on. Open All Skills again.');
-   rollback=current.state;const gm=api.gm();if(typeof gm.simulateInput!=='function')throw Error('Native confirmation input is unavailable.');
-   // Run the native command first: it restores the portrait CHR banks and
-   // target UI. A RAM phase jump cannot perform that graphics setup.
-   api.release();endConfirmation=api.beginConfirmation?.();api.resume();let pressed=true;
+   rollback=current.state.slice();const gm=api.gm();if(typeof gm.simulateInput!=='function')throw Error('Native confirmation input is unavailable.');
+   // Use a single-target native command as the graphics/setup handshake.
+   // The cursor can still point at Defend or a group move from an earlier
+   // selection; those legitimately skip phase8 and advance the fighter.
+   // Normalize only the cursor, then let the original game set up its CHR
+   // banks and target UI. Never jump the native phase to manufacture it.
+   api.release();endConfirmation=api.beginConfirmation?.();
+   gm.simulateInput(0,8,0);
+   if(current.ram[0x6f]!==0||current.ram[0x71]!==0){
+    current.ram[0x6f]=0;current.ram[0x71]=0;
+    const frame=gm.getFrameNum();cleanups.push(queueState(gm,current.state));api.resume();
+    const ready=await waitUntil(()=>{const r=inspect().ram;return gm.getFrameNum()>frame&&eligible(r)&&r[0x9a]===slot&&r[0x6f]===0&&r[0x71]===0;});
+    api.pause();if(!ready)throw Error('The attack menu is not ready. Tap the skill again to retry.');
+   }
+   api.resume();let pressed=true;
    gm.simulateInput(0,8,1);
    const deadline=performance.now()+10000;let pulseFrame=gm.getFrameNum(),confirmed=false;
    while(performance.now()<deadline){
