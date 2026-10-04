@@ -117,8 +117,15 @@
  };
 
  const screenShot=async()=>{try{if(!started)throw new Error('Start the game first.');const gm=window.EJS_emulator?.gameManager;if(!gm?.screenshot)throw new Error('Screenshot is not ready.');let raw;if(engine&&window.DreamFrameSource){const captured=await new Promise((resolve,reject)=>{const timeout=setTimeout(()=>{window.DreamFrameSource.captureCanvasOnce=null;reject(new Error("Screenshot timed out. Resume the game and try P again."));},2000);window.DreamFrameSource.captureCanvasOnce=value=>{clearTimeout(timeout);resolve(value);};});const canvas=document.createElement("canvas");canvas.width=captured.width;canvas.height=captured.height;const context=canvas.getContext("2d");context.putImageData(new ImageData(captured.pixels,captured.width,captured.height),0,0);const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));raw=new Uint8Array(await blob.arrayBuffer());}else raw=await gm.screenshot();let bytes=raw instanceof Uint8Array?raw:new Uint8Array(raw);if(engine?.overlay&&getComputedStyle(engine.overlay).display!=="none"){const bitmap=await createImageBitmap(new Blob([bytes],{type:"image/png"}));const out=document.createElement("canvas");out.width=Math.max(bitmap.width,engine.overlay.width);out.height=Math.max(bitmap.height,engine.overlay.height);const ctx=out.getContext("2d");ctx.drawImage(bitmap,0,0,out.width,out.height);ctx.drawImage(engine.overlay,0,0,out.width,out.height);bitmap.close();const blob=await new Promise(resolve=>out.toBlob(resolve,"image/png"));bytes=new Uint8Array(await blob.arrayBuffer());}const buffer=bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength);send("screenshot",{bytes:buffer},[buffer]);}catch(error){send("operation-error",{text:error.message||"Could not take a screenshot."});}};
- for(const type of ['selectstart','contextmenu','dragstart'])addEventListener(type,event=>event.preventDefault());
- addEventListener('selectionchange',()=>{const selection=window.getSelection?.();if(selection?.rangeCount)selection.removeAllRanges();});
+ const editable=target=>!!target?.closest?.('input,textarea,[contenteditable="true"]');
+ // Game-wide selection and core keyboard handlers must not own form input.
+ for(const type of ['selectstart','contextmenu','dragstart'])addEventListener(type,event=>{if(!editable(event.target))event.preventDefault();});
+ addEventListener('selectionchange',()=>{if(editable(document.activeElement))return;const selection=window.getSelection?.();if(selection?.rangeCount)selection.removeAllRanges();});
+ for(const type of ['keydown','keyup','keypress'])addEventListener(type,event=>{
+  if(!event.target?.closest?.('#dbz-card-editor input')||event.key==='Escape')return;
+  event.stopImmediatePropagation();
+  if(type==='keydown'&&event.key==='Enter'){event.preventDefault();event.target.blur();}
+ },true);
  for(const button of document.querySelectorAll?.('[data-action]')||[])button.addEventListener('click',()=>{if(button.dataset.action==='screenshot')screenShot();else if(started)send('save-menu');});
  const stopAutosave=()=>{if(autosaveTimer){clearInterval(autosaveTimer);autosaveTimer=0;}};
 
@@ -168,6 +175,8 @@
    if(game.id===window.DreamCrazy?.ROM){window.DreamEnemies=window.DreamCrazy;window.DreamCards=window.DreamCrazyCards;window.DreamLargeBattle.ROM=game.id;}
    if(game.id===window.DreamTurbo?.ROM){window.DreamEnemies=window.DreamTurbo;window.DreamLargeBattle.ROM=game.id;}
    if(game.id===window.DreamHundred?.ROM){window.DreamEnemies=window.DreamHundred;window.DreamLargeBattle.ROM=game.id;}
+   const recoverNail=game.id===window.DreamCrazy64?.ROM||game.id===window.DreamCrazy?.ROM;
+   if(recoverNail){const prior=window.DreamEnemies;window.DreamEnemies={...prior,upgradeState:bytes=>window.DreamNailRecovery.upgradeState(bytes,b=>prior.upgradeState(b))};}
    // Restore enemy HP/BP/BE without changing library identity or existing saves.
    if(game.id==='6d21afe26889c64374f3e0d20cb77954fa20a2566cf4ece5ab49564baac862d0'){
     const offset=528+0x1f07e,old=[0x24,0x7b,0x70,0x05,0xad,0x40,0x03,0xf0,0xa9];
@@ -182,6 +191,7 @@
    if(game.id===window.DreamExplosiveWave?.ROM)window.DreamExplosiveWave.prepareRom(romBytes);
    if(window.DreamStoryFix?.ROMS.includes(game.id))window.DreamStoryFix.prepareRom(romBytes);
    if(game.id===window.DreamFastCombat?.ROM)window.DreamFastCombat.prepareRom(romBytes);
+   if(recoverNail)window.DreamNailRecovery.prepareRom(romBytes);
    romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);showSpecialMode();
 

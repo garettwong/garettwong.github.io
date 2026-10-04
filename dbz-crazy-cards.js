@@ -192,7 +192,7 @@ function row(label,key){
  const line=document.createElement('div');line.className='dbz-card-row dbz-card-numeric';
  const caption=document.createElement('label');caption.textContent=label;
  const out=document.createElement('input');out.id='crazy-card-'+key;caption.htmlFor=out.id;
- out.type='number';out.inputMode='numeric';out.min='1';out.max=String(max);out.step='1';out.autocomplete='off';
+ out.type='text';out.inputMode='numeric';out.pattern='[0-9]*';out.autocomplete='off';out.spellcheck=false;
  out.setAttribute('aria-label',label+' points');out.setAttribute('aria-describedby','crazy-card-range');
  const commit=()=>{
   const raw=out.value.trim(),n=Number(raw);
@@ -209,11 +209,15 @@ function row(label,key){
  };
  const down=btn('−',()=>step(-1)),up=btn('+',()=>step(1));
  down.setAttribute('aria-label','Decrease '+label.toLowerCase());up.setAttribute('aria-label','Increase '+label.toLowerCase());
- line.append(caption,down,out,up);return[line,out];
+ const set=n=>{draft[selected][key]=n;return edit();};
+ const min=btn('MIN',()=>set(1)),maximum=btn('MAX',()=>set(max));
+ min.setAttribute('aria-label','Minimum '+label.toLowerCase()+' (1)');maximum.setAttribute('aria-label','Maximum '+label.toLowerCase()+' ('+max+')');
+ min.className=maximum.className='dbz-card-bound';
+ line.append(caption,down,out,up,min,maximum);return[line,out];
 }
 function start(options){
  if(api)return;api=options;dialog=document.createElement('section');dialog.id='dbz-card-editor';dialog.hidden=true;dialog.setAttribute('role','dialog');dialog.setAttribute('aria-modal','true');dialog.setAttribute('aria-label','Edit card points');
- const title=document.createElement('h2');title.textContent='Crazy Cards';const intro=document.createElement('p');intro.id='crazy-card-range';intro.textContent='Attack: 1–'+MAX_ATTACK+'. Defence: 1–'+MAX_DEFENSE+'. Use − / + or type a whole number, then press Enter or leave the field.';
+ const title=document.createElement('h2');title.textContent='Crazy Cards';const intro=document.createElement('p');intro.id='crazy-card-range';intro.textContent='Attack: 1–'+MAX_ATTACK+'. Defence: 1–'+MAX_DEFENSE+'. Type a number, then tap outside the field. MIN / MAX sets the limit immediately.';
  tabs=document.createElement('div');tabs.className='dbz-card-tabs';for(let i=0;i<5;i++)tabs.append(btn('Card '+(i+1),()=>{selected=i;refresh();}));
  const [attLine,attOut]=row('Attack','attack'),[defLine,defOut]=row('Defence','defense');attack=attOut;defense=defOut;
  const attrLine=document.createElement('div');attrLine.className='dbz-card-attribute';const attrLabel=document.createElement('label');attrLabel.textContent='Middle symbol';attribute=document.createElement('select');attribute.setAttribute('aria-label','Middle symbol');const placeholder=document.createElement('option');placeholder.value='';placeholder.textContent='Choose symbol';placeholder.disabled=true;placeholder.hidden=true;attribute.append(placeholder);for(const [n,symbol]of Object.entries(attrs)){const o=document.createElement('option');o.value=n;o.textContent=symbol;attribute.append(o);}attribute.onchange=()=>{draft[selected].attribute=Number(attribute.value);return edit();};attrLine.append(attrLabel,attribute);
