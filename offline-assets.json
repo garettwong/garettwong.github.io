@@ -1,9 +1,10 @@
 {
-  "version": "7e52bb403b1d49ec",
+  "version": "e1518fcd17e14cd2",
   "assets": [
     "/apple-touch-icon.png",
     "/assets/index-8NzOwnsC.js",
     "/assets/index-8Xp1iCEU.js",
+    "/assets/index-8eqmlSEe.js",
     "/assets/index-B8hY1pNb.js",
     "/assets/index-BEVHXYkQ.js",
     "/assets/index-BG_MXVvc.js",
@@ -73,6 +74,7 @@
     "/dbz-card-editor.js",
     "/dbz-crazy-cards.css",
     "/dbz-crazy-cards.js",
+    "/dbz-crazy-route.js",
     "/dbz-crazy.js",
     "/dbz-enemy-choice.css",
     "/dbz-enemy-choice.js",

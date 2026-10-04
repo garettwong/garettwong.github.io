@@ -5,5 +5,7 @@ const patches=[{"offset": 30894, "old": [165, 13, 10, 10, 168, 185, 156, 183, 15
 function verify(bytes){
  for(const p of patches)if(!p.bytes.every((v,i)=>bytes[p.offset+i]===v))throw Error('Crazy Cards does not match this game revision.');
 }
-window.DreamCrazy={...window.DreamTurbo,...config,prepareRom:verify,prepareCards:verify};
+function prepareRom(bytes){verify(bytes);window.DreamCrazyRoute.prepareRom(bytes);}
+function upgradeState(input){return window.DreamCrazyRoute.upgradeState(window.DreamTurbo.upgradeState(input));}
+window.DreamCrazy={...window.DreamTurbo,...config,prepareRom,prepareCards:prepareRom,upgradeState};
 })();
