@@ -42,7 +42,7 @@ function nametable(state){for(let i=0;i<state.length-2057;i++)if(state[i]===78&&
 function redraw(state,ram,addresses){
  const at=nametable(state),checks=[];let changed=false;if(at<0)return{changed,checks};
  // Native 4x6 card borders, excluding its attack, defense and emblem tiles.
- const shell=[[2,190],[3,191],[34,0],[35,206],[64,207],[67,206],[96,207],[99,206],[128,207],[129,0],[160,208],[161,209]];
+ const shell=MAX_ATTACK>=100||MAX_DEFENSE>=100?[[3,191],[35,206],[64,207],[67,206],[96,207],[99,206],[128,207],[160,208]]:[[2,190],[3,191],[34,0],[35,206],[64,207],[67,206],[96,207],[99,206],[128,207],[129,0],[160,208],[161,209]];
  // Gravity keeps stale drawing addresses after shifting its hand left.
  // Match the complete visible five-card strip before redrawing this scene.
  const gravityStarts=new Map();
@@ -64,7 +64,15 @@ function redraw(state,ram,addresses){
   for(const plane of [0,1024]){
    const base=at+plane+(gravityStarts.has(plane)?gravityStarts.get(plane)+index*4:address);
    if(!shell.every(([off,tile])=>state[base+off]===tile))continue;
-   for(const [offsets,tiles]of [[[0,32,1,33],attackTiles[ram[a+3]]],[[130,162,131,163],defenseTiles[ram[a+4]]],[[65,66,97,98],symbolTiles[ram[a+5]]]]){
+   const attackValue=ram[a+3],defenseValue=ram[a+4];
+   const drawing=[
+    [attackValue>=100?[0,32,1,33,2,34]:[0,32,1,33],attackTiles[attackValue]],
+    [defenseValue>=100?[129,161,130,162,131,163]:[130,162,131,163],defenseTiles[defenseValue]],
+    [[65,66,97,98],symbolTiles[ram[a+5]]],
+   ];
+   if(MAX_ATTACK>=100&&attackValue<100)drawing.push([[2,34],[190,0]]);
+   if(MAX_DEFENSE>=100&&defenseValue<100)drawing.push([[129,161],[0,209]]);
+   for(const [offsets,tiles]of drawing){
     offsets.forEach((off,i)=>{checks.push([base+off,tiles[i]]);if(state[base+off]!==tiles[i]){state[base+off]=tiles[i];changed=true;}});
    }
   }

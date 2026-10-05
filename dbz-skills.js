@@ -26,6 +26,28 @@
   return ()=>{try{gm.FS.unlink(path);}catch{/* Already consumed or removed. */}};
  };
  const setBusy=value=>{busy=value;for(const el of dialog.querySelectorAll('button'))el.disabled=value;};
+ const confirmNative=async(current,id,gm,cleanups)=>{
+  const native=api.nativeConfirmation,actor=current.ram[0x200+slot];
+  current.ram[0x6f]=0;current.ram[0x71]=0;native.queue(current.state,slot,id);
+  const loadedFrame=gm.getFrameNum();cleanups.push(queueState(gm,current.state));api.resume();
+  const ready=await waitUntil(()=>{const check=inspect();return gm.getFrameNum()>loadedFrame&&eligible(check.ram)&&check.ram[0x9a]===slot&&native.pending(check.state,slot,id);});
+  api.pause();if(!ready)throw Error('The attack menu is not ready. Tap the skill again to retry.');
+  api.resume();gm.simulateInput(0,8,1);let pressed=true,pulseFrame=gm.getFrameNum(),confirmed=false;
+  const deadline=performance.now()+10000;
+  while(performance.now()<deadline){
+   await waitFrame();const live=inspect();
+   // One remaining enemy and group moves auto-confirm within a single frame.
+   // The original fighter's consumed command is the durable confirmation.
+   if(native.consumed(live.state,slot,id)&&live.ram[0x200+slot]===actor&&live.ram[0x210+slot]===192+id){confirmed=true;break;}
+   if(live.ram[0x2e]!==1||live.ram[0x9a]!==slot)throw Error('The battle changed before the skill was confirmed.');
+   if(gm.getFrameNum()-pulseFrame>=2){pressed=!pressed;gm.simulateInput(0,8,pressed?1:0);pulseFrame=gm.getFrameNum();}
+  }
+  gm.simulateInput(0,8,0);if(!confirmed)throw Error('The game did not confirm the command. Tap the skill again to retry.');
+  const releaseFrame=gm.getFrameNum();
+  if(!await waitUntil(()=>gm.getFrameNum()-releaseFrame>=2))throw Error('The game is not advancing. Tap the skill again to retry.');
+  api.pause();const final=inspect();
+  if(!native.consumed(final.state,slot,id)||final.ram[0x200+slot]!==actor||final.ram[0x210+slot]!==192+id)throw Error('The chosen skill could not be applied. Tap it again to retry.');
+ };
  const select=async id=>{
   if(busy||!saved||!Number.isInteger(id)||id<0||id>=names.length)return;
   setBusy(true);notice.textContent=english?'Confirming your skill…':'正在確認招式…';let endConfirmation=null,rollback=null;const cleanups=[];
@@ -39,6 +61,12 @@
    // banks and target UI. Never jump the native phase to manufacture it.
    api.release();endConfirmation=api.beginConfirmation?.();
    gm.simulateInput(0,8,0);
+   if(api.nativeConfirmation){
+    await confirmNative(current,id,gm,cleanups);api.resetFrame();rollback=null;
+    endConfirmation?.();endConfirmation=null;close();
+    api.status(english?`${names[id]} selected. ${inspect().ram[0x30]===8?'Choose a target, then press A.':'Continue choosing your battle commands.'}`:`已選擇「${hkMoves[id]}」。${inspect().ram[0x30]===8?'請選擇目標，然後按 A。':'請繼續選擇戰鬥指令。'}`);
+    return;
+   }
    if(current.ram[0x6f]!==0||current.ram[0x71]!==0){
     current.ram[0x6f]=0;current.ram[0x71]=0;
     const frame=gm.getFrameNum();cleanups.push(queueState(gm,current.state));api.resume();
