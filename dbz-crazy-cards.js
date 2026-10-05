@@ -9,17 +9,22 @@ const empty=()=>Array.from({length:5},()=>({attack:null,defense:null,attribute:n
 let values=empty(),locked=Array(5).fill(false),pending=empty(),versions=Array(5).fill(0);
 try{const found=JSON.parse(localStorage.getItem(KEY)||'null'),cards=Array.isArray(found)?found:found?.cards;if(Array.isArray(cards)&&cards.length===5){values=cards.map(v=>({attack:valid(v.attack,MAX_ATTACK),defense:valid(v.defense,MAX_DEFENSE),attribute:attrs[v.attribute]?v.attribute:null}));locked=cards.map((v,i)=>Array.isArray(found)?Object.values(values[i]).some(Boolean):v.locked===true);}}catch{}
 function valid(n,max){return Number.isInteger(n)&&n>=1&&n<=max?n:null;}
+// Limit Break 256 uses zero only as the on-RAM encoding of rank 256.  Keep
+// this conversion at every byte boundary so a natural blank record cannot be
+// mistaken for a card without also passing the existing header/emblem guard.
+function decodeRank(n,max){return n===0&&max===256?256:valid(n,max);}
+function encodeRank(n,max){return n===256&&max===256?0:n;}
 // Complete native hand contexts: combat, matching/comparison/gravity training,
 // walking, item cards, map card events and Piccolo duplicate training.
 // Story/title/status/ending screens retain preferences without touching game RAM.
 const HAND_MODES=new Set([1,3,4,5,6,8,9,12]);
 function cardScene(r){return HAND_MODES.has(r[0x2e]);}
-function record(r,i){const a=BASE+i*8;return r[a+1]>=0x20&&r[a+1]<=0x2b&&r[a+2]<=4&&valid(r[a+3],MAX_ATTACK)&&valid(r[a+4],MAX_DEFENSE)&&valid(r[a+5],6)?a:null;}
+function record(r,i){const a=BASE+i*8;return r[a+1]>=0x20&&r[a+1]<=0x2b&&r[a+2]<=4&&decodeRank(r[a+3],MAX_ATTACK)&&decodeRank(r[a+4],MAX_DEFENSE)&&valid(r[a+5],6)?a:null;}
 let api=null,dialog=null,tabs=null,attack=null,defense=null,attribute=null,lockButton=null,feedback=null,selected=0,draft=[],lastNative=empty(),lastSeen=empty(),focusBefore=null,busy=false,dirty=false,draining=null,cheatKey='',lastError='',lastVerification=null,resetting=null;
 function inspect(){const state=new Uint8Array(api.gm().getState()),at=api.ramStart(state);if(at<0)throw Error('Card data is not ready.');return{state,at,ram:state.subarray(at,at+2048)};}
 let lastPersisted='';
 function persist(){const text=JSON.stringify({version:2,cards:values.map((v,i)=>({...v,locked:locked[i]}))});if(text!==lastPersisted){localStorage.setItem(KEY,text);lastPersisted=text;}}
-function defaults(r,i){const a=r?record(r,i):null,v=locked[i]?values[i]:pending[i];return{attack:v.attack??(a!==null?valid(r[a+3],MAX_ATTACK):null)??5,defense:v.defense??(a!==null?valid(r[a+4],MAX_DEFENSE):null)??5,attribute:v.attribute??(a!==null?valid(r[a+5],6):null)??4};}
+function defaults(r,i){const a=r?record(r,i):null,v=locked[i]?values[i]:pending[i];return{attack:v.attack??(a!==null?decodeRank(r[a+3],MAX_ATTACK):null)??5,defense:v.defense??(a!==null?decodeRank(r[a+4],MAX_DEFENSE):null)??5,attribute:v.attribute??(a!==null?valid(r[a+5],6):null)??4};}
 function refresh(){for(const [i,button]of [...tabs.children].entries()){const v=draft[i];button.textContent=`${i+1}${locked[i]?' 🔒':''}\n${v.attack}/${v.defense}`;button.setAttribute('aria-label',`Card ${i+1}, attack ${v.attack}, defense ${v.defense}${locked[i]?', locked':''}`);button.setAttribute('aria-pressed',String(i===selected));}attack.value=String(draft[selected].attack);defense.value=String(draft[selected].defense);attack.setAttribute('aria-invalid','false');defense.setAttribute('aria-invalid','false');attribute.value=attrs[draft[selected].attribute]?String(draft[selected].attribute):'';lockButton.textContent=locked[selected]?`Card ${selected+1} locked · Unlock`:`Lock card ${selected+1}`;lockButton.setAttribute('aria-pressed',String(locked[selected]));}
 async function close(){if(!dialog||dialog.hidden)return;await whenSettled();dialog.hidden=true;api.resume();api.resetFrame();focusBefore?.focus();}
 function clearCheats(){if(cheatKey){api.gm().resetCheat();cheatKey='';}}
@@ -64,7 +69,7 @@ function redraw(state,ram,addresses){
   for(const plane of [0,1024]){
    const base=at+plane+(gravityStarts.has(plane)?gravityStarts.get(plane)+index*4:address);
    if(!shell.every(([off,tile])=>state[base+off]===tile))continue;
-   const attackValue=ram[a+3],defenseValue=ram[a+4];
+   const attackValue=decodeRank(ram[a+3],MAX_ATTACK),defenseValue=decodeRank(ram[a+4],MAX_DEFENSE);
    const drawing=[
     [attackValue>=100?[0,32,1,33,2,34]:[0,32,1,33],attackTiles[attackValue]],
     [defenseValue>=100?[129,161,130,162,131,163]:[130,162,131,163],defenseTiles[defenseValue]],
@@ -95,13 +100,14 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
   if(a===null)continue;
   for(const [field,offset,max]of [['attack',3,MAX_ATTACK],['defense',4,MAX_DEFENSE],['attribute',5,6]]){
    const n=valid(target[field],max);if(n===null)continue;
+   const raw=field==='attribute'?n:encodeRank(n,max);
    // Crazy64's hand records are full bytes. Only selected actor records are
    // packed nibbles, and are clamped later in this function.
-   if(!restore&&locked[i])codes.push(`${(a+offset).toString(16).toUpperCase().padStart(4,'0')}:${n.toString(16).toUpperCase().padStart(2,'0')}`);
-   checks.push([a+offset,n]);
-   if(ram[a+offset]===n)continue;
-   if(!restore&&lastSeen[i][field]!==ram[a+offset])lastNative[i][field]=ram[a+offset];
-   ram[a+offset]=n;changed=true;
+   if(!restore&&locked[i])codes.push(`${(a+offset).toString(16).toUpperCase().padStart(4,'0')}:${raw.toString(16).toUpperCase().padStart(2,'0')}`);
+   checks.push([a+offset,raw]);
+   if(ram[a+offset]===raw)continue;
+   if(!restore&&lastSeen[i][field]!==ram[a+offset])lastNative[i][field]=field==='attribute'?ram[a+offset]:decodeRank(ram[a+offset],max);
+   ram[a+offset]=raw;changed=true;
   }
   lastSeen[i]={attack:ram[a+3],defense:ram[a+4],attribute:ram[a+5]};
  }
@@ -110,7 +116,7 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  // cards already chosen earlier in the current battle turn.
  if([1,12].includes(ram[0x2e]))for(let actor=0x200;actor<(ram[0x2e]===12?0x212:0x2a2);actor+=18){
   const packed=ram[actor+13],i=packed>>4;
-  if((ram[actor]&0x80)||i>=5||addresses[i]===null||!valid(packed&15,MAX_ATTACK))continue;
+  if((ram[actor]&0x80)||i>=5||addresses[i]===null||!valid(packed&15,15))continue;
   const target=restore?lastNative[i]:targets[i];
   const a=valid(target.attack,MAX_ATTACK),d=valid(target.defense,MAX_DEFENSE),m=valid(target.attribute,6);
   const nativeA=a===null?null:Math.min(a,15),nativeD=d===null?null:Math.min(d,15);
@@ -121,16 +127,16 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
    // Party sidecar mirrors the native actor slot. The ROM's runtime moves
    // this pair into its selected working record when battle state changes.
    const party=wrm+0x1c80+(actor-0x200);
-   if(a!==null){stateChecks.push([party,a]);if(state[party]!==a){state[party]=a;changed=true;}}
-   if(d!==null){stateChecks.push([party+1,d]);if(state[party+1]!==d){state[party+1]=d;changed=true;}}
+   if(a!==null){const raw=encodeRank(a,MAX_ATTACK);stateChecks.push([party,raw]);if(state[party]!==raw){state[party]=raw;changed=true;}}
+   if(d!==null){const raw=encodeRank(d,MAX_DEFENSE);stateChecks.push([party+1,raw]);if(state[party+1]!==raw){state[party+1]=raw;changed=true;}}
    // There are two working records: $7e60/$7e80. Match a party-origin
    // record by its native actor offset and keep both packed display bytes
    // aligned with the clamped native rank and selected symbol.
    const actorOffset=actor-0x200;
    for(const [work,nativeBase,indexAt]of [[0x1e60,0x30e,0x32d],[0x1e80,0x32e,0x34d]]){
     if(ram[indexAt]!==actorOffset||state[wrm+work+2]!==0)continue;
-    if(a!==null){stateChecks.push([wrm+work,a]);if(state[wrm+work]!==a){state[wrm+work]=a;changed=true;}}
-    if(d!==null){stateChecks.push([wrm+work+1,d]);if(state[wrm+work+1]!==d){state[wrm+work+1]=d;changed=true;}}
+    if(a!==null){const raw=encodeRank(a,MAX_ATTACK);stateChecks.push([wrm+work,raw]);if(state[wrm+work]!==raw){state[wrm+work]=raw;changed=true;}}
+    if(d!==null){const raw=encodeRank(d,MAX_DEFENSE);stateChecks.push([wrm+work+1,raw]);if(state[wrm+work+1]!==raw){state[wrm+work+1]=raw;changed=true;}}
     for(const [at,n]of [[nativeBase+13,first],[nativeBase+14,second]]){checks.push([at,n]);if(ram[at]!==n){ram[at]=n;changed=true;}}
    }
   }
