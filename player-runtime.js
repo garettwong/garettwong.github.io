@@ -178,6 +178,7 @@
    const recoverNail=game.id===window.DreamCrazy64?.ROM||game.id===window.DreamCrazy?.ROM;
    if(recoverNail){const prior=window.DreamEnemies;window.DreamEnemies={...prior,upgradeState:bytes=>window.DreamNailRecovery.upgradeState(bytes,b=>prior.upgradeState(b))};}
    if(recoverNail){const prior=window.DreamEnemies;window.DreamEnemies={...prior,upgradeState:bytes=>window.DreamSkillConfirm.upgradeState(bytes,b=>prior.upgradeState(b))};}
+   if(recoverNail){const prior=window.DreamEnemies;window.DreamEnemies={...prior,upgradeState:bytes=>window.DreamBPGrowth.upgradeState(bytes,b=>prior.upgradeState(b))};}
    if(game.id===window.DreamCrazy64?.ROM){const prior=window.DreamEnemies;window.DreamEnemies={...prior,upgradeState:bytes=>window.DreamCrazy128.upgradeState(bytes,b=>prior.upgradeState(b))};}
    // Restore enemy HP/BP/BE without changing library identity or existing saves.
    if(game.id==='6d21afe26889c64374f3e0d20cb77954fa20a2566cf4ece5ab49564baac862d0'){
