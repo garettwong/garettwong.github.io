@@ -3,6 +3,7 @@
 (()=>{
 
  const origin=location.origin;
+ const ES28_ID="d2ebb440b82fef758eca7c4afbab73f188aecb2f012691d74c91842fddffcc5e",ES28_NAME="Enemy Strength · ES28",ES28_RELEASE=161;
 
  const send=(type,extra={},transfer)=>parent.postMessage({channel:"nes-dream",type,...extra},origin,transfer||[]);
 
@@ -153,7 +154,7 @@
   if(d.type==="screenshot"){await screenShot();return;}
   if(d.type==="snapshot"){if(d.reason==="manual"&&Number.isInteger(d.slot)&&d.slot>=1&&d.slot<=100)snapshot("manual",d.slot);return;}
 
-  if(d.type==="load-state"){window.DreamEnemies?.reset();window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamScouter?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(specialGame?.enemyStrength?window.DreamEnemyStrength.upgradeState(d.bytes):specialGame?.limit256?window.DreamLimit256.upgradeState(d.bytes):specialGame?.enemyChoice?window.DreamTrainingFix.upgradeState(window.DreamNailFix.upgradeState((specialGame.hundred?(specialGame.turbo?window.DreamFastCombat.upgradeState(d.bytes,x=>window.DreamStoryFix.upgradeState(x,b=>window.DreamEnemies.upgradeState(b))):window.DreamStoryFix.upgradeState(d.bytes,b=>window.DreamEnemies.upgradeState(b))):window.DreamEnemies.upgradeState(d.bytes)))):specialGame?.name==="Dragon Ball Z II English Card Editor"?window.DreamTrainingFix.upgradeState(window.DreamNailFix.upgradeState(d.bytes)):new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
+  if(d.type==="load-state"){if(!started||specialGame?.enemyStrength!==true){send("operation-error",{text:"Open Enemy Strength · ES28 before loading its saves."});return;}window.DreamEnemies?.reset();window.DreamInput?.reset();window.DreamLargeBattle?.reset();window.DreamSkills?.reset();window.DreamScouter?.reset();window.DreamCards?.reset();window.DreamTouch?.releaseAll();try{if(!(d.bytes instanceof ArrayBuffer)||d.bytes.byteLength<16||d.bytes.byteLength>16*1024*1024)throw new Error("Invalid");if(specialGame?.trick==="skill-direct"){specialPending=null;window.EJS_emulator?.gameManager?.resetCheat?.();}await Promise.resolve(window.EJS_emulator?.gameManager?.loadState(specialGame?.enemyStrength?window.DreamEnemyStrength.upgradeState(d.bytes):specialGame?.limit256?window.DreamLimit256.upgradeState(d.bytes):specialGame?.enemyChoice?window.DreamTrainingFix.upgradeState(window.DreamNailFix.upgradeState((specialGame.hundred?(specialGame.turbo?window.DreamFastCombat.upgradeState(d.bytes,x=>window.DreamStoryFix.upgradeState(x,b=>window.DreamEnemies.upgradeState(b))):window.DreamStoryFix.upgradeState(d.bytes,b=>window.DreamEnemies.upgradeState(b))):window.DreamEnemies.upgradeState(d.bytes)))):specialGame?.name==="Dragon Ball Z II English Card Editor"?window.DreamTrainingFix.upgradeState(window.DreamNailFix.upgradeState(d.bytes)):new Uint8Array(d.bytes)));engine?.resetFrame();specialMode=readSuperMode(window.EJS_emulator?.gameManager)??"unknown";showSpecialMode();send("loaded-state",{slot:d.slot});}catch{send("operation-error",{text:"Could not load that save state. It may not belong to this game."});}return;}
 
   if(d.type==="speed"){try{await applySpeed([1,2,3,4,5,6,7,8].includes(d.value)||([16,32].includes(d.value)&&specialGame?.hundred)||([64,128,256,512,1024].includes(d.value)&&specialGame?.turbo)?d.value:1);}catch{send("operation-error",{text:"Could not change speed before the game is ready."});}return;}
 
@@ -169,8 +170,18 @@
 
   try{
 
-   const {game}=d;if(!(game?.bytes instanceof ArrayBuffer)||typeof game.id!=="string"||!/^[a-f0-9]{64}$/.test(game.id))throw new Error("Invalid local game data.");const romBytes=new Uint8Array(game.bytes).slice();
-   if(game.id===window.DreamEnemyStrength?.ROM){const hash=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",romBytes)),v=>v.toString(16).padStart(2,"0")).join("");if(hash!==game.id)throw Error("This ROM does not match its game revision.");window.DreamEnemies=window.DreamEnemyStrength;window.DreamCards=window.DreamEnemyStrengthCards;window.DreamLargeBattle.ROM=game.id;}
+   const incoming=d.game;
+   if(incoming?.id!==ES28_ID)throw Error("This entry only opens Enemy Strength · ES28. Use the existing Library for other games. Your games and saves are unchanged.");
+   if(!(incoming.bytes instanceof ArrayBuffer))throw Error("Invalid local game data.");
+   const game={...incoming,name:ES28_NAME},romBytes=new Uint8Array(game.bytes).slice();
+   const strength=window.DreamEnemyStrength,cards=window.DreamEnemyStrengthCards;
+   if(typeof window.DreamEnemyStrengthEnemiesFactory!=="function"||strength?.ROM!==ES28_ID||cards?.ROM!==ES28_ID||!["prepareRom","upgradeState","start","reset","isOpen"].every(k=>typeof strength[k]==="function")||!["prepareRom","start","open","reset","whenSettled"].every(k=>typeof cards[k]==="function")||typeof window.DreamLargeBattle?.start!=="function"||typeof window.DBZSourceEnglish?.EnglishPlayer!=="function")throw Error("Enemy Strength · ES28 could not load all required adapters. Reopen this entry when your connection is ready.");
+   const hash=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",romBytes)),v=>v.toString(16).padStart(2,"0")).join("");
+   if(hash!==ES28_ID)throw Error("This ROM does not match Enemy Strength · ES28. Use the existing Library for other editions.");
+   window.DreamEnemies=strength;window.DreamCards=cards;window.DreamLargeBattle.ROM=ES28_ID;
+   document.body.dataset.es28Rom=ES28_ID;document.body.dataset.es28Release=String(ES28_RELEASE);document.body.dataset.es28Verified="true";
+   const identity=document.getElementById("es28-runtime-identity");if(identity){identity.textContent=ES28_NAME+" · Player 161 · ROM "+ES28_ID.slice(0,12)+" · verified";identity.dataset.romId=ES28_ID;identity.dataset.verified="true";}
+   send("edition-verified",{romId:ES28_ID,release:ES28_RELEASE,name:ES28_NAME});
    if(game.id===window.DreamLimit256?.ROM){window.DreamEnemies=window.DreamLimit256;window.DreamCards=window.DreamLimit256Cards;window.DreamLargeBattle.ROM=game.id;const hash=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",romBytes)),v=>v.toString(16).padStart(2,"0")).join("");if(hash!==game.id)throw Error("This ROM does not match its game revision.");}
    if(game.id===window.DreamCrazy64?.ROM){window.DreamEnemies=window.DreamCrazy64;window.DreamCards=window.DreamCrazy128Cards;window.DreamLargeBattle.ROM=game.id;}
    if(game.id===window.DreamCrazy?.ROM){window.DreamEnemies=window.DreamCrazy;window.DreamCards=window.DreamCrazyCards;window.DreamLargeBattle.ROM=game.id;}
