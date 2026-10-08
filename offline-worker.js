@@ -49,13 +49,13 @@ async function refreshHomeShell(){
  }catch{}finally{abort.abort();clearTimeout(timeout);}
 }
 
-// UI163: warm the known ES28 shortcut destination without reloading a running game.
+// Player164: warm the known ES28 shortcut destination without reloading a running game.
 async function refreshEditionEntry(){
  const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);
  try{
   const cache=await caches.open(SHELL),response=await fetch('/enemy-strength/play.html',{cache:'reload',signal:abort.signal});
   if(!response.ok||response.redirected)throw Error('Edition entry unavailable');
-  const frameURL='/enemy-strength/player.html?v=163',frame=await fetch(frameURL,{cache:'reload',signal:abort.signal});
+  const frameURL='/enemy-strength/player.html?v=164',frame=await fetch(frameURL,{cache:'reload',signal:abort.signal});
   if(!frame.ok||frame.redirected)throw Error('Edition player unavailable');
   const html=await response.clone().text(),frameHTML=await frame.clone().text(),dependencies=new Set();
   for(const match of (html+'\n'+frameHTML).matchAll(/(?:src|href)=["']([^"']+)["']/g)){
@@ -64,7 +64,7 @@ async function refreshEditionEntry(){
   }
   await Promise.all([...dependencies].map(async url=>{if(await cache.match(url))return;const result=await fetch(url,{cache:'reload',signal:abort.signal});if(!result.ok||result.redirected)throw Error('Edition dependency unavailable');await cache.put(url,result.clone());}));
   await cache.put(frameURL,frame.clone());
-  for(const url of ['/enemy-strength/','/enemy-strength/index.html','/enemy-strength/play.html','/enemy-strength/play.html?release=161','/enemy-strength/play.html?release=163'])await cache.put(url,response.clone());
+  for(const url of ['/enemy-strength/','/enemy-strength/index.html','/enemy-strength/play.html','/enemy-strength/play.html?release=161','/enemy-strength/play.html?release=163','/enemy-strength/play.html?release=164'])await cache.put(url,response.clone());
  }catch{}finally{abort.abort();clearTimeout(timeout);}
 }
 
