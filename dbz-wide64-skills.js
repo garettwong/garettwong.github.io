@@ -48,6 +48,26 @@
   api.pause();const final=inspect();
   if(!native.consumed(final.state,slot,id)||final.ram[0x200+slot]!==actor||final.ram[0x210+slot]!==192+id)throw Error('The chosen skill could not be applied. Tap it again to retry.');
  };
+ const returnToNativeAttackChoice=async(gm,edit,token)=>{
+  const current=inspect();if(current.ram[0x30]===6)return;
+  if(current.ram[0x30]!==7)throw Error('The battle moved on before returning to attack choices.');
+  // Native B exits the super submenu to phase5 (Battle / Card / Escape).
+  // Never write phase or pending command bytes to manufacture a menu.
+  let pressed=false,pulseFrame=gm.getFrameNum();const deadline=performance.now()+4000;
+  api.resume();
+  try{
+   while(performance.now()<deadline){
+    if(token!==formGeneration)return;
+    const live=inspect();
+    if(live.ram[0x2e]!==1||live.ram[0x9a]!==edit.slot||live.ram[0x200+edit.slot]!==edit.actor)throw Error('The fighter changed before returning to attack choices.');
+    if(live.ram[0x30]===5){gm.simulateInput(0,0,0);const released=gm.getFrameNum();await waitUntil(()=>token!==formGeneration||gm.getFrameNum()-released>=2);return;}
+    if(live.ram[0x30]!==7)throw Error('The battle moved on before returning to attack choices.');
+    if(gm.getFrameNum()-pulseFrame>=2){pressed=!pressed;gm.simulateInput(0,0,pressed?1:0);pulseFrame=gm.getFrameNum();}
+    await waitFrame();
+   }
+   throw Error('The form changed, but the attack menu has not returned. Press B to return.');
+  }finally{gm.simulateInput(0,0,0);}
+ };
  const selectForm=async on=>{
   if(busy||!saved)return;setBusy(true);const token=++formGeneration;let unlock=null,cleanup=null;let edit=null;
   notice.textContent=on?'Transforming…':'Returning to Normal…';
@@ -57,8 +77,9 @@
    cleanup=queueState(gm,edit.state);formPending={token,cleanup};api.resume();
    const applied=await waitUntil(()=>token!==formGeneration||(gm.getFrameNum()>before&&window.DreamWide64Forms.acknowledged(gm.getState(),edit)));
    if(token!==formGeneration)return;api.pause();if(!applied)throw Error('The form change has not finished. Try again.');
-   saved=inspect();api.resetFrame();notice.textContent=on?'Super Saiyan selected. Choose an attack.':'Normal form selected. Choose an attack.';
-   api.status(notice.textContent);
+   await returnToNativeAttackChoice(gm,edit,token);if(token!==formGeneration)return;
+   api.pause();api.release();api.resetFrame();unlock?.();unlock=null;
+   close();api.status(on?'Super Saiyan selected. Choose a normal attack or a super skill.':'Normal form selected. Choose a normal attack or a super skill.');
   }catch(error){if(token===formGeneration){api.pause();notice.textContent=error.message;api.status(error.message);}}
   finally{cleanup?.();if(formPending?.token===token)formPending=null;unlock?.();if(token===formGeneration)setBusy(false);}
  };
