@@ -464,6 +464,12 @@ body.dbz-enemy-strength-edition #dbz-skills button[hidden] {
   body.dbz-enemy-strength-edition #dbz-card-editor :is(.dbz-card-numeric, .dbz-card-attribute, .dbz-card-lock) {
     margin: 0;
   }
+  body.dbz-enemy-strength-edition #dbz-card-editor .dbz-card-numeric {
+    grid-template-columns: 50px 44px minmax(44px, 1fr) 44px 44px 44px;
+  }
+  body.dbz-enemy-strength-edition #dbz-card-editor .dbz-card-numeric label {
+    font-size: 11px;
+  }
   body.dbz-enemy-strength-edition #dbz-card-editor .dbz-card-hint {
     grid-column: 1 / -1;
     margin: 0;
