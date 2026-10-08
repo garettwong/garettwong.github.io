@@ -17,6 +17,7 @@
       const title = dialog.querySelector('h2');
       const start = dialog.querySelector('.enemy-strength-start');
       if (!title || !start) return;
+      const focused = dialog.contains(document.activeElement) ? document.activeElement : null;
       const content = section('es163-scroll');
       const footer = section('es163-footer');
       // Snapshot the live HTMLCollection before moving its members.
@@ -41,6 +42,7 @@
         if (description) button.title = description.textContent;
       }
       enhanced.add(dialog);
+      if (focused?.isConnected && document.activeElement !== focused) focused.focus({ preventScroll: true });
     }
     const summary = dialog.querySelector('.enemy-strength-summary');
     const match = summary?.textContent.match(/^Enemy BP & HP: (\d+)×\. Victory BP: (\d+)×\./);
@@ -56,6 +58,7 @@
     const actions = dialog.querySelector('.dbz-card-actions');
     const feedback = dialog.querySelector('.dbz-card-feedback');
     if (!title || !actions || !feedback) return;
+    const focused = dialog.contains(document.activeElement) ? document.activeElement : null;
     const content = section('es163-scroll');
     const footer = section('es163-footer');
     // Snapshot the live HTMLCollection before moving its members.
@@ -82,6 +85,7 @@
       input.setAttribute('autocapitalize', 'off');
     }
     enhanced.add(dialog);
+    if (focused?.isConnected && document.activeElement !== focused) focused.focus({ preventScroll: true });
   }
 
   function skills(dialog) {
