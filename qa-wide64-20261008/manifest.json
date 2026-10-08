@@ -97,9 +97,9 @@
   },
   {
     "path": "index.html",
-    "bytes": 4239,
-    "sha256": "e9d5363ca2d3a3eafc12906342ba6a4002eb0fec0dcdb352f0658c1d4420bb7a",
-    "gitsha": "b122a84accdd47f58eff9e61b6b7015a184aaa0d"
+    "bytes": 4864,
+    "sha256": "ec3c788735b700f36a57591c5c08e1dc5ca5a79e455a51b66c3a942167e6ff54",
+    "gitsha": "4ba9a56ce5874dbb8494608803f9f3bf3360ddf0"
   },
   {
     "path": "source/COPYING",

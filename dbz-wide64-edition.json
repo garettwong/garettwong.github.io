@@ -1,5 +1,5 @@
 {
-  "romId": "0ec53b47d5170ae906456ad68ea292d4cd379d4ffc213334316686171d18fd48",
+  "romId": "8ab31326e0e0112fe16ab4530dc3e76299e85378af375098c182a2b23a8ce881",
   "marker": "W64A",
   "memory": {
     "format": "W64A",
@@ -4439,7 +4439,7 @@
       ]
     ]
   ],
-  "freshStartSha256": "f8a19e3c2ca2fcba28607a6f13eb5cb00c87abddf06bc0d281de840c84552c82",
+  "freshStartSha256": "51298c6d28b6fce53846dfbd225ec244ae6c7010fab66baf1e720f0b7589db36",
   "freshStartUrl": "/dbz-wide64-fresh.state",
-  "freshStartWrapperSha256": "f8a28bb89bd7d29d1d4d2a52557def80ec34659ed9ca42a7221b6b9657e063a2"
+  "freshStartWrapperSha256": "518b897afd8037d8d00ba2feb09abbb79237d0e41db6a90c6d0556d7b5e3b39e"
 }
