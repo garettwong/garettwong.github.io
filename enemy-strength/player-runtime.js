@@ -3,7 +3,7 @@
 (()=>{
 
  const origin=location.origin;
- const ES28_ID="d2ebb440b82fef758eca7c4afbab73f188aecb2f012691d74c91842fddffcc5e",ES28_NAME="Enemy Strength · ES28",ES28_RELEASE=161;
+ const ES28_ID="d2ebb440b82fef758eca7c4afbab73f188aecb2f012691d74c91842fddffcc5e",ES28_NAME="Enemy Strength · ES28",ES28_RELEASE=163;
 
  const send=(type,extra={},transfer)=>parent.postMessage({channel:"nes-dream",type,...extra},origin,transfer||[]);
 
@@ -180,7 +180,7 @@
    if(hash!==ES28_ID)throw Error("This ROM does not match Enemy Strength · ES28. Use the existing Library for other editions.");
    window.DreamEnemies=strength;window.DreamCards=cards;window.DreamLargeBattle.ROM=ES28_ID;
    document.body.dataset.es28Rom=ES28_ID;document.body.dataset.es28Release=String(ES28_RELEASE);document.body.dataset.es28Verified="true";
-   const identity=document.getElementById("es28-runtime-identity");if(identity){identity.textContent=ES28_NAME+" · Player 161 · ROM "+ES28_ID.slice(0,12)+" · verified";identity.dataset.romId=ES28_ID;identity.dataset.verified="true";}
+   const identity=document.getElementById("es28-runtime-identity");if(identity){identity.textContent=ES28_NAME+" · Player 163 · ROM "+ES28_ID.slice(0,12)+" · verified";identity.dataset.romId=ES28_ID;identity.dataset.verified="true";}
    send("edition-verified",{romId:ES28_ID,release:ES28_RELEASE,name:ES28_NAME});
    if(game.id===window.DreamLimit256?.ROM){window.DreamEnemies=window.DreamLimit256;window.DreamCards=window.DreamLimit256Cards;window.DreamLargeBattle.ROM=game.id;const hash=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",romBytes)),v=>v.toString(16).padStart(2,"0")).join("");if(hash!==game.id)throw Error("This ROM does not match its game revision.");}
    if(game.id===window.DreamCrazy64?.ROM){window.DreamEnemies=window.DreamCrazy64;window.DreamCards=window.DreamCrazy128Cards;window.DreamLargeBattle.ROM=game.id;}

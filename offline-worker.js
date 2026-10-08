@@ -49,7 +49,26 @@ async function refreshHomeShell(){
  }catch{}finally{abort.abort();clearTimeout(timeout);}
 }
 
-self.addEventListener('activate',event=>event.waitUntil(Promise.all([self.clients.claim(),refreshHomeShell()])));
+// UI163: warm the known ES28 shortcut destination without reloading a running game.
+async function refreshEditionEntry(){
+ const abort=new AbortController(),timeout=setTimeout(()=>abort.abort(),8000);
+ try{
+  const cache=await caches.open(SHELL),response=await fetch('/enemy-strength/play.html',{cache:'reload',signal:abort.signal});
+  if(!response.ok||response.redirected)throw Error('Edition entry unavailable');
+  const frameURL='/enemy-strength/player.html?v=163',frame=await fetch(frameURL,{cache:'reload',signal:abort.signal});
+  if(!frame.ok||frame.redirected)throw Error('Edition player unavailable');
+  const html=await response.clone().text(),frameHTML=await frame.clone().text(),dependencies=new Set();
+  for(const match of (html+'\n'+frameHTML).matchAll(/(?:src|href)=["']([^"']+)["']/g)){
+   const url=new URL(match[1],self.location.origin);
+   if(allowed(url)&&/\.(?:js|css|woff2?)(?:$|\?)/.test(url.href))dependencies.add(url.pathname+url.search);
+  }
+  await Promise.all([...dependencies].map(async url=>{if(await cache.match(url))return;const result=await fetch(url,{cache:'reload',signal:abort.signal});if(!result.ok||result.redirected)throw Error('Edition dependency unavailable');await cache.put(url,result.clone());}));
+  await cache.put(frameURL,frame.clone());
+  for(const url of ['/enemy-strength/','/enemy-strength/index.html','/enemy-strength/play.html','/enemy-strength/play.html?release=161','/enemy-strength/play.html?release=163'])await cache.put(url,response.clone());
+ }catch{}finally{abort.abort();clearTimeout(timeout);}
+}
+
+self.addEventListener('activate',event=>event.waitUntil(Promise.all([self.clients.claim(),refreshHomeShell(),refreshEditionEntry()])));
 
 self.addEventListener('message',event=>{if(event.data?.type==='pause-offline'){paused=true;return;}if(event.data?.type!=='prepare-offline')return;paused=false;if(!preparing)preparing=prepare().catch(async()=>{await notify({type:'error'});}).finally(()=>{preparing=null;});event.waitUntil(preparing);});
 // Never wait for a stalled connection before opening an already cached player.
