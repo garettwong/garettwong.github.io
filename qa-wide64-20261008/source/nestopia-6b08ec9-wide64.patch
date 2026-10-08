@@ -1,0 +1,11 @@
+--- a/source/core/board/NstBoard.cpp
++++ b/source/core/board/NstBoard.cpp
+@@ -258,6 +258,8 @@
+ 
+ 			dword Board::Type::GetMaxPrg() const
+ 			{
++				// Modified 2026-10-08: Wide64 edition-only mapper 17 PRG capacity extension.
++				if (id == CUSTOM_FFE8) return 0x80000UL;
+ 				return 0x2000UL << (dword(id) >> 20 & 0xF);
+ 			}
+ 

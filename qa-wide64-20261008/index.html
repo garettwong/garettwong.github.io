@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><title>Wide64 isolated core QA</title>
+<style>body{background:#111;color:#eee;font:16px monospace}#game{width:640px;height:600px}pre{white-space:pre-wrap}</style>
+<h1>Wide64 isolated core QA</h1><p>Unreleased capacity test. Not a playable release. Pinned-ROM browser integration probe.</p><p><a href="?">Expanded modern</a> · <a href="?legacy">Expanded legacy</a> · <a href="?baseline">Baseline extended modern</a> · <a href="?baseline&stock">Baseline stock modern</a> · <a href="?baseline&legacy">Baseline extended legacy</a> · <a href="?baseline&stock&legacy">Baseline stock legacy</a></p><p><a href="source/README.md">Source, modification and licence notices</a> · <a href="manifest.json">Pinned file hashes</a></p><pre id="status">Loading</pre><div id="game"></div>
+<script>
+const p=new URLSearchParams(location.search),baseline=p.has('baseline'),stock=p.has('stock');
+EJS_player='#game';EJS_core='nestopia';EJS_pathtodata='./data/';EJS_gameUrl=baseline?'baseline.nes':'expanded.nes';
+EJS_gameName='Wide64-Isolated-Core-QA-a24010d2-'+(baseline?'baseline':'expanded');EJS_startOnLoaded=true;EJS_disableDatabases=true;EJS_forceLegacyCores=p.has('legacy');EJS_Threads=false;EJS_volume=0;
+EJS_defaultOptions={webgl2Enabled:p.has('legacy')?'disabled':'enabled'};
+if(!stock)EJS_paths={'nestopia-wasm.data':'./data/cores/nestopia-wide64-wasm.data','nestopia-legacy-wasm.data':'./data/cores/nestopia-wide64-legacy-wasm.data'};
+const notes=[];const report=x=>{notes.push(x);document.querySelector('#status').textContent=JSON.stringify(notes,null,2)};
+window.addEventListener('error',e=>report({error:e.message}));
+EJS_onGameStart=()=>{
+ const gm=EJS_emulator.gameManager,m=EJS_emulator.Module;
+ report({started:true,baseline,stock,legacy:p.has('legacy')});
+ let stage='boot',original,expected,previous,at=0,ticks=0,firstMap=false;
+ const prefix=bytes=>{const s=gm.getState();const find=pattern=>{for(let i=0;i<s.length-pattern.length;i++)if(pattern.every((v,j)=>s[i+j]===v))return i+pattern.length;return -1};const w=find([87,82,77,0,1,32,0,0,0]),r=find([82,65,77,0,1,8,0,0,0]);if(w<0||r<0)throw Error('Missing state chunks');return {s,w,r,marker:String.fromCharCode(...s.slice(w+0x1ef8,w+0x1efc)),phase:Array.from(s.slice(r+46,r+50)),party:Array.from({length:9},(_,i)=>{let n=0n;for(let j=7;j>=0;j--)n=(n<<8n)|BigInt(s[w+0x155a+i*8+j]);return n.toString()})}};
+ const finish=(pass,extra={})=>{m._simulate_input(0,3,0);m._simulate_input(0,8,0);m.pauseMainLoop();clearInterval(poll);report({complete:true,pass,firstMap,frames:gm.getFrameNum(),...extra})};
+ const beginLoad=a=>{original=a.s.slice();previous=a.s[a.w+0x1eef];expected=previous^85;const changed=original.slice();changed[a.w+0x1eef]=expected;gm.loadState(changed);stage='changed';ticks=0};
+ const poll=setInterval(()=>{try{
+  const f=gm.getFrameNum();if(stage==='boot'&&f<300)return;
+  if(stage==='map'){const elapsed=f-at;m._simulate_input(0,3,elapsed<10?1:0);m._simulate_input(0,8,elapsed>=25&&(elapsed-25)%40<6?1:0);}
+  const a=prefix();
+  if(stage==='boot'){report({boot:true,frames:f,stateBytes:a.s.length,marker:a.marker,party:a.party,resources:performance.getEntriesByType('resource').map(x=>x.name).filter(x=>x.includes('wasm.data'))});if(!baseline&&a.marker!=='W64A'){finish(false,{reason:'Missing W64A marker'});return}if(baseline){beginLoad(a);return}stage='map';at=f;return;}
+  if(stage==='map'){if(a.phase.join(',')==='6,6,1,0'){firstMap=true;m._simulate_input(0,3,0);m._simulate_input(0,8,0);report({firstMap:true,frames:f,phase:a.phase,marker:a.marker,party:a.party});beginLoad(a);return;}if(f-at>3600)finish(false,{reason:'First map not reached',phase:a.phase});return;}
+  if(++ticks>180){finish(false,{reason:'Deferred save/load timed out',stage});return}
+  if(stage==='changed'&&a.s[a.w+0x1eef]===expected){report({deferredChanged:true,previous,observed:expected});gm.loadState(original);stage='restored';ticks=0;return;}
+  if(stage==='restored'&&a.s[a.w+0x1eef]===previous){window.qaState=a.s;report({deferredRestored:true,observed:previous,marker:a.marker,phase:a.phase});finish(true,{saveLoad:true});}
+ }catch(e){finish(false,{error:e.message,stack:e.stack})}},10);
+};
+</script><script src="./data/loader.js"></script>

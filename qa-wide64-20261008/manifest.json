@@ -1,0 +1,140 @@
+[
+  {
+    "path": "PROVENANCE.md",
+    "bytes": 11741,
+    "sha256": "6223ee4102d1d782e10051c27c4b0fe8771aab007029a5860be6f0235df41559",
+    "gitsha": "645627c70f7cbc89cb5fd7dc44e774db918512a9"
+  },
+  {
+    "path": "baseline.nes",
+    "bytes": 524816,
+    "sha256": "d2ebb440b82fef758eca7c4afbab73f188aecb2f012691d74c91842fddffcc5e",
+    "gitsha": "40eba31d68db05eb6b70d588bc4b34b51907219a"
+  },
+  {
+    "path": "data/compression/extract7z.js",
+    "bytes": 280156,
+    "sha256": "a983f36f4c81f4d4c6aa93c8f226c931d7a7f03c0f5427032cd1ae9222867f2b",
+    "gitsha": "0e6854a7c03e7aa469e170fc7ef8eff53bbe14c4"
+  },
+  {
+    "path": "data/compression/extractzip.js",
+    "bytes": 196200,
+    "sha256": "fc88e90eabc77c09fb8a32582a04afaa39f1e174cffac22903b199322a5208cb",
+    "gitsha": "5fb175f14a319e0a2620fd54291e480a14aba69b"
+  },
+  {
+    "path": "data/compression/libunrar.js",
+    "bytes": 66685,
+    "sha256": "e7527fa43860bc24b2cf53f6bdf57d1644397bf584a167e9f3d5e5a4f38d4c60",
+    "gitsha": "c3ed3d53b4269b518c5b1b8e1a8822cba61ecbf9"
+  },
+  {
+    "path": "data/compression/libunrar.wasm",
+    "bytes": 173799,
+    "sha256": "e4ea9bd0b13a9767916b424469e30205f47f267ecd9125ed56fb9ff0b9bc1b58",
+    "gitsha": "44f0999667377732dc4da5d09c1989e6369082f2"
+  },
+  {
+    "path": "data/cores/nestopia-legacy-wasm.data",
+    "bytes": 1218931,
+    "sha256": "d3b1e6d3f0abd55a174d666303e51e06a208c257207ebeb734982a32595e1ac7",
+    "gitsha": "d46ddac9bb0f7d3ce73c4ebff2620a43193a5af2"
+  },
+  {
+    "path": "data/cores/nestopia-wasm.data",
+    "bytes": 1219547,
+    "sha256": "051de1b67a5b582b8a1bac6b99471d4f9f883ce3b3603d00330c1a066e546375",
+    "gitsha": "47e6462e0364771bee13313bcb8224cb03c4c9cd"
+  },
+  {
+    "path": "data/cores/nestopia-wide64-legacy-wasm.data",
+    "bytes": 1204502,
+    "sha256": "a6d662dbc0b6763b87d6ae7f541596d513302aba90b23b662a6cad715a8ba9d4",
+    "gitsha": "4a76d3ac5eb65b9338f77fd1b1b0822ae7295191"
+  },
+  {
+    "path": "data/cores/nestopia-wide64-wasm.data",
+    "bytes": 1202707,
+    "sha256": "80899b121d74675c242d79084275a76aa020a52c294136a79917a228cffe9ec2",
+    "gitsha": "05b9c10e51c92c6b1ed4d7144ff1a7fa93299358"
+  },
+  {
+    "path": "data/cores/reports/nestopia.json",
+    "bytes": 77,
+    "sha256": "168194a783e9c748662b5169b9c8ad19af5690b2db59df40c778b110f168b7e0",
+    "gitsha": "cf537bb364960d533e1b987af8a0d1bef9711520"
+  },
+  {
+    "path": "data/emulator.min.css",
+    "bytes": 25631,
+    "sha256": "67d7b6d4de2f631c334295abbe6143b21ff16e7387503511855fbaa9ed7f94ac",
+    "gitsha": "2873d78b81997b3401b682c91fb6b2671d56d275"
+  },
+  {
+    "path": "data/emulator.min.js",
+    "bytes": 426351,
+    "sha256": "ee6b0540106ba8ccf3aac1c8bf3dfd82ef6a99c8e8371d4abab6d737d7893476",
+    "gitsha": "a8843ca18353833a8ca9985b6b3b61e2edb1d713"
+  },
+  {
+    "path": "data/loader.js",
+    "bytes": 7595,
+    "sha256": "de78e62dba94f8f4ca611c917bdae05d1bc6115de3ebb71b7b6b532cae1bd39e",
+    "gitsha": "1848f9958e07aae9da7da82c1894d45d25937f13"
+  },
+  {
+    "path": "data/version.json",
+    "bytes": 127,
+    "sha256": "89551b3d512b03bbfc1fb97bec768e8f02c0db95f5f80869fced8b3bf90befe1",
+    "gitsha": "8b280dc8cddf9fbc1811719caa210644f20c6236"
+  },
+  {
+    "path": "expanded.nes",
+    "bytes": 786960,
+    "sha256": "a24010d2d6696790cb9bd02a32cf4640951ff807295c28e5aed630e0d434d87f",
+    "gitsha": "428be151ae30ce966f46c167ff8409889ff49e5a"
+  },
+  {
+    "path": "index.html",
+    "bytes": 4239,
+    "sha256": "e9d5363ca2d3a3eafc12906342ba6a4002eb0fec0dcdb352f0658c1d4420bb7a",
+    "gitsha": "b122a84accdd47f58eff9e61b6b7015a184aaa0d"
+  },
+  {
+    "path": "source/COPYING",
+    "bytes": 15122,
+    "sha256": "df84246204e3c54cd24aebbc23714235f5fc41d754d53b65444a2afbf070130f",
+    "gitsha": "e37680cf1385db400bff88ac103d30e876a5103e"
+  },
+  {
+    "path": "source/README.md",
+    "bytes": 2688,
+    "sha256": "226cd36e5b291e7d87733882b0dc6f09165b36f71fcba450c3eac00cc2293a0c",
+    "gitsha": "cec955764485c8b87aaa6075f7bacb11dfe164b6"
+  },
+  {
+    "path": "source/archive.py",
+    "bytes": 2533,
+    "sha256": "4fa654bbfef7869801948fb0e68372ea12261fb3cf3b3a8f6ac1c8b31cce0576",
+    "gitsha": "05e75e6e2b2738992a2a5d16c26bfc4afddf10cd"
+  },
+  {
+    "path": "source/build-browser.py",
+    "bytes": 4556,
+    "sha256": "5b57ef9476faf601b18221f9ae0933287984312dcf3bfeb740a933ca62de8bd9",
+    "gitsha": "4cc407fbe84355e3472f6a6e04f967061b67b380"
+  },
+  {
+    "path": "source/nestopia-6b08ec9-wide64.patch",
+    "bytes": 337,
+    "sha256": "84a6fe827114cb3f89a78328ce332c792ccafdda7454ea055bc2797319dd05e0",
+    "gitsha": "9a1e91c6a89b186107fc6b4264319b48d39b194f"
+  },
+  {
+    "path": "source/nestopia-wide64-2025-modified-source.tar.gz",
+    "bytes": 1099437,
+    "sha256": "71f9831d5536e022cbedc1397eb40092d78d0b70e30ec4d1369bb71202371122",
+    "gitsha": "3ceeb574a0c0677dd1fbbd581858e784d2a4c957"
+  }
+]
