@@ -92,4 +92,3 @@ function attach(proto){
 window.DreamWide64EnemyInfo={decode,draw,decodeHud,drawHud,nativeHud,hudNumber,nativeDigits,possibleScene,attach};
 if(window.DBZSourceEnglish?.EnglishPlayer)attach(window.DBZSourceEnglish.EnglishPlayer.prototype);
 })();
-

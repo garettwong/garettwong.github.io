@@ -166,4 +166,3 @@
  };
  window.DreamSkills={start,open,reset:()=>{formGeneration++;formPending?.cleanup?.();formPending=null;if(dialog)setBusy(false);close(false);suppressed=false;lastPhase=-1;},catalog:folders.map(([name,moves])=>({name,label:characterLabel(name),moves:moves.map(id=>({id,name:names[id],label:moveLabel(id)}))}))};
 })();
-

@@ -30,4 +30,3 @@ function start(options){api=options;if(dialog)return;const button=document.creat
 }
 window.DreamWide64Panel={decode,start,open,reset,isOpen:()=>!!dialog&&!dialog.hidden};
 })();
-

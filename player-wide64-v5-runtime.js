@@ -198,4 +198,3 @@
  addEventListener("visibilitychange",()=>{if(document.hidden){backgroundPaused=started&&!menuPaused;engine?.suspend();window.EJS_emulator?.pause?.();}else{resumeInterrupted();}});send("ready");
 
 })();
-
