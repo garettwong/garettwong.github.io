@@ -1,6 +1,7 @@
 /* Separate Crazy Cards editor, derived from verified Player148. Native card records drive graphics and combat. */
 (()=>{
-function factory(config,globalName){'use strict';
+function factory(config,globalName,options){'use strict';
+const disableScouter=options?.disableScouter===true;
 const ROM=config.ROM, MAX_ATTACK=config.MAX_ATTACK, MAX_DEFENSE=config.MAX_DEFENSE;
 const expanded=MAX_ATTACK>15||MAX_DEFENSE>15;
 const KEY='nes-dream:dbz-crazy-cards:'+ROM, BASE=0x3f5;
@@ -19,6 +20,19 @@ function encodeRank(n,max){return n===256&&max===256?0:n;}
 // Story/title/status/ending screens retain preferences without touching game RAM.
 const HAND_MODES=new Set([1,3,4,5,6,8,9,12]);
 function cardScene(r){return HAND_MODES.has(r[0x2e]);}
+// Native $9A81 looks for an unused $8D in the 24 item slots. $CD is its
+// native consumed flag ($9B36), so later pickups are disabled the same way.
+// Keep this opt-in limited to v4; the read-only eight-card overlay stays active.
+function needsScouterSuppression(r){return disableScouter&&cardScene(r)&&(r.subarray(0x41d,0x435).includes(0x8d)||(r[0x2e]===9&&r[0xd3]===0&&[2,3].includes(r[0x30])));}
+function suppressScouter(r){
+ if(!needsScouterSuppression(r))return false;
+ let changed=false;
+ for(let at=0x41d;at<0x435;at++)if(r[at]===0x8d){r[at]=0xcd;changed=true;}
+ // A save may already be inside the Use Scouter question or scan. Finish
+ // through the native No branch ($9A8E), never select a reward for the user.
+ if(r[0x2e]===9&&r[0xd3]===0&&[2,3].includes(r[0x30])){r[0x30]=2;r[0x6a]=0;r[0x59]|=0x80;changed=true;}
+ return changed;
+}
 function record(r,i){const a=BASE+i*8;return r[a+1]>=0x20&&r[a+1]<=0x2b&&r[a+2]<=4&&decodeRank(r[a+3],MAX_ATTACK)&&decodeRank(r[a+4],MAX_DEFENSE)&&valid(r[a+5],6)?a:null;}
 let api=null,dialog=null,tabs=null,attack=null,defense=null,attribute=null,lockButton=null,feedback=null,selected=0,draft=[],lastNative=empty(),lastSeen=empty(),focusBefore=null,busy=false,dirty=false,draining=null,cheatKey='',lastError='',lastVerification=null,resetting=null;
 function inspect(){const state=new Uint8Array(api.gm().getState()),at=api.ramStart(state);if(at<0)throw Error('Card data is not ready.');return{state,at,ram:state.subarray(at,at+2048)};}
@@ -93,8 +107,16 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  const addresses=Array.from({length:5},(_,i)=>record(ram,i));
  // Hands are rebuilt one record at a time during replacements and transitions.
  // An unavailable slot must not disable the other four locks or lose its edit.
- if(addresses.every(a=>a===null)){clearCheats();return{ready:false,verified:false};}
- let changed=false;const codes=[],checks=[],stateChecks=[];
+ let changed=suppressScouter(ram);
+ if(addresses.every(a=>a===null)&&!changed){clearCheats();return{ready:false,verified:false};}
+ // A Scouter-only pass must not redraw or reapply otherwise untouched hands.
+ if(changed&&!restore&&targets.every(v=>Object.values(v).every(n=>n===null))){
+  const cleanup=queueState(gm,state);api.resetFrame();api.resume();
+  try{const deadline=Date.now()+1800;do{await sleep(20);if(!needsScouterSuppression(inspect().ram))return{ready:true,verified:true,applied:Array(5).fill(false)};}while(Date.now()<deadline);
+   throw Error('Scouter suppression has not settled.');
+  }finally{cleanup();}
+ }
+ const codes=[],checks=[],stateChecks=[];
  for(let i=0;i<5;i++){
   const a=addresses[i],target=restore?lastNative[i]:targets[i];
   if(a===null)continue;
@@ -159,7 +181,7 @@ async function apply(restore=false,targets=values.map((v,i)=>locked[i]?{...v}:{.
  let verified=false;const deadline=Date.now()+1800;
  do{
   if(changed)await sleep(20);
-  const live=inspect();verified=checks.every(([at,n])=>live.ram[at]===n)&&stateChecks.every(([at,n])=>live.state[at]===n)&&graphics.checks.every(([at,n])=>live.state[at]===n);
+  const live=inspect();verified=!needsScouterSuppression(live.ram)&&checks.every(([at,n])=>live.ram[at]===n)&&stateChecks.every(([at,n])=>live.state[at]===n)&&graphics.checks.every(([at,n])=>live.state[at]===n);
   if(verified)break;
  }while(Date.now()<deadline);
  const verifiedLive=inspect();lastVerification={verified,ram:checks.filter(([at,n])=>verifiedLive.ram[at]!==n).map(([at,n])=>({at,want:n,got:verifiedLive.ram[at]})),sidecar:stateChecks.filter(([at,n])=>verifiedLive.state[at]!==n).map(([at,n])=>({at,want:n,got:verifiedLive.state[at]})),graphics:graphics.checks.filter(([at,n])=>verifiedLive.state[at]!==n).slice(0,12).map(([at,n])=>({at,want:n,got:verifiedLive.state[at]}))};
@@ -240,7 +262,9 @@ function start(options){
  feedback=document.createElement('p');feedback.className='dbz-card-feedback';feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');
  const actions=document.createElement('div');actions.className='dbz-card-actions';actions.append(btn('Apply to all 5',applyAll),btn('Original values',reset),btn('Back to game',close));actions.children[2].className='wide';
  dialog.append(title,intro,tabs,attLine,defLine,attrLine,lockButton,hint,feedback,actions);document.body.append(dialog);dialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();close();}});
- setInterval(()=>{if(busy||!api.active()||api.isPaused?.()||!dialog.hidden||!locked.some(Boolean)&&!pending.some(v=>Object.values(v).some(Boolean)))return;void queueApply();},250);
+ setInterval(()=>{if(busy||!api.active()||api.isPaused?.()||!dialog.hidden)return;
+  if(!locked.some(Boolean)&&!pending.some(v=>Object.values(v).some(Boolean))){if(!disableScouter)return;try{if(!needsScouterSuppression(inspect().ram))return;}catch{return;}}
+  void queueApply();},250);
 }
 function draw(){} // Card graphics now come from the NES framebuffer.
 window[globalName]={ROM,start,open,prepareRom:bytes=>(config.prepareCards||config.prepareRom)(bytes),reset:()=>{if(api)clearCheats();lastSeen=empty();lastNative=empty();},draw,whenSettled,inspect:()=>({values:values.map(v=>({...v})),locked:locked.slice(),pending:pending.map(v=>({...v})),busy,active:!!api,lastVerification,gameCheats:cheatKey.split(',').filter(Boolean)})};

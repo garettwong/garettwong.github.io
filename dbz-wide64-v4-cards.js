@@ -1,6 +1,6 @@
 /* W64B cards retain 1–256 ranks, keyed only by this edition’s completed ROM ID. */
 (()=>{'use strict';
-window.DreamCrazyCardsFactory(window.DreamWide64,'DreamWide64Cards');
+window.DreamCrazyCardsFactory(window.DreamWide64,'DreamWide64Cards',{disableScouter:true});
 const cards=window.DreamWide64Cards,start=cards.start;
 cards.start=function(options){
  start(options);
