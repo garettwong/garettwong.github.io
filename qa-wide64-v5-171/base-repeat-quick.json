@@ -1,0 +1,98 @@
+[
+  {
+    "skill": 5,
+    "action": 17,
+    "direction": 0,
+    "hit": false,
+    "frames": 148,
+    "completed": true,
+    "beam": 114,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      0,
+      50,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 17,
+    "direction": 0,
+    "hit": true,
+    "frames": 181,
+    "completed": true,
+    "beam": 114,
+    "explosion": 32,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      50,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 17,
+    "direction": 1,
+    "hit": false,
+    "frames": 148,
+    "completed": true,
+    "beam": 114,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      0,
+      50,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 17,
+    "direction": 1,
+    "hit": true,
+    "frames": 183,
+    "completed": true,
+    "beam": 114,
+    "explosion": 34,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      50,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  }
+]

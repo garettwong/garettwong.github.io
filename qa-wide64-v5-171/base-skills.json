@@ -1,0 +1,3362 @@
+[
+  {
+    "skill": 0,
+    "action": 39,
+    "direction": 0,
+    "hit": false,
+    "frames": 274,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 0,
+    "action": 39,
+    "direction": 0,
+    "hit": true,
+    "frames": 274,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 0,
+    "action": 39,
+    "direction": 1,
+    "hit": false,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 0,
+    "action": 39,
+    "direction": 1,
+    "hit": true,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 1,
+    "action": 39,
+    "direction": 0,
+    "hit": false,
+    "frames": 274,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 1,
+    "action": 39,
+    "direction": 0,
+    "hit": true,
+    "frames": 274,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 1,
+    "action": 39,
+    "direction": 1,
+    "hit": false,
+    "frames": 272,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 1,
+    "action": 39,
+    "direction": 1,
+    "hit": true,
+    "frames": 272,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 2,
+    "action": 39,
+    "direction": 0,
+    "hit": false,
+    "frames": 282,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 2,
+    "action": 39,
+    "direction": 0,
+    "hit": true,
+    "frames": 282,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 2,
+    "action": 39,
+    "direction": 1,
+    "hit": false,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 2,
+    "action": 39,
+    "direction": 1,
+    "hit": true,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 3,
+    "action": 39,
+    "direction": 0,
+    "hit": false,
+    "frames": 282,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 3,
+    "action": 39,
+    "direction": 0,
+    "hit": true,
+    "frames": 282,
+    "completed": true,
+    "beam": 181,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 3,
+    "action": 39,
+    "direction": 1,
+    "hit": false,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 3,
+    "action": 39,
+    "direction": 1,
+    "hit": true,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 4,
+    "action": 40,
+    "direction": 0,
+    "hit": false,
+    "frames": 289,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 4,
+    "action": 40,
+    "direction": 0,
+    "hit": true,
+    "frames": 289,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 4,
+    "action": 40,
+    "direction": 1,
+    "hit": false,
+    "frames": 287,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 4,
+    "action": 40,
+    "direction": 1,
+    "hit": true,
+    "frames": 287,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 41,
+    "direction": 0,
+    "hit": false,
+    "frames": 385,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 41,
+    "direction": 0,
+    "hit": true,
+    "frames": 385,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 41,
+    "direction": 1,
+    "hit": false,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 5,
+    "action": 41,
+    "direction": 1,
+    "hit": true,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 6,
+    "action": 41,
+    "direction": 0,
+    "hit": false,
+    "frames": 385,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 6,
+    "action": 41,
+    "direction": 0,
+    "hit": true,
+    "frames": 385,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 6,
+    "action": 41,
+    "direction": 1,
+    "hit": false,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 6,
+    "action": 41,
+    "direction": 1,
+    "hit": true,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 7,
+    "action": 41,
+    "direction": 0,
+    "hit": false,
+    "frames": 385,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 7,
+    "action": 41,
+    "direction": 0,
+    "hit": true,
+    "frames": 385,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 7,
+    "action": 41,
+    "direction": 1,
+    "hit": false,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 7,
+    "action": 41,
+    "direction": 1,
+    "hit": true,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 8,
+    "action": 43,
+    "direction": 0,
+    "hit": false,
+    "frames": 285,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 8,
+    "action": 43,
+    "direction": 0,
+    "hit": true,
+    "frames": 285,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 8,
+    "action": 43,
+    "direction": 1,
+    "hit": false,
+    "frames": 284,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 8,
+    "action": 43,
+    "direction": 1,
+    "hit": true,
+    "frames": 284,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 9,
+    "action": 44,
+    "direction": 0,
+    "hit": false,
+    "frames": 224,
+    "completed": true,
+    "beam": 128,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 9,
+    "action": 44,
+    "direction": 0,
+    "hit": true,
+    "frames": 224,
+    "completed": true,
+    "beam": 128,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 9,
+    "action": 44,
+    "direction": 1,
+    "hit": false,
+    "frames": 225,
+    "completed": true,
+    "beam": 129,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 9,
+    "action": 44,
+    "direction": 1,
+    "hit": true,
+    "frames": 225,
+    "completed": true,
+    "beam": 129,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 10,
+    "action": 45,
+    "direction": 0,
+    "hit": false,
+    "frames": 315,
+    "completed": true,
+    "beam": 178,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 10,
+    "action": 45,
+    "direction": 0,
+    "hit": true,
+    "frames": 315,
+    "completed": true,
+    "beam": 178,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 10,
+    "action": 45,
+    "direction": 1,
+    "hit": false,
+    "frames": 314,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 10,
+    "action": 45,
+    "direction": 1,
+    "hit": true,
+    "frames": 314,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 11,
+    "action": 46,
+    "direction": 0,
+    "hit": false,
+    "frames": 402,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 11,
+    "action": 46,
+    "direction": 0,
+    "hit": true,
+    "frames": 402,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 11,
+    "action": 46,
+    "direction": 1,
+    "hit": false,
+    "frames": 447,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 11,
+    "action": 46,
+    "direction": 1,
+    "hit": true,
+    "frames": 447,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 12,
+    "action": 46,
+    "direction": 0,
+    "hit": false,
+    "frames": 402,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 12,
+    "action": 46,
+    "direction": 0,
+    "hit": true,
+    "frames": 402,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 12,
+    "action": 46,
+    "direction": 1,
+    "hit": false,
+    "frames": 447,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 12,
+    "action": 46,
+    "direction": 1,
+    "hit": true,
+    "frames": 447,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 13,
+    "action": 47,
+    "direction": 0,
+    "hit": false,
+    "frames": 347,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 13,
+    "action": 47,
+    "direction": 0,
+    "hit": true,
+    "frames": 347,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 13,
+    "action": 47,
+    "direction": 1,
+    "hit": false,
+    "frames": 348,
+    "completed": true,
+    "beam": 191,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 13,
+    "action": 47,
+    "direction": 1,
+    "hit": true,
+    "frames": 348,
+    "completed": true,
+    "beam": 191,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 14,
+    "action": 48,
+    "direction": 0,
+    "hit": false,
+    "frames": 394,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 14,
+    "action": 48,
+    "direction": 0,
+    "hit": true,
+    "frames": 394,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 14,
+    "action": 48,
+    "direction": 1,
+    "hit": false,
+    "frames": 393,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 14,
+    "action": 48,
+    "direction": 1,
+    "hit": true,
+    "frames": 393,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 15,
+    "action": 49,
+    "direction": 0,
+    "hit": false,
+    "frames": 348,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 15,
+    "action": 49,
+    "direction": 0,
+    "hit": true,
+    "frames": 348,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 15,
+    "action": 49,
+    "direction": 1,
+    "hit": false,
+    "frames": 348,
+    "completed": true,
+    "beam": 180,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 15,
+    "action": 49,
+    "direction": 1,
+    "hit": true,
+    "frames": 348,
+    "completed": true,
+    "beam": 180,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 16,
+    "action": 50,
+    "direction": 0,
+    "hit": false,
+    "frames": 394,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 16,
+    "action": 50,
+    "direction": 0,
+    "hit": true,
+    "frames": 394,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 16,
+    "action": 50,
+    "direction": 1,
+    "hit": false,
+    "frames": 393,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 16,
+    "action": 50,
+    "direction": 1,
+    "hit": true,
+    "frames": 393,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 17,
+    "action": 51,
+    "direction": 0,
+    "hit": false,
+    "frames": 336,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      13
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 2,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 17,
+    "action": 51,
+    "direction": 0,
+    "hit": true,
+    "frames": 336,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      13
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 2,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 17,
+    "action": 51,
+    "direction": 1,
+    "hit": false,
+    "frames": 348,
+    "completed": true,
+    "beam": 180,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 17,
+    "action": 51,
+    "direction": 1,
+    "hit": true,
+    "frames": 348,
+    "completed": true,
+    "beam": 180,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 18,
+    "action": 52,
+    "direction": 0,
+    "hit": false,
+    "frames": 346,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 18,
+    "action": 52,
+    "direction": 0,
+    "hit": true,
+    "frames": 346,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 18,
+    "action": 52,
+    "direction": 1,
+    "hit": false,
+    "frames": 394,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 18,
+    "action": 52,
+    "direction": 1,
+    "hit": true,
+    "frames": 394,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 19,
+    "action": 53,
+    "direction": 0,
+    "hit": false,
+    "frames": 395,
+    "completed": true,
+    "beam": 180,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 19,
+    "action": 53,
+    "direction": 0,
+    "hit": true,
+    "frames": 395,
+    "completed": true,
+    "beam": 180,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 19,
+    "action": 53,
+    "direction": 1,
+    "hit": false,
+    "frames": 394,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 19,
+    "action": 53,
+    "direction": 1,
+    "hit": true,
+    "frames": 394,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 20,
+    "action": 50,
+    "direction": 0,
+    "hit": false,
+    "frames": 394,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 20,
+    "action": 50,
+    "direction": 0,
+    "hit": true,
+    "frames": 394,
+    "completed": true,
+    "beam": 179,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 20,
+    "action": 50,
+    "direction": 1,
+    "hit": false,
+    "frames": 393,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 20,
+    "action": 50,
+    "direction": 1,
+    "hit": true,
+    "frames": 393,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 21,
+    "action": 51,
+    "direction": 0,
+    "hit": false,
+    "frames": 336,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      13
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 2,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 21,
+    "action": 51,
+    "direction": 0,
+    "hit": true,
+    "frames": 336,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      13
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 2,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 21,
+    "action": 51,
+    "direction": 1,
+    "hit": false,
+    "frames": 348,
+    "completed": true,
+    "beam": 180,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 21,
+    "action": 51,
+    "direction": 1,
+    "hit": true,
+    "frames": 348,
+    "completed": true,
+    "beam": 180,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 22,
+    "action": 54,
+    "direction": 0,
+    "hit": false,
+    "frames": 374,
+    "completed": true,
+    "beam": 178,
+    "explosion": 34,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 22,
+    "action": 54,
+    "direction": 0,
+    "hit": true,
+    "frames": 374,
+    "completed": true,
+    "beam": 178,
+    "explosion": 34,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 22,
+    "action": 54,
+    "direction": 1,
+    "hit": false,
+    "frames": 375,
+    "completed": true,
+    "beam": 179,
+    "explosion": 34,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 22,
+    "action": 54,
+    "direction": 1,
+    "hit": true,
+    "frames": 375,
+    "completed": true,
+    "beam": 179,
+    "explosion": 34,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 23,
+    "action": 55,
+    "direction": 0,
+    "hit": false,
+    "frames": 394,
+    "completed": true,
+    "beam": 178,
+    "explosion": 36,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 23,
+    "action": 55,
+    "direction": 0,
+    "hit": true,
+    "frames": 394,
+    "completed": true,
+    "beam": 178,
+    "explosion": 36,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 23,
+    "action": 55,
+    "direction": 1,
+    "hit": false,
+    "frames": 347,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 23,
+    "action": 55,
+    "direction": 1,
+    "hit": true,
+    "frames": 347,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 24,
+    "action": 56,
+    "direction": 0,
+    "hit": false,
+    "frames": 281,
+    "completed": true,
+    "beam": 180,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 24,
+    "action": 56,
+    "direction": 0,
+    "hit": true,
+    "frames": 281,
+    "completed": true,
+    "beam": 180,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 24,
+    "action": 56,
+    "direction": 1,
+    "hit": false,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 24,
+    "action": 56,
+    "direction": 1,
+    "hit": true,
+    "frames": 280,
+    "completed": true,
+    "beam": 181,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 25,
+    "action": 56,
+    "direction": 0,
+    "hit": false,
+    "frames": 281,
+    "completed": true,
+    "beam": 180,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 25,
+    "action": 56,
+    "direction": 0,
+    "hit": true,
+    "frames": 281,
+    "completed": true,
+    "beam": 180,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 25,
+    "action": 56,
+    "direction": 1,
+    "hit": false,
+    "frames": 282,
+    "completed": true,
+    "beam": 183,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 25,
+    "action": 56,
+    "direction": 1,
+    "hit": true,
+    "frames": 282,
+    "completed": true,
+    "beam": 183,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 26,
+    "action": 57,
+    "direction": 0,
+    "hit": false,
+    "frames": 335,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 26,
+    "action": 57,
+    "direction": 0,
+    "hit": true,
+    "frames": 335,
+    "completed": true,
+    "beam": 178,
+    "explosion": 0,
+    "next": [
+      39,
+      14
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 1,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 26,
+    "action": 57,
+    "direction": 1,
+    "hit": false,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 26,
+    "action": 57,
+    "direction": 1,
+    "hit": true,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 27,
+    "action": 58,
+    "direction": 0,
+    "hit": false,
+    "frames": 337,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      13
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 2,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 27,
+    "action": 58,
+    "direction": 0,
+    "hit": true,
+    "frames": 337,
+    "completed": true,
+    "beam": 179,
+    "explosion": 0,
+    "next": [
+      39,
+      13
+    ],
+    "damage": [
+      0,
+      206,
+      25
+    ],
+    "reaction": 2,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 27,
+    "action": 58,
+    "direction": 1,
+    "hit": false,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 27,
+    "action": 58,
+    "direction": 1,
+    "hit": true,
+    "frames": 382,
+    "completed": true,
+    "beam": 180,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 28,
+    "action": 59,
+    "direction": 0,
+    "hit": false,
+    "frames": 383,
+    "completed": true,
+    "beam": 178,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 28,
+    "action": 59,
+    "direction": 0,
+    "hit": true,
+    "frames": 383,
+    "completed": true,
+    "beam": 178,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 28,
+    "action": 59,
+    "direction": 1,
+    "hit": false,
+    "frames": 381,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 28,
+    "action": 59,
+    "direction": 1,
+    "hit": true,
+    "frames": 381,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 29,
+    "action": 60,
+    "direction": 0,
+    "hit": false,
+    "frames": 407,
+    "completed": true,
+    "beam": 128,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 29,
+    "action": 60,
+    "direction": 0,
+    "hit": true,
+    "frames": 407,
+    "completed": true,
+    "beam": 128,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 29,
+    "action": 60,
+    "direction": 1,
+    "hit": false,
+    "frames": 406,
+    "completed": true,
+    "beam": 129,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 29,
+    "action": 60,
+    "direction": 1,
+    "hit": true,
+    "frames": 406,
+    "completed": true,
+    "beam": 129,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 30,
+    "action": 61,
+    "direction": 0,
+    "hit": false,
+    "frames": 438,
+    "completed": true,
+    "beam": 162,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 30,
+    "action": 61,
+    "direction": 0,
+    "hit": true,
+    "frames": 438,
+    "completed": true,
+    "beam": 162,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 30,
+    "action": 61,
+    "direction": 1,
+    "hit": false,
+    "frames": 437,
+    "completed": true,
+    "beam": 163,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 30,
+    "action": 61,
+    "direction": 1,
+    "hit": true,
+    "frames": 437,
+    "completed": true,
+    "beam": 163,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 31,
+    "action": 62,
+    "direction": 0,
+    "hit": false,
+    "frames": 340,
+    "completed": true,
+    "beam": 128,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 31,
+    "action": 62,
+    "direction": 0,
+    "hit": true,
+    "frames": 340,
+    "completed": true,
+    "beam": 128,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 31,
+    "action": 62,
+    "direction": 1,
+    "hit": false,
+    "frames": 340,
+    "completed": true,
+    "beam": 129,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 31,
+    "action": 62,
+    "direction": 1,
+    "hit": true,
+    "frames": 340,
+    "completed": true,
+    "beam": 129,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 32,
+    "action": 62,
+    "direction": 0,
+    "hit": false,
+    "frames": 340,
+    "completed": true,
+    "beam": 128,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 32,
+    "action": 62,
+    "direction": 0,
+    "hit": true,
+    "frames": 340,
+    "completed": true,
+    "beam": 128,
+    "explosion": 0,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 32,
+    "action": 62,
+    "direction": 1,
+    "hit": false,
+    "frames": 340,
+    "completed": true,
+    "beam": 129,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 32,
+    "action": 62,
+    "direction": 1,
+    "hit": true,
+    "frames": 340,
+    "completed": true,
+    "beam": 129,
+    "explosion": 0,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 33,
+    "action": 63,
+    "direction": 0,
+    "hit": false,
+    "frames": 359,
+    "completed": true,
+    "beam": 294,
+    "explosion": 0,
+    "next": [
+      36,
+      63
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      56,
+      29
+    ]
+  },
+  {
+    "skill": 33,
+    "action": 63,
+    "direction": 0,
+    "hit": true,
+    "frames": 359,
+    "completed": true,
+    "beam": 294,
+    "explosion": 0,
+    "next": [
+      36,
+      63
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      56,
+      29
+    ]
+  },
+  {
+    "skill": 33,
+    "action": 63,
+    "direction": 1,
+    "hit": false,
+    "frames": 359,
+    "completed": true,
+    "beam": 294,
+    "explosion": 0,
+    "next": [
+      36,
+      63
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      29,
+      70
+    ]
+  },
+  {
+    "skill": 33,
+    "action": 63,
+    "direction": 1,
+    "hit": true,
+    "frames": 359,
+    "completed": true,
+    "beam": 294,
+    "explosion": 0,
+    "next": [
+      36,
+      63
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      29,
+      70
+    ]
+  },
+  {
+    "skill": 34,
+    "action": 42,
+    "direction": 0,
+    "hit": false,
+    "frames": 383,
+    "completed": true,
+    "beam": 178,
+    "explosion": 35,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      206,
+      25
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 34,
+    "action": 42,
+    "direction": 0,
+    "hit": true,
+    "frames": 57,
+    "completed": true,
+    "beam": 0,
+    "explosion": 40,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      50,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 34,
+    "action": 42,
+    "direction": 1,
+    "hit": false,
+    "frames": 381,
+    "completed": true,
+    "beam": 179,
+    "explosion": 33,
+    "next": [
+      39,
+      31
+    ],
+    "damage": [
+      128,
+      0,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  },
+  {
+    "skill": 34,
+    "action": 42,
+    "direction": 1,
+    "hit": true,
+    "frames": 57,
+    "completed": true,
+    "beam": 0,
+    "explosion": 40,
+    "next": [
+      39,
+      29
+    ],
+    "damage": [
+      128,
+      50,
+      0
+    ],
+    "reaction": 0,
+    "hp": [
+      70,
+      56
+    ]
+  }
+]

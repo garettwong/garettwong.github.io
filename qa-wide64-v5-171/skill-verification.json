@@ -1,0 +1,21 @@
+{
+  "cases": 140,
+  "allCompleted": true,
+  "damageDifferences": [],
+  "successfulBlastCases": 54,
+  "successfulBlastFrames": [
+    57,
+    58,
+    62,
+    381,
+    383
+  ],
+  "beamFrames": 357,
+  "note": "Native hit RNG runs earlier because successful attack animations no longer wait through charging; hit decisions can differ from the same pre-animation snapshot.",
+  "newBlastSuccessfulCases": 50,
+  "newBlastBeamFrames": 0,
+  "newBlastFrames": [
+    62
+  ],
+  "existingExplosiveWaveMissFallbackPreserved": true
+}
