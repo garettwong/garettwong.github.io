@@ -1,0 +1,77 @@
+{
+  "differenceOffsets": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "onlyIdentityChanged": true,
+  "rejectUnapproved": true,
+  "rejectBattle": true,
+  "rejectForeignRom": true,
+  "receipt": {
+    "status": "VERIFIED_MANUAL_COPY",
+    "format": "wide64-selected-save-copy-v5-to-v6",
+    "operation": "copy-wide64-v5-to-v6",
+    "sourceRomId": "8041f35655658465e40abc62900ce6236d75912fd6bf78f213f351d32b8b501f",
+    "targetRomId": "43af7a32e835058ba45aa481e3d426433e72d61c68f1d7ad08d1d36995a06df8",
+    "sourceStateSha256": "0e61519f077c296a28eb3825d90b7b7f3e17266dfa9d930e7d726cd8e2ddb603",
+    "sourceNativeSha256": "92ab87d9cc2875950223fa52836ce9aa927eac9d09e6a10cf62f0b9e3c05f36c",
+    "stateSha256": "d1c6e989fe6410fa94baa70b79b86992252229ed6f07ab0460b2f22b50d7f35c",
+    "nativeSha256": "15817cafb139c3861776641be3f1ca68dda0107f4b2ea7633a5ddb25d10ddb5b",
+    "safePoint": "native-map-menu-idle-DCD7",
+    "coreLayout": "wasm-legacy",
+    "sourcePrgCrc32": 773842858,
+    "targetPrgCrc32": 1997339585,
+    "nfoFrame": 1305,
+    "codeChangedAddresses": [],
+    "graphicsResetAddresses": [],
+    "progressFormat": "W64B",
+    "fullRamAndProgressPreserved": true,
+    "nonMemWrapperSectionsPreserved": true,
+    "sourceUnchanged": true,
+    "automatic": false,
+    "actors": [
+      {
+        "actorId": 1,
+        "bp": "10000"
+      },
+      {
+        "actorId": 2,
+        "bp": "50000"
+      },
+      {
+        "actorId": 3,
+        "bp": "1700"
+      },
+      {
+        "actorId": 4,
+        "bp": "1500"
+      },
+      {
+        "actorId": 5,
+        "bp": "1300"
+      },
+      {
+        "actorId": 6,
+        "bp": "1800"
+      },
+      {
+        "actorId": 7,
+        "bp": "1100"
+      },
+      {
+        "actorId": 8,
+        "bp": "42000"
+      },
+      {
+        "actorId": 42,
+        "bp": "1300"
+      }
+    ],
+    "round": 1,
+    "forms": 0,
+    "frozenRoundScale": "1",
+    "roundStartBaseline": "0"
+  }
+}
