@@ -1,0 +1,8 @@
+/* Immediate menu transformation. Native skill IDs and pending attack commands stay intact. */
+(()=>{'use strict';
+function inspect(input,slot){const b=new Uint8Array(input),c=window.DreamWide64;c.validateNative(b);const r=c.chunk(b,'RAM',2048),w=c.chunk(b,'WRM',8192);if(r<0||w<0)throw Error('Transformation memory is unavailable.');if(!Number.isInteger(slot)||slot<0||slot>=162||slot%18||b[r+0x2e]!==1||![6,7].includes(b[r+0x30])||b[r+0x9a]!==slot)throw Error('Choose a fighter and card before transforming.');const actor=b[r+0x200+slot];if(![1,3].includes(actor))throw Error('Super Saiyan is available for Goku and Gohan.');return{b,r,w,actor,bit:actor===1?1:2,forms:w+c.memory.formsAddress-0x6000};}
+function prepare(input,slot,on){const before=inspect(input,slot),out=before.b.slice();out[before.forms]=on?out[before.forms]|before.bit:out[before.forms]&~before.bit;for(const a of [0x678,0x688])if(out[before.r+a]!==255)out[before.r+a]|=128;return{state:out,actor:before.actor,slot,on,originalForms:before.b[before.forms],target:out[before.forms],formOffset:before.forms,refreshOffsets:[before.r+0x678,before.r+0x688]};}
+function acknowledged(input,edit){try{const live=inspect(input,edit.slot);return live.actor===edit.actor&&!!(live.b[live.forms]&live.bit)===edit.on;}catch{return false;}}
+function restore(input,edit){const live=inspect(input,edit.slot);if(live.actor!==edit.actor)throw Error('Fighter changed; no stale transformation was restored.');const out=live.b.slice();out[live.forms]=(out[live.forms]&~live.bit)|(edit.originalForms&live.bit);for(const a of [0x678,0x688])if(out[live.r+a]!==255)out[live.r+a]|=128;return out;}
+window.DreamWide64Forms={inspect,prepare,acknowledged,restore};
+})();

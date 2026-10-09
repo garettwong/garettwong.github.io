@@ -1,0 +1,16 @@
+{
+  "copyMessage": "Copied v6 slot 1 to v7 slot 1. Exact earned BP, round, forms and story progress are preserved. The v6 save is unchanged.",
+  "proof": {
+    "frames": 2,
+    "explosion": 0,
+    "phase": [
+      1,
+      1,
+      35,
+      0
+    ],
+    "identity": "e8fdfe2e0a56dbafae48d67484f1ac12aceb6a466d4a03de800b3ac0a78a7b8e",
+    "release": "173"
+  },
+  "errors": []
+}
