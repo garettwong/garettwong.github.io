@@ -9,6 +9,8 @@ function decode(input){const c=window.DreamWide64,b=new Uint8Array(input),w=c.ch
  const round=BigInt(b[at(m.ngPlusRoundAddress)])+BigInt(b[at(m.ngPlusRoundAddress)+1])*256n+BigInt(b[at(m.ngPlusRoundAddress)+2])*65536n+BigInt(b[at(m.ngPlusRoundAddress)+3])*16777216n;
  const enemies=[],battle=b[r+0x2e]===1,expanded=b[w+0x1371]===165,total=expanded?b[w+0x1372]:5,page=expanded?b[w+0x1370]:0;
  if(battle&&total<=100)for(let i=0;i<total;i++){const active=Math.floor(i/5)===page,base=active?r+0x2a2+i%5*18:i<20?w+0x1200+i*18:w+0x1600+(i-20)*18;if(b[base]>=128)continue;let bp=BigInt(b[base+4])+BigInt(b[base+5])*256n+BigInt(b[base+6])*65536n;for(let j=0;j<5;j++)bp+=BigInt(b[at(c.enemyHighByteAddresses[i*5+j])])<<(24n+8n*BigInt(j));enemies.push({name:`Enemy ${i+1}`,bp:bp.toString(),hp:b[base+2]+256*b[base+3]});}
+ // During combat, the displayed record and full working BP precede roster writeback.
+ if(battle&&window.DreamWide64EnemyInfo)for(const side of [0,32]){const live=window.DreamWide64EnemyInfo.decodeHud(b,side);if(live?.role===1){const row=enemies.find(e=>e.name===`Enemy ${live.index+1}`);if(row){row.bp=live.bp;row.hp=live.hp;}}}
  const exponent=b[w+0x1c60],strength=exponent<=3?2**exponent:1;
  return {rows,enemies,battle,strength,round:round.toString(),baseline:read64(b,at(m.ngPlusBaselineAddress)).toString(),scale:read64(b,at(m.roundScaleAddress)).toString(),forms:b[at(m.formsAddress)],safe:b[r+0x2e]===6&&b[w+0x1390]!==165,w,r};
 }
