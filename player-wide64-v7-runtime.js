@@ -3,7 +3,7 @@
 (()=>{
 
  const origin=location.origin;
- const WIDE64_ID=window.DreamWide64.ROM,WIDE64_NAME="Wide64 NG+ v7 · Battle graphics repair",WIDE64_RELEASE=173;
+ const WIDE64_ID=window.DreamWide64.ROM,WIDE64_NAME="Wide64 NG+ v7 · Battle graphics repair",WIDE64_RELEASE=175;
 
  const send=(type,extra={},transfer)=>parent.postMessage({channel:"nes-dream",type,...extra},origin,transfer||[]);
 
@@ -151,9 +151,9 @@
    if(window.DreamWide64Training?.ROM!==WIDE64_ID)throw Error("The A-training helper did not load.");
    window.DreamEnemies=window.DreamWide64;window.DreamCards=window.DreamWide64Cards;window.DreamLargeBattle.ROM=game.id;
    window.DreamWide64.prepareRom(romBytes);const recoverNail=false;
-   document.body.dataset.wide64Rom=WIDE64_ID;document.body.dataset.wide64Release="173";
+   document.body.dataset.wide64Rom=WIDE64_ID;document.body.dataset.wide64Release="175";
    const identity=document.getElementById("es28-runtime-identity");if(identity)identity.textContent=`${WIDE64_NAME} · Player ${WIDE64_RELEASE} · verified`;
-   send("edition-verified",{romId:WIDE64_ID,release:173,name:WIDE64_NAME});
+   send("edition-verified",{romId:WIDE64_ID,release:175,name:WIDE64_NAME});
    romUrl=URL.createObjectURL(new Blob([romBytes]));
    specialGame=specialGames[game.id]||null;document.body.classList.toggle("special-enabled",!!specialGame);document.body.classList.toggle("dbz-wide64-edition",specialGame?.wide64===true);showSpecialMode();
 

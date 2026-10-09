@@ -1,0 +1,42 @@
+{
+  "result": {
+    "phase": [
+      1,
+      1,
+      5,
+      0
+    ],
+    "rows": [
+      {
+        "actor": 3,
+        "combat": true,
+        "x": 48,
+        "y": 56,
+        "width": 56,
+        "height": 16,
+        "bp": "1589123400"
+      },
+      {
+        "actor": 3,
+        "combat": true,
+        "x": 112,
+        "y": 56,
+        "width": 56,
+        "height": 16,
+        "bp": "1589123400"
+      },
+      {
+        "actor": 5,
+        "combat": true,
+        "x": 176,
+        "y": 56,
+        "width": 56,
+        "height": 16,
+        "bp": "18446744073709551615"
+      }
+    ],
+    "frames": 100,
+    "release": "175"
+  },
+  "errors": []
+}

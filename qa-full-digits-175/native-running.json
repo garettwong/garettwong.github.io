@@ -1,0 +1,60 @@
+{
+  "result": {
+    "phase": [
+      7,
+      7,
+      0,
+      10
+    ],
+    "rows": [
+      {
+        "actor": 3,
+        "combat": false,
+        "x": 136,
+        "y": 32,
+        "width": 56,
+        "height": 16,
+        "bp": "15891234"
+      },
+      {
+        "actor": 4,
+        "combat": false,
+        "x": 136,
+        "y": 56,
+        "width": 56,
+        "height": 16,
+        "bp": "744300"
+      },
+      {
+        "actor": 5,
+        "combat": false,
+        "x": 136,
+        "y": 80,
+        "width": 56,
+        "height": 16,
+        "bp": "18446744073709551615"
+      },
+      {
+        "actor": 6,
+        "combat": false,
+        "x": 136,
+        "y": 104,
+        "width": 56,
+        "height": 16,
+        "bp": "9007199254740993"
+      },
+      {
+        "actor": 7,
+        "combat": false,
+        "x": 136,
+        "y": 128,
+        "width": 56,
+        "height": 16,
+        "bp": "10000000000000000000"
+      }
+    ],
+    "frames": 98,
+    "release": "175"
+  },
+  "errors": []
+}

@@ -48,7 +48,47 @@ function decodeHud(input,side=32){
  const hp=b[shown+2]+256*b[shown+3];
  return {index,side,role,bp:bp.toString(),hp,invulnerable:hp===65535};
 }
-function hudNumber(n){const s=String(n);return s.length<=9?group(s):`${s.slice(0,1)}.${s.slice(1,4)}E${s.length-1}`;}
+// Keep every decimal digit, including values above Number.MAX_SAFE_INTEGER.
+function hudNumber(n){return String(n);}
+function numberLines(n){const s=hudNumber(n);return s.length<=10?[s]:[s.slice(0,-10),s.slice(-10)];}
+function exactNumber(ctx,n,x,y,width,height=16){
+ const lines=numberLines(n),size=lines.length===1?8:7.5;
+ ctx.save();ctx.beginPath();ctx.rect(x,y,width,height);ctx.clip();
+ ctx.textAlign='right';ctx.textBaseline='top';ctx.font=`700 ${size}px Arial,sans-serif`;
+ for(let i=0;i<lines.length;i++)ctx.fillText(lines[i],x+width-1,y+i*8,width-2);
+ ctx.restore();
+}
+const names={Goku:1,Piccolo:2,Gohan:3,Krillin:4,Yamcha:5,Tien:6,Chaozu:7,Chiaotzu:7,Nail:8,Vegeta:42};
+function menuHints(p,engine){
+ const list=glyph(p,80,16,H,true)&&glyph(p,88,16,P,true)&&glyph(p,136,16,B,true)&&glyph(p,144,16,P,true);
+ const battle=glyph(p,24,32,H,true)&&glyph(p,32,32,P,true)&&glyph(p,24,56,B,true)&&glyph(p,32,56,P,true);
+ if((!list&&!battle)||!engine.text?.scan)return[];
+ const cells=engine.text.scan(p).cells,rows=[];
+ for(const [x,y] of list?Array.from({length:9},(_,i)=>[24,32+i*24]):[[48,24],[112,24],[176,24]]){
+  const text=cells.filter(c=>c.y===y&&c.x>=x&&c.x<x+56).sort((a,b)=>a.x-b.x).map(c=>c.text).join('');
+  const found=Object.entries(names).find(([name])=>text===name);
+  if(found)rows.push({actor:found[1],combat:!list,x:list?136:x,y:list?y:56,width:56,height:16});
+ }return rows;
+}
+function decodeMenu(input,hints){
+ const c=window.DreamWide64,b=new Uint8Array(input),r=c.chunk(b,'RAM',2048),w=c.chunk(b,'WRM',8192);
+ if(r<0||w<0)return[];c.validateNative(b);
+ const forms=b[w+c.memory.formsAddress-0x6000],max=(1n<<64n)-1n,rows=[];
+ for(const h of hints){const slot=c.memory.partyActorIds.indexOf(h.actor);
+  if(slot<0||!Array.from({length:9},(_,i)=>b[r+0x200+i*18]&63).includes(h.actor))continue;
+  let bp=0n;const p=w+c.memory.partyBpStart-0x6000+slot*8;
+  for(let i=7;i>=0;i--)bp=bp*256n+BigInt(b[p+i]);
+  if(h.combat&&((h.actor===1&&(forms&1))||(h.actor===3&&(forms&2))))bp=bp*100n>max?max:bp*100n;
+  rows.push({...h,bp:bp.toString()});
+ }return rows;
+}
+function drawMenu(ctx,pixels,width,height,rows){
+ ctx.save();ctx.scale(width/256,height/240);
+ for(const row of rows){const at=(row.y*256+row.x)*4;
+  ctx.fillStyle=`rgb(${pixels[at]},${pixels[at+1]},${pixels[at+2]})`;ctx.fillRect(row.x,row.y,row.width,row.height);
+  ctx.fillStyle='#000';exactNumber(ctx,row.bp,row.x,row.y,row.width,row.height);
+ }ctx.restore();return rows.length>0;
+}
 function drawHud(ctx,pixels,width,height,v){
  const x=v?.side===0?48:160;if(!v||!nativeHud(pixels,x))return false;
  // Each stat panel ends at the adjacent card/portrait. Replace the whole
@@ -59,10 +99,11 @@ function drawHud(ctx,pixels,width,height,v){
  ctx.fillStyle=`rgb(${pixels[at]},${pixels[at+1]},${pixels[at+2]})`;
  ctx.fillRect(x,176,48,32);
  ctx.fillStyle='#000';ctx.textBaseline='top';ctx.font='700 7px Arial,sans-serif';
- ctx.textAlign='left';ctx.fillText('HP',x+1,176);ctx.fillText('BP',x+1,192);
- ctx.textAlign='right';
- ctx.fillText(v.invulnerable?'INVULN':group(v.hp),x+46,184,46);
- ctx.fillText(hudNumber(v.bp),x+46,200,46);ctx.restore();return true;
+ // BP occupies two eight-pixel lines for 11–20 digits. Keep HP on one row.
+ ctx.fillStyle='#000';ctx.textAlign='left';ctx.fillText('HP',x+1,176);
+ ctx.textAlign='right';ctx.fillText(v.invulnerable?'INVULN':group(v.hp),x+46,176,33);
+ ctx.textAlign='left';ctx.fillText('BP',x+1,184);
+ exactNumber(ctx,v.bp,x,192,48);ctx.restore();return true;
 }
 function draw(ctx,pixels,width,height,v){
  if(!v||!nativeDigits(pixels,v.y))return false;
@@ -76,19 +117,20 @@ function draw(ctx,pixels,width,height,v){
  ctx.restore();return true;
 }
 // The native upload callback is inside emulation. Read state only after it
-// returns, and only for the latest frame that actually contains Scouter digits.
+// returns, and only for the latest frame containing a recognized stat panel.
 function attach(proto){
  const original=proto.present;let pending=false,latest=null;
  proto.present=function(pixels){
   original.call(this,pixels);
-  latest=this.gameId===window.DreamWide64?.ROM&&this.overlay.style.display!=='none'&&(nativeHud(pixels)||nativeHud(pixels,48)||possibleScene(pixels))?{engine:this,pixels}:null;
+  const eligible=this.gameId===window.DreamWide64?.ROM&&this.overlay.style.display!=='none',hints=eligible?menuHints(pixels,this):[];
+  latest=eligible&&(hints.length||nativeHud(pixels)||nativeHud(pixels,48)||possibleScene(pixels))?{engine:this,pixels,hints}:null;
   if(!latest||pending)return;pending=true;
   queueMicrotask(()=>{pending=false;const frame=latest;latest=null;if(!frame)return;
    const e=frame.engine;if(e.stopped||e.suspended||e.lastPixels!==frame.pixels||e.overlay.style.display==='none')return;
-   try{const gm=window.EJS_emulator?.gameManager;if(!gm?.getState)return;const state=gm.getState();if(nativeHud(frame.pixels)||nativeHud(frame.pixels,48)){for(const side of [0,32])if(nativeHud(frame.pixels,side===0?48:160))drawHud(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeHud(state,side));}else draw(e.out,frame.pixels,e.overlay.width,e.overlay.height,decode(state));}catch{/* Leave the native display if the edition/state is unavailable. */}
+   try{const gm=window.EJS_emulator?.gameManager;if(!gm?.getState)return;const state=gm.getState();if(frame.hints.length)drawMenu(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeMenu(state,frame.hints));else if(nativeHud(frame.pixels)||nativeHud(frame.pixels,48)){for(const side of [0,32])if(nativeHud(frame.pixels,side===0?48:160))drawHud(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeHud(state,side));}else draw(e.out,frame.pixels,e.overlay.width,e.overlay.height,decode(state));}catch{/* Leave the native display if the edition/state is unavailable. */}
   });
  };
 }
-window.DreamWide64EnemyInfo={decode,draw,decodeHud,drawHud,nativeHud,hudNumber,nativeDigits,possibleScene,attach};
+window.DreamWide64EnemyInfo={decode,draw,decodeHud,drawHud,nativeHud,hudNumber,numberLines,exactNumber,menuHints,decodeMenu,drawMenu,nativeDigits,possibleScene,attach};
 if(window.DBZSourceEnglish?.EnglishPlayer)attach(window.DBZSourceEnglish.EnglishPlayer.prototype);
 })();
