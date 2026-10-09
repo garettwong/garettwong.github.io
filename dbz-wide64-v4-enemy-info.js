@@ -51,11 +51,18 @@ function decodeHud(input,side=32){
 function hudNumber(n){const s=String(n);return s.length<=9?group(s):`${s.slice(0,1)}.${s.slice(1,4)}E${s.length-1}`;}
 function drawHud(ctx,pixels,width,height,v){
  const x=v?.side===0?48:160;if(!v||!nativeHud(pixels,x))return false;
- ctx.save();ctx.scale(width/256,height/240);ctx.fillStyle='#f7d8a5';
- ctx.fillRect(x-2,183,66,9);ctx.fillRect(x-2,199,66,9);
- ctx.fillStyle='#000';ctx.textAlign='right';ctx.textBaseline='top';ctx.font='700 7px Arial,sans-serif';
- ctx.fillText(v.invulnerable?'INVULN':group(v.hp),x+62,184,64);
- ctx.fillText(hudNumber(v.bp),x+62,200,64);ctx.restore();return true;
+ // Each stat panel ends at the adjacent card/portrait. Replace the whole
+ // native HP/BP area, including the old digits on the label rows; the former
+ // 66px strips missed those digits and painted across the neighbouring art.
+ const at=(176*256+x)*4;
+ ctx.save();ctx.scale(width/256,height/240);
+ ctx.fillStyle=`rgb(${pixels[at]},${pixels[at+1]},${pixels[at+2]})`;
+ ctx.fillRect(x,176,48,32);
+ ctx.fillStyle='#000';ctx.textBaseline='top';ctx.font='700 7px Arial,sans-serif';
+ ctx.textAlign='left';ctx.fillText('HP',x+1,176);ctx.fillText('BP',x+1,192);
+ ctx.textAlign='right';
+ ctx.fillText(v.invulnerable?'INVULN':group(v.hp),x+46,184,46);
+ ctx.fillText(hudNumber(v.bp),x+46,200,46);ctx.restore();return true;
 }
 function draw(ctx,pixels,width,height,v){
  if(!v||!nativeDigits(pixels,v.y))return false;
