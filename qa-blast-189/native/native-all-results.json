@@ -1,0 +1,4802 @@
+[
+  {
+    "total": 1,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 1,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 2,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 2,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 3,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 3,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 4,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 4,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 5,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 5,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 6,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 6,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 7,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 7,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 8,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 8,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 9,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 9,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 10,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 10,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 11,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 11,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 12,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 12,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 13,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 13,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 14,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 14,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 15,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 15,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 16,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 16,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 17,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 17,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 18,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 18,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 19,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 19,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 20,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 20,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 21,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 21,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 22,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 22,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 23,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 23,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 24,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 24,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 25,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 25,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 26,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 26,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 27,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 27,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 28,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 28,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 29,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 29,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 30,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 30,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 31,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 31,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 32,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 32,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 33,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 33,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 34,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 34,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 35,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 35,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 36,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 36,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 37,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 37,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 38,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 38,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 39,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 39,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 40,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 40,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 41,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 41,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 42,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 42,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 43,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 43,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 44,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 44,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 45,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 45,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 46,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 46,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 47,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 47,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 48,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 48,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 49,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 49,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 50,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 50,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 51,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 51,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 52,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 52,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 53,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 53,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 54,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 54,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 55,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 55,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 56,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 56,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 57,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 57,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 58,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 58,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 59,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 59,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 60,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 60,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 61,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 61,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 62,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 62,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 63,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 63,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 64,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 64,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 65,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 65,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 66,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 66,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 67,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 67,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 68,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 68,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 69,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 69,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 70,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 70,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 71,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 71,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 72,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 72,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 73,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 73,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 74,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 74,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 75,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 75,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 76,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 76,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 77,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 77,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 78,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 78,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 79,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 79,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 80,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 80,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 81,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 81,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 82,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 82,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 83,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 83,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 84,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 84,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 85,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 85,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 86,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 86,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 87,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 87,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 88,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 88,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 89,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 89,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 90,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 90,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 91,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 91,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 92,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 92,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 93,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 93,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 94,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 94,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 95,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 95,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 96,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 96,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 97,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 97,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 98,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 98,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 99,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 99,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 100,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 100,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 101,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 101,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 102,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 102,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 103,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 103,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 104,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 104,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 105,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 105,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 106,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 106,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 107,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 107,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 108,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 108,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 109,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 109,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 110,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 110,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 111,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 111,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 112,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 112,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 113,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 113,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 114,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 114,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 115,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 115,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 116,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 116,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 117,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 117,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 118,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 118,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 119,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 119,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 120,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 120,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 121,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 121,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 122,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 122,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 123,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 123,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 124,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 124,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 125,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 125,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 126,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 126,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 127,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 127,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 128,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 128,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 129,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 129,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 130,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 130,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 131,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 131,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 132,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 132,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 133,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 133,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 134,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 134,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 135,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 135,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 136,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 136,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 137,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 137,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 138,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 138,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 139,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 139,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 140,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 140,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 141,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 141,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 142,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 142,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 143,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 143,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 144,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 144,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 145,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 145,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 146,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 146,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 147,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 147,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 148,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 148,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 149,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 149,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 150,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 150,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 151,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 151,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 152,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 152,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 153,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 153,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 154,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 154,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 155,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 155,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 156,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 156,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 157,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 157,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 158,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 158,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 159,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 159,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 160,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 160,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 161,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 161,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 162,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 162,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 163,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 163,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 164,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 164,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 165,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 165,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 166,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 166,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 167,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 167,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 168,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 168,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 169,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 169,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 170,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 170,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 171,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 171,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 172,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 172,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 173,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 173,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 174,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 174,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 175,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 175,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 176,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 176,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 177,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 177,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 178,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 178,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 179,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 179,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 180,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 180,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 181,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 181,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 182,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 182,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 183,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 183,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 184,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 184,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 185,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 185,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 186,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 186,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 187,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 187,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 188,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 188,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 189,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 189,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 190,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 190,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 191,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 191,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 192,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 192,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 193,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 193,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 194,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 194,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 195,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 195,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 196,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 196,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 197,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 197,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 198,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 198,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 199,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 199,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 200,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 200,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 201,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 201,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 202,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 202,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 203,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 203,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 204,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 204,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 205,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 205,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 206,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 206,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 207,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 207,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 208,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 208,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 209,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 209,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 210,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 210,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 211,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 211,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 212,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 212,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 213,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 213,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 214,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 214,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 215,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 215,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 216,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 216,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 217,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 217,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 218,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 218,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 219,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 219,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 220,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 220,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 221,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 221,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 222,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 222,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 223,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 223,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 224,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 224,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 225,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 225,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 226,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 226,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 227,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 227,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 228,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 228,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 229,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 229,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 230,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 230,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 231,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 231,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 232,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 232,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 233,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 233,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 234,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 234,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 235,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 235,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 236,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 236,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 237,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 237,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 238,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 238,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 239,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 239,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 240,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 240,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 241,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 241,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 242,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 242,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 243,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 243,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 244,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 244,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 245,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 245,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 246,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 246,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 247,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 247,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 248,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 248,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 249,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 249,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 250,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 250,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 251,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 251,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 252,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 252,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 253,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 253,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 254,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 254,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 255,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 255,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 256,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 256,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 257,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 257,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 258,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 258,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 259,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 259,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 260,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 260,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 261,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 261,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 262,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 262,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 263,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 263,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 264,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 264,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 265,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 265,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 266,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 266,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 267,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 267,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 268,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 268,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 269,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 269,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 270,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 270,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 271,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 271,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 272,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 272,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 273,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 273,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 274,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 274,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 275,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 275,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 276,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 276,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 277,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 277,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 278,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 278,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 279,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 279,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 280,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 280,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 281,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 281,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 282,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 282,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 283,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 283,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 284,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 284,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 285,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 285,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 286,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 286,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 287,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 287,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 288,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 288,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 289,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 289,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 290,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 290,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 291,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 291,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 292,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 292,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 293,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 293,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 294,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 294,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 295,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 295,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 296,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 296,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 297,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 297,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 298,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 298,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 299,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 299,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 300,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 300,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 301,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 301,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 302,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 302,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 303,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 303,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 304,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 304,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 305,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 305,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 306,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 306,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 307,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 307,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 308,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 308,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 309,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 309,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 310,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 310,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 311,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 311,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 312,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 312,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 313,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 313,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 314,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 314,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 315,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 315,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 316,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 316,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 317,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 317,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 318,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 318,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 319,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 319,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 320,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 320,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 321,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 321,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 322,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 322,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 323,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 323,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 324,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 324,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 325,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 325,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 326,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 326,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 327,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 327,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 328,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 328,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 329,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 329,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 330,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 330,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 331,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 331,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 332,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 332,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 333,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 333,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 334,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 334,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 335,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 335,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 336,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 336,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 337,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 337,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 338,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 338,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 339,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 339,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 340,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 340,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 341,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 341,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 342,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 342,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 343,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 343,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 344,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 344,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 345,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 345,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 346,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 346,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 347,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 347,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 348,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 348,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 349,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 349,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 350,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 350,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 351,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 351,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 352,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 352,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 353,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 353,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 354,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 354,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 355,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 355,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 356,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 356,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 357,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 357,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 358,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 358,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 359,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 359,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 360,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 360,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 361,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 361,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 362,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 362,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 363,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 363,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 364,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 364,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 365,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 365,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 366,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 366,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 367,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 367,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 368,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 368,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 369,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 369,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 370,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 370,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 371,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 371,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 372,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 372,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 373,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 373,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 374,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 374,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 375,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 375,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 376,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 376,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 377,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 377,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 378,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 378,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 379,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 379,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 380,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 380,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 381,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 381,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 382,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 382,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 383,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 383,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 384,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 384,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 385,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 385,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 386,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 386,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 387,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 387,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 388,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 388,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 389,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 389,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 390,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 390,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 391,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 391,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 392,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 392,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 393,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 393,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 394,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 394,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 395,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 395,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 396,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 396,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 397,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 397,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 398,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 398,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 399,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 399,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 400,
+    "lethal": false,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  },
+  {
+    "total": 400,
+    "lethal": true,
+    "allVisitedOnce": true,
+    "actualCountCorrect": true
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "sourceSha256": "ed0e63256c9b6cb182db23f267812c97ffc14e4c5c76730bcd96676c7feed6da",
+  "targetSha256": "c754f67ab6f8ebe3778616bbe73aecb6b9cdbf9325699e7d6c0cd75184aa0fd6",
+  "changedBytes": 107,
+  "allChangesInReviewedRegions": true,
+  "regions": [
+    {
+      "offset": 196779,
+      "bytes": 32,
+      "before": "f18a9cf4b4abddce3a97eac8c4db58afeaaa44a0b5eb9e621d7bec439962914e",
+      "after": "500e864c40ce32a2de6e642f1308704a43027721d667450c1dc0ef80d9d0bdd4"
+    },
+    {
+      "offset": 213972,
+      "bytes": 3,
+      "before": "20f6a9",
+      "after": "2058bd"
+    },
+    {
+      "offset": 229224,
+      "bytes": 18,
+      "before": "ffffffffffffffffffffffffffffffffffff",
+      "after": "adfe73c9b5d008adc073f0034ce7bd4cf6a9"
+    },
+    {
+      "offset": 229367,
+      "bytes": 21,
+      "before": "ffffffffffffffffffffffffffffffffffffffffff",
+      "after": "bd2103c91c900bc921b007a90085884c96be4c7cbe"
+    },
+    {
+      "offset": 229516,
+      "bytes": 35,
+      "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "after": "bd2103f00ec924d017bd2203c90490104c96bebd2203c9089006fe2203a900604cf6a9"
+    }
+  ]
+}

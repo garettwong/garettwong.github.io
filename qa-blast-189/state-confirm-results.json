@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "label": "gate",
+      "restoredFrame": 101,
+      "actualStateConfirmed": true
+    },
+    {
+      "label": "gate",
+      "restoredFrame": 1000,
+      "actualStateConfirmed": true
+    },
+    {
+      "label": "gate",
+      "restoredFrame": 1001,
+      "actualStateConfirmed": true
+    },
+    {
+      "label": "mode",
+      "restoredFrame": 101,
+      "actualStateConfirmed": true
+    },
+    {
+      "label": "mode",
+      "restoredFrame": 1000,
+      "actualStateConfirmed": true
+    },
+    {
+      "label": "mode",
+      "restoredFrame": 1001,
+      "actualStateConfirmed": true
+    }
+  ]
+}

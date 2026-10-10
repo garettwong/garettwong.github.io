@@ -1,0 +1,503 @@
+{
+  "release": 189,
+  "rom": {
+    "release": 189,
+    "sha256": "c754f67ab6f8ebe3778616bbe73aecb6b9cdbf9325699e7d6c0cd75184aa0fd6",
+    "prgCrc32": 1523433315
+  },
+  "nativeTotalCases": 800,
+  "nativeVisualCases": 168,
+  "browserCasts": [
+    {
+      "fixture": "final-1",
+      "total": 1,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.46639999997615816,
+      "groupsPerSecondIncludingPauses": 2.144082332871181,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.144,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-4",
+      "total": 4,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.4646999999880791,
+      "groupsPerSecondIncludingPauses": 2.1519259738017062,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.152,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-5",
+      "total": 5,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 1,
+      "presented": 1,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.4661999999880791,
+      "groupsPerSecondIncludingPauses": 2.1450021450569934,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.145,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-6",
+      "total": 6,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 1,
+      "presented": 1,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.4662999999523163,
+      "groupsPerSecondIncludingPauses": 2.1445421404723564,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.145,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-7",
+      "total": 7,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.46609999996423723,
+      "groupsPerSecondIncludingPauses": 2.145462347300424,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.145,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-8",
+      "total": 8,
+      "types": [
+        16
+      ],
+      "groups": 2,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.665699999988079,
+      "groupsPerSecondIncludingPauses": 3.004356316712956,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 3.004,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-9",
+      "total": 9,
+      "types": [
+        16
+      ],
+      "groups": 2,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.6654000000357628,
+      "groupsPerSecondIncludingPauses": 3.0057108504546246,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 3.006,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-13",
+      "total": 13,
+      "types": [
+        16
+      ],
+      "groups": 2,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.6660999999642372,
+      "groupsPerSecondIncludingPauses": 3.002552169505149,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 3.003,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-20",
+      "total": 20,
+      "types": [
+        16
+      ],
+      "groups": 4,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 5.349,
+      "groupsPerSecondIncludingPauses": 0.7478033277248084,
+      "longPauseSeconds": 4.2665,
+      "groupsPerSecondExcludingLongPauses": 3.695,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-40",
+      "total": 40,
+      "types": [
+        16
+      ],
+      "groups": 7,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 6.181699999988079,
+      "groupsPerSecondIncludingPauses": 1.132374589516395,
+      "longPauseSeconds": 4.2665,
+      "groupsPerSecondExcludingLongPauses": 3.655,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-80",
+      "total": 80,
+      "types": [
+        16
+      ],
+      "groups": 16,
+      "remaining": 1,
+      "presented": 1,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 7.898899999976158,
+      "groupsPerSecondIncludingPauses": 2.0255985010632234,
+      "longPauseSeconds": 4.2494,
+      "groupsPerSecondExcludingLongPauses": 4.384,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-99",
+      "total": 99,
+      "types": [
+        16
+      ],
+      "groups": 19,
+      "remaining": 6,
+      "presented": 6,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 8.965,
+      "groupsPerSecondIncludingPauses": 2.1193530395984386,
+      "longPauseSeconds": 4.4168,
+      "groupsPerSecondExcludingLongPauses": 4.177,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-100",
+      "total": 100,
+      "types": [
+        16
+      ],
+      "groups": 19,
+      "remaining": 4,
+      "presented": 4,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 8.932,
+      "groupsPerSecondIncludingPauses": 2.1271831616659203,
+      "longPauseSeconds": 4.4667,
+      "groupsPerSecondExcludingLongPauses": 4.255,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-101",
+      "total": 101,
+      "types": [
+        16
+      ],
+      "groups": 19,
+      "remaining": 1,
+      "presented": 1,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 4.1988000000119206,
+      "groupsPerSecondIncludingPauses": 4.525102410199595,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 4.525,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-200",
+      "total": 200,
+      "types": [
+        16
+      ],
+      "groups": 39,
+      "remaining": 7,
+      "presented": 7,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 13.631899999976158,
+      "groupsPerSecondIncludingPauses": 2.860936479879416,
+      "longPauseSeconds": 4.433,
+      "groupsPerSecondExcludingLongPauses": 4.24,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-399",
+      "total": 399,
+      "types": [
+        16
+      ],
+      "groups": 77,
+      "remaining": 13,
+      "presented": 13,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 23.23169999998808,
+      "groupsPerSecondIncludingPauses": 3.3144367394568417,
+      "longPauseSeconds": 4.4327,
+      "groupsPerSecondExcludingLongPauses": 4.096,
+      "pageErrors": []
+    },
+    {
+      "fixture": "final-400",
+      "total": 400,
+      "types": [
+        16
+      ],
+      "groups": 77,
+      "remaining": 9,
+      "presented": 9,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 23.097900000035764,
+      "groupsPerSecondIncludingPauses": 3.333636391181916,
+      "longPauseSeconds": 4.433,
+      "groupsPerSecondExcludingLongPauses": 4.125,
+      "pageErrors": []
+    },
+    {
+      "fixture": "mixed-20",
+      "total": 20,
+      "types": [
+        16,
+        18,
+        25
+      ],
+      "groups": 4,
+      "remaining": 1,
+      "presented": 1,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 5.515699999988079,
+      "groupsPerSecondIncludingPauses": 0.7252026034789139,
+      "longPauseSeconds": 4.4494,
+      "groupsPerSecondExcludingLongPauses": 3.751,
+      "pageErrors": []
+    },
+    {
+      "fixture": "mixed-101",
+      "total": 101,
+      "types": [
+        16,
+        18,
+        25
+      ],
+      "groups": 19,
+      "remaining": 3,
+      "presented": 3,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 4.332299999952316,
+      "groupsPerSecondIncludingPauses": 4.385661196179656,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 4.386,
+      "pageErrors": []
+    },
+    {
+      "fixture": "mixed-400",
+      "total": 400,
+      "types": [
+        16,
+        18,
+        25
+      ],
+      "groups": 77,
+      "remaining": 11,
+      "presented": 11,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 22.08030000001192,
+      "groupsPerSecondIncludingPauses": 3.487271459172132,
+      "longPauseSeconds": 4.2669,
+      "groupsPerSecondExcludingLongPauses": 4.323,
+      "pageErrors": []
+    },
+    {
+      "fixture": "early-finish-20",
+      "total": 20,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.46630000001192096,
+      "groupsPerSecondIncludingPauses": 2.1445421401982308,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.145,
+      "pageErrors": []
+    },
+    {
+      "fixture": "scattered-20",
+      "total": 20,
+      "types": [
+        16
+      ],
+      "groups": 1,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 0.46640000003576276,
+      "groupsPerSecondIncludingPauses": 2.1440823325971734,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 2.144,
+      "pageErrors": []
+    },
+    {
+      "fixture": "nonlethal-20",
+      "total": 20,
+      "types": [
+        16
+      ],
+      "groups": 4,
+      "remaining": 20,
+      "presented": 20,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 1.0660999999642373,
+      "groupsPerSecondIncludingPauses": 3.751993246538018,
+      "longPauseSeconds": 0,
+      "groupsPerSecondExcludingLongPauses": 3.752,
+      "pageErrors": []
+    },
+    {
+      "fixture": "scatter-skill-20",
+      "total": 20,
+      "types": [
+        16
+      ],
+      "groups": 4,
+      "remaining": 0,
+      "presented": 0,
+      "allTargetsOnce": true,
+      "visibleWholeCohort": true,
+      "hitAndFallFrames": true,
+      "secondsIncludingPauses": 5.365600000023842,
+      "groupsPerSecondIncludingPauses": 0.7454897867866084,
+      "longPauseSeconds": 4.266,
+      "groupsPerSecondExcludingLongPauses": 3.638,
+      "pageErrors": []
+    }
+  ],
+  "measurement": "Chrome on this Windows computer with mobile viewport. SSJ2 cut-in pauses are included in total durations and separated as longPauseSeconds; physical phone throughput not measured.",
+  "boundarySuiteRom": {
+    "release": 189,
+    "sha256": "bd393783846849e1443dd05175e4d4b5d44f4a3e965de97ecdd16d0ea4d5ac72",
+    "prgCrc32": 3058499142
+  },
+  "postSuiteChange": "Final gate acknowledgement checks changed native state rather than frame number: loading a save may rewind the frame counter. Six regression cases, a complete copied 400-enemy battle, current-ROM 400-enemy cast, and recorded mixed 100-enemy cast passed after this change.",
+  "currentRomChecks": {
+    "video-100": {
+      "seconds": 4.2321999999880795,
+      "groups": 19,
+      "groupsPerSecond": 4.489390860557988,
+      "remaining": 6,
+      "types": [
+        16,
+        18,
+        25
+      ]
+    },
+    "current-400": {
+      "seconds": 23.197200000047683,
+      "groups": 76,
+      "groupsPerSecond": 3.2762574793442214,
+      "remaining": 10,
+      "types": [
+        16
+      ]
+    }
+  },
+  "copyCheck": {
+    "sourcePreserved": true,
+    "completion": [
+      {
+        "cast": 1,
+        "presented": 24,
+        "nativeRemaining": 24,
+        "at": 18646.80000001192
+      }
+    ],
+    "native": {
+      "active": 0,
+      "gate": 0,
+      "last": 79,
+      "full": 400,
+      "remaining": 24,
+      "awake": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    "errors": []
+  }
+}

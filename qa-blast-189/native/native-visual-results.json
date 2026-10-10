@@ -1,0 +1,1686 @@
+{
+  "status": "PASS",
+  "cases": 168,
+  "rows": [
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 0,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 0,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 0,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 0,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 0,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 0,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 28,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 28,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 28,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 28,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 28,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 28,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 29,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 29,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 29,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 29,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 29,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 29,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 30,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 30,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 30,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 30,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 30,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 30,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 31,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 31,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 31,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 31,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 31,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 31,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 32,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 68,
+      "newFrames": 68,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 32,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 68,
+      "newFrames": 68,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 32,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 36,
+      "newFrames": 36,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 32,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 36,
+      "newFrames": 36,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 32,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 77,
+      "newFrames": 77,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 32,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 77,
+      "newFrames": 77,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 36,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 36,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 36,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 36,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 36,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 0,
+      "script": 36,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 0,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 0,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 0,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 0,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 0,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 0,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 28,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 28,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 28,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 28,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 28,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 28,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 29,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 29,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 29,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 29,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 29,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 29,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 30,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 30,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 30,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 30,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 30,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 30,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 31,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 31,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 31,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 31,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 31,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 31,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 32,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 68,
+      "newFrames": 68,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 32,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 68,
+      "newFrames": 68,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 32,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 36,
+      "newFrames": 36,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 32,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 36,
+      "newFrames": 36,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 32,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 77,
+      "newFrames": 77,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 32,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 77,
+      "newFrames": 77,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 36,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 36,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 36,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 36,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 36,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 0,
+      "active": 1,
+      "script": 36,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 0,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 0,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 0,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 0,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 0,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 0,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 28,
+      "newFrames": 28,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 28,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 28,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 28,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 28,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 28,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 28,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 60,
+      "newFrames": 60,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 29,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 29,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 29,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 29,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 29,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 85,
+      "newFrames": 85,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 29,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 84,
+      "newFrames": 84,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 30,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 30,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 30,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 30,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 30,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 30,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 71,
+      "newFrames": 71,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 31,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 31,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 31,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 31,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 31,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 31,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 49,
+      "newFrames": 49,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 32,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 68,
+      "newFrames": 68,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 32,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 68,
+      "newFrames": 68,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 32,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 36,
+      "newFrames": 36,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 32,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 36,
+      "newFrames": 36,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 32,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 77,
+      "newFrames": 77,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 32,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 77,
+      "newFrames": 77,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 36,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 36,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 36,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 36,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 36,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 4,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 0,
+      "script": 36,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 5,
+      "newFrames": 5,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 0,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 0,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 0,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 0,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 0,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 0,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 28,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 28,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 28,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 28,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 28,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 28,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 29,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 29,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 29,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 29,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 29,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 29,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 30,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 30,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 30,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 30,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 30,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 30,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 31,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 2,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 31,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 2,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 31,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 2,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 31,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 2,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 31,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 2,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 31,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 2,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 32,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 32,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 5,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 32,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 32,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 32,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 6,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 32,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 6,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 36,
+      "side": 0,
+      "variant": 0,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 36,
+      "side": 32,
+      "variant": 0,
+      "oldFrames": 3,
+      "newFrames": 2,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 36,
+      "side": 0,
+      "variant": 1,
+      "oldFrames": 4,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 36,
+      "side": 32,
+      "variant": 1,
+      "oldFrames": 3,
+      "newFrames": 2,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 36,
+      "side": 0,
+      "variant": 2,
+      "oldFrames": 3,
+      "newFrames": 1,
+      "combatDataUnchanged": true
+    },
+    {
+      "mode": 181,
+      "active": 1,
+      "script": 36,
+      "side": 32,
+      "variant": 2,
+      "oldFrames": 4,
+      "newFrames": 2,
+      "combatDataUnchanged": true
+    }
+  ]
+}

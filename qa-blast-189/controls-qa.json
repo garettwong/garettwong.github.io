@@ -1,0 +1,94 @@
+{
+  "base": "http://127.0.0.1:8176",
+  "result": {
+    "title": "Wide64 NG+ v17 · True encounter groups · Player 189",
+    "release": "189",
+    "path": "M60 2H90Q98 2 98 10V52H140Q148 52 148 60V90Q148 98 140 98H98V140Q98 148 90 148H60Q52 148 52 140V98H10Q2 98 2 90V60Q2 52 10 52H52V10Q52 2 60 2Z",
+    "remaining": 100,
+    "rom": "bd393783846849e1443dd05175e4d4b5d44f4a3e965de97ecdd16d0ea4d5ac72"
+  },
+  "directions": [
+    {
+      "want": [
+        4
+      ],
+      "actual": [
+        4
+      ]
+    },
+    {
+      "want": [
+        4,
+        7
+      ],
+      "actual": [
+        4,
+        7
+      ]
+    },
+    {
+      "want": [
+        7
+      ],
+      "actual": [
+        7
+      ]
+    },
+    {
+      "want": [
+        5,
+        7
+      ],
+      "actual": [
+        5,
+        7
+      ]
+    },
+    {
+      "want": [
+        5
+      ],
+      "actual": [
+        5
+      ]
+    },
+    {
+      "want": [
+        5,
+        6
+      ],
+      "actual": [
+        5,
+        6
+      ]
+    },
+    {
+      "want": [
+        6
+      ],
+      "actual": [
+        6
+      ]
+    },
+    {
+      "want": [
+        4,
+        6
+      ],
+      "actual": [
+        4,
+        6
+      ]
+    },
+    {
+      "want": [
+        7
+      ],
+      "actual": [
+        7
+      ]
+    }
+  ],
+  "errors": [],
+  "http": []
+}
