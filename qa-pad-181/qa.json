@@ -1,0 +1,94 @@
+{
+  "base": "http://127.0.0.1:8176",
+  "result": {
+    "title": "Wide64 NG+ v10 · Restored D-pad · Player 181",
+    "release": "181",
+    "path": "M60 2H90Q98 2 98 10V52H140Q148 52 148 60V90Q148 98 140 98H98V140Q98 148 90 148H60Q52 148 52 140V98H10Q2 98 2 90V60Q2 52 10 52H52V10Q52 2 60 2Z",
+    "remaining": 21,
+    "rom": "35fb39e8b495ee788aacd9519fa952df56ada686dd0d4f305d61632cb13033a5"
+  },
+  "directions": [
+    {
+      "want": [
+        4
+      ],
+      "actual": [
+        4
+      ]
+    },
+    {
+      "want": [
+        4,
+        7
+      ],
+      "actual": [
+        4,
+        7
+      ]
+    },
+    {
+      "want": [
+        7
+      ],
+      "actual": [
+        7
+      ]
+    },
+    {
+      "want": [
+        5,
+        7
+      ],
+      "actual": [
+        5,
+        7
+      ]
+    },
+    {
+      "want": [
+        5
+      ],
+      "actual": [
+        5
+      ]
+    },
+    {
+      "want": [
+        5,
+        6
+      ],
+      "actual": [
+        5,
+        6
+      ]
+    },
+    {
+      "want": [
+        6
+      ],
+      "actual": [
+        6
+      ]
+    },
+    {
+      "want": [
+        4,
+        6
+      ],
+      "actual": [
+        4,
+        6
+      ]
+    },
+    {
+      "want": [
+        7
+      ],
+      "actual": [
+        7
+      ]
+    }
+  ],
+  "errors": [],
+  "http": []
+}

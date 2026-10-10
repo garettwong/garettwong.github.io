@@ -1,0 +1,24 @@
+{
+  "files": [
+    "player-wide64-v10-pad181.html",
+    "player-wide64-v10-pad181-runtime.js",
+    "dbz-wide64-v10-pad181-shell.js",
+    "dbz-wide64-v10-pad181-host.mjs",
+    "dbz-wide64-v10-pad181-play.html",
+    "games/Dragon_Ball_Z_II_Wide64_NGPlus_v10_Player181.nes"
+  ],
+  "oldHashes": {
+    "player-wide64-v10.html": "65e779505f440f38c5cee2d1ab4a512633c5cf39013373805bd5251fa6ae856d",
+    "player-wide64-v10-runtime.js": "f7d4e562eef6c6c6342b3e90a823f990b851ca2aa10154713b3586568f3aed50",
+    "dbz-wide64-v10-shell.js": "4da43e540331accc182386a8ad4ddbbbd23ba09be742ec5b3233a7f33c853c7d",
+    "dbz-wide64-v10-host.mjs": "78a3aba5e25bdcc681dadfe64a0849ebf50e1d5ddc753b5ba7bdc724150d4dd1",
+    "dbz-wide64-v10-play.html": "ea50942c171dd78a8e19667a20e771be0b9e4e93ec161727c1fca3889d26aeb0",
+    "games/Dragon_Ball_Z_II_Wide64_NGPlus_v10.nes": "35fb39e8b495ee788aacd9519fa952df56ada686dd0d4f305d61632cb13033a5",
+    "index.html": "8472bb6c60427561826a13c351fe914820cd22722da53e3ae6fa485de25655e2"
+  },
+  "previousPath": "M60 2H90Q98 2 98 10V52H140Q148 52 148 60V100Q148 98 140 98H98V140Q98 148 90 148H60Q52 148 52 140V108H10Q2 98 2 90V100Q2 52 10 52H52V10Q52 2 60 2Z",
+  "restoredPath": "M60 2H90Q98 2 98 10V52H140Q148 52 148 60V90Q148 98 140 98H98V140Q98 148 90 148H60Q52 148 52 140V98H10Q2 98 2 90V60Q2 52 10 52H52V10Q52 2 60 2Z",
+  "romSha256": "35fb39e8b495ee788aacd9519fa952df56ada686dd0d4f305d61632cb13033a5",
+  "url": "https://garettwong.github.io/dbz-wide64-v10-pad181-play.html",
+  "localFolder": "C:\\Users\\garet\\OneDrive\\Documents\\ChatGPT\\NES Game\\Updated NES\\Player 181 - Restored D-pad"
+}
