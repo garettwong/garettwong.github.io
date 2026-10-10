@@ -1,0 +1,15 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {copyWide64V9SelectedSave,unpackSelectedState,inspectNativeLayout,OPERATION} from '../NES-Wide64-HPBP169/dbz-wide64-v10-selected-save-copy.mjs';
+const root='D:/Codex 2/projects/NES-Wide64-HPBP169',read=p=>new Uint8Array(fs.readFileSync(p));
+const sourceEdition=JSON.parse(fs.readFileSync(root+'/dbz-wide64-v9-edition.json')),targetEdition=JSON.parse(fs.readFileSync(root+'/dbz-wide64-v10-edition.json'));
+const state=read('D:/Codex 2/projects/NES-MapCards179-QA/v9-copied-map.state'),original=state.slice();
+const args={state,romId:sourceEdition.romId,sourceRom:read(root+'/games/Dragon_Ball_Z_II_Wide64_NGPlus_v9.nes'),targetRom:read(root+'/games/Dragon_Ball_Z_II_Wide64_NGPlus_v10.nes'),sourceEdition,targetEdition,approval:{manual:true,operation:OPERATION,sourceRomId:sourceEdition.romId,targetRomId:targetEdition.romId}};
+const copied=await copyWide64V9SelectedSave(args);assert.deepEqual(state,original);
+const before=unpackSelectedState(state).native,after=unpackSelectedState(copied.state).native,p=inspectNativeLayout(before),diff=[];
+for(let i=0;i<before.length;i++)if(before[i]!==after[i])diff.push(i);
+assert.deepEqual(after.slice(p.ram,p.ram+2048),before.slice(p.ram,p.ram+2048));
+for(let at=0x1200;at<0x2000;at++){if(at>=0x13c0&&at<=0x13ca)continue;assert.equal(after[p.wram+at],before[p.wram+at]);}
+await assert.rejects(copyWide64V9SelectedSave({...args,approval:{...args.approval,manual:false}}));
+await assert.rejects(copyWide64V9SelectedSave({...args,state:read('D:/Codex 2/projects/NES-Fight173-QA/repeated-hud-final-0.state')}));
+const corrupt=args.targetRom.slice();corrupt[528+0x37000]^=1;await assert.rejects(copyWide64V9SelectedSave({...args,targetRom:corrupt}));
+fs.writeFileSync(new URL('./v10-copied-map.state',import.meta.url),copied.state);fs.writeFileSync(new URL('./copy-tests.json',import.meta.url),JSON.stringify({diff,unchangedSource:true,fullRamAndProgressExact:true,rejectUnapproved:true,rejectBattle:true,rejectForeignRom:true,receipt:copied.receipt},null,2));console.log('PASS: explicit map copy preserves all RAM/progression/source and rejects unsafe/foreign states');

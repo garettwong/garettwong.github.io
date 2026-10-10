@@ -1,0 +1,11155 @@
+{
+  "events": [
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        4
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 590,
+      "page": 0,
+      "active": 1,
+      "remaining": 396,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        5
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 728,
+      "page": 1,
+      "active": 1,
+      "remaining": 395,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        6
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 854,
+      "page": 1,
+      "active": 1,
+      "remaining": 394,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        7
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 982,
+      "page": 1,
+      "active": 1,
+      "remaining": 393,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        8
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1123,
+      "page": 1,
+      "active": 1,
+      "remaining": 392,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        9
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1259,
+      "page": 1,
+      "active": 1,
+      "remaining": 391,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 2,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1413,
+      "page": 1,
+      "active": 1,
+      "remaining": 390,
+      "bp": 226,
+      "banner": {
+        "busy": true,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1420,
+      "page": 2,
+      "active": 1,
+      "remaining": 390,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1627,
+      "page": 2,
+      "active": 1,
+      "remaining": 389,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1765,
+      "page": 2,
+      "active": 1,
+      "remaining": 388,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1899,
+      "page": 2,
+      "active": 1,
+      "remaining": 387,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2021,
+      "page": 2,
+      "active": 1,
+      "remaining": 386,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2155,
+      "page": 3,
+      "active": 1,
+      "remaining": 385,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2302,
+      "page": 3,
+      "active": 1,
+      "remaining": 384,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3086,
+      "page": 3,
+      "active": 1,
+      "remaining": 383,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3223,
+      "page": 3,
+      "active": 1,
+      "remaining": 382,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3358,
+      "page": 4,
+      "active": 1,
+      "remaining": 381,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3492,
+      "page": 4,
+      "active": 1,
+      "remaining": 380,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3629,
+      "page": 4,
+      "active": 1,
+      "remaining": 379,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3769,
+      "page": 4,
+      "active": 1,
+      "remaining": 378,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3906,
+      "page": 4,
+      "active": 1,
+      "remaining": 377,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4040,
+      "page": 5,
+      "active": 1,
+      "remaining": 376,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4185,
+      "page": 5,
+      "active": 1,
+      "remaining": 375,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        132
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4314,
+      "page": 5,
+      "active": 1,
+      "remaining": 374,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4434,
+      "page": 5,
+      "active": 1,
+      "remaining": 373,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4675,
+      "page": 5,
+      "active": 1,
+      "remaining": 372,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4811,
+      "page": 6,
+      "active": 1,
+      "remaining": 371,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4947,
+      "page": 6,
+      "active": 1,
+      "remaining": 370,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5080,
+      "page": 6,
+      "active": 1,
+      "remaining": 369,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5215,
+      "page": 6,
+      "active": 1,
+      "remaining": 368,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5339,
+      "page": 6,
+      "active": 1,
+      "remaining": 367,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5899,
+      "page": 7,
+      "active": 1,
+      "remaining": 367,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6027,
+      "page": 7,
+      "active": 1,
+      "remaining": 366,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6163,
+      "page": 7,
+      "active": 1,
+      "remaining": 365,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6298,
+      "page": 7,
+      "active": 1,
+      "remaining": 364,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6435,
+      "page": 7,
+      "active": 1,
+      "remaining": 363,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6673,
+      "page": 8,
+      "active": 1,
+      "remaining": 362,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6806,
+      "page": 8,
+      "active": 1,
+      "remaining": 361,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        19
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6937,
+      "page": 8,
+      "active": 1,
+      "remaining": 360,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7070,
+      "page": 8,
+      "active": 1,
+      "remaining": 359,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7207,
+      "page": 8,
+      "active": 1,
+      "remaining": 358,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7343,
+      "page": 9,
+      "active": 1,
+      "remaining": 357,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        129
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7476,
+      "page": 9,
+      "active": 1,
+      "remaining": 356,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7599,
+      "page": 9,
+      "active": 1,
+      "remaining": 355,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7831,
+      "page": 9,
+      "active": 1,
+      "remaining": 354,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7968,
+      "page": 9,
+      "active": 1,
+      "remaining": 353,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8107,
+      "page": 10,
+      "active": 1,
+      "remaining": 352,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8784,
+      "page": 10,
+      "active": 1,
+      "remaining": 351,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8920,
+      "page": 10,
+      "active": 1,
+      "remaining": 350,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9056,
+      "page": 10,
+      "active": 1,
+      "remaining": 349,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9193,
+      "page": 11,
+      "active": 1,
+      "remaining": 348,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9333,
+      "page": 11,
+      "active": 1,
+      "remaining": 347,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        128
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9465,
+      "page": 11,
+      "active": 1,
+      "remaining": 346,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9596,
+      "page": 11,
+      "active": 1,
+      "remaining": 345,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9733,
+      "page": 11,
+      "active": 1,
+      "remaining": 344,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9969,
+      "page": 12,
+      "active": 1,
+      "remaining": 343,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        35
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10105,
+      "page": 12,
+      "active": 1,
+      "remaining": 342,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10246,
+      "page": 12,
+      "active": 1,
+      "remaining": 341,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        34
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10925,
+      "page": 12,
+      "active": 1,
+      "remaining": 340,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11056,
+      "page": 13,
+      "active": 1,
+      "remaining": 339,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11186,
+      "page": 13,
+      "active": 1,
+      "remaining": 338,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11325,
+      "page": 13,
+      "active": 1,
+      "remaining": 337,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11463,
+      "page": 13,
+      "active": 1,
+      "remaining": 336,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11605,
+      "page": 13,
+      "active": 1,
+      "remaining": 335,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11742,
+      "page": 14,
+      "active": 1,
+      "remaining": 334,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11882,
+      "page": 14,
+      "active": 1,
+      "remaining": 333,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12126,
+      "page": 14,
+      "active": 1,
+      "remaining": 332,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12257,
+      "page": 14,
+      "active": 1,
+      "remaining": 331,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12390,
+      "page": 14,
+      "active": 1,
+      "remaining": 330,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12527,
+      "page": 15,
+      "active": 1,
+      "remaining": 329,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12662,
+      "page": 15,
+      "active": 1,
+      "remaining": 328,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13342,
+      "page": 15,
+      "active": 1,
+      "remaining": 327,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13477,
+      "page": 15,
+      "active": 1,
+      "remaining": 326,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13613,
+      "page": 16,
+      "active": 1,
+      "remaining": 325,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13752,
+      "page": 16,
+      "active": 1,
+      "remaining": 324,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        128
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13889,
+      "page": 16,
+      "active": 1,
+      "remaining": 323,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14027,
+      "page": 16,
+      "active": 1,
+      "remaining": 322,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14262,
+      "page": 16,
+      "active": 1,
+      "remaining": 321,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14383,
+      "page": 17,
+      "active": 1,
+      "remaining": 320,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14508,
+      "page": 17,
+      "active": 1,
+      "remaining": 319,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14647,
+      "page": 17,
+      "active": 1,
+      "remaining": 318,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14785,
+      "page": 17,
+      "active": 1,
+      "remaining": 317,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14925,
+      "page": 17,
+      "active": 1,
+      "remaining": 316,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15063,
+      "page": 18,
+      "active": 1,
+      "remaining": 315,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15200,
+      "page": 18,
+      "active": 1,
+      "remaining": 314,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15427,
+      "page": 18,
+      "active": 1,
+      "remaining": 313,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15553,
+      "page": 18,
+      "active": 1,
+      "remaining": 312,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        20
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15691,
+      "page": 18,
+      "active": 1,
+      "remaining": 311,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15828,
+      "page": 19,
+      "active": 1,
+      "remaining": 310,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15965,
+      "page": 19,
+      "active": 1,
+      "remaining": 309,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16099,
+      "page": 19,
+      "active": 1,
+      "remaining": 308,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        132
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16235,
+      "page": 19,
+      "active": 1,
+      "remaining": 307,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        133
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16382,
+      "page": 19,
+      "active": 1,
+      "remaining": 306,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16517,
+      "page": 20,
+      "active": 1,
+      "remaining": 305,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16654,
+      "page": 20,
+      "active": 1,
+      "remaining": 304,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16895,
+      "page": 20,
+      "active": 1,
+      "remaining": 303,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17035,
+      "page": 20,
+      "active": 1,
+      "remaining": 302,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17171,
+      "page": 20,
+      "active": 1,
+      "remaining": 301,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        33
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17310,
+      "page": 21,
+      "active": 1,
+      "remaining": 300,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17445,
+      "page": 21,
+      "active": 1,
+      "remaining": 299,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17579,
+      "page": 21,
+      "active": 1,
+      "remaining": 298,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17707,
+      "page": 21,
+      "active": 1,
+      "remaining": 297,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        129
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17850,
+      "page": 21,
+      "active": 1,
+      "remaining": 296,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17988,
+      "page": 22,
+      "active": 1,
+      "remaining": 295,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18127,
+      "page": 22,
+      "active": 1,
+      "remaining": 294,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18367,
+      "page": 22,
+      "active": 1,
+      "remaining": 293,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18504,
+      "page": 22,
+      "active": 1,
+      "remaining": 292,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18644,
+      "page": 22,
+      "active": 1,
+      "remaining": 291,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        19
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18784,
+      "page": 23,
+      "active": 1,
+      "remaining": 290,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18923,
+      "page": 23,
+      "active": 1,
+      "remaining": 289,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19061,
+      "page": 23,
+      "active": 1,
+      "remaining": 288,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19199,
+      "page": 23,
+      "active": 1,
+      "remaining": 287,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19347,
+      "page": 23,
+      "active": 1,
+      "remaining": 286,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        132
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19486,
+      "page": 24,
+      "active": 1,
+      "remaining": 285,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19622,
+      "page": 24,
+      "active": 1,
+      "remaining": 284,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19752,
+      "page": 24,
+      "active": 1,
+      "remaining": 283,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19992,
+      "page": 24,
+      "active": 1,
+      "remaining": 282,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20133,
+      "page": 24,
+      "active": 1,
+      "remaining": 281,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        17
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20272,
+      "page": 25,
+      "active": 1,
+      "remaining": 280,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20410,
+      "page": 25,
+      "active": 1,
+      "remaining": 279,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        135
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20537,
+      "page": 25,
+      "active": 1,
+      "remaining": 278,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20678,
+      "page": 25,
+      "active": 1,
+      "remaining": 277,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20818,
+      "page": 25,
+      "active": 1,
+      "remaining": 276,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20946,
+      "page": 26,
+      "active": 1,
+      "remaining": 275,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21195,
+      "page": 26,
+      "active": 1,
+      "remaining": 274,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21325,
+      "page": 26,
+      "active": 1,
+      "remaining": 273,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21461,
+      "page": 26,
+      "active": 1,
+      "remaining": 272,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21614,
+      "page": 26,
+      "active": 1,
+      "remaining": 271,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21752,
+      "page": 27,
+      "active": 1,
+      "remaining": 270,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21887,
+      "page": 27,
+      "active": 1,
+      "remaining": 269,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22026,
+      "page": 27,
+      "active": 1,
+      "remaining": 268,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22165,
+      "page": 27,
+      "active": 1,
+      "remaining": 267,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22855,
+      "page": 28,
+      "active": 1,
+      "remaining": 266,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22991,
+      "page": 28,
+      "active": 1,
+      "remaining": 265,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23236,
+      "page": 28,
+      "active": 1,
+      "remaining": 264,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23374,
+      "page": 28,
+      "active": 1,
+      "remaining": 263,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        20
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23514,
+      "page": 28,
+      "active": 1,
+      "remaining": 262,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23652,
+      "page": 29,
+      "active": 1,
+      "remaining": 261,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23792,
+      "page": 29,
+      "active": 1,
+      "remaining": 260,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        133
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23927,
+      "page": 29,
+      "active": 1,
+      "remaining": 259,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24068,
+      "page": 29,
+      "active": 1,
+      "remaining": 258,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24203,
+      "page": 29,
+      "active": 1,
+      "remaining": 257,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24447,
+      "page": 30,
+      "active": 1,
+      "remaining": 256,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24583,
+      "page": 30,
+      "active": 1,
+      "remaining": 255,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24725,
+      "page": 30,
+      "active": 1,
+      "remaining": 254,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24866,
+      "page": 30,
+      "active": 1,
+      "remaining": 253,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25002,
+      "page": 30,
+      "active": 1,
+      "remaining": 252,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25141,
+      "page": 31,
+      "active": 1,
+      "remaining": 251,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25281,
+      "page": 31,
+      "active": 1,
+      "remaining": 250,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25419,
+      "page": 31,
+      "active": 1,
+      "remaining": 249,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25570,
+      "page": 31,
+      "active": 1,
+      "remaining": 248,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25809,
+      "page": 31,
+      "active": 1,
+      "remaining": 247,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25946,
+      "page": 32,
+      "active": 1,
+      "remaining": 246,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26076,
+      "page": 32,
+      "active": 1,
+      "remaining": 245,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        135
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26214,
+      "page": 32,
+      "active": 1,
+      "remaining": 244,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26354,
+      "page": 32,
+      "active": 1,
+      "remaining": 243,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26491,
+      "page": 32,
+      "active": 1,
+      "remaining": 242,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26631,
+      "page": 33,
+      "active": 1,
+      "remaining": 241,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        51
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26883,
+      "page": 33,
+      "active": 1,
+      "remaining": 240,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 27569,
+      "page": 33,
+      "active": 1,
+      "remaining": 239,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 27709,
+      "page": 33,
+      "active": 1,
+      "remaining": 238,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 27846,
+      "page": 34,
+      "active": 1,
+      "remaining": 237,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 27938,
+      "page": 34,
+      "active": 1,
+      "remaining": 236,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28120,
+      "page": 34,
+      "active": 1,
+      "remaining": 235,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28258,
+      "page": 34,
+      "active": 1,
+      "remaining": 234,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28399,
+      "page": 34,
+      "active": 1,
+      "remaining": 233,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28650,
+      "page": 35,
+      "active": 1,
+      "remaining": 232,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        33
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28784,
+      "page": 35,
+      "active": 1,
+      "remaining": 231,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28917,
+      "page": 35,
+      "active": 1,
+      "remaining": 230,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 29056,
+      "page": 35,
+      "active": 1,
+      "remaining": 229,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 29185,
+      "page": 35,
+      "active": 1,
+      "remaining": 228,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 29321,
+      "page": 36,
+      "active": 1,
+      "remaining": 227,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 29567,
+      "page": 36,
+      "active": 1,
+      "remaining": 226,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 29708,
+      "page": 36,
+      "active": 1,
+      "remaining": 225,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 30383,
+      "page": 36,
+      "active": 1,
+      "remaining": 224,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 30515,
+      "page": 37,
+      "active": 1,
+      "remaining": 223,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 30652,
+      "page": 37,
+      "active": 1,
+      "remaining": 222,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 30788,
+      "page": 37,
+      "active": 1,
+      "remaining": 221,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31032,
+      "page": 37,
+      "active": 1,
+      "remaining": 220,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31173,
+      "page": 37,
+      "active": 1,
+      "remaining": 219,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31312,
+      "page": 38,
+      "active": 1,
+      "remaining": 218,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31464,
+      "page": 38,
+      "active": 1,
+      "remaining": 217,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        132
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31600,
+      "page": 38,
+      "active": 1,
+      "remaining": 216,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31738,
+      "page": 38,
+      "active": 1,
+      "remaining": 215,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31876,
+      "page": 38,
+      "active": 1,
+      "remaining": 214,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 32119,
+      "page": 39,
+      "active": 1,
+      "remaining": 213,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 32256,
+      "page": 39,
+      "active": 1,
+      "remaining": 212,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 32398,
+      "page": 39,
+      "active": 1,
+      "remaining": 211,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 32536,
+      "page": 39,
+      "active": 1,
+      "remaining": 210,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 32672,
+      "page": 39,
+      "active": 1,
+      "remaining": 209,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 32807,
+      "page": 40,
+      "active": 1,
+      "remaining": 208,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33050,
+      "page": 40,
+      "active": 1,
+      "remaining": 207,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33188,
+      "page": 40,
+      "active": 1,
+      "remaining": 206,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33322,
+      "page": 40,
+      "active": 1,
+      "remaining": 205,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33459,
+      "page": 40,
+      "active": 1,
+      "remaining": 204,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33585,
+      "page": 41,
+      "active": 1,
+      "remaining": 203,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33720,
+      "page": 41,
+      "active": 1,
+      "remaining": 202,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33861,
+      "page": 41,
+      "active": 1,
+      "remaining": 201,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33989,
+      "page": 41,
+      "active": 1,
+      "remaining": 200,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 34138,
+      "page": 41,
+      "active": 1,
+      "remaining": 199,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 34276,
+      "page": 42,
+      "active": 1,
+      "remaining": 198,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 34958,
+      "page": 42,
+      "active": 1,
+      "remaining": 197,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 35098,
+      "page": 42,
+      "active": 1,
+      "remaining": 196,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 35341,
+      "page": 42,
+      "active": 1,
+      "remaining": 195,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 35476,
+      "page": 43,
+      "active": 1,
+      "remaining": 194,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 35611,
+      "page": 43,
+      "active": 1,
+      "remaining": 193,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 35747,
+      "page": 43,
+      "active": 1,
+      "remaining": 192,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 35896,
+      "page": 43,
+      "active": 1,
+      "remaining": 191,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36033,
+      "page": 43,
+      "active": 1,
+      "remaining": 190,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36175,
+      "page": 44,
+      "active": 1,
+      "remaining": 189,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        135
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36311,
+      "page": 44,
+      "active": 1,
+      "remaining": 188,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        128
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36448,
+      "page": 44,
+      "active": 1,
+      "remaining": 187,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36584,
+      "page": 44,
+      "active": 1,
+      "remaining": 186,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36722,
+      "page": 44,
+      "active": 1,
+      "remaining": 185,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36877,
+      "page": 45,
+      "active": 1,
+      "remaining": 184,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 37120,
+      "page": 45,
+      "active": 1,
+      "remaining": 183,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        82
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 37249,
+      "page": 45,
+      "active": 1,
+      "remaining": 182,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        17
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 37382,
+      "page": 45,
+      "active": 1,
+      "remaining": 181,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 37523,
+      "page": 45,
+      "active": 1,
+      "remaining": 180,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 37972,
+      "page": 46,
+      "active": 1,
+      "remaining": 180,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 38206,
+      "page": 46,
+      "active": 1,
+      "remaining": 179,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 38344,
+      "page": 46,
+      "active": 1,
+      "remaining": 178,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39031,
+      "page": 46,
+      "active": 1,
+      "remaining": 177,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39162,
+      "page": 47,
+      "active": 1,
+      "remaining": 176,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39302,
+      "page": 47,
+      "active": 1,
+      "remaining": 175,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39441,
+      "page": 47,
+      "active": 1,
+      "remaining": 174,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39605,
+      "page": 47,
+      "active": 1,
+      "remaining": 173,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39746,
+      "page": 47,
+      "active": 1,
+      "remaining": 172,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39880,
+      "page": 48,
+      "active": 1,
+      "remaining": 171,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 40123,
+      "page": 48,
+      "active": 1,
+      "remaining": 170,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        37
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 40259,
+      "page": 48,
+      "active": 1,
+      "remaining": 169,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 40384,
+      "page": 48,
+      "active": 1,
+      "remaining": 168,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 40541,
+      "page": 48,
+      "active": 1,
+      "remaining": 167,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 41011,
+      "page": 49,
+      "active": 1,
+      "remaining": 167,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 41254,
+      "page": 49,
+      "active": 1,
+      "remaining": 166,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 41385,
+      "page": 49,
+      "active": 1,
+      "remaining": 165,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        35
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42078,
+      "page": 49,
+      "active": 1,
+      "remaining": 164,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42215,
+      "page": 50,
+      "active": 1,
+      "remaining": 163,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42347,
+      "page": 50,
+      "active": 1,
+      "remaining": 162,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42498,
+      "page": 50,
+      "active": 1,
+      "remaining": 161,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42633,
+      "page": 50,
+      "active": 1,
+      "remaining": 160,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42773,
+      "page": 50,
+      "active": 1,
+      "remaining": 159,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42912,
+      "page": 51,
+      "active": 1,
+      "remaining": 158,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 43159,
+      "page": 51,
+      "active": 1,
+      "remaining": 157,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        81
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 43297,
+      "page": 51,
+      "active": 1,
+      "remaining": 156,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        34
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 43442,
+      "page": 51,
+      "active": 1,
+      "remaining": 155,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 43575,
+      "page": 51,
+      "active": 1,
+      "remaining": 154,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 43718,
+      "page": 52,
+      "active": 1,
+      "remaining": 153,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 43858,
+      "page": 52,
+      "active": 1,
+      "remaining": 152,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44001,
+      "page": 52,
+      "active": 1,
+      "remaining": 151,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44129,
+      "page": 52,
+      "active": 1,
+      "remaining": 150,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44378,
+      "page": 52,
+      "active": 1,
+      "remaining": 149,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        35
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44518,
+      "page": 53,
+      "active": 1,
+      "remaining": 148,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44654,
+      "page": 53,
+      "active": 1,
+      "remaining": 147,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44790,
+      "page": 53,
+      "active": 1,
+      "remaining": 146,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44929,
+      "page": 53,
+      "active": 1,
+      "remaining": 145,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 45069,
+      "page": 53,
+      "active": 1,
+      "remaining": 144,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 45207,
+      "page": 54,
+      "active": 1,
+      "remaining": 143,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        49
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 45448,
+      "page": 54,
+      "active": 1,
+      "remaining": 142,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 46105,
+      "page": 54,
+      "active": 1,
+      "remaining": 141,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        20
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 46272,
+      "page": 54,
+      "active": 1,
+      "remaining": 140,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 46377,
+      "page": 55,
+      "active": 1,
+      "remaining": 139,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 46514,
+      "page": 55,
+      "active": 1,
+      "remaining": 138,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        81
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 46746,
+      "page": 55,
+      "active": 1,
+      "remaining": 137,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        19
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 46886,
+      "page": 55,
+      "active": 1,
+      "remaining": 136,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47022,
+      "page": 55,
+      "active": 1,
+      "remaining": 135,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47143,
+      "page": 56,
+      "active": 1,
+      "remaining": 134,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47321,
+      "page": 56,
+      "active": 1,
+      "remaining": 133,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        129
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47461,
+      "page": 56,
+      "active": 1,
+      "remaining": 132,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47588,
+      "page": 56,
+      "active": 1,
+      "remaining": 131,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47828,
+      "page": 56,
+      "active": 1,
+      "remaining": 130,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47968,
+      "page": 57,
+      "active": 1,
+      "remaining": 129,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48095,
+      "page": 57,
+      "active": 1,
+      "remaining": 128,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48233,
+      "page": 57,
+      "active": 1,
+      "remaining": 127,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48374,
+      "page": 57,
+      "active": 1,
+      "remaining": 126,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48513,
+      "page": 57,
+      "active": 1,
+      "remaining": 125,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48738,
+      "page": 58,
+      "active": 1,
+      "remaining": 124,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        130
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48861,
+      "page": 58,
+      "active": 1,
+      "remaining": 123,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49002,
+      "page": 58,
+      "active": 1,
+      "remaining": 122,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49140,
+      "page": 58,
+      "active": 1,
+      "remaining": 121,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49386,
+      "page": 58,
+      "active": 1,
+      "remaining": 120,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49529,
+      "page": 59,
+      "active": 1,
+      "remaining": 119,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49657,
+      "page": 59,
+      "active": 1,
+      "remaining": 118,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49788,
+      "page": 59,
+      "active": 1,
+      "remaining": 117,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 49919,
+      "page": 59,
+      "active": 1,
+      "remaining": 116,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 50146,
+      "page": 59,
+      "active": 1,
+      "remaining": 115,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 50283,
+      "page": 60,
+      "active": 1,
+      "remaining": 114,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 50423,
+      "page": 60,
+      "active": 1,
+      "remaining": 113,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 50561,
+      "page": 60,
+      "active": 1,
+      "remaining": 112,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51254,
+      "page": 60,
+      "active": 1,
+      "remaining": 111,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51397,
+      "page": 61,
+      "active": 1,
+      "remaining": 110,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51537,
+      "page": 61,
+      "active": 1,
+      "remaining": 109,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51669,
+      "page": 61,
+      "active": 1,
+      "remaining": 108,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51822,
+      "page": 61,
+      "active": 1,
+      "remaining": 107,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51957,
+      "page": 61,
+      "active": 1,
+      "remaining": 106,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 52092,
+      "page": 62,
+      "active": 1,
+      "remaining": 105,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 52230,
+      "page": 62,
+      "active": 1,
+      "remaining": 104,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 52371,
+      "page": 62,
+      "active": 1,
+      "remaining": 103,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 52608,
+      "page": 62,
+      "active": 1,
+      "remaining": 102,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 52744,
+      "page": 62,
+      "active": 1,
+      "remaining": 101,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 52869,
+      "page": 63,
+      "active": 1,
+      "remaining": 100,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 53008,
+      "page": 63,
+      "active": 1,
+      "remaining": 99,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 53142,
+      "page": 63,
+      "active": 1,
+      "remaining": 98,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 53266,
+      "page": 63,
+      "active": 1,
+      "remaining": 97,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        130
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 53955,
+      "page": 64,
+      "active": 1,
+      "remaining": 96,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54091,
+      "page": 64,
+      "active": 1,
+      "remaining": 95,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54225,
+      "page": 64,
+      "active": 1,
+      "remaining": 94,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54474,
+      "page": 64,
+      "active": 1,
+      "remaining": 93,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54604,
+      "page": 64,
+      "active": 1,
+      "remaining": 92,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54742,
+      "page": 65,
+      "active": 1,
+      "remaining": 91,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54872,
+      "page": 65,
+      "active": 1,
+      "remaining": 90,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55010,
+      "page": 65,
+      "active": 1,
+      "remaining": 89,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        129
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55138,
+      "page": 65,
+      "active": 1,
+      "remaining": 88,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55274,
+      "page": 65,
+      "active": 1,
+      "remaining": 87,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55416,
+      "page": 66,
+      "active": 1,
+      "remaining": 86,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55665,
+      "page": 66,
+      "active": 1,
+      "remaining": 85,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55804,
+      "page": 66,
+      "active": 1,
+      "remaining": 84,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 55944,
+      "page": 66,
+      "active": 1,
+      "remaining": 83,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 56081,
+      "page": 66,
+      "active": 1,
+      "remaining": 82,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 56223,
+      "page": 67,
+      "active": 1,
+      "remaining": 81,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 56884,
+      "page": 67,
+      "active": 1,
+      "remaining": 80,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57020,
+      "page": 67,
+      "active": 1,
+      "remaining": 79,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57155,
+      "page": 67,
+      "active": 1,
+      "remaining": 78,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57295,
+      "page": 68,
+      "active": 1,
+      "remaining": 77,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57538,
+      "page": 68,
+      "active": 1,
+      "remaining": 76,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57675,
+      "page": 68,
+      "active": 1,
+      "remaining": 75,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57813,
+      "page": 68,
+      "active": 1,
+      "remaining": 74,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57942,
+      "page": 68,
+      "active": 1,
+      "remaining": 73,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        131
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 58078,
+      "page": 69,
+      "active": 1,
+      "remaining": 72,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 58216,
+      "page": 69,
+      "active": 1,
+      "remaining": 71,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 58363,
+      "page": 69,
+      "active": 1,
+      "remaining": 70,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 58502,
+      "page": 69,
+      "active": 1,
+      "remaining": 69,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 58743,
+      "page": 69,
+      "active": 1,
+      "remaining": 68,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 58870,
+      "page": 70,
+      "active": 1,
+      "remaining": 67,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 59011,
+      "page": 70,
+      "active": 1,
+      "remaining": 66,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 59684,
+      "page": 70,
+      "active": 1,
+      "remaining": 65,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 59824,
+      "page": 70,
+      "active": 1,
+      "remaining": 64,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 59959,
+      "page": 71,
+      "active": 1,
+      "remaining": 63,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60098,
+      "page": 71,
+      "active": 1,
+      "remaining": 62,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60338,
+      "page": 71,
+      "active": 1,
+      "remaining": 61,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        17
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60473,
+      "page": 71,
+      "active": 1,
+      "remaining": 60,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60610,
+      "page": 71,
+      "active": 1,
+      "remaining": 59,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60745,
+      "page": 72,
+      "active": 1,
+      "remaining": 58,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        33
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60942,
+      "page": 72,
+      "active": 1,
+      "remaining": 57,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 61051,
+      "page": 72,
+      "active": 1,
+      "remaining": 56,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 61187,
+      "page": 72,
+      "active": 1,
+      "remaining": 55,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 61325,
+      "page": 72,
+      "active": 1,
+      "remaining": 54,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 61566,
+      "page": 73,
+      "active": 1,
+      "remaining": 53,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 61654,
+      "page": 73,
+      "active": 1,
+      "remaining": 52,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 61841,
+      "page": 73,
+      "active": 1,
+      "remaining": 51,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        135
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 62504,
+      "page": 73,
+      "active": 1,
+      "remaining": 50,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 62636,
+      "page": 74,
+      "active": 1,
+      "remaining": 49,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 62869,
+      "page": 74,
+      "active": 1,
+      "remaining": 48,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 62988,
+      "page": 74,
+      "active": 1,
+      "remaining": 47,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63096,
+      "page": 74,
+      "active": 1,
+      "remaining": 46,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63253,
+      "page": 74,
+      "active": 1,
+      "remaining": 45,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        35
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63474,
+      "page": 75,
+      "active": 1,
+      "remaining": 44,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63580,
+      "page": 75,
+      "active": 1,
+      "remaining": 43,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63697,
+      "page": 75,
+      "active": 1,
+      "remaining": 42,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63919,
+      "page": 75,
+      "active": 1,
+      "remaining": 41,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 64052,
+      "page": 75,
+      "active": 1,
+      "remaining": 40,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 64179,
+      "page": 76,
+      "active": 1,
+      "remaining": 39,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 64317,
+      "page": 76,
+      "active": 1,
+      "remaining": 38,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 64536,
+      "page": 76,
+      "active": 1,
+      "remaining": 37,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        134
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 64661,
+      "page": 76,
+      "active": 1,
+      "remaining": 36,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 65415,
+      "page": 77,
+      "active": 1,
+      "remaining": 35,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 65541,
+      "page": 77,
+      "active": 1,
+      "remaining": 34,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 65652,
+      "page": 77,
+      "active": 1,
+      "remaining": 33,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 65784,
+      "page": 77,
+      "active": 1,
+      "remaining": 32,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        81
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66023,
+      "page": 77,
+      "active": 1,
+      "remaining": 31,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66159,
+      "page": 78,
+      "active": 1,
+      "remaining": 30,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66295,
+      "page": 78,
+      "active": 1,
+      "remaining": 29,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66435,
+      "page": 78,
+      "active": 1,
+      "remaining": 28,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66655,
+      "page": 78,
+      "active": 1,
+      "remaining": 27,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66793,
+      "page": 78,
+      "active": 1,
+      "remaining": 26,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66924,
+      "page": 79,
+      "active": 1,
+      "remaining": 25,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        133
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 67069,
+      "page": 79,
+      "active": 1,
+      "remaining": 24,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 67195,
+      "page": 79,
+      "active": 1,
+      "remaining": 23,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        39,
+        81
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 67430,
+      "page": 79,
+      "active": 1,
+      "remaining": 22,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 67556,
+      "page": 79,
+      "active": 1,
+      "remaining": 21,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "phase": [
+        1,
+        1,
+        2,
+        128
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 68096,
+      "page": 0,
+      "active": 0,
+      "remaining": 21,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    }
+  ],
+  "frames": [
+    {
+      "i": 0,
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        4
+      ],
+      "forms": 3,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 590,
+      "page": 0,
+      "active": 1,
+      "remaining": 396,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 1,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1420,
+      "page": 2,
+      "active": 1,
+      "remaining": 390,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 2,
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2967,
+      "page": 3,
+      "active": 1,
+      "remaining": 384,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 3,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4434,
+      "page": 5,
+      "active": 1,
+      "remaining": 373,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 4,
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5899,
+      "page": 7,
+      "active": 1,
+      "remaining": 367,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 5,
+      "phase": [
+        1,
+        1,
+        35,
+        129
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7476,
+      "page": 9,
+      "active": 1,
+      "remaining": 356,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 6,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9056,
+      "page": 10,
+      "active": 1,
+      "remaining": 349,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 7,
+      "phase": [
+        1,
+        1,
+        39,
+        143
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10600,
+      "page": 12,
+      "active": 1,
+      "remaining": 341,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 8,
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12126,
+      "page": 14,
+      "active": 1,
+      "remaining": 332,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 9,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13613,
+      "page": 16,
+      "active": 1,
+      "remaining": 325,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 10,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15200,
+      "page": 18,
+      "active": 1,
+      "remaining": 314,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 11,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16654,
+      "page": 20,
+      "active": 1,
+      "remaining": 304,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 12,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18127,
+      "page": 22,
+      "active": 1,
+      "remaining": 294,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 13,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19622,
+      "page": 24,
+      "active": 1,
+      "remaining": 284,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 14,
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21195,
+      "page": 26,
+      "active": 1,
+      "remaining": 274,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 15,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22742,
+      "page": 27,
+      "active": 1,
+      "remaining": 267,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 16,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24203,
+      "page": 29,
+      "active": 1,
+      "remaining": 257,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 17,
+      "phase": [
+        1,
+        1,
+        39,
+        95
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25809,
+      "page": 31,
+      "active": 1,
+      "remaining": 247,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 18,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 27350,
+      "page": 33,
+      "active": 1,
+      "remaining": 240,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 19,
+      "phase": [
+        1,
+        1,
+        39,
+        33
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 28784,
+      "page": 35,
+      "active": 1,
+      "remaining": 231,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 20,
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 30383,
+      "page": 36,
+      "active": 1,
+      "remaining": 224,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 21,
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 31876,
+      "page": 38,
+      "active": 1,
+      "remaining": 214,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 22,
+      "phase": [
+        1,
+        1,
+        39,
+        18
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 33459,
+      "page": 40,
+      "active": 1,
+      "remaining": 204,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 23,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 34958,
+      "page": 42,
+      "active": 1,
+      "remaining": 197,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 24,
+      "phase": [
+        1,
+        1,
+        35,
+        128
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 36448,
+      "page": 44,
+      "active": 1,
+      "remaining": 187,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 25,
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 37972,
+      "page": 46,
+      "active": 1,
+      "remaining": 180,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 26,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 39441,
+      "page": 47,
+      "active": 1,
+      "remaining": 174,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 27,
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 41011,
+      "page": 49,
+      "active": 1,
+      "remaining": 167,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 28,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 42498,
+      "page": 50,
+      "active": 1,
+      "remaining": 161,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 29,
+      "phase": [
+        1,
+        1,
+        34,
+        2
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 44001,
+      "page": 52,
+      "active": 1,
+      "remaining": 151,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 30,
+      "phase": [
+        1,
+        1,
+        39,
+        116
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 45573,
+      "page": 54,
+      "active": 1,
+      "remaining": 142,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 31,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 47022,
+      "page": 55,
+      "active": 1,
+      "remaining": 135,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 32,
+      "phase": [
+        1,
+        1,
+        36,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 48513,
+      "page": 57,
+      "active": 1,
+      "remaining": 125,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 33,
+      "phase": [
+        1,
+        1,
+        39,
+        111
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 50040,
+      "page": 59,
+      "active": 1,
+      "remaining": 116,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 34,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 51537,
+      "page": 61,
+      "active": 1,
+      "remaining": 109,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 35,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 53142,
+      "page": 63,
+      "active": 1,
+      "remaining": 98,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 36,
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 54742,
+      "page": 65,
+      "active": 1,
+      "remaining": 91,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 37,
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 56223,
+      "page": 67,
+      "active": 1,
+      "remaining": 81,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 38,
+      "phase": [
+        1,
+        1,
+        39,
+        1
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 57813,
+      "page": 68,
+      "active": 1,
+      "remaining": 74,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 39,
+      "phase": [
+        1,
+        1,
+        39,
+        129
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 59358,
+      "page": 70,
+      "active": 1,
+      "remaining": 66,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 40,
+      "phase": [
+        1,
+        1,
+        39,
+        111
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 60847,
+      "page": 72,
+      "active": 1,
+      "remaining": 58,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 41,
+      "phase": [
+        1,
+        1,
+        39,
+        36
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 62175,
+      "page": 73,
+      "active": 1,
+      "remaining": 51,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 42,
+      "phase": [
+        1,
+        1,
+        39,
+        35
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 63474,
+      "page": 75,
+      "active": 1,
+      "remaining": 44,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 43,
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 64885,
+      "page": 76,
+      "active": 1,
+      "remaining": 36,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 44,
+      "phase": [
+        1,
+        1,
+        35,
+        0
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 66295,
+      "page": 78,
+      "active": 1,
+      "remaining": 29,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    {
+      "i": 45,
+      "phase": [
+        1,
+        1,
+        39,
+        21
+      ],
+      "kills": [
+        0,
+        10
+      ],
+      "forms": 11,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 67790,
+      "page": 79,
+      "active": 1,
+      "remaining": 21,
+      "bp": 226,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    }
+  ],
+  "errors": []
+}
