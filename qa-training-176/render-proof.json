@@ -1,0 +1,96 @@
+{
+  "proofs": [
+    {
+      "name": "training-payout",
+      "reward": "15142345",
+      "rows": [],
+      "text": [
+        "Gohan gained",
+        "1514E04 BP!",
+        "Training complete!",
+        "you earn!",
+        "Gohan t",
+        "15142345 BP!"
+      ]
+    },
+    {
+      "name": "training-max",
+      "reward": "18446744073709551615",
+      "rows": [],
+      "text": [
+        "Gohan gained",
+        "1514E04 BP!",
+        "Training complete!",
+        "you earn!",
+        "Gohan t",
+        "18446744073709551615 BP!"
+      ]
+    },
+    {
+      "name": "ssj-label",
+      "reward": null,
+      "rows": [
+        {
+          "actor": 3,
+          "combat": true,
+          "x": 48,
+          "y": 56,
+          "width": 56,
+          "height": 16,
+          "bp": "1589123400",
+          "baseBp": "15891234",
+          "superSaiyan": true
+        },
+        {
+          "actor": 3,
+          "combat": true,
+          "x": 112,
+          "y": 56,
+          "width": 56,
+          "height": 16,
+          "bp": "1589123400",
+          "baseBp": "15891234",
+          "superSaiyan": true
+        },
+        {
+          "actor": 5,
+          "combat": true,
+          "x": 176,
+          "y": 56,
+          "width": 56,
+          "height": 16,
+          "bp": "18446744073709551615",
+          "baseBp": "18446744073709551615",
+          "superSaiyan": false
+        }
+      ],
+      "text": [
+        "Gohan",
+        "Gohan",
+        "Yamcha",
+        "HP",
+        "60",
+        "70",
+        "65",
+        "60",
+        "60",
+        "65",
+        "BP",
+        "170000",
+        "170000",
+        "1300",
+        "BE",
+        "Battle",
+        "Card",
+        "Escape",
+        "1589123400",
+        "SSJ ×100",
+        "1589123400",
+        "SSJ ×100",
+        "1844674407",
+        "3709551615"
+      ]
+    }
+  ],
+  "errors": []
+}

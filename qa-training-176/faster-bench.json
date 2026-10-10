@@ -1,0 +1,483 @@
+{
+  "result": {
+    "before": {
+      "mode": 3,
+      "phase": 9,
+      "wins": 0,
+      "frames": 517
+    },
+    "after": {
+      "mode": 3,
+      "phase": 11,
+      "wins": 20,
+      "frames": 4445
+    },
+    "ms": 3768.7000000476837,
+    "presses": 0,
+    "rows": [
+      {
+        "ms": 52.90000003576279,
+        "mode": 3,
+        "phase": 10,
+        "wins": 1,
+        "frames": 563
+      },
+      {
+        "ms": 105.80000001192093,
+        "mode": 3,
+        "phase": 10,
+        "wins": 1,
+        "frames": 616
+      },
+      {
+        "ms": 167.9000000357628,
+        "mode": 3,
+        "phase": 10,
+        "wins": 1,
+        "frames": 679
+      },
+      {
+        "ms": 228.80000001192093,
+        "mode": 3,
+        "phase": 9,
+        "wins": 1,
+        "frames": 743
+      },
+      {
+        "ms": 293.4000000357628,
+        "mode": 3,
+        "phase": 10,
+        "wins": 2,
+        "frames": 808
+      },
+      {
+        "ms": 351.9000000357628,
+        "mode": 3,
+        "phase": 10,
+        "wins": 2,
+        "frames": 869
+      },
+      {
+        "ms": 418.10000002384186,
+        "mode": 3,
+        "phase": 8,
+        "wins": 2,
+        "frames": 936
+      },
+      {
+        "ms": 476.4000000357628,
+        "mode": 3,
+        "phase": 10,
+        "wins": 3,
+        "frames": 996
+      },
+      {
+        "ms": 543.5,
+        "mode": 3,
+        "phase": 10,
+        "wins": 3,
+        "frames": 1066
+      },
+      {
+        "ms": 600.8000000119209,
+        "mode": 3,
+        "phase": 8,
+        "wins": 3,
+        "frames": 1125
+      },
+      {
+        "ms": 653.6000000238419,
+        "mode": 3,
+        "phase": 10,
+        "wins": 4,
+        "frames": 1181
+      },
+      {
+        "ms": 719.1000000238419,
+        "mode": 3,
+        "phase": 8,
+        "wins": 4,
+        "frames": 1250
+      },
+      {
+        "ms": 776,
+        "mode": 3,
+        "phase": 9,
+        "wins": 4,
+        "frames": 1310
+      },
+      {
+        "ms": 843.8000000119209,
+        "mode": 3,
+        "phase": 11,
+        "wins": 5,
+        "frames": 1382
+      },
+      {
+        "ms": 898.2000000476837,
+        "mode": 3,
+        "phase": 11,
+        "wins": 5,
+        "frames": 1436
+      },
+      {
+        "ms": 950.2000000476837,
+        "mode": 3,
+        "phase": 11,
+        "wins": 5,
+        "frames": 1490
+      },
+      {
+        "ms": 1002.9000000357628,
+        "mode": 3,
+        "phase": 9,
+        "wins": 5,
+        "frames": 1546
+      },
+      {
+        "ms": 1068.6000000238419,
+        "mode": 3,
+        "phase": 10,
+        "wins": 6,
+        "frames": 1614
+      },
+      {
+        "ms": 1125.800000011921,
+        "mode": 3,
+        "phase": 10,
+        "wins": 6,
+        "frames": 1674
+      },
+      {
+        "ms": 1179.1000000238419,
+        "mode": 3,
+        "phase": 8,
+        "wins": 6,
+        "frames": 1731
+      },
+      {
+        "ms": 1243.2000000476837,
+        "mode": 3,
+        "phase": 10,
+        "wins": 7,
+        "frames": 1799
+      },
+      {
+        "ms": 1305,
+        "mode": 3,
+        "phase": 10,
+        "wins": 7,
+        "frames": 1861
+      },
+      {
+        "ms": 1370.1000000238419,
+        "mode": 3,
+        "phase": 8,
+        "wins": 7,
+        "frames": 1928
+      },
+      {
+        "ms": 1430,
+        "mode": 3,
+        "phase": 9,
+        "wins": 7,
+        "frames": 1986
+      },
+      {
+        "ms": 1493,
+        "mode": 3,
+        "phase": 10,
+        "wins": 8,
+        "frames": 2048
+      },
+      {
+        "ms": 1551.5,
+        "mode": 3,
+        "phase": 8,
+        "wins": 8,
+        "frames": 2109
+      },
+      {
+        "ms": 1618.4000000357628,
+        "mode": 3,
+        "phase": 9,
+        "wins": 8,
+        "frames": 2182
+      },
+      {
+        "ms": 1674.7000000476837,
+        "mode": 3,
+        "phase": 10,
+        "wins": 9,
+        "frames": 2242
+      },
+      {
+        "ms": 1727.6000000238419,
+        "mode": 3,
+        "phase": 8,
+        "wins": 9,
+        "frames": 2299
+      },
+      {
+        "ms": 1793.800000011921,
+        "mode": 3,
+        "phase": 10,
+        "wins": 10,
+        "frames": 2369
+      },
+      {
+        "ms": 1850.300000011921,
+        "mode": 3,
+        "phase": 11,
+        "wins": 10,
+        "frames": 2427
+      },
+      {
+        "ms": 1905.1000000238419,
+        "mode": 3,
+        "phase": 11,
+        "wins": 10,
+        "frames": 2484
+      },
+      {
+        "ms": 1968.5,
+        "mode": 3,
+        "phase": 8,
+        "wins": 10,
+        "frames": 2550
+      },
+      {
+        "ms": 2029.6000000238419,
+        "mode": 3,
+        "phase": 10,
+        "wins": 11,
+        "frames": 2610
+      },
+      {
+        "ms": 2093.800000011921,
+        "mode": 3,
+        "phase": 10,
+        "wins": 11,
+        "frames": 2677
+      },
+      {
+        "ms": 2152.2000000476837,
+        "mode": 3,
+        "phase": 10,
+        "wins": 11,
+        "frames": 2740
+      },
+      {
+        "ms": 2218.400000035763,
+        "mode": 3,
+        "phase": 9,
+        "wins": 11,
+        "frames": 2809
+      },
+      {
+        "ms": 2275.600000023842,
+        "mode": 3,
+        "phase": 10,
+        "wins": 12,
+        "frames": 2871
+      },
+      {
+        "ms": 2327.300000011921,
+        "mode": 3,
+        "phase": 10,
+        "wins": 12,
+        "frames": 2928
+      },
+      {
+        "ms": 2393.5,
+        "mode": 3,
+        "phase": 8,
+        "wins": 12,
+        "frames": 2993
+      },
+      {
+        "ms": 2449.900000035763,
+        "mode": 3,
+        "phase": 10,
+        "wins": 13,
+        "frames": 3054
+      },
+      {
+        "ms": 2502,
+        "mode": 3,
+        "phase": 10,
+        "wins": 13,
+        "frames": 3108
+      },
+      {
+        "ms": 2568.400000035763,
+        "mode": 3,
+        "phase": 8,
+        "wins": 13,
+        "frames": 3179
+      },
+      {
+        "ms": 2627.300000011921,
+        "mode": 3,
+        "phase": 10,
+        "wins": 14,
+        "frames": 3241
+      },
+      {
+        "ms": 2693.5,
+        "mode": 3,
+        "phase": 8,
+        "wins": 14,
+        "frames": 3313
+      },
+      {
+        "ms": 2751.7000000476837,
+        "mode": 3,
+        "phase": 9,
+        "wins": 14,
+        "frames": 3372
+      },
+      {
+        "ms": 2818.5,
+        "mode": 3,
+        "phase": 11,
+        "wins": 15,
+        "frames": 3442
+      },
+      {
+        "ms": 2874.900000035763,
+        "mode": 3,
+        "phase": 11,
+        "wins": 15,
+        "frames": 3502
+      },
+      {
+        "ms": 2928.400000035763,
+        "mode": 3,
+        "phase": 8,
+        "wins": 15,
+        "frames": 3559
+      },
+      {
+        "ms": 2993,
+        "mode": 3,
+        "phase": 9,
+        "wins": 15,
+        "frames": 3627
+      },
+      {
+        "ms": 3050.7000000476837,
+        "mode": 3,
+        "phase": 10,
+        "wins": 16,
+        "frames": 3688
+      },
+      {
+        "ms": 3103.7000000476837,
+        "mode": 3,
+        "phase": 10,
+        "wins": 16,
+        "frames": 3744
+      },
+      {
+        "ms": 3168.2000000476837,
+        "mode": 3,
+        "phase": 8,
+        "wins": 16,
+        "frames": 3811
+      },
+      {
+        "ms": 3227.100000023842,
+        "mode": 3,
+        "phase": 10,
+        "wins": 17,
+        "frames": 3872
+      },
+      {
+        "ms": 3294.5,
+        "mode": 3,
+        "phase": 10,
+        "wins": 17,
+        "frames": 3944
+      },
+      {
+        "ms": 3350.600000023842,
+        "mode": 3,
+        "phase": 8,
+        "wins": 17,
+        "frames": 4004
+      },
+      {
+        "ms": 3403.400000035763,
+        "mode": 3,
+        "phase": 10,
+        "wins": 18,
+        "frames": 4061
+      },
+      {
+        "ms": 3468.5,
+        "mode": 3,
+        "phase": 10,
+        "wins": 18,
+        "frames": 4130
+      },
+      {
+        "ms": 3526.800000011921,
+        "mode": 3,
+        "phase": 8,
+        "wins": 18,
+        "frames": 4193
+      },
+      {
+        "ms": 3593,
+        "mode": 3,
+        "phase": 10,
+        "wins": 19,
+        "frames": 4263
+      },
+      {
+        "ms": 3648.900000035763,
+        "mode": 3,
+        "phase": 8,
+        "wins": 19,
+        "frames": 4318
+      },
+      {
+        "ms": 3701.7000000476837,
+        "mode": 3,
+        "phase": 9,
+        "wins": 19,
+        "frames": 4375
+      },
+      {
+        "ms": 3768.5,
+        "mode": 3,
+        "phase": 11,
+        "wins": 20,
+        "frames": 4445
+      }
+    ],
+    "helper": {
+      "enabled": true,
+      "matching": true,
+      "lease": false,
+      "busy": false,
+      "settling": false,
+      "generation": 2,
+      "kind": null,
+      "pendingEdits": [],
+      "restoreFailed": false,
+      "lastError": "",
+      "stats": {
+        "transactions": 0,
+        "cardEdits": 0,
+        "cardRestores": 0,
+        "stands": 0,
+        "ties": 0,
+        "cancellations": 0
+      }
+    },
+    "ff": true
+  },
+  "errors": []
+}

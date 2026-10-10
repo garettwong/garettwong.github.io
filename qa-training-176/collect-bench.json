@@ -1,0 +1,22 @@
+{
+  "result": {
+    "before": {
+      "bp": "15846900",
+      "mode": 3,
+      "phase": 6,
+      "reward": "15142345"
+    },
+    "after": {
+      "bp": "30989245",
+      "mode": 6,
+      "phase": 1,
+      "reward": null
+    },
+    "stopped": 1,
+    "calls": 1,
+    "lock": "false",
+    "multiplier": 1,
+    "valid": true
+  },
+  "errors": []
+}

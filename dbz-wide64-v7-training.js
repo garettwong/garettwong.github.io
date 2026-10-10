@@ -1,7 +1,7 @@
 /* W64B player-side training assistance. ROM/save identity and native rewards stay intact. */
 (()=>{'use strict';
  const ROM=window.DreamWide64.ROM;
- let api=null,gm=null,raw=null,enabled=true,lease=false,leaseCodes=[],leaseJob=null,job=null,context=null,generation=0,sequence=0,timer=null,toggle=null,lastError='',tieCount=0;
+ let api=null,gm=null,raw=null,enabled=true,lease=false,leaseCodes=[],leaseJob=null,job=null,context=null,generation=0,sequence=0,timer=null,toggle=null,lastError='',tieCount=0,matching=false;
  const stats={transactions:0,cardEdits:0,cardRestores:0,stands:0,ties:0,cancellations:0};
  const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const now=()=>globalThis.performance?.now?.()??Date.now();
@@ -10,7 +10,7 @@
   for(let i=0;i+2057<=state.length;i++)if(state[i]===82&&state[i+1]===65&&state[i+2]===77&&state[i+3]===0&&state[i+4]===1&&state[i+5]===8&&state[i+6]===0&&state[i+7]===0&&state[i+8]===0)return i+9;
   throw Error('Training card data is not ready.');
  }
- function read(){const state=new Uint8Array(gm.getState());window.DreamWide64.validateNative(state);const offset=ramOffset(state);return{state,offset,ram:state.subarray(offset,offset+2048)};}
+ function read(){const state=new Uint8Array(gm.getState());window.DreamWide64.validateNative(state);const offset=ramOffset(state),ram=state.subarray(offset,offset+2048);matching=ram[0x2e]===3&&ram[0x30]>=8&&ram[0x30]<=11;return{state,offset,ram};}
  function cardMode(r){return r[0x2e]===4||r[0x2e]===5;}
  function active(){return enabled&&api&&api.active()!==false;}
  function ownsCards(){if(!api)return false;if(lease||job||leaseJob)return true;try{return enabled&&cardMode(read().ram);}catch{return false;}}
@@ -162,6 +162,7 @@
   if(context?.restoreFailed)await recoverPending();
  }
  async function reset(options={}){
+  matching=false;
   if(context){context.cancelled=true;if(options.discard){context.discard=true;context.edits=[];}}
   raw?.(0,8,0);raw?.(0,6,0);raw?.(0,7,0);
   await whenSettled();generation++;
@@ -178,5 +179,5 @@
   if(globalThis.document&&options.showToggle!==false){toggle=document.createElement('button');toggle.id='training-assist164-toggle';toggle.type='button';toggle.title='Choose training cards automatically when you press A';toggle.onclick=()=>void setEnabled(!enabled);updateLabel();(options.toggleContainer||document.querySelector('#touch-controls')||document.body).append(toggle);}
   timer=setInterval(()=>void monitor(),60);void monitor();
  }
- window.DreamWide64Training={ROM,start,ownsCards,whenSettled,reset,setEnabled,sanitize,inspect:()=>({enabled,lease,busy:!!job,settling:!!leaseJob,generation,kind:context?.kind||null,pendingEdits:context?.edits.map(e=>({...e}))||[],restoreFailed:!!context?.restoreFailed,lastError,stats:{...stats}})};
+ window.DreamWide64Training={ROM,start,ownsCards,whenSettled,reset,setEnabled,sanitize,repeatMultiplier:code=>code===8&&matching&&active()?5:1,inspect:()=>({enabled,matching,lease,busy:!!job,settling:!!leaseJob,generation,kind:context?.kind||null,pendingEdits:context?.edits.map(e=>({...e}))||[],restoreFailed:!!context?.restoreFailed,lastError,stats:{...stats}})};
 })();

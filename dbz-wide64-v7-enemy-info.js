@@ -59,6 +59,26 @@ function exactNumber(ctx,n,x,y,width,height=16){
  ctx.restore();
 }
 const names={Goku:1,Piccolo:2,Gohan:3,Krillin:4,Yamcha:5,Tien:6,Chaozu:7,Chiaotzu:7,Nail:8,Vegeta:42};
+function rewardHint(p,engine){
+ if(!engine.text?.scan)return null;
+ const cells=engine.text.scan(p).cells;
+ const line=y=>cells.filter(c=>c.y===y).map(c=>c.text).join('');
+ const first=cells.find(c=>c.y===48&&c.x===32);
+ return first&&line(32).endsWith('gained')&&line(48).endsWith('BP!')?{x:32,y:48,bg:first.bg,ink:first.ink}:null;
+}
+function decodeReward(input){
+ const c=window.DreamWide64,b=new Uint8Array(input),r=c.chunk(b,'RAM',2048),w=c.chunk(b,'WRM',8192);
+ if(r<0||w<0||![3,4,5,12].includes(b[r+0x2e]))return null;c.validateNative(b);
+ let n=0n;const at=w+c.memory.rewardAddress-0x6000;
+ for(let i=7;i>=0;i--)n=n*256n+BigInt(b[at+i]);return n.toString();
+}
+function drawReward(ctx,pixels,width,height,hint,value){
+ if(!hint||value===null)return false;
+ const color=n=>`rgb(${n&255},${n>>>8&255},${n>>>16&255})`;
+ ctx.save();ctx.scale(width/256,height/240);ctx.fillStyle=color(hint.bg);ctx.fillRect(32,48,200,8);
+ ctx.fillStyle=color(hint.ink);ctx.font='600 8px Arial,sans-serif';ctx.textAlign='left';ctx.textBaseline='top';
+ ctx.fillText(`${value} BP!`,32.3,48,199);ctx.restore();return true;
+}
 function menuHints(p,engine){
  const list=glyph(p,80,16,H,true)&&glyph(p,88,16,P,true)&&glyph(p,136,16,B,true)&&glyph(p,144,16,P,true);
  const battle=glyph(p,24,32,H,true)&&glyph(p,32,32,P,true)&&glyph(p,24,56,B,true)&&glyph(p,32,56,P,true);
@@ -78,8 +98,9 @@ function decodeMenu(input,hints){
   if(slot<0||!Array.from({length:9},(_,i)=>b[r+0x200+i*18]&63).includes(h.actor))continue;
   let bp=0n;const p=w+c.memory.partyBpStart-0x6000+slot*8;
   for(let i=7;i>=0;i--)bp=bp*256n+BigInt(b[p+i]);
-  if(h.combat&&((h.actor===1&&(forms&1))||(h.actor===3&&(forms&2))))bp=bp*100n>max?max:bp*100n;
-  rows.push({...h,bp:bp.toString()});
+  const baseBp=bp.toString(),superSaiyan=!!(h.combat&&((h.actor===1&&(forms&1))||(h.actor===3&&(forms&2))));
+  if(superSaiyan)bp=bp*100n>max?max:bp*100n;
+  rows.push({...h,bp:bp.toString(),baseBp,superSaiyan});
  }return rows;
 }
 function drawMenu(ctx,pixels,width,height,rows){
@@ -87,6 +108,7 @@ function drawMenu(ctx,pixels,width,height,rows){
  for(const row of rows){const at=(row.y*256+row.x)*4;
   ctx.fillStyle=`rgb(${pixels[at]},${pixels[at+1]},${pixels[at+2]})`;ctx.fillRect(row.x,row.y,row.width,row.height);
   ctx.fillStyle='#000';exactNumber(ctx,row.bp,row.x,row.y,row.width,row.height);
+  if(row.superSaiyan){ctx.font='700 6px Arial,sans-serif';ctx.textAlign='center';ctx.textBaseline='top';ctx.fillText('SSJ ×100',row.x+row.width/2,row.y-8,row.width-2);}
  }ctx.restore();return rows.length>0;
 }
 function drawHud(ctx,pixels,width,height,v){
@@ -122,15 +144,15 @@ function attach(proto){
  const original=proto.present;let pending=false,latest=null;
  proto.present=function(pixels){
   original.call(this,pixels);
-  const eligible=this.gameId===window.DreamWide64?.ROM&&this.overlay.style.display!=='none',hints=eligible?menuHints(pixels,this):[];
-  latest=eligible&&(hints.length||nativeHud(pixels)||nativeHud(pixels,48)||possibleScene(pixels))?{engine:this,pixels,hints}:null;
+  const eligible=this.gameId===window.DreamWide64?.ROM&&this.overlay.style.display!=='none',hints=eligible?menuHints(pixels,this):[],reward=eligible?rewardHint(pixels,this):null;
+  latest=eligible&&(reward||hints.length||nativeHud(pixels)||nativeHud(pixels,48)||possibleScene(pixels))?{engine:this,pixels,hints,reward}:null;
   if(!latest||pending)return;pending=true;
   queueMicrotask(()=>{pending=false;const frame=latest;latest=null;if(!frame)return;
    const e=frame.engine;if(e.stopped||e.suspended||e.lastPixels!==frame.pixels||e.overlay.style.display==='none')return;
-   try{const gm=window.EJS_emulator?.gameManager;if(!gm?.getState)return;const state=gm.getState();if(frame.hints.length)drawMenu(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeMenu(state,frame.hints));else if(nativeHud(frame.pixels)||nativeHud(frame.pixels,48)){for(const side of [0,32])if(nativeHud(frame.pixels,side===0?48:160))drawHud(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeHud(state,side));}else draw(e.out,frame.pixels,e.overlay.width,e.overlay.height,decode(state));}catch{/* Leave the native display if the edition/state is unavailable. */}
+   try{const gm=window.EJS_emulator?.gameManager;if(!gm?.getState)return;const state=gm.getState();if(frame.reward)drawReward(e.out,frame.pixels,e.overlay.width,e.overlay.height,frame.reward,decodeReward(state));else if(frame.hints.length)drawMenu(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeMenu(state,frame.hints));else if(nativeHud(frame.pixels)||nativeHud(frame.pixels,48)){for(const side of [0,32])if(nativeHud(frame.pixels,side===0?48:160))drawHud(e.out,frame.pixels,e.overlay.width,e.overlay.height,decodeHud(state,side));}else draw(e.out,frame.pixels,e.overlay.width,e.overlay.height,decode(state));}catch{/* Leave the native display if the edition/state is unavailable. */}
   });
  };
 }
-window.DreamWide64EnemyInfo={decode,draw,decodeHud,drawHud,nativeHud,hudNumber,numberLines,exactNumber,menuHints,decodeMenu,drawMenu,nativeDigits,possibleScene,attach};
+window.DreamWide64EnemyInfo={decode,draw,decodeHud,drawHud,nativeHud,hudNumber,numberLines,exactNumber,menuHints,decodeMenu,drawMenu,rewardHint,decodeReward,drawReward,nativeDigits,possibleScene,attach};
 if(window.DBZSourceEnglish?.EnglishPlayer)attach(window.DBZSourceEnglish.EnglishPlayer.prototype);
 })();

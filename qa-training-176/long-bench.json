@@ -1,0 +1,58 @@
+{
+  "result": {
+    "before": {
+      "mode": 3,
+      "phase": 9,
+      "step": 1,
+      "text": 255,
+      "wins": 0,
+      "reward": "0",
+      "bp": "15846900",
+      "frames": 537
+    },
+    "trained": {
+      "mode": 3,
+      "phase": 8,
+      "step": 1,
+      "text": 255,
+      "wins": 255,
+      "reward": "93000",
+      "bp": "15846900",
+      "frames": 101990
+    },
+    "payout": {
+      "mode": 3,
+      "phase": 6,
+      "step": 1,
+      "text": 33,
+      "wins": 255,
+      "reward": "93000",
+      "bp": "15846900",
+      "frames": 102508
+    },
+    "rounds": 500,
+    "ms": 99100.19999998808,
+    "helper": {
+      "enabled": true,
+      "matching": false,
+      "lease": false,
+      "busy": false,
+      "settling": false,
+      "generation": 2,
+      "kind": null,
+      "pendingEdits": [],
+      "restoreFailed": false,
+      "lastError": "",
+      "stats": {
+        "transactions": 0,
+        "cardEdits": 0,
+        "cardRestores": 0,
+        "stands": 0,
+        "ties": 0,
+        "cancellations": 0
+      }
+    },
+    "multiplier": 1
+  },
+  "errors": []
+}
