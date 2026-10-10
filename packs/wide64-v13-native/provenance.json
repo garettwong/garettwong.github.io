@@ -1,0 +1,35 @@
+[
+  {
+    "asset": "wave.png",
+    "source": "NES-AoE180-QA/native-battle-43.png",
+    "crop": [
+      79,
+      41,
+      99,
+      104
+    ],
+    "method": "Original NES RGB unchanged; black background made transparent"
+  },
+  {
+    "asset": "impact1.png",
+    "source": "NES-AoE180-QA/native-battle-0.png",
+    "crop": [
+      109,
+      27,
+      173,
+      99
+    ],
+    "method": "Original NES RGB unchanged; black background made transparent"
+  },
+  {
+    "asset": "impact2.png",
+    "source": "NES-AoE180-QA/native-battle-36.png",
+    "crop": [
+      109,
+      27,
+      173,
+      99
+    ],
+    "method": "Original NES RGB unchanged; black background made transparent"
+  }
+]

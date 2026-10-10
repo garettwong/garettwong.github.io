@@ -1,0 +1,567 @@
+{
+  "textCases": 80,
+  "waitCases": 20,
+  "result": "PASS",
+  "cases": [
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 6,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 32,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 34,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 39,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 0,
+      "phase": 40,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 6,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 32,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 64,
+      "auto": 0,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 64,
+      "auto": 1,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 219,
+      "auto": 0,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 219,
+      "auto": 1,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 226,
+      "auto": 0,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 34,
+      "cmd": 226,
+      "auto": 1,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 64,
+      "auto": 0,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 64,
+      "auto": 1,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 219,
+      "auto": 0,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 219,
+      "auto": 1,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 226,
+      "auto": 0,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 39,
+      "cmd": 226,
+      "auto": 1,
+      "fast": true
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 192,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 192,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 64,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 64,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 219,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 219,
+      "auto": 1,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 226,
+      "auto": 0,
+      "fast": false
+    },
+    {
+      "mode": 181,
+      "phase": 40,
+      "cmd": 226,
+      "auto": 1,
+      "fast": false
+    }
+  ]
+}

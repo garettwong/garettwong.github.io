@@ -1,0 +1,2600 @@
+{
+  "release": 185,
+  "rom": {
+    "release": 185,
+    "sha256": "362e4cfb426b472ceddf024aad724c328ae8cb70032f0a0f61d11d00551f248d",
+    "prgCrc32": 764635717
+  },
+  "firstFull400Ms": 69202,
+  "instrumented400Ms": 75536,
+  "nativeTargets": 400,
+  "nativeGroups": 80,
+  "visualGroups": 66,
+  "actualDrawCounterEveryGroupMatches": true,
+  "defeated": 386,
+  "nativeRemaining": 14,
+  "input": "No repeated A lock or test-driven A presses after initial start",
+  "hitToGoneMs": {
+    "min": 12.299999952316284,
+    "median": 15.899999976158142,
+    "max": 18.799999952316284
+  },
+  "firstGroupDraws": [
+    {
+      "time": 11557.5,
+      "text": "400 / 400 ENEMIES",
+      "progress": 0.3,
+      "size": 7,
+      "before": 400,
+      "dead": 7,
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "time": 11569.899999976158,
+      "text": "393 / 400 ENEMIES",
+      "progress": 1,
+      "size": 7,
+      "before": 400,
+      "dead": 7,
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "nativeTiming": {
+    "textCases": 80,
+    "waitCases": 20,
+    "result": "PASS",
+    "cases": [
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 6,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 32,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 34,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 39,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 0,
+        "phase": 40,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 6,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 32,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 64,
+        "auto": 0,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 64,
+        "auto": 1,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 219,
+        "auto": 0,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 219,
+        "auto": 1,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 226,
+        "auto": 0,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 34,
+        "cmd": 226,
+        "auto": 1,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 64,
+        "auto": 0,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 64,
+        "auto": 1,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 219,
+        "auto": 0,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 219,
+        "auto": 1,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 226,
+        "auto": 0,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 39,
+        "cmd": 226,
+        "auto": 1,
+        "fast": true
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 192,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 192,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 64,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 64,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 219,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 219,
+        "auto": 1,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 226,
+        "auto": 0,
+        "fast": false
+      },
+      {
+        "mode": 181,
+        "phase": 40,
+        "cmd": 226,
+        "auto": 1,
+        "fast": false
+      }
+    ]
+  },
+  "nativeRegression": "PASS48 encounterseeds, alltargetlethal/nonlethal, reserve HP,64BP,singletarget,nextturn;21victorycases;DEF fullrank selector",
+  "controls": {
+    "base": "http://127.0.0.1:8176",
+    "result": {
+      "title": "Wide64 NG+ v13 \u00c2\u00b7 Instant group blasts \u00c2\u00b7 Player 185",
+      "release": "185",
+      "path": "M60 2H90Q98 2 98 10V52H140Q148 52 148 60V90Q148 98 140 98H98V140Q98 148 90 148H60Q52 148 52 140V98H10Q2 98 2 90V60Q2 52 10 52H52V10Q52 2 60 2Z",
+      "remaining": 14,
+      "rom": "362e4cfb426b472ceddf024aad724c328ae8cb70032f0a0f61d11d00551f248d"
+    },
+    "directions": [
+      {
+        "want": [
+          4
+        ],
+        "actual": [
+          4
+        ]
+      },
+      {
+        "want": [
+          4,
+          7
+        ],
+        "actual": [
+          4,
+          7
+        ]
+      },
+      {
+        "want": [
+          7
+        ],
+        "actual": [
+          7
+        ]
+      },
+      {
+        "want": [
+          5,
+          7
+        ],
+        "actual": [
+          5,
+          7
+        ]
+      },
+      {
+        "want": [
+          5
+        ],
+        "actual": [
+          5
+        ]
+      },
+      {
+        "want": [
+          5,
+          6
+        ],
+        "actual": [
+          5,
+          6
+        ]
+      },
+      {
+        "want": [
+          6
+        ],
+        "actual": [
+          6
+        ]
+      },
+      {
+        "want": [
+          4,
+          6
+        ],
+        "actual": [
+          4,
+          6
+        ]
+      },
+      {
+        "want": [
+          7
+        ],
+        "actual": [
+          7
+        ]
+      }
+    ],
+    "errors": [],
+    "http": []
+  },
+  "saveCopy": {
+    "first": {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "actor": 3,
+      "offset": 72,
+      "work": [
+        0,
+        0,
+        0
+      ],
+      "party": [
+        {
+          "id": 1,
+          "status": 16,
+          "packed": 8,
+          "def": 8
+        },
+        {
+          "id": 2,
+          "status": 32,
+          "packed": 24,
+          "def": 8
+        },
+        {
+          "id": 3,
+          "status": 48,
+          "packed": 40,
+          "def": 8
+        },
+        {
+          "id": 4,
+          "status": 64,
+          "packed": 56,
+          "def": 8
+        },
+        {
+          "id": 3,
+          "status": 31,
+          "packed": 72,
+          "def": 8
+        },
+        {
+          "id": 6,
+          "status": 0,
+          "packed": 240,
+          "def": 0
+        },
+        {
+          "id": 7,
+          "status": 0,
+          "packed": 240,
+          "def": 0
+        },
+        {
+          "id": 42,
+          "status": 0,
+          "packed": 240,
+          "def": 0
+        },
+        {
+          "id": 136,
+          "status": 0,
+          "packed": 240,
+          "def": 0
+        }
+      ],
+      "groups": 2
+    },
+    "events": [
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          111
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          2
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          111
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          134
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          36,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          111
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 0
+      },
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          2
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          36,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          134
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          97
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          2
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          36,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          134
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          36,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          98
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          36,
+          1
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 1
+      },
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          0
+        ],
+        "actor": 3,
+        "offset": 72,
+        "work": [
+          0,
+          0,
+          0
+        ],
+        "party": [
+          {
+            "id": 1,
+            "status": 16,
+            "packed": 8,
+            "def": 8
+          },
+          {
+            "id": 2,
+            "status": 32,
+            "packed": 24,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 48,
+            "packed": 40,
+            "def": 8
+          },
+          {
+            "id": 4,
+            "status": 64,
+            "packed": 56,
+            "def": 8
+          },
+          {
+            "id": 3,
+            "status": 31,
+            "packed": 72,
+            "def": 8
+          },
+          {
+            "id": 6,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 7,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 42,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          },
+          {
+            "id": 136,
+            "status": 0,
+            "packed": 240,
+            "def": 0
+          }
+        ],
+        "groups": 2
+      }
+    ],
+    "sourcePreserved": true,
+    "errors": []
+  },
+  "errors": [],
+  "limitation": "Phone browser viewport tested; physical iPhone unavailable. Sub-millisecond visible animation is below display refresh; measured one-frame impact then disappearance. Full cast still uses actual native per-target calculations."
+}

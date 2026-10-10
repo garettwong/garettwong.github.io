@@ -1,0 +1,543 @@
+/* Player 163 presentation addon. ES28 ROM, adapters and shared UI stay frozen. */
+body.dbz-wide64-edition {
+  --es163-cream: #f7d8a5;
+  --es163-paper: #fce8bc;
+  --es163-ink: #100808;
+  --es163-purple: #7527fe;
+  --es163-gold: #f8d878;
+  --es163-font: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills) {
+  position: fixed;
+  inset: auto;
+  left: calc(var(--es163-vleft, 0px) + var(--es163-vwidth, 100vw) / 2);
+  top: calc(var(--es163-vtop, 0px) + var(--es163-vheight, 100dvh) / 2);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: min(560px, calc(var(--es163-vwidth, 100vw) - 16px));
+  height: fit-content;
+  max-height: calc(var(--es163-vheight, 100dvh) - 16px);
+  min-height: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 7px;
+  color: var(--es163-ink);
+  background: var(--es163-cream);
+  border: 3px solid #201008;
+  border-radius: 0;
+  outline: 2px solid #ff8170;
+  outline-offset: -5px;
+  box-shadow: 0 0 0 3px var(--es163-cream), 0 0 0 5px #381078, 0 0 0 100vmax #351067ed;
+  font: 700 14px/1.3 var(--es163-font);
+  touch-action: pan-y;
+  overscroll-behavior: contain;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills)[hidden] {
+  display: none;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills) h2 {
+  flex: 0 0 auto;
+  margin: 0;
+  font: 800 20px/1.2 var(--es163-font);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills) :is(button, input, select) {
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+  border: 2px solid #281808;
+  border-radius: 0;
+  color: var(--es163-ink);
+  background: var(--es163-paper);
+  box-shadow: inset 0 0 0 2px #ff8170;
+  font-family: var(--es163-font);
+  font-weight: 700;
+  touch-action: manipulation;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills) :is(button, input, select, summary):focus-visible {
+  outline: 3px solid #c81838;
+  outline-offset: 1px;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor) .es163-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding: 2px;
+  scroll-padding-block: 4px;
+}
+
+body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor) .es163-footer {
+  flex: 0 0 auto;
+  min-width: 0;
+  background: var(--es163-cream);
+}
+
+/* Count stays 2 × 2; the four multipliers always stay together. */
+body.dbz-wide64-edition #dbz-enemy-strength-choice h3 {
+  margin: 5px 0 5px;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice h3:not(:first-child) {
+  margin-top: 9px;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options[aria-label="Enemy count"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options button {
+  min-height: 46px;
+  padding: 7px 4px;
+  gap: 0;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options strong {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options span {
+  display: none;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice button[aria-checked="true"] {
+  color: var(--es163-gold);
+  background: #101008;
+  box-shadow: inset 0 0 0 2px #f8b838;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-summary {
+  margin: 9px 0 6px;
+  padding: 7px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--es163-ink);
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-feedback {
+  min-height: 0;
+  margin: 5px 0;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #6b2420;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-start,
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions .wide,
+body.dbz-wide64-edition #dbz-skills header button {
+  min-height: 44px;
+  padding: 9px 8px;
+  color: #fff4d8;
+  background: var(--es163-purple);
+  border-color: #281048;
+  box-shadow: inset 0 0 0 2px #e8b850;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-details summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  width: fit-content;
+  min-width: 44px;
+  padding: 0 4px;
+  cursor: pointer;
+  color: #483024;
+  font-size: 12px;
+  touch-action: manipulation;
+  list-style: none;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-details summary::-webkit-details-marker {
+  display: none;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-details summary::before {
+  content: "+";
+  display: inline-block;
+  margin-right: 6px;
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-details[open] summary::before {
+  content: "−";
+}
+
+body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-details p {
+  margin: 0 0 8px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: #483024;
+}
+
+/* Five original card nodes remain in one row, with all their native handlers. */
+body.dbz-wide64-edition #dbz-card-editor #crazy-card-range {
+  margin: 0 0 7px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #302018;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+  margin: 0 0 9px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button {
+  min-width: 44px;
+  min-height: 56px;
+  padding: 5px 1px !important;
+  font-size: 11px !important;
+  line-height: 1.5;
+  letter-spacing: -.3px;
+  border-width: 2px;
+  white-space: pre-line;
+  overflow-wrap: normal;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button[aria-pressed="true"] {
+  border-color: #c81838 !important;
+  box-shadow: inset 0 0 0 2px var(--es163-gold), 0 0 0 1px #201008;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button[aria-pressed="true"]::before {
+  content: none;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric {
+  grid-template-columns: 60px 44px minmax(44px, 1fr) 44px 44px 44px;
+  align-items: center;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric label {
+  grid-column: auto;
+  font-size: 12px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric button {
+  min-height: 44px;
+  padding: 0 2px;
+  font-size: 20px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric .dbz-card-bound {
+  font-size: 12px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric input {
+  width: 100%;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 2px 0;
+  background: #101008;
+  color: var(--es163-gold);
+  font-size: 20px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-attribute {
+  margin: 6px 0;
+  gap: 6px;
+  font-size: 12px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-attribute select {
+  min-height: 44px;
+  font-size: 18px;
+  padding: 0 8px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-lock {
+  min-height: 44px;
+  margin: 6px 0 0;
+  padding: 8px 4px;
+  font-size: 14px;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-hint {
+  margin: 5px 0 0;
+  color: #483024;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-feedback {
+  min-height: 0;
+  max-height: 4.2em;
+  overflow: auto;
+  margin: 0 0 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #245024;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-feedback:empty {
+  display: none;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions {
+  gap: 6px;
+  margin: 0;
+}
+
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions button {
+  min-height: 44px;
+  padding: 8px 3px;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+/* Shared All Skills receives the same ES28 NES palette and compact catalog. */
+body.dbz-wide64-edition #dbz-skills header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+body.dbz-wide64-edition #dbz-skills header h2 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: 18px;
+}
+
+body.dbz-wide64-edition #dbz-skills header button {
+  grid-row: 2;
+  text-align: center;
+  font-size: 12px;
+}
+
+body.dbz-wide64-edition #dbz-skills header button:first-child {
+  grid-column: 1;
+}
+
+body.dbz-wide64-edition #dbz-skills header button:last-child {
+  grid-column: 2;
+}
+
+body.dbz-wide64-edition #dbz-skills[data-es163-view="folders"] header h2 {
+  grid-column: 1;
+}
+
+body.dbz-wide64-edition #dbz-skills[data-es163-view="folders"] header button:last-child {
+  grid-row: 1;
+}
+
+body.dbz-wide64-edition #dbz-skills > p:not(.dbz-skill-notice) {
+  display: none;
+}
+
+body.dbz-wide64-edition #dbz-skills .dbz-skill-notice {
+  flex: 0 0 auto;
+  max-height: 4.2em;
+  overflow: auto;
+  margin: 0;
+  color: #6b2420;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+body.dbz-wide64-edition #dbz-skills .dbz-skill-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(48px, max-content);
+  gap: 5px;
+  align-content: start;
+  padding: 2px;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+body.dbz-wide64-edition #dbz-skills .dbz-skill-list[data-es163-view="folders"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.dbz-wide64-edition #dbz-skills .dbz-skill-list button {
+  min-width: 44px;
+  min-height: 48px;
+  width: 100%;
+  padding: 6px 5px;
+  font-size: 13px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  text-align: left;
+}
+
+body.dbz-wide64-edition #dbz-skills .dbz-skill-list[data-es163-view="folders"] button {
+  font-size: 12px;
+}
+
+body.dbz-wide64-edition #dbz-skills button:active {
+  color: var(--es163-gold);
+  background: #101008;
+}
+
+body.dbz-wide64-edition #dbz-skills button[hidden] {
+  display: none;
+}
+
+@media (min-width: 420px) {
+  body.dbz-wide64-edition #dbz-skills .dbz-skill-list[data-es163-view="folders"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 359px) {
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric {
+    grid-template-columns: 44px minmax(44px, 1fr) 44px 44px 44px;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric label {
+    grid-column: 1 / -1;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-height: 400px) and (min-width: 520px) {
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions .wide {
+    grid-column: auto;
+  }
+}
+
+/* A phone turned sideways uses its width instead of becoming a tall menu. */
+@media (max-height: 440px) and (min-width: 640px) {
+  body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills) {
+    width: min(840px, calc(var(--es163-vwidth, 100vw) - 16px));
+    padding: 8px;
+    gap: 4px;
+  }
+  body.dbz-wide64-edition :is(#dbz-enemy-strength-choice, #dbz-card-editor, #dbz-skills) h2 {
+    font-size: 18px;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .es163-scroll {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 12px;
+    align-items: center;
+    align-content: start;
+  }
+  body.dbz-wide64-edition #dbz-card-editor #crazy-card-range {
+    display: none;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button {
+    min-height: 44px;
+    padding: 3px 1px !important;
+    line-height: 1.35;
+  }
+  body.dbz-wide64-edition #dbz-card-editor :is(.dbz-card-numeric, .dbz-card-attribute, .dbz-card-lock) {
+    margin: 0;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric {
+    grid-template-columns: 50px 44px minmax(44px, 1fr) 44px 44px 44px;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric label {
+    font-size: 11px;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-hint {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions .wide {
+    grid-column: auto;
+  }
+  body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-scroll {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 4px 8px;
+    align-items: center;
+    align-content: start;
+  }
+  body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-scroll > h3 {
+    margin: 0;
+  }
+  body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options[aria-label="Enemy count"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-summary {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 5px 0;
+  }
+  body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-feedback {
+    margin: 0;
+  }
+  body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-details {
+    justify-self: end;
+  }
+  body.dbz-wide64-edition #dbz-skills header {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+  }
+  body.dbz-wide64-edition #dbz-skills header h2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body.dbz-wide64-edition #dbz-skills header button:first-child {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  body.dbz-wide64-edition #dbz-skills header button:last-child {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  body.dbz-wide64-edition #dbz-skills .dbz-skill-list,
+  body.dbz-wide64-edition #dbz-skills .dbz-skill-list[data-es163-view="folders"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: minmax(44px, max-content);
+    gap: 4px;
+  }
+  body.dbz-wide64-edition #dbz-skills .dbz-skill-list button {
+    min-height: 44px;
+    padding: 4px 5px;
+    font-size: 12px;
+  }
+}
+
+/* Player 185: keep all expanded choices visible in phone landscape. */
+@media (max-height: 440px) and (min-width: 640px) {
+ body.dbz-wide64-edition #dbz-enemy-strength-choice .es163-scroll {grid-template-columns:100px minmax(0,1fr);}
+ body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options[aria-label="Enemy count"] {grid-template-columns:repeat(6,minmax(0,1fr));}
+ body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options[aria-label="Enemy BP and HP multiplier"] {grid-template-columns:repeat(8,minmax(0,1fr));}
+ body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options strong {font-size:13px;}
+ body.dbz-wide64-edition #dbz-enemy-strength-choice .enemy-strength-options button {min-height:44px;padding:4px 1px;}
+ body.dbz-wide64-edition #dbz-enemy-strength-choice h3 {font-size:12px;}
+}

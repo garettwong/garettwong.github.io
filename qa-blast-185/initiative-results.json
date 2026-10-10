@@ -1,0 +1,360 @@
+{
+  "result": "PASS",
+  "reproducedOldBug": {
+    "defenses": [
+      256,
+      255,
+      64,
+      16
+    ],
+    "oldResult": {
+      "winner": 54,
+      "found": 240,
+      "page": 0,
+      "bank": 12
+    },
+    "oldWrongWinnerDefense": 16
+  },
+  "newPartyPermutations": [
+    {
+      "defense": [
+        1,
+        64,
+        255,
+        256
+      ],
+      "result": {
+        "winner": 54,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        1,
+        64,
+        256,
+        255
+      ],
+      "result": {
+        "winner": 36,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        1,
+        255,
+        64,
+        256
+      ],
+      "result": {
+        "winner": 54,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        1,
+        255,
+        256,
+        64
+      ],
+      "result": {
+        "winner": 36,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        1,
+        256,
+        64,
+        255
+      ],
+      "result": {
+        "winner": 18,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        1,
+        256,
+        255,
+        64
+      ],
+      "result": {
+        "winner": 18,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        64,
+        1,
+        255,
+        256
+      ],
+      "result": {
+        "winner": 54,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        64,
+        1,
+        256,
+        255
+      ],
+      "result": {
+        "winner": 36,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        64,
+        255,
+        1,
+        256
+      ],
+      "result": {
+        "winner": 54,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        64,
+        255,
+        256,
+        1
+      ],
+      "result": {
+        "winner": 36,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        64,
+        256,
+        1,
+        255
+      ],
+      "result": {
+        "winner": 18,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        64,
+        256,
+        255,
+        1
+      ],
+      "result": {
+        "winner": 18,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        255,
+        1,
+        64,
+        256
+      ],
+      "result": {
+        "winner": 54,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        255,
+        1,
+        256,
+        64
+      ],
+      "result": {
+        "winner": 36,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        255,
+        64,
+        1,
+        256
+      ],
+      "result": {
+        "winner": 54,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        255,
+        64,
+        256,
+        1
+      ],
+      "result": {
+        "winner": 36,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        255,
+        256,
+        1,
+        64
+      ],
+      "result": {
+        "winner": 18,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        255,
+        256,
+        64,
+        1
+      ],
+      "result": {
+        "winner": 18,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        256,
+        1,
+        64,
+        255
+      ],
+      "result": {
+        "winner": 0,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        256,
+        1,
+        255,
+        64
+      ],
+      "result": {
+        "winner": 0,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        256,
+        64,
+        1,
+        255
+      ],
+      "result": {
+        "winner": 0,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        256,
+        64,
+        255,
+        1
+      ],
+      "result": {
+        "winner": 0,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        256,
+        255,
+        1,
+        64
+      ],
+      "result": {
+        "winner": 0,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    },
+    {
+      "defense": [
+        256,
+        255,
+        64,
+        1
+      ],
+      "result": {
+        "winner": 0,
+        "found": 1,
+        "page": 0,
+        "bank": 12
+      }
+    }
+  ],
+  "additionalDistinctPairs": 6,
+  "ineligibleSkipped": true,
+  "enemyFullRankChecks": 14,
+  "emptyRoster": true
+}
