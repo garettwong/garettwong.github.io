@@ -1,0 +1,32 @@
+[
+  {
+    "strength": 16,
+    "hpCap": 65534,
+    "scriptedHp": 65535,
+    "bp": 268435440
+  },
+  {
+    "strength": 32,
+    "hpCap": 65534,
+    "scriptedHp": 65535,
+    "bp": 536870880
+  },
+  {
+    "strength": 64,
+    "hpCap": 65534,
+    "scriptedHp": 65535,
+    "bp": 1073741760
+  },
+  {
+    "strength": 128,
+    "hpCap": 65534,
+    "scriptedHp": 65535,
+    "bp": 2147483520
+  },
+  {
+    "highBpReserveTemplate": "PASS",
+    "newEncounterReset": "PASS",
+    "highBpEveryRefilledRecord": "PASS",
+    "accumulatedRewardPreservedAndScaled": 1580160
+  }
+]

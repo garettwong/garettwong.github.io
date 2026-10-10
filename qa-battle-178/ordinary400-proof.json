@@ -1,0 +1,127 @@
+{
+  "result": {
+    "initial": {
+      "phase": [
+        1,
+        1,
+        34,
+        0
+      ],
+      "request": 0,
+      "choice": 3,
+      "pending": 311,
+      "total": 400,
+      "loaded": 89,
+      "frames": 387,
+      "valid": true
+    },
+    "events": [
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          0
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 311,
+        "total": 400,
+        "loaded": 89,
+        "frames": 387,
+        "valid": true
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          1
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 311,
+        "total": 400,
+        "loaded": 89,
+        "frames": 451,
+        "valid": true
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          1
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 211,
+        "total": 400,
+        "loaded": 189,
+        "frames": 12984,
+        "valid": true
+      },
+      {
+        "phase": [
+          1,
+          1,
+          39,
+          0
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 111,
+        "total": 400,
+        "loaded": 289,
+        "frames": 32674,
+        "valid": true
+      },
+      {
+        "phase": [
+          1,
+          1,
+          35,
+          130
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 11,
+        "total": 400,
+        "loaded": 389,
+        "frames": 46204,
+        "valid": true
+      },
+      {
+        "phase": [
+          1,
+          1,
+          34,
+          2
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 0,
+        "total": 400,
+        "loaded": 400,
+        "frames": 70525,
+        "valid": true
+      }
+    ],
+    "final": {
+      "phase": [
+        1,
+        1,
+        7,
+        0
+      ],
+      "request": 0,
+      "choice": 3,
+      "pending": 0,
+      "total": 400,
+      "loaded": 400,
+      "frames": 85135,
+      "valid": true
+    }
+  },
+  "errors": []
+}

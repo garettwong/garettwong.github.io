@@ -1,0 +1,47 @@
+from pathlib import Path
+from py65.devices.mpu6502 import MPU
+import json
+q=Path(__file__).parent;b=(q/'candidate.nes').read_bytes();p=b[528:];labels=json.loads((q/'patch.json').read_text())['labels']
+def machine():
+ m=MPU();m.memory[0x6000:0x6900]=p[0x17600:0x17f00];m.memory[0x6900:0x7000]=p[0x2f700:0x2fe00];m.memory[0x7000:0x7200]=b[16:528];m.memory[0x8000:0xc000]=p[0x40000:0x44000];m.memory[0xc000:]=p[0x3c000:0x40000]
+ for at,fn in [(0x6bde,'range'),(0x6be5,'total'),(0x6303,'count')]:m.memory[at:at+4]=[0x20,labels[fn]&255,labels[fn]>>8,0x60]
+ for at,addr in [(0x7084,0x988e),(0x708a,0x9a5f),(0x7060,0x83e8)]:m.memory[at:at+4]=[0x20,addr&255,addr>>8,0x60]
+ m.memory[0x7371]=0;m.memory[0x7c4b]=0xa5;m.memory[0x75aa]=1;m.memory[0x7c6f]=1
+ for i in range(5):m.memory[0x2a2+i*18:0x2b4+i*18]=[16 if i==0 else 128,20,50,0,76,4,0,0,0,0,255,255,16 if i==0 else 128,0,0,0,0,0]
+ return m
+def call(m,pc,choice=None,limit=150000):
+ m.sp=0xff;m.stPushWord(0x04ff);m.pc=pc
+ for i in range(limit):
+  if choice is not None and m.memory[0x7390]==0xa5:m.memory[0x7391]=choice
+  m.step()
+  if m.pc==0x500:return i
+ raise AssertionError(('hung',hex(m.pc)))
+def u16(m,at):return m.memory[at]+256*m.memory[at+1]
+def at(i):return 0x7200+i*18 if i<20 else 0x7600+(i-20)*18
+def kill_batch(m):
+ for i in range(m.memory[0x7372]):m.memory[at(i)]|=64;m.memory[at(i)+2]=0;m.memory[at(i)+3]=0
+ for i in range(5):m.memory[0x2a2+i*18]|=64;m.memory[0x2a4+i*18]=0;m.memory[0x2a5+i*18]=0
+totals={5:set(),6:set()};rows=[]
+for choice in [5,6]:
+ for seed in range(256):
+  m=machine();m.memory[0x6c]=seed;m.a=0;call(m,0x6805,choice);n=u16(m,0x7398);totals[choice].add(n)
+  assert (180<=n<=200) if choice==5 else (380<=n<=400),(choice,n)
+  remaining=n;batch_sizes=[]
+  while True:
+   batch=m.memory[0x7372];batch_sizes.append(batch);assert batch==min(100,remaining)
+   for i in range(batch):assert m.memory[at(i)]==16 and u16(m,at(i)+2)==50
+   kill_batch(m);remaining-=batch;call(m,labels['count'])
+   assert m.y==min(100,remaining),(n,remaining,m.y)
+   assert u16(m,0x7396)==max(0,remaining-100)
+   if not remaining:break
+  assert sum(batch_sizes)==n
+ rows.append({'choice':choice,'totals':sorted(totals[choice]),'seeds':256,'completeToZero':True})
+assert totals[5]==set(range(180,201)) and totals[6]==set(range(380,401))
+for exponent in range(8):
+ m=machine();m.memory[0x7c60]=exponent;call(m,0x988e)
+ assert u16(m,0x2a4)==min(65534,50*(2**exponent))
+ assert int.from_bytes(bytes(m.memory[0x2a6:0x2a9]),'little')==1100*(2**exponent)
+ m.memory[0x2e]=1;m.memory[0x2f]=1;m.memory[0x9b]=100;m.memory[0x9c]=0;m.memory[0x9d]=0
+ call(m,0x9b15);reward=int.from_bytes(bytes(m.memory[0x75b0:0x75b8]),'little');assert reward==100*2**exponent,(exponent,reward)
+rows.append({'strengthExponents':list(range(8)),'nativeBpHpAndReward':'PASS'})
+(q/'native-tests.json').write_text(json.dumps(rows,indent=2));print(json.dumps(rows))
