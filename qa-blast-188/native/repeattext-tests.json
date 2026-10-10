@@ -1,0 +1,139 @@
+{
+  "actualBattleTextMessages": [
+    {
+      "active": 0,
+      "message": 1,
+      "oldFrames": 9,
+      "newFrames": 9
+    },
+    {
+      "active": 0,
+      "message": 2,
+      "oldFrames": 10,
+      "newFrames": 10
+    },
+    {
+      "active": 0,
+      "message": 3,
+      "oldFrames": 9,
+      "newFrames": 9
+    },
+    {
+      "active": 0,
+      "message": 4,
+      "oldFrames": 9,
+      "newFrames": 9
+    },
+    {
+      "active": 0,
+      "message": 13,
+      "oldFrames": 9,
+      "newFrames": 9
+    },
+    {
+      "active": 0,
+      "message": 87,
+      "oldFrames": 9,
+      "newFrames": 9
+    },
+    {
+      "active": 0,
+      "message": 93,
+      "oldFrames": 9,
+      "newFrames": 9
+    },
+    {
+      "active": 0,
+      "message": 94,
+      "oldFrames": 12,
+      "newFrames": 12
+    },
+    {
+      "active": 0,
+      "message": 95,
+      "oldFrames": 14,
+      "newFrames": 14
+    },
+    {
+      "active": 0,
+      "message": 96,
+      "oldFrames": 11,
+      "newFrames": 11
+    },
+    {
+      "active": 0,
+      "message": 97,
+      "oldFrames": 11,
+      "newFrames": 11
+    },
+    {
+      "active": 1,
+      "message": 1,
+      "oldFrames": 2,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 2,
+      "oldFrames": 2,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 3,
+      "oldFrames": 2,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 4,
+      "oldFrames": 1,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 13,
+      "oldFrames": 2,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 87,
+      "oldFrames": 1,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 93,
+      "oldFrames": 2,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 94,
+      "oldFrames": 1,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 95,
+      "oldFrames": 2,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 96,
+      "oldFrames": 1,
+      "newFrames": 1
+    },
+    {
+      "active": 1,
+      "message": 97,
+      "oldFrames": 1,
+      "newFrames": 1
+    }
+  ],
+  "nativeBattleStateUnchanged": true,
+  "parserStateEquivalent": true,
+  "ppuCanaryIntact": true
+}

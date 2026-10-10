@@ -1,0 +1,9517 @@
+{
+  "samples": [
+    {
+      "phase": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 561,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        4,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 664,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        4,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 765,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        5,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 867,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        5,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 966,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1082,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1191,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        4,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1288,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        4,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1392,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        5,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1499,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        5,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1608,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        6,
+        128
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1714,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1822,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 1938,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        3,
+        66
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2052,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        4,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2160,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        5,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2270,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        5,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2360,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        7,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2457,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        7,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2457,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2467,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2561,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2674,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2792,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 2905,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3021,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3133,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3242,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3357,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3469,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3581,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3691,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3795,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 3906,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4019,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4134,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4254,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4366,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4481,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4598,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4712,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4824,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 4931,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5048,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5162,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5278,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5395,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5509,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5620,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5736,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5851,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 5962,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6069,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6183,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6290,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6403,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6512,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6632,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6743,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6852,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 6976,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7089,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7199,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7308,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7422,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7535,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7654,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7770,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 7887,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8000,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8115,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8231,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8348,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8467,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8584,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8696,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8809,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 8926,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9041,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9158,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9272,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9388,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9506,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9620,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9738,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9854,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 9964,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10069,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10191,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10302,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10411,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10523,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10635,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10747,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10858,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 10972,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11088,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11203,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11318,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11435,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11549,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11661,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11774,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 11893,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12009,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12129,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12247,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12362,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12468,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12573,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12685,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12785,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12839,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 12908,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13002,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13120,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13232,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13350,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13466,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13583,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13694,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13806,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 13918,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14031,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14141,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14251,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14366,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14482,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14597,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14711,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14824,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 14940,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15056,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15169,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15287,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15403,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15515,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15621,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15734,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15843,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 15960,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16070,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16174,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16275,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16384,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16494,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16602,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16713,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16826,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 16945,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17060,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17177,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17291,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17401,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17517,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17634,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17744,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17867,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 17982,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18098,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18214,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18333,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18450,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18563,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18673,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18786,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 18904,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19014,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19123,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19235,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19354,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19471,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19589,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19704,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19814,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 19918,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20038,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20152,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20272,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20385,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20500,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20620,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20736,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20852,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 20964,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21075,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21189,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21305,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21419,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21524,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21632,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21749,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21867,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 21981,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22098,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22211,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22329,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22439,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22555,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22672,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22787,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 22904,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23019,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23140,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23254,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23352,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23469,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23589,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23694,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23800,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 23908,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24027,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24143,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24256,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24380,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24491,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24610,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24724,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24837,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 24947,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25058,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25179,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25295,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25412,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25531,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25643,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25751,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25861,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 25982,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26094,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26211,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    },
+    {
+      "phase": [
+        1,
+        1,
+        8,
+        0
+      ],
+      "kills": [
+        0,
+        1
+      ],
+      "forms": 0,
+      "queue": 0,
+      "loaded": 100,
+      "pending": 300,
+      "frame": 26325,
+      "page": 0,
+      "active": 0,
+      "remaining": 399,
+      "bp": 0,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      },
+      "group": {
+        "busy": false,
+        "animating": false,
+        "waiting": false,
+        "gate": false,
+        "modePending": false,
+        "logs": [],
+        "lastError": "",
+        "roster": 400,
+        "duration": 180,
+        "queued": 0,
+        "presented": 399,
+        "shown": []
+      },
+      "covered": false
+    }
+  ],
+  "errors": []
+}

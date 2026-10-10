@@ -1,0 +1,36 @@
+{"id":0,"name":"Energy Wave","ms":93,"slot":18,"command":192,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":5,"name":"Super Energy Wave","ms":95,"slot":18,"command":197,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":34,"name":"Explosive Wave","ms":95,"slot":18,"command":226,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":4,"name":"Energy Barrage","ms":112,"slot":18,"command":196,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":20,"name":"Galick Gun","ms":94,"slot":18,"command":212,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":8,"name":"Kamehameha","ms":127,"slot":18,"command":200,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":13,"name":"Kaio-ken","ms":88,"slot":18,"command":205,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":14,"name":"Kaio-ken Kamehameha","ms":95,"slot":18,"command":206,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":15,"name":"Kaio-ken ×3","ms":111,"slot":18,"command":207,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":16,"name":"Kaio-ken ×3 Kamehameha","ms":96,"slot":18,"command":208,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":17,"name":"Kaio-ken ×10","ms":111,"slot":18,"command":209,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":18,"name":"Kaio-ken ×10 Kamehameha","ms":93,"slot":18,"command":210,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":19,"name":"Kaio-ken ×20 Kamehameha","ms":93,"slot":18,"command":211,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":22,"name":"Spirit Bomb","ms":128,"slot":18,"command":214,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":23,"name":"Super Spirit Bomb","ms":111,"slot":18,"command":215,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":1,"name":"Demon Flash","ms":94,"slot":18,"command":193,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":6,"name":"Explosive Demon Flash","ms":111,"slot":18,"command":198,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":24,"name":"Mouth Beam","ms":126,"slot":18,"command":216,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":26,"name":"Special Beam Cannon","ms":116,"slot":18,"command":218,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":7,"name":"Masenko","ms":95,"slot":18,"command":199,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":10,"name":"Destructo Disc","ms":94,"slot":18,"command":202,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":27,"name":"Scatter Energy Wave","ms":112,"slot":18,"command":219,"phase":9,"closed":true,"notice":"Confirming your skill…"}
+{"id":9,"name":"Solar Flare","ms":79,"slot":18,"command":201,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":11,"name":"Spirit Ball","ms":112,"slot":18,"command":203,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":28,"name":"Tri-Beam","ms":111,"slot":18,"command":220,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":29,"name":"Four-Body Technique","ms":95,"slot":18,"command":221,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":30,"name":"Four-Body Tri-Beam","ms":94,"slot":18,"command":222,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":2,"name":"Dodon Ray","ms":95,"slot":18,"command":194,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":31,"name":"Psychic Power","ms":95,"slot":18,"command":223,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":33,"name":"Body Change","ms":111,"slot":18,"command":225,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":12,"name":"Crusher Ball","ms":94,"slot":18,"command":204,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":21,"name":"Speed Attack","ms":94,"slot":18,"command":213,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":25,"name":"Eraser Gun","ms":78,"slot":18,"command":217,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":32,"name":"Time Stop","ms":111,"slot":18,"command":224,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+{"id":3,"name":"Mouth Energy Wave","ms":112,"slot":18,"command":195,"phase":8,"closed":true,"notice":"Confirming your skill…"}
+PASS all35skills

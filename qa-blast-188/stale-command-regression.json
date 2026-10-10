@@ -1,0 +1,33 @@
+{
+  "old": {
+    "covers": true,
+    "draws": 1,
+    "busy": false,
+    "waiting": true,
+    "gate": true,
+    "modePending": false,
+    "logs": [],
+    "lastError": "",
+    "roster": 0,
+    "duration": 0,
+    "queued": 0,
+    "presented": 399,
+    "shown": []
+  },
+  "fixed": {
+    "covers": false,
+    "draws": 0,
+    "busy": false,
+    "animating": false,
+    "waiting": false,
+    "gate": false,
+    "modePending": false,
+    "logs": [],
+    "lastError": "",
+    "roster": 0,
+    "duration": 180,
+    "queued": 0,
+    "presented": null,
+    "shown": []
+  }
+}

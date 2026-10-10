@@ -1,0 +1,125 @@
+[
+  {
+    "sizeChoice": 5,
+    "nativeEncounters": 24,
+    "totals": [
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200
+    ],
+    "reserveInitialized": true
+  },
+  {
+    "sizeChoice": 6,
+    "nativeEncounters": 24,
+    "totals": [
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400
+    ],
+    "reserveInitialized": true
+  },
+  {
+    "total": 380,
+    "nonlethalReserveDamage": true,
+    "refillPreservedHP": true
+  },
+  {
+    "total": 394,
+    "nonlethalReserveDamage": true,
+    "refillPreservedHP": true
+  },
+  {
+    "total": 400,
+    "nonlethalReserveDamage": true,
+    "refillPreservedHP": true
+  },
+  {
+    "command": 64,
+    "lethal": false,
+    "visitedOnce": 400,
+    "passFinished": true
+  },
+  {
+    "command": 64,
+    "lethal": true,
+    "visitedOnce": 400,
+    "passFinished": true
+  },
+  {
+    "command": 219,
+    "lethal": false,
+    "visitedOnce": 400,
+    "passFinished": true
+  },
+  {
+    "command": 219,
+    "lethal": true,
+    "visitedOnce": 400,
+    "passFinished": true
+  },
+  {
+    "command": 226,
+    "lethal": false,
+    "visitedOnce": 400,
+    "passFinished": true
+  },
+  {
+    "command": 226,
+    "lethal": true,
+    "visitedOnce": 400,
+    "passFinished": true
+  },
+  {
+    "virtualBp64Cases": 8,
+    "passed": true
+  },
+  {
+    "singleTargetCommands": [
+      192,
+      216,
+      218,
+      225
+    ],
+    "reserveUnchanged": true
+  },
+  {
+    "nextTurnCardsResetWithoutHealing": true
+  }
+]

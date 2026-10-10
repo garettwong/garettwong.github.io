@@ -1,0 +1,1113 @@
+{
+  "version": "16",
+  "errors": [],
+  "samples": [
+    {
+      "at": 11526.299999952316,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 11636,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 11747.399999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 11858.699999988079,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 11969,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 12078.699999988079,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 12189.599999964237,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 12300.5,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 12408.299999952316,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 12518.599999964237,
+      "phase": 6,
+      "slot": 36,
+      "frame": 746,
+      "paused": true,
+      "pending": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": ""
+    },
+    {
+      "at": 12709.399999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 749,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12742,
+      "phase": 6,
+      "slot": 36,
+      "frame": 751,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12779.799999952316,
+      "phase": 6,
+      "slot": 36,
+      "frame": 754,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12815.299999952316,
+      "phase": 6,
+      "slot": 36,
+      "frame": 756,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12855,
+      "phase": 6,
+      "slot": 36,
+      "frame": 759,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12884.399999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 761,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12912.5,
+      "phase": 6,
+      "slot": 36,
+      "frame": 763,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12945.099999964237,
+      "phase": 6,
+      "slot": 36,
+      "frame": 765,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 12976.399999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 767,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13001.899999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 768,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13042,
+      "phase": 6,
+      "slot": 36,
+      "frame": 770,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13072.299999952316,
+      "phase": 6,
+      "slot": 36,
+      "frame": 771,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13099.399999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 773,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13134.199999988079,
+      "phase": 6,
+      "slot": 36,
+      "frame": 776,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13162,
+      "phase": 6,
+      "slot": 36,
+      "frame": 778,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13196.299999952316,
+      "phase": 6,
+      "slot": 36,
+      "frame": 780,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13220.099999964237,
+      "phase": 6,
+      "slot": 36,
+      "frame": 782,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13251.099999964237,
+      "phase": 6,
+      "slot": 36,
+      "frame": 783,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13285,
+      "phase": 6,
+      "slot": 36,
+      "frame": 785,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13317.199999988079,
+      "phase": 6,
+      "slot": 36,
+      "frame": 788,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13344.099999964237,
+      "phase": 6,
+      "slot": 36,
+      "frame": 789,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13375.899999976158,
+      "phase": 6,
+      "slot": 36,
+      "frame": 791,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        165,
+        0
+      ],
+      "commands": [
+        0,
+        0,
+        0,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13411,
+      "phase": 8,
+      "slot": 36,
+      "frame": 793,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        0,
+        226
+      ],
+      "commands": [
+        0,
+        0,
+        226,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13442.599999964237,
+      "phase": 8,
+      "slot": 36,
+      "frame": 795,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        0,
+        226
+      ],
+      "commands": [
+        0,
+        0,
+        226,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": true,
+      "text": "Confirming your skill…"
+    },
+    {
+      "at": 13492.599999964237,
+      "phase": 9,
+      "slot": 36,
+      "frame": 797,
+      "paused": false,
+      "pending": [
+        226,
+        36,
+        0,
+        226
+      ],
+      "commands": [
+        0,
+        0,
+        226,
+        226,
+        226,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dialog": false,
+      "text": "Confirming your skill…"
+    }
+  ],
+  "folders": [
+    {
+      "name": "Frieza",
+      "ms": 186,
+      "skills": 3
+    },
+    {
+      "name": "Vegeta",
+      "ms": 124,
+      "skills": 4
+    },
+    {
+      "name": "Goku",
+      "ms": 99,
+      "skills": 11
+    },
+    {
+      "name": "Piccolo",
+      "ms": 98,
+      "skills": 5
+    },
+    {
+      "name": "Gohan",
+      "ms": 161,
+      "skills": 3
+    },
+    {
+      "name": "Krillin",
+      "ms": 89,
+      "skills": 4
+    },
+    {
+      "name": "Yamcha",
+      "ms": 108,
+      "skills": 2
+    },
+    {
+      "name": "Tien",
+      "ms": 92,
+      "skills": 5
+    },
+    {
+      "name": "Chiaotzu",
+      "ms": 101,
+      "skills": 2
+    },
+    {
+      "name": "Captain Ginyu",
+      "ms": 93,
+      "skills": 4
+    },
+    {
+      "name": "Jeice",
+      "ms": 91,
+      "skills": 2
+    },
+    {
+      "name": "Burter",
+      "ms": 88,
+      "skills": 2
+    },
+    {
+      "name": "Recoome",
+      "ms": 104,
+      "skills": 3
+    },
+    {
+      "name": "Guldo",
+      "ms": 86,
+      "skills": 2
+    },
+    {
+      "name": "Nail",
+      "ms": 86,
+      "skills": 1
+    },
+    {
+      "name": "Frieza’s soldiers",
+      "ms": 85,
+      "skills": 2
+    }
+  ],
+  "decode": {
+    "count": 0,
+    "ms": 0
+  },
+  "before": {
+    "at": 12580.399999976158,
+    "phase": 6,
+    "slot": 36,
+    "frame": 746,
+    "paused": true,
+    "pending": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "commands": [
+      0,
+      0,
+      0,
+      226,
+      226,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dialog": true,
+    "text": ""
+  },
+  "selectionMs": 799,
+  "after": {
+    "at": 13492.599999964237,
+    "phase": 9,
+    "slot": 36,
+    "frame": 797,
+    "paused": false,
+    "pending": [
+      226,
+      36,
+      0,
+      226
+    ],
+    "commands": [
+      0,
+      0,
+      226,
+      226,
+      226,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dialog": false,
+    "text": "Confirming your skill…"
+  },
+  "trace": [
+    {
+      "at": 8309.399999976158,
+      "name": "pause",
+      "stack": "    at Object.pause (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:185:4471)\n    at Object.open (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:155:8)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:17)"
+    },
+    {
+      "at": 12644.199999988079,
+      "name": "play",
+      "stack": "    at resumeGame (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:112:280)\n    at Object.resume (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:185:4596)\n    at confirmNative (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:32:86)"
+    },
+    {
+      "at": 12690.299999952316,
+      "name": "pause",
+      "stack": "    at Object.pause (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:185:4471)\n    at confirmNative (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:34:7)\n    at async select (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:100:5)"
+    },
+    {
+      "at": 12690.599999964237,
+      "name": "play",
+      "stack": "    at resumeGame (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:112:280)\n    at Object.resume (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:185:4596)\n    at confirmNative (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:35:7)"
+    },
+    {
+      "at": 13451,
+      "name": "pause",
+      "stack": "    at Object.pause (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:185:4471)\n    at confirmNative (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:48:7)\n    at async select (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:100:5)"
+    },
+    {
+      "at": 13452.799999952316,
+      "name": "play",
+      "stack": "    at resumeGame (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:112:280)\n    at Object.resume (http://127.0.0.1:8176/player-wide64-v16-runtime.js?v=188-card-reveal-1:185:4596)\n    at close (http://127.0.0.1:8176/dbz-wide64-v16-skills.js?v=188:15:123)"
+    }
+  ],
+  "final": {
+    "at": 13694.599999964237,
+    "phase": 9,
+    "slot": 54,
+    "frame": 804,
+    "paused": false,
+    "pending": [
+      226,
+      36,
+      0,
+      226
+    ],
+    "commands": [
+      0,
+      0,
+      226,
+      226,
+      226,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dialog": false,
+    "text": "Confirming your skill…"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "local-verified; live deployment pending",
+  "release": 188,
+  "rom": {
+    "release": 188,
+    "sha256": "ed0e63256c9b6cb182db23f267812c97ffc14e4c5c76730bcd96676c7feed6da",
+    "prgCrc32": 397860690
+  },
+  "full400": {
+    "elapsedMs": 19294,
+    "animationSeconds": 18.515399999976157,
+    "groups": 78,
+    "groupsPerSecond": 4.212709420271798,
+    "killsPerSecond": 20.79350162570054,
+    "remaining": 15,
+    "sizes": [
+      5,
+      7,
+      6
+    ],
+    "observations": 1
+  },
+  "small180": {
+    "elapsedMs": 9299,
+    "animationSeconds": 8.582099999964237,
+    "groups": 35,
+    "groupsPerSecond": 4.078255904748937,
+    "killsPerSecond": 19.226063550959275,
+    "remaining": 15,
+    "sizes": [
+      5,
+      7,
+      6
+    ],
+    "observations": 1
+  },
+  "skills": 35,
+  "folders": 16,
+  "copy": "v15 source preserved; v16 native groups resumed",
+  "highestDef": "actual browser first selected DEF256",
+  "ordinary": "native regression and browser survivor decrease, no group overlay",
+  "nativeVictoryCases": 21,
+  "limitations": [
+    "Chrome desktop/mobile-emulation measurements; physical iPhone performance not measured",
+    "Actual kills depend on native misses and HP; measured 20.79 kills/sec, not 30-40."
+  ]
+}

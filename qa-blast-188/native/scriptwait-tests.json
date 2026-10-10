@@ -1,0 +1,17 @@
+[
+  {
+    "durationGuardCases": 6144,
+    "ordinaryExact": true,
+    "activeZero": true,
+    "oneScriptRead": true
+  },
+  {
+    "motionCases": 624,
+    "exactEndpoint": true,
+    "scratchAndXStackBankPreserved": true
+  },
+  {
+    "ordinaryMotionCases": 252,
+    "exact": true
+  }
+]
