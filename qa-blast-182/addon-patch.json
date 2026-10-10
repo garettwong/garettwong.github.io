@@ -1,0 +1,36 @@
+{
+  "labels": {
+    "finish_check": 32784,
+    "reset": 32948,
+    "step": 32972
+  },
+  "patches": [
+    {
+      "offset": 311824,
+      "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new": "13000000000000000000000000000000ad70738dff7338ad9a73ed72738512ad9b73e9008513a513d006a512c905901338a512e9058512a513e9008513eeff734c2680ad707348adc073482051804c57802049c712ed83688512688513adfe73c9b5d015a512f011adc073f007ad7073c513f005a9018dfd73a510d02a2083804c89802049c7129184c000d00d2093804c99802049c70cd6ae6020a0804ca6802049c70cc3a86020ad804cb3802049c70ceca860a9008dfd738dfe738dff7320c5804ccb802049c712488660adfe73c9b5d006adfd73f00160ad7173c9a5d030adc073d02ba530c9029025c90ab021247b701d20f9804cff802049c7129184c000d00d2009814c0f812049c70cd6ae60088a48a5d9c942d067a591c902d061ad000229bfc908d058ad02020d0302d050a530c902f00cc903f008c922f004c925d03ea212bd0002c940b008bd02021d0302d02d8a186912aae0a290e8a9088d0002a9018d0202a530c922f004c925d01068aa282079814c7f812049c70c9fa66068aa28ad5d01208c814c92812049c70c8b8360"
+    },
+    {
+      "offset": 207564,
+      "old": "203265a510d029",
+      "new": "20cf6513108060"
+    },
+    {
+      "offset": 196384,
+      "old": "088a48a5d9c942",
+      "new": "20cf6513cc8060"
+    },
+    {
+      "offset": 142,
+      "old": "20cf65124886",
+      "new": "20cf6513b480"
+    },
+    {
+      "offset": 196779,
+      "old": "e2461faf57cd3e4dd3178ca26b10c4cf724e83dcc8adb6f678a46cb72a916bfe",
+      "new": "7be18798c78dd5f7ae4df691a65ff86fc592f32bab3e0568c72afbe4786c2c81"
+    }
+  ],
+  "sha256": "4b78e3c25557bde33e59551d3824de175caf8dbe1db002aadcd3b209d36d2b87",
+  "prgCrc32": 681207166
+}

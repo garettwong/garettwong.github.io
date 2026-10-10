@@ -1,0 +1,53 @@
+/* Pointer capture and explicit release prevent stuck buttons. */
+(()=>{
+ const active=new Map(),timers=new Map(),pressedAt=new Map(),buttons=()=>document.querySelectorAll('#touch-controls button[data-code],#touch-controls button[data-codes]');
+ const padPointers=new Map(),locked=new Set(),lockButtons=()=>document.querySelectorAll('[data-lock-code]');
+ let tapActions=false,rapidLocks=false,singleA=false,frameDriven=false,rateMultiplier=()=>1;
+ const pulses=new Map(),rateKey='nes-dream:rapid-lock-rates';
+ let rates={a:6,b:6};try{const saved=JSON.parse(localStorage.getItem(rateKey)||'null');for(const k of ['a','b'])if(Number.isInteger(saved?.[k])&&saved[k]>=1&&saved[k]<=120)rates[k]=saved[k];}catch{}
+ function settings(next){releaseAll();for(const k of ['a','b'])if(Number.isInteger(next?.[k])&&next[k]>=1&&next[k]<=120)rates[k]=next[k];try{localStorage.setItem(rateKey,JSON.stringify(rates));}catch{}return{...rates};}
+ const input=(code,value)=>window.DreamInput?window.DreamInput.input('touch',0,code,value):window.EJS_emulator?.gameManager?.simulateInput(0,code,value);
+ const codes=b=>(b.dataset.codes||b.dataset.code).split(',').map(Number),held=new Set();
+ function sync(){
+  for(const [code,pulse]of pulses)if(!rapidLocks||!locked.has(code)){clearInterval(pulse.timer);pulses.delete(code);}
+  if(rapidLocks)for(const code of locked)if(!pulses.has(code)){const pulse={down:true,timer:null,elapsed:0};pulses.set(code,pulse);if(!frameDriven){const tick=()=>{if(window.EJS_emulator?.paused){releaseAll();return;}pulse.down=!pulse.down;sync();if(pulses.get(code)===pulse)pulse.timer=setTimeout(tick,500/(rates[code===8?'a':'b']*Math.max(1,rateMultiplier(code)||1)));};pulse.timer=setTimeout(tick,500/(rates[code===8?'a':'b']*Math.max(1,rateMultiplier(code)||1)));}}
+  const next=new Set(locked),manual=new Set();for(const b of active.values())for(const code of codes(b)){next.add(code);manual.add(code);}for(const values of padPointers.values())for(const code of values){next.add(code);manual.add(code);}
+  const output=new Set(next);for(const [code,pulse]of pulses)if(!pulse.down&&!manual.has(code))output.delete(code);
+  for(const code of held)if(!output.has(code))input(code,0);for(const code of output)if(!held.has(code))input(code,1);held.clear();for(const code of output)held.add(code);
+  for(const b of buttons())b.classList[codes(b).every(code=>manual.has(code))?'add':'remove']('pressed');for(const arrow of document.querySelectorAll('[data-direction]'))arrow.classList[next.has(Number(arrow.dataset.direction))?'add':'remove']('pressed');
+  for(const b of lockButtons()){const on=locked.has(Number(b.dataset.lockCode)),name=b.dataset.lockCode==='0'?'B':'A';b.setAttribute('aria-pressed',String(on));b.textContent=rapidLocks?(on?name+' ON':name+' lock'):(on?name+' locked':name+' lock');b.setAttribute('aria-label',rapidLocks?name+' rapid presses '+(on?'on':'off'):'Toggle '+name+' lock');b.classList[on?'add':'remove']('locked');}
+ }
+ function release(id){if(!active.has(id)&&!padPointers.has(id))return;padPointers.delete(id);clearTimeout(timers.get(id));timers.delete(id);active.delete(id);pressedAt.delete(id);sync();}
+ function releaseAll(){locked.clear();for(const id of new Set([...active.keys(),...padPointers.keys()]))release(id);sync();}
+ for(const b of lockButtons())b.addEventListener('click',()=>{if(!window.EJS_emulator?.started)return;const code=Number(b.dataset.lockCode);if(locked.has(code))locked.delete(code);else locked.add(code);sync();});
+ // The software core clocks locks after each emulated frame. Every press and
+ // release is then sampled by the game, including when browser timers lag.
+ function clockFrame(duration=1000/60){if(!frameDriven||!rapidLocks)return;if(window.EJS_emulator?.paused){releaseAll();return;}let changed=false;for(const [code,pulse]of pulses){const half=Math.max(duration,500/rates[code===8?'a':'b']);pulse.elapsed+=duration;if(pulse.elapsed+1e-7>=half){pulse.elapsed=Math.max(0,pulse.elapsed-half);pulse.down=!pulse.down;changed=true;}}if(changed)sync();}
+ window.DreamTouch={start(options={}){rateMultiplier=typeof options.rateMultiplier==='function'?options.rateMultiplier:()=>1;tapActions=options.tapActions===true;rapidLocks=options.rapidLocks!==false;singleA=options.singleA===true;frameDriven=options.frameDriven===true;document.body.classList.toggle('rapid-locks',rapidLocks);sync();if(!(navigator.maxTouchPoints>0||innerWidth<650))return;document.body.classList.add('touch-ready');document.body.style.setProperty('--game-aspect',String(window.EJS_emulator?.gameManager?.getVideoDimensions('aspect')||4/3));window.EJS_emulator?.handleResize?.();},clockFrame,resize(){document.body.style.setProperty('--game-aspect',String(window.EJS_emulator?.gameManager?.getVideoDimensions('aspect')||4/3));window.EJS_emulator?.handleResize?.();},releaseAll,settings,getSettings:()=>({...rates})};
+ for(const b of buttons()){
+ let lastPointer=-Infinity;
+ b.addEventListener("click",()=>{if(performance.now()-lastPointer<500||!window.EJS_emulator?.started)return;const id="click-"+codes(b).join("-");release(id);active.set(id,b);sync();timers.set(id,setTimeout(()=>release(id),120));});
+ b.addEventListener('pointerdown',event=>{lastPointer=performance.now();event.preventDefault();if(!window.EJS_emulator?.started)return;release(event.pointerId);try{b.setPointerCapture(event.pointerId);}catch{}active.set(event.pointerId,b);pressedAt.set(event.pointerId,performance.now());sync();
+ if((tapActions||(singleA&&codes(b).includes(8)))&&codes(b).length===1&&[0,8,2,3].includes(codes(b)[0]))timers.set(event.pointerId,setTimeout(()=>release(event.pointerId),90));});
+ b.addEventListener('pointerup',event=>{lastPointer=performance.now();event.preventDefault();const remaining=codes(b).some(code=>[4,5,6,7].includes(code))?0:70-(performance.now()-(pressedAt.get(event.pointerId)||0));if(remaining>0){clearTimeout(timers.get(event.pointerId));timers.set(event.pointerId,setTimeout(()=>release(event.pointerId),remaining));}else release(event.pointerId);});
+ for(const name of ['pointercancel'])b.addEventListener(name,event=>{event.preventDefault();release(event.pointerId);});
+ b.addEventListener('lostpointercapture',event=>{if(!timers.has(event.pointerId))release(event.pointerId);});
+ b.addEventListener('contextmenu',event=>event.preventDefault());
+ }
+ // Cancel Safari's native long-touch selection before its magnifier opens.
+ // Pointer events still drive movement; P/S and lock clicks remain separate.
+ const blockNativeHold=element=>{for(const type of ['touchstart','touchmove'])element.addEventListener(type,event=>{if(event.cancelable!==false)event.preventDefault();},{passive:false});element.addEventListener('selectstart',event=>event.preventDefault());element.addEventListener('dragstart',event=>event.preventDefault());};
+ for(const b of buttons())blockNativeHold(b);
+ const pad=document.querySelector?.('#direction-pad');
+ if(pad){
+  blockNativeHold(pad);
+  const update=event=>{const box=pad.getBoundingClientRect(),x=event.clientX-box.left-box.width/2,y=event.clientY-box.top-box.height/2;let values=[];if(Math.hypot(x,y)>box.width*.065){const sector=(Math.round(Math.atan2(y,x)/(Math.PI/4))+8)%8;values=[[7],[5,7],[5],[5,6],[6],[4,6],[4],[4,7]][sector];}padPointers.set(event.pointerId,values);sync();};
+  pad.addEventListener('pointerdown',event=>{event.preventDefault();if(!window.EJS_emulator?.started)return;release(event.pointerId);try{pad.setPointerCapture(event.pointerId);}catch{}update(event);});
+  pad.addEventListener('pointermove',event=>{if(!padPointers.has(event.pointerId))return;if(event.pointerType==='mouse'&&event.buttons===0){release(event.pointerId);return;}event.preventDefault();update(event);});
+  for(const type of ['pointerup','pointercancel','lostpointercapture'])pad.addEventListener(type,event=>{event.preventDefault();release(event.pointerId);});
+  pad.addEventListener('contextmenu',event=>event.preventDefault());
+ }
+ // Capture-phase fallback also releases pointers when browser capture is interrupted.
+ for(const type of ['pointerup','pointercancel'])addEventListener(type,event=>{if(padPointers.has(event.pointerId)||type==='pointercancel')release(event.pointerId);},true);
+ addEventListener('blur',releaseAll);addEventListener('pagehide',releaseAll);document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseAll();});
+})();

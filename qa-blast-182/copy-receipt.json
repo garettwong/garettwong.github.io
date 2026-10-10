@@ -1,0 +1,23 @@
+{
+  "operation": "copy-wide64-v10-to-v11",
+  "sourceRomId": "35fb39e8b495ee788aacd9519fa952df56ada686dd0d4f305d61632cb13033a5",
+  "targetRomId": "4b78e3c25557bde33e59551d3824de175caf8dbe1db002aadcd3b209d36d2b87",
+  "phase": 1,
+  "subphase": 2,
+  "changedNativeOffsets": [
+    8732,
+    8733,
+    8734,
+    8735,
+    8736,
+    8737,
+    8738,
+    9101,
+    9102,
+    9103,
+    9993,
+    9994,
+    9995
+  ],
+  "progressPreserved": true
+}

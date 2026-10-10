@@ -1,0 +1,30 @@
+{
+  "release": 182,
+  "romSha256": "4b78e3c25557bde33e59551d3824de175caf8dbe1db002aadcd3b209d36d2b87",
+  "fullNativeCast": {
+    "groups": 80,
+    "targetsExactlyOnce": 400,
+    "remainingAfterNativeMisses": 22,
+    "completed": true,
+    "javascriptErrors": []
+  },
+  "partialFinalGroup": {
+    "total": 382,
+    "targets": [
+      380,
+      381
+    ],
+    "zeroRemainingVictoryStarted": true
+  },
+  "rewards": "Real Nestopia recovered zero-enemy 382 battle; controlled 3820 pending reward credited exactly once to each of three distinct party fighters",
+  "copyOriginalPreserved": true,
+  "midGroupLoadResumes": true,
+  "originalPixels": true,
+  "variedNativePoses": {
+    "16": 4,
+    "36": 2
+  },
+  "dpad": "9 input cases passed; original Player181 SVG preserved",
+  "freshMap": "v11 accepts map copy and runs original map; automated full new-encounter route was not completed",
+  "userRequestedStyle": "Original DBZ2 fight scene; native full-body sprites at varied depths, mixed facing, independent motion and original left-to-right blast pixels; rejected boxed-character concept removed"
+}
