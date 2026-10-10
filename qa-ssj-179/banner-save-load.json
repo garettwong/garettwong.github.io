@@ -1,0 +1,26 @@
+{
+  "saveWaitMs": 7865.599999964237,
+  "before": {
+    "queue": 0,
+    "forms": 15,
+    "kills": [
+      10,
+      10
+    ],
+    "error": ""
+  },
+  "after": {
+    "queue": 0,
+    "forms": 15,
+    "kills": [
+      10,
+      10
+    ],
+    "banner": {
+      "busy": false,
+      "lastError": "",
+      "duration": 4200
+    }
+  },
+  "errors": []
+}

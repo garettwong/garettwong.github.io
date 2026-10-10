@@ -1,0 +1,91 @@
+{
+  "diff": [
+    16,
+    17,
+    18,
+    19,
+    9060,
+    9061,
+    9066,
+    9067,
+    9102,
+    9103
+  ],
+  "unchangedSource": true,
+  "fullRamAndProgressExact": true,
+  "rejectUnapproved": true,
+  "rejectBattle": true,
+  "rejectForeignRom": true,
+  "receipt": {
+    "status": "VERIFIED_MANUAL_COPY",
+    "format": "wide64-selected-save-copy-v8-to-v9",
+    "operation": "copy-wide64-v8-to-v9",
+    "sourceRomId": "1d42c093625251cd2c7c07d6ac87b115bb0e02e9e7b5441f000200162dd027c6",
+    "targetRomId": "cf2e6b9aef368f4ff8627c558f9d558db327ad76a572132353a7f05cfaab82e8",
+    "sourceStateSha256": "773f49d083bfd93335a1fd0537089e9da310b24aed31d8efd30736e53591447d",
+    "sourceNativeSha256": "a55c54a2a0b29b9a5b8a9eff85534f663746a112be9756594e264a95ba33e8b7",
+    "stateSha256": "664351630ea0bbb3db863422715254f5cabf1dc9aaad5d2b42e36c33d2927d5f",
+    "nativeSha256": "229bb82d3ced65527715318f3594bc71a315718cd3ea6222cb69e71da81659ba",
+    "safePoint": "native-map-menu-idle-DCD7",
+    "coreLayout": "wasm-legacy",
+    "sourcePrgCrc32": 3087365842,
+    "targetPrgCrc32": 2312347497,
+    "nfoFrame": 1305,
+    "codeChangedAddresses": [
+      28760,
+      28761,
+      28766,
+      28767,
+      28802,
+      28803
+    ],
+    "graphicsResetAddresses": [],
+    "progressFormat": "W64B",
+    "fullRamAndProgressPreserved": true,
+    "nonMemWrapperSectionsPreserved": true,
+    "sourceUnchanged": true,
+    "automatic": false,
+    "actors": [
+      {
+        "actorId": 1,
+        "bp": "10000"
+      },
+      {
+        "actorId": 2,
+        "bp": "50000"
+      },
+      {
+        "actorId": 3,
+        "bp": "1700"
+      },
+      {
+        "actorId": 4,
+        "bp": "1500"
+      },
+      {
+        "actorId": 5,
+        "bp": "1300"
+      },
+      {
+        "actorId": 6,
+        "bp": "1800"
+      },
+      {
+        "actorId": 7,
+        "bp": "1100"
+      },
+      {
+        "actorId": 8,
+        "bp": "42000"
+      },
+      {
+        "actorId": 42,
+        "bp": "1300"
+      }
+    ],
+    "round": 1,
+    "forms": 0,
+    "frozenRoundScale": "1",
+    "roundStartBaseline": "0"
+  }
+}

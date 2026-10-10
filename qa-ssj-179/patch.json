@@ -1,0 +1,86 @@
+{
+  "sha256": "71d19fffef5729fd8aa471cc070388993a432ae77a1644b7abe3d948d870eb13",
+  "prgCrc32": 2732451057,
+  "labels": {
+    "palette_allocate": 36744,
+    "palette_restore": 36672,
+    "credit_kill": 44951,
+    "menu_upgrade": 45112,
+    "reset_forms": 44880,
+    "scale_forms": 45122,
+    "snapshot_target": 44910,
+    "select_hair": 36864
+  },
+  "patches": [
+    {
+      "offset": 282960,
+      "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new": "adb673c9a9d03aadb773c951d033a52ec906d025ad1401c938d01ead1501c90fd017ad1601c927d010a202bdb8739d1401ca10f7a9ff8d0001a9008db6738db773a52ec9064c9882a200e438b017bd0007c9efb009bd02072903c902f006e8e8e8e8d0e660a202bd14019db873ca10f7a9a98db673a9518db773a9018515a90285174c1d83"
+    },
+    {
+      "offset": 274784,
+      "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new": "48a9008dbb738dbc738dbe738dbf73adae7529038dae758dbd73684c00ae08488a48a9008dbf73ae4d03e05ab012bda202c940b00bbda4021da502f003eebf7368aa68284c0b8e08488a48adbf73f032a9008dbf73ad30030d3103d025ad627ed020ad0e03293fc901f008c903d013a201d002a200bdbb73c90ab003febb7320d9af68aa68284c558ea52ec901d046a201bdbb73c90a903aadae753d34b0f032adae753d36b0d02aadae751d36b08dae75adbe731d34b08dbe73ad7806c9fff00509808d7806ad8806c9fff00509808d8806ca10bcad4b7cc9a5d007adbe732903d0f9600102040820d9afa52ec9014cbaa3293fc901f013c903d025adae752902f01eadae7529084c67b0adae752901f00fadae7529044820e6ac68f0034ce6ac60"
+    },
+    {
+      "offset": 283152,
+      "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new": "8501a502c901d014adae752904f01eb932908500b9649085014c2d90adae752908f00ab90a938500b93c938501a0004cc7809698b2c4cad0eaf0f6fc16304a647e949eb8d6f0fa142e3032343638526c86888a8c8e90929496b0c6e0e2e4e6e8eaeceef090909090909090909090919191919191919191919192929292929292929292929292929292929292929292929292929292920000ff0610fe000018fe014010060280180603c010fb000018fb0140f10409fe150011fd1640090617c011fa1640f10102fc1800f10101fa1940ff0607fc04000ffc0540070406800f04078007f904000ff90540f10104fb1a40f10101f91b40f10102fb1c40ff0606fc05000efc0840060409c00e040ac006f905000ef90840ff060efc050016fc0b400e0409c016ff0c400ef9050016f90b40ee060efa0c0016fa0b400e020d8016fe0e400ef70c0016f70b40ee0619fb0a0021fb0b4019fe0f00210310c019f80a0021f80b40ee0620fc110028fc0b4020ff1200280413c020f9110028f90b40ee05150214001d011540150816c01d0a17c01dfe1540f10205fd1d000dfd1e40ff0618fc0b0020fc0d4018040e8020040fc018f90b0020f90d40ff07140010001c001140140812801c0813c01c1014c014fd10001cfd1140ee060cff180014ff19400c071a8014071bc00cfc180014fc1940f10207ff1f000fff2040ee0620131c0028131d40201b1e80281b1fc020101c0028101d40ee060efa0c0016fa0b400e020d80160220c00ef70c0016f70b4000000000000000000000ff060efa0d0016fa0b400e02158016ff16400ef70d0016f70b40ff060efa0d0016fa0b400e021780160218c00ef70d0016f70b40ee060cfa0c0014fa0b400c0221c0140222c00cf70c0014f70b4000000000000000000000000000000000ee060efc0a0016fc0b400e0423c016ff24400ef90a0016f90b40ff050f04198017021a400f0a1b80170a1c8017ff1a40ff060ffd000017fd0b400f051d8017050ac00ffa000017fa0b4000000000000000000000000000000000ee0611fc250019fc2640110127001904288011f9250019f926406e708a949aa0b6bcc2c8e2ec06203a444a647e949eb8c2dcf6001a1c1e20222426282a2c2e30323436383a3c3e404244464893939393939393939393939394949494949494949494949494959595959595959595959595959595959595959595959595950000ff0615011e001d011f40150920801d0921c015fc1e001dfc1f40f1020b0021c013fe2240f10104fe2300f10101f92440f1050b03254013032640130b27c00bfe254013fe2640f10104fe2840f10101f92940f10102fa2a40ee060aff290012ff2a400a072bc012072cc00afa290012fa2a40f1020f012b0017042cc0ee060bff290013ff2a400b072dc013072ec00bfa290013fa2a40ee0611ff290019ff2f40110730c0190731c011fa290019fa2f40ff060ffe1e0017fe1f400f002200170623c00ff91e0017f91f40f102170a2dc01f0d2ec0f101030c2f00ff0607fe24000ffe2540070626800f0627c007f924000ff92540ee060800320010003340080834c0100835c008fb320010fb3340ee05070036000f003740070838c007fb36000ffb3740f10203ff30000bfc3140ff061f042840270429c01f0c2a80270c2bc01fff284027ff29c0f1021101320019013340ee0612ff29001aff2a40120739c01a072cc012fa29001afa2a40ee0612ff29001aff2a4012072bc01a072cc012fa29001afa2a40f1020801348010003540ff060f001e0017001f400f082cc017012d400ffb1e0017fb1f4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ee0612ff3a001aff3b4012013c401a073dc012fa3a001afa3b40"
+    },
+    {
+      "offset": 279251,
+      "old": "8501a000",
+      "new": "4c0090ea"
+    },
+    {
+      "offset": 279716,
+      "old": "a52ec906",
+      "new": "4c408fea"
+    },
+    {
+      "offset": 279849,
+      "old": "a9018515",
+      "new": "4c888fea"
+    },
+    {
+      "offset": 279654,
+      "old": "adae75",
+      "new": "4c6a82"
+    },
+    {
+      "offset": 274139,
+      "old": "293fc9",
+      "new": "4c42b0"
+    },
+    {
+      "offset": 271814,
+      "old": "a52ec901",
+      "new": "4c38b0ea"
+    },
+    {
+      "offset": 271834,
+      "old": "03",
+      "new": "0f"
+    },
+    {
+      "offset": 272681,
+      "old": "03",
+      "new": "0f"
+    },
+    {
+      "offset": 104,
+      "old": "0b8e",
+      "new": "6eaf"
+    },
+    {
+      "offset": 110,
+      "old": "558e",
+      "new": "97af"
+    },
+    {
+      "offset": 146,
+      "old": "00ae",
+      "new": "50af"
+    }
+  ]
+}

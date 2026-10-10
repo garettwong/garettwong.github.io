@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "ackOnlyQueue": true,
+    "doubleQueue": true,
+    "waited": 3295.199999988079,
+    "final": {
+      "queue": 0,
+      "forms": 15,
+      "banner": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    "menu": {
+      "repeatBlocked": true,
+      "normalUsedMenu": [
+        0,
+        8,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        22,
+        23
+      ]
+    }
+  },
+  "errors": []
+}

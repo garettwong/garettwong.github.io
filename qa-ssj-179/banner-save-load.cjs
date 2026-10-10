@@ -1,0 +1,18 @@
+const fs=require('fs'),assert=require('assert/strict');const {chromium}=require('C:/Users/garet/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root='D:/Codex 2/projects/NES-Wide64-HPBP169',edition=JSON.parse(fs.readFileSync(root+'/dbz-wide64-v9-edition.json'));
+(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'}),page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const errors=[];page.on('pageerror',e=>{errors.push(e.message);console.log('error',e.message)});
+page.on('console',m=>{if(m.text().startsWith('battle179'))console.log(m.text());});
+await page.goto((process.env.BASE||'http://127.0.0.1:8176')+'/dbz-wide64-v9-play.html');
+await page.evaluate(async({bytes,id})=>{await new Promise((ok,no)=>{const q=indexedDB.open('nes-dream-library-v1',2);q.onsuccess=()=>{const d=q.result,t=d.transaction('states','readwrite');t.objectStore('states').put({key:id+':1',gameId:id,slot:1,bytes:new Uint8Array(bytes).buffer,updated:Date.now()});t.oncomplete=()=>{d.close();ok();};t.onerror=()=>no(t.error);};q.onerror=()=>no(q.error);});},{bytes:[...fs.readFileSync(process.env.FIXTURE||__dirname+'/dual-pending.state')],id:edition.romId});
+await page.frameLocator('iframe').getByRole('button',{name:'Play game',exact:true}).click({timeout:60000});const f=page.frames().find(f=>f.url().includes('/player-wide64-v9.html'));await f.waitForFunction(()=>window.dreamArtwork?.metrics?.frames>2);
+await page.getByRole('button',{name:'Load',exact:true}).click();await page.getByRole('button',{name:/Slot 1/}).click();await page.waitForTimeout(600);
+await page.screenshot({path:__dirname+'/ui-loaded.png'});
+
+
+assert(await f.evaluate(()=>DreamWide64Awakening.isOpen()),'Loaded pending banner did not open');
+await page.evaluate(()=>{window.qaSaved179=null;window.qaSaveStarted=performance.now();addEventListener('message',e=>{if(e.data?.channel==='nes-dream'&&e.data.type==='state'&&e.data.slot===2)window.qaSaved179={elapsed:performance.now()-qaSaveStarted,bytes:e.data.bytes};});document.querySelector('iframe').contentWindow.postMessage({channel:'nes-dream',type:'snapshot',reason:'manual',slot:2},location.origin);});
+await page.waitForFunction(()=>!!window.qaSaved179,{timeout:20000});
+const saved=await page.evaluate(()=>({elapsed:qaSaved179.elapsed,bytes:[...new Uint8Array(qaSaved179.bytes)]}));assert(saved.elapsed>5000);
+const before=await f.evaluate(()=>{const b=EJS_emulator.gameManager.getState(),w=DreamWide64.chunk(b,'WRM',8192);return {queue:b[w+0x13be],forms:b[w+0x15ae],kills:[b[w+0x13bb],b[w+0x13bc]],error:DreamWide64Awakening.inspect().lastError};});assert.equal(before.queue,0);assert.equal(before.forms,15);assert.equal(before.error,'');
+await page.evaluate(()=>{const frame=document.querySelector('iframe');frame.contentWindow.postMessage({channel:'nes-dream',type:'load-state',slot:2,bytes:qaSaved179.bytes},location.origin);frame.contentWindow.postMessage({channel:'nes-dream',type:'resume-play'},location.origin);});await page.waitForTimeout(800);
+const after=await f.evaluate(()=>{const b=EJS_emulator.gameManager.getState(),w=DreamWide64.chunk(b,'WRM',8192);return {queue:b[w+0x13be],forms:b[w+0x15ae],kills:[b[w+0x13bb],b[w+0x13bc]],banner:DreamWide64Awakening.inspect()};});assert.equal(after.banner.busy,false);assert.equal(after.forms,15);assert.equal(after.queue,0);assert.deepEqual(after.kills,[10,10]);assert.equal(errors.length,0);fs.writeFileSync(__dirname+'/banner-save-load.json',JSON.stringify({saveWaitMs:saved.elapsed,before,after,errors},null,2));console.log(before,after);await browser.close();})();

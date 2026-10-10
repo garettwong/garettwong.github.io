@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "bpCases": 64,
+  "multiplierSSJ1": 100,
+  "multiplierSSJ2": 10000,
+  "individualKillThreshold": 10,
+  "duplicateCreditGuard": true,
+  "encounterReset": true,
+  "paletteOwnershipAndRestore": true,
+  "hostGateWaitsForBothAcknowledgements": true,
+  "stageIIPosePointers": 100
+}

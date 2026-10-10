@@ -1,0 +1,6 @@
+{
+  "result": "PASS",
+  "preservesOtherFighter": true,
+  "failedAttemptCanRetry": true,
+  "successfulAttemptCannotRepeat": true
+}

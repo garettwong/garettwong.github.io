@@ -1,0 +1,70 @@
+{
+  "result": {
+    "initial": {
+      "phase": [
+        0,
+        0,
+        0,
+        19
+      ],
+      "request": 0,
+      "choice": 3,
+      "pending": 0,
+      "total": 400,
+      "loaded": 400,
+      "frames": 576,
+      "valid": true,
+      "kills": [
+        10,
+        10
+      ],
+      "forms": 15,
+      "queue": 0
+    },
+    "events": [
+      {
+        "phase": [
+          0,
+          0,
+          0,
+          19
+        ],
+        "request": 0,
+        "choice": 3,
+        "pending": 0,
+        "total": 400,
+        "loaded": 400,
+        "frames": 576,
+        "valid": true,
+        "kills": [
+          10,
+          10
+        ],
+        "forms": 15,
+        "queue": 0
+      }
+    ],
+    "final": {
+      "phase": [
+        0,
+        0,
+        0,
+        19
+      ],
+      "request": 0,
+      "choice": 3,
+      "pending": 0,
+      "total": 400,
+      "loaded": 400,
+      "frames": 576,
+      "valid": true,
+      "kills": [
+        10,
+        10
+      ],
+      "forms": 15,
+      "queue": 0
+    }
+  },
+  "errors": []
+}
