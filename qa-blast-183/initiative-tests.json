@@ -1,0 +1,261 @@
+{
+  "result": "PASS",
+  "partySelections": [
+    {
+      "defense": [
+        1,
+        64,
+        255,
+        256
+      ],
+      "winner": 3
+    },
+    {
+      "defense": [
+        1,
+        64,
+        256,
+        255
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        1,
+        255,
+        64,
+        256
+      ],
+      "winner": 3
+    },
+    {
+      "defense": [
+        1,
+        255,
+        256,
+        64
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        1,
+        256,
+        64,
+        255
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        1,
+        256,
+        255,
+        64
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        64,
+        1,
+        255,
+        256
+      ],
+      "winner": 3
+    },
+    {
+      "defense": [
+        64,
+        1,
+        256,
+        255
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        64,
+        255,
+        1,
+        256
+      ],
+      "winner": 3
+    },
+    {
+      "defense": [
+        64,
+        255,
+        256,
+        1
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        64,
+        256,
+        1,
+        255
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        64,
+        256,
+        255,
+        1
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        255,
+        1,
+        64,
+        256
+      ],
+      "winner": 3
+    },
+    {
+      "defense": [
+        255,
+        1,
+        256,
+        64
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        255,
+        64,
+        1,
+        256
+      ],
+      "winner": 3
+    },
+    {
+      "defense": [
+        255,
+        64,
+        256,
+        1
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        255,
+        256,
+        1,
+        64
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        255,
+        256,
+        64,
+        1
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        256,
+        1,
+        64,
+        255
+      ],
+      "winner": 0
+    },
+    {
+      "defense": [
+        256,
+        1,
+        255,
+        64
+      ],
+      "winner": 0
+    },
+    {
+      "defense": [
+        256,
+        64,
+        1,
+        255
+      ],
+      "winner": 0
+    },
+    {
+      "defense": [
+        256,
+        64,
+        255,
+        1
+      ],
+      "winner": 0
+    },
+    {
+      "defense": [
+        256,
+        255,
+        1,
+        64
+      ],
+      "winner": 0
+    },
+    {
+      "defense": [
+        256,
+        255,
+        64,
+        1
+      ],
+      "winner": 0
+    },
+    {
+      "defense": [
+        64,
+        1,
+        255,
+        2
+      ],
+      "winner": 2
+    },
+    {
+      "defense": [
+        15,
+        16,
+        14,
+        8
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        1,
+        8,
+        7,
+        6
+      ],
+      "winner": 1
+    },
+    {
+      "defense": [
+        255,
+        254,
+        1,
+        64
+      ],
+      "winner": 0
+    }
+  ],
+  "ineligibleHighestSkipped": true,
+  "pairComparisons": 65536,
+  "range": "1..256, zero encodes 256",
+  "equalRanks": "Native random tie path remains intact"
+}

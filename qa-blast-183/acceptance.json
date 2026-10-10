@@ -1,0 +1,384 @@
+{
+  "release": 183,
+  "romUnchangedFrom182": true,
+  "romSha256": "4b78e3c25557bde33e59551d3824de175caf8dbe1db002aadcd3b209d36d2b87",
+  "durationMs": 340,
+  "previousDurationMs": 1700,
+  "fullBattle": {
+    "targets": 400,
+    "nativeGroups": 80,
+    "visualGroups": 63,
+    "sizes": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "elapsedMs": 124836,
+    "remaining": 29,
+    "uniqueTargets": 400,
+    "browserErrors": []
+  },
+  "partial382": "PASS final two actual targets, queue empty, zero remaining",
+  "midGroupLoad": "PASS existing v11 battle save resumes new groups",
+  "visual": "Real native pose cache, sizes5-8 hit/fall/gone screenshots inspected; counter restored; no travelling crescent",
+  "controls": {
+    "base": "http://127.0.0.1:8176",
+    "result": {
+      "title": "Wide64 NG+ v11 \u00c2\u00b7 Fast group falls \u00c2\u00b7 Player 183",
+      "release": "183",
+      "path": "M60 2H90Q98 2 98 10V52H140Q148 52 148 60V90Q148 98 140 98H98V140Q98 148 90 148H60Q52 148 52 140V98H10Q2 98 2 90V60Q2 52 10 52H52V10Q52 2 60 2Z",
+      "remaining": 29,
+      "rom": "4b78e3c25557bde33e59551d3824de175caf8dbe1db002aadcd3b209d36d2b87"
+    },
+    "directions": [
+      {
+        "want": [
+          4
+        ],
+        "actual": [
+          4
+        ]
+      },
+      {
+        "want": [
+          4,
+          7
+        ],
+        "actual": [
+          4,
+          7
+        ]
+      },
+      {
+        "want": [
+          7
+        ],
+        "actual": [
+          7
+        ]
+      },
+      {
+        "want": [
+          5,
+          7
+        ],
+        "actual": [
+          5,
+          7
+        ]
+      },
+      {
+        "want": [
+          5
+        ],
+        "actual": [
+          5
+        ]
+      },
+      {
+        "want": [
+          5,
+          6
+        ],
+        "actual": [
+          5,
+          6
+        ]
+      },
+      {
+        "want": [
+          6
+        ],
+        "actual": [
+          6
+        ]
+      },
+      {
+        "want": [
+          4,
+          6
+        ],
+        "actual": [
+          4,
+          6
+        ]
+      },
+      {
+        "want": [
+          7
+        ],
+        "actual": [
+          7
+        ]
+      }
+    ],
+    "errors": [],
+    "http": []
+  },
+  "initiative": {
+    "result": "PASS",
+    "partySelections": [
+      {
+        "defense": [
+          1,
+          64,
+          255,
+          256
+        ],
+        "winner": 3
+      },
+      {
+        "defense": [
+          1,
+          64,
+          256,
+          255
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          1,
+          255,
+          64,
+          256
+        ],
+        "winner": 3
+      },
+      {
+        "defense": [
+          1,
+          255,
+          256,
+          64
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          1,
+          256,
+          64,
+          255
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          1,
+          256,
+          255,
+          64
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          64,
+          1,
+          255,
+          256
+        ],
+        "winner": 3
+      },
+      {
+        "defense": [
+          64,
+          1,
+          256,
+          255
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          64,
+          255,
+          1,
+          256
+        ],
+        "winner": 3
+      },
+      {
+        "defense": [
+          64,
+          255,
+          256,
+          1
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          64,
+          256,
+          1,
+          255
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          64,
+          256,
+          255,
+          1
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          255,
+          1,
+          64,
+          256
+        ],
+        "winner": 3
+      },
+      {
+        "defense": [
+          255,
+          1,
+          256,
+          64
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          255,
+          64,
+          1,
+          256
+        ],
+        "winner": 3
+      },
+      {
+        "defense": [
+          255,
+          64,
+          256,
+          1
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          255,
+          256,
+          1,
+          64
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          255,
+          256,
+          64,
+          1
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          256,
+          1,
+          64,
+          255
+        ],
+        "winner": 0
+      },
+      {
+        "defense": [
+          256,
+          1,
+          255,
+          64
+        ],
+        "winner": 0
+      },
+      {
+        "defense": [
+          256,
+          64,
+          1,
+          255
+        ],
+        "winner": 0
+      },
+      {
+        "defense": [
+          256,
+          64,
+          255,
+          1
+        ],
+        "winner": 0
+      },
+      {
+        "defense": [
+          256,
+          255,
+          1,
+          64
+        ],
+        "winner": 0
+      },
+      {
+        "defense": [
+          256,
+          255,
+          64,
+          1
+        ],
+        "winner": 0
+      },
+      {
+        "defense": [
+          64,
+          1,
+          255,
+          2
+        ],
+        "winner": 2
+      },
+      {
+        "defense": [
+          15,
+          16,
+          14,
+          8
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          1,
+          8,
+          7,
+          6
+        ],
+        "winner": 1
+      },
+      {
+        "defense": [
+          255,
+          254,
+          1,
+          64
+        ],
+        "winner": 0
+      }
+    ],
+    "ineligibleHighestSkipped": true,
+    "pairComparisons": 65536,
+    "range": "1..256, zero encodes 256",
+    "equalRanks": "Native random tie path remains intact"
+  },
+  "limits": [
+    "Physical iPhone was not available; mobile browser viewport used.",
+    "Screenshot supplied for turn-order question does not show selected defensive cards; exact reported turn cause remains unconfirmed."
+  ]
+}
