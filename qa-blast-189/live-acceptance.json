@@ -1,0 +1,55 @@
+{
+  "releaseCommit": "bf5023e7a561f045e7f19170cfd9d8bd182cd54f",
+  "url": "https://garettwong.github.io/dbz-wide64-v17-play.html",
+  "checkedAt": "2026-10-10T21:22:43.055762+00:00",
+  "publicAssets": 80,
+  "allHashesMatch": true,
+  "liveMixed400": {
+    "performance": {
+      "seconds": 22.78139999997616,
+      "groups": 76,
+      "groupsPerSecond": 3.3360548517685276,
+      "remaining": 12,
+      "types": [
+        16,
+        18,
+        25
+      ]
+    },
+    "completed": [
+      {
+        "cast": 1,
+        "presented": 12,
+        "nativeRemaining": 12,
+        "at": 37611
+      }
+    ],
+    "pageErrors": []
+  },
+  "liveCopied400": {
+    "sourcePreserved": true,
+    "completed": [
+      {
+        "cast": 1,
+        "presented": 30,
+        "nativeRemaining": 30,
+        "at": 25500.30000001192
+      }
+    ],
+    "native": {
+      "active": 0,
+      "gate": 0,
+      "last": 79,
+      "full": 400,
+      "remaining": 30,
+      "awake": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    },
+    "pageErrors": []
+  },
+  "visualInspection": "Live mixed hit canvas and final mobile-viewport copied battle inspected. Normal control menu returns and displays 400 OPPONENTS - 30 REMAINING.",
+  "harnessCorrection": "The live fixture test now waits for its native battle state to load instead of assuming 300 ms. Copy screenshot waits 1200 ms for normal rendering to resume. No runtime change."
+}

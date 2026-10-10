@@ -13,3 +13,5 @@ All-target attacks support 1-400 enemies. Each visible cohort uses actual encoun
 - Skills: all 35 commands selectable. Controls: directions, drag and cancel verified. Single-target regression retained 99 of 100 enemies and did not open the group overlay.
 
 Run `python qa-blast-189/rebuild-native.py` from this checkout to reproduce the exact v17 ROM from immutable v16 and the documented patch bytes. asset-manifest.json records all release files. Raw save fixtures and failed experiments are not published.
+
+Live verification: all 80 published asset hashes match. Homepage opens Player189 with the expected ROM and no HTTP/page errors. Mixed 400-enemy cast completes with 12 actual survivors; complete v16 save-copy cast preserves source bytes, returns to normal controls, and visibly shows its 30 actual survivors. See live-acceptance.json and live-copy-final.png.
