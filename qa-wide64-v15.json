@@ -1,0 +1,68 @@
+{
+  "release": 187,
+  "result": "LOCAL PASS; live verification pending",
+  "scope": "Native gate confirms group attacks. Visible 480ms hit and falling defeat sequence. Only confirmed defeats reduce count. Ordinary attacks remain native.",
+  "romId": "613384af9d096642d213e793acdaf4659be571383ef69cd5a138fd4bb081f79c",
+  "normal80HP": {
+    "targets": 400,
+    "nativeGroups": 80,
+    "visualGroups": 67,
+    "remaining": 15,
+    "drawsChecked": 4844,
+    "elapsedMs": 99856
+  },
+  "staleCommandRegression": {
+    "old": {
+      "covers": true,
+      "draws": 1,
+      "busy": false,
+      "waiting": true,
+      "gate": true,
+      "modePending": false,
+      "logs": [],
+      "lastError": "",
+      "roster": 0,
+      "duration": 0,
+      "queued": 0,
+      "presented": 399,
+      "shown": []
+    },
+    "fixed": {
+      "covers": false,
+      "draws": 0,
+      "busy": false,
+      "waiting": false,
+      "gate": false,
+      "modePending": false,
+      "logs": [],
+      "lastError": "",
+      "roster": 0,
+      "duration": 480,
+      "queued": 0,
+      "presented": null,
+      "shown": []
+    }
+  },
+  "ordinaryAttack": {
+    "result": "PASS",
+    "remaining": 396,
+    "groupOverlays": 0
+  },
+  "manualCopy": "PASS through actual v14-to-v15 copy UI; original preserved",
+  "touchDirections": 9,
+  "inspection": "Actual hit, falling, gone, final menu and copy confirmation screenshots inspected",
+  "limitation": "The cartridge still calculates all 400 targets; the whole cast is not instant.",
+  "normalGohan": {
+    "hp": 60,
+    "bp": 170000,
+    "enemyHp": 80,
+    "enemyBp": 1100,
+    "targets": 400,
+    "nativeGroups": 80,
+    "visualGroups": 66,
+    "remaining": 14,
+    "elapsedMs": 93134,
+    "drawsChecked": 4686
+  },
+  "counterConsistency": "Both casts have 400 unique target IDs; final display equals native remaining count; every completed animation counter equals previous count minus confirmed deaths."
+}
