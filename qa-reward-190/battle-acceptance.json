@@ -1,0 +1,46 @@
+[
+  {
+    "enemies": 2,
+    "casts": 2,
+    "rewardBp": "100",
+    "partyDeltas": [
+      0,
+      0,
+      100,
+      100,
+      100,
+      100,
+      100,
+      0,
+      0
+    ],
+    "heldBeforeManualA": true,
+    "creditedOnce": true,
+    "drawFramesChecked": 60,
+    "nativeTargetsUniquePerCast": true,
+    "errors": [],
+    "romSha256": "72037ee73228c834a60a639142a254ff7605a43b8771af4dd2d8c3975110125f"
+  },
+  {
+    "enemies": 396,
+    "casts": 2,
+    "rewardBp": "19800",
+    "partyDeltas": [
+      0,
+      0,
+      19800,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "heldBeforeManualA": true,
+    "creditedOnce": true,
+    "drawFramesChecked": 984,
+    "nativeTargetsUniquePerCast": true,
+    "errors": [],
+    "romSha256": "72037ee73228c834a60a639142a254ff7605a43b8771af4dd2d8c3975110125f"
+  }
+]

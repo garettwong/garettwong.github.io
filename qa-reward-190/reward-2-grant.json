@@ -1,0 +1,303 @@
+{
+  "rewardBefore": {
+    "screen": {
+      "shown": true,
+      "view": {
+        "total": 2,
+        "rewardBp": "100"
+      },
+      "entries": 1,
+      "lastError": ""
+    },
+    "party": [
+      {
+        "id": 1,
+        "name": "Goku",
+        "bp": "10000",
+        "earnedBp": "10000",
+        "combatBp": "10000",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 2,
+        "name": "Piccolo",
+        "bp": "50000",
+        "earnedBp": "50000",
+        "combatBp": "50000",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 3,
+        "name": "Gohan",
+        "bp": "1700",
+        "earnedBp": "1700",
+        "combatBp": "1700",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 4,
+        "name": "Krillin",
+        "bp": "1500",
+        "earnedBp": "1500",
+        "combatBp": "1500",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 5,
+        "name": "Yamcha",
+        "bp": "1300",
+        "earnedBp": "1300",
+        "combatBp": "1300",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 6,
+        "name": "Tien",
+        "bp": "1800",
+        "earnedBp": "1800",
+        "combatBp": "1800",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 7,
+        "name": "Chiaotzu",
+        "bp": "1100",
+        "earnedBp": "1100",
+        "combatBp": "1100",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 8,
+        "name": "Nail",
+        "bp": "42000",
+        "earnedBp": "42000",
+        "combatBp": "42000",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 42,
+        "name": "Vegeta",
+        "bp": "1300",
+        "earnedBp": "1300",
+        "combatBp": "1300",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      }
+    ]
+  },
+  "rewardAfter": {
+    "screen": {
+      "shown": false,
+      "view": null,
+      "entries": 1,
+      "lastError": ""
+    },
+    "party": [
+      {
+        "id": 1,
+        "name": "Goku",
+        "bp": "10000",
+        "earnedBp": "10000",
+        "combatBp": "10000",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 2,
+        "name": "Piccolo",
+        "bp": "50000",
+        "earnedBp": "50000",
+        "combatBp": "50000",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 3,
+        "name": "Gohan",
+        "bp": "1800",
+        "earnedBp": "1800",
+        "combatBp": "1800",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 4,
+        "name": "Krillin",
+        "bp": "1600",
+        "earnedBp": "1600",
+        "combatBp": "1600",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 5,
+        "name": "Yamcha",
+        "bp": "1400",
+        "earnedBp": "1400",
+        "combatBp": "1400",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 6,
+        "name": "Tien",
+        "bp": "1900",
+        "earnedBp": "1900",
+        "combatBp": "1900",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 7,
+        "name": "Chiaotzu",
+        "bp": "1200",
+        "earnedBp": "1200",
+        "combatBp": "1200",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 8,
+        "name": "Nail",
+        "bp": "42000",
+        "earnedBp": "42000",
+        "combatBp": "42000",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      },
+      {
+        "id": 42,
+        "name": "Vegeta",
+        "bp": "1300",
+        "earnedBp": "1300",
+        "combatBp": "1300",
+        "superSaiyan": false,
+        "stageII": false,
+        "multiplier": "1"
+      }
+    ],
+    "state": [
+      6,
+      6,
+      1,
+      0
+    ]
+  },
+  "stable": [
+    {
+      "id": 1,
+      "name": "Goku",
+      "bp": "10000",
+      "earnedBp": "10000",
+      "combatBp": "10000",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 2,
+      "name": "Piccolo",
+      "bp": "50000",
+      "earnedBp": "50000",
+      "combatBp": "50000",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 3,
+      "name": "Gohan",
+      "bp": "1800",
+      "earnedBp": "1800",
+      "combatBp": "1800",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 4,
+      "name": "Krillin",
+      "bp": "1600",
+      "earnedBp": "1600",
+      "combatBp": "1600",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 5,
+      "name": "Yamcha",
+      "bp": "1400",
+      "earnedBp": "1400",
+      "combatBp": "1400",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 6,
+      "name": "Tien",
+      "bp": "1900",
+      "earnedBp": "1900",
+      "combatBp": "1900",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 7,
+      "name": "Chiaotzu",
+      "bp": "1200",
+      "earnedBp": "1200",
+      "combatBp": "1200",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 8,
+      "name": "Nail",
+      "bp": "42000",
+      "earnedBp": "42000",
+      "combatBp": "42000",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    },
+    {
+      "id": 42,
+      "name": "Vegeta",
+      "bp": "1300",
+      "earnedBp": "1300",
+      "combatBp": "1300",
+      "superSaiyan": false,
+      "stageII": false,
+      "multiplier": "1"
+    }
+  ]
+}

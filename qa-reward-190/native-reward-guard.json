@@ -1,0 +1,477 @@
+[
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 64,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 64,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 64,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 64,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 219,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 219,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 219,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 219,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 226,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 226,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 226,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 2,
+    "command": 226,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 64,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 64,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 64,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 64,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 219,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 219,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 219,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 219,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 226,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 226,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 226,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 34,
+    "command": 226,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 64,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 64,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 64,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 64,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 219,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 219,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 219,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 219,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 226,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 226,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 226,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 36,
+    "command": 226,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 64,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 64,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 64,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 64,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 219,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 219,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 219,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 219,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 226,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 226,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 226,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 38,
+    "command": 226,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 64,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 64,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 64,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 64,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 219,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 219,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 219,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 219,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 226,
+    "message": 1,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 226,
+    "message": 44,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 226,
+    "message": 46,
+    "nativeTextExact": true
+  },
+  {
+    "active": 0,
+    "phase": 39,
+    "command": 226,
+    "message": 87,
+    "nativeTextExact": true
+  },
+  {
+    "active": 1,
+    "message": 1,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 2,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 3,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 4,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 13,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 87,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 93,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 94,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 95,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 96,
+    "fastTextUnchanged": true
+  },
+  {
+    "active": 1,
+    "message": 97,
+    "fastTextUnchanged": true
+  }
+]
