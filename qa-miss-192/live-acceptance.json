@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-11T03:14:22.172352+00:00",
+  "base": "https://garettwong.github.io",
+  "runtimeCommit": "eff561edf56e508a8834c7474417b62e9c24012e",
+  "romSha256": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+  "runtimeAssets": 84,
+  "allHashesMatch": true,
+  "phoneLayoutInspected": true,
+  "highBpBattleVictory": true,
+  "oneARewardExit": true,
+  "sourceV19SavePreserved": true,
+  "sourceCopyBattleSize": 400,
+  "copiedCastCompleted": true,
+  "missHeavy": {
+    "groups": 76,
+    "maximum": 18,
+    "misses": 283,
+    "hits": 113
+  },
+  "errors": []
+}

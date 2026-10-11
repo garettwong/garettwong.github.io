@@ -1,0 +1,23 @@
+[
+  {
+    "image": "live-2-0-hit.png",
+    "panelInsideFrame": true,
+    "bottomMarginPixels": 36,
+    "sideMarginsPixels": 42,
+    "topBorderUnobstructed": true
+  },
+  {
+    "image": "live-2-0-fall.png",
+    "panelInsideFrame": true,
+    "bottomMarginPixels": 36,
+    "sideMarginsPixels": 42,
+    "topBorderUnobstructed": true
+  },
+  {
+    "image": "miss-heavy-miss-streak.png",
+    "panelInsideFrame": true,
+    "bottomMarginPixels": 36,
+    "sideMarginsPixels": 42,
+    "topBorderUnobstructed": true
+  }
+]
