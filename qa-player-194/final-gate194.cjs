@@ -18,4 +18,3 @@ try{
 }catch(e){console.log('BODY',await page.locator('body').innerText());await page.screenshot({path:__dirname+'/failed.png'});if(!result)result={n,error:e.stack,errors};fs.writeFileSync(q+'/'+(process.env.RUN||'')+n+'-result.json',JSON.stringify(result,null,2));throw e;}finally{if(result)fs.writeFileSync(q+'/'+(process.env.RUN||'')+n+'-result.json',JSON.stringify(result,null,2));await context.close();}
 }
 }finally{await browser.close()}})();
-
