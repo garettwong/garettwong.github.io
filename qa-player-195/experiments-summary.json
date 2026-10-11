@@ -1,0 +1,7 @@
+{
+  "published": false,
+  "nativeWaitCandidateMs": 20414.099999964237,
+  "coreBatchCandidateMs": 20309.30000001192,
+  "reason": "Neither candidate met the requested 20-second total; neither was promoted. Native candidate has separate ROM identity and needs broader semantic regression before any release.",
+  "currentProductionCartridgeAndCoreUnchanged": true
+}

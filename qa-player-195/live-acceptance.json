@@ -1,0 +1,97 @@
+{
+  "release": 195,
+  "runtimeCommit": "8c6ce467a4a397316104e334bfbec9f06e480f69",
+  "pagesRun": 38117287185,
+  "publicAssets": 159,
+  "matchingAssets": 159,
+  "combatMs": 21897.30000001192,
+  "casts": 2,
+  "rewardConfirmed": true,
+  "backgroundResume": true,
+  "errors": [],
+  "map": {
+    "checks": [
+      "map idle1x",
+      "Right tap 1 exactly one grid",
+      "Right tap 2 exactly one grid",
+      "Right tap 3 exactly one grid",
+      "no released direction drift",
+      "held manual A enables2x",
+      "held A2x actual frame rate",
+      "A release returns1x",
+      "automatic A never boosts walking"
+    ],
+    "idleFrames": 30,
+    "start": {
+      "frame": 276,
+      "phase": [
+        6,
+        6,
+        3,
+        1
+      ],
+      "x": 154,
+      "pixelX": 104,
+      "pace": {
+        "mapMode": true,
+        "mapBoost": false,
+        "selectedSpeed": 64,
+        "effectiveSpeed": 1
+      },
+      "fast": false
+    },
+    "afterRight": {
+      "frame": 324,
+      "phase": [
+        6,
+        6,
+        3,
+        1
+      ],
+      "x": 157,
+      "pixelX": 152,
+      "pace": {
+        "mapMode": true,
+        "mapBoost": false,
+        "selectedSpeed": 64,
+        "effectiveSpeed": 1
+      },
+      "fast": false
+    },
+    "boostFrames": 49,
+    "final": {
+      "frame": 431,
+      "phase": [
+        6,
+        6,
+        3,
+        4
+      ],
+      "x": 160,
+      "pixelX": 0,
+      "pace": {
+        "mapMode": true,
+        "mapBoost": false,
+        "selectedSpeed": 64,
+        "effectiveSpeed": 1
+      },
+      "fast": false
+    }
+  },
+  "smoke": {
+    "base": "https://garettwong.github.io",
+    "state": {
+      "rom": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+      "banner": true,
+      "name": "Wide64 NG+ v20 \u00c2\u00b7 Controlled map \u00c2\u00b7 Player 195"
+    },
+    "errors": [],
+    "responses": []
+  },
+  "timingTargetAchieved": false,
+  "visuallyInspected": [
+    "live195-gameplay-phone.png",
+    "map-final195.png",
+    "live195-400-miss-streak.png"
+  ]
+}
