@@ -20,7 +20,7 @@
   },
   "mapAssertions": 18,
   "limitations": [
-    "Actual user device/save unavailable for the two intermittent graphic reports.",
+    "Intermittent spaceship graphic substitution was not reproduced; an affected user save or screenshot is needed.",
     "No physical iPhone Safari test.",
     "No change to native ROM or existing save identities."
   ],
@@ -41,5 +41,6 @@
     ],
     "steadySamplesPerSpeed": 72,
     "actualAConfirmation": true
-  }
+  },
+  "publicVerification": "live-verification.json"
 }

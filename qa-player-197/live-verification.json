@@ -1,0 +1,62 @@
+{
+  "url": "https://garettwong.github.io/dbz-wide64-v21-play.html?release=197-pointer3",
+  "sourceCommit": "f3f9c1c1b7f3e2d59b22e4ec18474b7ee11d9eb8",
+  "pagesRun": 38133693482,
+  "matchingPublicAssets": 8,
+  "browser": "Isolated Chrome mobile viewport 390x844",
+  "releaseVerified": {
+    "base": "https://garettwong.github.io",
+    "state": {
+      "rom": "d7f13a72b663e9b298df257214c8bf71514b2dd74f030c52fd33636dde702952",
+      "banner": true,
+      "name": "Wide64 NG+ v21 \u00b7 Continuous Wave \u00b7 Player 197"
+    },
+    "errors": [],
+    "responses": []
+  },
+  "mapAssertions": 18,
+  "pointer": {
+    "slotsAndWrap": 6,
+    "steadyFrames": 72,
+    "speed": 1024,
+    "confirmedNativeIndex": 1,
+    "actionAndFighterPositions": 6
+  },
+  "transformation": {
+    "visibleSamples": 95,
+    "lastVisibleElapsed": "760",
+    "final": {
+      "t": 33859.19999998808,
+      "hidden": true,
+      "elapsed": "760",
+      "stage": "2",
+      "busy": false,
+      "awake": {
+        "busy": false,
+        "lastError": "",
+        "duration": 750
+      }
+    }
+  },
+  "battle": {
+    "enemies": 400,
+    "uniqueTargets": 400,
+    "groups": 66,
+    "sizes": [
+      5,
+      6,
+      7
+    ],
+    "casts": 1,
+    "combatMs": 24031.100000023842,
+    "entranceHoldMs": 200,
+    "rewardOnce": true,
+    "rewardBp": "20000",
+    "errors": []
+  },
+  "testNotes": [
+    "The first live pointer check incorrectly required last-rendered metadata to be null after the skills modal paused the core. The native phase was 7, the correct card was confirmed, and the screenshot showed the modal covering the game. The corrected assertion checks the current native choice; no game change was needed.",
+    "The first public map run exceeded its 30-second core startup timeout. Retried with a 90-second startup allowance; all 18 map assertions passed."
+  ],
+  "remaining": "Intermittent spaceship graphic substitution not reproduced; affected save or screenshot is needed to trace it."
+}

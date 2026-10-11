@@ -1,0 +1,58 @@
+[
+  {
+    "path": "dbz-wide64-v21-awakening.js",
+    "expected": "fb1b918b1ee361bd42bc4f07cd81c3a22991bac6fbb3642e0f3af34144067939",
+    "actual": "fb1b918b1ee361bd42bc4f07cd81c3a22991bac6fbb3642e0f3af34144067939",
+    "match": true,
+    "bytes": 7739
+  },
+  {
+    "path": "dbz-wide64-v21-blast-controller.js",
+    "expected": "278a971e9a0473882658b7c6279b07b940130445fb2cc90421a3e5ee17ef021f",
+    "actual": "278a971e9a0473882658b7c6279b07b940130445fb2cc90421a3e5ee17ef021f",
+    "match": true,
+    "bytes": 21504
+  },
+  {
+    "path": "dbz-wide64-v21-host.mjs",
+    "expected": "84b4e7649484a4546883623265a87d383f9f026cf80cada1f6b9e448126086cb",
+    "actual": "84b4e7649484a4546883623265a87d383f9f026cf80cada1f6b9e448126086cb",
+    "match": true,
+    "bytes": 10991
+  },
+  {
+    "path": "dbz-wide64-v21-play.html",
+    "expected": "e6f4f3d83d63729e8c04de377664b3363523774f23d14a154bc9752a3cd8bb8c",
+    "actual": "e6f4f3d83d63729e8c04de377664b3363523774f23d14a154bc9752a3cd8bb8c",
+    "match": true,
+    "bytes": 1076
+  },
+  {
+    "path": "dbz-wide64-v21-shell.js",
+    "expected": "a35a6d4902b2249d92c6fd401941a973c2afc16c6b1ad83e3fa809700b07f363",
+    "actual": "a35a6d4902b2249d92c6fd401941a973c2afc16c6b1ad83e3fa809700b07f363",
+    "match": true,
+    "bytes": 268908
+  },
+  {
+    "path": "player-wide64-v21-runtime.js",
+    "expected": "5c7210a8018fc1d567cd81b71fc70c5db44de8d9801a9cf3a008bf2f775e94d9",
+    "actual": "5c7210a8018fc1d567cd81b71fc70c5db44de8d9801a9cf3a008bf2f775e94d9",
+    "match": true,
+    "bytes": 32546
+  },
+  {
+    "path": "player-wide64-v21.html",
+    "expected": "4b4220dbdab60605dbc8862148711369f651bde83d385c501a33abc51733fa0e",
+    "actual": "4b4220dbdab60605dbc8862148711369f651bde83d385c501a33abc51733fa0e",
+    "match": true,
+    "bytes": 14137
+  },
+  {
+    "path": "dbz-wide64-v21-selection.js",
+    "expected": "aa61d20fd468e2c8549f3fd8e6f84b01f39b03d6dbac62004cbc385406d99cbb",
+    "actual": "aa61d20fd468e2c8549f3fd8e6f84b01f39b03d6dbac62004cbc385406d99cbb",
+    "match": true,
+    "bytes": 3533
+  }
+]

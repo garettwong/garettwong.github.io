@@ -13,3 +13,5 @@ The user clarified the card issue as a pointer landing in the wrong place. Nativ
 ROM/save identity remains v21/d7f13a72b663. Older editions and saved slots are preserved. QA uses isolated Chrome mobile390x844 contexts, not the user's browser storage. Raw evidence and additional source scripts: D:/Codex 2/projects/NES-Player197-QA.
 
 Action and fighter selection also have steady cyan pointers at their native OAM coordinates. All3action rows and all3visiblefighter columns were checked at1024x; screenshots inspected.
+
+Public verification of f3f9c1c: Pages run38133693482 succeeded; all8 published asset hashes match. Live homepage-to-player launch displays Player197 verified. All18 map checks passed at4/1024x, all5card slots pluswrap and72steady frames passed at1024x, and all6action/fighter positions matched native selection. Live400-enemy victory completed in one cast across66groups with400unique targets, all entrances held200ms, reward20000BP once, background pause/resume, and1x map return. Actual final mobile screenshots inspected. See live-verification.json for timing and test-harness notes.
