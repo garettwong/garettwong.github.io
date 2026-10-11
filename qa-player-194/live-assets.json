@@ -1,0 +1,1115 @@
+[
+  {
+    "path": "assets/index-home194-wide64v20-372178323a44.js",
+    "expected": "733cd2782d0249075bab027acead6be331f0ce116b17ff794f8abbd8c88d74bd",
+    "actual": "733cd2782d0249075bab027acead6be331f0ce116b17ff794f8abbd8c88d74bd",
+    "match": true,
+    "bytes": 276536
+  },
+  {
+    "path": "dbz-source-english192.js",
+    "expected": "ec79dfd730b1d9f4deaec6c7c302abe656996a6c632b138dae47f6901ecbcaa1",
+    "actual": "ec79dfd730b1d9f4deaec6c7c302abe656996a6c632b138dae47f6901ecbcaa1",
+    "match": true,
+    "bytes": 7307
+  },
+  {
+    "path": "dbz-wide64-v20-adapter.js",
+    "expected": "6d369e8add0071a4177a6a8e3b9cd20e00b350c226abd8e73ef9a730391c3574",
+    "actual": "6d369e8add0071a4177a6a8e3b9cd20e00b350c226abd8e73ef9a730391c3574",
+    "match": true,
+    "bytes": 26224
+  },
+  {
+    "path": "dbz-wide64-v20-awakening.js",
+    "expected": "de9336f0ce2fa9dac611526e4060e6c22299c24ae7bc41a871ab12abe69e619a",
+    "actual": "de9336f0ce2fa9dac611526e4060e6c22299c24ae7bc41a871ab12abe69e619a",
+    "match": true,
+    "bytes": 7743
+  },
+  {
+    "path": "dbz-wide64-v20-blast-animation.js",
+    "expected": "a51d6a0724294ec5c6b7825e3d1de7f26f1ab5e7976524abb67202210d74aa2f",
+    "actual": "a51d6a0724294ec5c6b7825e3d1de7f26f1ab5e7976524abb67202210d74aa2f",
+    "match": true,
+    "bytes": 10814
+  },
+  {
+    "path": "dbz-wide64-v20-blast-controller.js",
+    "expected": "d0c2070e1dda1e9915c8dc91f64f00b3653246dc2baf9396683db6396a4ff0a0",
+    "actual": "d0c2070e1dda1e9915c8dc91f64f00b3653246dc2baf9396683db6396a4ff0a0",
+    "match": true,
+    "bytes": 19981
+  },
+  {
+    "path": "dbz-wide64-v20-card-factory.js",
+    "expected": "d056ee0fe83c720030b1f4a69d5cd18748851f8c3e6239d1746c3fd76df46976",
+    "actual": "d056ee0fe83c720030b1f4a69d5cd18748851f8c3e6239d1746c3fd76df46976",
+    "match": true,
+    "bytes": 22576
+  },
+  {
+    "path": "dbz-wide64-v20-cards.js",
+    "expected": "08539cb70e1b23771a88a9d286ebd608a71eec461097d645266c6505e46b125d",
+    "actual": "08539cb70e1b23771a88a9d286ebd608a71eec461097d645266c6505e46b125d",
+    "match": true,
+    "bytes": 1036
+  },
+  {
+    "path": "dbz-wide64-v20-compact.css",
+    "expected": "c495972712d93b75a616417353b832fa7464b2e2ae6bd61c7fe4cda346592643",
+    "actual": "c495972712d93b75a616417353b832fa7464b2e2ae6bd61c7fe4cda346592643",
+    "match": true,
+    "bytes": 15172
+  },
+  {
+    "path": "dbz-wide64-v20-compact.js",
+    "expected": "f6ed49084b180f6cef0dc7a3d8d080dc2668e6ad7e6ab787a17f34ffaab0fd05",
+    "actual": "f6ed49084b180f6cef0dc7a3d8d080dc2668e6ad7e6ab787a17f34ffaab0fd05",
+    "match": true,
+    "bytes": 7130
+  },
+  {
+    "path": "dbz-wide64-v20-copy.mjs",
+    "expected": "ebc50d5adda9dfce1f6a2bc099edbc3050c47419562e406f7f721becf0d06c75",
+    "actual": "ebc50d5adda9dfce1f6a2bc099edbc3050c47419562e406f7f721becf0d06c75",
+    "match": true,
+    "bytes": 823
+  },
+  {
+    "path": "dbz-wide64-v20-edition.json",
+    "expected": "6949085bc9e445038d75926266e0f10e53092ccaf6486f6348794bc2c16b53ed",
+    "actual": "6949085bc9e445038d75926266e0f10e53092ccaf6486f6348794bc2c16b53ed",
+    "match": true,
+    "bytes": 50934
+  },
+  {
+    "path": "dbz-wide64-v20-enemies.js",
+    "expected": "6579ec7796960557f6b13de877599eedf0939f536707c5b27ae21c30a6709b1f",
+    "actual": "6579ec7796960557f6b13de877599eedf0939f536707c5b27ae21c30a6709b1f",
+    "match": true,
+    "bytes": 8528
+  },
+  {
+    "path": "dbz-wide64-v20-enemy-info.js",
+    "expected": "e99bc55c89db968ec996e924b5d8d4e0ece56df7419596f5cac06eb8fd02cfa2",
+    "actual": "e99bc55c89db968ec996e924b5d8d4e0ece56df7419596f5cac06eb8fd02cfa2",
+    "match": true,
+    "bytes": 10884
+  },
+  {
+    "path": "dbz-wide64-v20-entry.css",
+    "expected": "642d0542f5c7a6150601a201314f924b91af2df9157162c54185721651abcc53",
+    "actual": "642d0542f5c7a6150601a201314f924b91af2df9157162c54185721651abcc53",
+    "match": true,
+    "bytes": 1198
+  },
+  {
+    "path": "dbz-wide64-v20-forms.js",
+    "expected": "48cfe30afb64f6fc7e6bedd08c823bee58e82f458a4967742839d0e13fd7d770",
+    "actual": "48cfe30afb64f6fc7e6bedd08c823bee58e82f458a4967742839d0e13fd7d770",
+    "match": true,
+    "bytes": 2242
+  },
+  {
+    "path": "dbz-wide64-v20-host.mjs",
+    "expected": "11a1dd733a25d207115169f7360a438810a25489192c35c395a46f388008bbe1",
+    "actual": "11a1dd733a25d207115169f7360a438810a25489192c35c395a46f388008bbe1",
+    "match": true,
+    "bytes": 10283
+  },
+  {
+    "path": "dbz-wide64-v20-large-battle.js",
+    "expected": "33b86b77c4f20dc2ab0a45f5d548324677594367970587b34c3484b92251c866",
+    "actual": "33b86b77c4f20dc2ab0a45f5d548324677594367970587b34c3484b92251c866",
+    "match": true,
+    "bytes": 8259
+  },
+  {
+    "path": "dbz-wide64-v20-nameplate-patterns.json",
+    "expected": "3814c700a36e60124b3c0884b0dda949e0c001f3f402b6c99bda9147ce429b1a",
+    "actual": "3814c700a36e60124b3c0884b0dda949e0c001f3f402b6c99bda9147ce429b1a",
+    "match": true,
+    "bytes": 33102
+  },
+  {
+    "path": "dbz-wide64-v20-nameplates.js",
+    "expected": "786f186cd4dd0ab9f5c0dbecc9022f7d1799d4c0b0cb0525899f46a2da67243b",
+    "actual": "786f186cd4dd0ab9f5c0dbecc9022f7d1799d4c0b0cb0525899f46a2da67243b",
+    "match": true,
+    "bytes": 4845
+  },
+  {
+    "path": "dbz-wide64-v20-panel.js",
+    "expected": "4aca20fc3008f616c9d0d6dc9d26be6232139a0e53f8ea1897dfd2821771519a",
+    "actual": "4aca20fc3008f616c9d0d6dc9d26be6232139a0e53f8ea1897dfd2821771519a",
+    "match": true,
+    "bytes": 7141
+  },
+  {
+    "path": "dbz-wide64-v20-play.html",
+    "expected": "6163c0e2506f439603c11d09a4cce9aca4c3a2f6b541b0476fed7a29b2d15e27",
+    "actual": "6163c0e2506f439603c11d09a4cce9aca4c3a2f6b541b0476fed7a29b2d15e27",
+    "match": true,
+    "bytes": 1070
+  },
+  {
+    "path": "dbz-wide64-v20-selected-save-copy.mjs",
+    "expected": "3179c6ce90d53080c6d14705784618acabac7814a5d55ca6674b6ae8918303c3",
+    "actual": "3179c6ce90d53080c6d14705784618acabac7814a5d55ca6674b6ae8918303c3",
+    "match": true,
+    "bytes": 2778
+  },
+  {
+    "path": "dbz-wide64-v20-shell.css",
+    "expected": "b437ed190c68e5b729f37f870f11c5b3c4463a1d254ee5c19307dc31a502f12b",
+    "actual": "b437ed190c68e5b729f37f870f11c5b3c4463a1d254ee5c19307dc31a502f12b",
+    "match": true,
+    "bytes": 157940
+  },
+  {
+    "path": "dbz-wide64-v20-shell.js",
+    "expected": "290a99f297cca7d9bb1a16c6f25df4b8bbc767fc9efbcf47e948bcaa310367ed",
+    "actual": "290a99f297cca7d9bb1a16c6f25df4b8bbc767fc9efbcf47e948bcaa310367ed",
+    "match": true,
+    "bytes": 268896
+  },
+  {
+    "path": "dbz-wide64-v20-skills.js",
+    "expected": "e84131c880655564574b8409171d6c41791fa03f1e756312b2df4a05957e450b",
+    "actual": "e84131c880655564574b8409171d6c41791fa03f1e756312b2df4a05957e450b",
+    "match": true,
+    "bytes": 17422
+  },
+  {
+    "path": "dbz-wide64-v20-source-v11.json",
+    "expected": "3f19f12c4756ed5c8ca8db8b82e8da52d250fbf97a7c461536d7d49f0860aa95",
+    "actual": "3f19f12c4756ed5c8ca8db8b82e8da52d250fbf97a7c461536d7d49f0860aa95",
+    "match": true,
+    "bytes": 50935
+  },
+  {
+    "path": "dbz-wide64-v20-source-v12.json",
+    "expected": "a63f094ed7bd6ee254fb6786af3b815a16541cbdffe7bcf06292dddf7ffeb5de",
+    "actual": "a63f094ed7bd6ee254fb6786af3b815a16541cbdffe7bcf06292dddf7ffeb5de",
+    "match": true,
+    "bytes": 50935
+  },
+  {
+    "path": "dbz-wide64-v20-source-v13.json",
+    "expected": "8df9cd4cb5a8e6598f129147a1abe6dd48d8d54bf1e5dd678f8b079271a2ea2f",
+    "actual": "8df9cd4cb5a8e6598f129147a1abe6dd48d8d54bf1e5dd678f8b079271a2ea2f",
+    "match": true,
+    "bytes": 50934
+  },
+  {
+    "path": "dbz-wide64-v20-source-v14.json",
+    "expected": "36a56528d21cb66c014db2227513b70a3c85bec0c617a4fe4904e865912c87cf",
+    "actual": "36a56528d21cb66c014db2227513b70a3c85bec0c617a4fe4904e865912c87cf",
+    "match": true,
+    "bytes": 50934
+  },
+  {
+    "path": "dbz-wide64-v20-source-v15.json",
+    "expected": "72b15a4fe0c8ab005b26a056e13c220e96e7dd5b63c67b4cd95af53191f4a0ab",
+    "actual": "72b15a4fe0c8ab005b26a056e13c220e96e7dd5b63c67b4cd95af53191f4a0ab",
+    "match": true,
+    "bytes": 50935
+  },
+  {
+    "path": "dbz-wide64-v20-source-v16.json",
+    "expected": "417c919b17dc7946268373ca1922f52beb4430d289e12ae77a1e9d3b8c30a102",
+    "actual": "417c919b17dc7946268373ca1922f52beb4430d289e12ae77a1e9d3b8c30a102",
+    "match": true,
+    "bytes": 50933
+  },
+  {
+    "path": "dbz-wide64-v20-source-v17.json",
+    "expected": "be6422a1c337249fa5ff67ebe3f875c94e0c1d6731e6c2215924bb06702a8f61",
+    "actual": "be6422a1c337249fa5ff67ebe3f875c94e0c1d6731e6c2215924bb06702a8f61",
+    "match": true,
+    "bytes": 50934
+  },
+  {
+    "path": "dbz-wide64-v20-source-v18.json",
+    "expected": "e508abb3866bff40c21b50488bd28cbb33bc6979fbff14fcb23c388de1ab1f61",
+    "actual": "e508abb3866bff40c21b50488bd28cbb33bc6979fbff14fcb23c388de1ab1f61",
+    "match": true,
+    "bytes": 50934
+  },
+  {
+    "path": "dbz-wide64-v20-source-v19.json",
+    "expected": "2b967c58b42b05ad96531effc5bebbdc5420965438d126b3c9d5b63c135ea260",
+    "actual": "2b967c58b42b05ad96531effc5bebbdc5420965438d126b3c9d5b63c135ea260",
+    "match": true,
+    "bytes": 50934
+  },
+  {
+    "path": "dbz-wide64-v20-state.mjs",
+    "expected": "3f9ca3f0a563397ac87013fb884d8cf4e30539e8aaead3c6ae6664aaff80e29d",
+    "actual": "3f9ca3f0a563397ac87013fb884d8cf4e30539e8aaead3c6ae6664aaff80e29d",
+    "match": true,
+    "bytes": 2838
+  },
+  {
+    "path": "dbz-wide64-v20-training.js",
+    "expected": "73dab445a553914955c6416cee0d55b97e58755828b00edbd9f42b8ca92edf34",
+    "actual": "73dab445a553914955c6416cee0d55b97e58755828b00edbd9f42b8ca92edf34",
+    "match": true,
+    "bytes": 12540
+  },
+  {
+    "path": "dbz-wide64-v20-victory.js",
+    "expected": "284ede6b8100695e17d8fc77e6dda4bfc3c8ef870ea85445dc79d4683d8fbcd9",
+    "actual": "284ede6b8100695e17d8fc77e6dda4bfc3c8ef870ea85445dc79d4683d8fbcd9",
+    "match": true,
+    "bytes": 4601
+  },
+  {
+    "path": "dbz-wide64-v20.css",
+    "expected": "bda07878a54d88e8deed8a6a45bcc86f6269c6dc076ccd860e08acfeaa2c3405",
+    "actual": "bda07878a54d88e8deed8a6a45bcc86f6269c6dc076ccd860e08acfeaa2c3405",
+    "match": true,
+    "bytes": 7630
+  },
+  {
+    "path": "frame-source-wide64-v20.js",
+    "expected": "16132bd64df8da40d2e535abef237f5357d416b46dd13e928ebeb4251387e5dd",
+    "actual": "16132bd64df8da40d2e535abef237f5357d416b46dd13e928ebeb4251387e5dd",
+    "match": true,
+    "bytes": 3537
+  },
+  {
+    "path": "gamepad-controls-wide64-v20.js",
+    "expected": "eac228e0a1b12d7f2ad195fcec622a49a7ff77c464b4f91a0a547c56bbb5a1a1",
+    "actual": "eac228e0a1b12d7f2ad195fcec622a49a7ff77c464b4f91a0a547c56bbb5a1a1",
+    "match": true,
+    "bytes": 10043
+  },
+  {
+    "path": "games/Dragon_Ball_Z_II_Wide64_NGPlus_v20.nes",
+    "expected": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+    "actual": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+    "match": true,
+    "bytes": 786960
+  },
+  {
+    "path": "index.html",
+    "expected": "9d1c84ada7639d81e398a02293900525d621be9869cd6a58b4afde1dfe6e8921",
+    "actual": "9d1c84ada7639d81e398a02293900525d621be9869cd6a58b4afde1dfe6e8921",
+    "match": true,
+    "bytes": 1679
+  },
+  {
+    "path": "packs/scenery.json",
+    "expected": "12ea5f3480ab80bf6206bdf0b08f5271ee4932e4fe94e7bafa68c077e67c3a86",
+    "actual": "12ea5f3480ab80bf6206bdf0b08f5271ee4932e4fe94e7bafa68c077e67c3a86",
+    "match": true,
+    "bytes": 1002608
+  },
+  {
+    "path": "packs/wide64-v20-nameplates-v2.png",
+    "expected": "10bb73890c00870273f58e7bf3934215e52e74afd1d3cc5fa2d98513fb3502e8",
+    "actual": "10bb73890c00870273f58e7bf3934215e52e74afd1d3cc5fa2d98513fb3502e8",
+    "match": true,
+    "bytes": 1248052
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-10.png",
+    "expected": "0e5e354b6d41f74c006927a06f212fcfd2a7ecec5070a63462f0043e4a981ec9",
+    "actual": "0e5e354b6d41f74c006927a06f212fcfd2a7ecec5070a63462f0043e4a981ec9",
+    "match": true,
+    "bytes": 601
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-11.png",
+    "expected": "08c445a9a70275d02a217ed18d506f6e4bb5f4735c762d8bd78156a15c0a9d66",
+    "actual": "08c445a9a70275d02a217ed18d506f6e4bb5f4735c762d8bd78156a15c0a9d66",
+    "match": true,
+    "bytes": 704
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-12.png",
+    "expected": "e5d9e4b538e84c328a4caf7fcbf84f53da5c592538b4002320d3c5173863996e",
+    "actual": "e5d9e4b538e84c328a4caf7fcbf84f53da5c592538b4002320d3c5173863996e",
+    "match": true,
+    "bytes": 784
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-13.png",
+    "expected": "d2162a965ef9eef688771c7bc7d81ce535f0e2c778cb5e700b57c915745ccbcd",
+    "actual": "d2162a965ef9eef688771c7bc7d81ce535f0e2c778cb5e700b57c915745ccbcd",
+    "match": true,
+    "bytes": 812
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-14.png",
+    "expected": "f2e15b5d600c36a81f3f849b9a7aa657d45374943a8a89ae9fc64dd5e2be020c",
+    "actual": "f2e15b5d600c36a81f3f849b9a7aa657d45374943a8a89ae9fc64dd5e2be020c",
+    "match": true,
+    "bytes": 667
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-15.png",
+    "expected": "d2d05e6e0a69d71b72adf543187570380689edac30d05918f756ed1546b772d7",
+    "actual": "d2d05e6e0a69d71b72adf543187570380689edac30d05918f756ed1546b772d7",
+    "match": true,
+    "bytes": 703
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-16.png",
+    "expected": "ab8a59799ded29ba48060ab6ff4af3c643f2fbf34286350cfd45b76debebea6d",
+    "actual": "ab8a59799ded29ba48060ab6ff4af3c643f2fbf34286350cfd45b76debebea6d",
+    "match": true,
+    "bytes": 720
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-17.png",
+    "expected": "0a2a211feb941a060360349e224ea8768a8f4cae16d6ef40e8fea25448fd32ef",
+    "actual": "0a2a211feb941a060360349e224ea8768a8f4cae16d6ef40e8fea25448fd32ef",
+    "match": true,
+    "bytes": 664
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-18.png",
+    "expected": "1fa4962cebee098fc3cee9267dc0260d869633a1196fb16387969ef287d1952a",
+    "actual": "1fa4962cebee098fc3cee9267dc0260d869633a1196fb16387969ef287d1952a",
+    "match": true,
+    "bytes": 719
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-19.png",
+    "expected": "178eaeb4aeb7cbc2062de3ee483c65ecda05e629f9cbecccaef448d521f39f53",
+    "actual": "178eaeb4aeb7cbc2062de3ee483c65ecda05e629f9cbecccaef448d521f39f53",
+    "match": true,
+    "bytes": 652
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-20.png",
+    "expected": "1261eb885dca03bc13393a5831a620bd44b95b5651e769248144c66026b68d63",
+    "actual": "1261eb885dca03bc13393a5831a620bd44b95b5651e769248144c66026b68d63",
+    "match": true,
+    "bytes": 774
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-21.png",
+    "expected": "36e6f66a19242b0307178e7e9e4c6b6a77e83714d8d6e4c5a8781a444857e387",
+    "actual": "36e6f66a19242b0307178e7e9e4c6b6a77e83714d8d6e4c5a8781a444857e387",
+    "match": true,
+    "bytes": 807
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-22.png",
+    "expected": "06948fc7dc94809abebb5f5a587653e2911f5ab8962b637e0fdca2500bedde1a",
+    "actual": "06948fc7dc94809abebb5f5a587653e2911f5ab8962b637e0fdca2500bedde1a",
+    "match": true,
+    "bytes": 774
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-23.png",
+    "expected": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "actual": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "match": true,
+    "bytes": 639
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-24.png",
+    "expected": "c13f6af24cdbe38b30205eb4ae77590bf157e6475a098c8d96b3bf2870340db7",
+    "actual": "c13f6af24cdbe38b30205eb4ae77590bf157e6475a098c8d96b3bf2870340db7",
+    "match": true,
+    "bytes": 749
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-25.png",
+    "expected": "6acc91ffa57f2cc65497c12559f7fed882a362da89a36a5ac80ee29da03f27b7",
+    "actual": "6acc91ffa57f2cc65497c12559f7fed882a362da89a36a5ac80ee29da03f27b7",
+    "match": true,
+    "bytes": 769
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-26.png",
+    "expected": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "actual": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "match": true,
+    "bytes": 719
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-27.png",
+    "expected": "78b0128495bbd116d26faabfbad0cf2f1c1b2608aca9752806c1381df3a0ed48",
+    "actual": "78b0128495bbd116d26faabfbad0cf2f1c1b2608aca9752806c1381df3a0ed48",
+    "match": true,
+    "bytes": 690
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-28.png",
+    "expected": "17385f58ff0b0298fb8df51d5471ce87a6091e83bc377644bb238387bb01445f",
+    "actual": "17385f58ff0b0298fb8df51d5471ce87a6091e83bc377644bb238387bb01445f",
+    "match": true,
+    "bytes": 870
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-29.png",
+    "expected": "930e4967b3e01b6b20f94a417cf1a2061f4f596b84ba54dd5fddb088bd0f51c7",
+    "actual": "930e4967b3e01b6b20f94a417cf1a2061f4f596b84ba54dd5fddb088bd0f51c7",
+    "match": true,
+    "bytes": 706
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-30.png",
+    "expected": "6b04db4b992e021f3969c994b13c29abd5b8a190c385e68b6a6e7bc796ddb097",
+    "actual": "6b04db4b992e021f3969c994b13c29abd5b8a190c385e68b6a6e7bc796ddb097",
+    "match": true,
+    "bytes": 685
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-31.png",
+    "expected": "b49656d2f0b12802805697d99957ef9e94b54e22e8a8786a6c938f99812050ac",
+    "actual": "b49656d2f0b12802805697d99957ef9e94b54e22e8a8786a6c938f99812050ac",
+    "match": true,
+    "bytes": 812
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-32.png",
+    "expected": "37e932d02e0e2da1937dd7f06d72ae79a687901dfaff6a9825a5fa1a8442b14d",
+    "actual": "37e932d02e0e2da1937dd7f06d72ae79a687901dfaff6a9825a5fa1a8442b14d",
+    "match": true,
+    "bytes": 478
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-33.png",
+    "expected": "4c55f0acced01a1b403f88fb48e84ca9921066a420a2fcddf23ca2134e16c171",
+    "actual": "4c55f0acced01a1b403f88fb48e84ca9921066a420a2fcddf23ca2134e16c171",
+    "match": true,
+    "bytes": 697
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-34.png",
+    "expected": "cb4e11ae7bc432710d80144c9737f93470e0819b347b53423c287d725f075733",
+    "actual": "cb4e11ae7bc432710d80144c9737f93470e0819b347b53423c287d725f075733",
+    "match": true,
+    "bytes": 534
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-35.png",
+    "expected": "a40b26b1a75300ab89b5150603b9e206758d77dde9bf6798d390137b4710c314",
+    "actual": "a40b26b1a75300ab89b5150603b9e206758d77dde9bf6798d390137b4710c314",
+    "match": true,
+    "bytes": 904
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-36.png",
+    "expected": "539eb5b916d96cb7790d3ee6d8353dba9ce05c723b67d02e280bf75df0385226",
+    "actual": "539eb5b916d96cb7790d3ee6d8353dba9ce05c723b67d02e280bf75df0385226",
+    "match": true,
+    "bytes": 629
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-37.png",
+    "expected": "5b4317b53c42986e8feeba20d1543b6b9e5353d211bb923ece6a2e707eaeff0f",
+    "actual": "5b4317b53c42986e8feeba20d1543b6b9e5353d211bb923ece6a2e707eaeff0f",
+    "match": true,
+    "bytes": 484
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-38.png",
+    "expected": "8b5a463836ee2a5190eac0ba227c69d1af4854b7aa5859f22ca4ae0b1154f579",
+    "actual": "8b5a463836ee2a5190eac0ba227c69d1af4854b7aa5859f22ca4ae0b1154f579",
+    "match": true,
+    "bytes": 562
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-39.png",
+    "expected": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "actual": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "match": true,
+    "bytes": 639
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-40.png",
+    "expected": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "actual": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "match": true,
+    "bytes": 719
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-41.png",
+    "expected": "286fc7e44901d6122ca79675ccf506777f51c38e914550d353d3a60ebaddcc58",
+    "actual": "286fc7e44901d6122ca79675ccf506777f51c38e914550d353d3a60ebaddcc58",
+    "match": true,
+    "bytes": 1049
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/manifest.json",
+    "expected": "1d04de8a88a5f66753f48d48014d9655d9cb6af87b5d6d6922b2efb8c27d4d93",
+    "actual": "1d04de8a88a5f66753f48d48014d9655d9cb6af87b5d6d6922b2efb8c27d4d93",
+    "match": true,
+    "bytes": 464
+  },
+  {
+    "path": "packs/wide64-v20-native/impact1.png",
+    "expected": "e53bb3b752cfbc67abb5103e2feb6a93e6a8814dc1fe55c8a7135b73d33567b6",
+    "actual": "e53bb3b752cfbc67abb5103e2feb6a93e6a8814dc1fe55c8a7135b73d33567b6",
+    "match": true,
+    "bytes": 1277
+  },
+  {
+    "path": "packs/wide64-v20-native/impact2.png",
+    "expected": "7c2876cfb4fe1a91e045ff3d0f2cd7d5e2300aa1ba1e1f2191015b14292700a0",
+    "actual": "7c2876cfb4fe1a91e045ff3d0f2cd7d5e2300aa1ba1e1f2191015b14292700a0",
+    "match": true,
+    "bytes": 1295
+  },
+  {
+    "path": "packs/wide64-v20-native/provenance.json",
+    "expected": "840f05098775822e56d145af4a78eda91ad12cd3da6e0ec0f396b355ebe08131",
+    "actual": "840f05098775822e56d145af4a78eda91ad12cd3da6e0ec0f396b355ebe08131",
+    "match": true,
+    "bytes": 684
+  },
+  {
+    "path": "packs/wide64-v20-native/wave.png",
+    "expected": "f11d0ea640d48f512e5b7c955bca4e9b453753a4861bd0830376a4b8bd39d766",
+    "actual": "f11d0ea640d48f512e5b7c955bca4e9b453753a4861bd0830376a4b8bd39d766",
+    "match": true,
+    "bytes": 419
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/native-pose-contact-sheet.png",
+    "expected": "e1f04c605d130fad218002159fd82771be6b3828fea154dc7153198e43a8380b",
+    "actual": "e1f04c605d130fad218002159fd82771be6b3828fea154dc7153198e43a8380b",
+    "match": true,
+    "bytes": 59468
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/native-pose-manifest.json",
+    "expected": "55d7075591d6951a8249df0e4836de024b1c8d37d63ea595a2863931c7f8ba12",
+    "actual": "55d7075591d6951a8249df0e4836de024b1c8d37d63ea595a2863931c7f8ba12",
+    "match": true,
+    "bytes": 35865
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-10-native-pose-1.png",
+    "expected": "0e5e354b6d41f74c006927a06f212fcfd2a7ecec5070a63462f0043e4a981ec9",
+    "actual": "0e5e354b6d41f74c006927a06f212fcfd2a7ecec5070a63462f0043e4a981ec9",
+    "match": true,
+    "bytes": 601
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-11-native-pose-1.png",
+    "expected": "08c445a9a70275d02a217ed18d506f6e4bb5f4735c762d8bd78156a15c0a9d66",
+    "actual": "08c445a9a70275d02a217ed18d506f6e4bb5f4735c762d8bd78156a15c0a9d66",
+    "match": true,
+    "bytes": 704
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-12-native-pose-1.png",
+    "expected": "e5d9e4b538e84c328a4caf7fcbf84f53da5c592538b4002320d3c5173863996e",
+    "actual": "e5d9e4b538e84c328a4caf7fcbf84f53da5c592538b4002320d3c5173863996e",
+    "match": true,
+    "bytes": 784
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-12-native-pose-2.png",
+    "expected": "b468903da9fc51eb4554dbfd14d4ede0838f13a28f28d30c2cfc18643dffb15d",
+    "actual": "b468903da9fc51eb4554dbfd14d4ede0838f13a28f28d30c2cfc18643dffb15d",
+    "match": true,
+    "bytes": 710
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-12-native-pose-3.png",
+    "expected": "943f4c0021192cee47e4d85cf8d63f65ae4864c05748840028338190811af051",
+    "actual": "943f4c0021192cee47e4d85cf8d63f65ae4864c05748840028338190811af051",
+    "match": true,
+    "bytes": 694
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-13-native-pose-1.png",
+    "expected": "d2162a965ef9eef688771c7bc7d81ce535f0e2c778cb5e700b57c915745ccbcd",
+    "actual": "d2162a965ef9eef688771c7bc7d81ce535f0e2c778cb5e700b57c915745ccbcd",
+    "match": true,
+    "bytes": 812
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-13-native-pose-2.png",
+    "expected": "1987efe5440ddb1394808b86f39765e0183d9e2ee3955bc6b2910965d4e8c66e",
+    "actual": "1987efe5440ddb1394808b86f39765e0183d9e2ee3955bc6b2910965d4e8c66e",
+    "match": true,
+    "bytes": 743
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-13-native-pose-3.png",
+    "expected": "c88b4db6c67ed5e4391856ec8c46898bb06e8fb93c1d4411dd2955d2f04c5e82",
+    "actual": "c88b4db6c67ed5e4391856ec8c46898bb06e8fb93c1d4411dd2955d2f04c5e82",
+    "match": true,
+    "bytes": 725
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-14-native-pose-1.png",
+    "expected": "f2e15b5d600c36a81f3f849b9a7aa657d45374943a8a89ae9fc64dd5e2be020c",
+    "actual": "f2e15b5d600c36a81f3f849b9a7aa657d45374943a8a89ae9fc64dd5e2be020c",
+    "match": true,
+    "bytes": 667
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-14-native-pose-2.png",
+    "expected": "1912895a4b262860aac767aa64e49dc886ad1c47bd967f041b3d8e62e863a48a",
+    "actual": "1912895a4b262860aac767aa64e49dc886ad1c47bd967f041b3d8e62e863a48a",
+    "match": true,
+    "bytes": 455
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-15-native-pose-1.png",
+    "expected": "d2d05e6e0a69d71b72adf543187570380689edac30d05918f756ed1546b772d7",
+    "actual": "d2d05e6e0a69d71b72adf543187570380689edac30d05918f756ed1546b772d7",
+    "match": true,
+    "bytes": 703
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-15-native-pose-2.png",
+    "expected": "1c2bc7bca5602c2e147236ab49dc3604721f12f8087fd2ab065d47e7da654b33",
+    "actual": "1c2bc7bca5602c2e147236ab49dc3604721f12f8087fd2ab065d47e7da654b33",
+    "match": true,
+    "bytes": 448
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-15-native-pose-3.png",
+    "expected": "107979511e155ff5d2f5ffa3d24970a4456dcbb0c1169e9038782895a19f07e6",
+    "actual": "107979511e155ff5d2f5ffa3d24970a4456dcbb0c1169e9038782895a19f07e6",
+    "match": true,
+    "bytes": 646
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-16-native-pose-1.png",
+    "expected": "ab8a59799ded29ba48060ab6ff4af3c643f2fbf34286350cfd45b76debebea6d",
+    "actual": "ab8a59799ded29ba48060ab6ff4af3c643f2fbf34286350cfd45b76debebea6d",
+    "match": true,
+    "bytes": 720
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-16-native-pose-2.png",
+    "expected": "09dd3ca68e7f98f6de6a2b20690f56947052a6f55114968fa95b652e839ff6f5",
+    "actual": "09dd3ca68e7f98f6de6a2b20690f56947052a6f55114968fa95b652e839ff6f5",
+    "match": true,
+    "bytes": 441
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-17-native-pose-1.png",
+    "expected": "0a2a211feb941a060360349e224ea8768a8f4cae16d6ef40e8fea25448fd32ef",
+    "actual": "0a2a211feb941a060360349e224ea8768a8f4cae16d6ef40e8fea25448fd32ef",
+    "match": true,
+    "bytes": 664
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-18-native-pose-1.png",
+    "expected": "1fa4962cebee098fc3cee9267dc0260d869633a1196fb16387969ef287d1952a",
+    "actual": "1fa4962cebee098fc3cee9267dc0260d869633a1196fb16387969ef287d1952a",
+    "match": true,
+    "bytes": 719
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-18-native-pose-2.png",
+    "expected": "c323c7f7d0387ac1bd2659435f0f211fb54dc02c38d1d4d0d682a8d1c7a6cdcc",
+    "actual": "c323c7f7d0387ac1bd2659435f0f211fb54dc02c38d1d4d0d682a8d1c7a6cdcc",
+    "match": true,
+    "bytes": 559
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-19-native-pose-1.png",
+    "expected": "178eaeb4aeb7cbc2062de3ee483c65ecda05e629f9cbecccaef448d521f39f53",
+    "actual": "178eaeb4aeb7cbc2062de3ee483c65ecda05e629f9cbecccaef448d521f39f53",
+    "match": true,
+    "bytes": 652
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-19-native-pose-2.png",
+    "expected": "1e4c834e4420c76b0f8b5e2d4ca4a4b2b788c5fa30ea4fced89cba1156344da5",
+    "actual": "1e4c834e4420c76b0f8b5e2d4ca4a4b2b788c5fa30ea4fced89cba1156344da5",
+    "match": true,
+    "bytes": 578
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-20-native-pose-1.png",
+    "expected": "1261eb885dca03bc13393a5831a620bd44b95b5651e769248144c66026b68d63",
+    "actual": "1261eb885dca03bc13393a5831a620bd44b95b5651e769248144c66026b68d63",
+    "match": true,
+    "bytes": 774
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-20-native-pose-2.png",
+    "expected": "c6f340430650bdad8f88f9dcee0f95219491a6e7a28af43142455157c70a580c",
+    "actual": "c6f340430650bdad8f88f9dcee0f95219491a6e7a28af43142455157c70a580c",
+    "match": true,
+    "bytes": 564
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-20-native-pose-3.png",
+    "expected": "c080df7e112c269cad57372fa09bdf306e49a0edc120bda5520fcc77878a073d",
+    "actual": "c080df7e112c269cad57372fa09bdf306e49a0edc120bda5520fcc77878a073d",
+    "match": true,
+    "bytes": 609
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-21-native-pose-1.png",
+    "expected": "36e6f66a19242b0307178e7e9e4c6b6a77e83714d8d6e4c5a8781a444857e387",
+    "actual": "36e6f66a19242b0307178e7e9e4c6b6a77e83714d8d6e4c5a8781a444857e387",
+    "match": true,
+    "bytes": 807
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-21-native-pose-2.png",
+    "expected": "0fadd1c498db879dc4d9c98f2fb7425e477f605152cf33cd2557e4a7b1a5934b",
+    "actual": "0fadd1c498db879dc4d9c98f2fb7425e477f605152cf33cd2557e4a7b1a5934b",
+    "match": true,
+    "bytes": 633
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-21-native-pose-3.png",
+    "expected": "f64c4c29a4eeafd7aed69d7e53f29b91d14384c61d3b8638ee8331de60423026",
+    "actual": "f64c4c29a4eeafd7aed69d7e53f29b91d14384c61d3b8638ee8331de60423026",
+    "match": true,
+    "bytes": 481
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-22-native-pose-1.png",
+    "expected": "06948fc7dc94809abebb5f5a587653e2911f5ab8962b637e0fdca2500bedde1a",
+    "actual": "06948fc7dc94809abebb5f5a587653e2911f5ab8962b637e0fdca2500bedde1a",
+    "match": true,
+    "bytes": 774
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-22-native-pose-2.png",
+    "expected": "bb9419106b9523a752c2d0e0cb359060615ec94a6e22b637fb2fc555882dc8db",
+    "actual": "bb9419106b9523a752c2d0e0cb359060615ec94a6e22b637fb2fc555882dc8db",
+    "match": true,
+    "bytes": 606
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-22-native-pose-3.png",
+    "expected": "418e7a04a4d39244db0209c31d6f3e361e49e8d6fa4c38c4b57060c33f1828a3",
+    "actual": "418e7a04a4d39244db0209c31d6f3e361e49e8d6fa4c38c4b57060c33f1828a3",
+    "match": true,
+    "bytes": 462
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-23-native-pose-1.png",
+    "expected": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "actual": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "match": true,
+    "bytes": 639
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-23-native-pose-2.png",
+    "expected": "caec7399b6c0cfae4cb8ab5f6d61c067d91d6111f4733f13d9b5d1d11f92ab96",
+    "actual": "caec7399b6c0cfae4cb8ab5f6d61c067d91d6111f4733f13d9b5d1d11f92ab96",
+    "match": true,
+    "bytes": 609
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-24-native-pose-1.png",
+    "expected": "c13f6af24cdbe38b30205eb4ae77590bf157e6475a098c8d96b3bf2870340db7",
+    "actual": "c13f6af24cdbe38b30205eb4ae77590bf157e6475a098c8d96b3bf2870340db7",
+    "match": true,
+    "bytes": 749
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-24-native-pose-2.png",
+    "expected": "839312d69566b0764ccb7bd4e64ccf227195ad4d9baff6733d420c164750dc7c",
+    "actual": "839312d69566b0764ccb7bd4e64ccf227195ad4d9baff6733d420c164750dc7c",
+    "match": true,
+    "bytes": 629
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-24-native-pose-3.png",
+    "expected": "1840193453cd1ea6afd271d04f9a79639b75c23d451a4abe1663e83d9e5443db",
+    "actual": "1840193453cd1ea6afd271d04f9a79639b75c23d451a4abe1663e83d9e5443db",
+    "match": true,
+    "bytes": 659
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-25-native-pose-1.png",
+    "expected": "6acc91ffa57f2cc65497c12559f7fed882a362da89a36a5ac80ee29da03f27b7",
+    "actual": "6acc91ffa57f2cc65497c12559f7fed882a362da89a36a5ac80ee29da03f27b7",
+    "match": true,
+    "bytes": 769
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-25-native-pose-2.png",
+    "expected": "8b22c0797483e1dcc833499aaffbd96eb8deb07ce472e31043377a4a295324b3",
+    "actual": "8b22c0797483e1dcc833499aaffbd96eb8deb07ce472e31043377a4a295324b3",
+    "match": true,
+    "bytes": 655
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-25-native-pose-3.png",
+    "expected": "92e88771ed79c59242d27e5de885b7291c7fe92e617165fe67c44270c429d8a8",
+    "actual": "92e88771ed79c59242d27e5de885b7291c7fe92e617165fe67c44270c429d8a8",
+    "match": true,
+    "bytes": 511
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-26-native-pose-1.png",
+    "expected": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "actual": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "match": true,
+    "bytes": 719
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-26-native-pose-2.png",
+    "expected": "45f428343ccaa35e05142f6647ae8aacf4e16a019dbb8272f3eda7fa230dc0cb",
+    "actual": "45f428343ccaa35e05142f6647ae8aacf4e16a019dbb8272f3eda7fa230dc0cb",
+    "match": true,
+    "bytes": 571
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-26-native-pose-3.png",
+    "expected": "8c7c569c72d1c87c11feef4a7c835bfb4ef252020e2003e110907eaabfe1edb3",
+    "actual": "8c7c569c72d1c87c11feef4a7c835bfb4ef252020e2003e110907eaabfe1edb3",
+    "match": true,
+    "bytes": 598
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-27-native-pose-1.png",
+    "expected": "78b0128495bbd116d26faabfbad0cf2f1c1b2608aca9752806c1381df3a0ed48",
+    "actual": "78b0128495bbd116d26faabfbad0cf2f1c1b2608aca9752806c1381df3a0ed48",
+    "match": true,
+    "bytes": 690
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-27-native-pose-2.png",
+    "expected": "c64267eaee748dcaed6353e6b2f8ca68d53616b49deb739aa0fdb4e810c24fe9",
+    "actual": "c64267eaee748dcaed6353e6b2f8ca68d53616b49deb739aa0fdb4e810c24fe9",
+    "match": true,
+    "bytes": 573
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-27-native-pose-3.png",
+    "expected": "4ad75d2c80c37fc7223bd568e9e338c326ab312206950f13301595e3aa7d5e04",
+    "actual": "4ad75d2c80c37fc7223bd568e9e338c326ab312206950f13301595e3aa7d5e04",
+    "match": true,
+    "bytes": 609
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-28-native-pose-1.png",
+    "expected": "17385f58ff0b0298fb8df51d5471ce87a6091e83bc377644bb238387bb01445f",
+    "actual": "17385f58ff0b0298fb8df51d5471ce87a6091e83bc377644bb238387bb01445f",
+    "match": true,
+    "bytes": 870
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-28-native-pose-2.png",
+    "expected": "0a0299cffd16b99f4fc133a023e5a4905fbb3abbe950bd297992d1ea87c9dfdf",
+    "actual": "0a0299cffd16b99f4fc133a023e5a4905fbb3abbe950bd297992d1ea87c9dfdf",
+    "match": true,
+    "bytes": 757
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-28-native-pose-3.png",
+    "expected": "23a40280acad27f0e1c5b2ee29b40f41b8a02f898f7d31e5b378f7874ff92b82",
+    "actual": "23a40280acad27f0e1c5b2ee29b40f41b8a02f898f7d31e5b378f7874ff92b82",
+    "match": true,
+    "bytes": 504
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-29-native-pose-1.png",
+    "expected": "930e4967b3e01b6b20f94a417cf1a2061f4f596b84ba54dd5fddb088bd0f51c7",
+    "actual": "930e4967b3e01b6b20f94a417cf1a2061f4f596b84ba54dd5fddb088bd0f51c7",
+    "match": true,
+    "bytes": 706
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-29-native-pose-2.png",
+    "expected": "8d66363667d0b4ff7bc47baf8c25facd7ea2bb2eb131d8fdb5d112e3b3836093",
+    "actual": "8d66363667d0b4ff7bc47baf8c25facd7ea2bb2eb131d8fdb5d112e3b3836093",
+    "match": true,
+    "bytes": 488
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-29-native-pose-3.png",
+    "expected": "d4f74b24dbe623fbc04034b654683405071baecfdec40c34742f76b22aa40509",
+    "actual": "d4f74b24dbe623fbc04034b654683405071baecfdec40c34742f76b22aa40509",
+    "match": true,
+    "bytes": 598
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-30-native-pose-1.png",
+    "expected": "6b04db4b992e021f3969c994b13c29abd5b8a190c385e68b6a6e7bc796ddb097",
+    "actual": "6b04db4b992e021f3969c994b13c29abd5b8a190c385e68b6a6e7bc796ddb097",
+    "match": true,
+    "bytes": 685
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-30-native-pose-2.png",
+    "expected": "16260d4f6d54e297d39431f728c958091c92bfdd4c1f74b1c9539609ef886fed",
+    "actual": "16260d4f6d54e297d39431f728c958091c92bfdd4c1f74b1c9539609ef886fed",
+    "match": true,
+    "bytes": 605
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-30-native-pose-3.png",
+    "expected": "27a601a66193f3e83ef653fecda2ff3ecd959223de4be1517b40d0eb83b7222d",
+    "actual": "27a601a66193f3e83ef653fecda2ff3ecd959223de4be1517b40d0eb83b7222d",
+    "match": true,
+    "bytes": 625
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-31-native-pose-1.png",
+    "expected": "b49656d2f0b12802805697d99957ef9e94b54e22e8a8786a6c938f99812050ac",
+    "actual": "b49656d2f0b12802805697d99957ef9e94b54e22e8a8786a6c938f99812050ac",
+    "match": true,
+    "bytes": 812
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-31-native-pose-2.png",
+    "expected": "772f3826ef261fcb5cdeedc25d630cc7e6610626d6a893a15cd1301812fe2db1",
+    "actual": "772f3826ef261fcb5cdeedc25d630cc7e6610626d6a893a15cd1301812fe2db1",
+    "match": true,
+    "bytes": 744
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-31-native-pose-3.png",
+    "expected": "d619647a8edd3cb184c10e5e0371b8817993f97ca99cbf63a8a6e304c3104ca9",
+    "actual": "d619647a8edd3cb184c10e5e0371b8817993f97ca99cbf63a8a6e304c3104ca9",
+    "match": true,
+    "bytes": 593
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-32-native-pose-1.png",
+    "expected": "37e932d02e0e2da1937dd7f06d72ae79a687901dfaff6a9825a5fa1a8442b14d",
+    "actual": "37e932d02e0e2da1937dd7f06d72ae79a687901dfaff6a9825a5fa1a8442b14d",
+    "match": true,
+    "bytes": 478
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-32-native-pose-2.png",
+    "expected": "195c308a4f2275ef049be4412f613c0613af3b6e232799aaa389c441eb0c5f09",
+    "actual": "195c308a4f2275ef049be4412f613c0613af3b6e232799aaa389c441eb0c5f09",
+    "match": true,
+    "bytes": 426
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-33-native-pose-1.png",
+    "expected": "4c55f0acced01a1b403f88fb48e84ca9921066a420a2fcddf23ca2134e16c171",
+    "actual": "4c55f0acced01a1b403f88fb48e84ca9921066a420a2fcddf23ca2134e16c171",
+    "match": true,
+    "bytes": 697
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-33-native-pose-2.png",
+    "expected": "7cdcb1017e6c234104d72c76b67ba3c8d40460b01191684f975ed90b198c4284",
+    "actual": "7cdcb1017e6c234104d72c76b67ba3c8d40460b01191684f975ed90b198c4284",
+    "match": true,
+    "bytes": 646
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-33-native-pose-3.png",
+    "expected": "d1332f9df2c2f2f651c5f6219a8c8a149529593d01dca65d8eb6f66fbdc05b95",
+    "actual": "d1332f9df2c2f2f651c5f6219a8c8a149529593d01dca65d8eb6f66fbdc05b95",
+    "match": true,
+    "bytes": 604
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-35-native-pose-1.png",
+    "expected": "a40b26b1a75300ab89b5150603b9e206758d77dde9bf6798d390137b4710c314",
+    "actual": "a40b26b1a75300ab89b5150603b9e206758d77dde9bf6798d390137b4710c314",
+    "match": true,
+    "bytes": 904
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-36-native-pose-1.png",
+    "expected": "539eb5b916d96cb7790d3ee6d8353dba9ce05c723b67d02e280bf75df0385226",
+    "actual": "539eb5b916d96cb7790d3ee6d8353dba9ce05c723b67d02e280bf75df0385226",
+    "match": true,
+    "bytes": 629
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-37-native-pose-1.png",
+    "expected": "5b4317b53c42986e8feeba20d1543b6b9e5353d211bb923ece6a2e707eaeff0f",
+    "actual": "5b4317b53c42986e8feeba20d1543b6b9e5353d211bb923ece6a2e707eaeff0f",
+    "match": true,
+    "bytes": 484
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-38-native-pose-1.png",
+    "expected": "8b5a463836ee2a5190eac0ba227c69d1af4854b7aa5859f22ca4ae0b1154f579",
+    "actual": "8b5a463836ee2a5190eac0ba227c69d1af4854b7aa5859f22ca4ae0b1154f579",
+    "match": true,
+    "bytes": 562
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-39-native-pose-1.png",
+    "expected": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "actual": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d",
+    "match": true,
+    "bytes": 639
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-40-native-pose-1.png",
+    "expected": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "actual": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace",
+    "match": true,
+    "bytes": 719
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-40-native-pose-2.png",
+    "expected": "979d85447abb81d4a298b5e044191d35131dd546549fcf1de22cc496a7613c9b",
+    "actual": "979d85447abb81d4a298b5e044191d35131dd546549fcf1de22cc496a7613c9b",
+    "match": true,
+    "bytes": 588
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-40-native-pose-3.png",
+    "expected": "ba34f2705093ff33c0691b6c73d1c10fc7f66c736c185d6e63c420803a95e16e",
+    "actual": "ba34f2705093ff33c0691b6c73d1c10fc7f66c736c185d6e63c420803a95e16e",
+    "match": true,
+    "bytes": 588
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-41-native-pose-1.png",
+    "expected": "286fc7e44901d6122ca79675ccf506777f51c38e914550d353d3a60ebaddcc58",
+    "actual": "286fc7e44901d6122ca79675ccf506777f51c38e914550d353d3a60ebaddcc58",
+    "match": true,
+    "bytes": 1049
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-41-native-pose-2.png",
+    "expected": "7bdd78071deb05bcae04678970562ad4999db65febad699f4556ce0e95462bcc",
+    "actual": "7bdd78071deb05bcae04678970562ad4999db65febad699f4556ce0e95462bcc",
+    "match": true,
+    "bytes": 659
+  },
+  {
+    "path": "packs/wide64-v20-poses194/verified/type-41-native-pose-3.png",
+    "expected": "6a76ea36e1876e75c48f3751d82615513564bdc73848e9e7f1eae050c1ee4e63",
+    "actual": "6a76ea36e1876e75c48f3751d82615513564bdc73848e9e7f1eae050c1ee4e63",
+    "match": true,
+    "bytes": 889
+  },
+  {
+    "path": "packs/wide64-v20-ssj2-portraits.png",
+    "expected": "22f304853d54681e28b2cd9c27d72f7c7c821a032d4e5fae4dbda7743e94ca53",
+    "actual": "22f304853d54681e28b2cd9c27d72f7c7c821a032d4e5fae4dbda7743e94ca53",
+    "match": true,
+    "bytes": 1420870
+  },
+  {
+    "path": "player-wide64-v20-runtime.js",
+    "expected": "f167eef589be28a054a667ab02461994b2e477d87b3e4048c82738665174238d",
+    "actual": "f167eef589be28a054a667ab02461994b2e477d87b3e4048c82738665174238d",
+    "match": true,
+    "bytes": 31340
+  },
+  {
+    "path": "player-wide64-v20.html",
+    "expected": "312d3abca12ac89f29034520bcd5cb784ee3fa63b936a6027d2c9cc9309c06c0",
+    "actual": "312d3abca12ac89f29034520bcd5cb784ee3fa63b936a6027d2c9cc9309c06c0",
+    "match": true,
+    "bytes": 14066
+  },
+  {
+    "path": "touch-controls-wide64-v20.js",
+    "expected": "080860bacad4c3c409e29ae01902f458cd8a3c8a8fae4e2d142838ef629d3ba6",
+    "actual": "080860bacad4c3c409e29ae01902f458cd8a3c8a8fae4e2d142838ef629d3ba6",
+    "match": true,
+    "bytes": 9309
+  }
+]

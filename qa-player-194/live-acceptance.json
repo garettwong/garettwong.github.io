@@ -1,0 +1,19 @@
+{
+  "url": "https://garettwong.github.io/dbz-wide64-v20-play.html?release=194",
+  "runtimeCommit": "68199bdc38bc0d0a217d7e6536eecb9eb6fc05ad",
+  "pagesRun": 38113431960,
+  "publicAssets": 159,
+  "matching": 159,
+  "fullLiveBattle": {
+    "enemies": 386,
+    "casts": 2,
+    "elapsedMs": 56652,
+    "nativeCounterGroups": 79,
+    "fieldFromFirstGroup": true,
+    "movingFieldOffsets": 229,
+    "singleReward": true,
+    "returnedToMap": true,
+    "errors": []
+  },
+  "rapidLockLiveChecks": []
+}
