@@ -1,0 +1,432 @@
+[
+  {
+    "path": "assets/index-home193-wide64v20-372178323a44.js",
+    "bytes": 276547,
+    "sha256": "0b92a3b4e4f6bf118196833566cba206f7610dd09ed2530b3889abd45ee68d1c"
+  },
+  {
+    "path": "dbz-source-english192.js",
+    "bytes": 7405,
+    "sha256": "ce66f2ca6c1bebd75acec0186152ba72caede478d0a692ad77d7d6908edcbfa0"
+  },
+  {
+    "path": "dbz-wide64-v20-adapter.js",
+    "bytes": 26255,
+    "sha256": "96ef64786269ba9e5e1e34756a9ef2831ad04903517805b09d02e6eb2219f31c"
+  },
+  {
+    "path": "dbz-wide64-v20-awakening.js",
+    "bytes": 7797,
+    "sha256": "b26985455ad3fe95e98f07d6b37d043a7dec005be89b5317c564de8fe88a5c17"
+  },
+  {
+    "path": "dbz-wide64-v20-blast-animation.js",
+    "bytes": 9645,
+    "sha256": "98d6bc9da2b4c99c782fe3703ad72c4f6ed9f6b63f2349bfcdbdf0d59b9e7cf4"
+  },
+  {
+    "path": "dbz-wide64-v20-blast-controller.js",
+    "bytes": 20028,
+    "sha256": "15412985eb9215dfca54f64537a1c41800867af08620ba62198f477b665e04d3"
+  },
+  {
+    "path": "dbz-wide64-v20-card-factory.js",
+    "bytes": 22849,
+    "sha256": "daa4b7188cc1fe5cec34f7492e26c140632fd0b06c6d80cedf05d9a246dda33d"
+  },
+  {
+    "path": "dbz-wide64-v20-cards.js",
+    "bytes": 1055,
+    "sha256": "f64d8c5e24e95ac4cc416a74497f4aa402b090544c4b82fe46fa994320a1b369"
+  },
+  {
+    "path": "dbz-wide64-v20-compact.css",
+    "bytes": 15715,
+    "sha256": "1d450ed046ae5129b5baa2b5282775d7e0d7be734b002d0a9beb11370b56f816"
+  },
+  {
+    "path": "dbz-wide64-v20-compact.js",
+    "bytes": 7300,
+    "sha256": "7b025c1bc81d0c5616bd7624dba81e1dd451a5bc4c03c7e9670835b802eca1ff"
+  },
+  {
+    "path": "dbz-wide64-v20-copy.mjs",
+    "bytes": 830,
+    "sha256": "3a4a94b114541799332b046594f2de845166414f36af74770bd18257c546421c"
+  },
+  {
+    "path": "dbz-wide64-v20-edition.json",
+    "bytes": 55031,
+    "sha256": "7061764ad4ab431fc4fdf6a6f6fa746ee17fef917423f1d3a9bb0a99256209ba"
+  },
+  {
+    "path": "dbz-wide64-v20-enemies.js",
+    "bytes": 8625,
+    "sha256": "ea9f8c809520b589ee4cd1d2931a2c87df7086b5226b3952090ec656eba6babe"
+  },
+  {
+    "path": "dbz-wide64-v20-enemy-info.js",
+    "bytes": 11043,
+    "sha256": "9a0d1e7de9b88e51c5b781229cd590c263293d407b81a9c0a49aaf16d66f4b31"
+  },
+  {
+    "path": "dbz-wide64-v20-entry.css",
+    "bytes": 1207,
+    "sha256": "56fe9e0a66d5ae3f7646157ffc9cbfc484a7f186220a2dd30ef1f91ff63c7ea3"
+  },
+  {
+    "path": "dbz-wide64-v20-forms.js",
+    "bytes": 2250,
+    "sha256": "b9ce7c3a42e3248cda8186f6ad7325e5006163abd45f080cba0a81985a6cc7ff"
+  },
+  {
+    "path": "dbz-wide64-v20-host.mjs",
+    "bytes": 10320,
+    "sha256": "843ce3d6a157215e3fbc0bfac5d94d79fa41d37f44060afd7c742aa294cbc83c"
+  },
+  {
+    "path": "dbz-wide64-v20-large-battle.js",
+    "bytes": 8372,
+    "sha256": "c580a64e5f465b3347f7281e44793d5d3647240ee2c6b3c07762b05f92980b9a"
+  },
+  {
+    "path": "dbz-wide64-v20-nameplate-patterns.json",
+    "bytes": 33102,
+    "sha256": "3814c700a36e60124b3c0884b0dda949e0c001f3f402b6c99bda9147ce429b1a"
+  },
+  {
+    "path": "dbz-wide64-v20-nameplates.js",
+    "bytes": 4912,
+    "sha256": "8c1d7f668d51a707c809f13a8e2d0e98c3969bd6ebb98d2aa546d39d3f85dc6c"
+  },
+  {
+    "path": "dbz-wide64-v20-panel.js",
+    "bytes": 7174,
+    "sha256": "dafd221a03507cdd8ed4456c1eb3864daf740274c6cc4c607f2ebabee6cd600c"
+  },
+  {
+    "path": "dbz-wide64-v20-play.html",
+    "bytes": 1119,
+    "sha256": "31c37df8d6c4b622a99f97bf317de5c0f154121e2892fa724667ff49f5c28ef2"
+  },
+  {
+    "path": "dbz-wide64-v20-selected-save-copy.mjs",
+    "bytes": 2802,
+    "sha256": "5494d9f9f7151e4ebf692d674d4fdae6dc82438d4a276caadc253730aa0a4bde"
+  },
+  {
+    "path": "dbz-wide64-v20-shell.css",
+    "bytes": 157942,
+    "sha256": "204d71d883f3af9bb11a4df6e88dd6804c3cc51e2c33fa17c8f0107765384461"
+  },
+  {
+    "path": "dbz-wide64-v20-shell.js",
+    "bytes": 269010,
+    "sha256": "f5c29593fdf720a5505dbd014d2686f595567bd56b37d340f67bcc96516af1d0"
+  },
+  {
+    "path": "dbz-wide64-v20-skills.js",
+    "bytes": 17590,
+    "sha256": "4fdc02e28956f2e7368d40418d3dab5ecd31ada22d00bfe6ce82750cf30c7954"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v11.json",
+    "bytes": 55033,
+    "sha256": "a5a848bb51bcf2f6a113e35eada2375c05e4975343b1cbd5db880c54d91fb720"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v12.json",
+    "bytes": 55033,
+    "sha256": "3e241a7772866e73f64982b2123af882a25f35682856cf0589a47f43cab1b46e"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v13.json",
+    "bytes": 55032,
+    "sha256": "fd351a6404b436121e56e65721ebdcc302729281df2ae6cb769e5f741d5fa3bc"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v14.json",
+    "bytes": 55032,
+    "sha256": "f2f8bab5424f5f6a830290d7bfbc6e06d1027d9bf4d82e63c90073312c5ebfdc"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v15.json",
+    "bytes": 55033,
+    "sha256": "165b00cf72387c8df57a0d65973829df8c08593e31fd0ebd570498cecdd310bd"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v16.json",
+    "bytes": 55030,
+    "sha256": "29a8753a233d6dbd4108193202dc15f77a30c2da505265bc908c2e20c8bdde05"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v17.json",
+    "bytes": 55031,
+    "sha256": "e04320dc8e2493f5f62bf35c4dff086a619d6cd4ccb4a8acfc94d7fa3ff7d82a"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v18.json",
+    "bytes": 55031,
+    "sha256": "0a59da618a3f8a17dc7c9a75ca3922466ff475824e3e7430a62733434003b146"
+  },
+  {
+    "path": "dbz-wide64-v20-source-v19.json",
+    "bytes": 55031,
+    "sha256": "d110b077ac9914c903de4230dfc5b0d8931f6eeeaec8d3020692f1a53ad3622b"
+  },
+  {
+    "path": "dbz-wide64-v20-state.mjs",
+    "bytes": 2876,
+    "sha256": "f2894a2267744142c40fb401a76a6c4cde12eb9876d56cdabb203aef2722419d"
+  },
+  {
+    "path": "dbz-wide64-v20-training.js",
+    "bytes": 12723,
+    "sha256": "968503c688af5ca073140c89e152627770e105853a2a9d04713d832d5444e2b3"
+  },
+  {
+    "path": "dbz-wide64-v20-victory.js",
+    "bytes": 4647,
+    "sha256": "415a12716e31a12d7edc7852e6e8314a5c19d65700736e1b4c04e71a10339611"
+  },
+  {
+    "path": "dbz-wide64-v20.css",
+    "bytes": 7676,
+    "sha256": "8c79583d65ab9b292793d4e18e1011a885caaa1f125e526165e63a39a5519771"
+  },
+  {
+    "path": "frame-source-wide64-v20.js",
+    "bytes": 3528,
+    "sha256": "ad160ea96c33ca71737460f2bfaee9cfd2f4961211dc88c3605d31fce11b7e5d"
+  },
+  {
+    "path": "gamepad-controls-wide64-v20.js",
+    "bytes": 8872,
+    "sha256": "dde3f82c4164be6bfdc06259e8b4a7e11b19ee88fd64e5575c7e4b816be4c511"
+  },
+  {
+    "path": "games/Dragon_Ball_Z_II_Wide64_NGPlus_v20.nes",
+    "bytes": 786960,
+    "sha256": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632"
+  },
+  {
+    "path": "index.html",
+    "bytes": 1682,
+    "sha256": "0861967234583304f22714a75e25e724b2a78a0c6fe08223880d1fff497ab049"
+  },
+  {
+    "path": "packs/scenery.json",
+    "bytes": 1002609,
+    "sha256": "fc58c3b2c90d11c18b71b109e7cfd5b8cd3c734126473fc06536559d7e7c5424"
+  },
+  {
+    "path": "packs/wide64-v20-nameplates-v2.png",
+    "bytes": 1248052,
+    "sha256": "10bb73890c00870273f58e7bf3934215e52e74afd1d3cc5fa2d98513fb3502e8"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-10.png",
+    "bytes": 601,
+    "sha256": "0e5e354b6d41f74c006927a06f212fcfd2a7ecec5070a63462f0043e4a981ec9"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-11.png",
+    "bytes": 704,
+    "sha256": "08c445a9a70275d02a217ed18d506f6e4bb5f4735c762d8bd78156a15c0a9d66"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-12.png",
+    "bytes": 784,
+    "sha256": "e5d9e4b538e84c328a4caf7fcbf84f53da5c592538b4002320d3c5173863996e"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-13.png",
+    "bytes": 812,
+    "sha256": "d2162a965ef9eef688771c7bc7d81ce535f0e2c778cb5e700b57c915745ccbcd"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-14.png",
+    "bytes": 667,
+    "sha256": "f2e15b5d600c36a81f3f849b9a7aa657d45374943a8a89ae9fc64dd5e2be020c"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-15.png",
+    "bytes": 703,
+    "sha256": "d2d05e6e0a69d71b72adf543187570380689edac30d05918f756ed1546b772d7"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-16.png",
+    "bytes": 720,
+    "sha256": "ab8a59799ded29ba48060ab6ff4af3c643f2fbf34286350cfd45b76debebea6d"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-17.png",
+    "bytes": 664,
+    "sha256": "0a2a211feb941a060360349e224ea8768a8f4cae16d6ef40e8fea25448fd32ef"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-18.png",
+    "bytes": 719,
+    "sha256": "1fa4962cebee098fc3cee9267dc0260d869633a1196fb16387969ef287d1952a"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-19.png",
+    "bytes": 652,
+    "sha256": "178eaeb4aeb7cbc2062de3ee483c65ecda05e629f9cbecccaef448d521f39f53"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-20.png",
+    "bytes": 774,
+    "sha256": "1261eb885dca03bc13393a5831a620bd44b95b5651e769248144c66026b68d63"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-21.png",
+    "bytes": 807,
+    "sha256": "36e6f66a19242b0307178e7e9e4c6b6a77e83714d8d6e4c5a8781a444857e387"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-22.png",
+    "bytes": 774,
+    "sha256": "06948fc7dc94809abebb5f5a587653e2911f5ab8962b637e0fdca2500bedde1a"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-23.png",
+    "bytes": 639,
+    "sha256": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-24.png",
+    "bytes": 749,
+    "sha256": "c13f6af24cdbe38b30205eb4ae77590bf157e6475a098c8d96b3bf2870340db7"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-25.png",
+    "bytes": 769,
+    "sha256": "6acc91ffa57f2cc65497c12559f7fed882a362da89a36a5ac80ee29da03f27b7"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-26.png",
+    "bytes": 719,
+    "sha256": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-27.png",
+    "bytes": 690,
+    "sha256": "78b0128495bbd116d26faabfbad0cf2f1c1b2608aca9752806c1381df3a0ed48"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-28.png",
+    "bytes": 870,
+    "sha256": "17385f58ff0b0298fb8df51d5471ce87a6091e83bc377644bb238387bb01445f"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-29.png",
+    "bytes": 706,
+    "sha256": "930e4967b3e01b6b20f94a417cf1a2061f4f596b84ba54dd5fddb088bd0f51c7"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-30.png",
+    "bytes": 685,
+    "sha256": "6b04db4b992e021f3969c994b13c29abd5b8a190c385e68b6a6e7bc796ddb097"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-31.png",
+    "bytes": 812,
+    "sha256": "b49656d2f0b12802805697d99957ef9e94b54e22e8a8786a6c938f99812050ac"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-32.png",
+    "bytes": 478,
+    "sha256": "37e932d02e0e2da1937dd7f06d72ae79a687901dfaff6a9825a5fa1a8442b14d"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-33.png",
+    "bytes": 697,
+    "sha256": "4c55f0acced01a1b403f88fb48e84ca9921066a420a2fcddf23ca2134e16c171"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-34.png",
+    "bytes": 534,
+    "sha256": "cb4e11ae7bc432710d80144c9737f93470e0819b347b53423c287d725f075733"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-35.png",
+    "bytes": 904,
+    "sha256": "a40b26b1a75300ab89b5150603b9e206758d77dde9bf6798d390137b4710c314"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-36.png",
+    "bytes": 629,
+    "sha256": "539eb5b916d96cb7790d3ee6d8353dba9ce05c723b67d02e280bf75df0385226"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-37.png",
+    "bytes": 484,
+    "sha256": "5b4317b53c42986e8feeba20d1543b6b9e5353d211bb923ece6a2e707eaeff0f"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-38.png",
+    "bytes": 562,
+    "sha256": "8b5a463836ee2a5190eac0ba227c69d1af4854b7aa5859f22ca4ae0b1154f579"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-39.png",
+    "bytes": 639,
+    "sha256": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-40.png",
+    "bytes": 719,
+    "sha256": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/body-type-41.png",
+    "bytes": 1049,
+    "sha256": "286fc7e44901d6122ca79675ccf506777f51c38e914550d353d3a60ebaddcc58"
+  },
+  {
+    "path": "packs/wide64-v20-native/enemies/manifest.json",
+    "bytes": 501,
+    "sha256": "2894f0a7553df2b7356ca1f6ed3703eee2365aa37543928ff4a3ea241e4ac916"
+  },
+  {
+    "path": "packs/wide64-v20-native/impact1.png",
+    "bytes": 1277,
+    "sha256": "e53bb3b752cfbc67abb5103e2feb6a93e6a8814dc1fe55c8a7135b73d33567b6"
+  },
+  {
+    "path": "packs/wide64-v20-native/impact2.png",
+    "bytes": 1295,
+    "sha256": "7c2876cfb4fe1a91e045ff3d0f2cd7d5e2300aa1ba1e1f2191015b14292700a0"
+  },
+  {
+    "path": "packs/wide64-v20-native/provenance.json",
+    "bytes": 718,
+    "sha256": "6730975625329a72041adb2f50ad5bff40715ccc38ece57d288a1d3eea09fcd1"
+  },
+  {
+    "path": "packs/wide64-v20-native/wave.png",
+    "bytes": 419,
+    "sha256": "f11d0ea640d48f512e5b7c955bca4e9b453753a4861bd0830376a4b8bd39d766"
+  },
+  {
+    "path": "packs/wide64-v20-ssj2-portraits.png",
+    "bytes": 1420870,
+    "sha256": "22f304853d54681e28b2cd9c27d72f7c7c821a032d4e5fae4dbda7743e94ca53"
+  },
+  {
+    "path": "player-wide64-v20-runtime.js",
+    "bytes": 31359,
+    "sha256": "a40216f3a680a84cad988211c60067c57b6e4184749a05081c9695d61bf75ef8"
+  },
+  {
+    "path": "player-wide64-v20.html",
+    "bytes": 14135,
+    "sha256": "5eda9e45505840011282d1fb5ec0ee913d29540db7ddee0d4f09bf83e79f5177"
+  },
+  {
+    "path": "touch-controls-wide64-v20.js",
+    "bytes": 8408,
+    "sha256": "6b41248166a9afb2948b5089656040a300e71c0dd957edda3e301d4d69f8487f"
+  }
+]

@@ -1,0 +1,1130 @@
+{
+  "release": 193,
+  "romId": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+  "romChanged": false,
+  "existingV20SaveIdentityPreserved": true,
+  "tests": {
+    "movingTerrain386": {
+      "enemies": 386,
+      "elapsedMs": 54528,
+      "casts": 2,
+      "groups": 77,
+      "rewardConfirmed": true,
+      "finalPhase": [
+        6,
+        6,
+        1,
+        0
+      ],
+      "errors": [],
+      "terrainDraws": 1147,
+      "distinctTerrainOffsets": 251,
+      "arenas": [
+        "/packs/motion/desert-terrain.webp"
+      ],
+      "groupError": ""
+    },
+    "strength128xBackgroundResume": {
+      "enemies": 386,
+      "elapsedMs": 125442,
+      "casts": 5,
+      "groups": 87,
+      "rewardConfirmed": true,
+      "finalPhase": [
+        6,
+        6,
+        1,
+        0
+      ],
+      "errors": [],
+      "terrainDraws": 1332,
+      "distinctTerrainOffsets": 256,
+      "arenas": [
+        "/packs/motion/desert-terrain.webp"
+      ],
+      "groupError": ""
+    },
+    "finalGateResume": {
+      "enemies": 386,
+      "elapsedMs": 10233,
+      "casts": 1,
+      "groups": 2,
+      "rewardConfirmed": true,
+      "finalPhase": [
+        6,
+        6,
+        1,
+        0
+      ],
+      "errors": [],
+      "terrainDraws": 0,
+      "distinctTerrainOffsets": 0,
+      "arenas": [],
+      "groupError": ""
+    },
+    "baselineFinalGateFailure": {
+      "error": "Error: The group animation could not continue. Load the last save and try again.",
+      "fixedPassed": true
+    },
+    "cards": {
+      "speedSettings": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "assertions": 68,
+      "failures": []
+    },
+    "allFiveCards": {
+      "runAt": "2026-10-11T04:15:34.692Z",
+      "base": "http://127.0.0.1:8177",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "fixture": "card-menu.state",
+      "speed": 64,
+      "expected": {
+        "selectionRam": "$6e",
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256
+          },
+          {
+            "attack": 256,
+            "defense": 255
+          },
+          {
+            "attack": 256,
+            "defense": 64
+          },
+          {
+            "attack": 256,
+            "defense": 16
+          },
+          {
+            "attack": 256,
+            "defense": 8
+          }
+        ]
+      },
+      "cases": [
+        {
+          "index": 0,
+          "expected": {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          "before": {
+            "phase": 5,
+            "selection6e": 0,
+            "selection6f": 0,
+            "party020d": 240,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              240,
+              0,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": false,
+              "confirm": false
+            }
+          },
+          "after": {
+            "phase": 7,
+            "selection6e": 0,
+            "selection6f": 0,
+            "party020d": 15,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              15,
+              241,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          },
+          "assertions": [
+            {
+              "name": "native $6e index before A",
+              "pass": true,
+              "detail": 0
+            },
+            {
+              "name": "selected card data before A",
+              "pass": true,
+              "detail": {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              }
+            },
+            {
+              "name": "native $6e index preserved through dialog",
+              "pass": true,
+              "detail": 0
+            },
+            {
+              "name": "A opened native skill/confirm flow",
+              "pass": true,
+              "detail": {
+                "phase": 7,
+                "skills": {
+                  "open": true,
+                  "confirm": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "expected": {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          "before": {
+            "phase": 5,
+            "selection6e": 1,
+            "selection6f": 0,
+            "party020d": 240,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              240,
+              0,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": false,
+              "confirm": false
+            }
+          },
+          "after": {
+            "phase": 7,
+            "selection6e": 1,
+            "selection6f": 0,
+            "party020d": 31,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              31,
+              241,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          },
+          "assertions": [
+            {
+              "name": "native $6e index before A",
+              "pass": true,
+              "detail": 1
+            },
+            {
+              "name": "selected card data before A",
+              "pass": true,
+              "detail": {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              }
+            },
+            {
+              "name": "native $6e index preserved through dialog",
+              "pass": true,
+              "detail": 1
+            },
+            {
+              "name": "A opened native skill/confirm flow",
+              "pass": true,
+              "detail": {
+                "phase": 7,
+                "skills": {
+                  "open": true,
+                  "confirm": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "expected": {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          "before": {
+            "phase": 5,
+            "selection6e": 2,
+            "selection6f": 0,
+            "party020d": 240,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              240,
+              0,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": false,
+              "confirm": false
+            }
+          },
+          "after": {
+            "phase": 7,
+            "selection6e": 2,
+            "selection6f": 0,
+            "party020d": 47,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              47,
+              241,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          },
+          "assertions": [
+            {
+              "name": "native $6e index before A",
+              "pass": true,
+              "detail": 2
+            },
+            {
+              "name": "selected card data before A",
+              "pass": true,
+              "detail": {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              }
+            },
+            {
+              "name": "native $6e index preserved through dialog",
+              "pass": true,
+              "detail": 2
+            },
+            {
+              "name": "A opened native skill/confirm flow",
+              "pass": true,
+              "detail": {
+                "phase": 7,
+                "skills": {
+                  "open": true,
+                  "confirm": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "expected": {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          "before": {
+            "phase": 5,
+            "selection6e": 3,
+            "selection6f": 0,
+            "party020d": 240,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              240,
+              0,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": false,
+              "confirm": false
+            }
+          },
+          "after": {
+            "phase": 7,
+            "selection6e": 3,
+            "selection6f": 0,
+            "party020d": 63,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              63,
+              241,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          },
+          "assertions": [
+            {
+              "name": "native $6e index before A",
+              "pass": true,
+              "detail": 3
+            },
+            {
+              "name": "selected card data before A",
+              "pass": true,
+              "detail": {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              }
+            },
+            {
+              "name": "native $6e index preserved through dialog",
+              "pass": true,
+              "detail": 3
+            },
+            {
+              "name": "A opened native skill/confirm flow",
+              "pass": true,
+              "detail": {
+                "phase": 7,
+                "skills": {
+                  "open": true,
+                  "confirm": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "expected": {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          },
+          "before": {
+            "phase": 5,
+            "selection6e": 4,
+            "selection6f": 0,
+            "party020d": 240,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              240,
+              0,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": false,
+              "confirm": false
+            }
+          },
+          "after": {
+            "phase": 7,
+            "selection6e": 4,
+            "selection6f": 0,
+            "party020d": 79,
+            "party0200_021f": [
+              3,
+              11,
+              60,
+              0,
+              164,
+              6,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              3,
+              79,
+              129,
+              0,
+              0,
+              0,
+              4,
+              11,
+              70,
+              0,
+              220,
+              5,
+              0,
+              0,
+              0,
+              0,
+              255,
+              255,
+              4,
+              240
+            ],
+            "cards": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          },
+          "assertions": [
+            {
+              "name": "native $6e index before A",
+              "pass": true,
+              "detail": 4
+            },
+            {
+              "name": "selected card data before A",
+              "pass": true,
+              "detail": {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            },
+            {
+              "name": "native $6e index preserved through dialog",
+              "pass": true,
+              "detail": 4
+            },
+            {
+              "name": "A opened native skill/confirm flow",
+              "pass": true,
+              "detail": {
+                "phase": 7,
+                "skills": {
+                  "open": true,
+                  "confirm": false
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "overlap": {
+        "input": "A+Right overlapping, Right release 30ms then A release 80ms",
+        "after": {
+          "phase": 7,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 15,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            15,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": [
+            {
+              "attack": 256,
+              "defense": 256,
+              "attribute": 1
+            },
+            {
+              "attack": 256,
+              "defense": 255,
+              "attribute": 1
+            },
+            {
+              "attack": 256,
+              "defense": 64,
+              "attribute": 1
+            },
+            {
+              "attack": 256,
+              "defense": 16,
+              "attribute": 1
+            },
+            {
+              "attack": 256,
+              "defense": 8,
+              "attribute": 1
+            }
+          ],
+          "skills": {
+            "open": true,
+            "confirm": false
+          }
+        },
+        "assertion": {
+          "name": "inputs release without stuck active direction",
+          "pass": true,
+          "detail": {
+            "phase": 7,
+            "index": 0
+          }
+        }
+      },
+      "failures": []
+    },
+    "final193Replay": {
+      "casts": 2,
+      "groups": 77,
+      "rewardConfirmed": true,
+      "errors": [],
+      "finalPhase": [
+        6,
+        6,
+        1,
+        0
+      ],
+      "terrainDraws": 1134,
+      "distinctTerrainOffsets": 238
+    }
+  },
+  "limitations": [
+    "Physical iPhone Safari and physical gamepad hardware were not tested. Browser touch and standard gamepad inputs were emulated.",
+    "The exact user screenshot save was unavailable. Regression fixtures reproduce count, Gohan II and 128x enemy strength, plus a separately reproduced interruption failure."
+  ]
+}

@@ -1,0 +1,7864 @@
+{
+  "runs": [
+    {
+      "name": "speed-1",
+      "speed": 1,
+      "assertions": [
+        {
+          "name": "fixture starts native phase 5",
+          "pass": true,
+          "detail": "5"
+        },
+        {
+          "name": "fixture starts card index 0",
+          "pass": true,
+          "detail": "$6e=0, $6f=0"
+        },
+        {
+          "name": "seeded cards preserve attack/defence",
+          "pass": true,
+          "detail": "[[256,256],[256,255],[256,64],[256,16],[256,8]]"
+        },
+        {
+          "name": "right short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "right short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "right short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "right short press reaches 4",
+          "pass": true,
+          "detail": "$6e=4"
+        },
+        {
+          "name": "idle does not repeat navigation",
+          "pass": true,
+          "detail": "before=4, after=4"
+        },
+        {
+          "name": "left short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "left short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "left short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "left short press reaches 0",
+          "pass": true,
+          "detail": "$6e=0"
+        },
+        {
+          "name": "touch pointer path Right advances exactly one",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "keyboard route (gm.simulateInput) Left steps once",
+          "pass": true,
+          "detail": "before=1, after=0"
+        },
+        {
+          "name": "emulated standard gamepad Right steps once",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "A exits card selector into native skill/confirm flow",
+          "pass": true,
+          "detail": "{\"frame\":273,\"fast\":false,\"phase\":7,\"selection6e\":1,\"selection6f\":0,\"party020d\":31,\"party0200_021f\":[3,11,60,0,164,6,0,0,0,0,255,255,3,31,241,0,0,0,4,11,70,0,220,5,0,0,0,0,255,255,4,240],\"cards\":{\"values\":[{\"attack\":256,\"defense\":256,\"attribute\":1},{\"attack\":256,\"defense\":255,\"attribute\":1},{\"attack\":256,\"defense\":64,\"attribute\":1},{\"attack\":256,\"defense\":16,\"attribute\":1},{\"attack\":256,\"defense\":8,\"attribute\":1}],\"locked\":[true,true,true,true,true],\"pending\":[{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null}],\"busy\":false,\"active\":true,\"lastVerification\":{\"verified\":true,\"ram\":[],\"sidecar\":[],\"graphics\":[]},\"gameCheats\":[\"03F8:00\",\"03F9:00\",\"03FA:01\",\"0400:00\",\"0401:FF\",\"0402:01\",\"0408:00\",\"0409:40\",\"040A:01\",\"0410:00\",\"0411:10\",\"0412:01\",\"0418:00\",\"0419:08\",\"041A:01\"]},\"skills\":{\"open\":true,\"confirm\":false}}"
+        },
+        {
+          "name": "dialog Back returns to game",
+          "pass": true,
+          "detail": "{\"open\":false,\"confirm\":false}"
+        }
+      ],
+      "events": [
+        {
+          "step": "loaded",
+          "frame": 15,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": null,
+            "gameCheats": []
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-1",
+          "frame": 34,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-2",
+          "frame": 50,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-3",
+          "frame": 66,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-4",
+          "frame": 85,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 4,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-3",
+          "frame": 130,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-2",
+          "frame": 146,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-1",
+          "frame": 162,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-0",
+          "frame": 180,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "touch-pad-right",
+          "frame": 196,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "keyboard-api-left",
+          "frame": 212,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "emulated-gamepad-right",
+          "frame": 232,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "A-select",
+          "chosen": 1,
+          "frame": 273,
+          "fast": false,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": true,
+            "confirm": false
+          }
+        },
+        {
+          "step": "dialog-back",
+          "frame": 289,
+          "fast": false,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "speed-4",
+      "speed": 4,
+      "assertions": [
+        {
+          "name": "fixture starts native phase 5",
+          "pass": true,
+          "detail": "5"
+        },
+        {
+          "name": "fixture starts card index 0",
+          "pass": true,
+          "detail": "$6e=0, $6f=0"
+        },
+        {
+          "name": "seeded cards preserve attack/defence",
+          "pass": true,
+          "detail": "[[256,256],[256,255],[256,64],[256,16],[256,8]]"
+        },
+        {
+          "name": "right short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "right short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "right short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "right short press reaches 4",
+          "pass": true,
+          "detail": "$6e=4"
+        },
+        {
+          "name": "idle does not repeat navigation",
+          "pass": true,
+          "detail": "before=4, after=4"
+        },
+        {
+          "name": "left short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "left short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "left short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "left short press reaches 0",
+          "pass": true,
+          "detail": "$6e=0"
+        },
+        {
+          "name": "touch pointer path Right advances exactly one",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "keyboard route (gm.simulateInput) Left steps once",
+          "pass": true,
+          "detail": "before=1, after=0"
+        },
+        {
+          "name": "emulated standard gamepad Right steps once",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "A exits card selector into native skill/confirm flow",
+          "pass": true,
+          "detail": "{\"frame\":358,\"fast\":true,\"phase\":7,\"selection6e\":1,\"selection6f\":0,\"party020d\":31,\"party0200_021f\":[3,11,60,0,164,6,0,0,0,0,255,255,3,31,241,0,0,0,4,11,70,0,220,5,0,0,0,0,255,255,4,240],\"cards\":{\"values\":[{\"attack\":256,\"defense\":256,\"attribute\":1},{\"attack\":256,\"defense\":255,\"attribute\":1},{\"attack\":256,\"defense\":64,\"attribute\":1},{\"attack\":256,\"defense\":16,\"attribute\":1},{\"attack\":256,\"defense\":8,\"attribute\":1}],\"locked\":[true,true,true,true,true],\"pending\":[{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null}],\"busy\":false,\"active\":true,\"lastVerification\":{\"verified\":true,\"ram\":[],\"sidecar\":[],\"graphics\":[]},\"gameCheats\":[\"03F8:00\",\"03F9:00\",\"03FA:01\",\"0400:00\",\"0401:FF\",\"0402:01\",\"0408:00\",\"0409:40\",\"040A:01\",\"0410:00\",\"0411:10\",\"0412:01\",\"0418:00\",\"0419:08\",\"041A:01\"]},\"skills\":{\"open\":true,\"confirm\":false}}"
+        },
+        {
+          "name": "dialog Back returns to game",
+          "pass": true,
+          "detail": "{\"open\":false,\"confirm\":false}"
+        }
+      ],
+      "events": [
+        {
+          "step": "loaded",
+          "frame": 11,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": null,
+            "gameCheats": []
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-1",
+          "frame": 29,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-2",
+          "frame": 46,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-3",
+          "frame": 63,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-4",
+          "frame": 79,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 4,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-3",
+          "frame": 206,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-2",
+          "frame": 223,
+          "fast": true,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-1",
+          "frame": 239,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-0",
+          "frame": 256,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "touch-pad-right",
+          "frame": 274,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "keyboard-api-left",
+          "frame": 290,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "emulated-gamepad-right",
+          "frame": 310,
+          "fast": true,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "A-select",
+          "chosen": 1,
+          "frame": 358,
+          "fast": true,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": true,
+            "confirm": false
+          }
+        },
+        {
+          "step": "dialog-back",
+          "frame": 397,
+          "fast": true,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "speed-16",
+      "speed": 16,
+      "assertions": [
+        {
+          "name": "fixture starts native phase 5",
+          "pass": true,
+          "detail": "5"
+        },
+        {
+          "name": "fixture starts card index 0",
+          "pass": true,
+          "detail": "$6e=0, $6f=0"
+        },
+        {
+          "name": "seeded cards preserve attack/defence",
+          "pass": true,
+          "detail": "[[256,256],[256,255],[256,64],[256,16],[256,8]]"
+        },
+        {
+          "name": "right short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "right short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "right short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "right short press reaches 4",
+          "pass": true,
+          "detail": "$6e=4"
+        },
+        {
+          "name": "idle does not repeat navigation",
+          "pass": true,
+          "detail": "before=4, after=4"
+        },
+        {
+          "name": "left short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "left short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "left short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "left short press reaches 0",
+          "pass": true,
+          "detail": "$6e=0"
+        },
+        {
+          "name": "touch pointer path Right advances exactly one",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "keyboard route (gm.simulateInput) Left steps once",
+          "pass": true,
+          "detail": "before=1, after=0"
+        },
+        {
+          "name": "emulated standard gamepad Right steps once",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "A exits card selector into native skill/confirm flow",
+          "pass": true,
+          "detail": "{\"frame\":619,\"fast\":true,\"phase\":7,\"selection6e\":1,\"selection6f\":0,\"party020d\":31,\"party0200_021f\":[3,11,60,0,164,6,0,0,0,0,255,255,3,31,241,0,0,0,4,11,70,0,220,5,0,0,0,0,255,255,4,240],\"cards\":{\"values\":[{\"attack\":256,\"defense\":256,\"attribute\":1},{\"attack\":256,\"defense\":255,\"attribute\":1},{\"attack\":256,\"defense\":64,\"attribute\":1},{\"attack\":256,\"defense\":16,\"attribute\":1},{\"attack\":256,\"defense\":8,\"attribute\":1}],\"locked\":[true,true,true,true,true],\"pending\":[{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null}],\"busy\":false,\"active\":true,\"lastVerification\":{\"verified\":true,\"ram\":[],\"sidecar\":[],\"graphics\":[]},\"gameCheats\":[\"03F8:00\",\"03F9:00\",\"03FA:01\",\"0400:00\",\"0401:FF\",\"0402:01\",\"0408:00\",\"0409:40\",\"040A:01\",\"0410:00\",\"0411:10\",\"0412:01\",\"0418:00\",\"0419:08\",\"041A:01\"]},\"skills\":{\"open\":true,\"confirm\":false}}"
+        },
+        {
+          "name": "dialog Back returns to game",
+          "pass": true,
+          "detail": "{\"open\":false,\"confirm\":false}"
+        }
+      ],
+      "events": [
+        {
+          "step": "loaded",
+          "frame": 10,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": null,
+            "gameCheats": []
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-1",
+          "frame": 28,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-2",
+          "frame": 45,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-3",
+          "frame": 62,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-4",
+          "frame": 78,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 4,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-3",
+          "frame": 439,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-2",
+          "frame": 456,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-1",
+          "frame": 472,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-0",
+          "frame": 489,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "touch-pad-right",
+          "frame": 506,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "keyboard-api-left",
+          "frame": 523,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "emulated-gamepad-right",
+          "frame": 576,
+          "fast": true,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "A-select",
+          "chosen": 1,
+          "frame": 619,
+          "fast": true,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": true,
+            "confirm": false
+          }
+        },
+        {
+          "step": "dialog-back",
+          "frame": 760,
+          "fast": true,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "speed-64",
+      "speed": 64,
+      "assertions": [
+        {
+          "name": "fixture starts native phase 5",
+          "pass": true,
+          "detail": "5"
+        },
+        {
+          "name": "fixture starts card index 0",
+          "pass": true,
+          "detail": "$6e=0, $6f=0"
+        },
+        {
+          "name": "seeded cards preserve attack/defence",
+          "pass": true,
+          "detail": "[[256,256],[256,255],[256,64],[256,16],[256,8]]"
+        },
+        {
+          "name": "right short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "right short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "right short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "right short press reaches 4",
+          "pass": true,
+          "detail": "$6e=4"
+        },
+        {
+          "name": "idle does not repeat navigation",
+          "pass": true,
+          "detail": "before=4, after=4"
+        },
+        {
+          "name": "left short press reaches 3",
+          "pass": true,
+          "detail": "$6e=3"
+        },
+        {
+          "name": "left short press reaches 2",
+          "pass": true,
+          "detail": "$6e=2"
+        },
+        {
+          "name": "left short press reaches 1",
+          "pass": true,
+          "detail": "$6e=1"
+        },
+        {
+          "name": "left short press reaches 0",
+          "pass": true,
+          "detail": "$6e=0"
+        },
+        {
+          "name": "touch pointer path Right advances exactly one",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "keyboard route (gm.simulateInput) Left steps once",
+          "pass": true,
+          "detail": "before=1, after=0"
+        },
+        {
+          "name": "emulated standard gamepad Right steps once",
+          "pass": true,
+          "detail": "before=0, after=1"
+        },
+        {
+          "name": "A exits card selector into native skill/confirm flow",
+          "pass": true,
+          "detail": "{\"frame\":591,\"fast\":true,\"phase\":7,\"selection6e\":1,\"selection6f\":0,\"party020d\":31,\"party0200_021f\":[3,11,60,0,164,6,0,0,0,0,255,255,3,31,241,0,0,0,4,11,70,0,220,5,0,0,0,0,255,255,4,240],\"cards\":{\"values\":[{\"attack\":256,\"defense\":256,\"attribute\":1},{\"attack\":256,\"defense\":255,\"attribute\":1},{\"attack\":256,\"defense\":64,\"attribute\":1},{\"attack\":256,\"defense\":16,\"attribute\":1},{\"attack\":256,\"defense\":8,\"attribute\":1}],\"locked\":[true,true,true,true,true],\"pending\":[{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null},{\"attack\":null,\"defense\":null,\"attribute\":null}],\"busy\":false,\"active\":true,\"lastVerification\":{\"verified\":true,\"ram\":[],\"sidecar\":[],\"graphics\":[]},\"gameCheats\":[\"03F8:00\",\"03F9:00\",\"03FA:01\",\"0400:00\",\"0401:FF\",\"0402:01\",\"0408:00\",\"0409:40\",\"040A:01\",\"0410:00\",\"0411:10\",\"0412:01\",\"0418:00\",\"0419:08\",\"041A:01\"]},\"skills\":{\"open\":true,\"confirm\":false}}"
+        },
+        {
+          "name": "dialog Back returns to game",
+          "pass": true,
+          "detail": "{\"open\":false,\"confirm\":false}"
+        }
+      ],
+      "events": [
+        {
+          "step": "loaded",
+          "frame": 10,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": null,
+            "gameCheats": []
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-1",
+          "frame": 27,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-2",
+          "frame": 45,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-3",
+          "frame": 62,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "right-4",
+          "frame": 78,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 4,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-3",
+          "frame": 435,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 3,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-2",
+          "frame": 453,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 2,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-1",
+          "frame": 470,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "left-0",
+          "frame": 486,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "touch-pad-right",
+          "frame": 502,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "keyboard-api-left",
+          "frame": 519,
+          "fast": false,
+          "phase": 5,
+          "selection6e": 0,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "emulated-gamepad-right",
+          "frame": 548,
+          "fast": true,
+          "phase": 5,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 240,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            240,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        },
+        {
+          "step": "A-select",
+          "chosen": 1,
+          "frame": 591,
+          "fast": true,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": true,
+            "confirm": false
+          }
+        },
+        {
+          "step": "dialog-back",
+          "frame": 726,
+          "fast": true,
+          "phase": 7,
+          "selection6e": 1,
+          "selection6f": 0,
+          "party020d": 31,
+          "party0200_021f": [
+            3,
+            11,
+            60,
+            0,
+            164,
+            6,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            3,
+            31,
+            241,
+            0,
+            0,
+            0,
+            4,
+            11,
+            70,
+            0,
+            220,
+            5,
+            0,
+            0,
+            0,
+            0,
+            255,
+            255,
+            4,
+            240
+          ],
+          "cards": {
+            "values": [
+              {
+                "attack": 256,
+                "defense": 256,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 255,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 64,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 16,
+                "attribute": 1
+              },
+              {
+                "attack": 256,
+                "defense": 8,
+                "attribute": 1
+              }
+            ],
+            "locked": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "pending": [
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              },
+              {
+                "attack": null,
+                "defense": null,
+                "attribute": null
+              }
+            ],
+            "busy": false,
+            "active": true,
+            "lastVerification": {
+              "verified": true,
+              "ram": [],
+              "sidecar": [],
+              "graphics": []
+            },
+            "gameCheats": [
+              "03F8:00",
+              "03F9:00",
+              "03FA:01",
+              "0400:00",
+              "0401:FF",
+              "0402:01",
+              "0408:00",
+              "0409:40",
+              "040A:01",
+              "0410:00",
+              "0411:10",
+              "0412:01",
+              "0418:00",
+              "0419:08",
+              "041A:01"
+            ]
+          },
+          "skills": {
+            "open": false,
+            "confirm": false
+          }
+        }
+      ]
+    }
+  ],
+  "speedSettings": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "assertions": 68,
+  "failures": []
+}

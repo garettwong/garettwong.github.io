@@ -2,17 +2,34 @@
 
 (function(global){'use strict';
 
-const bodies=new Map(),effects={};let frame=null,castFrame=null,lastDraw=null,observations=0;
+const bodies=new Map(),effects={};let frame=null,castFrame=null,lastDraw=null,observations=0;let environment=null,sceneryPack=null;
 
 const load=(src,store)=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{store(im);resolve();};im.onerror=()=>reject(Error('Cannot load native artwork: '+src));im.src=src;});
 
-const ready=Promise.all([...['wave','impact1','impact2'].map(name=>load('/packs/wide64-v20-native/'+name+'.png',im=>effects[name]=im)),fetch('/packs/wide64-v20-native/enemies/manifest.json').then(r=>r.json()).then(m=>Promise.all(m.types.map(type=>load('/packs/wide64-v20-native/enemies/body-type-'+type+'.png',im=>bodies.set(type,im)))))]);
+const ready=Promise.all([fetch('/packs/scenery.json').then(r=>{if(!r.ok)throw Error('Cannot load battle scenery reference');return r.json();}).then(p=>sceneryPack=global.DreamSceneryTools.validate(p)),...['wave','impact1','impact2'].map(name=>load('/packs/wide64-v20-native/'+name+'.png',im=>effects[name]=im)),fetch('/packs/wide64-v20-native/enemies/manifest.json').then(r=>r.json()).then(m=>Promise.all(m.types.map(type=>load('/packs/wide64-v20-native/enemies/body-type-'+type+'.png',im=>bodies.set(type,im)))))]);
 
 function canvas(){const c=document.createElement('canvas');c.width=256;c.height=240;return c;}
 
 function observe(pixels){if(!pixels||pixels.length!==256*240*4)return;frame=canvas();frame.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(pixels),256,240),0,0);observations++;}
 
-function beginCast(){castFrame=canvas();const c=castFrame.getContext('2d');if(frame)c.drawImage(frame,0,0);const overlay=global.dreamArtwork?.overlay;if(overlay?.width&&getComputedStyle(overlay).display!=='none')c.drawImage(overlay,0,0,256,240);}
+function captureEnvironment(pixels){
+ const tools=global.DreamSceneryTools;if(!sceneryPack||!pixels||!tools)return;
+ let hash=2166136261;for(let i=128*256*4;i<160*256*4;i+=4){for(let j=0;j<3;j++)hash=Math.imul(hash^pixels[i+j],16777619);hash=Math.imul(hash^255,16777619);}hash>>>=0;const scene=[sceneryPack,...sceneryPack.alternates||[]].find(s=>Object.hasOwn(s.frames,String(hash)));if(!scene||(scene.reveals||{})[hash])return;const match={...scene,offset:scene.frames[hash]};
+ // Keep the original cartridge terrain pixels, independently of actors/HUD.
+ const terrain=document.createElement('canvas');terrain.width=256;terrain.height=32;
+ const bytes=new Uint8ClampedArray(pixels.slice(128*256*4,160*256*4));for(let i=3;i<bytes.length;i+=4)bytes[i]=255;
+ terrain.getContext('2d').putImageData(new ImageData(bytes,256,32),0,0);
+ environment={arena:match.image,terrain,travel:match.offset,started:performance.now(),source:'native-terrain-match'};
+ if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;
+}
+function drawEnvironment(ctx){
+ if(!environment)return;
+ const shift=Math.floor((performance.now()-environment.started)*.032)%256;
+ ctx.drawImage(environment.terrain,shift,0,256-shift,32,0,112,256-shift,28);
+ if(shift)ctx.drawImage(environment.terrain,0,0,shift,32,256-shift,112,shift,28);
+ return {arena:environment.arena,travel:environment.travel+shift,source:environment.source};
+}
+function beginCast(){captureEnvironment(global.DreamFrameSource?.pixels);if(!environment&&global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=captureEnvironment;castFrame=canvas();const c=castFrame.getContext('2d');if(frame)c.drawImage(frame,0,0);const overlay=global.dreamArtwork?.overlay;if(overlay?.width&&getComputedStyle(overlay).display!=='none')c.drawImage(overlay,0,0,256,240);}
 
 function positions(n){const top=n<=4?n:Math.ceil(n/2),bottom=n-top;return Array.from({length:n},(_,i)=>{const row=i<top?top:bottom,j=i<top?i:i-top;return{x:128+(j-(row-1)/2)*51,y:n<=4?78:i<top?52:110};});}
 
@@ -45,7 +62,7 @@ function draw(ctx,width,height,scene){
  ctx.save();ctx.scale(width/256,height/240);ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';ctx.imageSmoothingEnabled=false;
 
  // Keep the entire result panel within a uniform background and 12px safe inset.
- ctx.fillStyle='#000';ctx.fillRect(0,0,256,240);
+ ctx.fillStyle='#000';ctx.fillRect(0,0,256,240);const backdrop=drawEnvironment(ctx);
  const opponentHp=average(enemies.map(e=>e.beforeHp)),opponentBp=average(enemies.map(e=>e.bp));
  const potential=potentialAverage(enemies,scene.waiting),damage=enemies.reduce((sum,e)=>sum+Math.max(0,e.beforeHp-e.afterHp),0),averageDamage=scene.waiting||!enemies.length?null:damage/enemies.length,averageLabel=averageDamage===null?'—':compact(damage,enemies.length);
  const bp=scene.casterBp===null||scene.casterBp===undefined?'—':compact(scene.casterBp);
@@ -58,7 +75,7 @@ function draw(ctx,width,height,scene){
  ctx.fillStyle='#271b0a';ctx.font='700 12px monospace';ctx.fillText(potential?.label??'—',75,209,96);ctx.fillText(averageLabel,182,209,96);
  ctx.font='700 7px monospace';ctx.fillText(scene.waiting?'CALCULATING…':`${enemies.length} TARGETS · ${enemies.filter(e=>e.beforeHp>0&&e.afterHp===0).length} DEFEATED`,128,222);
 
- lastDraw={opponentHp,opponentBp,potential,averageDamage,totalHpLost:damage,damageDenominator:enemies.length,averageDamageLabel:averageLabel,casterName:scene.casterName,casterBp:scene.casterBp,casterEarnedBp:scene.casterEarnedBp,bpLabel:`BP ${bp}`,cast:scene.cast||0,bodies:0,blasts:0,ids:[],appearances:[],missing:[],progress:p,waiting:!!scene.waiting,launch:0,first:!!scene.first,stage:opening?'launch':scene.waiting?'ready':p===1?'complete':hit?'hit':fall?'fall':'appear',cohort:enemies.map(e=>e.id),alpha:1};
+ lastDraw={backdrop,opponentHp,opponentBp,potential,averageDamage,totalHpLost:damage,damageDenominator:enemies.length,averageDamageLabel:averageLabel,casterName:scene.casterName,casterBp:scene.casterBp,casterEarnedBp:scene.casterEarnedBp,bpLabel:`BP ${bp}`,cast:scene.cast||0,bodies:0,blasts:0,ids:[],appearances:[],missing:[],progress:p,waiting:!!scene.waiting,launch:0,first:!!scene.first,stage:opening?'launch':scene.waiting?'ready':p===1?'complete':hit?'hit':fall?'fall':'appear',cohort:enemies.map(e=>e.id),alpha:1};
 
  // Falling sprites disappear behind the result panel, never over its border.
  ctx.save();ctx.beginPath();ctx.rect(0,30,256,108);ctx.clip();
@@ -93,8 +110,8 @@ function draw(ctx,width,height,scene){
 
 }
 
-function reset(){frame=castFrame=lastDraw=null;observations=0;}
+function reset(){frame=castFrame=lastDraw=null;observations=0;environment=null;if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=captureEnvironment;}
 
-global.DreamGroupBlastVisual={ready,observe,draw,reset,beginCast,inspect:()=>({lastDraw,preloaded:[...bodies.keys()],observations})};
+global.DreamGroupBlastVisual={ready,observe,draw,reset,beginCast,captureEnvironment,inspect:()=>({lastDraw,preloaded:[...bodies.keys()],observations})};
 
 })(typeof window==='undefined'?globalThis:window);

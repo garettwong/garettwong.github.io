@@ -11,6 +11,8 @@
   const proto=window[name]?.prototype;if(!proto)continue;
 
   for(const method of ['texImage2D','texSubImage2D']){const original=proto[method];if(!original)continue;proto[method]=function(...args){const sub=method==='texSubImage2D',w=args[sub?4:3],h=args[sub?5:4],format=args[6],type=args[7],data=args[8];
+   // The group scene samples only the original terrain while native uploads are hidden.
+   if(state.sceneryObserver&&w===256&&h===240&&format===6408&&type===5121&&ArrayBuffer.isView(data)&&data.byteLength>=(args[9]||0)+256*240*4){state.sceneryProbeAt=performance.now();try{state.sceneryObserver(new Uint8ClampedArray(data.buffer,data.byteOffset+(args[9]||0),256*240*4));}catch(error){console.warn('Battle scenery capture failed',error);}}
    if(state.suppressDisplay&&!state.captureUntilHud&&w===256&&h===240&&format===6408&&type===5121&&ArrayBuffer.isView(data)&&!state.captureCanvasOnce)return;
    const result=original.apply(this,args);
 

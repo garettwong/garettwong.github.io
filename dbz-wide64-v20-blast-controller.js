@@ -7,7 +7,7 @@
 const GATE=0x13fd,MODE=0x13fe,LAST=0x13ff,EXPANDED=0x1371,REVISION=0x13b5;
 const ATTACKS=new Set([0x40,0xdb,0xe2]),DURATION=180,INTRO=280;
 let api=null,canvas=null,ctx=null,busy=false,waiting=false,pending=null,unlock=null,token=0,raf=0,sequence=0,lastError='',timer=0,modePending=null;
-let animationPending=null,finalReady=false,finishedActor='',needsHud=false;
+let animationPending=null,finalReady=false,finishedActor='',needsHud=false,confirmingGate=false,wasBattle=false;
 let missStreak=0;
 let queue=[],shown=[],presented=null,groupSize=5,castSerial=0,castTargetsLeft=0;
 const nextSize=()=>{const left=castTargetsLeft;if(left<=7)return Math.max(1,left);const sizes=[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,7].filter(n=>{const rest=left-n;return rest>=5&&rest!==8&&rest!==9;});return sizes.length?sizes[Math.floor(Math.random()*sizes.length)]:5;};
@@ -134,9 +134,9 @@ function write(v,mutate,label){
  const out=v.b.slice();mutate(out,v);const gm=api.gm(),name=`group-blast-${label}-${++sequence}.state`;gm.FS.writeFile('/'+name,out);gm.functions.loadState(name,0);return {gm,name,before:gm.getFrameNum()};
 }
 async function loadAndConfirm(v,mutate,label,confirm,current){
- const written=write(v,mutate,label);api.advance();let until=performance.now()+5000,ok=false;
+ const written=write(v,mutate,label);confirmingGate=true;api.advance();let until=performance.now()+5000,ok=false;
  while(current===token&&performance.now()<until){await delay(12);if(document.hidden||!api.active()){until=performance.now()+5000;continue;}const next=chunks(written.gm.getState());if(confirm(next)){ok=true;break;}}
- try{written.gm.FS.unlink('/'+written.name);}catch{}
+ confirmingGate=false;try{written.gm.FS.unlink('/'+written.name);}catch{}
  if(current!==token)return null;
  if(!ok)throw Error(`The group animation could not ${label}. Load the last save and try again.`);
  return chunks(written.gm.getState());
@@ -161,12 +161,15 @@ async function setMode(v,current){
  },'prepare encounter groups',q=>q.b[q.w+MODE]===0xb5,current);}finally{if(current===token)api.resume();}
 }
 function confirmedCast(v){
- if(!command(v))return false;
- if(snapshot(v)?.remaining===0)return false;
- if(finishedActor===`${v.b[v.r+0x30e]}:${v.b[v.r+0x32d]}`)return false;
- if(v.b[v.w+0x13c0])return true;
- const offset=v.b[v.r+0x32d],actor=v.b[v.r+0x30e]&63;
- return offset<162&&offset%18===0&&(v.b[v.r+0x200+offset]&63)===actor&&v.b[v.r+0x210+offset]===v.b[v.r+0x31e];
+ // Actor/skill fields remain in RAM after a turn. Only the cartridge's active
+ // group flag confirms that it is actually calculating a new grouped attack.
+ return command(v)&&v.b[v.w+0x13c0]===1&&v.b[v.w+0x1e62]===0&&snapshot(v)?.remaining>0;
+}
+function closePresentation(reason){
+ currentCast=false;waiting=false;preview=null;queue=[];finalReady=false;
+ if(canvas)canvas.hidden=true;api.fastCalculation?.(false);
+ if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;
+ if(reason)api.status(reason);
 }
 function beginPresentation(v){
  if(currentCast)return;
@@ -236,16 +239,17 @@ async function acknowledge(v,current){
 async function examine(){
  if(!api?.active()||modePending)return;let v;
  try{v=chunks(api.gm().getState());}catch(error){lastError=String(error.message||error);return;}
- if(!battle(v)){missStreak=0;if(!busy){waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);}return;}
+ if(!battle(v)){missStreak=0;if(!busy){if(wasBattle){wasBattle=false;closePresentation();roster.clear();templates=[];presented=null;global.DreamGroupBlastVisual?.reset?.();}waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;}return;}if(!wasBattle){wasBattle=true;global.DreamGroupBlastVisual?.reset?.();}
  if(!roster.size){const snap=snapshot(v);if(snap){presented=snap.remaining;for(const e of [...snap.current.values(),...snap.reserve.values()])roster.set(e.index,{...e});}}
  rememberMenu(v);if(v.b[v.w+MODE]!==0xb5){const phase=v.b[v.r+0x30];if(!(phase>=2&&phase<=9||phase>=32&&phase<=39))return;if(!modePending){const current=token;modePending=setMode(v,current);modePending.catch(error=>{lastError=String(error.message||error);api.status(lastError);}).finally(()=>{if(current===token)modePending=null;});}return;}
- if(v.b[v.w+GATE]===1&&!busy){const current=token;pending=acknowledge(v,current);pending.catch(error=>{lastError=String(error.message||error);api.status(lastError);}).finally(()=>{if(current===token)pending=null;});return;}
+ if(v.b[v.w+GATE]===1&&!busy){const current=token;pending=acknowledge(v,current);pending.catch(error=>{lastError=String(error.message||error);closePresentation(lastError);}).finally(()=>{if(current===token)pending=null;});return;}
+ if(preview&&currentCast&&!animationPending)drawScene(preview,0);
  if(v.b[v.w+GATE]!==1&&!showCalculating(v)&&!busy&&!animationPending){waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);}
 }
 function poll(){if(api&&!busy)examine();timer=setTimeout(poll,16);}
-function reset(){missStreak=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
+function reset(){confirmingGate=false;wasBattle=false;lastError='';missStreak=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
 function start(options){api=options;reset();create();poll();}
 async function whenSettled(){while(modePending||pending||animationPending||currentCast){await (modePending||pending||animationPending||delay(20));}}
-function inspect(){return {missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}
-global.DreamGroupBlast={start,reset,whenSettled,canYieldForAwakening:()=>!busy&&!animationPending,resume:()=>{if(currentCast&&!finalReady&&api?.active()){needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api.advance();}},isOpen:()=>busy||currentCast,coversScreen:()=>waiting&&!!canvas&&!canvas.hidden,inspect};
+function inspect(){return {currentCast,confirmingGate,preview:!!preview,missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}
+global.DreamGroupBlast={start,reset,whenSettled,canYieldForAwakening:()=>!busy&&!animationPending,resume:()=>{if((currentCast||modePending)&&(!finalReady||confirmingGate)&&api?.active()){needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api.advance();}},isOpen:()=>busy||currentCast,coversScreen:()=>waiting&&!!canvas&&!canvas.hidden,inspect};
 })(typeof window==='undefined'?globalThis:window);
