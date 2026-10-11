@@ -1,42 +1,42 @@
 [
   {
     "path": "dbz-wide64-v21-awakening.js",
-    "bytes": 7793,
-    "sha256": "24be7765290c37c91841ebbc0a849395a66c67952d872d0c23c2cd9990ac51ff"
+    "bytes": 7739,
+    "sha256": "fb1b918b1ee361bd42bc4f07cd81c3a22991bac6fbb3642e0f3af34144067939"
   },
   {
     "path": "dbz-wide64-v21-blast-controller.js",
-    "bytes": 21773,
-    "sha256": "82e6799e331bb44303f88a8a6abee197b7cc7569a5c0187538e93a5f0a368ac4"
+    "bytes": 21504,
+    "sha256": "278a971e9a0473882658b7c6279b07b940130445fb2cc90421a3e5ee17ef021f"
   },
   {
     "path": "dbz-wide64-v21-host.mjs",
-    "bytes": 11032,
-    "sha256": "6654925f87f2a4092f4f503e262b2e1729f3483866f666caf5399a6863b973f1"
+    "bytes": 10991,
+    "sha256": "84b4e7649484a4546883623265a87d383f9f026cf80cada1f6b9e448126086cb"
   },
   {
     "path": "dbz-wide64-v21-play.html",
-    "bytes": 1077,
-    "sha256": "563e32bcb0fb82581f04a3a8289df043e37b1b1ec916b31b7baddc8ef5569d73"
+    "bytes": 1076,
+    "sha256": "e6f4f3d83d63729e8c04de377664b3363523774f23d14a154bc9752a3cd8bb8c"
   },
   {
     "path": "dbz-wide64-v21-shell.js",
-    "bytes": 268917,
-    "sha256": "9a1242e0cff697995c27f66e5e69474c5e8583c46ebffc4722193fe6d69fab6d"
+    "bytes": 268908,
+    "sha256": "a35a6d4902b2249d92c6fd401941a973c2afc16c6b1ad83e3fa809700b07f363"
   },
   {
     "path": "player-wide64-v21-runtime.js",
-    "bytes": 32752,
-    "sha256": "d67fd327fbf37ee11cc62bcfbf34d557987ebce50a40fe59195075238168ef87"
+    "bytes": 32546,
+    "sha256": "5c7210a8018fc1d567cd81b71fc70c5db44de8d9801a9cf3a008bf2f775e94d9"
   },
   {
     "path": "player-wide64-v21.html",
-    "bytes": 14172,
-    "sha256": "cccaac51f07f60a906facbad8fa1f38415af858c1bd842d710c16df672bcd276"
+    "bytes": 14137,
+    "sha256": "4b4220dbdab60605dbc8862148711369f651bde83d385c501a33abc51733fa0e"
   },
   {
     "path": "dbz-wide64-v21-selection.js",
-    "bytes": 2434,
-    "sha256": "e5df96fe3f58c3f8344e1874837886f221e7d1a35d71f90de4fd36fab3693fd6"
+    "bytes": 3533,
+    "sha256": "aa61d20fd468e2c8549f3fd8e6f84b01f39b03d6dbac62004cbc385406d99cbb"
   }
 ]

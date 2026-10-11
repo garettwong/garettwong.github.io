@@ -1,0 +1,92 @@
+[
+  {
+    "phase": 4,
+    "native": {
+      "kind": "fighter",
+      "x": 40,
+      "y": 24
+    },
+    "shown": {
+      "kind": "fighter",
+      "x": 40,
+      "y": 24,
+      "pointerX": 47,
+      "pointerY": 28
+    }
+  },
+  {
+    "phase": 4,
+    "native": {
+      "kind": "fighter",
+      "x": 104,
+      "y": 24
+    },
+    "shown": {
+      "kind": "fighter",
+      "x": 104,
+      "y": 24,
+      "pointerX": 111,
+      "pointerY": 28
+    }
+  },
+  {
+    "phase": 4,
+    "native": {
+      "kind": "fighter",
+      "x": 168,
+      "y": 24
+    },
+    "shown": {
+      "kind": "fighter",
+      "x": 168,
+      "y": 24,
+      "pointerX": 175,
+      "pointerY": 28
+    }
+  },
+  {
+    "phase": 3,
+    "native": {
+      "kind": "action",
+      "x": 22,
+      "y": 176
+    },
+    "shown": {
+      "kind": "action",
+      "x": 22,
+      "y": 176,
+      "pointerX": 29,
+      "pointerY": 180
+    }
+  },
+  {
+    "phase": 3,
+    "native": {
+      "kind": "action",
+      "x": 22,
+      "y": 192
+    },
+    "shown": {
+      "kind": "action",
+      "x": 22,
+      "y": 192,
+      "pointerX": 29,
+      "pointerY": 196
+    }
+  },
+  {
+    "phase": 3,
+    "native": {
+      "kind": "action",
+      "x": 22,
+      "y": 208
+    },
+    "shown": {
+      "kind": "action",
+      "x": 22,
+      "y": 208,
+      "pointerX": 29,
+      "pointerY": 212
+    }
+  }
+]
