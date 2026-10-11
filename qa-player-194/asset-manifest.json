@@ -26,8 +26,8 @@
   },
   {
     "path": "dbz-wide64-v20-blast-controller.js",
-    "bytes": 19982,
-    "sha256": "b0d3da6d43746e87172d2676f1871a4cb8f5d3b33d9fa631e342c94074c8f3fa"
+    "bytes": 19981,
+    "sha256": "d0c2070e1dda1e9915c8dc91f64f00b3653246dc2baf9396683db6396a4ff0a0"
   },
   {
     "path": "dbz-wide64-v20-card-factory.js",
@@ -106,8 +106,8 @@
   },
   {
     "path": "dbz-wide64-v20-play.html",
-    "bytes": 1061,
-    "sha256": "786ace7737f83df173ebccb28a8eea22d7857038cf6bc5b2d6323093b31e5b6a"
+    "bytes": 1070,
+    "sha256": "6163c0e2506f439603c11d09a4cce9aca4c3a2f6b541b0476fed7a29b2d15e27"
   },
   {
     "path": "dbz-wide64-v20-selected-save-copy.mjs",
@@ -121,8 +121,8 @@
   },
   {
     "path": "dbz-wide64-v20-shell.js",
-    "bytes": 268887,
-    "sha256": "a13ebe7ccd4ce10c4a8f6749e2e061018e8c39660cf606fe28d56e78fa45d66d"
+    "bytes": 268896,
+    "sha256": "290a99f297cca7d9bb1a16c6f25df4b8bbc767fc9efbcf47e948bcaa310367ed"
   },
   {
     "path": "dbz-wide64-v20-skills.js",
@@ -781,13 +781,13 @@
   },
   {
     "path": "player-wide64-v20-runtime.js",
-    "bytes": 31339,
-    "sha256": "9acb93550cea59da45ba820211fd9cc62e70b40f376721277c2480755a568339"
+    "bytes": 31340,
+    "sha256": "f167eef589be28a054a667ab02461994b2e477d87b3e4048c82738665174238d"
   },
   {
     "path": "player-wide64-v20.html",
-    "bytes": 14062,
-    "sha256": "90be636e046d26e1fcf13baa1ed33daada353a4badb15d16916fcb9a3ed7d69c"
+    "bytes": 14066,
+    "sha256": "312d3abca12ac89f29034520bcd5cb784ee3fa63b936a6027d2c9cc9309c06c0"
   },
   {
     "path": "touch-controls-wide64-v20.js",

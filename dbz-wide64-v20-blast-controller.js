@@ -240,7 +240,7 @@ async function examine(){
  if(!api?.active()||modePending)return;let v;
  try{v=chunks(api.gm().getState());}catch(error){lastError=String(error.message||error);return;}
  if(!battle(v)){missStreak=0;if(!busy){if(wasBattle){wasBattle=false;sceneryRequested=false;closePresentation();roster.clear();templates=[];presented=null;global.DreamGroupBlastVisual?.reset?.();}waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;}return;}if(!wasBattle){wasBattle=true;global.DreamGroupBlastVisual?.reset?.();}
- if(!sceneryRequested&&v.b[v.r+0x30]>=32&&!global.DreamGroupBlastVisual?.hasEnvironment?.()){sceneryRequested=true;api.captureScenery?.();}
+ if(!sceneryRequested&&v.b[v.r+0x30]>=9&&!global.DreamGroupBlastVisual?.hasEnvironment?.()){sceneryRequested=true;api.captureScenery?.();}
  if(!roster.size){const snap=snapshot(v);if(snap){presented=snap.remaining;for(const e of [...snap.current.values(),...snap.reserve.values()])roster.set(e.index,{...e});}}
  rememberMenu(v);if(v.b[v.w+MODE]!==0xb5){const phase=v.b[v.r+0x30];if(!(phase>=2&&phase<=9||phase>=32&&phase<=39))return;if(!modePending){const current=token;modePending=setMode(v,current);modePending.catch(error=>{lastError=String(error.message||error);api.status(lastError);}).finally(()=>{if(current===token)modePending=null;});}return;}
  if(v.b[v.w+GATE]===1&&!busy){const current=token;pending=acknowledge(v,current);pending.catch(error=>{lastError=String(error.message||error);closePresentation(lastError);}).finally(()=>{if(current===token)pending=null;});return;}
