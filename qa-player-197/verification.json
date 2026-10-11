@@ -4,11 +4,11 @@
   "completedFixes": [
     "Map native travel starts at phase3:3, not3:4",
     "Transformation banner750ms; confirmation can display it above skill menu",
-    "Enemy entrance hold adds200ms before hit/fall"
+    "Enemy entrance hold adds200ms before hit/fall",
+    "Centered steady pointer and outline match the native selected card"
   ],
   "unreproduced": [
-    "Spaceship changes into another graphic",
-    "Frequent card-assignment graphics corruption"
+    "Spaceship changes into another graphic"
   ],
   "fullBattle": {
     "enemies": 400,
@@ -24,5 +24,22 @@
     "No physical iPhone Safari test.",
     "No change to native ROM or existing save identities."
   ],
-  "rawEvidence": "D:\\Codex 2\\projects\\NES-Player197-QA"
+  "rawEvidence": "D:\\Codex 2\\projects\\NES-Player197-QA",
+  "pointer": {
+    "manualInputChecks": 92,
+    "manualInputSpeeds": [
+      1,
+      4,
+      64,
+      256,
+      1024
+    ],
+    "displaySpeeds": [
+      1,
+      64,
+      1024
+    ],
+    "steadySamplesPerSpeed": 72,
+    "actualAConfirmation": true
+  }
 }

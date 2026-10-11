@@ -17,12 +17,12 @@
   {
     "path": "dbz-wide64-v21-play.html",
     "bytes": 1077,
-    "sha256": "46beccb0eed53e50820a5a350a01733bcd875ce350a7eb71beb5da2c968493d1"
+    "sha256": "563e32bcb0fb82581f04a3a8289df043e37b1b1ec916b31b7baddc8ef5569d73"
   },
   {
     "path": "dbz-wide64-v21-shell.js",
     "bytes": 268917,
-    "sha256": "6d7c91fb9036e7b98dbc8b5d305aad1e58b2c966ad1cbc35de687cfea1f58e29"
+    "sha256": "9a1242e0cff697995c27f66e5e69474c5e8583c46ebffc4722193fe6d69fab6d"
   },
   {
     "path": "player-wide64-v21-runtime.js",
@@ -31,7 +31,12 @@
   },
   {
     "path": "player-wide64-v21.html",
-    "bytes": 14105,
-    "sha256": "b69c9f4913ad56e5b565885119d051afaa4b8eecf12331d69e47fecdc68102cb"
+    "bytes": 14172,
+    "sha256": "cccaac51f07f60a906facbad8fa1f38415af858c1bd842d710c16df672bcd276"
+  },
+  {
+    "path": "dbz-wide64-v21-selection.js",
+    "bytes": 2434,
+    "sha256": "e5df96fe3f58c3f8344e1874837886f221e7d1a35d71f90de4fd36fab3693fd6"
   }
 ]
