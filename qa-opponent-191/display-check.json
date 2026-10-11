@@ -1,0 +1,150 @@
+{
+  "valid": {
+    "total": 396,
+    "rewardBp": "19800"
+  },
+  "reject": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "maxReward": {
+    "total": 396,
+    "rewardBp": "18446744073709551615"
+  },
+  "gohan": {
+    "id": 3,
+    "name": "Gohan",
+    "bp": "1700",
+    "earnedBp": "1700",
+    "combatBp": "17000000",
+    "superSaiyan": true,
+    "stageII": true,
+    "multiplier": "10000"
+  },
+  "draw": {
+    "opponentHp": {
+      "sum": "201",
+      "count": 3,
+      "label": "67"
+    },
+    "opponentBp": {
+      "sum": "55340232221128654843",
+      "count": 3,
+      "label": "1.84e19"
+    },
+    "potential": {
+      "lower": "900",
+      "upper": "900",
+      "count": 3,
+      "label": "300",
+      "roundedCertain": true
+    },
+    "averageDamage": 3.6666666666666665,
+    "totalHpLost": 11,
+    "damageDenominator": 3,
+    "averageDamageLabel": "3.7",
+    "casterName": "GOHAN II",
+    "casterBp": "18446744073709551615",
+    "casterEarnedBp": "18446744073709551615",
+    "bpLabel": "BP 1.84e19",
+    "cast": 0,
+    "bodies": 3,
+    "blasts": 3,
+    "ids": [
+      0,
+      1,
+      2
+    ],
+    "appearances": [
+      {
+        "id": 0,
+        "type": 13,
+        "nativeType": 13
+      },
+      {
+        "id": 1,
+        "type": 16,
+        "nativeType": 16
+      },
+      {
+        "id": 2,
+        "type": 13,
+        "nativeType": 13
+      }
+    ],
+    "missing": [],
+    "progress": 0.3,
+    "waiting": false,
+    "launch": 0,
+    "first": false,
+    "stage": "hit",
+    "cohort": [
+      0,
+      1,
+      2
+    ],
+    "alpha": 1,
+    "counter": 3
+  },
+  "waiting": {
+    "opponentHp": {
+      "sum": "201",
+      "count": 3,
+      "label": "67"
+    },
+    "opponentBp": {
+      "sum": "55340232221128654843",
+      "count": 3,
+      "label": "1.84e19"
+    },
+    "potential": null,
+    "averageDamage": null,
+    "totalHpLost": 11,
+    "damageDenominator": 3,
+    "averageDamageLabel": "—",
+    "casterName": "GOHAN II",
+    "casterBp": "18446744073709551615",
+    "casterEarnedBp": "18446744073709551615",
+    "bpLabel": "BP 1.84e19",
+    "cast": 0,
+    "bodies": 3,
+    "blasts": 0,
+    "ids": [
+      0,
+      1,
+      2
+    ],
+    "appearances": [
+      {
+        "id": 0,
+        "type": 13,
+        "nativeType": 13
+      },
+      {
+        "id": 1,
+        "type": 16,
+        "nativeType": 16
+      },
+      {
+        "id": 2,
+        "type": 13,
+        "nativeType": 13
+      }
+    ],
+    "missing": [],
+    "progress": 0.3,
+    "waiting": true,
+    "launch": 0,
+    "first": false,
+    "stage": "ready",
+    "cohort": [
+      0,
+      1,
+      2
+    ],
+    "alpha": 1,
+    "counter": 3
+  }
+}

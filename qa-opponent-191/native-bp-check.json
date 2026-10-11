@@ -1,0 +1,450 @@
+[
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "1",
+    "nativeCombatBp": "1",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "12345",
+    "nativeCombatBp": "12345",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "9007199254740999",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "1844674407370955",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "1844674407370956",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "184467440737095516",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 0,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "1",
+    "nativeCombatBp": "100",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "12345",
+    "nativeCombatBp": "1234500",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "900719925474099900",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "184467440737095500",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "184467440737095600",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "18446744073709551600",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 1,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 100
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "1",
+    "nativeCombatBp": "10000",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "12345",
+    "nativeCombatBp": "123450000",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "18446744073709550000",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 1,
+    "forms": 5,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "1",
+    "nativeCombatBp": "100",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "12345",
+    "nativeCombatBp": "1234500",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "900719925474099900",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "184467440737095500",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "184467440737095600",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "18446744073709551600",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 2,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 100
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "1",
+    "nativeCombatBp": "10000",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "12345",
+    "nativeCombatBp": "123450000",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "18446744073709550000",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 3,
+    "forms": 10,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 10000
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "1",
+    "nativeCombatBp": "1",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "12345",
+    "nativeCombatBp": "12345",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "9007199254740999",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "1844674407370955",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "1844674407370956",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "184467440737095516",
+    "factor": 1
+  },
+  {
+    "actor": 2,
+    "forms": 15,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "1",
+    "nativeCombatBp": "1",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "12345",
+    "nativeCombatBp": "12345",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "9007199254740999",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "1844674407370955",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "1844674407370956",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "184467440737095516",
+    "factor": 1
+  },
+  {
+    "actor": 1,
+    "forms": 10,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "0",
+    "nativeCombatBp": "0",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "1",
+    "nativeCombatBp": "1",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "12345",
+    "nativeCombatBp": "12345",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "9007199254740999",
+    "nativeCombatBp": "9007199254740999",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "1844674407370955",
+    "nativeCombatBp": "1844674407370955",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "1844674407370956",
+    "nativeCombatBp": "1844674407370956",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "184467440737095516",
+    "nativeCombatBp": "184467440737095516",
+    "factor": 1
+  },
+  {
+    "actor": 3,
+    "forms": 5,
+    "earnedBp": "18446744073709551615",
+    "nativeCombatBp": "18446744073709551615",
+    "factor": 1
+  }
+]

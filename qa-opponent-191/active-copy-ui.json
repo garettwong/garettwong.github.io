@@ -1,0 +1,148 @@
+{
+  "first": {
+    "phase": [
+      1,
+      1,
+      34,
+      0
+    ],
+    "actor": 1,
+    "offset": 0,
+    "work": [
+      0,
+      0,
+      0
+    ],
+    "party": [
+      {
+        "id": 1,
+        "status": 31,
+        "packed": 15,
+        "def": 256
+      },
+      {
+        "id": 2,
+        "status": 32,
+        "packed": 31,
+        "def": 255
+      },
+      {
+        "id": 3,
+        "status": 48,
+        "packed": 47,
+        "def": 64
+      },
+      {
+        "id": 4,
+        "status": 64,
+        "packed": 63,
+        "def": 16
+      },
+      {
+        "id": 3,
+        "status": 80,
+        "packed": 79,
+        "def": 8
+      },
+      {
+        "id": 6,
+        "status": 0,
+        "packed": 240,
+        "def": 0
+      },
+      {
+        "id": 7,
+        "status": 0,
+        "packed": 240,
+        "def": 0
+      },
+      {
+        "id": 42,
+        "status": 0,
+        "packed": 240,
+        "def": 0
+      },
+      {
+        "id": 136,
+        "status": 0,
+        "packed": 240,
+        "def": 0
+      }
+    ],
+    "groups": 80,
+    "completed": [
+      {
+        "cast": 1,
+        "presented": 11,
+        "nativeRemaining": 11,
+        "at": 32667
+      }
+    ],
+    "detail": {
+      "busy": false,
+      "waiting": false,
+      "animating": false,
+      "error": "",
+      "queue": 0,
+      "presented": 11,
+      "last": {
+        "index": 79,
+        "targets": [
+          395,
+          396,
+          397,
+          398,
+          399
+        ],
+        "before": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "after": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "lastShown": {
+        "cast": 1,
+        "targets": [
+          394,
+          395,
+          396,
+          397,
+          398,
+          399
+        ],
+        "size": 6,
+        "remainingBefore": 17,
+        "duration": 180,
+        "first": false,
+        "intro": 0,
+        "frames": "timed",
+        "defeated": 6
+      }
+    },
+    "native": {
+      "active": 0,
+      "gate": 0,
+      "last": 79,
+      "full": 400,
+      "remaining": 11,
+      "awake": {
+        "busy": false,
+        "lastError": "",
+        "duration": 4200
+      }
+    }
+  },
+  "sourcePreserved": true,
+  "errors": [],
+  "eventCount": 470,
+  "eventsSha256": "c1340d62d1d538d8a644b203236731d5e4951811146a8fc360165f03912a2445"
+}

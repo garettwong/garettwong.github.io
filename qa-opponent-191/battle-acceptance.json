@@ -1,0 +1,134 @@
+[
+  {
+    "scenario": "ready",
+    "enemies": 2,
+    "casts": 1,
+    "frameChecks": 29,
+    "allPotentialReadingsPresent": true,
+    "oneConfirmationReturnedToMap": true,
+    "uniqueTargetsPerCast": true,
+    "romSha256": "94c49ae8b1b92cf85e34aaef43361f0d05277557729553676779fe14db3a03d5",
+    "sample": {
+      "casterName": "GOHAN",
+      "casterBp": "1700",
+      "bpLabel": "BP 1700",
+      "opponentHp": {
+        "sum": "160",
+        "count": 2,
+        "label": "80"
+      },
+      "opponentBp": {
+        "sum": "2200",
+        "count": 2,
+        "label": "1100"
+      },
+      "potential": {
+        "lower": "16551",
+        "upper": "16551",
+        "count": 2,
+        "label": "8275.5",
+        "roundedCertain": true
+      },
+      "averageDamageLabel": "80"
+    }
+  },
+  {
+    "scenario": "ready",
+    "enemies": 396,
+    "casts": 2,
+    "frameChecks": 982,
+    "allPotentialReadingsPresent": true,
+    "oneConfirmationReturnedToMap": true,
+    "uniqueTargetsPerCast": true,
+    "romSha256": "94c49ae8b1b92cf85e34aaef43361f0d05277557729553676779fe14db3a03d5",
+    "sample": {
+      "casterName": "GOHAN",
+      "casterBp": "1700",
+      "bpLabel": "BP 1700",
+      "opponentHp": {
+        "sum": "400",
+        "count": 5,
+        "label": "80"
+      },
+      "opponentBp": {
+        "sum": "5500",
+        "count": 5,
+        "label": "1100"
+      },
+      "potential": {
+        "lower": "54873",
+        "upper": "54873",
+        "count": 5,
+        "label": "10.97K",
+        "roundedCertain": true
+      },
+      "averageDamageLabel": "80"
+    }
+  },
+  {
+    "scenario": "high",
+    "enemies": 2,
+    "casts": 1,
+    "frameChecks": 29,
+    "allPotentialReadingsPresent": true,
+    "oneConfirmationReturnedToMap": true,
+    "uniqueTargetsPerCast": true,
+    "romSha256": "94c49ae8b1b92cf85e34aaef43361f0d05277557729553676779fe14db3a03d5",
+    "sample": {
+      "casterName": "GOHAN II",
+      "casterBp": "25169000000",
+      "bpLabel": "BP 25.17B",
+      "opponentHp": {
+        "sum": "20480",
+        "count": 2,
+        "label": "10.24K"
+      },
+      "opponentBp": {
+        "sum": "281600",
+        "count": 2,
+        "label": "140.8K"
+      },
+      "potential": {
+        "lower": "1914556816",
+        "upper": "1914556816",
+        "count": 2,
+        "label": "957.28M",
+        "roundedCertain": true
+      },
+      "averageDamageLabel": "10.24K"
+    }
+  },
+  {
+    "scenario": "speed1",
+    "enemies": 2,
+    "casts": 1,
+    "frameChecks": 29,
+    "allPotentialReadingsPresent": true,
+    "oneConfirmationReturnedToMap": true,
+    "uniqueTargetsPerCast": true,
+    "romSha256": "94c49ae8b1b92cf85e34aaef43361f0d05277557729553676779fe14db3a03d5",
+    "sample": {
+      "casterName": "GOHAN",
+      "casterBp": "1700",
+      "bpLabel": "BP 1700",
+      "opponentHp": {
+        "sum": "160",
+        "count": 2,
+        "label": "80"
+      },
+      "opponentBp": {
+        "sum": "2200",
+        "count": 2,
+        "label": "1100"
+      },
+      "potential": {
+        "lower": "16551",
+        "upper": "16551",
+        "count": 2,
+        "label": "8275.5",
+        "roundedCertain": true
+      },
+      "averageDamageLabel": "80"
+    }
+  }
+]
