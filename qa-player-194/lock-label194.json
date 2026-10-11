@@ -1,0 +1,152 @@
+{
+  "runAt": "2026-10-11T04:53:40.881Z",
+  "base": "http://127.0.0.1:8177",
+  "fixture": "D:/Codex 2/projects/NES-Environment193-QA/card-menu.state",
+  "viewport": "390x844 touch",
+  "matrix": [],
+  "index64": [],
+  "locks": [
+    {
+      "assertions": [
+        {
+          "name": "A lock visibly paused in skill modal",
+          "pass": true,
+          "detail": {
+            "onOpen": "true",
+            "labelOpen": "A paused"
+          }
+        },
+        {
+          "name": "A lock intent remains ON after Back",
+          "pass": true,
+          "detail": "true"
+        },
+        {
+          "name": "A lock keeps active configured high-speed state",
+          "pass": true,
+          "detail": {
+            "fast": true
+          }
+        },
+        {
+          "name": "A-lock toggles only intentional confirmation pause/resume",
+          "pass": true,
+          "detail": [
+            {
+              "frame": 475,
+              "args": [
+                0
+              ]
+            },
+            {
+              "frame": 479,
+              "args": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "opened": {
+        "frame": 475,
+        "phase": 7,
+        "index": 0,
+        "other": 0,
+        "party020d": 15,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "closed": {
+        "frame": 650,
+        "phase": 3,
+        "index": 0,
+        "other": 0,
+        "party020d": 15,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": [
+          {
+            "frame": 475,
+            "args": [
+              0
+            ]
+          },
+          {
+            "frame": 479,
+            "args": [
+              1
+            ]
+          }
+        ]
+      },
+      "onOpen": "true",
+      "onClose": "true",
+      "toggleClassification": "confirmation pause/resume"
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Fast-forward calls are instrumented in browser after fixture load. Physical controller and physical audio are not tested."
+  ]
+}

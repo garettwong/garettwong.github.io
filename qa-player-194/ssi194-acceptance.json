@@ -1,0 +1,639 @@
+{
+  "enemies": 386,
+  "elapsedMs": 30923,
+  "nativeRemaining": 45,
+  "groups": [
+    {
+      "size": 5,
+      "killed": 0,
+      "before": 386,
+      "after": 386
+    },
+    {
+      "size": 5,
+      "killed": 1,
+      "before": 386,
+      "after": 385
+    },
+    {
+      "size": 5,
+      "killed": 1,
+      "before": 385,
+      "after": 384
+    },
+    {
+      "size": 5,
+      "killed": 2,
+      "before": 384,
+      "after": 382
+    },
+    {
+      "size": 5,
+      "killed": 2,
+      "before": 382,
+      "after": 380
+    },
+    {
+      "size": 5,
+      "killed": 1,
+      "before": 380,
+      "after": 379
+    },
+    {
+      "size": 5,
+      "killed": 1,
+      "before": 379,
+      "after": 378
+    },
+    {
+      "size": 5,
+      "killed": 1,
+      "before": 378,
+      "after": 377
+    },
+    {
+      "size": 5,
+      "killed": 3,
+      "before": 377,
+      "after": 374
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 374,
+      "after": 369
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 369,
+      "after": 364
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 364,
+      "after": 359
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 359,
+      "after": 354
+    },
+    {
+      "size": 6,
+      "killed": 6,
+      "before": 354,
+      "after": 348
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 348,
+      "after": 343
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 343,
+      "after": 339
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 339,
+      "after": 335
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 335,
+      "after": 330
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 330,
+      "after": 326
+    },
+    {
+      "size": 6,
+      "killed": 4,
+      "before": 326,
+      "after": 322
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 322,
+      "after": 317
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 317,
+      "after": 312
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 312,
+      "after": 307
+    },
+    {
+      "size": 5,
+      "killed": 3,
+      "before": 307,
+      "after": 304
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 304,
+      "after": 299
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 299,
+      "after": 294
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 294,
+      "after": 289
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 289,
+      "after": 284
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 284,
+      "after": 279
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 279,
+      "after": 274
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 274,
+      "after": 270
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 270,
+      "after": 265
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 265,
+      "after": 261
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 261,
+      "after": 256
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 256,
+      "after": 251
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 251,
+      "after": 246
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 246,
+      "after": 241
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 241,
+      "after": 236
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 236,
+      "after": 232
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 232,
+      "after": 227
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 227,
+      "after": 222
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 222,
+      "after": 217
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 217,
+      "after": 212
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 212,
+      "after": 207
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 207,
+      "after": 202
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 202,
+      "after": 197
+    },
+    {
+      "size": 7,
+      "killed": 7,
+      "before": 197,
+      "after": 190
+    },
+    {
+      "size": 6,
+      "killed": 6,
+      "before": 190,
+      "after": 184
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 184,
+      "after": 179
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 179,
+      "after": 174
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 174,
+      "after": 169
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 169,
+      "after": 164
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 164,
+      "after": 159
+    },
+    {
+      "size": 6,
+      "killed": 6,
+      "before": 159,
+      "after": 153
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 153,
+      "after": 148
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 148,
+      "after": 143
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 143,
+      "after": 138
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 138,
+      "after": 133
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 133,
+      "after": 128
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 128,
+      "after": 123
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 123,
+      "after": 118
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 118,
+      "after": 113
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 113,
+      "after": 108
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 108,
+      "after": 103
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 103,
+      "after": 98
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 98,
+      "after": 94
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 94,
+      "after": 89
+    },
+    {
+      "size": 7,
+      "killed": 7,
+      "before": 89,
+      "after": 82
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 82,
+      "after": 77
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 77,
+      "after": 72
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 72,
+      "after": 67
+    },
+    {
+      "size": 5,
+      "killed": 5,
+      "before": 67,
+      "after": 62
+    },
+    {
+      "size": 5,
+      "killed": 4,
+      "before": 62,
+      "after": 58
+    },
+    {
+      "size": 7,
+      "killed": 7,
+      "before": 58,
+      "after": 51
+    },
+    {
+      "size": 6,
+      "killed": 6,
+      "before": 51,
+      "after": 45
+    }
+  ],
+  "poses": [
+    "type-19-native-pose-1.png",
+    "type-19-native-pose-2.png"
+  ],
+  "mirrors": [
+    false,
+    true
+  ],
+  "errors": [],
+  "first": {
+    "time": 8138.5,
+    "formation": 1,
+    "backdrop": {
+      "arena": "/packs/motion/desert-terrain.webp",
+      "travel": 238,
+      "source": "native-terrain-match"
+    },
+    "opponentHp": {
+      "sum": "51200",
+      "count": 5,
+      "label": "10.24K"
+    },
+    "opponentBp": {
+      "sum": "704000",
+      "count": 5,
+      "label": "140.8K"
+    },
+    "potential": {
+      "lower": "42870",
+      "upper": "42870",
+      "count": 5,
+      "label": "8574",
+      "roundedCertain": true
+    },
+    "averageDamage": 8574,
+    "totalHpLost": 42870,
+    "damageDenominator": 5,
+    "averageDamageLabel": "8574",
+    "casterName": "GOHAN I",
+    "casterBp": "170000",
+    "casterEarnedBp": "1700",
+    "bpLabel": "BP 170K",
+    "cast": 1,
+    "bodies": 5,
+    "blasts": 0,
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "appearances": [
+      {
+        "id": 0,
+        "type": 19,
+        "nativeType": 19,
+        "pose": "type-19-native-pose-2.png",
+        "variant": 1,
+        "mirrored": false
+      },
+      {
+        "id": 1,
+        "type": 19,
+        "nativeType": 19,
+        "pose": "type-19-native-pose-1.png",
+        "variant": 0,
+        "mirrored": true
+      },
+      {
+        "id": 2,
+        "type": 19,
+        "nativeType": 19,
+        "pose": "type-19-native-pose-2.png",
+        "variant": 1,
+        "mirrored": false
+      },
+      {
+        "id": 3,
+        "type": 19,
+        "nativeType": 19,
+        "pose": "type-19-native-pose-1.png",
+        "variant": 0,
+        "mirrored": true
+      },
+      {
+        "id": 4,
+        "type": 19,
+        "nativeType": 19,
+        "pose": "type-19-native-pose-2.png",
+        "variant": 1,
+        "mirrored": false
+      }
+    ],
+    "missing": [],
+    "progress": 0,
+    "waiting": false,
+    "launch": 1,
+    "first": true,
+    "stage": "launch",
+    "cohort": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alpha": 1,
+    "launchX": 16,
+    "counter": 386,
+    "missStreak": 0,
+    "before": 386,
+    "dead": 0,
+    "size": 5,
+    "missBefore": 0,
+    "missAfter": 0,
+    "types": [
+      19,
+      19,
+      19,
+      19,
+      19
+    ],
+    "enemyStats": [
+      {
+        "id": 0,
+        "hp": 10240,
+        "bp": "140800",
+        "potential": {
+          "lower": "7526",
+          "upper": "7526",
+          "missed": false
+        },
+        "afterHp": 2714
+      },
+      {
+        "id": 1,
+        "hp": 10240,
+        "bp": "140800",
+        "potential": {
+          "lower": "9676",
+          "upper": "9676",
+          "missed": false
+        },
+        "afterHp": 564
+      },
+      {
+        "id": 2,
+        "hp": 10240,
+        "bp": "140800",
+        "potential": {
+          "lower": "9676",
+          "upper": "9676",
+          "missed": false
+        },
+        "afterHp": 564
+      },
+      {
+        "id": 3,
+        "hp": 10240,
+        "bp": "140800",
+        "potential": {
+          "lower": "7526",
+          "upper": "7526",
+          "missed": false
+        },
+        "afterHp": 2714
+      },
+      {
+        "id": 4,
+        "hp": 10240,
+        "bp": "140800",
+        "potential": {
+          "lower": "8466",
+          "upper": "8466",
+          "missed": false
+        },
+        "afterHp": 1774
+      }
+    ]
+  },
+  "allGroupsMatchNative": true
+}

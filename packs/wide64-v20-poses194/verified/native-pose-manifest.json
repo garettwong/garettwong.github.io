@@ -1,0 +1,1300 @@
+{
+  "source": "Only original NES framebuffer crops from official iframe-loaded, same-frame live type verification. No rotations, scaling, drawing, or generated art.",
+  "types": {
+    "10": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-10-native-pose-1.png",
+          "dimensions": [
+            41,
+            40
+          ],
+          "sourceFrame": "official-type-10-sample-4.png",
+          "sourceBox": [
+            126,
+            48,
+            167,
+            88
+          ],
+          "sha256": "0e5e354b6d41f74c006927a06f212fcfd2a7ecec5070a63462f0043e4a981ec9"
+        }
+      ]
+    },
+    "11": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-11-native-pose-1.png",
+          "dimensions": [
+            44,
+            43
+          ],
+          "sourceFrame": "official-type-11-sample-5.png",
+          "sourceBox": [
+            146,
+            46,
+            190,
+            89
+          ],
+          "sha256": "08c445a9a70275d02a217ed18d506f6e4bb5f4735c762d8bd78156a15c0a9d66"
+        }
+      ]
+    },
+    "12": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-12-native-pose-1.png",
+          "dimensions": [
+            41,
+            48
+          ],
+          "sourceFrame": "official-type-12-sample-1.png",
+          "sourceBox": [
+            183,
+            74,
+            224,
+            122
+          ],
+          "sha256": "e5d9e4b538e84c328a4caf7fcbf84f53da5c592538b4002320d3c5173863996e"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-12-native-pose-2.png",
+          "dimensions": [
+            39,
+            42
+          ],
+          "sourceFrame": "official-type-12-sample-4.png",
+          "sourceBox": [
+            130,
+            48,
+            169,
+            90
+          ],
+          "sha256": "b468903da9fc51eb4554dbfd14d4ede0838f13a28f28d30c2cfc18643dffb15d"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-12-native-pose-3.png",
+          "dimensions": [
+            44,
+            43
+          ],
+          "sourceFrame": "official-type-12-sample-6.png",
+          "sourceBox": [
+            146,
+            46,
+            190,
+            89
+          ],
+          "sha256": "943f4c0021192cee47e4d85cf8d63f65ae4864c05748840028338190811af051"
+        }
+      ]
+    },
+    "13": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-13-native-pose-1.png",
+          "dimensions": [
+            41,
+            48
+          ],
+          "sourceFrame": "official-dense-type-13-sample-012.png",
+          "sourceBox": [
+            183,
+            74,
+            224,
+            122
+          ],
+          "sha256": "d2162a965ef9eef688771c7bc7d81ce535f0e2c778cb5e700b57c915745ccbcd"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-13-native-pose-2.png",
+          "dimensions": [
+            39,
+            42
+          ],
+          "sourceFrame": "official-dense-type-13-sample-000.png",
+          "sourceBox": [
+            130,
+            48,
+            169,
+            90
+          ],
+          "sha256": "1987efe5440ddb1394808b86f39765e0183d9e2ee3955bc6b2910965d4e8c66e"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-13-native-pose-3.png",
+          "dimensions": [
+            44,
+            43
+          ],
+          "sourceFrame": "official-dense-type-13-sample-028.png",
+          "sourceBox": [
+            146,
+            46,
+            190,
+            89
+          ],
+          "sha256": "c88b4db6c67ed5e4391856ec8c46898bb06e8fb93c1d4411dd2955d2f04c5e82"
+        }
+      ]
+    },
+    "14": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-14-native-pose-1.png",
+          "dimensions": [
+            41,
+            43
+          ],
+          "sourceFrame": "official-type-14-sample-2.png",
+          "sourceBox": [
+            126,
+            46,
+            167,
+            89
+          ],
+          "sha256": "f2e15b5d600c36a81f3f849b9a7aa657d45374943a8a89ae9fc64dd5e2be020c"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-14-native-pose-2.png",
+          "dimensions": [
+            29,
+            32
+          ],
+          "sourceFrame": "official-type-14-sample-0.png",
+          "sourceBox": [
+            193,
+            32,
+            222,
+            64
+          ],
+          "sha256": "1912895a4b262860aac767aa64e49dc886ad1c47bd967f041b3d8e62e863a48a"
+        }
+      ]
+    },
+    "15": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-15-native-pose-1.png",
+          "dimensions": [
+            44,
+            43
+          ],
+          "sourceFrame": "official-type-15-sample-4.png",
+          "sourceBox": [
+            182,
+            77,
+            226,
+            120
+          ],
+          "sha256": "d2d05e6e0a69d71b72adf543187570380689edac30d05918f756ed1546b772d7"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-15-native-pose-2.png",
+          "dimensions": [
+            28,
+            32
+          ],
+          "sourceFrame": "official-type-15-sample-5.png",
+          "sourceBox": [
+            194,
+            32,
+            222,
+            64
+          ],
+          "sha256": "1c2bc7bca5602c2e147236ab49dc3604721f12f8087fd2ab065d47e7da654b33"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-15-native-pose-3.png",
+          "dimensions": [
+            41,
+            43
+          ],
+          "sourceFrame": "official-type-15-sample-7.png",
+          "sourceBox": [
+            126,
+            46,
+            167,
+            89
+          ],
+          "sha256": "107979511e155ff5d2f5ffa3d24970a4456dcbb0c1169e9038782895a19f07e6"
+        }
+      ]
+    },
+    "16": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-16-native-pose-1.png",
+          "dimensions": [
+            44,
+            43
+          ],
+          "sourceFrame": "official-type-16-sample-5.png",
+          "sourceBox": [
+            182,
+            77,
+            226,
+            120
+          ],
+          "sha256": "ab8a59799ded29ba48060ab6ff4af3c643f2fbf34286350cfd45b76debebea6d"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-16-native-pose-2.png",
+          "dimensions": [
+            28,
+            32
+          ],
+          "sourceFrame": "official-type-16-sample-7.png",
+          "sourceBox": [
+            194,
+            32,
+            222,
+            64
+          ],
+          "sha256": "09dd3ca68e7f98f6de6a2b20690f56947052a6f55114968fa95b652e839ff6f5"
+        }
+      ]
+    },
+    "17": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-17-native-pose-1.png",
+          "dimensions": [
+            33,
+            50
+          ],
+          "sourceFrame": "official-type-17-sample-5.png",
+          "sourceBox": [
+            190,
+            72,
+            223,
+            122
+          ],
+          "sha256": "0a2a211feb941a060360349e224ea8768a8f4cae16d6ef40e8fea25448fd32ef"
+        }
+      ]
+    },
+    "18": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-18-native-pose-1.png",
+          "dimensions": [
+            33,
+            50
+          ],
+          "sourceFrame": "official-type-18-sample-5.png",
+          "sourceBox": [
+            190,
+            72,
+            223,
+            122
+          ],
+          "sha256": "1fa4962cebee098fc3cee9267dc0260d869633a1196fb16387969ef287d1952a"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-18-native-pose-2.png",
+          "dimensions": [
+            35,
+            36
+          ],
+          "sourceFrame": "official-type-18-sample-7.png",
+          "sourceBox": [
+            190,
+            30,
+            225,
+            66
+          ],
+          "sha256": "c323c7f7d0387ac1bd2659435f0f211fb54dc02c38d1d4d0d682a8d1c7a6cdcc"
+        }
+      ]
+    },
+    "19": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-19-native-pose-1.png",
+          "dimensions": [
+            33,
+            50
+          ],
+          "sourceFrame": "official-type-19-sample-5.png",
+          "sourceBox": [
+            190,
+            72,
+            223,
+            122
+          ],
+          "sha256": "178eaeb4aeb7cbc2062de3ee483c65ecda05e629f9cbecccaef448d521f39f53"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-19-native-pose-2.png",
+          "dimensions": [
+            35,
+            36
+          ],
+          "sourceFrame": "official-type-19-sample-4.png",
+          "sourceBox": [
+            173,
+            34,
+            208,
+            70
+          ],
+          "sha256": "1e4c834e4420c76b0f8b5e2d4ca4a4b2b788c5fa30ea4fced89cba1156344da5"
+        }
+      ]
+    },
+    "20": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-20-native-pose-1.png",
+          "dimensions": [
+            49,
+            48
+          ],
+          "sourceFrame": "official-type-20-sample-1.png",
+          "sourceBox": [
+            185,
+            73,
+            234,
+            121
+          ],
+          "sha256": "1261eb885dca03bc13393a5831a620bd44b95b5651e769248144c66026b68d63"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-20-native-pose-2.png",
+          "dimensions": [
+            38,
+            39
+          ],
+          "sourceFrame": "official-type-20-sample-8.png",
+          "sourceBox": [
+            154,
+            50,
+            192,
+            89
+          ],
+          "sha256": "c6f340430650bdad8f88f9dcee0f95219491a6e7a28af43142455157c70a580c"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-20-native-pose-3.png",
+          "dimensions": [
+            34,
+            41
+          ],
+          "sourceFrame": "official-type-20-sample-4.png",
+          "sourceBox": [
+            129,
+            49,
+            163,
+            90
+          ],
+          "sha256": "c080df7e112c269cad57372fa09bdf306e49a0edc120bda5520fcc77878a073d"
+        }
+      ]
+    },
+    "21": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-21-native-pose-1.png",
+          "dimensions": [
+            49,
+            48
+          ],
+          "sourceFrame": "official-type-21-sample-2.png",
+          "sourceBox": [
+            185,
+            73,
+            234,
+            121
+          ],
+          "sha256": "36e6f66a19242b0307178e7e9e4c6b6a77e83714d8d6e4c5a8781a444857e387"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-21-native-pose-2.png",
+          "dimensions": [
+            34,
+            41
+          ],
+          "sourceFrame": "official-type-21-sample-6.png",
+          "sourceBox": [
+            129,
+            49,
+            163,
+            90
+          ],
+          "sha256": "0fadd1c498db879dc4d9c98f2fb7425e477f605152cf33cd2557e4a7b1a5934b"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-21-native-pose-3.png",
+          "dimensions": [
+            30,
+            32
+          ],
+          "sourceFrame": "official-type-21-sample-3.png",
+          "sourceBox": [
+            192,
+            33,
+            222,
+            65
+          ],
+          "sha256": "f64c4c29a4eeafd7aed69d7e53f29b91d14384c61d3b8638ee8331de60423026"
+        }
+      ]
+    },
+    "22": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-22-native-pose-1.png",
+          "dimensions": [
+            49,
+            48
+          ],
+          "sourceFrame": "official-type-22-sample-3.png",
+          "sourceBox": [
+            185,
+            73,
+            234,
+            121
+          ],
+          "sha256": "06948fc7dc94809abebb5f5a587653e2911f5ab8962b637e0fdca2500bedde1a"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-22-native-pose-2.png",
+          "dimensions": [
+            34,
+            41
+          ],
+          "sourceFrame": "official-type-22-sample-5.png",
+          "sourceBox": [
+            129,
+            49,
+            163,
+            90
+          ],
+          "sha256": "bb9419106b9523a752c2d0e0cb359060615ec94a6e22b637fb2fc555882dc8db"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-22-native-pose-3.png",
+          "dimensions": [
+            30,
+            32
+          ],
+          "sourceFrame": "official-type-22-sample-4.png",
+          "sourceBox": [
+            192,
+            33,
+            222,
+            65
+          ],
+          "sha256": "418e7a04a4d39244db0209c31d6f3e361e49e8d6fa4c38c4b57060c33f1828a3"
+        }
+      ]
+    },
+    "23": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-23-native-pose-1.png",
+          "dimensions": [
+            36,
+            39
+          ],
+          "sourceFrame": "official-type-23-sample-0.png",
+          "sourceBox": [
+            128,
+            50,
+            164,
+            89
+          ],
+          "sha256": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-23-native-pose-2.png",
+          "dimensions": [
+            38,
+            38
+          ],
+          "sourceFrame": "official-type-23-sample-1.png",
+          "sourceBox": [
+            166,
+            49,
+            204,
+            87
+          ],
+          "sha256": "caec7399b6c0cfae4cb8ab5f6d61c067d91d6111f4733f13d9b5d1d11f92ab96"
+        }
+      ]
+    },
+    "24": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-24-native-pose-1.png",
+          "dimensions": [
+            43,
+            49
+          ],
+          "sourceFrame": "official-dense-type-24-sample-001.png",
+          "sourceBox": [
+            183,
+            73,
+            226,
+            122
+          ],
+          "sha256": "c13f6af24cdbe38b30205eb4ae77590bf157e6475a098c8d96b3bf2870340db7"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-24-native-pose-2.png",
+          "dimensions": [
+            38,
+            39
+          ],
+          "sourceFrame": "official-dense-type-24-sample-006.png",
+          "sourceBox": [
+            142,
+            48,
+            180,
+            87
+          ],
+          "sha256": "839312d69566b0764ccb7bd4e64ccf227195ad4d9baff6733d420c164750dc7c"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-24-native-pose-3.png",
+          "dimensions": [
+            36,
+            39
+          ],
+          "sourceFrame": "official-dense-type-24-sample-002.png",
+          "sourceBox": [
+            128,
+            50,
+            164,
+            89
+          ],
+          "sha256": "1840193453cd1ea6afd271d04f9a79639b75c23d451a4abe1663e83d9e5443db"
+        }
+      ]
+    },
+    "25": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-25-native-pose-1.png",
+          "dimensions": [
+            41,
+            51
+          ],
+          "sourceFrame": "official-type-25-sample-4.png",
+          "sourceBox": [
+            185,
+            71,
+            226,
+            122
+          ],
+          "sha256": "6acc91ffa57f2cc65497c12559f7fed882a362da89a36a5ac80ee29da03f27b7"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-25-native-pose-2.png",
+          "dimensions": [
+            35,
+            36
+          ],
+          "sourceFrame": "official-type-25-sample-3.png",
+          "sourceBox": [
+            190,
+            30,
+            225,
+            66
+          ],
+          "sha256": "8b22c0797483e1dcc833499aaffbd96eb8deb07ce472e31043377a4a295324b3"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-25-native-pose-3.png",
+          "dimensions": [
+            28,
+            36
+          ],
+          "sourceFrame": "official-type-25-sample-2.png",
+          "sourceBox": [
+            160,
+            64,
+            188,
+            100
+          ],
+          "sha256": "92e88771ed79c59242d27e5de885b7291c7fe92e617165fe67c44270c429d8a8"
+        }
+      ]
+    },
+    "26": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-26-native-pose-1.png",
+          "dimensions": [
+            41,
+            44
+          ],
+          "sourceFrame": "official-type-26-sample-1.png",
+          "sourceBox": [
+            188,
+            78,
+            229,
+            122
+          ],
+          "sha256": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-26-native-pose-2.png",
+          "dimensions": [
+            40,
+            38
+          ],
+          "sourceFrame": "official-type-26-sample-5.png",
+          "sourceBox": [
+            170,
+            49,
+            210,
+            87
+          ],
+          "sha256": "45f428343ccaa35e05142f6647ae8aacf4e16a019dbb8272f3eda7fa230dc0cb"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-26-native-pose-3.png",
+          "dimensions": [
+            36,
+            34
+          ],
+          "sourceFrame": "official-type-26-sample-0.png",
+          "sourceBox": [
+            190,
+            32,
+            226,
+            66
+          ],
+          "sha256": "8c7c569c72d1c87c11feef4a7c835bfb4ef252020e2003e110907eaabfe1edb3"
+        }
+      ]
+    },
+    "27": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-27-native-pose-1.png",
+          "dimensions": [
+            41,
+            44
+          ],
+          "sourceFrame": "official-type-27-sample-3.png",
+          "sourceBox": [
+            188,
+            78,
+            229,
+            122
+          ],
+          "sha256": "78b0128495bbd116d26faabfbad0cf2f1c1b2608aca9752806c1381df3a0ed48"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-27-native-pose-2.png",
+          "dimensions": [
+            36,
+            34
+          ],
+          "sourceFrame": "official-type-27-sample-2.png",
+          "sourceBox": [
+            190,
+            32,
+            226,
+            66
+          ],
+          "sha256": "c64267eaee748dcaed6353e6b2f8ca68d53616b49deb739aa0fdb4e810c24fe9"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-27-native-pose-3.png",
+          "dimensions": [
+            39,
+            36
+          ],
+          "sourceFrame": "official-type-27-sample-6.png",
+          "sourceBox": [
+            127,
+            48,
+            166,
+            84
+          ],
+          "sha256": "4ad75d2c80c37fc7223bd568e9e338c326ab312206950f13301595e3aa7d5e04"
+        }
+      ]
+    },
+    "28": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-28-native-pose-1.png",
+          "dimensions": [
+            44,
+            44
+          ],
+          "sourceFrame": "official-type-28-sample-11.png",
+          "sourceBox": [
+            126,
+            46,
+            170,
+            90
+          ],
+          "sha256": "17385f58ff0b0298fb8df51d5471ce87a6091e83bc377644bb238387bb01445f"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-28-native-pose-2.png",
+          "dimensions": [
+            42,
+            44
+          ],
+          "sourceFrame": "official-type-28-sample-12.png",
+          "sourceBox": [
+            188,
+            77,
+            230,
+            121
+          ],
+          "sha256": "0a0299cffd16b99f4fc133a023e5a4905fbb3abbe950bd297992d1ea87c9dfdf"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-28-native-pose-3.png",
+          "dimensions": [
+            33,
+            33
+          ],
+          "sourceFrame": "official-type-28-sample-13.png",
+          "sourceBox": [
+            190,
+            32,
+            223,
+            65
+          ],
+          "sha256": "23a40280acad27f0e1c5b2ee29b40f41b8a02f898f7d31e5b378f7874ff92b82"
+        }
+      ]
+    },
+    "29": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-29-native-pose-1.png",
+          "dimensions": [
+            41,
+            47
+          ],
+          "sourceFrame": "official-type-29-sample-3.png",
+          "sourceBox": [
+            126,
+            47,
+            167,
+            94
+          ],
+          "sha256": "930e4967b3e01b6b20f94a417cf1a2061f4f596b84ba54dd5fddb088bd0f51c7"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-29-native-pose-2.png",
+          "dimensions": [
+            32,
+            32
+          ],
+          "sourceFrame": "official-type-29-sample-0.png",
+          "sourceBox": [
+            190,
+            34,
+            222,
+            66
+          ],
+          "sha256": "8d66363667d0b4ff7bc47baf8c25facd7ea2bb2eb131d8fdb5d112e3b3836093"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-29-native-pose-3.png",
+          "dimensions": [
+            45,
+            42
+          ],
+          "sourceFrame": "official-type-29-sample-1.png",
+          "sourceBox": [
+            184,
+            75,
+            229,
+            117
+          ],
+          "sha256": "d4f74b24dbe623fbc04034b654683405071baecfdec40c34742f76b22aa40509"
+        }
+      ]
+    },
+    "30": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-30-native-pose-1.png",
+          "dimensions": [
+            48,
+            45
+          ],
+          "sourceFrame": "official-type-30-sample-0.png",
+          "sourceBox": [
+            183,
+            74,
+            231,
+            119
+          ],
+          "sha256": "6b04db4b992e021f3969c994b13c29abd5b8a190c385e68b6a6e7bc796ddb097"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-30-native-pose-2.png",
+          "dimensions": [
+            41,
+            41
+          ],
+          "sourceFrame": "official-type-30-sample-6.png",
+          "sourceBox": [
+            126,
+            48,
+            167,
+            89
+          ],
+          "sha256": "16260d4f6d54e297d39431f728c958091c92bfdd4c1f74b1c9539609ef886fed"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-30-native-pose-3.png",
+          "dimensions": [
+            44,
+            44
+          ],
+          "sourceFrame": "official-type-30-sample-7.png",
+          "sourceBox": [
+            154,
+            46,
+            198,
+            90
+          ],
+          "sha256": "27a601a66193f3e83ef653fecda2ff3ecd959223de4be1517b40d0eb83b7222d"
+        }
+      ]
+    },
+    "31": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-31-native-pose-1.png",
+          "dimensions": [
+            49,
+            49
+          ],
+          "sourceFrame": "official-type-31-sample-3.png",
+          "sourceBox": [
+            185,
+            73,
+            234,
+            122
+          ],
+          "sha256": "b49656d2f0b12802805697d99957ef9e94b54e22e8a8786a6c938f99812050ac"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-31-native-pose-2.png",
+          "dimensions": [
+            40,
+            44
+          ],
+          "sourceFrame": "official-type-31-sample-7.png",
+          "sourceBox": [
+            126,
+            46,
+            166,
+            90
+          ],
+          "sha256": "772f3826ef261fcb5cdeedc25d630cc7e6610626d6a893a15cd1301812fe2db1"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-31-native-pose-3.png",
+          "dimensions": [
+            36,
+            36
+          ],
+          "sourceFrame": "official-type-31-sample-2.png",
+          "sourceBox": [
+            190,
+            30,
+            226,
+            66
+          ],
+          "sha256": "d619647a8edd3cb184c10e5e0371b8817993f97ca99cbf63a8a6e304c3104ca9"
+        }
+      ]
+    },
+    "32": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-32-native-pose-1.png",
+          "dimensions": [
+            35,
+            33
+          ],
+          "sourceFrame": "official-type-32-sample-1.png",
+          "sourceBox": [
+            190,
+            78,
+            225,
+            111
+          ],
+          "sha256": "37e932d02e0e2da1937dd7f06d72ae79a687901dfaff6a9825a5fa1a8442b14d"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-32-native-pose-2.png",
+          "dimensions": [
+            28,
+            33
+          ],
+          "sourceFrame": "official-type-32-sample-4.png",
+          "sourceBox": [
+            134,
+            51,
+            162,
+            84
+          ],
+          "sha256": "195c308a4f2275ef049be4412f613c0613af3b6e232799aaa389c441eb0c5f09"
+        }
+      ]
+    },
+    "33": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-33-native-pose-1.png",
+          "dimensions": [
+            41,
+            39
+          ],
+          "sourceFrame": "official-dense-type-33-sample-002.png",
+          "sourceBox": [
+            182,
+            77,
+            223,
+            116
+          ],
+          "sha256": "4c55f0acced01a1b403f88fb48e84ca9921066a420a2fcddf23ca2134e16c171"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-33-native-pose-2.png",
+          "dimensions": [
+            40,
+            34
+          ],
+          "sourceFrame": "official-dense-type-33-sample-003.png",
+          "sourceBox": [
+            126,
+            52,
+            166,
+            86
+          ],
+          "sha256": "7cdcb1017e6c234104d72c76b67ba3c8d40460b01191684f975ed90b198c4284"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-33-native-pose-3.png",
+          "dimensions": [
+            36,
+            34
+          ],
+          "sourceFrame": "official-dense-type-33-sample-005.png",
+          "sourceBox": [
+            173,
+            34,
+            209,
+            68
+          ],
+          "sha256": "d1332f9df2c2f2f651c5f6219a8c8a149529593d01dca65d8eb6f66fbdc05b95"
+        }
+      ]
+    },
+    "34": {
+      "status": "fallback-only-no-distinct-full-body-in-verified-frames",
+      "poses": []
+    },
+    "35": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-35-native-pose-1.png",
+          "dimensions": [
+            44,
+            42
+          ],
+          "sourceFrame": "official-type-35-sample-4.png",
+          "sourceBox": [
+            126,
+            48,
+            170,
+            90
+          ],
+          "sha256": "a40b26b1a75300ab89b5150603b9e206758d77dde9bf6798d390137b4710c314"
+        }
+      ]
+    },
+    "36": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-36-native-pose-1.png",
+          "dimensions": [
+            43,
+            36
+          ],
+          "sourceFrame": "official-type-36-sample-3.png",
+          "sourceBox": [
+            127,
+            50,
+            170,
+            86
+          ],
+          "sha256": "539eb5b916d96cb7790d3ee6d8353dba9ce05c723b67d02e280bf75df0385226"
+        }
+      ]
+    },
+    "37": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-37-native-pose-1.png",
+          "dimensions": [
+            37,
+            44
+          ],
+          "sourceFrame": "official-type-37-sample-5.png",
+          "sourceBox": [
+            130,
+            44,
+            167,
+            88
+          ],
+          "sha256": "5b4317b53c42986e8feeba20d1543b6b9e5353d211bb923ece6a2e707eaeff0f"
+        }
+      ]
+    },
+    "38": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-38-native-pose-1.png",
+          "dimensions": [
+            38,
+            39
+          ],
+          "sourceFrame": "official-type-38-sample-4.png",
+          "sourceBox": [
+            162,
+            50,
+            200,
+            89
+          ],
+          "sha256": "8b5a463836ee2a5190eac0ba227c69d1af4854b7aa5859f22ca4ae0b1154f579"
+        }
+      ]
+    },
+    "39": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-39-native-pose-1.png",
+          "dimensions": [
+            36,
+            39
+          ],
+          "sourceFrame": "official-type-39-sample-0.png",
+          "sourceBox": [
+            128,
+            50,
+            164,
+            89
+          ],
+          "sha256": "5b229977131cc055b6ca12a3e9f53d5cadd9b321becb029055ad11ed45f1fc9d"
+        }
+      ]
+    },
+    "40": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-40-native-pose-1.png",
+          "dimensions": [
+            41,
+            44
+          ],
+          "sourceFrame": "official-dense-type-40-sample-002.png",
+          "sourceBox": [
+            188,
+            78,
+            229,
+            122
+          ],
+          "sha256": "e9551f21bb2513b20031a56b935cd0699324f80722f0370b771cb1b07b636ace"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-40-native-pose-2.png",
+          "dimensions": [
+            40,
+            38
+          ],
+          "sourceFrame": "official-dense-type-40-sample-025.png",
+          "sourceBox": [
+            138,
+            49,
+            178,
+            87
+          ],
+          "sha256": "979d85447abb81d4a298b5e044191d35131dd546549fcf1de22cc496a7613c9b"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-40-native-pose-3.png",
+          "dimensions": [
+            36,
+            34
+          ],
+          "sourceFrame": "official-dense-type-40-sample-006.png",
+          "sourceBox": [
+            190,
+            32,
+            226,
+            66
+          ],
+          "sha256": "ba34f2705093ff33c0691b6c73d1c10fc7f66c736c185d6e63c420803a95e16e"
+        }
+      ]
+    },
+    "41": {
+      "status": "variants-captured",
+      "poses": [
+        {
+          "label": "native-pose-1 (captured orientation; no inferred angle)",
+          "file": "type-41-native-pose-1.png",
+          "dimensions": [
+            49,
+            50
+          ],
+          "sourceFrame": "official-dense-type-41-sample-002.png",
+          "sourceBox": [
+            182,
+            72,
+            231,
+            122
+          ],
+          "sha256": "286fc7e44901d6122ca79675ccf506777f51c38e914550d353d3a60ebaddcc58"
+        },
+        {
+          "label": "native-pose-2 (captured orientation; no inferred angle)",
+          "file": "type-41-native-pose-2.png",
+          "dimensions": [
+            36,
+            33
+          ],
+          "sourceFrame": "official-dense-type-41-sample-006.png",
+          "sourceBox": [
+            190,
+            33,
+            226,
+            66
+          ],
+          "sha256": "7bdd78071deb05bcae04678970562ad4999db65febad699f4556ce0e95462bcc"
+        },
+        {
+          "label": "native-pose-3 (captured orientation; no inferred angle)",
+          "file": "type-41-native-pose-3.png",
+          "dimensions": [
+            44,
+            44
+          ],
+          "sourceFrame": "official-dense-type-41-sample-001.png",
+          "sourceBox": [
+            126,
+            46,
+            170,
+            90
+          ],
+          "sha256": "6a76ea36e1876e75c48f3751d82615513564bdc73848e9e7f1eae050c1ee4e63"
+        }
+      ]
+    }
+  }
+}

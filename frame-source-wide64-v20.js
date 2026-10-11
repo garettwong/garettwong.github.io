@@ -14,7 +14,7 @@
    // The group scene samples only the original terrain while native uploads are hidden.
    if(state.sceneryObserver&&w===256&&h===240&&format===6408&&type===5121&&ArrayBuffer.isView(data)&&data.byteLength>=(args[9]||0)+256*240*4){state.sceneryProbeAt=performance.now();try{state.sceneryObserver(new Uint8ClampedArray(data.buffer,data.byteOffset+(args[9]||0),256*240*4));}catch(error){console.warn('Battle scenery capture failed',error);}}
    if(state.suppressDisplay&&!state.captureUntilHud&&w===256&&h===240&&format===6408&&type===5121&&ArrayBuffer.isView(data)&&!state.captureCanvasOnce)return;
-   const result=original.apply(this,args);
+   const result=original.apply(this,args);if(w===256&&h===240)window.DreamInput?.clockInput?.();
 
    if(typeof w==='number'&&typeof h==='number'&&ArrayBuffer.isView(data)){
 

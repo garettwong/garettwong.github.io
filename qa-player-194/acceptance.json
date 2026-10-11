@@ -1,0 +1,39 @@
+{
+  "baseline": "6ad8b94",
+  "release": 194,
+  "romUnchanged": true,
+  "fullBattle": {
+    "enemies": 386,
+    "enemyStrength": 128,
+    "elapsedMs": 43598,
+    "casts": 6,
+    "groups": 83,
+    "groupSizes": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "rewardConfirmedOnce": true,
+    "nativeMissCounterGroups": 83,
+    "unavailableFinalCapture": false,
+    "finalPhase": [
+      6,
+      6,
+      1,
+      0
+    ],
+    "runtimeErrors": [],
+    "nativeTerrainOffsets": 256,
+    "nativePoseVariants": [
+      "original",
+      "type-19-native-pose-1.png",
+      "type-19-native-pose-2.png"
+    ]
+  },
+  "limits": [
+    "Physical iPhone/audio hardware untested",
+    "Exact user save not available",
+    "Missing final-lone-survivor native telemetry remains unknown; no invented potential or hit/miss"
+  ]
+}

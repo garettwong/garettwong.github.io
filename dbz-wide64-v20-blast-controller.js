@@ -7,7 +7,7 @@
 const GATE=0x13fd,MODE=0x13fe,LAST=0x13ff,EXPANDED=0x1371,REVISION=0x13b5;
 const ATTACKS=new Set([0x40,0xdb,0xe2]),DURATION=180,INTRO=280;
 let api=null,canvas=null,ctx=null,busy=false,waiting=false,pending=null,unlock=null,token=0,raf=0,sequence=0,lastError='',timer=0,modePending=null;
-let animationPending=null,finalReady=false,finishedActor='',needsHud=false,confirmingGate=false,wasBattle=false;
+let animationPending=null,finalReady=false,finishedActor='',needsHud=false,confirmingGate=false,wasBattle=false,sceneryRequested=false;
 let missStreak=0;
 let queue=[],shown=[],presented=null,groupSize=5,castSerial=0,castTargetsLeft=0;
 const nextSize=()=>{const left=castTargetsLeft;if(left<=7)return Math.max(1,left);const sizes=[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,7].filter(n=>{const rest=left-n;return rest>=5&&rest!==8&&rest!==9;});return sizes.length?sizes[Math.floor(Math.random()*sizes.length)]:5;};
@@ -239,7 +239,8 @@ async function acknowledge(v,current){
 async function examine(){
  if(!api?.active()||modePending)return;let v;
  try{v=chunks(api.gm().getState());}catch(error){lastError=String(error.message||error);return;}
- if(!battle(v)){missStreak=0;if(!busy){if(wasBattle){wasBattle=false;closePresentation();roster.clear();templates=[];presented=null;global.DreamGroupBlastVisual?.reset?.();}waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;}return;}if(!wasBattle){wasBattle=true;global.DreamGroupBlastVisual?.reset?.();}
+ if(!battle(v)){missStreak=0;if(!busy){if(wasBattle){wasBattle=false;sceneryRequested=false;closePresentation();roster.clear();templates=[];presented=null;global.DreamGroupBlastVisual?.reset?.();}waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;}return;}if(!wasBattle){wasBattle=true;global.DreamGroupBlastVisual?.reset?.();}
+ if(!sceneryRequested&&v.b[v.r+0x30]>=32&&!global.DreamGroupBlastVisual?.hasEnvironment?.()){sceneryRequested=true;api.captureScenery?.();}
  if(!roster.size){const snap=snapshot(v);if(snap){presented=snap.remaining;for(const e of [...snap.current.values(),...snap.reserve.values()])roster.set(e.index,{...e});}}
  rememberMenu(v);if(v.b[v.w+MODE]!==0xb5){const phase=v.b[v.r+0x30];if(!(phase>=2&&phase<=9||phase>=32&&phase<=39))return;if(!modePending){const current=token;modePending=setMode(v,current);modePending.catch(error=>{lastError=String(error.message||error);api.status(lastError);}).finally(()=>{if(current===token)modePending=null;});}return;}
  if(v.b[v.w+GATE]===1&&!busy){const current=token;pending=acknowledge(v,current);pending.catch(error=>{lastError=String(error.message||error);closePresentation(lastError);}).finally(()=>{if(current===token)pending=null;});return;}
@@ -247,7 +248,7 @@ async function examine(){
  if(v.b[v.w+GATE]!==1&&!showCalculating(v)&&!busy&&!animationPending){waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);}
 }
 function poll(){if(api&&!busy)examine();timer=setTimeout(poll,16);}
-function reset(){confirmingGate=false;wasBattle=false;lastError='';missStreak=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
+function reset(){sceneryRequested=false;confirmingGate=false;wasBattle=false;lastError='';missStreak=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
 function start(options){api=options;reset();create();poll();}
 async function whenSettled(){while(modePending||pending||animationPending||currentCast){await (modePending||pending||animationPending||delay(20));}}
 function inspect(){return {currentCast,confirmingGate,preview:!!preview,missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}

@@ -1,0 +1,1309 @@
+{
+  "runAt": "2026-10-11T04:51:09.260Z",
+  "base": "http://127.0.0.1:8177",
+  "fixture": "D:/Codex 2/projects/NES-Environment193-QA/card-menu.state",
+  "viewport": "390x844 touch",
+  "matrix": [
+    {
+      "speed": 1,
+      "assertions": [
+        {
+          "name": "phase5 starts index0",
+          "pass": true,
+          "detail": {
+            "index": 0,
+            "phase": 5
+          }
+        },
+        {
+          "name": "Right 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Right 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Right 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Right 4",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "Left 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Left 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Left 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Left 0",
+          "pass": true,
+          "detail": 0
+        },
+        {
+          "name": "idle no drift",
+          "pass": true,
+          "detail": {
+            "idle": 0,
+            "after": 0
+          }
+        },
+        {
+          "name": "manual B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "long Right release stops drift",
+          "pass": true,
+          "detail": {
+            "released": 0,
+            "settled": 0
+          }
+        },
+        {
+          "name": "directions/B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "final": {
+        "frame": 307,
+        "phase": 4,
+        "index": 0,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": false,
+        "toggles": []
+      }
+    },
+    {
+      "speed": 4,
+      "assertions": [
+        {
+          "name": "phase5 starts index0",
+          "pass": true,
+          "detail": {
+            "index": 0,
+            "phase": 5
+          }
+        },
+        {
+          "name": "Right 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Right 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Right 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Right 4",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "Left 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Left 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Left 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Left 0",
+          "pass": true,
+          "detail": 0
+        },
+        {
+          "name": "idle no drift",
+          "pass": true,
+          "detail": {
+            "idle": 0,
+            "after": 0
+          }
+        },
+        {
+          "name": "manual B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "long Right release stops drift",
+          "pass": true,
+          "detail": {
+            "released": 0,
+            "settled": 0
+          }
+        },
+        {
+          "name": "directions/B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "final": {
+        "frame": 1081,
+        "phase": 4,
+        "index": 0,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    },
+    {
+      "speed": 16,
+      "assertions": [
+        {
+          "name": "phase5 starts index0",
+          "pass": true,
+          "detail": {
+            "index": 0,
+            "phase": 5
+          }
+        },
+        {
+          "name": "Right 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Right 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Right 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Right 4",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "Left 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Left 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Left 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Left 0",
+          "pass": true,
+          "detail": 0
+        },
+        {
+          "name": "idle no drift",
+          "pass": true,
+          "detail": {
+            "idle": 0,
+            "after": 0
+          }
+        },
+        {
+          "name": "manual B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "long Right release stops drift",
+          "pass": true,
+          "detail": {
+            "released": 0,
+            "settled": 0
+          }
+        },
+        {
+          "name": "directions/B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "final": {
+        "frame": 4240,
+        "phase": 4,
+        "index": 0,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    },
+    {
+      "speed": 64,
+      "assertions": [
+        {
+          "name": "phase5 starts index0",
+          "pass": true,
+          "detail": {
+            "index": 0,
+            "phase": 5
+          }
+        },
+        {
+          "name": "Right 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Right 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Right 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Right 4",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "Left 3",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "Left 2",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "Left 1",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "Left 0",
+          "pass": true,
+          "detail": 0
+        },
+        {
+          "name": "idle no drift",
+          "pass": true,
+          "detail": {
+            "idle": 0,
+            "after": 0
+          }
+        },
+        {
+          "name": "manual B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "long Right release stops drift",
+          "pass": true,
+          "detail": {
+            "released": 0,
+            "settled": 0
+          }
+        },
+        {
+          "name": "directions/B no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "final": {
+        "frame": 4132,
+        "phase": 4,
+        "index": 0,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    }
+  ],
+  "index64": [
+    {
+      "index": 0,
+      "expected": {
+        "attack": 256,
+        "defense": 256,
+        "attribute": 1
+      },
+      "assertions": [
+        {
+          "name": "intended $6e before A",
+          "pass": true,
+          "detail": 0
+        },
+        {
+          "name": "selected card metadata",
+          "pass": true,
+          "detail": {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          }
+        },
+        {
+          "name": "$6e preserved in native dialog",
+          "pass": true,
+          "detail": 0
+        },
+        {
+          "name": "A opens native dialog",
+          "pass": true,
+          "detail": {
+            "phase": 7,
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          }
+        },
+        {
+          "name": "manual A no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "before": {
+        "frame": 1037,
+        "phase": 5,
+        "index": 0,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "after": {
+        "frame": 1093,
+        "phase": 7,
+        "index": 0,
+        "other": 0,
+        "party020d": 15,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    },
+    {
+      "index": 1,
+      "expected": {
+        "attack": 256,
+        "defense": 255,
+        "attribute": 1
+      },
+      "assertions": [
+        {
+          "name": "intended $6e before A",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "selected card metadata",
+          "pass": true,
+          "detail": {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          }
+        },
+        {
+          "name": "$6e preserved in native dialog",
+          "pass": true,
+          "detail": 1
+        },
+        {
+          "name": "A opens native dialog",
+          "pass": true,
+          "detail": {
+            "phase": 7,
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          }
+        },
+        {
+          "name": "manual A no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "before": {
+        "frame": 783,
+        "phase": 5,
+        "index": 1,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "after": {
+        "frame": 892,
+        "phase": 7,
+        "index": 1,
+        "other": 0,
+        "party020d": 31,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    },
+    {
+      "index": 2,
+      "expected": {
+        "attack": 256,
+        "defense": 64,
+        "attribute": 1
+      },
+      "assertions": [
+        {
+          "name": "intended $6e before A",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "selected card metadata",
+          "pass": true,
+          "detail": {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          }
+        },
+        {
+          "name": "$6e preserved in native dialog",
+          "pass": true,
+          "detail": 2
+        },
+        {
+          "name": "A opens native dialog",
+          "pass": true,
+          "detail": {
+            "phase": 7,
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          }
+        },
+        {
+          "name": "manual A no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "before": {
+        "frame": 894,
+        "phase": 5,
+        "index": 2,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "after": {
+        "frame": 1014,
+        "phase": 7,
+        "index": 2,
+        "other": 0,
+        "party020d": 47,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    },
+    {
+      "index": 3,
+      "expected": {
+        "attack": 256,
+        "defense": 16,
+        "attribute": 1
+      },
+      "assertions": [
+        {
+          "name": "intended $6e before A",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "selected card metadata",
+          "pass": true,
+          "detail": {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          }
+        },
+        {
+          "name": "$6e preserved in native dialog",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "A opens native dialog",
+          "pass": true,
+          "detail": {
+            "phase": 7,
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          }
+        },
+        {
+          "name": "manual A no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "before": {
+        "frame": 1137,
+        "phase": 5,
+        "index": 3,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "after": {
+        "frame": 1192,
+        "phase": 7,
+        "index": 3,
+        "other": 0,
+        "party020d": 63,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    },
+    {
+      "index": 4,
+      "expected": {
+        "attack": 256,
+        "defense": 8,
+        "attribute": 1
+      },
+      "assertions": [
+        {
+          "name": "intended $6e before A",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "selected card metadata",
+          "pass": true,
+          "detail": {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        },
+        {
+          "name": "$6e preserved in native dialog",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "A opens native dialog",
+          "pass": true,
+          "detail": {
+            "phase": 7,
+            "skills": {
+              "open": true,
+              "confirm": false
+            }
+          }
+        },
+        {
+          "name": "manual A no toggleFastForward",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "before": {
+        "frame": 1555,
+        "phase": 5,
+        "index": 4,
+        "other": 0,
+        "party020d": 240,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "after": {
+        "frame": 1687,
+        "phase": 7,
+        "index": 4,
+        "other": 0,
+        "party020d": 79,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      }
+    }
+  ],
+  "locks": [
+    {
+      "assertions": [
+        {
+          "name": "A lock exposes a valid suspended/ON intent state",
+          "pass": true,
+          "detail": "true"
+        },
+        {
+          "name": "A lock intent remains ON after Back",
+          "pass": true,
+          "detail": "true"
+        },
+        {
+          "name": "A lock keeps active configured high-speed state",
+          "pass": true,
+          "detail": {
+            "fast": true
+          }
+        },
+        {
+          "name": "A-lock toggles only intentional confirmation pause/resume",
+          "pass": true,
+          "detail": [
+            {
+              "frame": 423,
+              "args": [
+                0
+              ]
+            },
+            {
+              "frame": 429,
+              "args": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "opened": {
+        "frame": 423,
+        "phase": 7,
+        "index": 0,
+        "other": 0,
+        "party020d": 15,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": true,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": []
+      },
+      "closed": {
+        "frame": 579,
+        "phase": 8,
+        "index": 0,
+        "other": 0,
+        "party020d": 15,
+        "cards": [
+          {
+            "attack": 256,
+            "defense": 256,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 255,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 64,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 16,
+            "attribute": 1
+          },
+          {
+            "attack": 256,
+            "defense": 8,
+            "attribute": 1
+          }
+        ],
+        "skills": {
+          "open": false,
+          "confirm": false
+        },
+        "fast": true,
+        "toggles": [
+          {
+            "frame": 423,
+            "args": [
+              0
+            ]
+          },
+          {
+            "frame": 429,
+            "args": [
+              1
+            ]
+          }
+        ]
+      },
+      "onOpen": "true",
+      "onClose": "true",
+      "toggleClassification": "confirmation pause/resume"
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Fast-forward calls are instrumented in browser after fixture load. Physical controller and physical audio are not tested."
+  ],
+  "overlap": {
+    "assertions": [
+      {
+        "name": "A+Right overlap no toggleFastForward",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "A+Right settles native",
+        "pass": true,
+        "detail": {
+          "phase": 7,
+          "index": 0
+        }
+      }
+    ],
+    "after": {
+      "frame": 427,
+      "phase": 7,
+      "index": 0,
+      "other": 0,
+      "party020d": 15,
+      "cards": [
+        {
+          "attack": 256,
+          "defense": 256,
+          "attribute": 1
+        },
+        {
+          "attack": 256,
+          "defense": 255,
+          "attribute": 1
+        },
+        {
+          "attack": 256,
+          "defense": 64,
+          "attribute": 1
+        },
+        {
+          "attack": 256,
+          "defense": 16,
+          "attribute": 1
+        },
+        {
+          "attack": 256,
+          "defense": 8,
+          "attribute": 1
+        }
+      ],
+      "skills": {
+        "open": true,
+        "confirm": false
+      },
+      "fast": true,
+      "toggles": []
+    }
+  }
+}
