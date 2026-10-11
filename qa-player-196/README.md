@@ -9,3 +9,5 @@ Twenty-one native roster boundaries from1 to400 pass repeated-hit completion;38 
 V21 has a distinct ROM and save identity. V20 and its files are unchanged. The explicit Load > Copy v20 save to v21 operation writes an empty v21 slot and leaves the selected v20 save unchanged.
 
 Testing uses isolated Chrome mobile390x844 contexts and synthetic saved fixtures, never the user browser save store. Physical iPhone Safari, physical controller hardware and audible speaker output were not tested. Raw local evidence and build/test sources: D:/Codex 2/projects/NES-Player196-QA.
+
+Public deployment a6ff9bc / Pages38129343228 succeeded. All151 runtime assets match committed blobs. Fresh public400 test cleared in ONEactivation,23.364s from first resolved group to last, with every target unique,20,000BP reward once, background resume and natural map return at1x. All18 public map checks passed at4x/1024x. Public home entry,196identity and explicit v20-copy flow passed; source save unchanged. Fresh public screenshots were inspected.

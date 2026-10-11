@@ -1,0 +1,25 @@
+{
+  "commit": "a6ff9bc2897d2114f3fc438b8492c678eae74f78",
+  "pagesRun": 38129343228,
+  "url": "https://garettwong.github.io/dbz-wide64-v21-play.html?release=196",
+  "liveAssetMatches": 151,
+  "castCount": 1,
+  "nativeRemaining": 0,
+  "uniqueEnemies": 400,
+  "groupSizes": [
+    5,
+    6,
+    7
+  ],
+  "counterChecks": true,
+  "combatMs": 23364.19999998808,
+  "rewardConfirmedOnce": true,
+  "naturalMapReturn1x": true,
+  "backgroundResume": true,
+  "errors": [],
+  "mapAssertions": 18,
+  "manualV20CopyVerified": true,
+  "sourceSaveUnchanged": true,
+  "homeEntryVerified": true,
+  "screenshotsInspected": true
+}
