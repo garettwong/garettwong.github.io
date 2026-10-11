@@ -1,0 +1,10 @@
+{
+  "base": "http://127.0.0.1:8180",
+  "state": {
+    "rom": "d7f13a72b663e9b298df257214c8bf71514b2dd74f030c52fd33636dde702952",
+    "banner": true,
+    "name": "Wide64 NG+ v21 · Continuous Wave · Player 196"
+  },
+  "errors": [],
+  "responses": []
+}

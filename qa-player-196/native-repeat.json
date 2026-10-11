@@ -1,0 +1,128 @@
+[
+  {
+    "total": 1,
+    "nativeHits": 1,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 2,
+    "nativeHits": 3,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 3,
+    "nativeHits": 6,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 4,
+    "nativeHits": 7,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 5,
+    "nativeHits": 9,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 6,
+    "nativeHits": 12,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 7,
+    "nativeHits": 13,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 20,
+    "nativeHits": 39,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 99,
+    "nativeHits": 198,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 100,
+    "nativeHits": 199,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 101,
+    "nativeHits": 201,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 199,
+    "nativeHits": 397,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 200,
+    "nativeHits": 399,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 201,
+    "nativeHits": 402,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 299,
+    "nativeHits": 597,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 300,
+    "nativeHits": 600,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 301,
+    "nativeHits": 601,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 380,
+    "nativeHits": 759,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 384,
+    "nativeHits": 768,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 399,
+    "nativeHits": 798,
+    "allDead": true,
+    "singleActivation": true
+  },
+  {
+    "total": 400,
+    "nativeHits": 799,
+    "allDead": true,
+    "singleActivation": true
+  }
+]
