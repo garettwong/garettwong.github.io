@@ -1,0 +1,27 @@
+[
+  {
+    "scenario": "final",
+    "enemies": 396,
+    "casts": 2,
+    "groupsWithVerifiedMissCounter": 80,
+    "oneConfirmationReturnedToMap": true,
+    "errors": [],
+    "romSha256": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632"
+  },
+  {
+    "scenario": "high",
+    "enemies": 2,
+    "casts": 1,
+    "groupsWithVerifiedMissCounter": 1,
+    "oneConfirmationReturnedToMap": true,
+    "errors": [],
+    "romSha256": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632"
+  },
+  {
+    "groups": 77,
+    "maximum": 16,
+    "misses": 272,
+    "hits": 124,
+    "errors": []
+  }
+]

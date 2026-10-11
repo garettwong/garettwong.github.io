@@ -1,0 +1,847 @@
+{
+  "cases": 120,
+  "combatUnchanged": true,
+  "nativeFinalHitCaptured": true,
+  "casesSummary": [
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 192
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 199
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 0,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 64
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 71
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 127
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 0,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 192
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 199
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 1,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 64
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 71
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 127
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 1,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 192
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 199
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 2,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 64
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 71
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 127
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 2,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 192
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 199
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 3,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 64
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 71
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 127
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 3,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 192
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 199
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 4,
+      "nativeHit": false,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 0,
+      "record": 64
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 7,
+      "record": 71
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 0,
+      "originalExponent": 255,
+      "record": 127
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 1,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 2,
+      "originalExponent": 255,
+      "record": 255
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 0,
+      "record": 0
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 7,
+      "record": 7
+    },
+    {
+      "slot": 4,
+      "nativeHit": true,
+      "guard": 3,
+      "originalExponent": 255,
+      "record": 255
+    }
+  ]
+}

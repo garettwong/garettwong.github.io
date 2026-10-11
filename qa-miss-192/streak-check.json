@@ -1,0 +1,6 @@
+{
+  "cases": 8,
+  "usesNativeFlags": true,
+  "zeroDamageHitResets": true,
+  "unknownNotGuessed": true
+}

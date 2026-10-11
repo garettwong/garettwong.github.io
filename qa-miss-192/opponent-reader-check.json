@@ -1,0 +1,12 @@
+{
+  "physicalEnemies": 100,
+  "reserveEnemies": 296,
+  "sparseTemplateSlots": [
+    0,
+    2,
+    4
+  ],
+  "liveReserveBpCases": 5,
+  "beforeHpPreserved": true,
+  "uint64Precision": true
+}

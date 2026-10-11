@@ -1,0 +1,21 @@
+{
+  "sourceSha256": "94c49ae8b1b92cf85e34aaef43361f0d05277557729553676779fe14db3a03d5",
+  "targetSha256": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+  "regions": [
+    {
+      "offset": 196779,
+      "before": "712472f090c2e43e3f880276bf9d27afff0dab130dc74bc2941427e9e11d8a07",
+      "after": "d42af14c6d4b77f679d776a7b829dd3f06736ac38d687b1e8726c556c285a573"
+    },
+    {
+      "offset": 296382,
+      "before": "f481",
+      "after": "00b0"
+    },
+    {
+      "offset": 307728,
+      "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "after": "20f48108488a489848adfe73c9b5d046ad627ed041ad7073cd8f71d039ad4d03c949b032a200a000c912900e38e912488a186906aa68c84c28b0c900d018b95db02d8e71f010bd7571293f0940a4a7d00209809d757168a868aa6828600102040810"
+    }
+  ]
+}

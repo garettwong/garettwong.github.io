@@ -1,0 +1,46 @@
+/* W64B only: palette sampled from the native map/training screen, square NES panels. */
+#dbz-enemy-strength-choice[hidden]{display:none}
+#dbz-enemy-strength-choice{position:fixed;z-index:2147483647;inset:12px;margin:auto;width:min(560px,calc(100% - 24px));height:fit-content;max-height:calc(100dvh - 24px);overflow:auto;box-sizing:border-box;padding:20px;background:#f7d8a5;color:#100808;border:3px solid #201008;border-radius:0;outline:2px solid #ff8170;outline-offset:-5px;box-shadow:0 0 0 3px #f7d8a5,0 0 0 5px #381078,0 0 0 100vmax #351067ed;font:700 15px ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;touch-action:pan-y;overscroll-behavior:contain}
+#dbz-enemy-strength-choice h2{font-size:23px;margin:0 0 18px;letter-spacing:1px}
+#dbz-enemy-strength-choice h3{font-size:16px;margin:16px 0 8px;letter-spacing:.5px}
+#dbz-enemy-strength-choice p{font-size:13px;line-height:1.55;color:#241810;margin:14px 0}
+#dbz-enemy-strength-choice .enemy-strength-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+#dbz-enemy-strength-choice button{min-height:48px;padding:11px 8px;border:2px solid #2b1909;border-radius:0;background:#fce8bc;color:#100808;cursor:pointer;touch-action:manipulation;font:inherit;box-shadow:inset 0 0 0 2px #ff8170}
+#dbz-enemy-strength-choice .enemy-strength-options button{display:grid;align-content:center;gap:6px;text-align:center;min-width:0}
+#dbz-enemy-strength-choice button strong{font-size:20px}
+#dbz-enemy-strength-choice button span{font-size:11px;line-height:1.4;color:inherit}
+#dbz-enemy-strength-choice button[aria-checked=true]{border-color:#181000;background:#101008;color:#f8d878;box-shadow:inset 0 0 0 2px #f8b838}
+#dbz-enemy-strength-choice button:focus-visible{outline:3px solid #c81838;outline-offset:2px}
+#dbz-enemy-strength-choice button:hover{filter:brightness(.92)}
+#dbz-enemy-strength-choice button:disabled{opacity:.6;cursor:wait}
+#dbz-enemy-strength-choice .enemy-strength-summary{border-top:2px solid #b85828;border-bottom:2px solid #b85828;padding:10px 0}
+#dbz-enemy-strength-choice .enemy-strength-feedback{min-height:20px;color:#6b2420}
+#dbz-enemy-strength-choice .enemy-strength-start{width:100%;font-weight:800;background:#7527fe;color:#fff4d8;border-color:#281048;box-shadow:inset 0 0 0 2px #e8b850;letter-spacing:1px}
+#dbz-enemy-strength-choice .enemy-strength-note{font-size:11px;color:#483024;margin:12px 0 0}
+/* The shared card factory remains unchanged; only W64B receives this theme. */
+body.dbz-wide64-edition #dbz-card-editor{height:fit-content;padding:20px;background:#f7d8a5;color:#100808;border:3px solid #201008;border-radius:0;outline:2px solid #ff8170;outline-offset:-5px;box-shadow:0 0 0 3px #f7d8a5,0 0 0 5px #381078,0 0 0 100vmax #351067ed;font:700 15px ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;overscroll-behavior:contain}
+body.dbz-wide64-edition #dbz-card-editor h2{font-size:22px;letter-spacing:1px}
+body.dbz-wide64-edition #dbz-card-editor p{color:#302018;line-height:1.5;font-size:13px}
+body.dbz-wide64-edition #dbz-card-editor button,body.dbz-wide64-edition #dbz-card-editor select,body.dbz-wide64-edition #dbz-card-editor input{min-height:48px;border:2px solid #281808;border-radius:0;background:#fce8bc;color:#100808;box-shadow:inset 0 0 0 2px #ff8170;font-family:inherit;font-weight:700}
+body.dbz-wide64-edition #dbz-card-editor button:focus-visible,body.dbz-wide64-edition #dbz-card-editor select:focus-visible,body.dbz-wide64-edition #dbz-card-editor input:focus-visible{outline:3px solid #c81838;outline-offset:2px}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs{gap:7px;margin-top:22px}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button{position:relative;min-height:82px;background:#080808;color:#f8d878;border:3px solid #b87820;box-shadow:inset 0 0 0 2px #f8d878;white-space:pre-line;line-height:1.65;overflow-wrap:anywhere;font-size:12px!important}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button[aria-pressed=true]{background:#080808!important;border-color:#f87848!important;box-shadow:inset 0 0 0 2px #f8d878,0 0 0 1px #201008}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button[aria-pressed=true]::before{content:"▼";position:absolute;top:-22px;left:50%;transform:translateX(-50%);color:#c81838;font-size:19px;text-shadow:1px 1px #f8d878}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric{grid-template-columns:44px minmax(42px,1fr) 44px 44px 44px;gap:6px}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric input{font-size:22px;background:#101008;color:#f8d878}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-lock[aria-pressed=true]{background:#101008;color:#f8d878;border-color:#281808}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions .wide{background:#7527fe;color:#fff4d8;border-color:#281048}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-hint{color:#483024;font-size:11px}
+body.dbz-wide64-edition #dbz-card-editor .dbz-card-feedback{color:#245024;font-size:12px}
+@media(max-width:420px){#dbz-enemy-strength-choice,body.dbz-wide64-edition #dbz-card-editor{padding:15px}#dbz-enemy-strength-choice button strong{font-size:19px}body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs{gap:5px}body.dbz-wide64-edition #dbz-card-editor .dbz-card-numeric{grid-template-columns:40px minmax(38px,1fr) 40px 40px 40px;gap:5px}body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button{font-size:11px!important}body.dbz-wide64-edition #dbz-card-editor .dbz-card-actions button{font-size:14px}}
+@media(max-height:520px){#dbz-enemy-strength-choice,body.dbz-wide64-edition #dbz-card-editor{padding:14px}#dbz-enemy-strength-choice h2{font-size:21px;margin-bottom:10px}#dbz-enemy-strength-choice h3{margin-top:10px}#dbz-enemy-strength-choice p{margin:10px 0}}
+
+@media(max-width:560px){#dbz-enemy-strength-choice .enemy-strength-options[aria-label="Enemy count"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:360px){body.dbz-wide64-edition #dbz-card-editor .dbz-card-tabs button{font-size:10px!important;letter-spacing:-.5px}}
+
+#dbz-wide64-panel[hidden]{display:none}#dbz-wide64-panel{position:fixed;z-index:2147483646;inset:12px;margin:auto;width:min(600px,calc(100% - 24px));height:fit-content;max-height:calc(100dvh - 24px);overflow:auto;box-sizing:border-box;padding:18px;background:#f7d8a5;color:#100808;border:3px solid #201008;box-shadow:0 0 0 100vmax #351067ed;font:600 14px ui-monospace,monospace;line-height:1.5;touch-action:pan-y}#dbz-wide64-panel h2{font-size:20px;margin:0 0 12px}#dbz-wide64-panel button{min-height:44px;padding:10px;border:2px solid #2b1909;background:#fce8bc;color:#100808;font:inherit;touch-action:manipulation}#dbz-wide64-panel button[aria-pressed=true]{background:#ffe351}#dbz-wide64-panel button:disabled{opacity:.55}.wide64-exact{list-style:none;padding:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.wide64-exact li{padding:6px 0;border-bottom:1px solid #a58965}.wide64-forms{display:flex;gap:8px;flex-wrap:wrap}#wide64-panel-open{font-size:13px!important;min-width:110px}.special-row{gap:8px!important}#special-button{min-width:108px!important;font-size:13px!important}@media(max-width:360px){#dbz-wide64-panel{padding:12px;font-size:12px}.special-row button{padding:6px 8px!important;min-width:100px!important}}
+
+body.dbz-wide64-edition .special-row button{min-width:80px!important;font-size:12px!important;padding:6px 8px!important}body.dbz-wide64-edition .special-row{gap:6px!important;width:100%}body.dbz-wide64-edition #special-button{min-width:88px!important}
+
+#dbz-wide64-panel .wide64-exact li{white-space:pre-line}
