@@ -5,10 +5,10 @@
 (function(global){
 'use strict';
 const GATE=0x13fd,MODE=0x13fe,LAST=0x13ff,EXPANDED=0x1371,REVISION=0x13b5;
-const ATTACKS=new Set([0x40,0xdb,0xe2]),DURATION=180,INTRO=280;
+const ATTACKS=new Set([0x40,0xdb,0xe2]),DURATION=80,INTRO=100;
 let api=null,canvas=null,ctx=null,busy=false,waiting=false,pending=null,unlock=null,token=0,raf=0,sequence=0,lastError='',timer=0,modePending=null;
 let animationPending=null,finalReady=false,finishedActor='',needsHud=false,confirmingGate=false,wasBattle=false,sceneryRequested=false;
-let missStreak=0;
+let missStreak=0,escapedCount=0;
 let queue=[],shown=[],presented=null,groupSize=5,castSerial=0,castTargetsLeft=0;
 const nextSize=()=>{const left=castTargetsLeft;if(left<=7)return Math.max(1,left);const sizes=[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,7].filter(n=>{const rest=left-n;return rest>=5&&rest!==8&&rest!==9;});return sizes.length?sizes[Math.floor(Math.random()*sizes.length)]:5;};
 function takeTargets(size){return queue.splice(0,size);}
@@ -135,7 +135,7 @@ function write(v,mutate,label){
 }
 async function loadAndConfirm(v,mutate,label,confirm,current){
  const written=write(v,mutate,label);confirmingGate=true;api.advance();let until=performance.now()+5000,ok=false;
- while(current===token&&performance.now()<until){await delay(12);if(document.hidden||!api.active()){until=performance.now()+5000;continue;}const next=chunks(written.gm.getState());if(confirm(next)){ok=true;break;}}
+ while(current===token&&performance.now()<until){await delay(4);if(document.hidden||!api.active()){until=performance.now()+5000;continue;}const next=chunks(written.gm.getState());if(confirm(next)){ok=true;break;}}
  confirmingGate=false;try{written.gm.FS.unlink('/'+written.name);}catch{}
  if(current!==token)return null;
  if(!ok)throw Error(`The group animation could not ${label}. Load the last save and try again.`);
@@ -178,7 +178,7 @@ function beginPresentation(v){
  global.DreamGroupBlastVisual.beginCast();needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;currentCast=true;castSerial++;castGroups=0;finalReady=false;
  if(presented===null)presented=snap.remaining;castTargetsLeft=presented;groupSize=nextSize();
  const targets=[...roster.values()].filter(e=>e.hp>0).slice(0,groupSize).map(e=>({id:e.index,type:e.type,beforeHp:e.hp,afterHp:e.hp,bp:e.bp}));
- const caster=actorFor(v);preview={total:snap.total,remainingBefore:presented,targets,actor:caster.actor,waiting:true,missStreakBefore:missStreak,missStreakAfter:missStreak,casterName:caster.name,casterBp:caster.bp,casterEarnedBp:caster.earnedBp,attackName:caster.attackName};
+ const caster=actorFor(v);preview={total:snap.total,remainingBefore:presented,targets,actor:caster.actor,waiting:true,missStreakBefore:missStreak,missStreakAfter:missStreak,escapedBefore:escapedCount,escapedAfter:escapedCount,casterName:caster.name,casterBp:caster.bp,casterEarnedBp:caster.earnedBp,attackName:caster.attackName};
  create();fit();canvas.hidden=false;waiting=true;drawScene(preview,0);api.fastCalculation?.(true);
 }
 function activeGroup(v){
@@ -194,7 +194,7 @@ async function animate(scene,current){
   if(current!==token){resolve(false);return;}
   if(document.hidden||!api.active()){started=null;raf=requestAnimationFrame(frame);return;}
   if(started===null)started=now;
-  const elapsed=now-started,lead=scene.first?INTRO:0,progress=Math.max(0,Math.min(1,(elapsed-lead)/DURATION,lastProgress+.14));scene.launchProgress=scene.first?Math.min(1,elapsed/INTRO):1;
+  const elapsed=now-started,lead=scene.first?INTRO:0,progress=Math.max(0,Math.min(1,(elapsed-lead)/DURATION));scene.launchProgress=scene.first?Math.min(1,elapsed/INTRO):1;
   lastProgress=progress;fit();drawScene(scene,progress);lastScene=scene;
   if(progress===1){resolve(true);return;}raf=requestAnimationFrame(frame);
  };raf=requestAnimationFrame(frame);});
@@ -204,11 +204,11 @@ function pump(built,caster,current){
  animationPending=(async()=>{
   await global.DreamGroupBlastVisual.ready;
   while(current===token&&(queue.length>=groupSize||(finalReady&&queue.length))){
-   const targets=takeTargets(Math.min(groupSize,queue.length),built.total),scene={...built,cast:castSerial,targets,first:castGroups++===0,remainingBefore:presented,groupIndex:shown.length,casterName:caster.name,casterBp:caster.bp,casterEarnedBp:caster.earnedBp,attackName:caster.attackName,actor:caster.actor,stage:caster.stage,missStreakBefore:missStreak,missStreakAfter:streakAfter(missStreak,targets)};
+   const targets=takeTargets(Math.min(groupSize,queue.length),built.total),scene={...built,cast:castSerial,targets,first:castGroups++===0,remainingBefore:presented,groupIndex:shown.length,casterName:caster.name,casterBp:caster.bp,casterEarnedBp:caster.earnedBp,attackName:caster.attackName,actor:caster.actor,stage:caster.stage,missStreakBefore:missStreak,missStreakAfter:streakAfter(missStreak,targets),escapedBefore:escapedCount,escapedAfter:escapedCount+targets.filter(t=>t.potential?.missed===true).length};
    api.status(`Explosive Wave: ${targets.length} enemies struck together.`);
    shown.push({cast:castSerial,targets:targets.map(t=>t.id),size:targets.length,remainingBefore:presented,duration:DURATION,first:scene.first,intro:scene.first?INTRO:0,frames:"timed",defeated:targets.filter(t=>t.beforeHp>0&&t.afterHp===0).length});if(shown.length>200)shown.shift();
    if(!await animate(scene,current))return;
-   missStreak=scene.missStreakAfter;
+   missStreak=scene.missStreakAfter;escapedCount=scene.escapedAfter;
    presented=Math.max(0,presented-targets.filter(t=>t.beforeHp>0&&t.afterHp===0).length);castTargetsLeft-=targets.length;groupSize=nextSize();
   }
  })().finally(()=>{if(current===token)animationPending=null;});
@@ -220,7 +220,7 @@ async function acknowledge(v,current){
  if(!currentCast)beginPresentation(v);
  if(needsHud){const pixels=global.DreamFrameSource?.pixels;if(pixels){global.dreamArtwork?.present?.(pixels,true);global.DreamGroupBlastVisual.observe(pixels);global.DreamGroupBlastVisual.beginCast();needsHud=false;global.DreamFrameSource.captureUntilHud=false;}}
  preview=null;queue.push(...built.targets);
- logs.push({index:group,targets:built.targets.map(t=>t.id),before:built.targets.map(t=>t.beforeHp),after:built.targets.map(t=>t.afterHp)});if(logs.length>100)logs.shift();
+ logs.push({at:performance.now(),frame:api.gm().getFrameNum(),index:group,targets:built.targets.map(t=>t.id),before:built.targets.map(t=>t.beforeHp),after:built.targets.map(t=>t.afterHp)});if(logs.length>100)logs.shift();
  for(const target of built.targets)roster.set(target.id,{...target,hp:target.afterHp});
  busy=true;waiting=true;create();fit();canvas.hidden=false;api.release();api.fastCalculation?.(true);api.pause();
  try{
@@ -239,8 +239,8 @@ async function acknowledge(v,current){
 async function examine(){
  if(!api?.active()||modePending)return;let v;
  try{v=chunks(api.gm().getState());}catch(error){lastError=String(error.message||error);return;}
- if(!battle(v)){missStreak=0;if(!busy){if(wasBattle){wasBattle=false;sceneryRequested=false;closePresentation();roster.clear();templates=[];presented=null;global.DreamGroupBlastVisual?.reset?.();}waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;}return;}if(!wasBattle){wasBattle=true;global.DreamGroupBlastVisual?.reset?.();}
- if(!sceneryRequested&&v.b[v.r+0x30]>=9&&!global.DreamGroupBlastVisual?.hasEnvironment?.()){sceneryRequested=true;api.captureScenery?.();}
+ if(!battle(v)){missStreak=0;escapedCount=0;if(!busy){if(wasBattle){wasBattle=false;sceneryRequested=false;closePresentation();roster.clear();templates=[];presented=null;global.DreamGroupBlastVisual?.reset?.();}waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);if(global.DreamFrameSource)global.DreamFrameSource.sceneryObserver=null;}return;}if(!wasBattle){wasBattle=true;global.DreamGroupBlastVisual?.reset?.();}
+ const sceneryStage=v.b[v.r+0x30]>=32?2:v.b[v.r+0x30]>=9?1:0;if(sceneryStage>Number(sceneryRequested)&&!global.DreamGroupBlastVisual?.hasEnvironment?.()){if(api.captureScenery?.()!==false)sceneryRequested=sceneryStage;}
  if(!roster.size){const snap=snapshot(v);if(snap){presented=snap.remaining;for(const e of [...snap.current.values(),...snap.reserve.values()])roster.set(e.index,{...e});}}
  rememberMenu(v);if(v.b[v.w+MODE]!==0xb5){const phase=v.b[v.r+0x30];if(!(phase>=2&&phase<=9||phase>=32&&phase<=39))return;if(!modePending){const current=token;modePending=setMode(v,current);modePending.catch(error=>{lastError=String(error.message||error);api.status(lastError);}).finally(()=>{if(current===token)modePending=null;});}return;}
  if(v.b[v.w+GATE]===1&&!busy){const current=token;pending=acknowledge(v,current);pending.catch(error=>{lastError=String(error.message||error);closePresentation(lastError);}).finally(()=>{if(current===token)pending=null;});return;}
@@ -248,9 +248,9 @@ async function examine(){
  if(v.b[v.w+GATE]!==1&&!showCalculating(v)&&!busy&&!animationPending){waiting=false;if(canvas)canvas.hidden=true;api.fastCalculation?.(false);}
 }
 function poll(){if(api&&!busy)examine();timer=setTimeout(poll,16);}
-function reset(){sceneryRequested=false;confirmingGate=false;wasBattle=false;lastError='';missStreak=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
+function reset(){sceneryRequested=false;confirmingGate=false;wasBattle=false;lastError='';missStreak=0;escapedCount=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
 function start(options){api=options;reset();create();poll();}
 async function whenSettled(){while(modePending||pending||animationPending||currentCast){await (modePending||pending||animationPending||delay(20));}}
-function inspect(){return {currentCast,confirmingGate,preview:!!preview,missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}
+function inspect(){return {currentCast,escapedCount,confirmingGate,preview:!!preview,missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}
 global.DreamGroupBlast={start,reset,whenSettled,canYieldForAwakening:()=>!busy&&!animationPending,resume:()=>{if((currentCast||modePending)&&(!finalReady||confirmingGate)&&api?.active()){needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api.advance();}},isOpen:()=>busy||currentCast,coversScreen:()=>waiting&&!!canvas&&!canvas.hidden,inspect};
 })(typeof window==='undefined'?globalThis:window);

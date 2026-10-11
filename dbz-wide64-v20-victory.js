@@ -27,7 +27,7 @@ function hide(){releaseKey();settling=false;shown=false;view=null;if(canvas)canv
 function rewardPhase(b){const c=global.DreamWide64,r=c.chunk(b,'RAM',2048),w=c.chunk(b,'WRM',8192);return r>=0&&w>=0&&b[r+0x2e]===1&&b[r+0x30]===38&&b[w+0x1c62]===1&&global.DreamLargeBattle.decode(b)?.remaining===0;}
 function poll(){try{
  if(!api?.active()){releaseKey();if(settling)settleStarted=performance.now();return;}
- const b=new Uint8Array(api.gm().getState()),phase=rewardPhase(b),next=decode(b),now=performance.now();
+ if(global.DreamGroupBlast?.isOpen()&&!settling)return;const b=new Uint8Array(api.gm().getState()),phase=rewardPhase(b),next=decode(b),now=performance.now();
  // Entry releases the attack's rapid-A lock. Only an actual advance beyond
  // the first reward prompt authorizes finishing the remaining native results.
  if(shown&&!next&&phase&&!settling){settling=true;settleStarted=now;nextPulse=now+140;pulses=0;}

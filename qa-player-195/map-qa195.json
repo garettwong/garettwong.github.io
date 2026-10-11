@@ -1,0 +1,69 @@
+{
+  "checks": [
+    "map idle1x",
+    "Right tap 1 exactly one grid",
+    "Right tap 2 exactly one grid",
+    "Right tap 3 exactly one grid",
+    "no released direction drift",
+    "held manual A enables2x",
+    "held A2x actual frame rate",
+    "A release returns1x",
+    "automatic A never boosts walking"
+  ],
+  "idleFrames": 30,
+  "start": {
+    "frame": 294,
+    "phase": [
+      6,
+      6,
+      3,
+      1
+    ],
+    "x": 154,
+    "pixelX": 104,
+    "pace": {
+      "mapMode": true,
+      "mapBoost": false,
+      "selectedSpeed": 64,
+      "effectiveSpeed": 1
+    },
+    "fast": false
+  },
+  "afterRight": {
+    "frame": 342,
+    "phase": [
+      6,
+      6,
+      3,
+      1
+    ],
+    "x": 157,
+    "pixelX": 152,
+    "pace": {
+      "mapMode": true,
+      "mapBoost": false,
+      "selectedSpeed": 64,
+      "effectiveSpeed": 1
+    },
+    "fast": false
+  },
+  "boostFrames": 49,
+  "final": {
+    "frame": 449,
+    "phase": [
+      6,
+      6,
+      3,
+      4
+    ],
+    "x": 160,
+    "pixelX": 0,
+    "pace": {
+      "mapMode": true,
+      "mapBoost": false,
+      "selectedSpeed": 64,
+      "effectiveSpeed": 1
+    },
+    "fast": false
+  }
+}

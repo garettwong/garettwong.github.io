@@ -90,13 +90,13 @@ function draw(ctx,width,height,scene){
   const mirrored=((e.id+(scene.groupIndex||0))%2)===1,entrance=scene.waiting||opening?0:Math.max(0,1-p/.16)*9*(mirrored?-1:1),dodge=e.potential?.missed&&hit?Math.sin((p-.16)/.4*Math.PI)*10*(mirrored?-1:1):0;
   ctx.save();ctx.translate(Math.round(at.x+entrance+dodge),Math.round(at.y-h/2)+dy);if(mirrored)ctx.scale(-1,1);ctx.drawImage(sprite,-Math.round(w/2),0,w,h);ctx.restore();
 
-  lastDraw.bodies++;lastDraw.ids.push(e.id);lastDraw.appearances.push({id:e.id,type:e.type,nativeType:e.type,pose:pose?.file||"original",variant,mirrored});
+  if(!scene.waiting&&!opening&&p>=.56){ctx.font='700 6px Arial,sans-serif';ctx.textAlign='center';ctx.fillStyle=defeated?'#ffad91':e.potential?.missed?'#ffe781':'#dcffda';ctx.strokeStyle='#000';ctx.lineWidth=2;const label=defeated?'KO':e.potential?.missed?'EVADED':`HP ${e.afterHp}`;ctx.strokeText(label,at.x,Math.min(133,at.y+h/2+6));ctx.fillText(label,at.x,Math.min(133,at.y+h/2+6));}lastDraw.bodies++;lastDraw.ids.push(e.id);lastDraw.appearances.push({id:e.id,type:e.type,nativeType:e.type,pose:pose?.file||"original",variant,mirrored});
 
  }
 
  if(opening&&effects.wave){const x=16+scene.launchProgress*224;ctx.drawImage(effects.wave,Math.round(x-17),62,34,34);lastDraw.launch=1;lastDraw.launchX=x;}
 
- if(hit){for(const at of pos){ctx.drawImage(effects[p<.36?'impact1':'impact2'],Math.round(at.x-17),Math.round(at.y-17),34,34);lastDraw.blasts++;}}
+ if(hit){for(let i=0;i<pos.length;i++){if(enemies[i].potential?.missed)continue;const at=pos[i];ctx.drawImage(effects[p<.36?'impact1':'impact2'],Math.round(at.x-17),Math.round(at.y-17),34,34);lastDraw.blasts++;}}
 
  ctx.restore();
  const dead=!scene.waiting&&p===1?enemies.filter(e=>e.beforeHp>0&&e.afterHp===0).length:0;
@@ -105,7 +105,7 @@ function draw(ctx,width,height,scene){
 
  ctx.fillStyle='#000';ctx.fillRect(0,0,256,30);ctx.fillStyle='#fff';ctx.font='700 9px Arial,sans-serif';ctx.textAlign='left';ctx.fillText(`${remaining} / ${scene.total} ENEMIES`,8,14);
  const streak=!scene.waiting&&p===1?scene.missStreakAfter:scene.missStreakBefore;lastDraw.missStreak=streak??null;
- ctx.fillStyle=streak>0?'#ffd07d':'#b9bdc5';ctx.font='700 7px Arial,sans-serif';ctx.fillText(`MISS STREAK: ${streak??'—'}`,8,26);
+ ctx.fillStyle=streak>0?'#ffd07d':'#b9bdc5';ctx.font='700 7px Arial,sans-serif';const escaped=!scene.waiting&&p===1?scene.escapedAfter:scene.escapedBefore;lastDraw.escapedCount=escaped??0;ctx.fillText(`ESCAPED: ${escaped??0}   MISS STREAK: ${streak??'—'}`,8,26);
 
  ctx.restore();
 

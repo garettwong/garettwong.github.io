@@ -1,0 +1,72 @@
+{
+  "release": 195,
+  "romId": "372178323a44f07c50e2e3e502988bbf92add581f763743af6e0347d4d4f6632",
+  "cartridgeUnchanged": true,
+  "timestamp": "2026-10-11T06:11:21.749488+00:00",
+  "tests": {
+    "final195-400-result.json": {
+      "n": 400,
+      "combatMs": 22263.69999998808,
+      "firstCastMs": 20264,
+      "casts": 2,
+      "rewardConfirmed": true,
+      "missCounterGroups": 80,
+      "errors": [],
+      "escapeChecks": 80,
+      "escapedEvents": 16,
+      "firstCastUniqueTargets": 400,
+      "firstCastOneKOgroups": 0,
+      "firstField": true
+    },
+    "gate195-400-result.json": {
+      "n": 400,
+      "combatMs": 22314.099999964237,
+      "firstCastMs": 20464.299999952316,
+      "casts": 2,
+      "rewardConfirmed": true,
+      "missCounterGroups": 79,
+      "errors": [],
+      "escapeChecks": 79,
+      "escapedEvents": 13,
+      "firstCastUniqueTargets": 400,
+      "firstCastOneKOgroups": 0,
+      "firstField": true
+    },
+    "ssi195-400-result.json": {
+      "n": 400,
+      "combatMs": 101309.39999997616,
+      "firstCastMs": 24479.600000023842,
+      "casts": 7,
+      "rewardConfirmed": true,
+      "missCounterGroups": 119,
+      "errors": [],
+      "escapeChecks": 119,
+      "escapedEvents": 21,
+      "firstCastUniqueTargets": 400,
+      "firstCastOneKOgroups": 5,
+      "firstField": true
+    },
+    "ssi64-195-400-result.json": {
+      "n": 400,
+      "combatMs": 54230,
+      "firstCastMs": 24447.899999976158,
+      "casts": 6,
+      "rewardConfirmed": true,
+      "missCounterGroups": 122,
+      "errors": [],
+      "escapeChecks": 122,
+      "escapedEvents": 26,
+      "firstCastUniqueTargets": 400,
+      "firstCastOneKOgroups": 4,
+      "firstField": true
+    }
+  },
+  "timingTargetSeconds": 20,
+  "timingTargetAchieved": false,
+  "limits": [
+    "Physical iPhone Safari/controller/audio not tested.",
+    "Elapsed time measured from first resolved group until final visible KO; manual menu time before first group excluded.",
+    "Strong-enemy timing includes additional native turns.",
+    "Escaped is cumulative confirmed dodge events, not unique surviving enemies."
+  ]
+}
