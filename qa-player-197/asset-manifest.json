@@ -26,12 +26,12 @@
   },
   {
     "path": "player-wide64-v21-runtime.js",
-    "bytes": 32724,
-    "sha256": "558c705caffe502bb40424bc78227d4679541267ea2d7194325604b9c1c287a4"
+    "bytes": 32752,
+    "sha256": "d67fd327fbf37ee11cc62bcfbf34d557987ebce50a40fe59195075238168ef87"
   },
   {
     "path": "player-wide64-v21.html",
     "bytes": 14105,
-    "sha256": "0ac8ae60113d1642a54dad5fd31ddf187e26a23854d3dc361f0711e0af0cf2b7"
+    "sha256": "b69c9f4913ad56e5b565885119d051afaa4b8eecf12331d69e47fecdc68102cb"
   }
 ]
