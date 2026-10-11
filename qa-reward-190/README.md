@@ -15,3 +15,5 @@ Verified on the final ROM:
 Run `python qa-reward-190/rebuild-native.py` to reproduce the exact ROM from immutable v17. native-patch-proof.json documents every changed byte (only the ACTIVE guard cave and edition fingerprint). Raw save fixtures remain in local QA storage; browser scripts document the replay procedure and require those fixtures. Prior editions and their saves remain preserved.
 
 Selected v17 save copy through the actual Load dialog completed an 80-group attack against a 400-enemy encounter, returning to normal play with 10 survivors. Source save bytes were compared and remained identical. All 25 release JavaScript/module files passed syntax checks; homepage and entry ran without page or HTTP errors.
+
+Public verification: all 82 release asset hashes match. Live homepage and player start without errors. A complete native two-enemy battle holds the 100 BP reward until A, credits once, and returns to play. Live v17 copy preserves source bytes and finishes its 400-target cast. See live-acceptance.json and live phone screenshots.

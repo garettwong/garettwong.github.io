@@ -1,0 +1,36 @@
+{
+  "runtimeCommit": "1a86851de78ded2f92b7e1a2b54f7d02b280e9f1",
+  "publicAssets": 82,
+  "smoke": {
+    "base": "https://garettwong.github.io",
+    "state": {
+      "rom": "72037ee73228c834a60a639142a254ff7605a43b8771af4dd2d8c3975110125f",
+      "banner": true,
+      "name": "Wide64 NG+ v18 \u00b7 Rewards and exact BP \u00b7 Player 190"
+    },
+    "errors": [],
+    "responses": []
+  },
+  "liveVictory": {
+    "enemies": 2,
+    "rewardBp": "100",
+    "casts": 1,
+    "manualConfirmation": true,
+    "creditedOnce": true,
+    "errors": []
+  },
+  "liveCopy": {
+    "total": 400,
+    "completed": [
+      {
+        "cast": 1,
+        "presented": 14,
+        "nativeRemaining": 14,
+        "at": 45646
+      }
+    ],
+    "remaining": 14,
+    "sourcePreserved": true,
+    "errors": []
+  }
+}
