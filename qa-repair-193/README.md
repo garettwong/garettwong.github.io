@@ -10,3 +10,7 @@ Native v20 ROM and save key are unchanged. Repairs are in the browser player.
 - Full386 battle at128x strength, Gohan II17M, background interruption, native hit/miss accounting and reward verification passed. Ordinary386 also passed. Distinct rendered terrain offsets verify motion.
 
 See acceptance.json, card reports and screenshots. QA scripts use Node/Playwright Chrome. Fixture saves are in local NES-Environment193-QA, never user save slots. Public byte verification and live screenshots follow deployment. No claim of exhaustive correctness or physical iPhone validation.
+
+## Published verification
+
+Runtime commit31c2e35. GitHub Pages run38111323446 succeeded. All86 public assets match committed Git bytes (Windows checkout line endings are excluded from comparison). Fresh public386-enemy battle passed through two casts, native hit/miss statistics, moving terrain, visibility pause/resume and one-A reward/map return. See live-acceptance.json and live-phone193.png.

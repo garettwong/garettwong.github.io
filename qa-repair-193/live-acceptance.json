@@ -1,0 +1,22 @@
+{
+  "url": "https://garettwong.github.io/dbz-wide64-v20-play.html?release=193",
+  "runtimeCommit": "31c2e351d732086ea156593796289c369b327784",
+  "pagesRun": 38111323446,
+  "assetsMatched": 86,
+  "enemies": 386,
+  "casts": 2,
+  "visualGroups": 76,
+  "rewardConfirmed": true,
+  "finalNativePhase": [
+    6,
+    6,
+    1,
+    0
+  ],
+  "errors": [],
+  "groupError": "",
+  "movingTerrainDraws": 1120,
+  "distinctTerrainOffsets": 247,
+  "physicalIphoneTested": false,
+  "physicalGamepadTested": false
+}

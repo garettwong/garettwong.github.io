@@ -1,93 +1,93 @@
 [
   {
     "path": "assets/index-home193-wide64v20-372178323a44.js",
-    "bytes": 276547,
-    "sha256": "0b92a3b4e4f6bf118196833566cba206f7610dd09ed2530b3889abd45ee68d1c"
+    "bytes": 276538,
+    "sha256": "ac2fbf391be8309597e4ed95a6e2ebd90c2e9fe31c62f0d8345c582d6c039642"
   },
   {
     "path": "dbz-source-english192.js",
-    "bytes": 7405,
-    "sha256": "ce66f2ca6c1bebd75acec0186152ba72caede478d0a692ad77d7d6908edcbfa0"
+    "bytes": 7307,
+    "sha256": "ec79dfd730b1d9f4deaec6c7c302abe656996a6c632b138dae47f6901ecbcaa1"
   },
   {
     "path": "dbz-wide64-v20-adapter.js",
-    "bytes": 26255,
-    "sha256": "96ef64786269ba9e5e1e34756a9ef2831ad04903517805b09d02e6eb2219f31c"
+    "bytes": 26224,
+    "sha256": "6d369e8add0071a4177a6a8e3b9cd20e00b350c226abd8e73ef9a730391c3574"
   },
   {
     "path": "dbz-wide64-v20-awakening.js",
-    "bytes": 7797,
-    "sha256": "b26985455ad3fe95e98f07d6b37d043a7dec005be89b5317c564de8fe88a5c17"
+    "bytes": 7743,
+    "sha256": "de9336f0ce2fa9dac611526e4060e6c22299c24ae7bc41a871ab12abe69e619a"
   },
   {
     "path": "dbz-wide64-v20-blast-animation.js",
-    "bytes": 9645,
-    "sha256": "98d6bc9da2b4c99c782fe3703ad72c4f6ed9f6b63f2349bfcdbdf0d59b9e7cf4"
+    "bytes": 9528,
+    "sha256": "9127d17dd10f0d91f2e774c79c6dd39effaad339b49f29a725509ae266973db1"
   },
   {
     "path": "dbz-wide64-v20-blast-controller.js",
-    "bytes": 20028,
-    "sha256": "15412985eb9215dfca54f64537a1c41800867af08620ba62198f477b665e04d3"
+    "bytes": 19773,
+    "sha256": "ac5c3e253ce2b19ccfc61e94bce5021fa79d38d32f887509403b5ba1b9f7ae75"
   },
   {
     "path": "dbz-wide64-v20-card-factory.js",
-    "bytes": 22849,
-    "sha256": "daa4b7188cc1fe5cec34f7492e26c140632fd0b06c6d80cedf05d9a246dda33d"
+    "bytes": 22576,
+    "sha256": "d056ee0fe83c720030b1f4a69d5cd18748851f8c3e6239d1746c3fd76df46976"
   },
   {
     "path": "dbz-wide64-v20-cards.js",
-    "bytes": 1055,
-    "sha256": "f64d8c5e24e95ac4cc416a74497f4aa402b090544c4b82fe46fa994320a1b369"
+    "bytes": 1036,
+    "sha256": "08539cb70e1b23771a88a9d286ebd608a71eec461097d645266c6505e46b125d"
   },
   {
     "path": "dbz-wide64-v20-compact.css",
-    "bytes": 15715,
-    "sha256": "1d450ed046ae5129b5baa2b5282775d7e0d7be734b002d0a9beb11370b56f816"
+    "bytes": 15172,
+    "sha256": "c495972712d93b75a616417353b832fa7464b2e2ae6bd61c7fe4cda346592643"
   },
   {
     "path": "dbz-wide64-v20-compact.js",
-    "bytes": 7300,
-    "sha256": "7b025c1bc81d0c5616bd7624dba81e1dd451a5bc4c03c7e9670835b802eca1ff"
+    "bytes": 7130,
+    "sha256": "f6ed49084b180f6cef0dc7a3d8d080dc2668e6ad7e6ab787a17f34ffaab0fd05"
   },
   {
     "path": "dbz-wide64-v20-copy.mjs",
-    "bytes": 830,
-    "sha256": "3a4a94b114541799332b046594f2de845166414f36af74770bd18257c546421c"
+    "bytes": 823,
+    "sha256": "ebc50d5adda9dfce1f6a2bc099edbc3050c47419562e406f7f721becf0d06c75"
   },
   {
     "path": "dbz-wide64-v20-edition.json",
-    "bytes": 55031,
-    "sha256": "7061764ad4ab431fc4fdf6a6f6fa746ee17fef917423f1d3a9bb0a99256209ba"
+    "bytes": 50934,
+    "sha256": "0d256100002053bef97f565e93f0b208dfde279eb9277cafb76656cd9250b694"
   },
   {
     "path": "dbz-wide64-v20-enemies.js",
-    "bytes": 8625,
-    "sha256": "ea9f8c809520b589ee4cd1d2931a2c87df7086b5226b3952090ec656eba6babe"
+    "bytes": 8528,
+    "sha256": "6579ec7796960557f6b13de877599eedf0939f536707c5b27ae21c30a6709b1f"
   },
   {
     "path": "dbz-wide64-v20-enemy-info.js",
-    "bytes": 11043,
-    "sha256": "9a0d1e7de9b88e51c5b781229cd590c263293d407b81a9c0a49aaf16d66f4b31"
+    "bytes": 10884,
+    "sha256": "e99bc55c89db968ec996e924b5d8d4e0ece56df7419596f5cac06eb8fd02cfa2"
   },
   {
     "path": "dbz-wide64-v20-entry.css",
-    "bytes": 1207,
-    "sha256": "56fe9e0a66d5ae3f7646157ffc9cbfc484a7f186220a2dd30ef1f91ff63c7ea3"
+    "bytes": 1198,
+    "sha256": "642d0542f5c7a6150601a201314f924b91af2df9157162c54185721651abcc53"
   },
   {
     "path": "dbz-wide64-v20-forms.js",
-    "bytes": 2250,
-    "sha256": "b9ce7c3a42e3248cda8186f6ad7325e5006163abd45f080cba0a81985a6cc7ff"
+    "bytes": 2242,
+    "sha256": "48cfe30afb64f6fc7e6bedd08c823bee58e82f458a4967742839d0e13fd7d770"
   },
   {
     "path": "dbz-wide64-v20-host.mjs",
-    "bytes": 10320,
-    "sha256": "843ce3d6a157215e3fbc0bfac5d94d79fa41d37f44060afd7c742aa294cbc83c"
+    "bytes": 10283,
+    "sha256": "18f15738b71d5c773fc7efd426a63de7e251b0b93742dc704d56998402787a50"
   },
   {
     "path": "dbz-wide64-v20-large-battle.js",
-    "bytes": 8372,
-    "sha256": "c580a64e5f465b3347f7281e44793d5d3647240ee2c6b3c07762b05f92980b9a"
+    "bytes": 8259,
+    "sha256": "33b86b77c4f20dc2ab0a45f5d548324677594367970587b34c3484b92251c866"
   },
   {
     "path": "dbz-wide64-v20-nameplate-patterns.json",
@@ -96,113 +96,113 @@
   },
   {
     "path": "dbz-wide64-v20-nameplates.js",
-    "bytes": 4912,
-    "sha256": "8c1d7f668d51a707c809f13a8e2d0e98c3969bd6ebb98d2aa546d39d3f85dc6c"
+    "bytes": 4845,
+    "sha256": "786f186cd4dd0ab9f5c0dbecc9022f7d1799d4c0b0cb0525899f46a2da67243b"
   },
   {
     "path": "dbz-wide64-v20-panel.js",
-    "bytes": 7174,
-    "sha256": "dafd221a03507cdd8ed4456c1eb3864daf740274c6cc4c607f2ebabee6cd600c"
+    "bytes": 7141,
+    "sha256": "4aca20fc3008f616c9d0d6dc9d26be6232139a0e53f8ea1897dfd2821771519a"
   },
   {
     "path": "dbz-wide64-v20-play.html",
-    "bytes": 1119,
-    "sha256": "31c37df8d6c4b622a99f97bf317de5c0f154121e2892fa724667ff49f5c28ef2"
+    "bytes": 1118,
+    "sha256": "6db1c11f30cda52465b8c382e0c93d3112a3a544d971d54e5bb45da19f0bb4ab"
   },
   {
     "path": "dbz-wide64-v20-selected-save-copy.mjs",
-    "bytes": 2802,
-    "sha256": "5494d9f9f7151e4ebf692d674d4fdae6dc82438d4a276caadc253730aa0a4bde"
+    "bytes": 2778,
+    "sha256": "3179c6ce90d53080c6d14705784618acabac7814a5d55ca6674b6ae8918303c3"
   },
   {
     "path": "dbz-wide64-v20-shell.css",
-    "bytes": 157942,
-    "sha256": "204d71d883f3af9bb11a4df6e88dd6804c3cc51e2c33fa17c8f0107765384461"
+    "bytes": 157940,
+    "sha256": "b437ed190c68e5b729f37f870f11c5b3c4463a1d254ee5c19307dc31a502f12b"
   },
   {
     "path": "dbz-wide64-v20-shell.js",
-    "bytes": 269010,
-    "sha256": "f5c29593fdf720a5505dbd014d2686f595567bd56b37d340f67bcc96516af1d0"
+    "bytes": 269001,
+    "sha256": "0d7ff97cec623c4770c6540c36543ee71fa25aec3194c986079d4000caddfd4e"
   },
   {
     "path": "dbz-wide64-v20-skills.js",
-    "bytes": 17590,
-    "sha256": "4fdc02e28956f2e7368d40418d3dab5ecd31ada22d00bfe6ce82750cf30c7954"
+    "bytes": 17422,
+    "sha256": "e84131c880655564574b8409171d6c41791fa03f1e756312b2df4a05957e450b"
   },
   {
     "path": "dbz-wide64-v20-source-v11.json",
-    "bytes": 55033,
-    "sha256": "a5a848bb51bcf2f6a113e35eada2375c05e4975343b1cbd5db880c54d91fb720"
+    "bytes": 50935,
+    "sha256": "3f19f12c4756ed5c8ca8db8b82e8da52d250fbf97a7c461536d7d49f0860aa95"
   },
   {
     "path": "dbz-wide64-v20-source-v12.json",
-    "bytes": 55033,
-    "sha256": "3e241a7772866e73f64982b2123af882a25f35682856cf0589a47f43cab1b46e"
+    "bytes": 50935,
+    "sha256": "a63f094ed7bd6ee254fb6786af3b815a16541cbdffe7bcf06292dddf7ffeb5de"
   },
   {
     "path": "dbz-wide64-v20-source-v13.json",
-    "bytes": 55032,
-    "sha256": "fd351a6404b436121e56e65721ebdcc302729281df2ae6cb769e5f741d5fa3bc"
+    "bytes": 50934,
+    "sha256": "8df9cd4cb5a8e6598f129147a1abe6dd48d8d54bf1e5dd678f8b079271a2ea2f"
   },
   {
     "path": "dbz-wide64-v20-source-v14.json",
-    "bytes": 55032,
-    "sha256": "f2f8bab5424f5f6a830290d7bfbc6e06d1027d9bf4d82e63c90073312c5ebfdc"
+    "bytes": 50934,
+    "sha256": "36a56528d21cb66c014db2227513b70a3c85bec0c617a4fe4904e865912c87cf"
   },
   {
     "path": "dbz-wide64-v20-source-v15.json",
-    "bytes": 55033,
-    "sha256": "165b00cf72387c8df57a0d65973829df8c08593e31fd0ebd570498cecdd310bd"
+    "bytes": 50935,
+    "sha256": "72b15a4fe0c8ab005b26a056e13c220e96e7dd5b63c67b4cd95af53191f4a0ab"
   },
   {
     "path": "dbz-wide64-v20-source-v16.json",
-    "bytes": 55030,
-    "sha256": "29a8753a233d6dbd4108193202dc15f77a30c2da505265bc908c2e20c8bdde05"
+    "bytes": 50933,
+    "sha256": "417c919b17dc7946268373ca1922f52beb4430d289e12ae77a1e9d3b8c30a102"
   },
   {
     "path": "dbz-wide64-v20-source-v17.json",
-    "bytes": 55031,
-    "sha256": "e04320dc8e2493f5f62bf35c4dff086a619d6cd4ccb4a8acfc94d7fa3ff7d82a"
+    "bytes": 50934,
+    "sha256": "be6422a1c337249fa5ff67ebe3f875c94e0c1d6731e6c2215924bb06702a8f61"
   },
   {
     "path": "dbz-wide64-v20-source-v18.json",
-    "bytes": 55031,
-    "sha256": "0a59da618a3f8a17dc7c9a75ca3922466ff475824e3e7430a62733434003b146"
+    "bytes": 50934,
+    "sha256": "e508abb3866bff40c21b50488bd28cbb33bc6979fbff14fcb23c388de1ab1f61"
   },
   {
     "path": "dbz-wide64-v20-source-v19.json",
-    "bytes": 55031,
-    "sha256": "d110b077ac9914c903de4230dfc5b0d8931f6eeeaec8d3020692f1a53ad3622b"
+    "bytes": 50934,
+    "sha256": "2b967c58b42b05ad96531effc5bebbdc5420965438d126b3c9d5b63c135ea260"
   },
   {
     "path": "dbz-wide64-v20-state.mjs",
-    "bytes": 2876,
-    "sha256": "f2894a2267744142c40fb401a76a6c4cde12eb9876d56cdabb203aef2722419d"
+    "bytes": 2838,
+    "sha256": "3f9ca3f0a563397ac87013fb884d8cf4e30539e8aaead3c6ae6664aaff80e29d"
   },
   {
     "path": "dbz-wide64-v20-training.js",
-    "bytes": 12723,
-    "sha256": "968503c688af5ca073140c89e152627770e105853a2a9d04713d832d5444e2b3"
+    "bytes": 12540,
+    "sha256": "73dab445a553914955c6416cee0d55b97e58755828b00edbd9f42b8ca92edf34"
   },
   {
     "path": "dbz-wide64-v20-victory.js",
-    "bytes": 4647,
-    "sha256": "415a12716e31a12d7edc7852e6e8314a5c19d65700736e1b4c04e71a10339611"
+    "bytes": 4601,
+    "sha256": "284ede6b8100695e17d8fc77e6dda4bfc3c8ef870ea85445dc79d4683d8fbcd9"
   },
   {
     "path": "dbz-wide64-v20.css",
-    "bytes": 7676,
-    "sha256": "8c79583d65ab9b292793d4e18e1011a885caaa1f125e526165e63a39a5519771"
+    "bytes": 7630,
+    "sha256": "bda07878a54d88e8deed8a6a45bcc86f6269c6dc076ccd860e08acfeaa2c3405"
   },
   {
     "path": "frame-source-wide64-v20.js",
-    "bytes": 3528,
-    "sha256": "ad160ea96c33ca71737460f2bfaee9cfd2f4961211dc88c3605d31fce11b7e5d"
+    "bytes": 3483,
+    "sha256": "47dc8e36d39e332d491b2290047f60e9b55ad1d090f92b2b67390ce4ee7d1cce"
   },
   {
     "path": "gamepad-controls-wide64-v20.js",
-    "bytes": 8872,
-    "sha256": "dde3f82c4164be6bfdc06259e8b4a7e11b19ee88fd64e5575c7e4b816be4c511"
+    "bytes": 8816,
+    "sha256": "e8252045b5bd8f11958f0bb5561de7e32a9b8fcc8fa2c5b656c259866770fdc3"
   },
   {
     "path": "games/Dragon_Ball_Z_II_Wide64_NGPlus_v20.nes",
@@ -211,13 +211,13 @@
   },
   {
     "path": "index.html",
-    "bytes": 1682,
-    "sha256": "0861967234583304f22714a75e25e724b2a78a0c6fe08223880d1fff497ab049"
+    "bytes": 1679,
+    "sha256": "9b575b5c4f7a05e961a2d72cbd3a60af1471a33e8c7bec8cd40ea8c03d3d2116"
   },
   {
     "path": "packs/scenery.json",
-    "bytes": 1002609,
-    "sha256": "fc58c3b2c90d11c18b71b109e7cfd5b8cd3c734126473fc06536559d7e7c5424"
+    "bytes": 1002608,
+    "sha256": "12ea5f3480ab80bf6206bdf0b08f5271ee4932e4fe94e7bafa68c077e67c3a86"
   },
   {
     "path": "packs/wide64-v20-nameplates-v2.png",
@@ -386,8 +386,8 @@
   },
   {
     "path": "packs/wide64-v20-native/enemies/manifest.json",
-    "bytes": 501,
-    "sha256": "2894f0a7553df2b7356ca1f6ed3703eee2365aa37543928ff4a3ea241e4ac916"
+    "bytes": 464,
+    "sha256": "1d04de8a88a5f66753f48d48014d9655d9cb6af87b5d6d6922b2efb8c27d4d93"
   },
   {
     "path": "packs/wide64-v20-native/impact1.png",
@@ -401,8 +401,8 @@
   },
   {
     "path": "packs/wide64-v20-native/provenance.json",
-    "bytes": 718,
-    "sha256": "6730975625329a72041adb2f50ad5bff40715ccc38ece57d288a1d3eea09fcd1"
+    "bytes": 684,
+    "sha256": "840f05098775822e56d145af4a78eda91ad12cd3da6e0ec0f396b355ebe08131"
   },
   {
     "path": "packs/wide64-v20-native/wave.png",
@@ -416,17 +416,17 @@
   },
   {
     "path": "player-wide64-v20-runtime.js",
-    "bytes": 31359,
-    "sha256": "a40216f3a680a84cad988211c60067c57b6e4184749a05081c9695d61bf75ef8"
+    "bytes": 31157,
+    "sha256": "3da62bc35f43d61f8ee2aa87976687f0ea8c59c837d13ceacc722077e6d74e50"
   },
   {
     "path": "player-wide64-v20.html",
-    "bytes": 14135,
-    "sha256": "5eda9e45505840011282d1fb5ec0ee913d29540db7ddee0d4f09bf83e79f5177"
+    "bytes": 14100,
+    "sha256": "d75360da9c4db0cb9f6248c0cb36a1d5a338edc2f0557e7b370f75bd0dd97536"
   },
   {
     "path": "touch-controls-wide64-v20.js",
-    "bytes": 8408,
-    "sha256": "6b41248166a9afb2948b5089656040a300e71c0dd957edda3e301d4d69f8487f"
+    "bytes": 8355,
+    "sha256": "c0302f154c3f7853b9658697b22660615aee529799749f4cfbb7bb907421faca"
   }
 ]
