@@ -1,0 +1,19 @@
+{
+  "0": {
+    "frames": 35,
+    "uniqueRawFrames": 5,
+    "screenshotSha256": "30e11e3185afd6c8e8fe4efe19e0e1bd06d4e2af9bf18a4461be26b4b2865ea2"
+  },
+  "2": {
+    "frames": 35,
+    "uniqueRawFrames": 5,
+    "screenshotSha256": "30e11e3185afd6c8e8fe4efe19e0e1bd06d4e2af9bf18a4461be26b4b2865ea2",
+    "allFramesMatchNormalSet": true
+  },
+  "15": {
+    "frames": 35,
+    "uniqueRawFrames": 5,
+    "screenshotSha256": "30e11e3185afd6c8e8fe4efe19e0e1bd06d4e2af9bf18a4461be26b4b2865ea2",
+    "allFramesMatchNormalSet": true
+  }
+}

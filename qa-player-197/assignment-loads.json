@@ -1,0 +1,97 @@
+{
+  "loads": [],
+  "cards": {
+    "values": [
+      {
+        "attack": 256,
+        "defense": 256,
+        "attribute": 1
+      },
+      {
+        "attack": 256,
+        "defense": 255,
+        "attribute": 1
+      },
+      {
+        "attack": 256,
+        "defense": 64,
+        "attribute": 1
+      },
+      {
+        "attack": 256,
+        "defense": 16,
+        "attribute": 1
+      },
+      {
+        "attack": 256,
+        "defense": 8,
+        "attribute": 1
+      }
+    ],
+    "locked": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "pending": [
+      {
+        "attack": null,
+        "defense": null,
+        "attribute": null
+      },
+      {
+        "attack": null,
+        "defense": null,
+        "attribute": null
+      },
+      {
+        "attack": null,
+        "defense": null,
+        "attribute": null
+      },
+      {
+        "attack": null,
+        "defense": null,
+        "attribute": null
+      },
+      {
+        "attack": null,
+        "defense": null,
+        "attribute": null
+      }
+    ],
+    "busy": false,
+    "active": true,
+    "lastVerification": {
+      "verified": true,
+      "ram": [],
+      "sidecar": [],
+      "graphics": []
+    },
+    "gameCheats": [
+      "03F8:00",
+      "03F9:00",
+      "03FA:01",
+      "0400:00",
+      "0401:FF",
+      "0402:01",
+      "0408:00",
+      "0409:40",
+      "040A:01",
+      "0410:00",
+      "0411:10",
+      "0412:01",
+      "0418:00",
+      "0419:08",
+      "041A:01"
+    ]
+  },
+  "phase": [
+    1,
+    1,
+    4,
+    0
+  ]
+}

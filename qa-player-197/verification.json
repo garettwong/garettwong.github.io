@@ -1,0 +1,28 @@
+{
+  "release": 197,
+  "romId": "d7f13a72b663e9b298df257214c8bf71514b2dd74f030c52fd33636dde702952",
+  "completedFixes": [
+    "Map native travel starts at phase3:3, not3:4",
+    "Transformation banner750ms; confirmation can display it above skill menu",
+    "Enemy entrance hold adds200ms before hit/fall"
+  ],
+  "unreproduced": [
+    "Spaceship changes into another graphic",
+    "Frequent card-assignment graphics corruption"
+  ],
+  "fullBattle": {
+    "enemies": 400,
+    "casts": 1,
+    "combatMs": 21898.299999952316,
+    "rewardConfirmed": true,
+    "groups": 67,
+    "errors": []
+  },
+  "mapAssertions": 18,
+  "limitations": [
+    "Actual user device/save unavailable for the two intermittent graphic reports.",
+    "No physical iPhone Safari test.",
+    "No change to native ROM or existing save identities."
+  ],
+  "rawEvidence": "D:\\Codex 2\\projects\\NES-Player197-QA"
+}

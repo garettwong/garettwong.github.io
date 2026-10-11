@@ -5,7 +5,7 @@
 (function(global){
 'use strict';
 const GATE=0x13fd,MODE=0x13fe,LAST=0x13ff,EXPANDED=0x1371,REVISION=0x13b5;
-const ATTACKS=new Set([0x40,0xdb,0xe2]),DURATION=80,INTRO=100;
+const ATTACKS=new Set([0x40,0xdb,0xe2]),DURATION=80,ENTRANCE_HOLD=200,INTRO=100;
 let api=null,canvas=null,ctx=null,busy=false,waiting=false,pending=null,unlock=null,token=0,raf=0,sequence=0,lastError='',timer=0,modePending=null;
 let animationPending=null,finalReady=false,finishedActor='',needsHud=false,confirmingGate=false,wasBattle=false,sceneryRequested=false;
 let missStreak=0,escapedCount=0;
@@ -195,7 +195,10 @@ async function animate(scene,current){
   if(current!==token){resolve(false);return;}
   if(document.hidden||!api.active()){started=null;raf=requestAnimationFrame(frame);return;}
   if(started===null)started=now;
-  const elapsed=now-started,lead=scene.first?INTRO:0,progress=Math.max(0,Math.min(1,(elapsed-lead)/DURATION));scene.launchProgress=scene.first?Math.min(1,elapsed/INTRO):1;
+  const elapsed=now-started,lead=scene.first?INTRO:0,motion=Math.max(0,elapsed-lead),entryEnd=DURATION*.16;
+  // Hold the fully entered cohort before impact; do not stretch the hit/fall.
+  const progress=Math.min(1,motion<entryEnd ? motion/DURATION : motion<entryEnd+ENTRANCE_HOLD ? .159999 : (motion-ENTRANCE_HOLD)/DURATION);
+  scene.launchProgress=scene.first?Math.min(1,elapsed/INTRO):1;
   lastProgress=progress;fit();drawScene(scene,progress);lastScene=scene;
   if(progress===1){resolve(true);return;}raf=requestAnimationFrame(frame);
  };raf=requestAnimationFrame(frame);});
@@ -207,7 +210,7 @@ function pump(built,caster,current){
   while(current===token&&(queue.length>=groupSize||(finalReady&&queue.length))){
    const targets=takeTargets(Math.min(groupSize,queue.length),built.total),scene={...built,cast:castSerial,targets,first:castGroups++===0,remainingBefore:presented,groupIndex:shown.length,casterName:caster.name,casterBp:caster.bp,casterEarnedBp:caster.earnedBp,attackName:caster.attackName,actor:caster.actor,stage:caster.stage,missStreakBefore:missStreak,missStreakAfter:streakAfter(missStreak,targets),escapedBefore:escapedCount,escapedAfter:escapedCount+targets.reduce((n,t)=>n+(t.potential?.misses??(t.potential?.missed?1:0)),0)};
    api.status(`Explosive Wave: ${targets.length} enemies struck together.`);
-   shown.push({cast:castSerial,targets:targets.map(t=>t.id),size:targets.length,remainingBefore:presented,duration:DURATION,first:scene.first,intro:scene.first?INTRO:0,frames:"timed",defeated:targets.filter(t=>t.beforeHp>0&&t.afterHp===0).length});if(shown.length>200)shown.shift();
+   shown.push({cast:castSerial,targets:targets.map(t=>t.id),size:targets.length,remainingBefore:presented,duration:DURATION+ENTRANCE_HOLD,entranceHold:ENTRANCE_HOLD,first:scene.first,intro:scene.first?INTRO:0,frames:"timed",defeated:targets.filter(t=>t.beforeHp>0&&t.afterHp===0).length});if(shown.length>200)shown.shift();
    if(!await animate(scene,current))return;
    missStreak=scene.missStreakAfter;escapedCount=scene.escapedAfter;
    presented=Math.max(0,presented-targets.length);castTargetsLeft-=targets.length;groupSize=nextSize();
@@ -261,6 +264,6 @@ function poll(){if(api&&!busy)examine();timer=setTimeout(poll,16);}
 function reset(){sceneryRequested=false;confirmingGate=false;wasBattle=false;lastError='';missStreak=0;escapedCount=0;completed=[];finishedActor='';needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api?.fastCalculation?.(false);lastScene=null;preview=null;token++;/* Let an existing RAF observe the new token and resolve. */busy=false;waiting=false;animationPending=null;finalReady=false;modePending=null;pending=null;unlock?.();unlock=null;if(canvas)canvas.hidden=true;global.DreamGroupBlastVisual?.reset?.();roster.clear();accumulated.clear();templates=[];currentCast=false;queue=[];shown=[];logs=[];presented=null;casterCanvas=null;casterRequested=false;casterKey='';}
 function start(options){api=options;reset();create();poll();}
 async function whenSettled(){while(modePending||pending||animationPending||currentCast){await (modePending||pending||animationPending||delay(20));}}
-function inspect(){return {currentCast,escapedCount,confirmingGate,preview:!!preview,missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}
+function inspect(){return {currentCast,escapedCount,confirmingGate,preview:!!preview,missStreak,completed:completed.map(x=>({...x})),busy,animating:!!animationPending,waiting,gate:waiting,modePending:!!modePending,logs:logs.map(x=>({...x,targets:[...x.targets],before:[...x.before],after:[...x.after]})),lastError,roster:roster.size,duration:DURATION+ENTRANCE_HOLD,entranceHold:ENTRANCE_HOLD,queued:queue.length,presented,shown:shown.map(x=>({...x,targets:[...x.targets]}))};}
 global.DreamGroupBlast={start,reset,whenSettled,canYieldForAwakening:()=>!busy&&!animationPending,resume:()=>{if((currentCast||modePending)&&(!finalReady||confirmingGate)&&api?.active()){needsHud=false;if(global.DreamFrameSource)global.DreamFrameSource.captureUntilHud=false;api.advance();}},isOpen:()=>busy||currentCast,coversScreen:()=>waiting&&!!canvas&&!canvas.hidden,inspect};
 })(typeof window==='undefined'?globalThis:window);

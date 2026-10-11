@@ -1,0 +1,21 @@
+const fs=require('fs');const {chromium}=require('C:/Users/garet/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const q=__dirname,root='D:/Codex 2/projects/NES-Wide64-HPBP169',base=process.env.BASE||'http://127.0.0.1:8180',fixture='D:/Codex 2/projects/NES-Player196-QA/map-grid195.state';const edition=JSON.parse(fs.readFileSync(root+'/dbz-wide64-v21-edition.json')),defences=[256,255,64,16,8];
+async function setup(browser,speed){
+ const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),page=await context.newPage();
+ await page.addInitScript(({id,defences})=>localStorage.setItem('nes-dream:dbz-crazy-cards:'+id,JSON.stringify({cards:defences.map(defense=>({attack:256,defense,attribute:1,locked:true}))})),{id:edition.romId,defences});
+ await page.goto(base+'/dbz-wide64-v21-play.html',{waitUntil:'domcontentloaded',timeout:60000});await page.locator('#wide64-v21-preview-notice').waitFor({state:'attached'});
+ const bytes=[...fs.readFileSync(fixture)];await page.evaluate(({id,bytes})=>new Promise((resolve,reject)=>{const r=indexedDB.open('nes-dream-library-v1',2);r.onsuccess=()=>{const db=r.result,t=db.transaction('states','readwrite');t.objectStore('states').put({key:id+':1',gameId:id,slot:1,bytes:new Uint8Array(bytes).buffer,updated:Date.now()});t.oncomplete=()=>{db.close();resolve()};t.onerror=reject};r.onerror=reject}),{id:edition.romId,bytes});
+ await page.frameLocator('iframe').getByRole('button',{name:'Play game',exact:true}).click({timeout:60000});const f=page.frames().find(x=>x.url().includes('/player-wide64-v21.html'));await f.waitForFunction(()=>window.dreamArtwork?.metrics.frames>2);
+ await page.evaluate(s=>document.querySelector('iframe').contentWindow.postMessage({channel:'nes-dream',type:'speed',value:s},location.origin),speed);await page.getByRole('button',{name:'Load',exact:true}).click();await page.getByRole('button',{name:/Slot 1/}).click();
+ await page.waitForTimeout(500);
+ await page.waitForTimeout(350); // Let the requested speed finish its initial, intentional application.
+ await f.evaluate(()=>{const e=EJS_emulator,gm=e.gameManager;window.__qa194toggles=[];const raw=gm.toggleFastForward.bind(gm);gm.toggleFastForward=(...args)=>{window.__qa194toggles.push({frame:gm.getFrameNum(),args});return raw(...args)}});
+ const read=()=>f.evaluate(()=>{const b=EJS_emulator.gameManager.getState(),p=DreamWide64.chunk(b,'RAM',2048),z=[...b.slice(p,p+0x240)];return{frame:EJS_emulator.gameManager.getFrameNum(),phase:z[0x30],index:z[0x6e],other:z[0x6f],party020d:z[0x20d],cards:DreamCards.inspect().values,skills:{open:DreamSkills.isOpen(),confirm:DreamSkills.isConfirming()},fast:EJS_emulator.isFastForward,toggles:window.__qa194toggles.slice()}});
+ const pulse=async(code,ms=80,source='input-qa194')=>{await f.evaluate(({code,source})=>DreamInput.input(source,0,code,1),{code,source});await page.waitForTimeout(ms);await f.evaluate(({code,source})=>DreamInput.input(source,0,code,0),{code,source});await page.waitForTimeout(160);};
+ return{context,page,f,read,pulse};
+}
+
+
+
+
+
+(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{const s=await setup(browser,1),fixture=[...fs.readFileSync('D:/Codex 2/projects/NES-Player196-QA/map-grid195.state')];for(const forms of [0,2,15]){await s.f.evaluate(({fixture,forms})=>{const b=new Uint8Array(fixture),w=DreamWide64.chunk(b,'WRM',8192);b[w+0x15ae]=forms;EJS_emulator.gameManager.loadState(b)}, {fixture,forms});await s.page.waitForTimeout(300);await s.f.evaluate(()=>{window.rawFrames=[];const src=DreamFrameSource;if(!window.oldOnFrame)oldOnFrame=src.onFrame;src.onFrame=()=>{oldOnFrame();if(rawFrames.length<35)rawFrames.push([...src.pixels])}});await s.page.waitForTimeout(650);const data=await s.f.evaluate(()=>{DreamFrameSource.onFrame=oldOnFrame;return{frames:rawFrames,paint:dreamArtwork.overlay.toDataURL()}});fs.writeFileSync(q+'/ship-forms'+forms+'.json',JSON.stringify(data.frames));fs.writeFileSync(q+'/ship-forms'+forms+'.png',Buffer.from(data.paint.split(',')[1],'base64'));}await s.context.close()}finally{await browser.close()}})();

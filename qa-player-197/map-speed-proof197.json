@@ -1,0 +1,20 @@
+[
+  {
+    "file": "map-phases197.json",
+    "samples": 168,
+    "elapsedMs": 1334.699999988079,
+    "frames": 79,
+    "xStart": 159,
+    "xEnd": 255,
+    "fastSamples": 0
+  },
+  {
+    "file": "map-phases197-64.json",
+    "samples": 21,
+    "elapsedMs": 159.69999998807907,
+    "frames": 73,
+    "xStart": 255,
+    "xEnd": 255,
+    "fastSamples": 11
+  }
+]

@@ -1,6 +1,6 @@
 /* Native kill counters request a cut-in; only its acknowledged queue bit is edited. */
 (()=>{'use strict';
-const DURATION=4200,SSJ1='/packs/wide64-v21-nameplates-v2.png',SSJ2='/packs/wide64-v21-ssj2-portraits.png';
+const DURATION=750,SSJ1='/packs/wide64-v21-nameplates-v2.png',SSJ2='/packs/wide64-v21-ssj2-portraits.png';
 const load=url=>new Promise((yes,no)=>{const img=new Image();img.onload=()=>yes(img);img.onerror=()=>no(Error('Transformation portrait could not load.'));img.src=url;});
 let portraits=null,api=null,canvas=null,context=null,busy=false,token=0,raf=0,unlock=null,pending=null,lastError='',sequence=0;
 const ready=Promise.all([load(SSJ1),load(SSJ2)]).then(images=>{portraits=images;return true;});ready.catch(()=>{});
@@ -9,7 +9,7 @@ function acknowledge(input,actor){const v=decode(input);if(!v||v.actor!==actor)t
 function pose(ctx,actor,stage,x,y,w,h){const image=portraits[stage===2?1:0],rect=stage===2?(actor===1?[24,0,863,887]:[998,0,715,887]):(actor===1?[91,674,545,511]:[750,719,400,467]);const [sx,sy,sw,sh]=rect,scale=Math.min(w/sw,h/sh),dw=sw*scale,dh=sh*scale;ctx.drawImage(image,sx,sy,sw,sh,x+(w-dw)/2,y+h-dh,dw,dh);}
 function draw(ctx,actor,elapsed,reduced=false){
  const rect=ctx.canvas===canvas?canvas.getBoundingClientRect():null,aspect=rect&&rect.width?rect.height*256/(rect.width*240):1;
- const t=Math.min(1,elapsed/DURATION),stage=elapsed<650?1:2,entry=Math.min(1,elapsed/250),exit=Math.min(1,(DURATION-elapsed)/300),pulse=reduced?0:Math.max(0,Math.sin(elapsed/145))*0.3;
+ const t=Math.min(1,elapsed/DURATION),stage=elapsed<115?1:2,entry=Math.min(1,elapsed/70),exit=Math.min(1,(DURATION-elapsed)/90),pulse=reduced?0:Math.max(0,Math.sin(elapsed/145))*0.3;
  ctx.clearRect(0,0,256,240);ctx.fillStyle='rgba(0,0,0,.58)';ctx.fillRect(0,0,256,240);ctx.save();ctx.globalAlpha=Math.max(0,Math.min(entry,exit));
  const top=62,bottom=172;ctx.fillStyle='#080d1b';ctx.fillRect(0,top,256,bottom-top);ctx.fillStyle=pulse>.15?'#563914':'#2d2418';ctx.fillRect(0,top+3,256,bottom-top-6);
  // The native long cut-in's horizontal streaks sweep eight pixels per beat.
@@ -23,11 +23,11 @@ function draw(ctx,actor,elapsed,reduced=false){
  ctx.fillStyle=stage===2?'#ffe66d':'#ffffff';ctx.font=`900 ${aspect<.6?17:11}px Arial,sans-serif`;ctx.fillText(stage===2?'SUPER SAIYAN II':'SUPER SAIYAN I',185,111,133/Math.min(1,aspect));
  ctx.fillStyle='#beeaff';ctx.font=`700 ${aspect<.6?11:7}px Arial,sans-serif`;ctx.fillText('10 ENEMIES DEFEATED',185,133,133/Math.min(1,aspect));ctx.fillStyle='#fff';ctx.font=`900 ${aspect<.6?14:9}px Arial,sans-serif`;ctx.fillText('BP ×100 FROM SSJ I',185,151,133/Math.min(1,aspect));
  ctx.restore();
- if(!reduced&&elapsed>=600&&elapsed<780){ctx.fillStyle=`rgba(255,250,210,${.45*(1-Math.abs(elapsed-690)/90)})`;ctx.fillRect(0,top,256,bottom-top);}
+ if(!reduced&&elapsed>=95&&elapsed<155){ctx.fillStyle=`rgba(255,250,210,${.45*(1-Math.abs(elapsed-125)/30)})`;ctx.fillRect(0,top,256,bottom-top);}
  ctx.restore();return stage;
 }
 function fit(){if(!canvas)return;const rect=(window.dreamArtwork?.canvas||document.querySelector('#game canvas'))?.getBoundingClientRect();if(!rect)return;Object.assign(canvas.style,{left:rect.left+'px',top:rect.top+'px',width:rect.width+'px',height:rect.height+'px'});}
-function create(){if(canvas)return;canvas=document.createElement('canvas');canvas.id='dbz-ssj2-banner';canvas.width=768;canvas.height=720;canvas.hidden=true;canvas.setAttribute('role','img');canvas.style.cssText='position:fixed;z-index:40;pointer-events:auto;touch-action:none;';canvas.addEventListener('pointerdown',e=>e.preventDefault());document.body.append(canvas);context=canvas.getContext('2d');addEventListener('resize',fit);}
+function create(){if(canvas)return;canvas=document.createElement('canvas');canvas.id='dbz-ssj2-banner';canvas.width=768;canvas.height=720;canvas.hidden=true;canvas.setAttribute('role','img');canvas.style.cssText='position:fixed;z-index:60;pointer-events:auto;touch-action:none;';canvas.addEventListener('pointerdown',e=>e.preventDefault());document.body.append(canvas);context=canvas.getContext('2d');addEventListener('resize',fit);}
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
 function animate(actor,current){return new Promise(resolve=>{let elapsed=0,previous=performance.now();const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;const step=now=>{if(current!==token){resolve(false);return;}const dt=now-previous;previous=now;if(!document.hidden&&api.active())elapsed+=Math.min(dt,80);fit();context.setTransform(3,0,0,3,0,0);const stage=draw(context,actor,elapsed,reduced);canvas.dataset.actor=String(actor);canvas.dataset.stage=String(stage);canvas.dataset.elapsed=String(Math.round(elapsed));if(elapsed>=DURATION){resolve(true);return;}raf=requestAnimationFrame(step);};raf=requestAnimationFrame(step);});}
 async function play(v){
